@@ -1,0 +1,152 @@
+body {
+      font: 110% Sans-Serif;
+      text-align: left;
+      margin: 0 auto;
+      padding: 20px;
+      outline-style:none;
+}
+.teiHeader:after,.titleStmt:after,.apparatus:before,.citations:before {
+      display: block;
+      content: " ";
+      height: 2px;
+      width: 70%;
+      background-color: black;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      margin-left: auto;
+      margin-right: auto;
+}
+p {
+  display: block;
+  text-indent: 2em;
+  margin: 10px;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  hyphens: auto;
+}
+div.lg {
+  display: block;
+  padding-left: 2em;
+  margin-bottom: 5px;
+}
+span.line {
+  display:block;
+}
+span.b span.d {
+  display: block;
+  padding-left:2em;
+}
+a.app {
+      color: #0000AA;
+}
+a:link {
+      color: #0000FF;
+}
+a:visited {
+      color: #0000AA;
+}
+div#qTip {
+ padding: 3px;
+ border: 1px solid #666;
+ border-right-width: 2px;
+ border-bottom-width: 2px;
+ display: none;
+ background: #999;
+ color: #FFF;
+ /* font: bold 9px Verdana, Arial, sans-serif; */
+ text-align: left;
+ position: absolute;
+ z-index: 1000;
+}
+/* a:hover .footnoteinline {
+	    display: block;
+	    position: absolute;
+	    margin: 5px;
+	    padding: 7px;
+	    font-size: .825em;
+	    line-height: 1.75em;
+	    background-color:#FFFFFF;
+	    outline-style:solid;
+	    outline-width:1px;
+	    outline-color:#CCCCCC;
+} */
+a {
+      text-decoration: none;
+}
+ul {
+      list-style-position: inside;
+	    padding-left: 1em;
+	    text-indent: -1em;
+}
+ul.labelled {
+      list-style: none;
+      list-style-position: inside;
+	    padding-left: 1em;
+	    text-indent: -1em;
+}
+sup {
+	    vertical-align: super;
+	    font-size: smaller;
+      text-height: 0em;
+}
+a.toggle {
+      float: right;
+      font-size: 80%;
+      font-weight: normal;
+      margin: 3px;
+}
+.line {
+  display: block;
+  padding: 0px;
+  margin: 0px;
+}
+.line:last-child {
+  display: inline;
+}
+/* metrical formatting */
+span.a, span.b, span.c, span.d {
+  display: block;
+}
+span.b, span.d {
+  text-indent: 20px;
+}
+/* exceptions for the raḍḍa */
+div[type="raḍḍa"] span.b {
+  text-indent: 0px;
+}
+div[type="raḍḍa"] span.a {
+  text-indent: 20px;
+}
+.foreign {
+  font-style: italic;
+}
+span.mentioned {
+  font-weight: bold;
+}
+span.label {
+  font-weight: bold;
+}
+span.appnote {
+  font-style: normal;
+}
+span.pageinfo {
+  font-size: 80%;
+  display: inline;
+  color: #1270A0; 
+}
+div.metricalgroup {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 70%:
+}
+/* TOC stuff */
+p.div2head {
+  margin-left: 10px;
+}
+p.div3head {
+  margin-left: 10px;
+}
+.appnum {
+  font-size: 90%;
+}

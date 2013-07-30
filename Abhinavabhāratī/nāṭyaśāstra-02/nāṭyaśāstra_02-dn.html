@@ -1,0 +1,813 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html xmlns:fn="http://www.w3.org/2005/xpath-functions" encodingxmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+      <link rel="stylesheet" type="text/css" href="../cssstylesheet2.css">
+      <title></title><script type="text/javascript">
+    
+    function toggle(id) {
+       var e = document.getElementById(id);
+       if(e.style.display == 'block')
+          e.style.display = 'none';
+       else
+          e.style.display = 'block';
+    }
+// qTip - CSS Tool Tips - by Craig Erskine
+// http://qrayg.com
+//
+// Multi-tag support by James Crooke
+// http://www.cj-design.com
+//
+// Inspired by code from Travis Beckham
+// http://www.squidfingers.com | http://www.podlob.com
+//
+// Copyright (c) 2006 Craig Erskine
+// Permission is granted to copy, distribute and/or modify this document
+// under the terms of the GNU Free Documentation License, Version 1.3
+// or any later version published by the Free Software Foundation;
+// with no Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts.
+// A copy of the license is included in the section entitled "GNU
+// Free Documentation License".
+
+var qTipTag = "a,label,input"; //Which tag do you want to qTip-ize? Keep it lowercase!//
+var qTipX = 0; //This is qTip's X offset//
+var qTipY = 15; //This is qTip's Y offset//
+
+//There's No need to edit anything below this line//
+tooltip = {
+  name : "qTip",
+  offsetX : qTipX,
+  offsetY : qTipY,
+  tip : null
+}
+
+tooltip.init = function () {
+	var tipNameSpaceURI = "http://www.w3.org/1999/xhtml";
+	if(!tipContainerID){ var tipContainerID = "qTip";}
+	var tipContainer = document.getElementById(tipContainerID);
+
+	if(!tipContainer) {
+	  tipContainer = document.createElementNS ? document.createElementNS(tipNameSpaceURI, "div") : document.createElement("div");
+		tipContainer.setAttribute("id", tipContainerID);
+	  document.getElementsByTagName("body").item(0).appendChild(tipContainer);
+	}
+
+	if (!document.getElementById) return;
+	this.tip = document.getElementById (this.name);
+	if (this.tip) document.onmousemove = function (evt) {tooltip.move (evt)};
+
+	var a, sTitle, elements;
+	
+	var elementList = qTipTag.split(",");
+	for(var j = 0; j < elementList.length; j++)
+	{	
+		elements = document.getElementsByTagName(elementList[j]);
+		if(elements)
+		{
+			for (var i = 0; i < elements.length; i ++)
+			{
+				a = elements[i];
+				sTitle = a.getAttribute("title");				
+				if(sTitle)
+				{
+					a.setAttribute("tiptitle", sTitle);
+					a.removeAttribute("title");
+					a.removeAttribute("alt");
+					a.onmouseover = function() {tooltip.show(this.getAttribute('tiptitle'))};
+					a.onmouseout = function() {tooltip.hide()};
+				}
+			}
+		}
+	}
+}
+
+tooltip.move = function (evt) {
+	var x=0, y=0;
+	if (document.all) {//IE
+		x = (document.documentElement && document.documentElement.scrollLeft) ? document.documentElement.scrollLeft : document.body.scrollLeft;
+		y = (document.documentElement && document.documentElement.scrollTop) ? document.documentElement.scrollTop : document.body.scrollTop;
+		x += window.event.clientX;
+		y += window.event.clientY;
+		
+	} else {//Good Browsers
+		x = evt.pageX;
+		y = evt.pageY;
+	}
+	this.tip.style.left = (x + this.offsetX) + "px";
+	this.tip.style.top = (y + this.offsetY) + "px";
+}
+
+tooltip.show = function (text) {
+	if (!this.tip) return;
+	this.tip.innerHTML = text;
+	this.tip.style.display = "block";
+}
+
+tooltip.hide = function () {
+	if (!this.tip) return;
+	this.tip.innerHTML = "";
+	this.tip.style.display = "none";
+}
+
+window.onload = function () {
+	tooltip.init ();
+}
+    
+    </script></head>
+   <body>
+      <span class="pageinfo">[page 047]</span>
+      
+      
+      
+      <div class="lg" type="">
+         <span class="line"><a href="" class="app" title="श्रुत्वा तु वचनं तस्य प्रत्यूचुर्मुनयस्तथा&nbsp;। श्रोतुमिच्छाम भगवन्यजनं नाट्यमण्डपे&nbsp;॥ इत्यधिंकं दृश्यते <b&gt;Nण</b&gt;"><span class="appnum"><sup>1</sup></span></a>भरतस्य वचः श्रुत्वा <a href="" class="app" title="प्राब्रुवन् <b&gt;न</b&gt;, प्रत्यूचुः <b&gt;क्षमतब</b&gt;"><span class="appnum"><sup>2</sup></span></a>पप्रच्छुर्मुनयस्ततः<a href="" class="app" title="स्तदा <b&gt;ठम</b&gt;"><span class="appnum"><sup>3</sup></span></a>&nbsp;।</span>
+         <span class="line">भगवन् श्रोतुमिच्छामो यजनं <a href="" class="app" title="नाट्यमण्डपे <b&gt;Nप</b&gt;"><span class="appnum"><sup>4</sup></span></a>रङ्गसंश्रयम्&nbsp;॥ १&nbsp;॥</span>
+         
+      </div>
+      
+      <div class="lg" type="">
+         <span class="line">अथ वा याः<a href="" class="app" title="या क्रिया <b&gt;त</b&gt;"><span class="appnum"><sup>1</sup></span></a> क्रियास्तत्र लक्षणं यच्च पूजनम्&nbsp;।</span>
+         <span class="line"><a href="" class="app" title="भविष्यद्भिः कथं कार्यं पुरुषैर्नाट्ययोक्तृक्षिः <b&gt;फ</b&gt;"><span class="appnum"><sup>2</sup></span></a>भविष्यद्भिर्नरैः कार्यं कथं <a href="" class="app" title="वै <b&gt;क्षच</b&gt;"><span class="appnum"><sup>3</sup></span></a>तन्नाट्यवेश्मनि&nbsp;॥ २&nbsp;॥</span>
+         
+      </div>
+      ﻿<span class="pageinfo">[page 048]</span>
+      
+      <div class="lg" type="">
+         <span class="line"><a href="" class="app" title="इहादौ <b&gt;न</b&gt;"><span class="appnum"><sup>1</sup></span></a>इहादिर्नाट्ययोगस्य<a href="" class="app" title="नाट्यवेदस्य <b&gt;न</b&gt;"><span class="appnum"><sup>2</sup></span></a> नाट्यमण्डपम एव हि<a href="" class="app" title="कीर्तितो नाट्यमण्डपः <b&gt;क्षठमत</b&gt;"><span class="appnum"><sup>3</sup></span></a>&nbsp;।</span>
+         <span class="line">तस्मात्तस्यैव तावत्त्वं लक्षणं वक्तुमर्हसि&nbsp;॥ ३&nbsp;॥</span>
+         
+      </div>
+      
+      <div class="lg" type="">
+         <span class="line">तेषां तु वचनं श्रुत्वा मुनीनां भरतोऽब्रवीत्&nbsp;।</span>
+         <span class="line">लक्षणं पूजनं चैव श्रूयतां नाट्यवेश्मनः<a href="" class="app" title="वेश्मनि <b&gt;च</b&gt;"><span class="appnum"><sup>1</sup></span></a>&nbsp;॥ ४&nbsp;॥</span>
+         
+      </div>
+      
+      <div class="lg" type="">
+         <span class="line"><a href="" class="app" title="देवानाम् <b&gt;च</b&gt;"><span class="appnum"><sup>1</sup></span></a>दिव्यानां मानसी सृष्टिर्गृहेषूपवनेषु च&nbsp;।</span>
+         <span class="line">(<a href="" class="app" title="पुस्तके इदमधिकं दृश्यते <b&gt;ब</b&gt;, यत्र भावा विनिष्पन्नाः <b&gt;चब</b&gt;"><span class="appnum"><sup>2</sup></span></a>यथाभावाभिनिर्वर्त्याः सर्वे भावास्तु मानुषाः)&nbsp;।</span>
+         <span class="line"><a href="" class="app" title="मर्त्यानां यत्ननिष्पाद्या <b&gt;N</b&gt;"><span class="appnum"><sup>3</sup></span></a>नराणां यत्नत: कार्या लक्षणाभिहिता क्रिया&nbsp;॥ ५&nbsp;॥</span>
+         
+      </div>
+      
+      <div class="lg" type="">
+         <span class="line">श्रूयतां तद्यथा <a href="" class="app" title="तत्र <b&gt;Nक्षठम</b&gt;"><span class="appnum"><sup>1</sup></span></a>यत्र कर्तव्यो नाट्यमण्डपः&nbsp;।</span>
+         <span class="line">तस्य <a href="" class="app" title="दैवतपूजा च <b&gt;क्षठम</b&gt;"><span class="appnum"><sup>2</sup></span></a> वास्तु च पूजा च <a href="" class="app" title="यथा योज्या च वास्तुषु <b&gt;क्षठम</b&gt;"><span class="appnum"><sup>3</sup></span></a>यथा योज्या प्रयत्नतः&nbsp;॥ ६&nbsp;॥</span>
+         
+      </div>
+      ﻿<span class="pageinfo">[page 049]</span>
+      
+      <div class="lg" type="">
+         <span class="line">इह <a href="" class="app" title="प्रेक्षागृहाणां तु <b&gt;क्षठम</b&gt;, प्रेक्षागृहं दृष्टम् <b&gt;न</b&gt;"><span class="appnum"><sup>1</sup></span></a>प्रेक्षागृहं दृष्ट्वा <a href="" class="app" title="श्रीमता <b&gt;कब</b&gt;"><span class="appnum"><sup>2</sup></span></a>धीमता विश्वकर्मणा&nbsp;।</span>
+         <span class="line">त्रिविधः सन्निवेशश्च शास्ततः <a href="" class="app" title="परिकीर्तितः <b&gt;Nड</b&gt;"><span class="appnum"><sup>3</sup></span></a>परिकल्पितः&nbsp;॥ ७&nbsp;॥</span>
+         
+      </div>
+      
+      <div class="lg" type="">
+         <span class="line">विकृष्टश्चतुरश्रश्च त्र्यश्रश्चैव तु मण्डपः&nbsp;।</span>
+         <span class="line">तेषां त्रीणि प्रमाणानि ज्येष्ठं <a href="" class="app" title="मध्यं तथा परम् <b&gt;म</b&gt;, मध्यमथापरम् <b&gt;ठ</b&gt;, मध्यमथाधमम् <b&gt;प</b&gt;"><span class="appnum"><sup>1</sup></span></a>मध्यं तथाऽवरम्&nbsp;॥ ८&nbsp;॥</span>
+         
+      </div>
+      
+      <div class="lg" type="">
+         <span class="line">प्रमाणमेषां <a href="" class="app" title="विज्ञेयम् <b&gt;नब</b&gt;"><span class="appnum"><sup>1</sup></span></a>निर्दिष्टं हस्तदण्डसमाश्रयम्&nbsp;।</span>
+         <span class="line"><a href="" class="app" title="शतं साष्टम् <b&gt;नब</b&gt;"><span class="appnum"><sup>2</sup></span></a>शतं चाष्टौ चतुःषष्टिर्हस्ता द्वात्रिंशदेव च<a href="" class="app" title="द्वात्रिंशच्चेति निश्चयात्&nbsp;।(निश्चितः) <b&gt;Nक्षनम</b&gt;, द्वात्रिंशदिति निश्चयः <b&gt;Nडछ</b&gt;"><span class="appnum"><sup>3</sup></span></a>&nbsp;॥ ९&nbsp;॥</span>
+         
+      </div>
+      ﻿<span class="pageinfo">[page 050]</span>
+      
+      
+      <div class="lg" type="">
+         <span class="line">अष्टाधिकं शतं ज्येष्ठं चतुःषष्टिस्तु मध्यमम्&nbsp;।</span>
+         <span class="line"><a href="" class="app" title="कनीयश्च <b&gt;N</b&gt;"><span class="appnum"><sup>1</sup></span></a>कनीयस्तु तथा वेश्म <a href="" class="app" title="द्वात्रिंशत्करमिष्यते <b&gt;Nक्षछमत</b&gt;"><span class="appnum"><sup>2</sup></span></a>हस्ता द्वात्रिशंदिष्यते&nbsp;॥ १०&nbsp;॥</span>
+         
+      </div>
+      
+      <div class="lg" type="">
+         <span class="line"><a href="" class="app" title="देवतानां भवे <b&gt;क्षनअ</b&gt;, देवानां भवनम् <b&gt;ठम</b&gt;"><span class="appnum"><sup>1</sup></span></a>देवानां तु भवेज्ज्येष्ठं नृपानां मध्यमं भवेत्&nbsp;।</span>
+         <span class="line">शेषाणां प्रकृतीनां तु कनीयः संविधीयते&nbsp;॥ ११&nbsp;॥</span>
+         
+      </div>
+      
+      <div class="lg" type="">
+         <span class="line">(<a href="" class="app" title="एतच्चिह्नाङ्कितो भागः <b&gt;अ</b&gt; <b&gt;त</b&gt; <b&gt;ब</b&gt;  पुस्तकेषु दृष्यते&nbsp;। व्याख्या नास्ति">*</a>प्रेक्षागृहाणां सर्वेषां प्रशस्तं मध्यमं स्मृतम्&nbsp;।</span>
+         <span class="line">तत्र पाठ्यं च गेयं च सुखश्राव्यतरं भवेत्&nbsp;॥</span>
+         <span class="line">प्रेक्षागृहाणां सर्वेषां त्रिप्रकारो विधिः स्मृतः&nbsp;।</span>
+         <span class="line">विकृष्टश्चतुरस्रश्च त्र्यस्रश्चैव <a href="" class="app" title="हिं कीर्तितः <b&gt;Nछ</b&gt;"><span class="appnum"><sup>1</sup></span></a>प्रयोक्तृभिः&nbsp;॥</span>
+         <span class="line">कनीयस्तु स्मृतं त्र्यस्रं चतुरस्रं तु मध्यमम्&nbsp;।</span>
+         <span class="line">ज्येष्ठं विकृष्टं विज्ञेयं <a href="" class="app" title="नाट्यवेशम <b&gt;Nनब</b&gt;, नाट्यवेश्म् विभागशः <b&gt;त</b&gt;"><span class="appnum"><sup>2</sup></span></a>नाट्यवेदप्रयोक्तृभिः॥)</span>
+         <span class="line"><a href="" class="app" title="यच्च प्रमाणनिर्दिष्टं <b&gt;N</b&gt;"><span class="appnum"><sup>3</sup></span></a>प्रमाणं यच्च निर्दिष्टं लक्षणं विश्वकर्मणा&nbsp;।</span>
+         <span class="line">प्रेक्षागृहाणां सर्वेषां तच्चैव हि निबोधत&nbsp;॥ १२&nbsp;॥</span>
+         
+      </div>
+      
+      <div class="lg" type="">
+         <span class="line">अणु रजश्च वालश्च लिक्षा यूका यवस्तथा&nbsp;।</span>
+         <span class="line">अङ्गुलं <a href="" class="app" title="चैव हस्तश्च <b&gt;Nठम</b&gt;"><span class="appnum"><sup>1</sup></span></a>च तथा हस्तो <a href="" class="app" title="दण्डश्च परिकर्तितः <b&gt;क्षठम</b&gt;, तथा दण्डक एव च <b&gt;Nछअ</b&gt;"><span class="appnum"><sup>2</sup></span></a>दण्डश्चैव प्रकीर्तितः&nbsp;॥ १३&nbsp;॥</span>
+         
+      </div>
+      <span class="pageinfo">[page 051]</span>
+      
+      
+      <div class="lg" type="">
+         <span class="line">अणवोऽष्टौ रजः प्रोक्तं तान्यष्टौ वाल उच्यचे&nbsp;।</span>
+         <span class="line">वालास्त्वष्टौ भवेल्लिक्षा यूका लिक्षाष्टकं<a href="" class="app" title="यूका त्वष्टगुणा <b&gt;Nक्षअ</b&gt;"><span class="appnum"><sup>1</sup></span></a> भवेत्&nbsp;॥ १४&nbsp;॥</span>
+         
+      </div>
+      
+      <div class="lg" type="">
+         <span class="line">यूकास्त्वष्टौ <a href="" class="app" title="यवः प्रोक्तो <b&gt;Nछअ</b&gt;"><span class="appnum"><sup>1</sup></span></a>यवो ज्ञेयो <a href="" class="app" title="अङ्गुलन्तु यवाष्टकम् <b&gt;प</b&gt;, ष्टावथाङ्गुलम् <b&gt;अ</b&gt;"><span class="appnum"><sup>2</sup></span></a>यवास्त्वष्टौ तथाङ्गुलम्&nbsp;।</span>
+         <span class="line"><a href="" class="app" title="अङ्गुलानि चतुर्विशद्धस्त इत्यभिधीयते <b&gt;प</b&gt;"><span class="appnum"><sup>3</sup></span></a>अङ्गुलानि तथा हस्तश्चतुर्विंशतिरुच्यते॥ १५&nbsp;॥</span>
+         
+      </div>
+      
+      <div class="lg" type="">
+         <span class="line">चतुर्हस्तो भवेद्दण्डो निर्दिष्टस्तु प्रमाणतः&nbsp;।</span>
+         <span class="line">अनेनैव <a href="" class="app" title="विधानेन <b&gt;प</b&gt;"><span class="appnum"><sup>1</sup></span></a>प्रमाणेन वक्ष्याम्येषां विनिर्णयम्&nbsp;॥ १६&nbsp;॥</span>
+         
+      </div>
+      <span class="pageinfo">[page 052]</span>
+      
+      
+      <div class="lg" type="">
+         <span class="line">चतुःषष्टिकरान्कुर्याद्दीर्घत्वेन तु मण्डपम्<a href="" class="app" title="चतुःषष्टिर्भवेद्धस्ता <b&gt;Nअ</b&gt;, दीर्घं वै नाट्यमण्डपम् <b&gt;प</b&gt;"><span class="appnum"><sup>1</sup></span></a>&nbsp;।</span>
+         <span class="line"><a href="" class="app" title="द्वात्रिंशेन तु <b&gt;क्षठम</b&gt;, द्वात्रिंशदेव विस्तारः <b&gt;डत</b&gt;, विस्तारस्त्रिंशदेवास्य <b&gt;Nछअ</b&gt;, द्वात्रिंशतैव विस्तारम् <b&gt;टम</b&gt;"><span class="appnum"><sup>2</sup></span></a>द्वात्रिंशतं च विस्तारान्मर्त्यानां यो भवेदिह<a href="" class="app" title="तु भवेदिह <b&gt;न</b&gt;, योजयेदिह <b&gt;क्षठ</b&gt;"><span class="appnum"><sup>3</sup></span></a>&nbsp;॥ १७&nbsp;॥</span>
+         
+      </div>
+      
+      <div class="lg" type="">
+         <span class="line">अत ऊर्ध्वं न कर्तव्यः कर्तृभिर्नाट्यमण्डपः&nbsp;।</span>
+         <span class="line">यस्मादव्यक्तभावं हि <a href="" class="app" title="तस्मान्नाट्यं <b&gt;क्षठम</b&gt;, तस्मिन्नाट्यं <b&gt;ट</b&gt;"><span class="appnum"><sup>1</sup></span></a>तत्र नाट्यं <a href="" class="app" title="व्रजेद्यतः <b&gt;ड</b&gt;, भवेदिति <b&gt;छम</b&gt;, भवेद्यतः <b&gt;N</b&gt;"><span class="appnum"><sup>2</sup></span></a>व्रजेदिति&nbsp;॥ १८&nbsp;॥</span>
+         
+      </div>
+      
+      <div class="lg" type="">
+         <span class="line">मण्डपे विप्रकृष्टे तु पाठ्यमुच्चारितस्वरम्&nbsp;।</span>
+         <span class="line"><a href="" class="app" title="अनभिव्यक्तवर्णत्वात् <b&gt;क्षजबमत</b&gt;, अनिस्सरणवर्णत्वात् <b&gt;अछन</b&gt;, अविस्मरण <b&gt;N</b&gt;"><span class="appnum"><sup>1</sup></span></a>अनिस्सरणधर्मत्वाद्विस्वरत्वं भृशं व्रजेत्<a href="" class="app" title="दुच्चरत्वं भृशं व्रजेत्"><span class="appnum"><sup>2</sup></span></a>&nbsp;॥ १९&nbsp;॥</span>
+         
+      </div>
+      
+      <span class="pageinfo">[page 053]</span>
+      
+      
+      <div class="lg" type="">
+         <span class="line"><a href="" class="app" title="यश्चाप्यास्यगतो रागो भावसृष्टिरसाश्रयः <b&gt;क्षठम</b&gt;, नानाभावरसाश्रयः <b&gt;त</b&gt;, &#xA;यश्चाप्यास्यगतो रासो भावदृष्टिरसाश्रयः <b&gt;अछ</b&gt;, यस्य लास्यगतो भावो नानादृष्टि <b&gt;ब</b&gt;, यश्चाप्यस्य गतः रागो रुचिदृष्टिरसाश्रयः <b&gt;N</b&gt;"><span class="appnum"><sup>1</sup></span></a>यश्चाप्यास्यगतो भावो नानादृष्टिसमन्वितः&nbsp;।</span>
+         <span class="line"><a href="" class="app" title="स च वेश्म <b&gt;Nछअ</b&gt;, वेश्मविप्रकृ <b&gt;बस</b&gt;"><span class="appnum"><sup>2</sup></span></a>स वेश्मनः प्रकृष्टत्वाद्व्रजेदव्यक्ततां <a href="" class="app" title="इति <b&gt;छअ</b&gt;, परम् <b&gt;क्षबम</b&gt;"><span class="appnum"><sup>3</sup></span></a>पराम्&nbsp;॥ २०&nbsp;॥</span>
+         
+      </div>
+      
+      <div class="lg" type="">
+         <span class="line">प्रेक्षागृहाणां सर्वेषां तस्मान्मध्यममिष्यते&nbsp;।</span>
+         <span class="line"><a href="" class="app" title="यस्मात् <b&gt;तब</b&gt;, अयं श्लोको वास्ति <b&gt;अ</b&gt;, वाद्यं च गेयं च सुखश्रव्यतरं भवेत् <b&gt;क्षम</b&gt;"><span class="appnum"><sup>1</sup></span></a>यावत्पाठ्यं च गेयं च तत्र श्रव्यतरं भवेत्<a href="" class="app" title="omits this <b&gt;N</b&gt;"><span class="appnum"><sup>2</sup></span></a>&nbsp;॥ २१&nbsp;॥</span>
+         
+      </div>
+      
+      <span class="pageinfo">[page 054]</span>
+      
+      
+      <div class="lg" type=""> 
+         <span class="line"><a href="" class="app" title="पद्यद्वयं <b&gt;ब</b&gt; पुस्तक एवास्ति">*</a>(प्रेक्षागृहाणां सर्वेषां त्रिप्रकारो विधिः स्मृतः&nbsp;।</span>
+         <span class="line">विकृष्टश्चतुरस्रश्च त्र्यस्रश्चैव प्रयोक्तृभिः&nbsp;॥</span>
+         <span class="line">कनीयस्तु स्मृतं त्र्यस्रं चतुरस्रं च मध्यमम्&nbsp;।</span>
+         <span class="line">ज्येष्ठं विकृष्टं विज्ञेयं नाट्यवेश्म प्रयोक्तृभिः&nbsp;॥)</span>
+         
+      </div>
+      
+      <div class="lg" type="">
+         <span class="line">देवानां मानसी सृष्टिर्गृहेषूपवनेषु च&nbsp;।</span>
+         <span class="line"><a href="" class="app" title="यत्र भावाद्विनिष्पन्नाः <b&gt;क्षछम</b&gt;, यत्नभावा <b&gt;ब</b&gt;"><span class="appnum"><sup>1</sup></span></a>यत्नभावाभिनिष्पन्नाः सर्वे भावा हि<a href="" class="app" title="स्तु <b&gt;क्षचम</b&gt;"><span class="appnum"><sup>2</sup></span></a> मानुषाः&nbsp;॥ २२&nbsp;॥</span>
+         
+      </div>
+      
+      <div class="lg" type="">
+         <span class="line"><a href="" class="app" title="<b&gt;N</b&gt; <b&gt;अ</b&gt; इदमर्ध नास्ति">*</a>तस्माद्देवकृतैर्भावैर्न विस्पर्धेत मानुषः&nbsp;।</span>
+         <span class="line"><a href="" class="app" title="इदमपि नास्ति <b&gt;N</b&gt;"><span class="appnum"><sup>1</sup></span></a>मानुषस्य तु गेहस्य सम्प्रवक्ष्यामि लक्षणम्&nbsp;॥ २३&nbsp;॥</span>
+         
+      </div>
+      
+      <div class="lg" type="">
+         <span class="line"><a href="" class="app" title="भूमिभागं परीक्षेत प्रथमं नाट्यवेश्मनः <b&gt;प</b&gt;"><span class="appnum"><sup>1</sup></span></a>भूमेर्विभागं <a href="" class="app" title="प्रथमम् <b&gt;डअ</b&gt;"><span class="appnum"><sup>2</sup></span></a>पूर्वं तु परीक्षेत <a href="" class="app" title="विचक्षणः <b&gt;क्षठम</b&gt;"><span class="appnum"><sup>3</sup></span></a>प्रयोजकः&nbsp;।</span>
+         <span class="line">ततो <a href="" class="app" title="वास्तुप्रमाणं च <b&gt;Nठअम</b&gt;"><span class="appnum"><sup>4</sup></span></a>वास्तु प्रमाणेन प्रारभेत <a href="" class="app" title="यदृच्छया <b&gt;ठ</b&gt;"><span class="appnum"><sup>5</sup></span></a>शुभेच्छया&nbsp;॥ २४&nbsp;॥</span>
+         
+      </div>
+      <span class="pageinfo">[page 055]</span>
+      
+      
+      <div class="lg" type="">
+         <span class="line">समा स्थिरा <a href="" class="app" title="प्रक <b&gt;म</b&gt;, ह्यक <b&gt;त</b&gt;, सुक <b&gt;अछ</b&gt;, च <b&gt;N</b&gt;"><span class="appnum"><sup>1</sup></span></a>तु कठिना कृष्णा गौरी च या भवेत्&nbsp;।</span>
+         <span class="line">भूमिस्तत्रैव<a href="" class="app" title="स्तत्र तु <b&gt;क्षठम</b&gt;"><span class="appnum"><sup>2</sup></span></a> कर्तव्यः कर्तृभिर्नाट्यमण्डपः&nbsp;॥ २५&nbsp;॥</span>
+         
+      </div>
+      
+      <div class="lg" type="">
+         <span class="line">प्रथमं शोधनं कृत्वा लाङ्गलेन <a href="" class="app" title="समुत्क्षिपेत् <b&gt;प</b&gt;, समुत्तुषेत् <b&gt;त</b&gt;"><span class="appnum"><sup>1</sup></span></a>समुत्कृषेत्&nbsp;।</span>
+         <span class="line">अस्थिकीलकपालानि<a href="" class="app" title="कपालादि <b&gt;ड</b&gt;"><span class="appnum"><sup>2</sup></span></a> तृणगुल्मांश्च शोधयेत्&nbsp;॥ २६&nbsp;॥</span>
+         
+      </div>
+      
+      <div class="lg" type="">
+         <span class="line">शोधयित्वा वसुमतीं प्रमाणं निर्दिशेत्ततः&nbsp;।</span>
+         <span class="line"><a href="" class="app" title="इदं पद्यं <b&gt;क्ष</b&gt; <b&gt;म</b&gt; <b&gt;त</b&gt; पुस्तकेष्वेव दृश्यते">*</a><a href="" class="app" title="<b&gt;N</b&gt; omits d.">*</a>(त्रीण्युत्तराणि सौम्यं च विशाखापि च रेवती&nbsp;॥</span>
+         <span class="line">हस्ततिष्यानुराधाश्च प्रशस्ता नाट्यकर्मणि&nbsp;।)</span>
+         <span class="line">पुष्यनक्षत्रयोगेन<a href="" class="app" title="योगे तु <b&gt;ठम</b&gt;"><span class="appnum"><sup>1</sup></span></a> शुक्लं सूत्रं <a href="" class="app" title="निधापयेत् <b&gt;न</b&gt;"><span class="appnum"><sup>2</sup></span></a>प्रसारयेत्&nbsp;॥ २७&nbsp;॥</span>
+         
+      </div>
+      
+      <div class="lg" type="">
+         <span class="line">कार्यासं <a href="" class="app" title="बादरं वापि वाल्कलं मौञ्जमेव वा <b&gt;क्षठम</b&gt;, वाल्कलं चापि बाल्वजं मौञ्जमेव च <b&gt;न</b&gt;, शाणजं वापि वाल्कलं मौञ्जमेव च <b&gt;अछ</b&gt;"><span class="appnum"><sup>1</sup></span></a>बाल्बजं वापि मौञ्जं वाल्कलमेव च&nbsp;।</span>
+         <span class="line">सूत्रं <a href="" class="app" title="बुधेन <b&gt;प</b&gt;"><span class="appnum"><sup>2</sup></span></a>बुधैस्तु कर्तव्यं <a href="" class="app" title="छेदो यस्य <b&gt;गतब</b&gt;"><span class="appnum"><sup>3</sup></span></a>यस्य च्छेदो न विद्यते&nbsp;॥ २८&nbsp;॥</span>
+         
+      </div>
+      
+      <span class="pageinfo">[page 056]</span>
+      
+      
+      <div class="lg" type="">
+         <span class="line">अर्धच्छिन्ने भवेत्सूत्रे स्वामिनो मरणं ध्रुवम्&nbsp;।</span>
+         <span class="line"><a href="" class="app" title="त्रिभागे <b&gt;ड</b&gt;"><span class="appnum"><sup>1</sup></span></a>त्रिभागच्छिन्नया रज्ज्वा <a href="" class="app" title="राजकोपोऽभिधीयते <b&gt;Nन</b&gt;, राष्ट्रक्षोभो <b&gt;ज</b&gt;, राष्ट्रं कोशश्च&#xA;हीयते <b&gt;प</b&gt;"><span class="appnum"><sup>2</sup></span></a>राष्ट्रकोपो विधीयते&nbsp;॥ २९&nbsp;॥</span>
+         
+      </div>
+      
+      <div class="lg" type="">
+         <span class="line">छिन्नायां तु चतुर्भागे प्रयोक्तुर्नाश उच्यते&nbsp;।</span>
+         <span class="line"><a href="" class="app" title="हस्तप्र <b&gt;क्षठमत</b&gt;, हस्तप्रकृष्टया चापि <b&gt;ज</b&gt;"><span class="appnum"><sup>1</sup></span></a>हस्तात्प्रभ्रष्टया वापि <a href="" class="app" title="कच्चित् <b&gt;न</b&gt;, तस्मात्पापचयो <b&gt;प</b&gt;"><span class="appnum"><sup>2</sup></span></a>कश्चित्त्वपचयो भवेत्&nbsp;॥ ३०&nbsp;॥</span>
+         
+      </div>
+      
+      <div class="lg" type="">
+         <span class="line"><a href="" class="app" title="हस्ता <b&gt;छ</b&gt;"><span class="appnum"><sup>1</sup></span></a>तस्मान्नित्यं प्रयत्नेन <a href="" class="app" title="रज्ज्वा ग्रहण"><span class="appnum"><sup>2</sup></span></a>रज्जुग्रहणमिष्यते&nbsp;।</span>
+         <span class="line">कार्यं चैव <a href="" class="app" title="विशेषेण <b&gt;Nन</b&gt;"><span class="appnum"><sup>3</sup></span></a>प्रयत्नेन मानं नाट्यगृहस्य तु&nbsp;॥ ३१&nbsp;॥</span>
+         
+      </div>
+      
+      <div class="lg" type="">
+         <span class="line">मुहूर्तेनानुकूलेन तिथ्या<a href="" class="app" title="तथा <b&gt;न</b&gt;"><span class="appnum"><sup>1</sup></span></a> सुकरणेन च&nbsp;।</span>
+         <span class="line">ब्राह्मणांस्तर्पयित्वा तु<a href="" class="app" title="च <b&gt;क्ष</b&gt;"><span class="appnum"><sup>2</sup></span></a> पुण्याहं वाचयेत्ततः<a href="" class="app" title="ब्राह्मणांस्तर्पयित्वा तु ततः सूत्रं प्रसारयेत्&nbsp;। इति अर्धमेव पठ्यते <b&gt;Nअब</b&gt;"><span class="appnum"><sup>3</sup></span></a>&nbsp;॥ ३२&nbsp;॥</span>
+         
+      </div> 
+      
+      <div class="lg" type="">
+         <span class="line"><a href="" class="app" title="&gt;omits this line <b&gt;N</b&gt;"><span class="appnum"><sup>1</sup></span></a>शान्तितोयं ततो दत्त्वा ततः सूत्रं प्रसारयेत्&nbsp;।</span>
+         <span class="line">चतुष्षष्टिकरान्कृत्वा <a href="" class="app" title="द्विधाभूतान् पुनस्ततः <b&gt;Nब</b&gt;, भूतान् पुनःपुनः <b&gt;अ</b&gt;"><span class="appnum"><sup>2</sup></span></a>द्विधा कुर्यात्पुनश्च तान्&nbsp;॥ ३३&nbsp;॥</span>
+         
+      </div>
+      
+      <div class="lg" type="">
+         <span class="line">पृष्ठतो यो भवेद्भागो <a href="" class="app" title="द्विधा भूतो भवेच्च सः <b&gt;क्षतठम</b&gt;"><span class="appnum"><sup>1</sup></span></a>द्विधाभूतस्य तस्य तु&nbsp;।</span>
+         <span class="line"><a href="" class="app" title="तस्याप्यर्धार्धभागेन <b&gt;नत</b&gt;, तस्यार्धेन विभागेन <b&gt;क्षपम</b&gt;, &#xA;तस्याप्यर्धविभागे तु <b&gt;Nछअ</b&gt;"><span class="appnum"><sup>2</sup></span></a>सममर्धविभागेन रङ्गशीर्ष <a href="" class="app" title="प्रयोजयेत् <b&gt;क्षपम</b&gt;"><span class="appnum"><sup>3</sup></span></a>प्रकल्पयेत्&nbsp;॥ ३४&nbsp;॥</span>
+         
+      </div>
+      <span class="pageinfo">[page 057]</span>
+      
+      <div class="lg" type="">
+         <span class="line"><a href="" class="app" title="पश्चिमे तु पुनर्भागे <b&gt;Nअम</b&gt;"><span class="appnum"><sup>1</sup></span></a>पश्चिमे च विभागेऽथ नेपथ्यगृहमादिशेत्&nbsp;।</span>
+         <span class="line"><a href="" class="app" title="विकल्प्य <b&gt;ग</b&gt;"><span class="appnum"><sup>2</sup></span></a>विभज्य भागान्विधिवद्यथावदनुपूर्वशः&nbsp;॥ ३५&nbsp;॥</span>
+         
+      </div>
+      
+      <div class="lg" type="">
+         <span class="line">शुभे नक्षत्रयोगे च मण्डपस्य निवेशनम्&nbsp;।</span>
+         <span class="line"><a href="" class="app" title="सार्ध दुन्दुभिनिर्घोषैर्मृदङ्गपटहादिभिः <b&gt;डअ</b&gt;"><span class="appnum"><sup>1</sup></span></a>शङ्खदुन्दुभिनिर्घोषैर्मृदङ्गपणवादिभिः&nbsp;॥ ३६&nbsp;॥</span>
+         
+      </div>
+      
+      <div class="lg" type="">
+         <span class="line"><a href="" class="app" title="सर्वतूर्यनिनादैश्च <b&gt;क्षठम</b&gt;, सर्वातोद्यनिनादैश्च <b&gt;न</b&gt;, भेरीतूर्यनिनादैश्च गायनीगायनैर्बहु <b&gt;छ</b&gt;, सर्वातोद्यैर्निनादैस्तु <b&gt;ज</b&gt;"><span class="appnum"><sup>1</sup></span></a>सर्वातोद्यैः प्रणुदितैः स्थापनं कार्यमेव तु<a href="" class="app" title="च <b&gt;N</b&gt;"><span class="appnum"><sup>2</sup></span></a>&nbsp;।</span>
+         <span class="line">उत्सार्याणि त्वनिष्टानि <a href="" class="app" title="मण्डपाश्रयिणस्तथा <b&gt;अ</b&gt;, पाखण्डाश्रयणास्तथा <b&gt;N</b&gt;"><span class="appnum"><sup>3</sup></span></a>पाषण्ड्याश्रमिणस्तथा&nbsp;॥ ३७&nbsp;॥</span>
+         
+      </div>
+      
+      <div class="lg" type="">
+         <span class="line">काषायवसनाश्चैव विकलाश्चैव ये नराः&nbsp;।</span>
+         <span class="line">निशायां च बलिः कार्यो नानाभोजनसंयुतः<a href="" class="app" title="संश्रयः <b&gt;नबत</b&gt;, सञ्चयः <b&gt;अ</b&gt;, नानाव्यञ्जनसंश्रयः <b&gt;N</b&gt;"><span class="appnum"><sup>1</sup></span></a>&nbsp;॥ ३८&nbsp;॥</span>
+         
+      </div>
+      
+      <div class="lg" type="">
+         <span class="line">गन्धपुष्पफलोपेतो दिशो दश समाश्रितः&nbsp;।</span>
+         <span class="line">पूर्वेण शुक्लान्नयुतो <a href="" class="app" title="नीलश्चैव तु दक्षिणः <b&gt;चतब</b&gt;, निधानो दक्षिणेन च <b&gt;क्षठम</b&gt;, नीलो याम्येन चैव हि <b&gt;छअ</b&gt;, नीलः सव्येन चैव हि <b&gt;N</b&gt;"><span class="appnum"><sup>1</sup></span></a>नीलान्नो दक्षिणेन च&nbsp;॥ ३९&nbsp;॥</span>
+         
+      </div>
+      
+      <div class="lg" type="">
+         <span class="line">पश्चिमेन बलिः पीतो रक्तश्चैवोत्तरेण तु&nbsp;।</span>
+         <span class="line"><a href="" class="app" title="यस्यां यच्चाधिदैवं तु दिशि सम्परिकीर्तितम् <b&gt;Nक्षठम</b&gt;, यस्या यथाधिदेवस्तु दिगीशः परिकीर्तितः <b&gt;अछ</b&gt;"><span class="appnum"><sup>1</sup></span></a>यादृशं दिशि यस्यां तु दैवतं परिकल्पितम्&nbsp;॥ ४०&nbsp;॥</span>
+         
+      </div>
+      
+      <div class="lg" type="">
+         <span class="line">तादृशस्तत्र दातव्यो बलिर्मन्त्रपुरस्कृतः&nbsp;।</span>
+         <span class="line">स्थापने ब्राह्मणेभ्यश्च दातव्यं घृतपायसम्&nbsp;॥ ४१&nbsp;॥</span>
+         
+      </div>
+      <span class="pageinfo">[page 058]</span>
+      
+      <div class="lg" type="">
+         <span class="line">मधुपर्कस्तथा राज्ञे कर्तृभ्यश्च गुडौदनम्&nbsp;।</span>
+         <span class="line">नक्षत्रेण तु कर्तव्यं मूलेन स्थापनं बुधैः&nbsp;॥ ४२&nbsp;॥</span>
+         
+      </div>
+      
+      <div class="lg" type="">
+         <span class="line">मुहुर्तेनानुकूलेन <a href="" class="app" title="तिथ्यानुकरणेन च <b&gt;क्षम</b&gt;, तिष्यानुकरणेन च <b&gt;डम</b&gt;"><span class="appnum"><sup>1</sup></span></a>तिथ्या सुकरणेन च&nbsp;।</span>
+         <span class="line">एवं तु स्थापनं कृत्वा भित्तिकर्म प्रयोजयेत्&nbsp;॥ ४३&nbsp;॥</span>
+         
+      </div>
+      
+      <div class="lg" type="">
+         <span class="line">भित्तिकर्मणि निर्वृत्ते स्तम्भानां स्थापनं ततः&nbsp;।</span>
+         <span class="line">तिथिनक्षत्रयोगेन शुभेन करणेन च&nbsp;॥ ४४&nbsp;॥</span>
+         
+      </div>
+      
+      <div class="lg" type="">
+         <span class="line"><a href="" class="app" title="एतत्पद्यस्थाने ‘आचार्येण सुयुक्तेन कार्य सूर्योदये शुभे&nbsp;।’ इति पठ्यते <b&gt;ब</b&gt;"><span class="appnum"><sup>1</sup></span></a>स्तम्भानां स्थापनं कार्य रोहिण्या श्रवणेन वा&nbsp;।</span>
+         <span class="line">आचार्येण सुयुक्तेन त्रिरात्रोपोषितेन च&nbsp;॥ ४५&nbsp;॥</span>
+         
+      </div>
+      
+      <div class="lg" type="">
+         <span class="line">स्तम्भानां स्थापनं <a href="" class="app" title="चैव कार्य सूर्योदये बुधैः <b&gt;न</b&gt;, चैव कार्य सूर्योदये शुभे&nbsp;। चन्दनं च भवेद्ब्राह्मं क्षात्रं खादिरमेव च&nbsp;। धावाख्यं वेश्यवर्ण स्याच्छत्रं&#xA;सर्वद्रुमैः स्मृतम् <b&gt;ख</b&gt;"><span class="appnum"><sup>1</sup></span></a>कार्य प्राप्ते सूर्योदये शुभे&nbsp;।</span>
+         <span class="line">प्रथमे ब्राह्मणस्तम्भे सर्पिस्सर्षपसंस्कृतः<a href="" class="app" title="संस्कृते <b&gt;क्षमब</b&gt;"><span class="appnum"><sup>2</sup></span></a>&nbsp;॥ ४६&nbsp;॥</span>
+         
+      </div>
+      
+      <div class="lg" type="">
+         <span class="line">सर्वशुक्लो विधिः कार्यो दद्यात्पायसमेव च&nbsp;।</span>
+         <span class="line">ततश्च क्षत्रियस्तम्भे वस्त्रमाल्यानुलेपनम्&nbsp;॥ ४७&nbsp;॥</span>
+         
+      </div>
+      
+      <div class="lg" type="">
+         <span class="line">सर्व रक्तं प्रदातव्यं द्विजेभ्यश्च गुडौदनम्&nbsp;।</span>
+         <span class="line">वैश्यस्तम्भे विधिः कार्यो दिग्भागे पश्चिमोत्तरे&nbsp;॥ ४८&nbsp;॥</span>
+         
+      </div>
+      
+      <div class="lg" type="">
+         <span class="line"><a href="" class="app" title="पीतं सर्वम् <b&gt;N</b&gt;"><span class="appnum"><sup>1</sup></span></a>सर्व पीतं प्रदातव्यं द्विजेभ्यश्च <a href="" class="app" title="घृताशनम् <b&gt;नबत</b&gt;"><span class="appnum"><sup>2</sup></span></a>घृतौदनम्&nbsp;।</span>
+         <span class="line">शूद्रस्तम्भे विधिः कार्यः सम्यक्पूर्वोत्तराश्रये&nbsp;॥ ४९&nbsp;॥</span>
+         
+      </div>
+      <span class="pageinfo">[page 059]</span>
+      
+      <div class="lg" type="">
+         <span class="line">नीलप्रायं <a href="" class="app" title="प्रदातव्यम् <b&gt;क्षठमत</b&gt;"><span class="appnum"><sup>1</sup></span></a>प्रयत्नेन <a href="" class="app" title="कृसरा च <b&gt;पब</b&gt;, कृशरा <b&gt;च</b&gt;"><span class="appnum"><sup>2</sup></span></a>कृसरं च द्विजाशनम्&nbsp;।</span>
+         <span class="line"><a href="" class="app" title="पूर्वे तु <b&gt;Nक्षचम</b&gt;"><span class="appnum"><sup>3</sup></span></a>पूर्वोक्तब्राह्मणस्तम्भे शुक्लमाल्यानुलेपने<a href="" class="app" title="लेपिते <b&gt;ड</b&gt;, लेपनम् <b&gt;त</b&gt;"><span class="appnum"><sup>4</sup></span></a>&nbsp;॥ ५०&nbsp;॥</span>
+         
+      </div>
+      
+      <div class="lg" type="">
+         <span class="line"><a href="" class="app" title="omits this <b&gt;N</b&gt;"><span class="appnum"><sup>1</sup></span></a>निक्षिपेत्कनकं मूले <a href="" class="app" title="कण्ठाभर <b&gt;म</b&gt;"><span class="appnum"><sup>2</sup></span></a>कर्णाभरणसंश्रयम्&nbsp;।</span>
+         <span class="line">ताम्रं <a href="" class="app" title="वापि <b&gt;न</b&gt;, चापि <b&gt;क्षम</b&gt;, चैव <b&gt;त</b&gt;"><span class="appnum"><sup>3</sup></span></a> चाधः प्रदातव्यं स्तम्भे क्षत्रियसंज्ञके&nbsp;॥ ५१&nbsp;॥</span>
+         
+      </div>
+      
+      <div class="lg" type="">
+         <span class="line"><a href="" class="app" title="वैश्यस्य स्तम्भमूले <b&gt;चब</b&gt;"><span class="appnum"><sup>1</sup></span></a>वैश्यस्तम्भस्य मूले तु रजतं सम्प्रदाफ्येत्&nbsp;।</span>
+         <span class="line"><a href="" class="app" title="शूद्रस्य स्तम्भमूले <b&gt;कब</b&gt;"><span class="appnum"><sup>2</sup></span></a>शूद्रस्तम्भस्य मूले तु दद्यादायसमेव च<a href="" class="app" title="तु <b&gt;ड</b&gt;"><span class="appnum"><sup>3</sup></span></a>&nbsp;॥ ५२&nbsp;॥</span>
+         
+      </div>
+      
+      <div class="lg" type="">
+         <span class="line"><a href="" class="app" title="शेषेष्वेव तु निक्षेप्यम् <b&gt;नब</b&gt;, शेषेष्वपि तु <b&gt;न</b&gt;, शेषेष्वेव तु दातव्यं <b&gt;N</b&gt;"><span class="appnum"><sup>1</sup></span></a>सर्वेष्वेव तु निक्षेप्यं <a href="" class="app" title="स्तम्भमूले तु <b&gt;डब</b&gt;"><span class="appnum"><sup>2</sup></span></a>स्तम्भमूलेषु काञ्चनम्&nbsp;।</span>
+         <span class="line">स्वस्तिपुण्याहघोषेण जयशब्देन चैव हि&nbsp;॥ ५३&nbsp;॥</span>
+         
+      </div>
+      
+      <div class="lg" type="">
+         <span class="line">स्तम्भानां <a href="" class="app" title="स्थापनं कुर्यात् <b&gt;ड</b&gt;"><span class="appnum"><sup>1</sup></span></a>स्थापनं कार्य <a href="" class="app" title="वर्ग <b&gt;ड</b&gt;, पर्ण <b&gt;ठक्ष</b&gt;, वर्ण <b&gt;क्षम</b&gt;, वनमालासमन्वितम् <b&gt;त</b&gt;"><span class="appnum"><sup>2</sup></span></a> पुष्पमालापुरस्कृतम्&nbsp;।</span>
+         <span class="line"><a href="" class="app" title="रत्नप्रदानैर्गोदानैः <b&gt;न</b&gt;"><span class="appnum"><sup>3</sup></span></a>रत्नदानैः सगोदानैर्वस्त्रदानैरनल्पकैः<a href="" class="app" title="स्तथैव च <b&gt;Nन</b&gt;"><span class="appnum"><sup>4</sup></span></a>&nbsp;॥ ५४&nbsp;॥</span>
+         
+      </div>
+      
+      <div class="lg" type="">
+         <span class="line">ब्राह्मणांस्तर्पयित्वा<a href="" class="app" title="स्थापयित्वा <b&gt;क्ष</b&gt;"><span class="appnum"><sup>1</sup></span></a> तु स्तम्भानुत्थापयेत्ततः&nbsp;।</span>
+         <span class="line">अचलं <a href="" class="app" title="चाप्यकम्प्यञ्च <b&gt;च</b&gt;"><span class="appnum"><sup>2</sup></span></a>चाप्यकम्पञ्च तथैवावलितं<a href="" class="app" title="तथा चलितमेव तु <b&gt;Nन</b&gt;, तथैवाचलितं पुनः <b&gt;क्षम</b&gt;, तथैवास्खलितम् <b&gt;ड</b&gt;"><span class="appnum"><sup>3</sup></span></a> पुनः&nbsp;॥ ५५&nbsp;॥</span>
+         
+      </div>
+      
+      <div class="lg" type="">
+         <span class="line"><a href="" class="app" title="स्तम्भानुत्थापयेत् <b&gt;Nछब</b&gt;, स्तम्भमुत्थापयेत् <b&gt;डत</b&gt;"><span class="appnum"><sup>1</sup></span></a>स्तम्भस्योत्थापने सम्यग्दोषा ह्येते प्रकीर्तिताः&nbsp;।</span>
+         <span class="line"><a href="" class="app" title="अदृष्टि <b&gt;छब</b&gt;"><span class="appnum"><sup>2</sup></span></a>अवृष्टिरुक्ता चलने वलने <a href="" class="app" title="मृतितो"><span class="appnum"><sup>3</sup></span></a>मृत्युतो भयम्&nbsp;॥ ५६&nbsp;॥</span>
+         
+      </div>
+      <span class="pageinfo">[page 060]</span>
+      
+      <div class="lg" type="">
+         <span class="line">कम्पने परचक्रात्तु<a href="" class="app" title="परचक्रेभ्यः <b&gt;त</b&gt;, न कम्पिते परराष्ट्रेभ्यः <b&gt;N</b&gt;"><span class="appnum"><sup>1</sup></span></a> भयं <a href="" class="app" title="वदति <b&gt;ठम</b&gt;"><span class="appnum"><sup>2</sup></span></a>भवति दारुणम्&nbsp;।</span>
+         <span class="line">दोषैरेतैर्विहीनं तु स्तम्भमुत्थापयेच्छिवम्<a href="" class="app" title="च्छुभम् <b&gt;Nडबत</b&gt;"><span class="appnum"><sup>3</sup></span></a>&nbsp;॥ ५७&nbsp;॥</span>
+         
+      </div>
+      
+      <div class="lg" type="">
+         <span class="line"><a href="" class="app" title="पवित्रम् <b&gt;Nतबम</b&gt;"><span class="appnum"><sup>1</sup></span></a>पवित्रे ब्राह्मणस्तम्भे दातव्या दक्षिणा च गौः&nbsp;।</span>
+         <span class="line">शेषाणां <a href="" class="app" title="स्थापने <b&gt;डबत</b&gt;"><span class="appnum"><sup>2</sup></span></a>भोजनं कार्य स्थापने<a href="" class="app" title="भोजनम् <b&gt;डबत</b&gt;"><span class="appnum"><sup>3</sup></span></a> कर्तृसंश्रयम्&nbsp;॥ ५८&nbsp;॥</span>
+         
+      </div>
+      
+      <div class="lg" type="">
+         <span class="line"><a href="" class="app" title="मन्त्रपूर्व च <b&gt;क्षठम</b&gt;"><span class="appnum"><sup>1</sup></span></a>मन्त्रपूतं च तद्देयं नाट्याचार्येण धीमता&nbsp;।</span>
+         <span class="line">पुरोहितं नृपं चैव भोजयेन्मधुपायसैः<a href="" class="app" title="पायसम् <b&gt;क्षठत</b&gt;, दथ पायसम् <b&gt;म</b&gt;"><span class="appnum"><sup>2</sup></span></a>&nbsp;॥ ५९&nbsp;॥</span>
+         
+      </div>
+      
+      <div class="lg" type="">
+         <span class="line">कर्तॄनपि तथा सर्वान्कृसरां लवणोत्तराम्<a href="" class="app" title="त्तरम् <b&gt;चम</b&gt;, कृसरान् लवणोत्तरान् <b&gt;त</b&gt;"><span class="appnum"><sup>1</sup></span></a>&nbsp;।</span>
+         <span class="line">सर्वमेवं विधिं कृत्वा सर्वातोद्यैः प्रवादितैः&nbsp;॥ ६०&nbsp;॥</span>
+         
+      </div>
+      
+      <div class="lg" type="">
+         <span class="line">अभिमन्त्र्य यथान्यायं <a href="" class="app" title="स्तम्भमुत्थापयेत् <b&gt;चम</b&gt;"><span class="appnum"><sup>1</sup></span></a>स्तम्भानुत्थापयेच्छुचिः&nbsp;।</span>
+         <span class="line">'यथाऽचलो गिरिर्मेरुर्हिमवांश्च <a href="" class="app" title="यथाचलः <b&gt;नतब</b&gt;"><span class="appnum"><sup>2</sup></span></a>महाबलः&nbsp;॥ ६१&nbsp;॥</span>
+         
+      </div>
+      
+      <div class="lg" type="">
+         <span class="line">जयावहो नरेन्द्रस्य <a href="" class="app" title="यथा त्वमचलो वह <b&gt;म</b&gt;, यथा <b&gt;त</b&gt;"><span class="appnum"><sup>1</sup></span></a>तथा त्वमचलो भव&nbsp;।'</span>
+         <span class="line">स्तम्भद्वारं च भित्तिं च नेपथ्यगृहमेव च&nbsp;॥ ६२&nbsp;॥</span>
+         
+      </div>
+      
+      <div class="lg" type="">
+         <span class="line">एवमुत्थापयेत्तज्ज्ञो<a href="" class="app" title="त्प्राज्ञो <b&gt;ब</b&gt;"><span class="appnum"><sup>1</sup></span></a> विधिदृष्टेन कर्मणा&nbsp;।</span>
+         <span class="line">रङ्गपीठस्य <a href="" class="app" title="पश्चात्तु <b&gt;क्षठम</b&gt;"><span class="appnum"><sup>2</sup></span></a>पार्श्वे तु कर्तव्या मत्तवारणी&nbsp;॥ ६३&nbsp;॥</span>
+         
+      </div>
+      
+      <span class="pageinfo">[page 061]</span>
+      
+      
+      <div class="lg" type="">
+         <span class="line">चतुःस्तम्भसमायुक्ता रङ्गपीठप्रमाणतः&nbsp;।</span>
+         <span class="line">अध्यर्धहस्तोत्सेधेन<a href="" class="app" title="हस्ता चोत्सेधा <b&gt;न</b&gt;"><span class="appnum"><sup>1</sup></span></a> कर्तव्या मत्तवारणी&nbsp;॥ ६४&nbsp;॥</span>
+         
+      </div>
+      
+      <div class="lg" type="">
+         <span class="line">ऊत्सेधेन <a href="" class="app" title="तया तुल्यम् <b&gt;चबभ</b&gt;"><span class="appnum"><sup>1</sup></span></a>तयोस्तुल्यं कर्तव्यं रङ्गमण्डपम्&nbsp;।</span>
+         <span class="line">तस्यां माल्यं च धूपं च गन्धं वस्त्रं तथैव च&nbsp;॥ ६५&nbsp;॥</span>
+         
+      </div>
+      
+      <div class="lg" type="">
+         <span class="line"><a href="" class="app" title="नानावर्णं प्रधातव्यं <b&gt;N</b&gt;"><span class="appnum"><sup>1</sup></span></a>नानावर्णानि देयानि तथा भूतप्रियो बलिः&nbsp;।</span>
+         <span class="line"><a href="" class="app" title="आसनं चात्र <b&gt;न</b&gt;, पायसं चात्र <b&gt;क्षठम</b&gt;"><span class="appnum"><sup>2</sup></span></a>आयसं तत्र दातव्यं स्तम्भानां कुशलैरधः&nbsp;॥ ६६&nbsp;॥</span>
+         
+      </div>
+      
+      <div class="lg" type="">
+         <span class="line"><a href="" class="app" title="भोजनं कृशरा <b&gt;च</b&gt;"><span class="appnum"><sup>1</sup></span></a>भोजने कृसराश्वैव <a href="" class="app" title="दातव्या <b&gt;चतब</b&gt;"><span class="appnum"><sup>2</sup></span></a>दातव्यं ब्राह्मणाशनम्<a href="" class="app" title="ब्राह्मणाय च"><span class="appnum"><sup>3</sup></span></a>&nbsp;।</span>
+         <span class="line">एवं <a href="" class="app" title="विधैः <b&gt;न</b&gt;"><span class="appnum"><sup>4</sup></span></a>विधिपुरस्कारैः कर्तव्या मत्तवारणी&nbsp;॥ ६७&nbsp;॥</span>
+         
+      </div>
+      
+      <div class="lg" type="">
+         <span class="line">रङ्गपीठं ततः कार्यं विधिदृष्टेन कर्मणा&nbsp;।</span>
+         <span class="line">रङ्गशीर्षन्तु कर्तव्यं षड्दारुकसमन्वितम्<a href="" class="app" title="मसंवृतम् <b&gt;न</b&gt;"><span class="appnum"><sup>1</sup></span></a>&nbsp;॥ ६८&nbsp;॥</span>
+         
+      </div>
+      <span class="pageinfo">[page 062]</span>
+      
+      
+      <div class="lg" type="">
+         <span class="line">कार्यं द्वारद्वयं चात्र नेपथ्यगृहकस्य <a href="" class="app" title="नेपथ्यस्य गृहस्य च <b&gt;ज</b&gt;"><span class="appnum"><sup>1</sup></span></a>तु&nbsp;।</span>
+         <span class="line">पूरणे मृत्तिका चात्र कृष्णा देया प्रयत्नतः&nbsp;॥ ६९&nbsp;॥</span>
+         
+      </div>
+      
+      <div class="lg" type="">
+         <span class="line"><a href="" class="app" title="लाङ्गले च <b&gt;प</b&gt;"><span class="appnum"><sup>1</sup></span></a>लाङ्गलेन समुत्कृष्य निर्लोष्टतृणशर्करम्<a href="" class="app" title="शर्कराम् <b&gt;Nठ</b&gt;, शर्करा <b&gt;म</b&gt;"><span class="appnum"><sup>2</sup></span></a> &nbsp;।</span>
+         <span class="line">लाङ्गले शुद्धवर्णो<a href="" class="app" title="वर्णे <b&gt;जब</b&gt;"><span class="appnum"><sup>3</sup></span></a> तु धुर्यौ योज्यौ प्रयत्नतः&nbsp;॥ ७०&nbsp;॥</span>
+         
+      </div>
+      
+      <div class="lg" type="">
+         <span class="line">कर्तारः पुरुषाश्चात्र<a href="" class="app" title="पुरुषाश्चैव <b&gt;Nन</b&gt;, पुरुषास्तस्त्र <b&gt;ठम</b&gt;"><span class="appnum"><sup>1</sup></span></a> र्ये<a href="" class="app" title="शब्द <b&gt;चब</b&gt;"><span class="appnum"><sup>2</sup></span></a> ऽङ्गदोषविवर्जिताः&nbsp;।</span>
+         <span class="line"><a href="" class="app" title="अहीनाश्चैव <b&gt;ठ</b&gt;"><span class="appnum"><sup>3</sup></span></a>अहीनाङ्गैश्च वोढव्या मृत्तिका पिटकैर्नवेः<a href="" class="app" title="पीवरैर्नरैः&nbsp;। पिटकैर्नरैः <b&gt;गब</b&gt;"><span class="appnum"><sup>4</sup></span></a>&nbsp;॥ ७१&nbsp;॥</span>
+         
+      </div>
+      
+      <div class="lg" type="">
+         <span class="line"><a href="" class="app" title="एवंविधैश्च कर्तव्यम् <b&gt;Nठमत</b&gt;"><span class="appnum"><sup>1</sup></span></a>एवंविधैः प्रकर्तव्यं रङ्गशीर्षं प्रयत्नतः&nbsp;।</span>
+         <span class="line">कूर्मपृष्ठं न कर्तव्यं मत्स्यपृष्ठं तथैव च&nbsp;॥ ७२&nbsp;॥</span>
+         
+      </div>
+      
+      <div class="lg" type="">
+         <span class="line">शुद्धादर्शतलाकारं<a href="" class="app" title="तलप्रख्यम् <b&gt;Nचत</b&gt;"><span class="appnum"><sup>1</sup></span></a> रङ्गशीर्ष<a href="" class="app" title="रङ्गपीठम् <b&gt;नबत</b&gt;"><span class="appnum"><sup>2</sup></span></a> प्रशस्यते&nbsp;।</span>
+         <span class="line">रत्नानि चात्र देयानि पूर्वे वज्रं विचक्षणैः&nbsp;॥ ७३&nbsp;॥</span>
+         
+      </div>
+      
+      <div class="lg" type="">
+         <span class="line">वैडूर्यं दक्षिणे <a href="" class="app" title="चैव <b&gt;ठम</b&gt;"><span class="appnum"><sup>1</sup></span></a>पार्श्वे स्फटिकं पश्चिमे तथा&nbsp;।</span>
+         <span class="line">प्रवालमुत्तरे चैव <a href="" class="app" title="पार्श्वे <b&gt;न</b&gt;"><span class="appnum"><sup>2</sup></span></a>मध्ये तु कनकं भवेत्<a href="" class="app" title="तथा <b&gt;Nन</b&gt;"><span class="appnum"><sup>3</sup></span></a>&nbsp;॥ ७४&nbsp;॥</span>
+         
+      </div>
+      <span class="pageinfo">[page 063]</span>
+      
+      
+      <div class="lg" type="">
+         <span class="line">एवं रङ्गशिरः कृत्वा दारुकर्म प्रयोजयेत्<a href="" class="app" title="प्रवर्तयेत् <b&gt;ठम</b&gt;"><span class="appnum"><sup>1</sup></span></a>&nbsp;।</span>
+         <span class="line">ऊहप्रत्यूहसंयुक्तं नानाशिल्पप्रयोजितम्<a href="" class="app" title="समन्वितम् <b&gt;N</b&gt;"><span class="appnum"><sup>2</sup></span></a>&nbsp;॥ ७५&nbsp;॥</span>
+         
+      </div>
+      
+      <div class="lg" type="">
+         <span class="line">नानासञ्जवनोपेतं बहुव्यालोपशोभितम्&nbsp;।</span>
+         <span class="line"><a href="" class="app" title="‘भवेयुश्चात्र विन्यस्ता विविधाः सालभञ्जिकाः&nbsp;।’ इत्यधिकं दृश्यते <b&gt;ब</b&gt;, अट्टालभञ्जि <b&gt;ब</b&gt;, इतः पञ्च पङ्क्तयो न सन्ति&nbsp;। तत्सालमञ्जिकाः स्त्रीभिः <b&gt;क्षम</b&gt;"><span class="appnum"><sup>1</sup></span></a>ससालभञ्जिकाभिश्च समन्तात्समलङ्गकृतम्&nbsp;॥ ७६&nbsp;॥</span>
+         
+      </div>
+      
+      <div class="lg" type="">
+         <span class="line">निर्व्यूहकुहरोपेतं नानाग्रथितवेदिकम्&nbsp;।</span>
+         <span class="line"><a href="" class="app" title="नानारचितविन्यासं <b&gt;N</b&gt;"><span class="appnum"><sup>1</sup></span></a>नानाविन्याससंयुक्तं <a href="" class="app" title="यन्त्रजाल <b&gt;च</b&gt;"><span class="appnum"><sup>2</sup></span></a>चित्रजालगवाक्षकम्&nbsp;॥ ७७&nbsp;॥</span>
+         
+      </div>
+      
+      <div class="lg" type="">
+         <span class="line">सुपीठधारिणीयुक्तं कपोतालीसमाकुलम्&nbsp;।</span>
+         <span class="line">नानाकुट्टिमविन्यस्तैः स्तम्भैश्चाप्युपशोभितम्&nbsp;॥ ७८&nbsp;॥</span>
+         
+      </div>
+      
+      <div class="lg" type="">
+         <span class="line">एवं काष्ठविधिं कृत्वा भित्तिकर्म प्रयोजयेत्&nbsp;।</span>
+         <span class="line">स्तम्भं वा नागदन्तं वा वातायनमथापि वा&nbsp;॥ ७९&nbsp;॥</span>
+         
+      </div>
+      <span class="pageinfo">[page 064]</span>
+      
+      
+      <div class="lg" type="">
+         <span class="line"><a href="" class="app" title="कार्ष्णायसं प्रति"><span class="appnum"><sup>1</sup></span></a>कोणं वा सप्रतिद्वारं <a href="" class="app" title="दारुविद्धम् <b&gt;क्षठम</b&gt;"><span class="appnum"><sup>2</sup></span></a>द्वारविद्धं न <a href="" class="app" title="दापयेत् <b&gt;N</b&gt;"><span class="appnum"><sup>3</sup></span></a> कारयेत्&nbsp;।</span>
+         <span class="line"><a href="" class="app" title="द्विभूमिर्मण्डपः कार्यो गुहाकारः स्थिराकृतिः"><span class="appnum"><sup>4</sup></span></a>कार्यं शैलगुहाकारो द्विभूमिर्नाट्यमण्डपः&nbsp;॥ ८०&nbsp;॥</span>
+         
+      </div>
+      
+      <div class="lg" type="">
+         <span class="line">मन्दवातायनापेतो <a href="" class="app" title="निवातो <b&gt;क्षठमत</b&gt;"><span class="appnum"><sup>1</sup></span></a>निर्वातो धीरशब्दवान्<a href="" class="app" title="शब्दभाक् <b&gt;क्षठमत</b&gt;"><span class="appnum"><sup>2</sup></span></a>&nbsp;।</span>
+         <span class="line">तस्मान्निवातः कर्तव्यः कर्तृभिर्नाट्यमण्डपः&nbsp;॥ ८१&nbsp;॥</span>
+         
+      </div>
+      
+      <div class="lg" type="">
+         <span class="line"><a href="" class="app" title="गम्भीरत्वाद्वै— (स्वर्यम्)&nbsp;।  <b&gt;N</b&gt;"><span class="appnum"><sup>1</sup></span></a>गम्भीरस्वरता येन<a href="" class="app" title="गाम्भीर्यं सुस्वरत्वं च <b&gt;क्षजम</b&gt;, सगाम्भीर्यादवैस्वर्यम् <b&gt;न</b&gt;"><span class="appnum"><sup>2</sup></span></a> <a href="" class="app" title="येन स्यात्कुतपस्य तु <b&gt;N</b&gt;"><span class="appnum"><sup>3</sup></span></a>कुतपस्य <a href="" class="app" title="भवेदिह <b&gt;ठम</b&gt;"><span class="appnum"><sup>4</sup></span></a>भविष्यति&nbsp;।</span>
+         <span class="line">भित्तिकर्मविधिं कृत्वा भित्तिलेपं प्रदापयेत्&nbsp;॥ ८२&nbsp;॥</span>
+         
+      </div>
+      
+      <div class="lg" type="">
+         <span class="line">सुधाकर्म <a href="" class="app" title="विधिस्तस्य <b&gt;ठ</b&gt;, तथैवास्य कुर्याद्वाह्यम् <b&gt;क्षठम</b&gt;"><span class="appnum"><sup>1</sup></span></a>बहिस्तस्य विधातन्यं प्रयत्नतः&nbsp;।</span>
+         <span class="line">भित्तिष्वथ विलिप्तासु<a href="" class="app" title="भित्तिष्वपि च लिप्तासु <b&gt;क्षठम</b&gt;, मित्तिकमसु लिप्तासु <b&gt;न</b&gt;"><span class="appnum"><sup>2</sup></span></a> <a href="" class="app" title="निर्मृष्टासु पुनःपुनः <b&gt;N</b&gt;"><span class="appnum"><sup>3</sup></span></a>परिमृष्टासु सर्वतः<a href="" class="app" title="परिवृत्तासु सर्वशः <b&gt;ज</b&gt;"><span class="appnum"><sup>4</sup></span></a>&nbsp;॥ ८३&nbsp;॥</span>
+         
+      </div>
+      
+      <div class="lg" type="">
+         <span class="line">समासु जातशोभासु चित्रकर्म <a href="" class="app" title="प्रवर्तयेत् <b&gt;N</b&gt;"><span class="appnum"><sup>1</sup></span></a>प्रयोजयेत्&nbsp;।</span>
+         <span class="line">चित्रकर्मणि<a href="" class="app" title="चित्रकर्माणी <b&gt;च</b&gt;"><span class="appnum"><sup>2</sup></span></a> चालेख्याः पुरुषाः स्त्रीजनास्तथा&nbsp;॥ ८४&nbsp;॥</span>
+         
+      </div>
+      
+      <div class="lg" type="">
+         <span class="line">लताबन्धाश्च<a href="" class="app" title="बद्धाश्च <b&gt;त</b&gt;"><span class="appnum"><sup>1</sup></span></a> कर्तव्याश्चरितं चात्मभोगजम्&nbsp;।</span>
+         <span class="line">एवं विकृष्टं कर्तव्यं नाट्यवेश्म प्रयोक्तृभिः&nbsp;॥ ८५&nbsp;॥</span>
+         
+      </div>
+      <span class="pageinfo">[page 065]</span>
+      
+      
+      <div class="lg" type="">
+         <span class="line">पुनरेव<a href="" class="app" title="अतः परम् <b&gt;ठमत</b&gt;"><span class="appnum"><sup>1</sup></span></a> हि वक्ष्यामि चतुरश्रस्य लक्षणम्&nbsp;।</span>
+         <span class="line"><a href="" class="app" title="समन्ततस्तु कर्तव्यो हस्तो <b&gt;ठमत</b&gt;"><span class="appnum"><sup>2</sup></span></a>समन्ततश्च कर्तव्या हस्ता द्वात्रिंशदेव तु&nbsp;॥ ८६&nbsp;॥</span>
+         
+      </div>
+      
+      <div class="lg" type="">
+         <span class="line">शुभभूमिविभागस्थो नाट्यज्ञैर्नाट्यमण्डपः&nbsp;।</span>
+         <span class="line">यो विधिः पूर्वमुक्तस्तु लक्षणं <a href="" class="app" title="मण्डलानि च <b&gt;क्षठ</b&gt;, मण्टपानि च <b&gt;म</b&gt;"><span class="appnum"><sup>1</sup></span></a>मङ्गलानि च&nbsp;॥ ८७&nbsp;॥</span>
+         
+      </div>
+      
+      <div class="lg" type="">
+         <span class="line"><a href="" class="app" title="चतुरश्रस्य तान्येव कारयेन्नाट्यवेश्मनः <b&gt;क्षठमब</b&gt;"><span class="appnum"><sup>1</sup></span></a>विकृष्टे तान्यशेषाणि चतुरश्रेऽपि कारयेत्&nbsp;।</span>
+         <span class="line">चतुरश्रं समं कृत्वा सूत्रेण प्रविभज्य च&nbsp;॥ ८८&nbsp;॥</span>
+         
+      </div>
+      
+      <div class="lg" type="">
+         <span class="line">बाह्यतः सर्वतः कार्या भित्तिः <a href="" class="app" title="शिलष्टेष्टकादयः <b&gt;क</b&gt;"><span class="appnum"><sup>1</sup></span></a>श्लिष्टेष्टका दृढा&nbsp;।</span>
+         <span class="line"><a href="" class="app" title="कृताभ्यन्तरतः कार्यं रङ्गपीठं यथाविधि <b&gt;न</b&gt;, रङ्गपीठे यथादिशम् <b&gt;क्षठमत</b&gt;, यथा दृढम् <b&gt;प</b&gt;"><span class="appnum"><sup>2</sup></span></a>तत्राभ्यन्तरतः कार्या रङ्गपीठोपरि स्थिताः&nbsp;॥ ८९&nbsp;॥</span>
+         
+      </div>
+      <span class="pageinfo">[page 066]</span>
+      
+      <div class="lg" type="">
+         <span class="line">दश प्रयोक्तृभिः स्तम्भाः<a href="" class="app" title="शस्ता <b&gt;N</b&gt;"><span class="appnum"><sup>1</sup></span></a> <a href="" class="app" title="शस्ता मण्डपलक्षणे <b&gt;ब</b&gt;, शुभा मण्डपधारिणः <b&gt;न</b&gt;, शक्या मण्डपरक्षणे <b&gt;त</b&gt;"><span class="appnum"><sup>2</sup></span></a>शक्ता मण्डपधारणे&nbsp;।</span>
+         <span class="line">स्तम्भानां बाह्यतश्चापि<a href="" class="app" title="स्थाप्यम् <b&gt;क्षठम</b&gt;"><span class="appnum"><sup>3</sup></span></a> सोपानाकृति<a href="" class="app" title="सोपानकृत <b&gt;त</b&gt;, सोपानकृति <b&gt;म</b&gt;"><span class="appnum"><sup>4</sup></span></a> पीठकम्&nbsp;॥ ९०&nbsp;॥</span>
+         
+      </div>
+      
+      <div class="lg" type="">
+         <span class="line"><a href="" class="app" title="दीर्घदार्विष्टकाभिश्च <b&gt;N</b&gt;"><span class="appnum"><sup>1</sup></span></a>इष्टकादारुभिः कार्यं प्रेक्षकाणां निवेशनम्&nbsp;।</span>
+         <span class="line">हस्तप्रमाणैरुत्सेधैर्भूमिभागसमुत्थितैः&nbsp;॥ ९१&nbsp;॥</span>
+         
+      </div>
+      
+      <div class="lg" type="">
+         <span class="line"><a href="" class="app" title="रङ्गपीठविलोक्यं <b&gt;क्ष</b&gt;"><span class="appnum"><sup>1</sup></span></a>रङ्गपीठावलोक्यं<a href="" class="app" title="आलोक्य रङ्गपीठस्य <b&gt;N</b&gt;"><span class="appnum"><sup>2</sup></span></a> तु <a href="" class="app" title="कुर्यादासनिकम् <b&gt;ठम</b&gt;"><span class="appnum"><sup>3</sup></span></a>कुर्यादासनजं विधिम्&nbsp;।</span>
+         <span class="line"><a href="" class="app" title="षडन्यान्सुन्दरान्दद्यात् <b&gt;क्षपम</b&gt;, षडन्यान्सान्तरान्दद्यात् <b&gt;पम</b&gt;, षड्न्यासान् सान्तरान् <b&gt;ब</b&gt;"><span class="appnum"><sup>4</sup></span></a>षडन्यानन्तरे चैव पुनः स्तम्भान्यथादिशम्<a href="" class="app" title="यथादरम् <b&gt;ज</b&gt;"><span class="appnum"><sup>5</sup></span></a>&nbsp;॥ ९२&nbsp;॥</span>
+         
+      </div>
+      <span class="pageinfo">[page 067]</span>
+      
+      <div class="lg" type="">
+         <span class="line">विधिना <a href="" class="app" title="धारयेत्तज्ज्ञो <b&gt;क</b&gt;, स्थापयेत्प्राज्ञो <b&gt;क्ष</b&gt;, स्थापयेत्प्राज्ञो गूढा मण्टप <b&gt;ठम</b&gt;"><span class="appnum"><sup>1</sup></span></a>स्थापयेत्तज्ज्ञो दृढान्मण्डपधारणे&nbsp;।</span>
+         <span class="line">अष्टौ स्तम्भान्पुनश्चैव तेषामुपरि <a href="" class="app" title="कारयेत् <b&gt;क्षठम</b&gt;"><span class="appnum"><sup>2</sup></span></a>कल्पयेत्&nbsp;॥ ९३&nbsp;॥</span>
+         
+      </div>
+      
+      <div class="lg" type="">
+         <span class="line"><a href="" class="app" title="संस्थाप्य च पुनः पीठमष्ठहस्तप्रमाणतः <b&gt;क्षठम</b&gt;, विद्धास्यं च पुनः पीठमष्टौ हस्तप्रमाणतः <b&gt;ड</b&gt;, विद्धास्यमष्टहस्तं च पीठं तेषु ततो न्यसेत् <b&gt;N</b&gt;"><span class="appnum"><sup>1</sup></span></a>स्थाप्यं चैव ततः पीठमष्टहस्तप्रमाणतः&nbsp;।</span>
+         <span class="line">विद्धास्यमष्टहस्तं च पीठं तेषु ततो न्यसेत्<a href="" class="app" title="इतः परं ‘संस्थाप्यं च ततः पीठमष्टहस्तप्रमाणतः&nbsp;।’ इति पठ्यते <b&gt;ब</b&gt;, इदमर्धं नास्ति <b&gt;क्षम</b&gt;"><span class="appnum"><sup>2</sup></span></a>&nbsp;॥ ९४&nbsp;॥</span>
+         
+      </div>
+      <span class="pageinfo">[page 068]</span>
+      
+      <div class="lg" type="">
+         <span class="line">तत्र स्तम्भाः प्रदातव्यास्तज्ज्ञैर्मण्डपधारणे&nbsp;।</span>
+         <span class="line"><a href="" class="app" title="धरणीधारितास्ते <b&gt;क्षठ</b&gt;, धारणीधारतास्ते च <b&gt;म</b&gt;"><span class="appnum"><sup>1</sup></span></a>धारणीधारणास्ते च <a href="" class="app" title="शालास्त्रीभिरलङ्कृताः, सालस्त्री <b&gt;त</b&gt;"><span class="appnum"><sup>2</sup></span></a>शालस्त्रीभिरलङ्कृताः&nbsp;॥ ९५&nbsp;॥</span>
+         
+      </div>
+      
+      <div class="lg" type="">
+         <span class="line">नेपथ्यगृहकं चैव ततः कार्यं <a href="" class="app" title="प्रयोक्तृभिः <b&gt;Nक्षठम</b&gt;"><span class="appnum"><sup>1</sup></span></a>प्रयत्नतः&nbsp;।</span>
+         <span class="line">द्वारं चैकं भवेत्तत्र रङ्गपीठप्रवेशनम्<a href="" class="app" title="प्रवेशने <b&gt;क्षठम</b&gt;"><span class="appnum"><sup>2</sup></span></a>&nbsp;॥ ९६&nbsp;॥</span>
+         
+      </div>
+      
+      <div class="lg" type="">
+         <span class="line">जनप्रवेशनं<a href="" class="app" title="चैकमा <b&gt;N</b&gt;, प्रवेशने चैवमादिमुख्येन <b&gt;क्षठम</b&gt;"><span class="appnum"><sup>1</sup></span></a> चान्यदाभिमुख्येन कारयेत्&nbsp;।</span>
+         <span class="line">रङ्गस्याभिमुखं कार्यं द्वितीयं द्वारमेव तु&nbsp;॥ ९७&nbsp;॥</span>
+         
+      </div>
+      <span class="pageinfo">[page 069]</span>
+      
+      <div class="lg" type="">
+         <span class="line">अष्टहस्तं तु कर्तव्यं रङ्गपीठं प्रमाणतः&nbsp;।</span>
+         <span class="line">चतुरश्रं<a href="" class="app" title="चतुरश्रे <b&gt;Nठब</b&gt;"><span class="appnum"><sup>1</sup></span></a> समतलं वेदिकासमलङ्कृतम्&nbsp;॥ ९८&nbsp;॥</span>
+         
+      </div>
+      
+      <div class="lg" type="">
+         <span class="line">पूर्वप्रमाणनिर्दिष्टा कर्तव्या मत्तवारणी&nbsp;।</span>
+         <span class="line">चतुःस्तम्भसमायुक्ता वेदिकायास्तु पार्श्वतः&nbsp;॥ ९९&nbsp;॥</span>
+         
+      </div>
+      
+      <div class="lg" type="">
+         <span class="line">समुन्नतं समं चैव <a href="" class="app" title=" रङ्गपीठम् <b&gt;ठम</b&gt;"><span class="appnum"><sup>1</sup></span></a>रङ्गशीर्षं तु<a href="" class="app" title="प्रकारयेत् <b&gt;N</b&gt;"><span class="appnum"><sup>2</sup></span></a> कारयेत्&nbsp;।</span>
+         <span class="line">विकृष्टे <a href="" class="app" title="प्युन्नतम् <b&gt;ठम</b&gt;, ह्यन्नतम् <b&gt;ड</b&gt;"><span class="appnum"><sup>3</sup></span></a>तून्नतं कार्यं चतुरश्रे समं तथा&nbsp;॥ १००&nbsp;॥</span>
+         
+      </div>
+      
+      <div class="lg" type="">
+         <span class="line">एवमेतेन विधिना चतुरश्रं गृहं भवेत्&nbsp;।</span>
+         <span class="line">अतः परं प्रवक्ष्यामि त्र्यश्रगेहस्य<a href="" class="app" title="त्र्यश्रस्य मण्डपस्यामि संप्रवक्ष्यामि <b&gt;क्ष</b&gt;"><span class="appnum"><sup>1</sup></span></a> लक्षणम्&nbsp;॥ १०१&nbsp;॥</span>
+         
+      </div>
+      
+      <div class="lg" type="">
+         <span class="line">त्र्यश्रं त्रिकोणं कर्तव्यं नाट्यवेश्म प्रयोक्तृभिः&nbsp;।</span>
+         <span class="line">मध्ये त्रिकोणमे<a href="" class="app" title="कर्तव्यम् <b&gt;N</b&gt;"><span class="appnum"><sup>1</sup></span></a>वास्य रङ्गपीठं तु कारयेत्&nbsp;॥ १०२&nbsp;॥</span>
+         
+      </div>
+      
+      <div class="lg" type="">
+         <span class="line">द्वारं <a href="" class="app" title="द्वारमेकेन <b&gt;डबमत</b&gt;"><span class="appnum"><sup>1</sup></span></a>तेनैव कोणेन कर्तव्यं <a href="" class="app" title="तु प्रकाशने <b&gt;पम</b&gt;,  तन्निवेशनम् <b&gt;न</b&gt;, तु प्रवेशने <b&gt;क्षठ</b&gt;"><span class="appnum"><sup>2</sup></span></a>तस्य <a href="" class="app" title="निवेशनात् <b&gt;N</b&gt;"><span class="appnum"><sup>3</sup></span></a>वेश्मनः&nbsp;।</span>
+         <span class="line">द्वितीयं चैव कर्तव्यं रङ्गपीठस्य पृष्ठतः&nbsp;॥ १०३&nbsp;॥</span>
+         
+      </div>
+      <span class="pageinfo">[page 070]</span>
+      
+      <div class="lg" type="">
+         <span class="line"><a href="" class="app" title="द्वितीय चतुरश्रस्य <b&gt;क्षम</b&gt;, विधेयश्च पुरस्तस्य <b&gt;क</b&gt;"><span class="appnum"><sup>1</sup></span></a>विधिर्यश्चतुरश्रस्य भित्तिस्तम्भसमाश्रयः<a href="" class="app" title="समन्वितः <b&gt;डम</b&gt;"><span class="appnum"><sup>2</sup></span></a>&nbsp;।</span>
+         <span class="line">स तु सर्वः प्रयोक्तव्यस्त्र्यश्रस्यापि प्रयोक्तृभिः&nbsp;॥ १०४&nbsp;॥</span>
+         
+      </div>
+      
+      <div class="lg" type="">
+         <span class="line">एवमेतेन विधिना कार्या नाट्यगृहा<a href="" class="app" title="कार्यं नाट्यगृहं बुधैः <b&gt;क्षम</b&gt;"><span class="appnum"><sup>1</sup></span></a> बुधैः&nbsp;।</span>
+         <span class="line"><a href="" class="app" title="अत ऊर्ध्वम् <b&gt;क्ष</b&gt;, तत ऊर्ध्वम् <b&gt;चम</b&gt;"><span class="appnum"><sup>2</sup></span></a>पुनरेषां प्रवक्ष्यामि पूजामेवं<a href="" class="app" title="मेषाम् <b&gt;क्षचम</b&gt;"><span class="appnum"><sup>3</sup></span></a> यथाविधि&nbsp;॥ १०५&nbsp;॥</span>
+         
+      </div>
+      
+      इति भारतीये नाट्यशास्त्रे मण्डपविधानो<a href="" class="app" title="प्रेक्षागृहलक्षणम् <b&gt;Nठम</b&gt;"><span class="appnum"><sup>4</sup></span></a>नाम द्वितीयोऽध्यायः&nbsp;॥
+      
+      
+   </body>
+</html>

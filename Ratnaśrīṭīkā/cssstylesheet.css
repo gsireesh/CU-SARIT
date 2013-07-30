@@ -1,0 +1,127 @@
+body {
+      font: 110% Sans-Serif;
+      text-align: left;
+      margin: 0 auto;
+      padding: 20px;
+      outline-style:none;
+}
+.teiHeader:after,.titleStmt:after,.apparatus:before,.citations:before {
+      display: block;
+      content: " ";
+      height: 2px;
+      width: 70%;
+      background-color: black;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      margin-left: auto;
+      margin-right: auto;
+}
+span.head {
+  font-size: 125%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  display: block;
+}
+span.trailer {
+  font-size: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  display: block;
+}
+p {
+  display: block;
+  text-indent: 2em;
+  margin: 10px;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  hyphens: auto;
+}
+a.app {
+      color: #0000AA;
+}
+a:link {
+      color: #0000FF;
+}
+a:visited {
+      color: #0000AA;
+}
+div#qTip {
+ padding: 3px;
+ border: 1px solid #666;
+ border-right-width: 2px;
+ border-bottom-width: 2px;
+ display: none;
+ background: #999;
+ color: #FFF;
+ text-align: left;
+ position: absolute;
+ z-index: 1000;
+}
+a {
+      text-decoration: none;
+}
+ul {
+      list-style-position: inside;
+	    padding-left: 1em;
+	    text-indent: -1em;
+}
+ul.labelled {
+      list-style: none;
+      list-style-position: inside;
+	    padding-left: 1em;
+	    text-indent: -1em;
+}
+sup {
+	    vertical-align: super;
+	    font-size: smaller;
+      text-height: 0em;
+}
+.line {
+  display: block;
+  padding: 0px;
+  margin: 0px;
+}
+.line:last-child {
+  display: inline;
+}
+/* metrical formatting */
+div.lg {
+  display: block;
+  padding-left: 2em;
+  margin-bottom: 5px;
+}
+div.mula {
+  display: block;
+  padding-left: 2em;
+  margin-bottom: 5px;
+  font: 110%;
+  font-weight: bold; 
+}
+span.line {
+  display:block;
+}
+span.a, span.b, span.c, span.d {
+  display: block;
+}
+span.b, span.d {
+  text-indent: 20px;
+}
+.foreign {
+  font-style: italic;
+}
+span.mentioned, span.label {
+  font-weight: bold;
+}
+span.appnote {
+  font-style: normal;
+}
+span.pageinfo {
+  font-size: 80%;
+  display: inline;
+  color: #1270A0; 
+}
+.appnum {
+  font-size: 90%;
+}

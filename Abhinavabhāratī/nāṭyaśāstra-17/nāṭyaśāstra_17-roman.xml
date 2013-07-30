@@ -1,0 +1,766 @@
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/css" href="prākṛta.css"?><TEI xml:id="nāṭyaśāstra_17-roman">
+<teiHeader>
+  <fileDesc>
+    <titleStmt>
+      <title>Nāṭyaśāstra Chapter 17</title>
+    </titleStmt>
+    <publicationStmt>
+    </publicationStmt>
+    <sourceDesc>
+    </sourceDesc>
+  </fileDesc>
+  <encodingDesc>
+  </encodingDesc>
+  <revisionDesc>
+  </revisionDesc>
+</teiHeader>
+<text>
+<body>
+
+<pb n="365"/>
+
+<p>śrīḥ nāṭyaśāstram saptadaśo 'dhyāyaḥ<note place="app"><foreign xml:lang="sa"><q>जादिबा</q>न्तेषु रसंज्ञके N संज्ञके चाष्टादशोऽध्यायः । अस्मिन्नध्याये प्राकृतलक्षणपाठः सर्वेष्वादर्शेषु सर्वाबद्धमयः । <q>नय</q>योरेव तेषां साधिष्ठ इति वृत्तिकारेण दत्तानां प्रतीकानां च संवादबहुलत्वाच्च तयोः पाठ एव मूलरुपेण निवेशितः । प्राकृतलक्षणश्लोकानां व्याख्यानसापेक्षत्वादग्रेऽनुबन्धरूपेण संक्षेपेण टीका योज्यते ।nteṣu rasaṃjñake N saṃjñake cāṣṭādaśo 'dhyāyaḥ | asminnadhyāye prākṛtalakṣaṇapāṭhaḥ sarveṣvādarśeṣu sarvābaddhamayaḥ | </foreign></note></p>
+
+<lg xml:id="NāŚā.17.1">
+  <l><app><rdg wit="#द #र">etattu</rdg><rdg wit="#भ">pāṭhyaṃ tu saṃskṛtaṃ viprāḥ</rdg></app>evaṃ tu saṃskṛtaṃ pāṭhyaṃ mayā proktaṃ samāsataḥ<app><rdg wit="#ड">dvijottamāḥ</rdg></app> |</l>
+  <l><app><rdg wit="#ज">prākṛtasyāpi</rdg></app>prākṛtasya tu pāṭhyasya saṃpravakṣyāmi lakṣaṇam || 1</l>
+</lg>
+  <!-- Thus I have discussed Sanskrit recitation in brief. Now I will give guidelines for Prakrit recitation. !-->
+
+<pb n="366"/>
+
+<lg xml:id="NāŚā.17.2">
+  <l>etadeva viparyastaṃ saṃskāraguṇavarjitam |</l>
+  <l>vijñeyaṃ prākṛtaṃ pāṭhyaṃ nānāvasthāntarātmakam || 2</l>
+</lg>
+  <!-- This (Prakrit) is the contrary (to Sanskrit): it lacks the quality of saṃskāra (perfection). Prakrit recitation should be known to consist of various different states. !-->
+<lg xml:id="NāŚā.17.3">
+  <l>trividhaṃ tacca<app><rdg wit="#भ">tata</rdg></app> vijñeyaṃ nāṭyayoge<app><rdg wit="#भ">nāṭyayogaṃ</rdg></app> samāsataḥ |</l>
+  <l>samānaśabdaṃ vibhraṣṭaṃ<app><rdg wit="#च">śabdairvinaṣṭaṃ</rdg></app> deśīgatamathāpi ca<app><rdg wit="#द">vā</rdg></app> || 3</l>
+</lg>
+  <!-- Further, that (Prakrit) should be known to have three types in dramatic usage: in brief, common words, degraded, and local. !-->
+<lg xml:id="NāŚā.17.4">
+  <l>(pāṭhyamekaṃ tu vijñeyaṃ saṃskṛtaṃ prākṛtaṃ yathā<app><rdg wit="#भ">tathā</rdg></app> |)<note place="app"><foreign xml:lang="sa">इदं श्लोकार्धं <q>भम</q>योरेव वर्ततेidaṃ ślokārdhaṃ </foreign></note></l>
+  <l><app><rdg wit="#भ">kamaladalareṇukesarataraṅgasalilādi</rdg></app>kamalāmalareṇutaraṅgalola<app><rdg wit="#द">jālādi</rdg><rdg wit="#न">salīlādi</rdg><rdg wit="#ट">jhaḍitphasaṃpadam( ?)</rdg></app>salilādivākyasaṃpannam |</l>
+  <l>prākṛtabandheṣvevaṃ<app><rdg wit="#भ">etat</rdg></app> <app><rdg wit="#ज">saṃyuktaṃ</rdg><rdg wit="#द">saṃskṛtamiva</rdg></app>saṃskṛtamapi yogamupayāti || 4</l>
+</lg>
+  <!-- But Sanskrit recitation is single, like Prakrit. (WRONG) !-->
+  <!-- Words like kamala, amala, reṇu, taraṅga, lola, and salila that come up in discourse, while in Prakrit compositions, approach Sanskrit usage as well in this way. !-->
+
+<lg xml:id="NāŚā.17.5">
+  <l>ye varṇāḥ <app><rdg wit="#च">saṃyuktā</rdg></app>saṃyogasvaravarṇānyatvamūnatāṃ cāpi<app><rdg wit="#च">vāpi</rdg></app> |</l>
+  <pb n="367"/>
+  <l><app><rdg wit="#च">yāntyapadādau prāyo vibhraṣṭāṃstān vidurviprāḥ — Kavi</rdg></app>gacchanti padanyāsāste <app><rdg wit="#ढ">prabhraṣṭā</rdg></app>vibhraṣṭā iti jñeyāḥ || 5</l>
+</lg>
+  <!-- When words are set down in such a way that their sounds are modified, either with respect to their conjunct consonants or to their vowels, or deleted, they are known as degraded. !-->
+<lg xml:id="NāŚā.17.5-1">
+  <l>(ye varṇā varṇagatā vyañjanayuktāśca ye svarā niyatāḥ||</l>
+  <l>tānaparasparavṛtte prākṛtayuktyā pravakṣyāmi |)<note place="app"><foreign xml:lang="sa"><q>म</q>मातृकायामेव विद्यतेऽयं श्लोकःmātṛkāyāmeva vidyate 'yaṃ ślokaḥ</foreign></note></l>
+</lg>
+  <!-- Those consonants which are adjacent to other consonants (varṇagatā), and those vowels which are modified (niyata) when they are joined with consonants: those I shall now speak of in their non-mutual occurrence, with reference to Prakrit. !--> 
+<app><rdg><note><foreign xml:lang="sa"><q>da</q><q>ḍa</q>yornāstiyornāsti</foreign></note></rdg></app>yathā—
+<lg xml:id="NāŚā.17.6">
+  <l><note place="app"><foreign xml:lang="sa">"ए ओ आर" इत्यादिलक्षणश्लोकानां स्थाने <q>भ</q>संज्ञकादर्शे गद्यरूपः पाठभेदो यथा —क ख घ त थ ध भ सा हत्वं यान्ति, यथा—फळिह, मुह, मेह, वसहि, रह, दहि, सोहा, दिअहेसु । शषौ सकारौ भवतः यथा ससंक विसमेसु । टतदा डत्वं यान्ति, यथा —विड, पडि, अदण्डासु । ट ठ ड द य रा लत्वं यान्ति, यथा—विअ लालिअ तुल पवितुला विहलयदीसु । थकारो ढत्वं प्राप्नोति वुड्डो। नकारो भवति णकारः, यथा—णयणं । पकारो फत्वं याति बत्वं च । यथा फरुसं कबद्दं च । धकारः ढत्वं याति, यथा वढि । लकारो रत्वं याति यथा किर। ट ठौ डत्वं प्राप्नुतः । यथा सढः फढमं, पलिअं । तजौ यत्वं प्राप्नुतः कयं, धयं। श च ज त द प य वाः स्वरशेषा भवन्ति, यथा —पिउण, पउप, राइ, वई, णई, कइ, दइआ, जयेसु । योगं याति, यथा—अच्छरिअं उच्छाहो, अच्छरसा,(पथ्यं) पच्छं । तुभ्यं तुज्झं, सह्यं —सज्झं, विन्ध्यो विज्झो । श्लक्ष्णं —सह्णं । ग्रीष्मो—गिह्मो। दृष्टो-दिठ्ठो । हस्तो—हत्थो । यक्षो— जक्खो । ब्रह्मा—बह्मा । बृहस्पतिः — बुहप्पइ । यज्ञो—जन्नोत्ति । एवमेतन्मया प्रोक्तं किञ्चित्प्राकृतलक्षणम् । शेषं देशीप्रसिद्धं च ज्ञेयं विप्राः प्रयोगतः ॥"e o āra" ityādilakṣaṇaślokānāṃ sthāne </foreign></note>eoāraparāṇia <app><rdg wit="#ड">akāra</rdg><rdg wit="#न">aṃkāra</rdg></app>aṃ āraparaṃ a<app><rdg wit="#ड">ca</rdg></app> <app><rdg wit="#र">pāie</rdg></app>pāae ṇatthi |</l>
+  <l>vasaāramajjhimāi<app><rdg wit="#द">gajjhiāi</rdg><rdg wit="#ड">maṃsimāi</rdg><rdg wit="#प"> maṃri saāi</rdg><rdg wit="#ज">yaṃkhuāī</rdg></app> a<app><rdg wit="#र">va</rdg></app> <app><rdg wit="#ड">tavarga tavarga </rdg><rdg wit="#ढ">kaccavagga</rdg></app>kacavaggatavaggaṇihaṇāiṃ<app><rdg wit="#ड">gaṇāi |</rdg></app>|| 6</l>
+</lg>
+  <!-- The sound after e and o, and the sound after anusvāra, don't exist in Prakrit. Those between v and s as well, and the final letters of the velar, palatal, and dental class. !-->
+
+<pb n="368"/>
+
+<lg xml:id="NāŚā.17.7">
+  <l><app><rdg wit="#प"> vaṃcati khagatajagadāva</rdg><rdg wit="#ज">—vaccatikagatajagadāvā</rdg><rdg wit="#ड">vacchati kaṭatadavayavāḥ</rdg><rdg wit="#ढ">vacchati kagatadavayavāḥ</rdg><rdg wit="#द">vakkanti kagatadayavā</rdg></app>vaccaṃti kagatadayavā<app><rdg wit="#न">pā</rdg></app> <app><rdg wit="#न">lopaḥ</rdg><rdg wit="#प">loma</rdg><rdg wit="ढ">lopa</rdg><rdg wit="#द">lauvaṃ</rdg></app>lopaṃ <app><rdg wit="#ड">athaca</rdg></app>atthaṃ ca se vahaṃti <app><rdg wit="#ड">vahati</rdg><rdg wit="#ग">vahatti</rdg></app>sarā |</l>
+  <l><app><rdg wit="#प #ज">khaghadhabhaüṇa</rdg><rdg wit="#ड"> khaghaghudhaḥ uṇaï</rdg></app>khaghathadhabhā uṇa <app><rdg wit="#प"> bhadhaṃta aṃgaavaṃ caṃtā |</rdg><rdg wit="#र">hattaṃ uvaṃti attha a muṃcaṃtā</rdg><rdg wit="#द">hattaṃ ca atthaṃ samuṃcaṃtā |</rdg><rdg wit="#ड">hatta uṣati a amuccattā</rdg><rdg wit="#ढ"> hattaṃ veṃti atthaṃ amuṃcaṃtā</rdg><rdg wit="#ज">uieti agga amaccattā</rdg></app>hattaṃ uveṃti atthaṃ a muṃcaṃtā<app><rdg wit="#क">muṃghanā</rdg></app> || 7</l>
+</lg>
+  <!-- K, g, t, d, y, and v become elided and the vowels carry their meaning. Kh, gh, th, dh and bh become h, and they leave their meaning (unchanged). !--> 
+<lg xml:id="NāŚā.17.8">
+  <l><app><rdg wit="#प">iṃpara attaraārohaṃ re bhattato a vā aeṇaṃdhi |</rdg><rdg wit="#न">uppā hṛtarayāro heṭāhutto apāaeṇatthi |</rdg><rdg wit="#द">upparahuttara āro heṭṭhāhutto apāṇatthi |</rdg><rdg wit="#ढ">uraüraāro heṭhāhuṃto apāaeṇaṃthi|</rdg><rdg wit="#ड">uccara uraāro heṇaṇa hatto avāaeṇatthi |</rdg><rdg wit="#च">udyarahuttarasāsauhehyaphuttaplayayāyaeṇātthi |</rdg><rdg wit="ग">uccarahutarasāsohehā hutta plapayāpaṇacchi |</rdg><rdg wit="#र">ḍapparahutura arohaddhā husta āpaïeṇātthi |</rdg><rdg wit="#ज">iṃparaüṃtara āroheṃre bhuṃkto avāaeṇaṃdhi |</rdg></app>upparahuttaraāro heṭāhuttau a pāae ṇatthi |</l>
+  <l><app><rdg wit="#द">mottūṇa bhadravo drahagadradraha —drajā......... su |</rdg><rdg wit="#ण">montāṇa bhādṛvodrava bhadraciṃda jāīsu |</rdg><rdg wit="#र">mo ṇabhadravoḍahamaḍaḍaha indra jaī su|</rdg><rdg wit="#न">mottṛṇabhudāvo dahadadahacaṃdrajāīsu</rdg><rdg wit="#य"> mottūṇabhadravodrahapadradrahacandrajāīsu |</rdg><rdg wit="ड">mohūṇabhrabhrave bhravarubhuṭṭagacandrarāīsuḍha— māṃbhūṣaṇabhūbhūaubhūvarubhṛdruhacandrarāīsu|</rdg><rdg wit="#ज">moṃtūṇa bhādravodravabhadracandrajāīsuṃ |</rdg> <rdg wit="#च">mottūṇavaṃidodrahapaüjaïsu |</rdg></app>mottūṇa bhadravodraha padrahradacandrajāīsu || 8</l>
+</lg>
+  <!-- A r, either placed above or below (another consonant), does not next in Prakrit, with the exception of words like bhadra, vodraha, padra, hrada, and candra. !--> 
+  <!-- cf. HC 8.2.80-81. Read heṭṭhāhutto. !-->
+
+<pb n="369"/>
+
+<lg xml:id="NāŚā.17.9">
+  <l>khaghathadhabhāṇa haāro muhamehakahāvahūpahūesu<app><rdg wit="#प">suhikkheṣu</rdg><rdg wit="#न">sarisesu khaghathaṣadhabhāṇa hayānemuha (meha) kahāpahumuricchesu |</rdg><rdg wit="#ग">suricchesu</rdg><rdg wit="#ज">muhurādau</rdg></app> |</l>
+  <l><app><rdg wit="#र #N">kagatadayavāṇa ṇicca vi iammi ṭhio saro hoi |</rdg> <rdg wit="#ड"> kagatidavāṇa aṇiccalopajamapiosaro hoi|</rdg><rdg wit="#य">kagatadayapāṇa</rdg><rdg wit="#द">kagatadapavāṇa ṇiccaṃ viiamiṭhia saro hāī |</rdg><rdg wit="#ज">kaganadajavāṇa ṇicalopammi ṭhaṃ osarohoi |</rdg><rdg wit="#च">kagatadajavāramaṇiccaṃ vīyanti ḍiu saro hoi |</rdg></app>kagatadayavāṇa ṇiccaṃ vīyammi ṭhio saro hoi || 9</l>
+</lg>
+  <!-- Kh, gh, th, dh, and bh become h, in cases like mukha > muha, megha > meha, kathā > kahā, vadhū > vadhu. A vowel always stands in the place left by k, g, t, d, y and v. !-->
+<lg xml:id="NāŚā.17.10">
+  <l><app><rdg wit="#च">che iti ṣakāro nityaṃ boddhavyaḥ ṣaṭpadādiyoge tu</rdg><rdg wit="#ज">ca iti cakāro nityaṃ boddhavyaḥ ṣadpāde tu |</rdg><rdg wit="#द">iti thakāro nityaṃ boddhavyaḥ ṣaṭpadādiyoge tu</rdg><rdg wit="#र #N">cha itiṣakāro nityaṃ boddhavyaḥ apadādiyoge tu |</rdg><rdg wit="#ड">hṛṣiuṣiti ṣakāro nityaṃ budhajanaistu boddhavyaṃ ṣaṭpadāni yogye tu |</rdg></app>cha iti ṣakāro nityaṃ boddhavyaḥ ṣaṭpadādiyogeṣu |</l>
+  <l><app><rdg wit="#द #N">kilaśabdānto repho bhavati tathā khutti khaluśabdaḥ</rdg><rdg wit="#ड"> kṛtiśabdorephāntena bhavanti tathā putrikhaluśabdaḥ</rdg><rdg wit="#र">kilaṃ śabdo kore bhavati tadā khutti khaluśabdaḥ |</rdg><rdg wit="#न">khilaśabdādyorepho</rdg></app>kilaśabdāntyo repho bhavati tathā khutti khaluśabdaḥ<app><rdg wit="#ग">khuttikhila śabdaḥ</rdg><rdg wit="#ढ"> bhavati tathātti khaluśabdaḥ |</rdg><rdg wit="#च">bhavanti tathā khu nikhalaśabdaḥ</rdg></app> || 10</l>
+</lg>
+  <!-- In cases like ṣaṭpada, ṣ always becomes ch. At the end of the word kila there is an r, and the word khalu is khu. !--> 
+<lg xml:id="NāŚā.17.11">
+  <l><app><rdg wit="#द">ḍa iti bhavati ṭakāro bhaṭakaṭakakuṭī kuṭāvaṭādyeṣu</rdg><rdg wit="#र #N">ta iti ca bhavati ṭakāte <note>(<foreign xml:lang="sa">ṭakāroṭakāro</foreign>—N)</note> bhaṭakaṭakuṭīkuṭāvaḍādyeṣu |</rdg><rdg wit="#न">ḍa iti ca ṭakāro bhaṭakaṭakakuṭītaṭādyeṣu</rdg><rdg wit="#ड">ḍa iti bhavati ṭakāro bhaṭakuṭakuṭitaṭādyeṣu</rdg><rdg wit="#य">ḍa iti bhavati ṭakāro kaṭakaṭaka.....|</rdg><rdg wit="#च">ḍa iti ca bhavati ṭakāro naḍakaṭukuṭītaḍāṣveṣu</rdg><rdg wit="#ग">ḍa iti ca bhavati ṭakāro naṭakaṭuṭītaṭādyeṣu</rdg></app>ḍa iti ca bhavati ṭakāro bhaṭakaṭakakuṭītaṭādyeṣu |</l>
+  <l>satvaṃ ca bhavati śaṣayoḥ sarvatra yathā visaṃ saṃkā<app><rdg wit="#र">visasaṃkā</rdg> <rdg wit="#द">visaṃ saṃkaṃ</rdg><rdg wit="#य">yathāhi visa saṃkā</rdg><rdg wit="#च"> yathā hi visasaṃkā</rdg><rdg wit="#ड">tathāpi sasakādeśaḥ</rdg><rdg wit="#ढ">tathāpi sasakādeḥ sāḥ |</rdg></app> || 11</l>
+</lg>
+  <!-- In words like bhaṭa and kaṭaka, and kuṭī and taṭa, ḍ stands in place of ṭ. Everywhere s stands for ś and ṣ, as in viṣa > visa and śaṅkā > saṃkā. !-->
+
+<pb n="370"/>
+
+<lg xml:id="NāŚā.17.12">
+  <l>aspaṣṭaśca dakāro bhavatyanādau takāra itarādyaḥ<app><rdg wit="#ड">itarādye</rdg><rdg wit="#न #य">itarādyāḥ</rdg></app> |</l>
+  <l><app><rdg wit="#द">vaḍavā</rdg><rdg wit="#र">vaḍavāḍaḍāga</rdg><rdg wit="#ड">baḍa</rdg>baḍavā.....apilakāraḥ</app>baḍabātaḍāgatulyo bhavati <app><rdg wit="#N">ḍakāro 'pi ca lakāraḥ</rdg></app>ḍakāro 'pi ca kakāraḥ<app><rdg wit="#च">vanavatonāgatulye bhavanti ḍakāro 'pi ca lakāram |</rdg></app> || 12</l>
+</lg>
+  <!-- A non-initial t, followed by something else, becomes an unclear d. !-->
+<lg xml:id="NāŚā.17.13">
+  <l><app><rdg wit="#र">vardhanagate ca bhāve vakāravarṇo 'pi ṭatvamupayāti</rdg><rdg wit="#ड">vadhamadhuśabde ca tathā dhakāravarṇohakāratāṃ yāti |</rdg><rdg wit="#च">śaṭapāṭapīṭhiādiṣu (ṭa) kāravarṇo 'pi ṭhatvamupayāti</rdg><rdg wit="#ग">śaṭhapāṭhapīṭhikādiṣu ṭhakāravarṇo 'pi</rdg></app>vardhanagate ca bhāve dhakāravarṇo 'pi ḍhatvamupayāti |</l>
+  <l>sarvatra ca prayoge bhavati <app><rdg wit="#च">mekāro 'pi ca ṇakāraḥ</rdg></app>nakāro 'pi ca ṇakāraḥ || 13</l>
+</lg>
+  <!-- The letter dh in vardhana becomes ḍha, and everywhere n becomes ṇ. !-->
+<lg xml:id="NāŚā.17.14">
+  <l>āpānaṃ āvāṇaṃ bhavati pakāreṇa vatvayuktena<app><rdg wit="#द #र">natvayuktena</rdg><rdg wit="#ढ">āvāṇaṃ ādhāṇaṃ bhavati vakāreṇa ca dhayuktena |</rdg></app> |</l>
+  <l><app><rdg wit="#र #N">ayathādikeṣu tu dhakāra varṇo vrajati patvam |</rdg><rdg wit="#ड">ayathātathādiṣu keṣu thakāravarṇo hatvam |</rdg><rdg wit="#र">ayathā tathādikeṣu ca</rdg></app>ayathātathādikeṣu tu thakāravarṇo vrajati dhatvam || 14</l>
+</lg>
+  <!-- P becomes v as in āpānaṃ > āvāṇaṃ. But the sounds th becomes dh, though not in the words yathā and tathā. !-->
+<lg xml:id="NāŚā.17.15">
+  <l><app><rdg wit="#र">paruṣaṃ harusaṃ vidyātpakāravarṇo 'pi hatvamupayāti</rdg><rdg wit="#ड">paruṣaṃ harusaṃ</rdg><rdg wit="#च">paruṣāṇā</rdg></app>paruṣaṃ pharusaṃ vidyāt pakāravarṇo 'pi phatvamupayāti |</l>
+  <l><app><rdg wit="#र">yastu mṛtaḥ so 'pi maṭo</rdg><rdg wit="#द">yastu mṛtaḥ so 'pi na u</rdg><rdg wit="#च">yastu mṛtaḥso 'pimaoḍiyastu śṛtaḥso 'pimaau yastumṛgaḥ so 'pitathaiva |</rdg></app>yastu mṛtaḥ so 'pi mao <app><rdg wit="#ड">yastu</rdg></app>yaśca mṛgaḥ so 'pi hi tathaiva || 15</l>
+</lg>
+  <!-- P becomes ph in paruṣaṃ > pharusaṃ. But maa- is both mṛta- and mṛga-. !-->
+<lg xml:id="NāŚā.17.16">
+  <l><app><rdg wit="#र">aukāratvamu (tvaṃga?)--cchantā kāraścauṣadhādiṣu </rdg></app>okāratvaṃ gacchedaukāraścauṣadhādiṣu niyuktaḥ |</l>
+  <l><app><rdg wit="#ड">pracayācira</rdg><rdg wit="#न">pracalāyitācala&gt;</rdg><rdg wit="#द">pracalāṣitācalādiṣu</rdg></app>pracalācirācalādiṣu<app><rdg wit="#N">pracalāyitācalādiṣu</rdg></app> bhavati cakāro 'pi <app><rdg wit="#द">ca</rdg></app>tu yakāraḥ || 16</l>
+</lg>
+  <!-- Au becomes o in cases like auṣadha. In cases like pracala, acira, and acala, c becomes y. !-->
+
+<pb n="371"/>
+
+<lg xml:id="NāŚā.17.17">
+  <l>aparasparaniṣpannā hyevaṃ prākṛtasamāśrayā varṇāḥ |</l>
+  <l>saṃyuktānāṃ tu punarvakṣye parivṛttisaṃyogam || 17</l>
+</lg>
+  <!-- Thus are the sounds of Prakrit as they occur individually. Now I wlll speak of their transformation when they are combined. !-->
+<lg xml:id="NāŚā.17.18">
+  <l><note place="app"><foreign xml:lang="sa">श्लोकार्धंślokārdhaṃ</foreign></note><app><rdg wit="#द">saṃjñake nāsti |</rdg><rdg wit="#च">jhapsaścaḥ cha iti tathā rājñai tu ttakārayoga upayātaḥ (?) taccho accharapacchasyecasaṃsaṃjhāhyasacasajhau(?)</rdg></app>ścapsatsathyāḥ cha iti tathā bhyahyadhyā bhavanti tu jhakārāḥ<app><rdg wit="#न">vrajati vai jhatvam |</rdg></app> |</l>
+  <l><app><rdg wit="#च">ṣṭo ṭṭo stobaḥ śeṣo lakṣmakṣmo hṇa kṣṇaḥ khakārarūpo 'pi |</rdg><rdg wit="#प">ṣṭaḥ ṣṭhaḥ sthaḥ tthaḥ ṣma hya kṣohṇaḥ khakārūpo hi |</rdg><rdg wit="#न">sta ttha, ṣṭoṭṭhaḥ ṣmo mha kṣṇohṇa kṣo kkha iti caiva syāt |</rdg><rdg wit="#द">ṣṭaḥ ṣṭha staḥ tthaḥ ṣmo hyaḥ kṣṇo hṇaḥ kṣṇaḥ kha iti caiva syāt |</rdg><rdg wit="#र">śca tsathyāḥ cha ityahṇavyāmvā ? bhavanti tu jhakārāḥ | yūṣṭastaḥ tthaḥ bhyāhyaḥ klā | ṣṭāḥ hṇakṣaḥ kha iti caiva syāt (?)</rdg></app>ṣṭaḥ ṭṭhaḥ, staḥ tthaḥ, ṣmo mha, kṣṇo hṇaḥ, ṣṇo ṇhaḥ, kṣaḥ <app><rdg wit="#N">kha iti ca va syāt</rdg></app>khakārarūpo 'pi || 18</l>
+</lg>
+  <!-- Ch stands for śc, ps, ts, and thy. Jh stands for bhy, hy, and dhy. ṣṭ > ṭṭh, st > tth, ṣm > mh, kṣṇ > hṇ, ṣṇ > ṇh, kṣ > kha. !-->
+<lg xml:id="NāŚā.17.19">
+  <l><app><rdg wit="#ड">āścaryāmātsaryataṃ </rdg></app>āścaryaṃ acchariyaṃ<app><rdg wit="#न">acchayyaṃ </rdg></app> niścayamicchanti ṇicchayaṃ ca yathā<app><rdg wit="#च">ṇicchayaṃtti tathā </rdg></app></l>
+  <l>(vatsaṃ vacchaṃ ca yathā<app><rdg wit="#य">tathā </rdg></app> apsarasaṃ tadvadaccharaaṃ |)<note place="app"><foreign xml:lang="sa">इदं श्लोकार्धं--<q>डचद</q>रमातृकासु न विद्यतेidaṃ ślokārdhaṃ--</foreign></note></l>
+  <l>utsāho ucchāho pathyaṃ pacchaṃ ca vijñeyam || 19</l>
+</lg>
+  <!-- āścarya > acchariya, niścaya > ṇicchaya. (vatsa > vaccha, apsara > acchara), utsāha > ucchāha, pathya > paccha. !--> 
+<lg xml:id="NāŚā.17.20">
+  <l>tubhyaṃ tujjhaṃ mahyaṃ majjhaṃ vindhyaśca bhavati viṃjjhotti<app><rdg wit="#र">viṃjjhanti</rdg> <rdg wit="#ड">viṃjhonti</rdg><rdg wit="#द">vindhyasyavijjhatti </rdg></app> |</l>
+  <l>daṣṭo daṭhṭhotti tahā hasto 'pi ca bhavati hatthotti || 20</l>
+</lg>
+  <!-- tubhyaṃ > tujjhaṃ, mahyaṃ > majjhaṃ, vindhya > viṃjha, daṣṭa > daṭṭha. hasta > hattha. !--> 
+<lg xml:id="NāŚā.17.21">
+  <l>grīṣmo gimhotti <app><rdg wit="#इ #N">gimha iti</rdg><rdg wit="#द">gimhatti</rdg></app>tathā ślakṣṇaṃ saṇhaṃ<app><rdg wit="#र">saṇhaṃ tu sadā ||</rdg></app> sadā tu vijñeyam |</l>
+</lg>
+
+
+<pb n="372"/>
+
+<lg xml:id="NāŚā.17.21">
+  <l><app><rdg wit="#ड">kṛṣṇaṃ kaṇhaṃ ca bhavedyakṣo jakkho pallaṃkaparyaṅke ||</rdg><rdg wit="#द #N">uṣṇaṃ ca bhaveduhṇaṃ yakṣo jakkhoti yohṇaśca bhavati pallaṅka ...... | ya uṣṇaṃ ca bhaveduhṇaṃ yakṣo jakkhotti paryantam | brahmā ca bhavati bramho bṛhaspatirvai buhapphaī bhavati</rdg></app>uṣṇaṃ uṇhaṃ yakṣo jakkho pallaṃku bhavati paryaṅko || 21</l>
+</lg>
+  <!-- grīṣma > gimha, ślakṣṇa > saṇha, uṣṇa > uṇha, yakṣa > jakkha, paryaṅka > pallaṃka !-->
+<lg xml:id="NāŚā.17.22">
+  <l><app><rdg wit="#N">viparīto hamayogo......hatvaṃ</rdg></app>viparītaṃ hamayoge brahmādau syād bṛhaspatau phatvam<app><rdg wit="#र">hatvam |</rdg></app> |</l>
+  <l>yajño bhavati ca janno<app><rdg wit="#ड">yajñaśca bhavati jahṇo</rdg><rdg wit="#र">jaṇho</rdg><rdg wit="#द">yaṇṇo</rdg></app> bhīṣmo <app><rdg wit="#प">bhihyatti</rdg><rdg wit="#र #N">bhīhma iti</rdg></app>bhimhotti vijñeyaḥ || 22</l>
+</lg>
+  <!-- H and m are reversed in words like brahma, and the word bṛhaspati has a ph. Yajña > janna, bhiṣṃa > bhimha. !-->
+<lg xml:id="NāŚā.17.23">
+  <l>uparigato 'dhastādvā bhavetkakārādikastu yo varṇaḥ |</l>
+  <l><app><rdg wit="#य">sa tu |</rdg></app>sa hi saṃyogavihīnaḥ śuddhaḥ kāryaḥ prayoge 'smin || 23</l>
+</lg>
+  <!-- A syllable which has a consonant either above or below (another consonant) should be formed pure, without any combination of consonants, in this usage. !-->
+<lg xml:id="NāŚā.17.24">
+  <l><app><rdg wit="#भ">evametanmayā proktaṃ kiṃcitprākṛtalakṣaṇam | śeṣaṃ deśīprasiddhaṃ ca jñeyaṃ viprāḥ prayogataḥ || pāṭhyametattu vijñeyaṃ saṃskṛtaṃ prākṛtaṃ tathā |</rdg><rdg wit="#ड">evameva tu</rdg></app>evametattu vijñeyaṃ prākṛtaṃ saṃskṛtaṃ tathā |</l>
+  <l>ata ūrdhvaṃ pravakṣyāmi deśabhāṣāvikalpanam<app><rdg wit="#द">samāśrayam </rdg></app> || 24</l>
+</lg>
+  <!--Thus Prakrit is to be known, as well as Sanskrit. Henceforth I will speak of the options regarding the regional languages. !-->
+<lg xml:id="NāŚā.17.25">
+  <l>bhāṣācaturvidhā jñeyā daśarūpe prayogataḥ<app><rdg wit="#भ">rūpeṣu yoktṛbhiḥ</rdg><rdg wit="#द">rūpaprayogataḥ</rdg></app> |</l>
+  <l>saṃskṛtaṃ prākṛtaṃ caiva yatra pāṭhyaṃ prayujyate || 25</l>
+</lg>
+  <!-- There are four kinds of language in the practice of the Ten Forms, when Sanskrit and Prakrit recitation are employed. !-->
+<lg xml:id="NāŚā.17.26">
+  <l><app><rdg wit="#ग">abhibhāṣā</rdg></app>atibhāṣāryabhāṣā ca jātibhāṣā tathaiva ca |</l>
+  <l>tathā yonyantarī caiva bhāṣā nāṭye prakīrtitā<app><rdg wit="#भ">bhāṣā ve nāṭakāśrayāḥ |</rdg> <rdg wit="#ड">nāṭyaprakīrtitā |</rdg></app> || 26</l>
+</lg>
+  <!-- These are the extreme language (atibhāṣā), langage of āryas (āryabhāṣā), language of types (jātibhāṣā), and language from different orders (yonyantarī). !-->
+
+<pb n="373"/>
+
+<lg xml:id="NāŚā.17.27">
+  <l><app><rdg wit="#द">satyādibhāṣā devānāmāryabhāṣā tu bhūbhujām |</rdg><rdg wit="#च">abhibhāṣā</rdg></app>atibhāṣā tu devānāmāryabhāṣā tu bhūbhujām<app><rdg wit="#य">bhāṣeti kīrtitā</rdg><rdg wit="#भ">bhāṣaiva sā smṛtā</rdg></app> |</l>
+  <l><app><rdg wit="#भ">saṃskāraguṇasaṃpannā </rdg></app>saṃskārapāṭhyasaṃyuktā <app><rdg wit="#N">samyaṅnāṭye pratiṣṭhitā</rdg></app>samyaṅnyāyyapratiṣṭhitā<app><rdg wit="#ड">nyāyapratiṣṭhitā</rdg> <rdg wit="#द">rājye pratiṣṭhitā</rdg><rdg wit="#च">nāṭyapratiṣṭhitā</rdg><rdg wit="#नय">saṃyuktāḥ...... pratiṣṭhitāḥ |</rdg><rdg wit="#भ">saptadvīpapratiṣṭhitā </rdg></app> || 27</l>
+</lg>
+<lg xml:id="NāŚā.17.28">
+  <l><app><rdg wit="#च #द">vividhā </rdg></app>dvividhā jātibhāṣā ca prayoge samudāhṛtā |</l>
+  <l><app><rdg wit="#भ">mlecchadeśaprayuktā ca</rdg></app>mlecchaśabdopacārā ca<app><rdg wit="#य #न">cārācca </rdg></app> bhārataṃ varṣamāśritā<app><rdg wit="#भ #द #N">tathā bhāratasaṃśrayā</rdg><rdg wit="#ड #N">āśritāḥ</rdg></app> || 28</l>
+</lg>
+<lg xml:id="NāŚā.17.29">
+  <l>atha yonyantarībhāṣā <app><rdg wit="#च">grāmāraṇya</rdg></app>grāmyāraṇyapaśūdbhavā |</l>  
+  <l>nānāvihaṅgajā caiva nāṭyadharmīpratiṣṭhitā<app><rdg wit="#द #य">nāṭyadharmaprayogataḥ</rdg><rdg wit="#ड">nāṭyadharmīprayogataḥ</rdg><rdg wit="#भ">dharme pratiṣṭhitā</rdg><rdg wit="#च">prayogajāḥ</rdg></app> || 29</l>
+</lg>
+<lg xml:id="NāŚā.17.30">
+  <l>jātibhāṣāśrayaṃ<app><rdg wit="#भ">āśritaṃ</rdg></app> pāṭhyaṃ dvividhaṃ samudāhṛtam |</l>
+  <l>prākṛtaṃ saṃskṛtaṃ caiva cāturvarṇyasamāśrayam<app><rdg wit="#द #N">cāturvarṇyādisaṃśrayam</rdg></app> || 30</l>
+</lg>
+<lg xml:id="NāŚā.17.31">
+  <l>dhīroddhate salalite<app><rdg wit="#च #भ">dhīralalite</rdg></app> dhīrodātte tathaiva ca |</l>
+  <l>dhīrapraśānte ca tathā<app><rdg wit="#भ">śāntake caiva</rdg></app> pāṭhyaṃ yojyaṃ tu<app><rdg wit="#ग">ca</rdg></app> saṃskṛtam || 31</l>
+</lg>
+<lg xml:id="NāŚā.17.32">
+  <l><app><rdg wit="#चढ">eṣāmeva</rdg> <rdg wit="#नगड">eṣāmevaca </rdg></app>eteṣāmapi sarveṣāṃ <app><rdg wit="#भ">gāyakānāṃ</rdg></app>nāyakānāṃ prayogajam<app><rdg wit="#ड">prayogataḥ</rdg> <rdg wit="#न">prayogajā |</rdg></app> |</l>
+  <l>kāraṇavyapadeśena prākṛtaṃ saṃprayojayet || 32</l>
+</lg>
+
+<pb n="374"/>
+
+<lg xml:id="NāŚā.17.33">
+  <l>(<note place="app"><foreign xml:lang="sa"><q>द</q>सार्धः श्लोको नास्ति । <q>म</q>मातृकायामेवेदं श्लोकार्धम् ।sārdhaḥ śloko nāsti | </foreign></note>dāridryadhyayanābhāvayadṛcchādibhireva ca ||)</l>
+</lg>
+<lg xml:id="NāŚā.17.33">
+  <l><app><rdg wit="#N">aiśvarye tu pramattasya</rdg></app>aiśvaryeṇa pramattānāṃ<app><rdg wit="#च">pramattasya</rdg></app> dāridryeṇa plutātmanām<app><rdg wit="#च #N">plutasya ca</rdg><rdg wit="#ढ">dāridhreṇāplutasya ca |</rdg></app> |</l>
+  <l><app><rdg wit="#न #य #N">uttamasyāpi paṭhataḥ <note>(<foreign xml:lang="sa"><q>ca</q> bruvataḥ bruvataḥ</foreign>)</note> prākṛtaṃ saṃprayojayet</rdg><rdg wit="#ढ">unmattasyāpi paṭhataḥ prākṛtaṃ saṃprayojayet </rdg></app>anadhītottamānāṃ ca saṃskṛtaṃ na prayojayet || 33</l>
+</lg>
+<lg xml:id="NāŚā.17.34">
+  <l><app><rdg wit="#द">ṛtuliṅga </rdg></app>vyājaliṅgapraviṣṭānāṃ<app><rdg wit="#ड">pratiṣṭhānāṃ </rdg></app> śramaṇānāṃ<app><rdg wit="#च #ड">śravaṇānāṃ</rdg></app> tapasvinām |</l>
+  <l>bhikṣucakracarāṇāṃ<app><rdg wit="#दन">cakradharāṇāṃ</rdg> <rdg wit="#ग">cakracaraṇānāṃ </rdg></app> ca prākṛtaṃ saṃprayojayet || 34</l>
+</lg>
+<lg xml:id="NāŚā.17.35">
+  <l><note place="app"><foreign xml:lang="sa">अस्य श्लोकस्थाने <q>भम</q>योर्विना सर्वेषु पाठो यथा--बाले ग्रहोपसृष्टे च स्त्रीणां स्त्रीप्रकृतौ तथा । नीचे मत्ते सलिङ्गे च प्राकृतं पाठ्यमिष्यते । (<q>ग</q>--बालग्रह)asya ślokasthāne </foreign></note>bhāgavatatāpasonmattabālanīcagrahopasṛṣṭeṣu |</l>
+  <l>strīnīcajātiṣu tathā napuṃsake prākṛtaṃ yojyam || 35</l>
+</lg>
+<lg xml:id="NāŚā.17.36">
+  <l>parivrāṇmuniśākyeṣu cokṣeṣu śrotriyeṣu ca<app><rdg wit="#भ">mukhyeṣu brāhmaṇaśrotriyādiṣu |</rdg><rdg wit="#म">caukṣyeṣu ||</rdg></app> |</l>
+  <l><app><rdg wit="#न">dvijā </rdg></app>śiṣṭā ye caiva liṅgasthāḥ saṃskṛtaṃ teṣu yojayet || 36</l>
+</lg>
+<lg xml:id="NāŚā.17.37">
+  <l><app><rdg wit="#भ">devyāśca</rdg><rdg wit="#य">rājñaśca</rdg></app>rājñyāśca gaṇikāyāśca<app><rdg wit="#N">divyāyāḥ gaṇikāyāśca</rdg></app> śilpakāryāstathaiva ca |</l>
+  <l><app><rdg wit="#न">kāryāvasthā | </rdg></app>kalāvasthāntarakṛtaṃ<app><rdg wit="#N">tāsāṃ kālāntarakṛtaṃ</rdg></app> yojyaṃ pāṭhyaṃ tu saṃskṛtam || 37</l>
+</lg>
+
+<pb n="375"/>
+
+<lg xml:id="NāŚā.17.38">
+  <l>sandhivigrahasaṃbandhaṃ <app><rdg wit="#ड">saṃpannaṃ</rdg></app>tathā ca <app><rdg wit="#य #न">cāpi śubhāśubham</rdg><rdg wit="#ड #N">aśubhaṃ śubham</rdg></app>prāptavāggatim |</l>
+  <l>grahanakṣatracaritaṃ khagānāṃ rutameva ca || 38</l>
+</lg>
+<lg xml:id="NāŚā.17.39">
+  <l>sarvametattu<app><rdg wit="#ड">etaddhi</rdg></app> vijñeyaṃ <app><rdg wit="#ड">kāryabandhe</rdg><rdg wit="#च">yasmādrājā</rdg></app>kāvyabandhe śubhāśubham<app><rdg wit="#N">yasmādrājñaḥ śubhāśubhaṃ</rdg></app> |</l>
+  <l>nṛpapatnyā<app><rdg wit="#य">bhavetpāṭhyaṃ saṃskṛtaṃ dvijasattamāḥ</rdg></app> smṛtaṃ tasmātkāle pāṭhyaṃ tu saṃskṛtam || 39</l>
+</lg>
+<lg xml:id="NāŚā.17.40">
+  <l>krīḍārthaṃ sarvalokasya <app><rdg wit="#प">prayogasya</rdg></app>prayoge ca sukhāśrayam |</l>
+  <l><app><rdg wit="#ड">krīḍālīlārthakaṃ caiva</rdg></app>kalābhyāsāśrayaṃ caiva pāṭhyaṃ veśyāsu saṃskṛtam || 40</l>
+</lg>
+<lg xml:id="NāŚā.17.41">
+  <l><app><rdg wit="#ड">lokopacāra</rdg></app>kalopacārajñānārthaṃ krīḍārthaṃ pārthivasya ca<app><rdg wit="#य">tu </rdg></app> |</l>
+  <l>nirdiṣṭaṃ śilpakāryāstu<app><rdg wit="#ग">śilpikārye tu</rdg><rdg wit="#ड">śilpakāryeṣu </rdg></app> nāṭake saṃskṛtaṃ vacaḥ || 41</l>
+</lg>
+<lg xml:id="NāŚā.17.42">
+  <l>āmnāyasiddhaṃ sarvāsāṃ śubhamapsarasāṃ vacaḥ<app><rdg wit="#य #N">sarveṣāṃ divyānāṃ vacanaṃ śubham</rdg><rdg wit="#ड">śubhaṃ cāpsarasāṃ vacaḥ | </rdg></app> |</l>
+<l>saṃsargāddevatānāṃ ca<app><rdg wit="#च">vai</rdg><rdg wit="#य #N">hi </rdg></app> taddhi loko 'nuvartate || 42</l>
+</lg>
+<lg xml:id="NāŚā.17.43">
+  <l><app><rdg wit="#भ">chandasāṃ</rdg></app>chandataḥ prākṛtaṃ pāṭhyaṃ<app><rdg wit="#ड">vākyaṃ</rdg></app> smṛtamapsarasāṃ bhuvi<app><rdg wit="#भ">api</rdg></app> |</l>
+  <l><app><rdg wit="#च">mānuṣīṇāṃ |</rdg></app>mānuṣāṇāṃ ca kartavyaṃ kāraṇārthavyapekṣayā || 43</l>
+</lg>
+
+<pb n="376"/>
+
+<lg xml:id="NāŚā.17.44">
+  <l><app><rdg wit="#N">śabarāṇāṃ kirātānāṃ</rdg></app>na barbarakirātānghra <app><rdg wit="#य #N">draviḍa</rdg></app>dramilādyāsu jātiṣu |</l>
+  <l><app><rdg wit="#न #N">nāṭyayoge tu</rdg><rdg wit="#च">nāṭyayogeṣu</rdg></app>nāṭyaprayoge kartavyaṃ <app><rdg wit="#न #N">kāvyaṃ</rdg></app>pāṭhyaṃ bhāṣāsamāśrayam || 44</l>
+</lg>
+<lg xml:id="NāŚā.17.45">
+  <l><app><rdg wit="#न #N">jātiṣvetāsu sarvāsu śubhāsu</rdg><rdg wit="#च">jātirathāsu sarvāsu śuddhāśuddhi dvijasattamāḥ (?) </rdg></app>sarvāsveva hi śuddhāsu jātiṣu dvijasattamāḥ |</l>
+  <l><app><rdg wit="#च #N">śaurasenaṃ samāśritya bhāṣāḥ kāryāstu nāṭake </rdg></app>śaurasenīṃ samāśritya bhāṣāṃ kāvyeṣu yojayet<app><rdg wit="#न">bhāṣā kāryā tu nāṭake</rdg></app> || 45</l>
+</lg>
+<lg xml:id="NāŚā.17.46">
+  <l>athavā chandataḥ kāryā <app><rdg wit="#ढ">daivī bhāṣā</rdg></app>deśabhāṣā prayoktṛbhiḥ |</l>
+  <l>nānādeśasamutthaṃ hi kāvyaṃ<app><rdg wit="#ढ #भ">kāryaṃ</rdg></app> bhavati nāṭake || 46</l>
+</lg>
+<lg xml:id="NāŚā.17.47">
+  <l>māgadhyavantijā prācyā <app><rdg wit="#न">śūrasenā</rdg><rdg wit="#ढ">śūrasenī </rdg></app>śaurasenyardhamāgadhī |</l> 
+  <l>bāhlīkā dākṣiṇātyā ca sapta bhāṣāḥ prakīrtitāḥ || 47</l>
+</lg>
+<lg xml:id="NāŚā.17.48">
+  <l><app><rdg wit="#च">śabara </rdg></app>śakārābhīracaṇḍāla<app><rdg wit="#न">caṇḍālāḥ</rdg></app> <app><rdg wit="#N">śabaradramiḍāndhrajāḥ</rdg></app>śabaradramilānghrajāḥ<app><rdg wit="#च">sacaradramiḍọdhrajāḥ</rdg><rdg wit="#ग">śabara</rdg></app> |</l>
+  <l>hīnā <app><rdg wit="#ढ">vanacarāṇāṃ</rdg></app>vanecarāṇāṃ ca vibhāṣā nāṭake smṛtā || 48</l>
+</lg>
+<lg xml:id="NāŚā.17.49">
+  <l>māgadhī tu narendrāṇāmantaḥpurasamāśrayā<app><rdg wit="#ड">narāṇāṃ cevāntaḥpuranivāsinām</rdg><rdg wit="#न #N">nivāsinām</rdg></app> |</l> 
+  <l>ceṭānāṃ rājaputrāṇāṃ śreṣṭhināṃ<app><rdg wit="#ड #न">śreṣṭhīnāṃ</rdg></app> cārdhamāgadhī || 49</l>
+</lg>
+<lg xml:id="NāŚā.17.50">
+  <l>prācyā vidūṣakādīnāṃ dhūrtānāmapyavantijā<app><rdg wit="#ड">yoḥsābhāṣā avantijā (?) </rdg></app> |</l>
+  <l>nāyikānāṃ sakhīnāṃ ca <app><rdg wit="#न">śūrasenā</rdg><rdg wit="#भ">śaurasenī |</rdg></app>śūrasenyavirodhinī || 50</l>
+</lg>
+
+<pb n="377"/>
+
+<lg xml:id="NāŚā.17.51">
+  <l><app><rdg wit="#च">yodha</rdg><rdg wit="#ड">yaudhanāgarika</rdg><rdg wit="#य">yaudhānāṃ garakādīnāṃ</rdg></app>yaudhanāgarakādīnāṃ dākṣiṇātyātha dīvyatām<app><rdg wit="#ड">ca dīpyatam</rdg><rdg wit="#भ">dīyatām</rdg></app> |</l>
+  <l>bāhlīkabhāṣodīcyānāṃ khasānāṃ ca svadeśajā<app><rdg wit="#ड">khasthānāṃ ca svadeśajā</rdg><rdg wit="#न">khaṣāṇāṃ ca svadeśajā khasānāṃ caiva bhūmiṣu |</rdg></app> || 51</l>
+</lg>
+<lg xml:id="NāŚā.17.52">
+  <l><app><rdg wit="#च">śabarāṇāṃ śakādīnāṃ</rdg><rdg wit="#ड">śakārāṇāṃ śakādīnāṃ</rdg></app>śakāraghoṣakādīnāṃ tatsvabhāvaśca yo gaṇaḥ |</l>
+  <l><app><rdg wit="#च">sakāra</rdg></app>śakārabhāṣā yoktavyā <app><rdg wit="#ड">pāñcālī</rdg><rdg wit="#य">caṇḍālī</rdg></app>cāṇḍālī pulkasādiṣu<app><rdg wit="#न">putkasādiṣu</rdg></app> || 52</l>
+</lg>
+<lg xml:id="NāŚā.17.53">
+  <l>aṅgārakārakavyādha<app><rdg wit="#च">kāravyādhānāṃ</rdg></app>kāṣṭha<app><rdg wit="#ड">patra</rdg></app>yantropajīvinām |</l>
+  <l><app><rdg wit="#भ">jñeyā</rdg></app>yojyā <app><rdg wit="#डN">śabara</rdg></app>śakārabhāṣā tu kiṃcidvānaukasī tathā || 53</l>
+</lg>
+<lg xml:id="NāŚā.17.54">
+  <l><app><rdg wit="#च">gavāśva</rdg><rdg wit="#ड">gajāśvaśvāvika</rdg></app>gajāśvājāvikoṣṭrādighoṣasthānanivāsinām |</l>
+  <l>ābhīroktiḥ śābarī vā<app><rdg wit="#भ">ca</rdg><rdg wit="#ड">syāt</rdg></app> drāmiḍī<app><rdg wit="#N">dramiḍādiṣu</rdg></app> vanacāriṣu<app><rdg wit="#च">dramilādiṣu </rdg></app> || 54</l>
+</lg>
+<lg xml:id="NāŚā.17.55">
+  <l><app><rdg wit="#ड">suraṅgavanakādīnāṃ |</rdg></app>suraṅgākhanakādīnāṃ <app><rdg wit="#च">soṇḍīkāyāśca rakṣiṇām</rdg><rdg wit="#ड">auṣṭikāṇāṃ ca rakṣatāṃ</rdg><rdg wit="#न">auṣṭrīkārāñcarakṣatām |</rdg><rdg wit="#ढ">aụdhrikārasarakṣasām |</rdg></app>sandhikārāśvarakṣatām<app><rdg wit="#N">maudgīkānāṃśca rakṣitā</rdg></app> |</l>
+  <l>vyasane <app><rdg wit="#N">nāyakādīnāṃ</rdg></app>nāyakānāṃ<app><rdg wit="#च">syāt</rdg> <rdg wit="#ड">nāyikādīnāṃ</rdg></app> cāpyātmarakṣāsu māgadhī<app> <rdg wit="#भ">yojayet |</rdg></app> || 55</l>
+</lg>
+
+<pb n="378"/>
+
+<lg xml:id="NāŚā.17.56">
+  <l>na barbarakirātānghra<app><rdg wit="#भ">kirātọdhra</rdg></app> dramilādyāsu<app><rdg wit="#N">dramiḍādyāsu</rdg></app> jātiṣu |</l>
+  <l>nāṭyaprayoge kartavyaṃ kāvyaṃ bhāṣāsamāśritam<app><rdg wit="#भ">samanvitam</rdg><rdg wit="#च">samāśrayam</rdg></app> || 56</l>
+</lg>
+<lg xml:id="NāŚā.17.57">
+  <l>gaṅgāsāgaramadhye tu ye deśāḥ saṃprakīrtitāḥ<app><rdg wit="#न">saṃpravartitāḥ</rdg></app> |</l>
+  <l><app><rdg wit="#भ">ṣakāra</rdg></app>ekārabahulāṃ<app><rdg wit="#N">makārabahulāṃ</rdg></app> bhāṣāṃ teṣu tajjñaḥ prayojayet || 57</l>
+</lg>
+<lg xml:id="NāŚā.17.58">
+  <l>vindhyasāgaramadhye tu ye deśāḥ śrutimāgatāḥ |</l>
+  <l><app><rdg wit="#भ">takāra</rdg><rdg wit="#ढ">śakārabahulāṃ teṣāṃ</rdg></app>nakārabahulāṃ teṣu bhāṣāṃ tajjñāḥ prayojayet || 58</l>
+</lg>
+<lg xml:id="NāŚā.17.59">
+  <l>surāṣṭrāvantideśeṣu<app><rdg wit="#ढ">tu</rdg></app> vetravatyuttareṣu ca<app><rdg wit="#ड">antareṣu ca</rdg></app> |</l>
+  <l><app><rdg wit="#N">deśāsteṣu prakṛrvīta</rdg></app>ye deśāsteṣu kurvīta cakāraprāyasaṃśrayām<app><rdg wit="#न">cakārabahulāmiva</rdg><rdg wit="#च #N">cakārabahulāmiha</rdg></app> || 59</l>
+</lg>
+<lg xml:id="NāŚā.17.60">
+  <l><app><rdg wit="#N">himavān</rdg></app>himavatsindhusauvīrānye janāḥ samupāśritāḥ<app><rdg wit="#न #N">ye ca deśān samāśritāḥ</rdg><rdg wit="#ड">ye ca deśāḥ samāśritāḥ</rdg></app> |</l>
+  <l><app><rdg wit="#ड">oṃkāra</rdg><rdg wit="#भ">ḍhakāra</rdg><rdg wit="#म">thakāra</rdg><rdg wit="#न">okāra</rdg></app>ukārabahulāṃ <app><rdg wit="#ड">tajjñaiḥ</rdg></app>tajjñasteṣu bhāṣāṃ prayojayet || 60</l>
+</lg>
+<lg xml:id="NāŚā.17.61">
+  <l><app><rdg wit="#ड">sarasvatīnadītīre pāriyātrārbudāśritāḥ</rdg></app>carmaṇvatīnadītīre<app><rdg wit="#च">pāre</rdg></app> ye cārbudasamāśrayāḥ<app><rdg wit="#च">samāśritāḥ</rdg></app> |</l>
+  <l><app><rdg wit="#च">takāra</rdg><rdg wit="#य">aukara</rdg><rdg wit="#ड">oṃkāra</rdg></app>okārabahulāṃ nityaṃ teṣu bhāṣāṃ prayojayet || 61</l>
+</lg>
+<lg xml:id="NāŚā.17.62">
+  <l>evaṃ bhāṣāvidhānaṃ tu kartavyaṃ nāṭakāśrayam |</l>
+  <l><app><rdg wit="#ड">atha</rdg></app>atra noktaṃ mayā yattu<app><rdg wit="#च">yacca</rdg></app> lokād grāhyaṃ budhaistu tat<app><rdg wit="#भ">tathā</rdg><rdg wit="#न">yat</rdg></app> || 62</l>
+</lg>
+
+<lg xml:id="NāŚā.17.63">
+  <l><app><rdg wit="#N">iti bhāṣāvidhānaṃ tu kartavyaṃ nāṭakāśrayam</rdg></app>evaṃ bhāṣāvidhānaṃ tu mayā proktaṃ dvijottamāḥ<app><rdg wit="#म">tathaiva ca |<note>अत्र दसज्ञंकमातृकायां विना जादिबान्तासु यमातृकायां च अष्टादशोऽध्यायः, यथा "इति भारतीये नाट्यशास्त्रे भाषाविधानं नामाष्टदशोऽध्यायः" इति ।</note></rdg><rdg wit="#भ">yathāvad dvijasattamāḥ</rdg></app> |</l>
+  <l>punarvākyavidhānaṃ<app><rdg wit="#न">vākyapracāraṃ</rdg><rdg wit="#च">vākyavicāraṃ</rdg><rdg wit="#म">vākyopacāraṃ</rdg></app> tu laukikaṃ saṃnibodhata || 63</l>
+</lg>
+<lg xml:id="NāŚā.17.64">
+  <l>uttamairmadhyamairnīcairye saṃbhāṣyā yathā narāḥ |</l>
+  <l><app><rdg wit="#म">samāno vālpahīno vā</rdg></app>samānotkṛṣṭahīnāśca nāṭake tānnibodhata || 64</l>
+</lg>
+<lg xml:id="NāŚā.17.65">
+  <l>devānāmapi ye devā mahātmāno maharṣayaḥ |</l>
+  <l>bhagavanniti te vācyā yāsteṣāṃ<app><rdg wit="#भ">caiṣāṃ</rdg><rdg wit="#ड">yāstāsāṃ</rdg></app> yoṣitastathā || 65</l>
+</lg>
+<lg xml:id="NāŚā.17.66">
+  <l>devāśca liṅginaścaiva nānāśrutadharāśca ye<app><rdg wit="#न">smaśrudharāśca</rdg><rdg wit="#ड">śrutidharāśca</rdg><rdg wit="#भ">vratadharāśca</rdg></app> |</l>
+  <l>bhagavanniti te vācyāḥ puruṣaiḥ strībhireva ca || 66</l>
+</lg>
+<lg xml:id="NāŚā.17.67">
+  <l>āryeti brāhmaṇaṃ brūyānmahārājeti pārthivam<app><rdg wit="#न">pārthivaḥ</rdg></app> |</l>
+  <l>upādhyāyeti cācāryaṃ vṛddhaṃ tāteti caiva hi || 67</l>
+</lg>
+<lg xml:id="NāŚā.17.68">
+  <l><app><rdg wit="#च #N">chandato nāmabhirvācyā</rdg></app>nāmnā rājeti vā vācyā brāhmaṇaistu narādhipāḥ |</l>
+  <l><app><rdg wit="#म #N">tatkṣāmyaṃ tu</rdg><rdg wit="#ढ">tatkṣantavyaṃ</rdg></app>tatkṣāmyaṃ hi mahīpālairyasmātpūjyā dvijāḥ smṛtāḥ<app><rdg wit="#य #N">dvijottamāḥ</rdg></app> || 68</l>
+</lg>
+<lg xml:id="NāŚā.17.69">
+  <l>brāhmaṇaiḥ sacivo vācyo<app><rdg wit="#ड">sacivairvācyaṃ</rdg><rdg wit="#न">bhāṣyo</rdg></app> hyamātya saciveti vā<app><rdg wit="#भ">vai</rdg></app> |</l>
+  <l>śeṣairanyairjanairvācyo hīnairāryeti nityaśaḥ || 69</l>
+</lg>
+
+<pb n="380"/>
+
+<lg xml:id="NāŚā.17.70">
+  <l>samaiḥ saṃbhāṣaṇaṃ kāryaṃ yena nāmnā sa saṃjñitaḥ |</l>
+  <l>hīnaiḥ <app><rdg wit="#च">śaparihāraṃ tu</rdg><rdg wit="#ढ">saparihāsaṃ</rdg><rdg wit="#भ">saparicāraṃ tu vācyaṃ nāmottamasya tu</rdg></app>saparivāraṃ tu nāmnā saṃbhāṣya uttamaḥ || 70</l>
+</lg>
+<lg xml:id="NāŚā.17.71">
+  <l>niyogādhikṛtāścaiva<app><rdg wit="#च #N">ye tu</rdg></app> puruṣā <app><rdg wit="#भ">yāḥ striyaḥ</rdg></app>yoṣitastathā |</l>
+  <l>kārukāḥ śilpinaścaiva saṃbhāṣyāste tathaiva hi<app><rdg wit="#ढ">ca</rdg></app> || 71</l>
+</lg>
+<lg xml:id="NāŚā.17.72">
+  <l><app><rdg wit="#च">marṣo</rdg><rdg wit="#म">mānyo</rdg></app>mārṣo bhāveti vaktavyaḥ kiṃcidūnastu mārṣakaḥ<app><rdg wit="#च">marṣakaḥ</rdg><rdg wit="#ग">māriṣaḥ</rdg></app> |</l>
+  <l>samāno 'tha<app><rdg wit="#ड">hi</rdg></app> vayasyeti <app><rdg wit="#च">haṃhohanteti</rdg><rdg wit="#ड">hohaṃvā iti</rdg></app>haṃ ho haṇḍeti vādhamaḥ<app><rdg wit="#न">cādhamaiḥ</rdg><rdg wit="#ढ">haṃhotivādhama</rdg></app> || 72</l>
+</lg>
+<lg xml:id="NāŚā.17.73">
+  <l>āyuṣmanniti vācyastu rathī sūtena sarvadā<app><rdg wit="#ड">sūte tu sarvathā</rdg></app> |</l>
+  <l><app><rdg wit="#न">tapasvī ca praśāntaḥ saṃ sādho iti hi</rdg><rdg wit="#ड">tapasvī ca prasannaśca</rdg></app>tapasvīti praśāntastu sādho iti ca śabdyate<app><rdg wit="#भ">śabditaḥ</rdg></app> || 73</l>
+</lg>
+<lg xml:id="NāŚā.17.74">
+  <l>svāmīti yuvarājastu kumāro bhartṛdārakaḥ |</l>
+  <l>somya bhadramukhetyevaṃ he pūrvaṃ cādhamaṃ vadet<app><rdg wit="#भ">vācyaṃ pūrveṇa cāparam</rdg><rdg wit="#च">vādhamaṃ vadet |</rdg></app> || 74</l>
+</lg>
+
+<pb n="381"/>
+
+<lg xml:id="NāŚā.17.75">
+  <l>yadyasya karma śilpaṃ vā vidyā vā jātireva vā |</l>
+  <l>sa tena nāmnā <app><rdg wit="#द #N">saṃbhāṣyo</rdg></app>bhāṣyo hi nāṭakādau prayokttṛbhiḥ<app><rdg wit="#भ">nāṭakādiṣu yokttṛbhiḥ</rdg></app> || 75</l>
+</lg>
+<lg xml:id="NāŚā.17.76">
+  <l>vatsa putraka tāteti nāmnā gotreṇa vā punaḥ |</l>
+  <l>vācyaḥ śiṣyaḥ suto vāpi pitrā vā guruṇāpi vā<app><rdg wit="#भ">nāṭake nāṭayakovidaiḥ</rdg></app> || 76</l>
+</lg>
+<lg xml:id="NāŚā.17.77">
+  <l>saṃbhāṣyā śākyanirgranthā <app><rdg wit="#ड">bhadraṃ te</rdg></app>bhadanteti prayoktṛbhiḥ |</l>
+  <l>āmantraṇaistu pāṣaṇḍāḥ <app><rdg wit="#ड">śeṣāstu</rdg><rdg wit="#द">bhūrāyayāśritaiḥ (?)</rdg><rdg wit="#च">svaya upaśritaiḥ (?)</rdg></app>śeṣāḥ svasamayāśritaiḥ || 77</l>
+</lg>
+<lg xml:id="NāŚā.17.78">
+  <l>deveti nṛpatirvācyo bhṛtyaiḥ prakṛtibhistathā<app><rdg wit="#द">parijanena vā</rdg></app> |</l>
+  <l>bhaṭṭeti sārvabhaumastu nityaṃ parijanena tu<app><rdg wit="#द #N">ha</rdg></app> || 78</l>
+</lg>
+<lg xml:id="NāŚā.17.79">
+  <l>rājannityṛṣibhirvācyo hyapatyapratyayena vā<app><rdg wit="#न">tu</rdg></app> |</l>
+  <l>vayasya rājanniti vā bhavedvācyo mahīpatiḥ || 79</l>
+</lg>
+<lg xml:id="NāŚā.17.80">
+  <l>vidūṣakeṇa rājñī ca ceṭī ca bhavatītyapi |</l>
+  <l>nāmnā vayasyetyapi vā rājñā<app><rdg wit="#द">athavā rājñā</rdg><rdg wit="#न">rājño</rdg></app> vācyo vidūṣakaḥ || 80</l>
+</lg>
+<lg xml:id="NāŚā.17.81">
+  <l>sarvastrībhiḥ <app><rdg wit="#म">patirvācyo hyārya</rdg></app>patirvācya āryaputreti yauvane |</l>
+  <l>anyadā punarāryeti <app><rdg wit="#ड">vācyo |</rdg></app>mahārājeti bhūpatiḥ || 81</l>
+</lg>
+
+<pb n="382"/>
+
+<lg xml:id="NāŚā.17.82">
+  <l>āryeti pūrvajo bhrātā vācyaḥ putra ivānujaḥ |</l>
+  <l><app><rdg wit="#भ">mātṛkāyāmeva</rdg></app>[yoṣidbhiratha kāmyeti rājaputreti yodhanaiḥ ||] 82</l>
+</lg>
+<lg xml:id="NāŚā.17.83">
+  <l>puruṣābhāṣaṇaṃ hyevaṃ kāryaṃ nāṭaye prayokttṛbhiḥ |</l>
+  <l>punaḥ strīṇāṃ pravakṣyāmi yathābhāṣyāstu nāṭake<app><rdg wit="#द #N">ca vakṣyāmi saṃbhāṣaṃ nāṭakāśrayam (bhāṣāṃ nāṭakāśrayām)</rdg></app> || 83</l>
+</lg>
+<lg xml:id="NāŚā.17.84">
+  <l>tapasvinyo devatāśca vācyā bhagavatīti ca<app><rdg wit="#ढ">ha</rdg></app> |</l>
+  <l><app><rdg wit="#भ">gururāryeti</rdg><rdg wit="#ड">gurubhāryā ca</rdg></app>gurubhāryā tu vaktavyā sthānīyā bhavatīti ca || 84</l>
+</lg>
+<lg xml:id="NāŚā.17.85">
+  <l><app><rdg wit="#द">grāmyā bhadreti vaktavyā</rdg></app>gamyā bhadreti vācyā vai vṛddhāmbeti ca<app><rdg wit="#ड">vṛddhā vācyeti</rdg></app> nāṭake |</l>
+  <l><app><rdg wit="#भ">rājaputryastu</rdg><rdg wit="#ड">rājapatnyaśca</rdg></app>rājapatnyastu saṃbhāṣyāḥ sarvāḥ parijanena vai<app><rdg wit="#च #N">tu</rdg></app> || 85</l>
+</lg>
+<lg xml:id="NāŚā.17.86">
+  <l><app><rdg wit="#N">bhaṭṭinī svāminītyevaṃ nāṭake nāṭake budhaiḥ |</rdg></app>bhaṭṭinī svāminī devī tyevaṃ vai<app><rdg wit="#द">svāminītyevaṃ sarvadā</rdg></app> nāṭake budhaiḥ |</l>
+  <l>devīti mahiṣī vācyā rājñā parijanena vā<app><rdg wit="#द">ca</rdg><rdg wit="#च">tu</rdg></app> || 86</l>
+</lg>
+<lg xml:id="NāŚā.17.87">
+  <l><app><rdg wit="#य #N">bhoginya iti śeṣāstu</rdg><rdg wit="#द">bhaṭṭinya iti śeṣāstu</rdg><rdg wit="#ड">bhoginya iti śeṣā hi</rdg><rdg wit="प">bhoginya iti śeṣābhiḥ</rdg></app>bhoginyaḥ pariśiṣṭāstu svāminya iti vā punaḥ |</l>
+  <l>kumāryaścaiva vaktavyāḥ preṣyābhirbhartṛdārikāḥ || 87</l>
+</lg>
+<lg xml:id="NāŚā.17.88">
+  <l>svaseti bhaginī vācyā <app><rdg wit="#N">vatsā vetīha sarvadā |</rdg></app>vatseti ca yavīyasī<app><rdg wit="#ड">jyeṣṭhā vatseti sānujā</rdg><rdg wit="#ढ">cārajā</rdg><rdg wit="#न">vatsā cetīha sarvadā</rdg><rdg wit="#द">vatsā vetīha sarvathā |</rdg></app> |</l>
+  <l>brāhmaṇyāryeti vaktavyā liṅgasthā vratinī ca yā || 88</l>
+</lg>
+
+<pb n="383"/>
+
+<lg xml:id="NāŚā.17.89">
+  <l>patnī cāryeti saṃbhāṣyā pitṛnāmnā sutasya vā1 |</l>
+  <l>samānābhistathā sakhyaḥ haleti<app><rdg wit="#N">haleti </rdg></app> syātparasparam<app><rdg wit="#च">sakhyo halā bhāṣyāḥ parasparam</rdg></app> || 89</l>
+</lg>
+<lg xml:id="NāŚā.17.90">
+  <l>preṣyā hañjeti vaktavyā striyā yatūttamā bhavet |</l>
+  <l>ajjuketi <app><rdg wit="N">bhavedvācyā</rdg></app>ca vaktavyā veśyā parijanena ca<app><rdg wit="#द #N">tu</rdg></app> || 90</l>
+</lg>
+<lg xml:id="NāŚā.17.91">
+  <l><app><rdg wit="#ग">yā tvatra vṛddhā sātvattābhāṣyā parijanena tu</rdg></app>atteti gaṇikāmātā vācyā parijanena hi |</l>
+  <l>priyeti bhāryā śrṛṅgāre vācyā rājñetareṇa vā || 91</l>
+</lg>
+<lg xml:id="NāŚā.17.92">
+  <l>purodhaḥ sārthavāhānāṃ bhāryāstvāryeti sarvadā<app><rdg wit="#भ">nityaśaḥ</rdg><rdg wit="#न">bhāryā tvāryeti sarvadā</rdg><rdg wit="#ड">nāryastvāryeti sarvadā</rdg><rdg wit="#द">aryātu sarvadā</rdg></app> |</l>
+  <l><app><rdg wit="#भ">tallipsārthāni</rdg><rdg wit="#ढ">talliṅgasthāni</rdg></app>talliṅgārthāni nāmāni kāryāṇi kavibhiḥ sadā<app><rdg wit="#द">dvijāḥ</rdg></app> || 92</l>
+</lg>
+<lg xml:id="NāŚā.17.93">
+  <l>autpattikāni yāni <app><rdg wit="#N">na prakhyānīti [prakhyā[tā]nīti?]</rdg></app>syuraprakhyātāni<app><rdg wit="#द">na prakhyātāni</rdg><rdg wit="#ड">na pratyākhyāti</rdg></app> nāṭake |</l>
+  <l>brahmakṣatrasya nāmāni gotra<app><rdg wit="#प">dharma</rdg></app>karmānurūpataḥ || 93</l>
+</lg>
+<lg xml:id="NāŚā.17.94">
+  <l>kāvye kāryāṇi kavibhiḥ śarmavarmakṛtāni hi<app><rdg wit="#भ">śarmavarmeti tānihi</rdg><rdg wit="#द">tu</rdg><rdg wit="#ड">ca</rdg></app> |</l>
+  <l>dattaprāyāṇi nāmāni <app><rdg wit="#च">vaṇijāṃ tu</rdg><rdg wit="#न">vaṇijānāṃ</rdg></app>vaṇijāṃ saṃprayojayet || 94</l>
+</lg>
+<lg xml:id="NāŚā.17.95">
+  <l>[<app><rdg>&gt;<note><q>da</q>मातृकायामेव</note></rdg></app>kāpālikāstu ghaṇṭāntanāmānaḥ samudāhṛtāḥ] |</l>
+<pb n="384"/>
+  <l><app><rdg><note><q>da</q>मातृकायां न वर्तते । </note></rdg></app>śauryodāttāni nāmāni tathā śūreṣu yojayet<app><rdg wit="#भ #N">śūre prayojayet</rdg></app> || 95</l>
+</lg>
+<lg xml:id="NāŚā.17.96">
+  <l>vijayārthāni nāmāni rājastrīṇāṃ tu nityaśaḥ<app><rdg wit="#य">rājñāṃ strīṇāṃ ca kārayet</rdg><rdg wit="#द">tu kārayet</rdg><rdg wit="#च">ca kārayet</rdg></app> |</l>
+  <l>dattā mitrā ca senā ca<app><rdg wit="#ड">seneti</rdg><rdg wit="#भ">dattāṃ mitrāṃ ca senāṃ ca</rdg></app> veśyānāmāni yojayet<app><rdg wit="#द">kārayet</rdg><rdg wit="#ग">mitrāṇi kārayet</rdg></app> || 96</l>
+</lg>
+<lg xml:id="NāŚā.17.97">
+  <l>nānākusumanāmānaḥ preṣyāḥ kāryāstu nāṭake |</l>
+  <l>maṅgalārthāni nāmāni ceṭānāmapi yojayet<app><rdg wit="#न">kārayet</rdg></app> || 97</l>
+</lg>
+<lg xml:id="NāŚā.17.98">
+  <l>gambhīrārthāni nāmāni hyuttamānāṃ prayojayet<app><rdg wit="#न #N">yojayeduttameṣu ca</rdg><rdg wit="#ढ">tu</rdg></app> |</l>
+  <l><app><rdg wit="#द">kasmānnāmnā tu</rdg><rdg wit="#न #N">kasmāt</rdg></app>yasmānnāmānusadṛśaṃ karma teṣāṃ bhaviṣyati || 98</l>
+</lg>
+<lg xml:id="NāŚā.17.99">
+  <l>jāticeṣṭānurūpāṇi śeṣāṇāmapi yojayet<app><rdg wit="#न">kārayet</rdg></app> |</l>
+  <l>nāmāni puruṣāṇāṃ tu strīṇāṃ coktāni tattvataḥ || 99</l>
+</lg>
+<lg xml:id="NāŚā.17.100">
+  <l>evaṃ <app><rdg wit="#द">nāmābhidhānaṃ</rdg></app>nāmavidhānaṃ tu kartavyaṃ kavibhiḥ sadā<app><rdg wit="#न">vidhānasya kavibhistathā</rdg><rdg wit="#ड #N">atha |</rdg></app> |</l>
+  <pb n="385"/>
+  <l><app><rdg wit="#द">evaṃ bhāṣāvidhānāni</rdg><rdg wit="#च">evaṃ bhāṣāvidhānādi |</rdg><rdg wit="#भ">bhāṣāvidhānaṃ vijñeyaṃ tataḥ prakṛtisambhavam | tataḥ pāṭhyasya vakṣyāmi guṇāṃśca dvijasattamāḥ | svaraiḥ ṣaḍjādibhiryuktaṃ nānārasasamanvitam | tadyathā — </rdg><rdg wit="#य">evaṃ bhāṣāvibhāvādi</rdg></app>evaṃ bhāṣāvidhānaṃ tu jñātvā karmāṇyaśeṣataḥ<app><rdg wit="#च">sarvamaśeṣataḥ</rdg><rdg wit="#प">sarvaviśeṣataḥ</rdg></app> || 100</l>
+</lg>
+<lg xml:id="NāŚā.17.101">
+  <l>tataḥ pāṭhayaṃ prayuñjīta ṣaḍalaṅkārasaṃyutam<app><rdg wit="#न">saṃśrayam</rdg></app> |</l>
+</lg>
+<p xml:id="NāŚā.17.101.1">pāṭhayaguṇānidānīṃ vakṣyāmaḥ | <app><rdg wit="#न">tathā</rdg></app>tadyathā saptasvarāḥ, trīṇi sthānāni, catvāro varṇāḥ, dvividhā kākuḥ, ṣaḍalaṅkārāḥ, ṣaḍaṅgānīti<app><rdg><note>'इति' not read in 'N'</note></rdg></app> | eṣāmidānīṃ <app><rdg wit="#भ">lakṣaṇānīti</rdg><rdg wit="#म #N">lakṣaṇānyabhivyākhyāsyāmaḥ</rdg><rdg wit="#न">lakṣaṇānyabhidhāsyāmaḥ |</rdg></app>lakṣaṇamabhivyākhyāsyāmaḥ<pb n="386"/>tatra saptasvarā nāma<app><rdg><note>'नाम' not read in 'N'</note></rdg></app>-ṣaḍjarṣabhagāndhāramadhyamapañcamadhaivataniṣādāḥ | ta ete raseṣūpapādyāḥ | <app><rdg wit="#भ">tadyathā |</rdg></app>yathā —</p>
+
+<pb n="387"/>
+
+<lg xml:id="NāŚā.17.101">
+  <l>hāsyaśṛṅgārayoḥ kāryau svarau madhyamapañcamau<app><rdg wit="#भ">pañcamadhyamau</rdg></app> || 101</l>
+</lg>
+<lg xml:id="NāŚā.17.102">
+  <l>ṣaḍjarṣabhau <app><rdg wit="#भ">ca kartavye</rdg></app>tathā caiva vīraraudrādbhateṣvatha<app><rdg wit="#ड">tu</rdg></app> |</l>
+  <l><app><rdg wit="#भ">niṣādaścaiva gāndhāraḥ karuṇesaṃvidhīyate</rdg></app>gāndhāraśca niṣādaśca kartavyau<app><rdg wit="#प">kartavyaḥ</rdg></app> karuṇe rase || 102</l>
+</lg>
+<lg xml:id="NāŚā.17.103">
+  <l>dhaivataścaiva kartavyo bībhatse<app><rdg wit="#प">bībhatsekartavyaḥ</rdg></app> sabhayānake |</l></lg>
+<p xml:id="NāŚā.17.103.1"><app><rdg wit="#ड">trīṇi sthānānyuraḥ kaṇṭhaśirāṃsīti bhavantyapi</rdg></app>trīṇi sthānāni — uraḥ kaṇṭhaḥ śira iti | <app><rdg wit="#भ">bhavati cātra ślokaḥ |</rdg></app>bhavatyapi ca —</p>
+
+<pb n="388"/>
+
+<lg xml:id="NāŚā.17.104">
+  <l>śārīryāmatha vīṇāyāṃ tribhyaḥ sthānebhya eva tu<app><rdg wit="#ड">ca</rdg></app> |</l>
+  <l><app><rdg wit="#ड">urasā śirasā |</rdg></app>urasaḥ śirasaḥ kaṇṭhātsvaraḥ kākuḥ pravartate || 104</l>
+</lg>
+
+<pb n="389"/>
+
+<lg xml:id="NāŚā.17.105">
+  <l><app><rdg wit="#द #N">ābhāṣaṇaṃ tu dūrasthe</rdg><rdg type="conj" resp="#Kavi">abhāṣaṇaṃ ca dūrasthe</rdg><rdg wit="#भ">ābhāṣaṇaṃ tu dūrasthaṃ śiraḥsthena svareṇa hi | kaṇṭhena nātidūre syādurasā caiva pārśvataḥ |</rdg></app>ābhāṣaṇaṃ ca dūrasthe śirasā saṃprayojayet |</l>
+  <l>nātidūre ca kaṇṭhena hyurasā caiva pārśvataḥ<app><rdg wit="#द #N">samīpasthe tathorasā |</rdg><rdg wit="#ड">dūre 'pi kaṇṭhenāpyurasā cāpi pārśvataḥ</rdg><rdg wit="#च">jhurasā ca samīpataḥ</rdg></app> || 105</l>
+</lg>
+<lg xml:id="NāŚā.17.106">
+  <l><app><rdg wit="#द #N">urasodāharet</rdg></app>urasodāhṛtaṃ vākyaṃ śirasā dīpayedbudhaḥ<app><rdg wit="#च">śirasoddīpayedbudhaḥ</rdg><rdg wit="#भ">punaḥ</rdg></app> |</l>
+  <l><app><rdg wit="#द #N">kaṇṭhena śamayeccaiva</rdg></app>kaṇṭhena śamanaṃ kuryātpāṭhyayogeṣu<app><rdg wit="#ड">pāṭhayoge tu</rdg></app> sarvadā<app><rdg wit="#भ">nityaśaḥ |</rdg></app> || 106</l>
+</lg>
+
+<pb n="390"/>
+
+<lg xml:id="NāŚā.17.107">
+  <l>udāttaścānudāttaśca svaritaḥ kampitastathā |</l>
+  <l>varṇāścatvāra eva syuḥ pāṭhyayoge tapodhanāḥ || 107</l>
+</lg>
+<p xml:id="NāŚā.17.107.1">tatra hāsyaśrṛḍgārayoḥ <app><rdg wit="#य">svaritodāttaṃ vīraṃ</rdg><rdg wit="#न">svaritodāttau vīra</rdg><rdg wit="#ढ">svaritodāttairvīra</rdg></app>svaritodāttairvarṇaiḥ<app><rdg wit="#N">svaritodāttaṃ vīraraudrādbhuteṣūdāttakampitaiḥ</rdg></app> pāṭhya — mupapādyaṃ, vīraraudrādbhuteṣūdāttakampitaiḥ<app><rdg wit="#य">udāttaṃ kampitaṃ</rdg><rdg wit="#ठ">udāttakampitaiḥ</rdg><rdg wit="#ड">udāttasvaritakampitaiḥ |</rdg></app> karuṇa — bībhatsa — bhayānakeṣva — <pb n="391"/> nudāttasvaritakampitairiti<app><rdg wit="#य  #N">kampitairvarṇaiḥ pāṭhyamupapādayeta iti |</rdg></app> | dvividhā kākuḥ sākāṅkṣā nirākāṅkṣā ceti<app><rdg wit="#भ">nirākāṅkṣā ca</rdg></app> vākyasya sākāṅkṣānirākāṅkṣatvāt |</p>
+<lg xml:id="NāŚā.17.108">
+  <l><app><rdg wit="#ड">aniyuktamekaṃ</rdg></app>aniyuktārthakaṃ<app><rdg wit="#य  #N">abhi(ni ?) yuktārthakaṃ</rdg></app> vākyaṃ sākāṅkṣamiti yaṃjñitam |</l>
+  <l>niyuktārthaṃ tu yadvākyaṃ nirākāṅkṣaṃ taducyate<app><rdg wit="#य  #N">saducyate</rdg></app> || 108</l>
+</lg>
+<p xml:id="NāŚā.17.108.1"><app><rdg wit="#च">atra</rdg><rdg wit="#भ">tatra sākāṅkṣā nāma</rdg><rdg wit="#य">tatra sākāṅkṣā nāma vākyaṃ</rdg><rdg wit="#ड">aniyuktaṃ nāma niryātitavarṇālaṅkāraṃ kaṇṭhoraḥsthānagatam |</rdg><rdg wit="#न">aniryuktaṃ</rdg><rdg wit="#प">tasya sākāṅkṣa nāma vākyaṃ</rdg><rdg><note><q>daN</q> "तत्र मन्द्रान्तं" इति न विद्यते । </note></rdg></app>tatra sākāṅkṣaṃ nāma tārādimandrānta<app><rdg wit="#भ">aniryuktārthaṃ</rdg></app>maniyuktārthama — niryātitavarṇālaṅkāraṃ kaṇṭhoraḥsthānagatam | <app><rdg>nirākāṅkṣā nāma niryuktārtha |</rdg></app>nirākāṅkṣaṃ nāma niyuktārthaṃ <pb n="392"/>niryātitavarṇālaṅkāraṃ śiraḥsthānagataṃ mandrāditārāntamiti<app><rdg wit="#भ">tārāntaṃ pāṭhyamiti</rdg><rdg wit="#ड">tārāntagatamiti</rdg></app> |</p>
+<p xml:id="NāŚā.17.108.2"><app><rdg wit="#द">athālaṅkārāḥ</rdg><rdg wit="#ड">atha ṣaḍalaṅkārā</rdg></app>athaṃ <app><rdg wit="#N">atha alaṅkārāḥ</rdg></app>ṣaḍalaṅkārā nāma —</p>
+<lg xml:id="NāŚā.17.109">
+  <l>ucco dīptaśca<app><rdg wit="#द">dīpto 'tha</rdg></app> mandraśca nīca drutavilambitau<app><rdg wit="#प">nīcadrutavilambitāḥ</rdg></app> |</l>
+  <l><app><rdg wit="#द">pāṭhasya</rdg></app>pāṭhyasyaite hyalaṅkārā lakṣaṇaṃ ca nibodhata<app><rdg wit="#प">vinibodhata</rdg></app> || 109</l>
+</lg>
+<p xml:id="NāŚā.17.109.1">ucco nāma śiraḥsthānagatastārasvaraḥ, sa ca dūrasthābhāṣaṇa<app><rdg wit="#न">vismayottarasaṃjalpanadūrāhvānabādhādyeṣu</rdg></app>vismayottarottara saṃjalpadūrāhvānatrāsanābādhādyeṣu<app><rdg wit="#ढ">trāsanavākyeṣu</rdg><rdg wit="#भ">bādhākruṣṭakalahābhidhāneṣu bhāveṣu |</rdg></app> | dīpto nāma śiraḥsthānagatastārataraḥ<app><rdg wit="#य">śiraḥsthānatiraskāraḥ sa ca |</rdg></app>, sa cākṣepa<pb n="393"/><app><rdg wit="#न">vāda</rdg></app>kalahavivādāmarṣa<app><rdg wit="#ड">amarṣotkruṣṭa</rdg><rdg wit="#द">ākrośa</rdg><rdg wit="#प">āmarṣaṇakrodha</rdg><rdg wit="#भ">ruṣṭādharṣaṇa</rdg></app>kruṣṭādharṣaṇakrodhaśauryadarpatīkṣṇarūkṣābhidhānanirbhartsanākranditādiṣu<app><rdg wit="#प">ākrandanādiṣu</rdg></app> | mandro nāma <app><rdg wit="#द #N">urasi mandrasvaraḥ</rdg></app>uraḥsthānagato nirvedaglāni<app><rdg wit="#ड">glāniśaṅkā</rdg></app> cintautsukyadainyavyādhi <app><rdg><note>क्रीडाशब्दो <q>bhama</q>योरेव</note></rdg></app>krīḍāgāḍhaśastrakṣatamūrchāmada<app><rdg wit="#N">mūrchā madādiṣu</rdg></app>guhyārthavacanādiṣu<app><rdg><note>गुह्यार्थवचनं चदडपादिषु नास्ति, <q>bhabanamayarā</q>दिषु विद्यते</note></rdg></app> | nīco nāma <app><rdg wit="#द #N">tatraiva mandrataraḥ</rdg><rdg wit="#ढ">uraḥsthāno</rdg><rdg wit="#ड">uraḥsthānagataḥ</rdg><rdg wit="प">uraḥsthāne</rdg></app>uraḥsthānastho mandrataraḥ | sa ca svabhāvābhāṣaṇa <app><rdg wit="#द">bhayaśāntatrastapatita mūrchitādiṣu</rdg><rdg wit="#ड">svabhāṣā bhāṣaṇavyādhita pathiśrānta trastapatita mūrchitādiṣu</rdg><rdg wit="#न">vyādhitapaḥśrāntatrāsapatita mūrchādiṣu</rdg><rdg wit="#फ">vyādhitapaḥśrāntatrāsapādapātamūrchanādiṣu</rdg></app>vyādhiśama<app><rdg wit="#N">vyādhitapaḥpādaśrāntatrastapatitamūrchitādiṣu</rdg></app>śramārtatrastapatitamūrchitādiṣu | druto nāma <app><rdg wit="#द #N">kaṇṭhagataḥ svaritaḥ</rdg><rdg wit="#प">kaṇṭhagatasvaritoccagata svarakṛtiḥ sa ca skhalitavalganamadanaśītajvarārtatrastāyastānyaika kāryāvedanādiṣu</rdg></app>kaṇṭhagataḥ sa ca tvaritaḥ, <app><rdg wit="#ढ">skhalita lajjitotkhātamanmana.....</rdg><rdg wit="#ड">skhalitavellana madanabhaya</rdg></app>lallanamanmanabhayaśītajvara<app><rdg wit="#ड">trastāyastāgūḍhakārya.....</rdg><rdg wit="#भ">trāsāyāsa</rdg></app> <app><rdg wit="#N">śītajvarārtatrastānyadhikakāryāvedanādiṣu</rdg></app>trāsāyastātyayikakāryāvedanādiṣu | vilambito nāma <app><rdg wit="#द #N">tatraiva sthitalayaḥ</rdg><rdg wit="#च">kaṇṭhasthānastho</rdg><rdg wit="#ढ">kaṇṭhasthāno mandraḥ</rdg><rdg wit="#ड">kaṇṭhasthānagato mandraḥ |</rdg></app>kaṇṭhasthānagata<pb n="394"/>stanumandraḥ <app><rdg wit="#N"><q>'sa ca'</q> not read in 'N'</rdg></app>sa ca śṛṅgāra<app><rdg><note>करुणशब्दो <q>caḍaḍhapada</q>आदिषु न विद्यते ।</note></rdg></app>karuṇa<app><rdg wit="#न #N">vitarka</rdg></app>vitarkitavicārāmarṣā<app><rdg wit="#य">āśvasita</rdg></app>sūyitāvyaktārthapravādalajjācintātarjana <app><rdg wit="#द #N">vismita</rdg></app>vismayadoṣānukīrtanadīrgharoga<app><rdg wit="#ड">roṣa</rdg></app>nipīḍanādiṣu | <app><rdg wit="#भ">atra ślokāḥ</rdg></app>atrānuvaṃśyā
+ślokāḥ bhavanti —</p>
+
+<lg xml:id="NāŚā.17.110">
+  <l>uttarottarasaṃjalpa<app><rdg wit="#ड">saṃjalpe</rdg></app>paruṣākṣepaṇeṣu ca<app><rdg wit="#ड #N">ākṣepaṇe tathā</rdg></app> |</l>
+  <l>tīkṣṇarūkṣābhinayane <app><rdg wit="#भ">tathākrande ca nityaśaḥ</rdg><rdg wit="#न">śīte cākrandite</rdg><rdg wit="#द">ākrande krandite</rdg><rdg wit="#फ">āveśe</rdg></app>āvege krandite tathā || 110</l>
+</lg>
+<lg xml:id="NāŚā.17.111">
+  <l><app><rdg wit="#भ">parokṣahvayane caiva tarjanatrāsaneṣu ca ||</rdg></app>parokṣasya samāhvāne tarjane trāsane tathā |</l>
+  <l>dūrasthābhāṣaṇe caiva tathā nirbhartsaneṣu ca || 111</l>
+</lg>
+<lg xml:id="NāŚā.17.112">
+  <l><app><rdg wit="#भ">eṣu nānārasopetā nityamarthapradarśitā (kā ?)</rdg><rdg wit="#च">sarveṣu</rdg></app>bhāveṣveteṣu nityaṃ hi nānārasasamāśrayā |</l>
+  <l>uccā dīptā drutā caiva kākuḥ kāryā prayoktṛbhiḥ || 112</l>
+</lg>
+<lg xml:id="NāŚā.17.113">
+  <l>vyādhite ca jvarārte ca bhayārte śītaviplute<app><rdg wit="#ग">śoke ca kṣutpipāsite | viṣamasthe vitarke</rdg> <rdg wit="#फ #N">kṣobhe ca kṣutpipāsite | viṣamasthe.....</rdg></app> |</l>
+  <l>niyamasthe vitarke ca gāḍhaśastrakṣateṣu ca<app><rdg wit="#भ #N">kṣate tathā |</rdg></app> || 113</l>
+</lg>
+
+<pb n="395"/>
+
+<lg xml:id="NāŚā.17.114">
+  <l><app><rdg wit="#ढ">gụ̄dhārtha</rdg></app>guhyārthavacane caiva cantāyāṃ tapasi sthite |</l>
+  <l>mandrā <app><rdg wit="#न #N">sthitā</rdg><rdg wit="#च">vilambitā caiva</rdg></app>nīcā ca kartavyā <app><rdg wit="#च">kākuḥ kāryā</rdg></app>kākurnāṭyaprayoktṛbhiḥ || 114</l>
+</lg>
+<lg xml:id="NāŚā.17.115">
+  <l>lalle ca manmane<app><rdg wit="#ड">malle ca madane</rdg></app> caiva bhayārte śītaviplute |</l>
+  <l>mandrā drutā ca kartavyā kākurnāṭyaprayoktṛbhiḥ || 115</l>
+</lg>
+<lg xml:id="NāŚā.17.116">
+  <l>dṛṣṭānaṣṭānusaraṇe<app><rdg wit="#ड">sāreṇa</rdg></app> <app><rdg wit="#भ">iṣṭāriṣṭa</rdg></app>iṣṭāniṣṭaśrute <app><rdg wit="#च #N">śrutau</rdg></app>tathā |</l>
+  <l><app><rdg wit="#च">dṛṣṭārtha</rdg></app>iṣṭārthakhyāpane caiva <app><rdg wit="#य">cintāyāne</rdg><rdg wit="#च">cintāgraste</rdg></app>cintādhyāne tathaiva ca || 116</l>
+</lg>
+<lg xml:id="NāŚā.17.117">
+  <l>unmāde 'sūyite caiva<app><rdg wit="#भ">ca viṣāde ca</rdg></app> upālambhe tathaiva hi |</l>
+  <l><app><rdg wit="#द">avyaktārthe pradāne ca tathā loke</rdg></app>avyaktārthapravāde ca kathāyoge tathaiva ca || 117</l>
+</lg>
+<lg xml:id="NāŚā.17.118">
+  <l>uttarottarasaṃjalpe kārye 'tiśayasaṃyute |</l>
+  <l><app><rdg wit="#च">pīḍite</rdg><rdg wit="#ड">vikṣate vyādhite tvaṅge</rdg><rdg wit="#द">vikṛterṣyākṛte</rdg><rdg wit="#भ">krodhe caiva hi duḥkhe ca śoke nityaṃ tathaiva ca</rdg></app>vikṛte vyādhite krodhe duḥkhe śoke tathaiva ca || 118</l>
+</lg>
+<lg xml:id="NāŚā.17.119">
+  <l><app><rdg wit="#भ">amarṣe vismaye</rdg></app>vismayāmarṣayoścaiva <app><rdg wit="#न">harṣe 'tha</rdg><rdg wit="#ड">harṣe ca</rdg></app>praharṣe paridevite |</l>
+  <l>vilambitā ca dīptā ca kākurmandrā<app><rdg wit="#द">mandā</rdg></app> ca vai bhavet || 119</l>
+</lg>
+
+<pb n="396"/>
+
+<lg xml:id="NāŚā.17.120">
+  <l><app><rdg><note>अयं श्लोको <q>dacā</q>दिषु न विद्यते । </note></rdg></app>laghvakṣaraprāyakṛte gurvakṣarakṛte tathā |</l>
+  <l>uccā dīptā ca kartavyā kākustatra prayoktṛbhiḥ || 120</l>
+</lg>
+<lg xml:id="NāŚā.17.121">
+  <l>yāni saumyārthayuktāni sukhabhāvakṛtāni ca<app><rdg wit="#च">vai</rdg><rdg wit="#भ">nādakṛtāni vai</rdg><rdg wit="#न">tu</rdg></app> |</l>
+  <l>mandrā vilambitā caiva tatra kākurvidhīyate || 121</l>
+</lg>
+<lg xml:id="NāŚā.17.122">
+  <l>yāni syustīkṣṇarūkṣāṇi dīptā coccā ca<app><rdg wit="#य #द">dīptamuccaṃ ca</rdg><rdg wit="#ढ">dīptamuccaiśca</rdg><rdg wit="#च">dīptā voccā ca</rdg></app> teṣvapi |</l>
+  <l>evaṃ nānāśrayopetaṃ pāṭhyaṃ yojyaṃ prayoktṛbhiḥ || 122</l>
+</lg>
+<lg xml:id="NāŚā.17.123">
+  <l>hāsyaśṛṅgārakaruṇeṣviṣṭā kākurvilambitā |</l>
+  <l>vīraraudrādbhuteṣūccā dīptā vāpi<app><rdg wit="#भ">caiva</rdg><rdg wit="#द">cāpi</rdg></app> praśasyate || 123</l>
+</lg>
+<lg xml:id="NāŚā.17.124">
+  <l>bhayānake sabībhatse drutā nīcā ca kīrtitā |</l>
+  <l>evaṃ bhāvarasopetā kākuḥ kāryā<app><rdg wit="#प">yojyā</rdg></app> prayoktṛbhiḥ || 124</l>
+</lg>
+<p xml:id="NāŚā.17.124.1"><app><rdg wit="#ड">athāṅgāni</rdg><rdg wit="#न">atha ṣaḍaṅgāni</rdg></app>athāṅgāni <app><rdg><note>षट् not read in 'N'</note></rdg></app>ṣaṭ — vicchedo 'rpaṇaṃ visargo 'nubandho dīpanaṃ praśamanamiti<app><rdg wit="#प">iti ṣaḍaṅgāni</rdg></app> | tatra vicchedo nāma <app><rdg wit="#भ">virāmaḥ |</rdg></app>virāmakṛtaḥ |</p>
+
+<pb n="397"/>
+
+<p xml:id="NāŚā.17.124.2">arpaṇaṃ nāma <app><rdg wit="#ड">līlāvarṇasvareṇāpūrayadiva</rdg><rdg wit="#न">līlāyamāna madhuravarṇasvareṇāpūrayadiva</rdg><rdg wit="#ग">līlāyamāna madhuravarṇanāsthānena</rdg></app>
+layena pūrayadbhiriva <rdg wit="#प">līlāyamānānuvarṇena svareṇa</rdg>līlāyamānamadhuravalgunā svareṇa<app><rdg wit="#N">svareṇa pūrayadbhiriva raṅgaṃ</rdg></app> pūrayateva raṅga<app><rdg wit="#फ">rasaṃ</rdg></app> yatpaṭhyate tadarpaṇam | visargo nāma vākyanyāsaḥ<app><rdg wit="#न">vākyasyopanyāsaḥ</rdg><rdg wit="#फ">vākyopanyāsaḥ</rdg></app> | anubandho nāma <app><rdg wit="#भ">padasya vicchedamantareṇānucchvāsanaṃ</rdg><rdg wit="#य #N">padāntareṣvavicchedaḥ</rdg><rdg type="conj" resp="#Kavi">padāntareṣvapi vicchedaḥ</rdg></app>padāntareṣvavicchedaḥ, <app><rdg wit="#द">anucchvāsanaṃ vā</rdg></app>anucchvasanaṃ<app><rdg wit="#N">yadānucchvasanaṃ vā</rdg></app> vā | dīpanaṃ nāma tristhānaśobhi vardhamāna<app><rdg wit="#ड">vardhanaṃ nāma</rdg> <rdg wit="#न">svaraṃ ca</rdg></app>svaraṃ ceti<app><rdg><note>'चेति' not read in 'N'</note></rdg></app> | praśamanaṃ nāma tāragatānāṃ svarāṇāṃ <app><rdg><note>'प्रशाम्यता' मिति <q>cadā</q>दिषु न दृश्यते <q>da</q>स्वराणामेकस्वर्येण</note></rdg></app>praśāmyatāmavai<app><rdg wit="#N">svarāṇāmeṣaiśvaryeṇāvatāraṇamiti</rdg></app>svaryeṇāvataraṇamiti<app><rdg wit="#च">avarohaṇamiti</rdg><rdg wit="#न">avataraṇamiti |</rdg><rdg wit="#Kavi">ṇavitāraṇamiti</rdg></app> | <app><rdg wit="#द">eṣāṃ rasa |</rdg></app>eṣāṃ ca rasagataḥ<pb n="398"/> prayogaḥ — tatra hāsyaśṛṅgārayo<app><rdg><note><q>mabha</q>योरेव 'आकांक्षायां' इति, N does not read it</note></rdg></app>rākāṃkṣāyāmarpaṇavicchedadīpanapraśamanayuktaṃ pāṭhyaṃ<app><rdg wit="#ड">vākyaṃ</rdg></app> kāryam | dīpanapraśamanayuktaṃ karuṇe<app><rdg><note>"दीपन....करणे" इति <q>bhama</q>योरेव</note></rdg></app> | <app><rdg wit="#ड">karuṇavīrādbhuteṣu samākāṃkṣavicchedapraśamanārpaṇadīpanānubandhabahulaṃ pāṭhyaṃ prayojyam |</rdg><rdg wit="#न">vīraraudrādbhuteṣu sattvākāṃkṣaṇā vicchedoddipana</rdg></app>vicchedapraśamanadīpanānubandhabahulaṃ vīraraudrādbhuteṣu, <app><rdg wit="#द #N">bībhatsabhayānakayorvisargavicchedākāṃkṣaṇaprāyamiti</rdg><rdg wit="#ड">vicchedārpaṇayuktamiti |</rdg></app>visargavicchedayuktaṃ bībhatsabhayānakayoriti<app><rdg><note>'N' does not read दीपन— भयानकयोरिति । N has करुणवीररौद्राद्भतेषु सत्त्वाकांक्षणविच्छेदोद्दीपनानुबन्धबहुलं पाठ्यं प्रयोज्यम् ।</note></rdg></app> | <app><rdg wit="#N">sarveṣāṃ caiteṣāṃ</rdg></app>sarveṣāmapyeṣāṃ<app><rdg wit="#ड">caiva teṣāṃ</rdg><rdg wit="#द">caitaiṣāṃ</rdg><rdg wit="#ढ">caivaiṣāṃ</rdg></app> mandramadhya<app><rdg wit="#प #N">tāravyavasthayā tristhānagataḥ prayogaḥ</rdg></app>tārakṛtaḥ prayogastristhānagataḥ | tatra dūrasthābhāṣaṇe tāraṃ śirasā, nātidūre madhyaṃ kaṇṭhena, pārśvato mandramurasā prayojayetpāṭhyamiti | <app><rdg wit="#च">mandratāraṃ gacchet |</rdg></app>mandrāttāraṃ na gacchet, tārādvā mandramiti |</p>
+
+
+
+<pb n="399"/>
+
+<p xml:id="NāŚā.17.124.3"><app><rdg wit="#भ">atra ca</rdg></app>eṣāṃ ca drutamadhyavilambitāstrayo layā raseṣūpapādyāḥ<app><rdg wit="#भ">upayojyāḥ</rdg></app> | tatra hāsyaśṛṅgārayormadhyalayaḥ
+<app><rdg wit="#द">karuṇe ca</rdg></app>karuṇe vilambito, vīraraudrādbhuta<app><rdg wit="#भ">bībhatsakaruṇayorvilambitaḥ</rdg><rdg><note><q>bha</q>मातृकायां बीभत्सशब्दो नास्ति</note></rdg></app>bībhatsabhayānakeṣu druta iti | <app><rdg><note>'N' does not show number after 'द्रुत इति ।'</note></rdg></app> atha virāmaḥ arthasamāptau kāryavaśānna chandovaśāt<app><rdg wit="#भ">nānācchandovaśāt</rdg></app> | kasmāt, dṛśyate hyekadvitricaturakṣarā virāmāḥ | yathā —</p>
+<lg xml:id="NāŚā.17.125">
+  <l>
+    <seg type="pāda">kiṃ gaccha mā viśa sudurjana <app><rdg wit="#द">kārito 'si</rdg></app>vārito 'si</seg>
+    <seg type="pāda">kāryaṃ tvayā na mama sarvajanopayuktam<app><rdg wit="#च">yuktam</rdg><rdg wit="#Kavi">sarvajanopabhuktam</rdg></app> |</seg>
+  </l>
+  <l>
+    <seg type="pāda"><app><rdg wit="#न">sūcāṅkurābhinayaneṣu</rdg></app>sūcāsu cāṅkuragate ca<app><rdg wit="#ड">atra</rdg></app> tathopacāre-</seg>
+    <seg type="pāda"><app><rdg wit="#ड">svalpa |</rdg></app>ṣvalpākṣarāṇi hi padāni bhavanti kāvye || 125</seg>
+  </l>
+</lg>
+
+<pb n="400"/>
+
+<p xml:id="NāŚā.17.125.1">evaṃ virāme prayatno 'nuṣṭheyaḥ | kasmāt, virāmo hyarthānudarśakaḥ | <app><rdg wit="#ड">bhavatyapi ca ślokaḥ</rdg></app>atra
+ślokaḥ<app><rdg wit="#N">bhavatyapi</rdg></app> — </p>
+<lg xml:id="NāŚā.17.126">
+  <l><app><rdg wit="#य">virāme tu prayatnastu</rdg></app>virāmeṣu prayanto<app><rdg wit="#N">prayatnastu</rdg></app> hi nityaṃ kāryaḥ prayoktṛbhiḥ |</l>
+  <l>kasmādabhinayo hyasminnarthāpekṣī yataḥ smṛtaḥ<app><rdg wit="#भ">pratiṣṭhitaḥ</rdg><rdg wit="#न">sthitaḥ</rdg><rdg wit="#ड">hyasmādarthāpekṣī yatastataḥ</rdg><rdg wit="#च">hyarthe arthāpekṣī yataḥ sthitaḥ</rdg></app> || 126</l>
+</lg>
+<lg xml:id="NāŚā.17.127">
+  <l>yatra vyagrāvubhau hastau tatra dṛṣṭisamanvitaḥ<app><rdg wit="#द">samanvitaiḥ</rdg></app> |</l>
+  <l><app><rdg wit="#द">vāciko 'bhinayaḥ</rdg></app>vācikābhinayaḥ kāryo virāmairarthadarśakaiḥ<app><rdg wit="#ड">darśibhiḥ |</rdg></app> || 127</l>
+</lg>
+
+﻿<pb n="401"/>
+
+<lg xml:id="NāŚā.17.128">
+  <l><app><rdg wit="#म">prāyau | ete trayaḥ ślokāḥ</rdg><rdg><note><q>bhā</q>दर्शे न विद्यन्ते</note></rdg><rdg wit="द">prāyo raudre ca raudraḥ praharaṇākule</rdg></app>prāyo vīre ca raudre ca karau praharaṇākulau |</l>
+  <l>bībhatse <app><rdg wit="#ड">kuñcitatvācca</rdg><rdg wit="#द">kutsitatve ca bhavataḥ kuṇṭhitau</rdg></app>kutsitatvācca bhavataḥ kuñcitau karau || 128</l>
+</lg>
+<lg xml:id="NāŚā.17.129">
+  <l>hāsye coddeśamātreṇa karuṇe ca pralambitau |</l>
+  <l>adbhute vismayātstabdhau bhayāccaiva<app><rdg wit="#च">vismayāviṣṭe stabdhau kāryo</rdg></app> bhayānake || 129</l>
+</lg>
+<lg xml:id="NāŚā.17.130">
+  <l>evamādiṣu cānyeṣu<app><rdg wit="#ड">sarveṣu</rdg></app> <app><rdg wit="#ड">adhikāreṣu</rdg><rdg wit="#द">pravicāreṣu</rdg></app>pravicāre 'tha hastayoḥ |</l>
+  <l>alaṅkāravirāmābhyāṃ sādhyate hyarthaniścayaḥ<app><rdg wit="#द">arthaviniścayaḥ</rdg></app> || 130</l>
+</lg>
+<lg xml:id="NāŚā.17.131">
+  <l>ye virāmāḥ smṛtā <app><rdg wit="#भ">nṛtte</rdg></app>vṛtte teṣvalaṅkāra iṣyate |</l>
+  <l>samāpte 'rthe pade vāpi tathā prāṇavaśena vā || 131</l>
+</lg>
+<lg xml:id="NāŚā.17.132">
+  <l>padavarṇasamāse ca<app><rdg wit="#ड">vā</rdg></app> drute bahvarthasaṃkaṭe |</l>
+  <l>kāryo virāmaḥ pādānte tathā prāṇavaśena vā || 132</l>
+</lg>
+<lg xml:id="NāŚā.17.133">
+  <l><app><rdg><note><q>idaṃ</q> श्लोकार्धं <q>bhama</q>योर्नास्ति । N. reads it.</note></rdg></app>śeṣamarthavaśenaiva virāmaṃ saṃprayojayet |</l>
+</lg>
+
+<pb n="402"/>
+
+<p xml:id="NāŚā.17.132.1"><app><rdg wit="#भ">atha</rdg><rdg wit="#ड">atrānugatāni catvāryakṣarāṇi rasabhāvānugatāni kṛṣṭānyakṣarāṇi codvodhyāni | tadyathā</rdg></app>atra ca bhāvagatāni <app><rdg wit="#ग">rasajātāni</rdg></app>rasagatāni ca <app><rdg wit="#म">kṛṣyādyakṣarāṇi</rdg><rdg wit="#च">kṛṣyāṇyakṣarāṇi</rdg></app>kṛṣyākṣarāṇi boddhavyāni, tadyathā — </p>
+<lg xml:id="NāŚā.17.133">
+  <l><app><rdg wit="#द">ākāraukāra</rdg><rdg wit="#च">ekāraikāra</rdg></app>ākāraikārasaṃyukta<app><rdg wit="#च">oṃkāraukāra</rdg><rdg wit="#द">akāraukāra</rdg><rdg wit="#ड">ekārekāra</rdg><rdg wit="#ढ">ekāraikāra</rdg></app>maikāraukārasaṃyutam |</l>
+  <l><app><rdg wit="#भ">ekāraukārasaṃyuktaṃ dīrghaṃ yadvyañjanaṃ bhavet</rdg></app>vyañjanaṃ yadbhaveddīrghaṃ kṛṣyaṃ tattu vidhīyate<app><rdg wit="#ड">tatra bhavediha</rdg></app> || 133</l>
+</lg>
+<lg xml:id="NāŚā.17.134">
+  <l>viṣāde ca vitarke ca praśne 'thāmarṣa eva ca<app><rdg wit="#च #N">cāmarṣaṇe tathā</rdg><rdg wit="#ड">vivarte ca praśne cāmarṣaṇe tathā</rdg></app> |</l>
+  <l>kalākālapramāṇena pāṭhyaṃ kāryaṃ<app><rdg wit="#न">yojyaṃ</rdg></app> prayoktṛbhiḥ || 134</l>
+</lg>
+<lg xml:id="NāŚā.17.135">
+  <l>śeṣāṇāmarthayogena virāme viramediha<app><rdg wit="#भ">viramedbudhaḥ</rdg></app> |</l>
+  <l>ekadvitricatuḥpañcaṣaṭkalaṃ ca<app><rdg wit="#न">vā</rdg></app> vilambitam || 135</l>
+</lg>
+<lg xml:id="NāŚā.17.136">
+  <l><app><rdg wit="#च">vilambitā</rdg></app>vilambite virāme hi<app><rdg wit="#च">api</rdg><rdg wit="#ड">ca</rdg></app> <app><rdg wit="#द">yadā</rdg></app>sadā gurvakṣaraṃ bhavet |</l>
+  <l>ṣaṇṇāṃ kalānāṃ parato <app><rdg wit="#च">lambanaṃ</rdg><rdg wit="#ड">laṅghanaṃ</rdg></app>vilambo na vidhīyate || 136</l>
+</lg>
+<lg xml:id="NāŚā.17.137">
+  <l>athavā kāraṇopetaṃ prayogaṃ kāryameva ca<app><rdg wit="#द">vā |</rdg></app> |</l>
+<pb n="403"/>
+  <l>samīkṣya vṛtte kartavyo virāmo rasabhāvataḥ<app><rdg wit="#ढ">kartavyā virāmā rasabhāvataḥ</rdg><rdg wit="#न">ataḥ paro 'pi hi</rdg></app> || 137</l>
+</lg>
+<lg xml:id="NāŚā.17.138">
+  <l><app><rdg wit="#ड">te</rdg></app>ye virāmāḥ smṛtāḥ pāṭhye<app><rdg wit="#ड #N">kāvye</rdg><rdg wit="#द">vākye</rdg></app> <app><rdg wit="#च">danta</rdg><rdg wit="#ग">datta</rdg><rdg wit="#न">vṛtte</rdg></app>vṛttapādasamudbhavāḥ |</l>
+  <l>utkramyāpi kramaṃ tajjñaiḥ kāryāste 'rthavaśānugāḥ<app><rdg wit="#द #N">te 'tha rasāśrayāḥ</rdg><rdg wit="#च">vaśāśrayāḥ</rdg><rdg wit="#ड">vaśāstathā</rdg></app> || 138</l>
+</lg>
+<lg xml:id="NāŚā.17.139">
+  <l>nāpaśabdaṃ paṭhettajjño bhinnavṛttaṃ<app><rdg wit="#ढ">vṛtte</rdg></app> tathaiva hi<app><rdg wit="#ड">na caiva hi</rdg><rdg wit="#न">ca</rdg></app> |</l>
+  <l>viśramenrāvirāmeṣu<app><rdg wit="#भ">avirāme tu</rdg></app> dainye kākuṃ na dīpayet<app><rdg wit="#ड #N">na kāku rasahīnakam</rdg><rdg wit="#प">na kākurasadīpanam |</rdg></app> || 139</l>
+</lg>
+
+<pb n="404"/>
+
+<lg xml:id="NāŚā.17.140">
+  <l><app><rdg wit="#द #N">vyapetaṃ</rdg><rdg wit="#ड">vyapetaṃ vākya</rdg></app>varjitaṃ kāvyadoṣaistu lakṣaṇạ̄dhyaṃ guṇānvitam |</l>
+  <l>svarālaṅkārasaṃyuktaṃ paṭhetpāṭhyaṃ<app><rdg wit="#द #N">kāvyaṃ</rdg></app> yathāvidhi || 140</l>
+</lg>
+<lg xml:id="NāŚā.17.141">
+  <l><app><rdg wit="#ड">alaṅkāraviśeṣā ye pāṭhyasaṃskṛtasaṃśrayāḥ</rdg></app>alaṅkārā virāmāśca ye pāṭhye saṃskṛte smṛtāḥ<app><rdg wit="#न">śritāḥ</rdg></app> |</l>
+  <l>ta eva sarve kartavyāḥ strīṇāṃ pāṭhye tvasaṃskṛte<app><rdg wit="#न">pāṭhye tu saṃskṛte</rdg><rdg wit="#ड">te sarve saṃprakartavyāḥ strīṇāṃ pāṭhye tu saṃskṛte</rdg><rdg wit="#ग">tu saṃsmṛtāḥ</rdg></app> || 141</l>
+</lg>
+<lg xml:id="NāŚā.17.142">
+  <l>evametatsvarakṛtaṃ<app><rdg wit="#ड">yutaṃ</rdg></app> kalā<app><rdg wit="#ड">tāla</rdg><rdg type="conj" resp="#Kavi">kāla</rdg></app>tālalayānvitam |</l>
+  <l>daśarūpavidhāne tu pāṭhyaṃ yojyaṃ prayoktṛbhiḥ || 142</l>
+</lg>
+<lg xml:id="NāŚā.17.143">
+  <l>uktaṃ kākuvidhānaṃ tu<app><rdg wit="#द">ca</rdg></app> yathāvadanupūrvaśaḥ |</l>
+  <l><app><rdg wit="#भ">ataḥ paraṃ |</rdg></app>ata ūrdhvaṃ pravakṣyāmi daśarūpavikalpanam || 143</l>
+</lg>
+
+<pb n="405"/>
+
+<trailer>
+  <p>iti bhāratīye nāṭyaśāstre <app><rdg wit="#ड">vāgaṅgābhinaya</rdg></app>vāgabhinaye</p>
+  <p><app><rdg wit="#भ">svarakāku</rdg></app>kākusvaravyañjano<app><rdg wit="#न">vyañjako</rdg></app> nāma</p>
+  <p>saptadaśo 'dhyāyaḥ<app><rdg wit="#द">kākuvyañjako nāmādhyāyo 'ṣṭādaśaḥ || 155--(2771)</rdg><rdg><note><q>jādibānteṣu dasaṃjñake</q> विना एकोनविंशोऽध्यायः ॥</note></rdg></app> || <app><rdg wit="#N">iti vāgābhinaye kākusvaravyañjako nāmādhyāyo 'ṣṭādaśaḥ |</rdg></app></p>
+</trailer>
+
+</body>
+</text>
+</TEI>

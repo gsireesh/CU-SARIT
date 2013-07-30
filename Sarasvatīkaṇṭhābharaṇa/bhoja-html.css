@@ -1,0 +1,75 @@
+#container {
+  margin: 10px;
+}
+div#qTip {
+ padding: 3px;
+ border: 1px solid #666;
+ border-right-width: 2px;
+ border-bottom-width: 2px;
+ display: none;
+ background: #999;
+ color: #FFF;
+ /* font: bold 9px Verdana, Arial, sans-serif; */
+ text-align: left;
+ position: absolute;
+ z-index: 1000;
+}
+a {
+      text-decoration: none;
+}
+a.note {
+      color: #0000AA;
+}
+.trailer {
+  display: block;
+  text-align: center;
+  font-size: 90%;
+}
+.trailer lg {
+  text-align: left;
+}
+.head {
+  display:block;
+  text-align:center;
+  font-size:130%;
+  margin-bottom:10px;
+}
+.lg {
+  display: block;
+  padding-left: 2em;
+}
+.l,.seg {
+  display: block;
+}
+.seg:last-of-type {
+  text-indent: 1em;
+}
+.kārikā {
+  text-indent: 0em;
+  font-size: 130%;
+  font-weight: bold;
+}
+.udāharaṇa {
+  text-indent: 0em;
+  font-size: 130%;
+}
+.chāyā {
+  text-indent: 0em;
+  margin-left: 5em;
+}
+p {
+  text-indent: 1em;
+  font-size: 130%;
+  display: block;
+  word-break: hyphenate;
+}
+.commentary p,lg {
+  display:block;
+  font-size: 100%;
+}
+ref,name,b,quote,q {
+  font-weight: bold;
+}
+.pageinfo {
+  color:red;
+}

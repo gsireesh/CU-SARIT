@@ -1,0 +1,29 @@
+FORMATTING STUFF
+:%s<lg><l>/<lg xml:id="NāŚā.n.">\r  <l>/g
+:%s/<\/l>\n<l>/<\/l>\r  <l>/g
+:%s/<\/l><\/lg>/<\/l>\r<\/lg>/g
+:%s/ ।/ ।/g
+%s/।।/॥/g
+
+APPARATUS
+:%s/\(\d\+\)\( \)*<q/\1. <q/g
+     % in case they forgot their periods
+:%s/\([0-9]\+\.\)/\r\1/g
+     % puts each footnote on its own line
+:%s/<q>\(\S\|\S\S\)<\/q>\( \)*-*\( \)*/\1. /g
+:%s/N\(:\)*\( \)*-/N. /g
+     % deletes quotation tags for witnesses
+:%s/^\(\d\+\)\.\(\S\)/\1\. \2/g
+:%s/\(\D\.\)\(\S\)/\1 \2/g
+     % make sure there's whitespace
+:%s/ \(\D\D\|\D\)\(\.\|:\)/ #\1/g
+     % converts the sigla
+:%s/^\(.\+\.\) \(.*\)$/\1 <app>\2<\/app>/g
+     % puts in the apparatus tags
+:%s/\(\(#\(\S\|\S\S\) \)\+\)/<rdg wit="\1">/g
+     % puts in the reading tags
+:%s/\( \| ।\)\( \)*<rdg/<\/rdg><rdg/g
+:%s/\( \| ।\)\( \)*<\/app/<\/rdg><\/app/g
+     % closes the reading tags
+:%s/ ">/">/g
+     % cleanup

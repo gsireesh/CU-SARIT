@@ -1,0 +1,967 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html xmlns:fn="http://www.w3.org/2005/xpath-functions" encodingxmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+      <link rel="stylesheet" type="text/css" href="cssstylesheet.css">
+      <title>Nāṭyaśāstra, Chapter 1</title><script type="text/javascript">
+    
+    function toggle(id) {
+       var e = document.getElementById(id);
+       if(e.style.display == 'block')
+          e.style.display = 'none';
+       else
+          e.style.display = 'block';
+    }
+// qTip - CSS Tool Tips - by Craig Erskine
+// http://qrayg.com
+//
+// Multi-tag support by James Crooke
+// http://www.cj-design.com
+//
+// Inspired by code from Travis Beckham
+// http://www.squidfingers.com | http://www.podlob.com
+//
+// Copyright (c) 2006 Craig Erskine
+// Permission is granted to copy, distribute and/or modify this document
+// under the terms of the GNU Free Documentation License, Version 1.3
+// or any later version published by the Free Software Foundation;
+// with no Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts.
+// A copy of the license is included in the section entitled "GNU
+// Free Documentation License".
+
+var qTipTag = "a,label,input"; //Which tag do you want to qTip-ize? Keep it lowercase!//
+var qTipX = 0; //This is qTip's X offset//
+var qTipY = 15; //This is qTip's Y offset//
+
+//There's No need to edit anything below this line//
+tooltip = {
+  name : "qTip",
+  offsetX : qTipX,
+  offsetY : qTipY,
+  tip : null
+}
+
+tooltip.init = function () {
+	var tipNameSpaceURI = "http://www.w3.org/1999/xhtml";
+	if(!tipContainerID){ var tipContainerID = "qTip";}
+	var tipContainer = document.getElementById(tipContainerID);
+
+	if(!tipContainer) {
+	  tipContainer = document.createElementNS ? document.createElementNS(tipNameSpaceURI, "div") : document.createElement("div");
+		tipContainer.setAttribute("id", tipContainerID);
+	  document.getElementsByTagName("body").item(0).appendChild(tipContainer);
+	}
+
+	if (!document.getElementById) return;
+	this.tip = document.getElementById (this.name);
+	if (this.tip) document.onmousemove = function (evt) {tooltip.move (evt)};
+
+	var a, sTitle, elements;
+	
+	var elementList = qTipTag.split(",");
+	for(var j = 0; j < elementList.length; j++)
+	{	
+		elements = document.getElementsByTagName(elementList[j]);
+		if(elements)
+		{
+			for (var i = 0; i < elements.length; i ++)
+			{
+				a = elements[i];
+				sTitle = a.getAttribute("title");				
+				if(sTitle)
+				{
+					a.setAttribute("tiptitle", sTitle);
+					a.removeAttribute("title");
+					a.removeAttribute("alt");
+					a.onmouseover = function() {tooltip.show(this.getAttribute('tiptitle'))};
+					a.onmouseout = function() {tooltip.hide()};
+				}
+			}
+		}
+	}
+}
+
+tooltip.move = function (evt) {
+	var x=0, y=0;
+	if (document.all) {//IE
+		x = (document.documentElement && document.documentElement.scrollLeft) ? document.documentElement.scrollLeft : document.body.scrollLeft;
+		y = (document.documentElement && document.documentElement.scrollTop) ? document.documentElement.scrollTop : document.body.scrollTop;
+		x += window.event.clientX;
+		y += window.event.clientY;
+		
+	} else {//Good Browsers
+		x = evt.pageX;
+		y = evt.pageY;
+	}
+	this.tip.style.left = (x + this.offsetX) + "px";
+	this.tip.style.top = (y + this.offsetY) + "px";
+}
+
+tooltip.show = function (text) {
+	if (!this.tip) return;
+	this.tip.innerHTML = text;
+	this.tip.style.display = "block";
+}
+
+tooltip.hide = function () {
+	if (!this.tip) return;
+	this.tip.innerHTML = "";
+	this.tip.style.display = "none";
+}
+
+window.onload = function () {
+	tooltip.init ();
+}
+    
+    </script></head>
+   <body>
+      <div id="container" class="hyphenate">
+         
+         
+         
+         <div class="titleStmt">
+            <h2><span class="title">Nāṭyaśāstra, Chapter 1</span> by <span class="author">Bharata</span></h2>This file is in devanāgarī. View in <a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_01-roman.html">transliteration</a>.
+         </div>
+         
+         <div class="publicationStmt">
+            <h3>Publication statement</h3>
+         </div>
+         
+         <div class="sourceDesc">
+            <h3>Source description</h3>
+            <p>Print sources:</p>
+            <ul>
+               <li>K. Krishnamoorthy (ed.). <em>Nāṭyaśāstra of Bharatamuni: With the Commentary Abhinavabhāratī of Abhinavagupta</em>. Vadodara: Oriental Institute, 1992. Gaekwad's Oriental Series 34. 
+               </li>
+            </ul>
+         </div>
+         
+         
+         <div class="encodingDesc">
+            <h3>Encoding description</h3>
+            
+         </div>
+         
+         <div class="revisionDesc">
+            <h3>Revision description</h3>
+         </div>
+         
+         
+         
+         
+         <h2>Table of contents</h2>
+         <div class="toc"></div>
+         
+         <span class="pageinfo">[page 001]</span>
+         
+         
+         
+         
+         <a name="N%C4%81%C5%9A%C4%81.1.1"></a><div class="text" xml:id="NāŚā.1.1">
+            <span class="line">प्रणम्य शिरसा देवौ पितामहमहेश्वरौ&nbsp;।</span>
+            <span class="line">नाट्यशास्त्रं प्रवक्ष्यामि ब्रह्मणा यदुदाहृतम्<a href="" class="app" title="युददीरितम् <b&gt;प</b&gt;"><span class="appnum"><sup>1</sup></span></a>&nbsp;॥ १&nbsp;॥</span>
+            
+         </div>
+         ﻿
+         <span class="pageinfo">[page 002]</span>
+         
+         ﻿<span class="pageinfo">[page 003]</span>
+         
+         ﻿<span class="pageinfo">[page 004]</span>
+         
+         ﻿<span class="pageinfo">[page 005]</span>
+         
+         <a name="N%C4%81%C5%9A%C4%81.1.2"></a><div class="text" xml:id="NāŚā.1.2">
+            <span class="line">समाप्तजप्यं व्रतिनं <a href="" class="app" title="स्वशिष्यैः <b&gt;प</b&gt;"><span class="appnum"><sup>1</sup></span></a>स्वसुतैः परिवारितम्&nbsp;।</span>
+            <span class="line">अनध्याये कदाचित्तु<a href="" class="app" title="त्तम् <b&gt;गम</b&gt;"><span class="appnum"><sup>2</sup></span></a> भरतं नाट्यकोविदम्&nbsp;॥ २&nbsp;॥</span>
+            
+         </div>
+         <a name="N%C4%81%C5%9A%C4%81.1.3"></a><div class="text" xml:id="NāŚā.1.3">
+            <span class="line">मुनयः पर्युपास्यैनमात्रेयप्रमुखाः पुरा&nbsp;।</span>
+            <span class="line">पप्रच्छुस्ते महात्मानो <a href="" class="app" title="नाट्यवेदसमुद्भवम् <b&gt;Nनमत</b&gt;"><span class="appnum"><sup>1</sup></span></a>नियतेन्द्रियबुद्धयः&nbsp;॥ ३&nbsp;॥</span>
+            
+         </div>
+         
+         ﻿<span class="pageinfo">[page 006]</span>
+         
+         <a name="N%C4%81%C5%9A%C4%81.1.4"></a><div class="text" xml:id="NāŚā.1.4">
+            <span class="line">योऽयं भगवता सम्य<a href="" class="app" title="क्कथितो <b&gt;क</b&gt;, ग्रचितो <b&gt;ज</b&gt;"><span class="appnum"><sup>1</sup></span></a>ग्ग्रथितो वेदसम्मितः<a href="" class="app" title="विस्तरः <b&gt;न</b&gt;, सम्मतः <b&gt;प</b&gt;"><span class="appnum"><sup>2</sup></span></a>&nbsp;।</span>
+            <span class="line">नाट्यवेदः कथं ब्रह्मन्नुत्पन्नः कस्य वा कृते&nbsp;॥ ४&nbsp;॥</span>
+            
+         </div>
+         <a name="N%C4%81%C5%9A%C4%81.1.5"></a><div class="text" xml:id="NāŚā.1.5">
+            <span class="line"><a href="" class="app" title="कत्यंशः <b&gt;जम</b&gt;"><span class="appnum"><sup>1</sup></span></a>कत्यङ्गः किंप्रमाणश्च प्रयोगश्चास्य कीदृशः&nbsp;।</span>
+            <span class="line">सर्वमेतद्यथातत्त्व भगवन्वक्तुमर्हसि&nbsp;॥ ५&nbsp;॥</span>
+            
+         </div>
+         
+         ﻿<span class="pageinfo">[page 007]</span>
+         
+         ﻿<span class="pageinfo">[page 008]</span>
+         
+         <a name="N%C4%81%C5%9A%C4%81.1.6"></a><div class="text" xml:id="NāŚā.1.6">
+            <span class="line">तेषां तु <a href="" class="app" title="तद्वचनम् <b&gt;क</b&gt;"><span class="appnum"><sup>1</sup></span></a>वचनं श्रुत्वा मुनीनां भरतो मुनिः&nbsp;।</span>
+            <span class="line">प्रत्युवाच ततो वाक्यं नाट्यवेदकथां प्रति&nbsp;॥ ६&nbsp;॥</span>
+            
+         </div>
+         <a name="N%C4%81%C5%9A%C4%81.1.7"></a><div class="text" xml:id="NāŚā.1.7">
+            <span class="line">भवद्भिः शुचिभिर्भूत्वा तथाऽवहितमानसैः&nbsp;।</span>
+            <span class="line">श्रूयतां नाट्यवेदस्य <a href="" class="app" title="संक्षेपो <b&gt;ध</b&gt;"><span class="appnum"><sup>1</sup></span></a>सम्भवो ब्रह्म<a href="" class="app" title="मुनि <b&gt;त</b&gt;"><span class="appnum"><sup>2</sup></span></a>निर्मितः&nbsp;॥ ७&nbsp;॥</span>
+            
+         </div>
+         
+         ﻿<span class="pageinfo">[page 009]</span>
+         
+         <a name="N%C4%81%C5%9A%C4%81.1.8"></a><div class="text" xml:id="NāŚā.1.8">
+            <span class="line">पूर्वं<a href="" class="app" title="पुरा <b&gt;प</b&gt;"><span class="appnum"><sup>1</sup></span></a> कृतयुगे विप्रा वृत्ते स्वायम्भुवेऽन्तरे&nbsp;।</span>
+            <span class="line">त्रेतायुगेऽथ<a href="" class="app" title="त्रैतायुगे तु <b&gt;नम</b&gt;, त्रेतायुगे च <b&gt;जम</b&gt;, त्रेतायुगे सम्प्रवृत्ते <b&gt;खग</b&gt;"><span class="appnum"><sup>2</sup></span></a> सम्प्राप्ते मनोर्वैवस्वतस्य तु<a href="" class="app" title="च <b&gt;ग</b&gt;"><span class="appnum"><sup>3</sup></span></a>&nbsp;॥ ८&nbsp;॥</span>
+            
+         </div>
+         <a name="N%C4%81%C5%9A%C4%81.1.9"></a><div class="text" xml:id="NāŚā.1.9">
+            <span class="line">ग्राम्यधर्म<a href="" class="app" title="धर्मे <b&gt;गत</b&gt;"><span class="appnum"><sup>1</sup></span></a>प्रवृत्ते तु <a href="" class="app" title="लोभमोहवशम् <b&gt;खत</b&gt;"><span class="appnum"><sup>2</sup></span></a>कामलोभवशं गते&nbsp;।</span>
+            <span class="line">ईर्ष्याक्रोधादि<a href="" class="app" title="भि <b&gt;ठतम</b&gt;"><span class="appnum"><sup>3</sup></span></a>संमूढे लोके सुखितदुःखिते&nbsp;॥ ९&nbsp;॥</span>
+            
+         </div>
+         
+         ﻿<span class="pageinfo">[page 010]</span>
+         
+         <a name="N%C4%81%C5%9A%C4%81.1.10"></a><div class="text" xml:id="NāŚā.1.10">
+            <span class="line">देवदानवगन्धर्व<a href="" class="app" title="गन्धर्वै रक्षोयक्ष <b&gt;ग</b&gt;"><span class="appnum"><sup>1</sup></span></a>यक्षरक्षोमहोरगैः&nbsp;।</span>
+            <span class="line">जम्बूद्वीपे समाक्रान्ते लोकपाल<a href="" class="app" title="पालैः <b&gt;ड</b&gt;"><span class="appnum"><sup>2</sup></span></a>प्रतिष्ठिते&nbsp;॥ १०&nbsp;॥</span>
+            
+         </div>
+         <a name="N%C4%81%C5%9A%C4%81.1.11"></a><div class="text" xml:id="NāŚā.1.11">
+            <span class="line">महेन्द्रप्रमुखैर्देवैरुक्तः किल पितामहः&nbsp;।</span>
+            <span class="line">क्रीडनीयकमिच्छामो दृश्यं श्रव्यं<a href="" class="app" title="श्राव्यम् <b&gt;ठमत</b&gt;"><span class="appnum"><sup>1</sup></span></a> च यद्भवेत्<a href="" class="app" title="यद्विभो <b&gt;नम</b&gt;"><span class="appnum"><sup>2</sup></span></a>&nbsp;॥ ११&nbsp;॥</span>
+            
+         </div>
+         
+         ﻿<span class="pageinfo">[page 011]</span>
+         
+         <a name="N%C4%81%C5%9A%C4%81.1.12"></a><div class="text" xml:id="NāŚā.1.12">
+            <span class="line">[न वेदव्यवहारोऽयं संश्राव्यः शूद्रजातिषु&nbsp;।</span>
+            <span class="line">तस्मात्सृजापरं वेदं पञ्चमं सार्ववर्णिकम्&nbsp;॥ १२&nbsp;॥<a href="" class="app" title="N omits">*</a></span>
+            
+         </div>
+         
+         ﻿<span class="pageinfo">[page 012]</span>
+         
+         <a name="N%C4%81%C5%9A%C4%81.1.13"></a><div class="text" xml:id="NāŚā.1.13">
+            <span class="line">एवमस्त्विति तानुकत्वा देवराजं विसृज्य च&nbsp;।</span>
+            <span class="line">स<a href="" class="app" title="सस्मारेद तदा ब्रह्मा <b&gt;ड</b&gt;, सस्मार च <b&gt;N</b&gt;"><span class="appnum"><sup>1</sup></span></a>स्मार चतुरो वेदान्योगमास्थाय त<a href="" class="app" title="योगवित् <b&gt;Nढतम</b&gt;"><span class="appnum"><sup>2</sup></span></a>त्त्ववित्&nbsp;॥ १३&nbsp;॥</span>
+            
+         </div>
+         <a name="N%C4%81%C5%9A%C4%81.1.13.1"></a><div class="text" xml:id="NāŚā.1.13.1">
+            <span class="line">नेमे<a href="" class="app" title="इदं पद्यं <b&gt;N म</b&gt;पुस्तक एव दृश्यते">*</a> वेदा यतः श्राव्याः स्त्रीशूद्राद्यासु जातिषु&nbsp;।</span>
+            <span class="line">वेदमन्यत्ततः स्रक्ष्ये सर्वश्राव्यं तु पञ्चमम्&nbsp;॥</span>
+            
+         </div>
+         
+         
+         ﻿<span class="pageinfo">[page 013]</span>
+         
+         <a name="N%C4%81%C5%9A%C4%81.1.14"></a><div class="text" xml:id="NāŚā.1.14">
+            <span class="line">धर्म्यमर्थ्यं <a href="" class="app" title="धर्मकामार्थसंयुक्तम् <b&gt;ड</b&gt;"><span class="appnum"><sup>1</sup></span></a>यशस्यं च सो<a href="" class="app" title="सोपदेशम् <b&gt;डमत</b&gt;"><span class="appnum"><sup>2</sup></span></a>पदेशयं ससङ्ग्रहम्&nbsp;।</span>
+            <span class="line">भविष्यतश्च लोकस्य<a href="" class="app" title="कालस्य <b&gt;न</b&gt;, लोकेऽस्य <b&gt;ठ</b&gt;"><span class="appnum"><sup>3</sup></span></a> सर्वकर्मानुदर्शकम्<a href="" class="app" title="दर्शनम् <b&gt;प्र</b&gt;, कर्मप्रदर्शकम् <b&gt;प</b&gt;"><span class="appnum"><sup>4</sup></span></a>&nbsp;॥ १४&nbsp;॥</span>
+            
+         </div>
+         <a name="N%C4%81%C5%9A%C4%81.1.15"></a><div class="text" xml:id="NāŚā.1.15">
+            <span class="line">सर्वशास्त्रार्थसम्पन्नं सर्वशिल्प<a href="" class="app" title="शीला <b&gt;न</b&gt;, शिष्य <b&gt;ग</b&gt;"><span class="appnum"><sup>1</sup></span></a>प्रवर्तकम्<a href="" class="app" title="दर्शकम् <b&gt;ठम</b&gt;, समन्वितम् <b&gt;प्र</b&gt;, प्रवेशकम् <b&gt;त</b&gt;"><span class="appnum"><sup>2</sup></span></a>&nbsp;।</span>
+            <span class="line">ना<a href="" class="app" title="नाट्यसंज्ञमिमं वेदम् <b&gt;पम</b&gt;"><span class="appnum"><sup>3</sup></span></a>ट्याख्यं पञ्चमं वेदं सेतिहासं करोम्यहम्&nbsp;॥ १५&nbsp;॥</span>
+            
+         </div>
+         
+         ﻿<span class="pageinfo">[page 014]</span>
+         
+         <a name="N%C4%81%C5%9A%C4%81.1.16"></a><div class="text" xml:id="NāŚā.1.16">
+            <span class="line"><a href="" class="app" title="प्रोक्त्वा तु भगवानेवं वेदान सर्वान् <b&gt;नतम</b&gt;, स्मृत्वा तु भगवानेवम् <b&gt;प</b&gt;, सङ्कल्प्य भगवानेवम् <b&gt;ग</b&gt;, ततः स भगवान् ब्रह्मा वेदान् सर्वाननुस्मनरन् <b&gt;Nड</b&gt;"><span class="appnum"><sup>1</sup></span></a>एवं सङ्कल्प्य भगवात् <a href="" class="app" title="सर्वान् वेदान् <b&gt;जमत</b&gt;"><span class="appnum"><sup>2</sup></span></a>सर्ववेदान<a href="" class="app" title="पितामहः <b&gt;झ</b&gt;"><span class="appnum"><sup>3</sup></span></a>नुस्मरन्&nbsp;।</span>
+            <span class="line">नाट्यवेदं ततश्चक्रे चतुर्वेदाङ्गसम्भवम्<a href="" class="app" title="असृजन्नाट्यवेदं तु सर्ववेदाङ्गसम्भवम् <b&gt;N</b&gt;"><span class="appnum"><sup>4</sup></span></a>&nbsp;॥ १६&nbsp;॥</span>
+            
+         </div>
+         <a name="N%C4%81%C5%9A%C4%81.1.17"></a><div class="text" xml:id="NāŚā.1.17">
+            <span class="line">जग्राह पाठ्यमृग्वेदात्सामभ्यो<a href="" class="app" title="सामतो <b&gt;न</b&gt;"><span class="appnum"><sup>1</sup></span></a> गीतमेव च&nbsp;।</span>
+            <span class="line">यजुर्वेदादभिनयान् रसा<a href="" class="app" title="नृत्ताना <b&gt;ब</b&gt;"><span class="appnum"><sup>2</sup></span></a>नाथर्वणादपि&nbsp;॥ १७&nbsp;॥</span>
+            
+         </div>
+         
+         ﻿<span class="pageinfo">[page 015]</span>
+         
+         <a name="N%C4%81%C5%9A%C4%81.1.17.1"></a><div class="text" xml:id="NāŚā.1.17.1">
+            <span class="line">धर्मकर्मार्थसंयुक्तं सापदेशं ससंग्रहम्&nbsp;।</span>
+            <span class="line">रुचिभिः सर्वलोकस्य सर्वकर्मानुदर्शकम्&nbsp;॥</span>
+            
+         </div> 
+         <a name="N%C4%81%C5%9A%C4%81.1.17.2"></a><div class="text" xml:id="NāŚā.1.17.2">
+            <span class="line">सर्वशास्त्रार्थसंपन्नं सर्वशिल्पसमन्वितम्&nbsp;।</span>
+            <span class="line">नाट्याख्यं पञ्चमं वेदमितिहासमचिन्तयत्&nbsp;॥<a href="" class="app" title="Only in N. instead of 12a.">*</a> </span>
+            
+         </div> 
+         <a name="N%C4%81%C5%9A%C4%81.1.18"></a><div class="text" xml:id="NāŚā.1.18">
+            <span class="line"><a href="" class="app" title="वेदोपवेदसम्बन्धो <b&gt;म</b&gt;, वेदोपवेदः <b&gt;ठ</b&gt;"><span class="appnum"><sup>1</sup></span></a>वेदोपवेदैः सम्बद्धो नाट्यवेदो महात्मना<a href="" class="app" title="सम्पन्नो ब्रह्मणा ललितात्मकम् <b&gt;न</b&gt;, नाट्यवेदो महर्षयः <b&gt;त</b&gt;"><span class="appnum"><sup>2</sup></span></a>&nbsp;।</span>
+            <span class="line">एवं भगवता सृष्टो <a href="" class="app" title="ब्रह्मणा ललितात्मकम् <b&gt;ठम</b&gt;"><span class="appnum"><sup>3</sup></span></a>ब्रह्यणा सर्ववेदिना&nbsp;॥ १८&nbsp;॥</span>
+            
+         </div>
+         <a name="N%C4%81%C5%9A%C4%81.1.19"></a><div class="text" xml:id="NāŚā.1.19">
+            <span class="line"><a href="" class="app" title="N."><span class="appnum"><sup>1</sup></span></a>सर्वलोकहितार्थं तु नाट्यवेदो महात्मना&nbsp;।</span>
+            <span class="line">उत्पाद्य नाट्यवेदं तु <a href="" class="app" title="ब्रह्माऽवोचत्सुरेश्वरम् <b&gt;ज</b&gt;, प्राह शक्रं पितामहः <b&gt;Nडत</b&gt;"><span class="appnum"><sup>2</sup></span></a>ब्रह्मोवाच सुरेश्वरम्&nbsp;।</span>
+            <span class="line">इतिहासो मया <a href="" class="app" title="दृष्टः <b&gt;ठ</b&gt;"><span class="appnum"><sup>3</sup></span></a>सृष्टः स सुरेषु नियु<a href="" class="app" title="निवेश्य <b&gt;</b&gt;"><span class="appnum"><sup>4</sup></span></a>ज्यताम्&nbsp;॥ १९&nbsp;॥</span>
+            
+         </div>
+         
+         ﻿<span class="pageinfo">[page 016]</span>
+         
+         <a name="N%C4%81%C5%9A%C4%81.1.20"></a><div class="text" xml:id="NāŚā.1.20">
+            <span class="line">कुशला ये विदग्धाश्च प्रगल्भाश्च <a href="" class="app" title="जितक्लमाः <b&gt;प</b&gt;"><span class="appnum"><sup>1</sup></span></a>जितश्रमाः&nbsp;।</span>
+            <span class="line">तेष्वयं नाट्यसंज्ञो<a href="" class="app" title="नाट्यसंज्ञस्तु <b&gt;नम</b&gt;, नाट्यसंज्ञो वै <b&gt;N</b&gt;"><span class="appnum"><sup>2</sup></span></a> हि वेदः संक्राम्यतां त्वया<a href="" class="app" title="वेदः सम्यङ्नियुज्यताम्"><span class="appnum"><sup>3</sup></span></a>&nbsp;॥ २०&nbsp;॥</span>
+            
+         </div>
+         <a name="N%C4%81%C5%9A%C4%81.1.21"></a><div class="text" xml:id="NāŚā.1.21">
+            <span class="line">तच्छ्रुत्वा वचनं<a href="" class="app" title="भगवान् शक्रो <b&gt;न</b&gt;"><span class="appnum"><sup>1</sup></span></a> शक्रो ब्रह्मणा य<a href="" class="app" title="समुदाहृतम् <b&gt;Nनमत</b&gt;"><span class="appnum"><sup>2</sup></span></a>दुदाहृतम्&nbsp;।</span>
+            <span class="line">प्राञ्जलिः प्रणतो<a href="" class="app" title="विनयात्प्राञ्जलिः <b&gt;Nनम</b&gt;"><span class="appnum"><sup>3</sup></span></a> भूत्वा प्रत्युवाच पितामहम्&nbsp;॥ २१&nbsp;॥</span>
+            
+         </div>
+         <a name="N%C4%81%C5%9A%C4%81.1.22"></a><div class="text" xml:id="NāŚā.1.22">
+            <span class="line">ग्रहणे धारणे ज्ञाने<a href="" class="app" title="चैव <b&gt;ब</b&gt;"><span class="appnum"><sup>1</sup></span></a> प्रयोगे चास्य सत्तम&nbsp;।</span>
+            <span class="line"><a href="" class="app" title="न शक्ता भगवन् देवा न यो <b&gt;त</b&gt;, आयोग्या भगवन् देवा न शक्ता नाट्यकर्मणि <b&gt;N</b&gt;"><span class="appnum"><sup>2</sup></span></a>अशक्ता भगवन् देवा अयोग्या नाट्यकर्मणि<a href="" class="app" title="कर्मसु <b&gt;प</b&gt;"><span class="appnum"><sup>3</sup></span></a>&nbsp;॥ २२&nbsp;॥</span>
+            
+         </div>
+         
+         ﻿<span class="pageinfo">[page 017]</span>
+         
+         <a name="N%C4%81%C5%9A%C4%81.1.23"></a><div class="text" xml:id="NāŚā.1.23">
+            <span class="line">य इमे वेदगुह्यज्ञा <a href="" class="app" title="मुनयः <b&gt;ज</b&gt;"><span class="appnum"><sup>1</sup></span></a>ऋषयः <a href="" class="app" title="ब्रह्मवादिनः <b&gt;न</b&gt;, ब्रह्मसम्भवाः <b&gt;पत</b&gt;, शंसितव्रताः <b&gt;ख</b&gt;, संश्रितव्रताः <b&gt;म</b&gt;"><span class="appnum"><sup>2</sup></span></a>संशितव्रताः&nbsp;।</span>
+            <span class="line"><a href="" class="app" title="एते सङ्ग्रहणे <b&gt;ड</b&gt;, ते सम्यग्ग्रहणे <b&gt;N</b&gt;, ते ह्यस्य <b&gt;पत</b&gt;, एतस्य <b&gt;जम</b&gt;"><span class="appnum"><sup>3</sup></span></a>एतेऽस्य ग्रहणे शक्ताः प्रयोगे धारणे तथा&nbsp;॥२३॥</span>
+            
+         </div>
+         <a name="N%C4%81%C5%9A%C4%81.1.24"></a><div class="text" xml:id="NāŚā.1.24">
+            <span class="line"><a href="" class="app" title="श्रुत्वेमम् <b&gt;ठ</b&gt;, स श्रुत्वा <b&gt;N</b&gt;, शक्रस्य वचनं श्रुत्वा <b&gt;न</b&gt;"><span class="appnum"><sup>1</sup></span></a>श्रुत्वा तु शक्रवचनं मामाहाम्बुजसम्भवः&nbsp;।</span>
+            <span class="line">त्वं पुत्रशतसंयुक्तः<a href="" class="app" title="सम्पन्नः <b&gt;ख</b&gt;"><span class="appnum"><sup>2</sup></span></a> प्रयोक्ताऽस्य भवानघ&nbsp;॥ २४&nbsp;॥</span>
+            
+         </div>
+         <a name="N%C4%81%C5%9A%C4%81.1.25"></a><div class="text" xml:id="NāŚā.1.25">
+            <span class="line">आज्ञापितो विदित्वाऽहं नाट्यवेदं पितामहात्&nbsp;।</span>
+            <span class="line"><a href="" class="app" title="नान्येऽन्ये धारणे योग्याः प्रयोगे वापि सत्तम&nbsp;। इत्युक्तोऽस्य प्रयोगस्य कुरु यत्नमतन्द्रितः&nbsp;॥ आज्ञां विभोर्विदित्वाहं नाट्यवेदं पितामहात्&nbsp;।&#xA;सुतानध्यापयामास प्रयोगार्थी तदाज्ञया&nbsp;॥ <b&gt;पम</b&gt;, सुतानध्यापयामास प्रयोगादीनदर्शयत् <b&gt;N</b&gt;, सुतानध्यापयामास प्रयोगे वापि सत्तम <b&gt;न</b&gt;, पुत्रानाध्यापयं योग्यान् <b&gt;ठत</b&gt;"><span class="appnum"><sup>1</sup></span></a>पुत्रानध्यापयामास प्रयोगं चापि तत्त्वतः&nbsp;॥ २५&nbsp;॥</span>
+            
+         </div>
+         
+         ﻿<span class="pageinfo">[page 018]</span>
+         
+         <a name="N%C4%81%C5%9A%C4%81.1.26"></a><div class="text" xml:id="NāŚā.1.26">
+            <span class="line">शाण्डिल्यं <a href="" class="app" title="चापि <b&gt;ठम</b&gt;, जीव <b&gt;ड</b&gt;"><span class="appnum"><sup>1</sup></span></a>चैव <a href="" class="app" title="वाद्यम् <b&gt;न</b&gt;"><span class="appnum"><sup>2</sup></span></a>वात्स्यं च कोहलं <a href="" class="app" title="धूर्तिलम् <b&gt;प</b&gt;"><span class="appnum"><sup>3</sup></span></a>दत्तिलं <a href="" class="app" title="मुनिम् <b&gt;डम</b&gt;"><span class="appnum"><sup>4</sup></span></a>तथा&nbsp;।</span>
+            <span class="line"><a href="" class="app" title="जटुला <b&gt;ठम</b&gt;, यडिला <b&gt;प</b&gt;"><span class="appnum"><sup>5</sup></span></a>जटिलाम्बष्टकौ चैव <a href="" class="app" title="ताण्डया <b&gt;Nजमत</b&gt;, दण्ड <b&gt;फ</b&gt;, ताण्डुम् <b&gt;ठ</b&gt;"><span class="appnum"><sup>6</sup></span></a>तण्डुमग्नि<a href="" class="app" title="मुखम् <b&gt;पम</b&gt;"><span class="appnum"><sup>7</sup></span></a>शिखं तथा&nbsp;॥ २६&nbsp;॥</span>
+            
+         </div>
+         <a name="N%C4%81%C5%9A%C4%81.1.27"></a><div class="text" xml:id="NāŚā.1.27">
+            <span class="line">सैन्धवं <a href="" class="app" title="पुंसलो <b&gt;ज</b&gt;, पुलोमानं सैन्धवञ्च <b&gt;त</b&gt;, सौवरं च <b&gt;N</b&gt;"><span class="appnum"><sup>1</sup></span></a>सपुलोमानं <a href="" class="app" title="शाश्वलिम् <b&gt;ज</b&gt;, वालिकम् <b&gt;प</b&gt;, पाटलिम् <b&gt;नम</b&gt;, बाद्धलिम् <b&gt;N</b&gt;"><span class="appnum"><sup>2</sup></span></a>शाड्वलिं <a href="" class="app" title="विबुधम् <b&gt;नम</b&gt;"><span class="appnum"><sup>3</sup></span></a>विपुलं तथा&nbsp;।</span>
+            <span class="line"><a href="" class="app" title="यमं धूम्रायणं चैव कपिंजलमथापि च <b&gt;Nनत</b&gt;, कापिञ्जलम् <b&gt;जत</b&gt;"><span class="appnum"><sup>4</sup></span></a>कपिञ्जलिं <a href="" class="app" title="बादरिम् <b&gt;ठम</b&gt;, वादिरम् <b&gt;ड</b&gt;"><span class="appnum"><sup>5</sup></span></a>बादिरं च यमधूम्रायणौ तथा&nbsp;॥ २७&nbsp;॥</span>
+            
+         </div>
+         <a name="N%C4%81%C5%9A%C4%81.1.28"></a><div class="text" xml:id="NāŚā.1.28">
+            <span class="line"><a href="" class="app" title="जम्बू <b&gt;पम</b&gt;, बाष्कलम् <b&gt;न</b&gt;, जम्बूकम् <b&gt;फ</b&gt;, जङ्गं च <b&gt;ख</b&gt;"><span class="appnum"><sup>1</sup></span></a>जम्बुध्वजं <a href="" class="app" title="कोकमुस्तं च <b&gt;ख</b&gt;, काकमद्रुम् <b&gt;Nत</b&gt;"><span class="appnum"><sup>2</sup></span></a>काकजङ्घं <a href="" class="app" title="स्वर्णकृत्तापसौ <b&gt;ज</b&gt;"><span class="appnum"><sup>3</sup></span></a>स्वर्णकं तापसं<a href="" class="app" title="स्वर्णकं तामसं तथा <b&gt;N</b&gt;, पूर्णकं तापसं तथा <b&gt;ख</b&gt;"><span class="appnum"><sup>4</sup></span></a> तथा&nbsp;।</span>
+            <span class="line"><a href="" class="app" title="पङ्क्तिद्वयं त पुस्तके नास्ति, केदारम् <b&gt;Nठम</b&gt;, केदरिम् <b&gt;ज</b&gt;"><span class="appnum"><sup>5</sup></span></a>कैदारिं शालिकर्णं च दीर्घगात्रं च शालिकम्<a href="" class="app" title="दीर्घसौत्रं च बादरिम् <b&gt;N</b&gt;"><span class="appnum"><sup>6</sup></span></a>&nbsp;॥ २८&nbsp;॥</span>
+            
+         </div>
+         <a name="N%C4%81%C5%9A%C4%81.1.29"></a><div class="text" xml:id="NāŚā.1.29">
+            <span class="line"><a href="" class="app" title="कोत्सम् <b&gt;ज</b&gt;"><span class="appnum"><sup>1</sup></span></a>कौत्सं <a href="" class="app" title="तान्यासिनम् <b&gt;ज</b&gt;, ताण्ड्यापनि <b&gt;प</b&gt;"><span class="appnum"><sup>2</sup></span></a>ताण्डायनिं चैव <a href="" class="app" title="पिण्ड <b&gt;ज</b&gt;"><span class="appnum"><sup>3</sup></span></a>पिड्गलं <a href="" class="app" title="छत्रकम् <b&gt;ठ</b&gt;, छत्रमेव च <b&gt;न</b&gt;, चित्रमेव च <b&gt;N</b&gt;"><span class="appnum"><sup>4</sup></span></a>चित्रकं तथा&nbsp;॥</span>
+            <span class="line"><a href="" class="app" title="अन्धुकम् <b&gt;त</b&gt;, नुजलम् <b&gt;म</b&gt;, बल्लकम्&nbsp;। भालुकम् <b&gt;ख</b&gt;, भल्लकम् <b&gt;N</b&gt;"><span class="appnum"><sup>5</sup></span></a>बन्धुलं <a href="" class="app" title="बाष्कलम् <b&gt;प</b&gt;, बालुकम् <b&gt;त</b&gt;"><span class="appnum"><sup>6</sup></span></a>भल्लकं चैव मुष्ठिकं सैन्धवायनम्&nbsp;॥ २९&nbsp;॥</span>
+            
+         </div>
+         
+         ﻿<span class="pageinfo">[page 019]</span>
+         
+         <a name="N%C4%81%C5%9A%C4%81.1.30"></a><div class="text" xml:id="NāŚā.1.30">
+            <span class="line"><a href="" class="app" title="तिन्तिलम् <b&gt;ख</b&gt;"><span class="appnum"><sup>1</sup></span></a>तैतिलं भार्गवं चैव शुचिं बहुलमेव च&nbsp;।</span>
+            <span class="line"><a href="" class="app" title="अम्बुधम् <b&gt;ज</b&gt;"><span class="appnum"><sup>2</sup></span></a>अबुधं बुधसेनं च <a href="" class="app" title="पारकर्णम् <b&gt;ज</b&gt;, पाण्डुकर्णिम् <b&gt;Nप</b&gt;"><span class="appnum"><sup>3</sup></span></a>पाण्डुकर्णं <a href="" class="app" title="सकेरलम् <b&gt;जभ</b&gt;, सतोरलम् <b&gt;त</b&gt;, सुरेक्षलम् <b&gt;च</b&gt;, समोचलम् <b&gt;N</b&gt;"><span class="appnum"><sup>4</sup></span></a>सुकेरलम्&nbsp;॥ ३०&nbsp;॥</span>
+            
+         </div>
+         <a name="N%C4%81%C5%9A%C4%81.1.31"></a><div class="text" xml:id="NāŚā.1.31">
+            <span class="line"><a href="" class="app" title="मिश्रकम् <b&gt;ज</b&gt;, ऋजुं कमण्डलुम् <b&gt;डत</b&gt;"><span class="appnum"><sup>1</sup></span></a>ऋजुकं मण्डकं चैव <a href="" class="app" title="शाबरम् <b&gt;त</b&gt;, शाम्बकम् <b&gt;प</b&gt;"><span class="appnum"><sup>2</sup></span></a>शम्बरं <a href="" class="app" title="वञ्चुलम् <b&gt;ज</b&gt;"><span class="appnum"><sup>3</sup></span></a>वञ्जुलं तथा&nbsp;।</span>
+            <span class="line">मागधं <a href="" class="app" title="सुरलम् <b&gt;प</b&gt;, सारणम्&nbsp;। सुकलम् <b&gt;Nफत</b&gt;"><span class="appnum"><sup>4</sup></span></a>सरलं <a href="" class="app" title="चैक <b&gt;न</b&gt;, चैव कातरम् <b&gt;त</b&gt;"><span class="appnum"><sup>5</sup></span></a>चैव कर्तारं <a href="" class="app" title="चात्रिमेव च <b&gt;न</b&gt;"><span class="appnum"><sup>6</sup></span></a>चोग्रमेव च&nbsp;॥ ३१&nbsp;॥</span>
+            
+         </div>
+         <a name="N%C4%81%C5%9A%C4%81.1.32"></a><div class="text" xml:id="NāŚā.1.32">
+            <span class="line"><a href="" class="app" title="तुषादम् <b&gt;ठ.म</b&gt;"><span class="appnum"><sup>1</sup></span></a>तुषारं <a href="" class="app" title="पार्बतम् <b&gt;म</b&gt;, पर्वतम् <b&gt;त</b&gt;, पांशलम् <b&gt;भ</b&gt;"><span class="appnum"><sup>2</sup></span></a>पार्षदं चैव गौतमं <a href="" class="app" title="बादरायणिम् <b&gt;न</b&gt;"><span class="appnum"><sup>3</sup></span></a>बादरायणम्&nbsp;।</span>
+            <span class="line"><a href="" class="app" title="उदारिं वरुणं चैव वरणिं हंसमेव च <b&gt;Nख</b&gt;"><span class="appnum"><sup>4</sup></span></a>विशालं शबलं चैव सुनाभं मेषमेव च&nbsp;॥ ३२&nbsp;॥</span>
+            
+         </div>
+         <a name="N%C4%81%C5%9A%C4%81.1.33"></a><div class="text" xml:id="NāŚā.1.33">
+            <span class="line"><a href="" class="app" title="कालेयम् <b&gt;Nजत</b&gt;"><span class="appnum"><sup>1</sup></span></a>कालियं भ्रमरं चैव तथा पीठमुखं मुनिम्&nbsp;।</span>
+            <span class="line"><a href="" class="app" title="तरुकुट्टा <b&gt;ठम</b&gt;"><span class="appnum"><sup>2</sup></span></a>नखकुट्टाश्मकुट्टौ च षट्पदं <a href="" class="app" title="चोत्तमम् <b&gt;N.ड.त</b&gt;, सप्तमम् <b&gt;म</b&gt;"><span class="appnum"><sup>3</sup></span></a>सोत्तमं तथा&nbsp;॥ ३३&nbsp;॥</span>
+            
+         </div>
+         <a name="N%C4%81%C5%9A%C4%81.1.34"></a><div class="text" xml:id="NāŚā.1.34">
+            <span class="line"><a href="" class="app" title="पानहोपा <b&gt;त</b&gt;, पादुकौपा <b&gt;ड</b&gt;, पाण्डूपानहौ <b&gt;N</b&gt;"><span class="appnum"><sup>1</sup></span></a>पादुकोपानहौ चैव <a href="" class="app" title="सश्रुतं षट्स्वरम् <b&gt;ज</b&gt;, श्रुतिं च स्वरमेव च <b&gt;न</b&gt;, चाभिसुरं तथा <b&gt;N</b&gt;"><span class="appnum"><sup>2</sup></span></a>श्रुतिं चाषस्वरं तथा&nbsp;।</span>
+            <span class="line">अग्निकुण्डाज्यकुण्डौ<a href="" class="app" title="अश्मकुण्डौ च <b&gt;ख</b&gt;"><span class="appnum"><sup>3</sup></span></a> च <a href="" class="app" title="विताण्ड्यं तण्ड्य <b&gt;ज</b&gt;"><span class="appnum"><sup>4</sup></span></a>वितण्ड्यं ताण्ड्यमेव च&nbsp;॥ ३४&nbsp;॥</span>
+            
+         </div>
+         <a name="N%C4%81%C5%9A%C4%81.1.35"></a><div class="text" xml:id="NāŚā.1.35">
+            <span class="line"><a href="" class="app" title="केकराक्षम् <b&gt;Nनत</b&gt;"><span class="appnum"><sup>1</sup></span></a>कर्तराक्षं हिरण्याक्षं <a href="" class="app" title="नकुलं दुष्षहं तथा <b&gt;न</b&gt;, दुष्पहं <b&gt;N</b&gt;"><span class="appnum"><sup>2</sup></span></a>कुशलं दुस्सहं तथा&nbsp;।</span>
+            <span class="line"><a href="" class="app" title="जालम् <b&gt;न</b&gt;, जलम् <b&gt;पत</b&gt;, मपुस्तके इदमर्धं नास्ति"><span class="appnum"><sup>3</sup></span></a>लाजं भयानकं चैव बीभत्सं <a href="" class="app" title="सुविचक्षणम् <b&gt;फ</b&gt;"><span class="appnum"><sup>4</sup></span></a>सविचक्षणम्&nbsp;॥ ३५&nbsp;॥</span>
+            
+         </div>
+         
+         ﻿<span class="pageinfo">[page 020]</span>
+         
+         <a name="N%C4%81%C5%9A%C4%81.1.36"></a><div class="text" xml:id="NāŚā.1.36">
+            <span class="line"><a href="" class="app" title="पुण्ड्राक्षं पूर्णनासं च <b&gt;ठ</b&gt;, अत्र 'त.' पुस्तकेः - किरीटिनञ्च भाष (N. पाश)ञ्च तथा धन्दिनमेव च&nbsp;। शिलापट्टं स्वर्णगुञ्जं (N.स्वर्णगं च) शिलाशिनमथापि (N.तथा धन्विनमेव ) भाषा च&nbsp;॥ ३६&nbsp;॥ अग्निवेशं शिवञ्चैव ध्यानं जप्यं सुमङ्गलम्&nbsp;। जैशिषव्य (N.जैगीषव्यं) कुण्डिनञ्च तथा कलशमेव च&nbsp;॥ ३७&nbsp;॥ विद्धाक्षं घूर्णनासञ्चाप्यसितं सितमेव च&nbsp;। इत्यधिकं दृश्यते N.omits this line."><span class="appnum"><sup>1</sup></span></a>पुण्ड्राक्षं पुण्ड्रनासं <a href="" class="app" title="असितासितमेव च <b&gt;प</b&gt;"><span class="appnum"><sup>2</sup></span></a>चाप्यसितं सितमेव च&nbsp;।</span>
+            <span class="line">विद्युज्जिह्वं महाजिह्वं <a href="" class="app" title="साला <b&gt;ख</b&gt;, कुसितं <b&gt;क्षच</b&gt;"><span class="appnum"><sup>3</sup></span></a>शालङ्कायनमेव च&nbsp;॥ ३६&nbsp;॥</span>
+            
+         </div>
+         <a name="N%C4%81%C5%9A%C4%81.1.37"></a><div class="text" xml:id="NāŚā.1.37">
+            <span class="line"><a href="" class="app" title="त्यामायनम् <b&gt;प</b&gt;"><span class="appnum"><sup>1</sup></span></a>श्यामायनं माठरं च लोहिताङ्गं तथैव च<a href="" class="app" title="निकुट्टकम् <b&gt;N</b&gt;"><span class="appnum"><sup>2</sup></span></a>&nbsp;।</span>
+            <span class="line">संवर्तकं <a href="" class="app" title="पञ्चसखम् <b&gt;ठ</b&gt;"><span class="appnum"><sup>3</sup></span></a>पञ्चशिखं त्रिशिखं <a href="" class="app" title="शिखिमेव <b&gt;ज</b&gt;, शिखरमेव च <b&gt;ठ</b&gt;"><span class="appnum"><sup>4</sup></span></a>शिखमेव च&nbsp;॥ ३७&nbsp;॥<a href="" class="app" title="गोद्दं च पाटनिं चैव लोमशं श्यावकं तथा <b&gt;N</b&gt;"><span class="appnum"><sup>5</sup></span></a></span>
+            
+         </div>
+         <a name="N%C4%81%C5%9A%C4%81.1.38"></a><div class="text" xml:id="NāŚā.1.38">
+            <span class="line">(शङ्खवर्णमुखं <a href="" class="app" title="खण्डम् <b&gt;ज</b&gt;, इदं पङक्तिद्वयं त पुस्तके नास्ति"><span class="appnum"><sup>1</sup></span></a>षण्डं शङ्कुकर्णमथापि च&nbsp;।</span>
+            <span class="line">शक्रनेमिं गभस्तिं चाप्यंशुमालिं शठं तथा&nbsp;॥ ३८&nbsp;॥)</span>
+            
+         </div>
+         
+         ﻿<span class="pageinfo">[page 021]</span>
+         
+         <a name="N%C4%81%C5%9A%C4%81.1.39"></a><div class="text" xml:id="NāŚā.1.39">
+            <span class="line">विद्युतं शातजङ्घं च <a href="" class="app" title="रौद्रवीर <b&gt;क्षपम</b&gt;"><span class="appnum"><sup>1</sup></span></a>रौद्रं वीरमथापि च&nbsp;।</span>
+            <span class="line">पितामहाज्ञयाऽस्माभिर्लोकस्य च गुणेप्सया<a href="" class="app" title="अयं श्लोकः <b&gt;त</b&gt; पुस्तके नास्ति  <b&gt;N</b&gt; also omits this.">*</a>&nbsp;॥ ३९&nbsp;॥</span>
+            
+         </div>
+         <a name="N%C4%81%C5%9A%C4%81.1.40"></a><div class="text" xml:id="NāŚā.1.40">
+            <span class="line"><a href="" class="app" title="एवमादि शतं पूर्ण समग्रं भूमिभागशः <b&gt;न</b&gt;, एवमाद्यं पुत्रशतं समग्रं भूमिभागशः <b&gt;Nङत</b&gt;, साग्रं भूमिविभागशः <b&gt;N</b&gt;"><span class="appnum"><sup>1</sup></span></a>प्रयोजितं पुत्रशतं <a href="" class="app" title="साग्रं भूमिभागशः <b&gt;ख</b&gt;"><span class="appnum"><sup>2</sup></span></a>यथाभूमिविभागशः&nbsp;।</span>
+            <span class="line"><a href="" class="app" title="यस्मिन् कर्मणि यो योग्यस्तस्मिन् स विनियोजितः <b&gt;त</b&gt;"><span class="appnum"><sup>3</sup></span></a>यो यस्मिन्कर्मणि यथा <a href="" class="app" title="योग्योऽसौ तत्र योजितः <b&gt;न</b&gt;"><span class="appnum"><sup>4</sup></span></a>योग्यस्तस्मिन् स योजितः&nbsp;॥ ४०&nbsp;॥</span>
+            
+         </div>
+         <a name="N%C4%81%C5%9A%C4%81.1.41"></a><div class="text" xml:id="NāŚā.1.41">
+            <span class="line">भारतीं सात्त्वतीं चैव वृत्तिमारभटीं तथा&nbsp;।</span>
+            <span class="line">समाश्रितः प्रयोगस्तु प्रयुक्तो वै मया द्विजाः&nbsp;॥ ४१&nbsp;॥</span>
+            
+         </div>
+         <a name="N%C4%81%C5%9A%C4%81.1.42"></a><div class="text" xml:id="NāŚā.1.42">
+            <span class="line">परिगृह्य प्रणम्याथ ब्रह्मा विज्ञापितो मया<a href="" class="app" title="N. omits this line.">*</a>&nbsp;।</span>
+            <span class="line">अथाह मां सुरगुरुः कैशिकीमपि <a href="" class="app" title="कैशिकीमिह <b&gt;N</b&gt;"><span class="appnum"><sup>1</sup></span></a>योजय&nbsp;॥ ४२&nbsp;॥</span>
+            
+         </div>
+         
+         ﻿<span class="pageinfo">[page 022]</span>
+         
+         <a name="N%C4%81%C5%9A%C4%81.1.43"></a><div class="text" xml:id="NāŚā.1.43">
+            <span class="line">यच्च तस्याः क्षमं द्रव्यं तद्ब्रूहि द्विजसत्तम&nbsp;।</span>
+            <span class="line">एवं तेना<a href="" class="app" title="तेनान्व <b&gt;क्षपम</b&gt;"><span class="appnum"><sup>1</sup></span></a>स्म्यभिहितः प्रत्युक्तश्च मया प्रभुः&nbsp;॥ ४३&nbsp;॥</span>
+            
+         </div>
+         <a name="N%C4%81%C5%9A%C4%81.1.44"></a><div class="text" xml:id="NāŚā.1.44">
+            <span class="line"><a href="" class="app" title="क्रियताम् <b&gt;न</b&gt;"><span class="appnum"><sup>1</sup></span></a>दीयतां भगवन्द्रव्यं कैशिक्याः सम्प्रयोजकम्&nbsp;।</span>
+            <span class="line"><a href="" class="app" title="मृद्वङ्ग <b&gt;Nठमत</b&gt;"><span class="appnum"><sup>2</sup></span></a>नृताङ्गहारसम्पन्ना<a href="" class="app" title="संयुक्ता <b&gt;क्षजम</b&gt;"><span class="appnum"><sup>3</sup></span></a> <a href="" class="app" title="ललिताभिनयात्मिका <b&gt;Nख</b&gt;"><span class="appnum"><sup>4</sup></span></a>रसभावक्रियात्मिका&nbsp;॥ ४४&nbsp;॥</span>
+            
+         </div>
+         <a name="N%C4%81%C5%9A%C4%81.1.45"></a><div class="text" xml:id="NāŚā.1.45">
+            <span class="line"><a href="" class="app" title="दृष्टोमया <b&gt;ज</b&gt;"><span class="appnum"><sup>1</sup></span></a>दृष्टा मया भगवतो<a href="" class="app" title="स मन्तव्या <b&gt;N</b&gt;"><span class="appnum"><sup>2</sup></span></a> <a href="" class="app" title="नीलवर्णस्य <b&gt;न</b&gt;, नृत्यतः शङ्करस्य तु <b&gt;Nपत</b&gt;"><span class="appnum"><sup>3</sup></span></a>नीलकण्ठस्य नृत्यतः&nbsp;।</span>
+            <span class="line">कैशिकी श्लक्ष्णनैपथ्या<a href="" class="app" title="नैपथ्य <b&gt;न</b&gt;"><span class="appnum"><sup>4</sup></span></a> शृङ्गाररससम्भवा&nbsp;॥ ४५&nbsp;॥</span>
+            
+         </div>
+         <a name="N%C4%81%C5%9A%C4%81.1.46"></a><div class="text" xml:id="NāŚā.1.46">
+            <span class="line"><a href="" class="app" title="न शक्या <b&gt;Nडत</b&gt;"><span class="appnum"><sup>1</sup></span></a>अशक्या पुरुषैः <a href="" class="app" title="साधु <b&gt;नम</b&gt;"><span class="appnum"><sup>2</sup></span></a>सा तु प्रयोक्तुं <a href="" class="app" title="स्त्रीजनैर्विना <b&gt;ठम</b&gt;, स्त्रीगतिर्हि सा <b&gt;N</b&gt;"><span class="appnum"><sup>3</sup></span></a>स्त्रीजनादृते&nbsp;।</span>
+            <span class="line">ततोऽसृजन्महातेजा मनसाऽप्सरसो विभुः&nbsp;॥ ४६&nbsp;॥</span>
+            
+         </div>
+         
+         ﻿<span class="pageinfo">[page 023]</span>
+         
+         <a name="N%C4%81%C5%9A%C4%81.1.47"></a><div class="text" xml:id="NāŚā.1.47">
+            <span class="line">नाट्यालङ्कारचतुराः<a href="" class="app" title="कुशलाः <b&gt;प</b&gt;, ॰कारिण्यः <b&gt;N</b&gt;"><span class="appnum"><sup>1</sup></span></a> प्रादान्मह्यं प्रयोगतः<a href="" class="app" title="क्षणात्सुरवरस्तदा <b&gt;नमत</b&gt;, प्रयोगज्ञो गुरुस्तदा <b&gt;प</b&gt;"><span class="appnum"><sup>2</sup></span></a>&nbsp;।</span>
+            <span class="line"><a href="" class="app" title="N क्ष म तइदमर्धं 'मागधीमर्जुनीम्' इत्यतः परं दृश्यते"><span class="appnum"><sup>3</sup></span></a>मञ्जुकेशीं सुकेशीं च मिश्रकेशीं सुलोचनाम्<a href="" class="app" title="पादचूलां तथैव च <b&gt;त</b&gt;"><span class="appnum"><sup>4</sup></span></a>&nbsp;॥ ४७&nbsp;॥</span>
+            
+         </div>
+         <a name="N%C4%81%C5%9A%C4%81.1.48"></a><div class="text" xml:id="NāŚā.1.48">
+            <span class="line"><a href="" class="app" title="सौदामनीम् <b&gt;ज</b&gt;"><span class="appnum"><sup>1</sup></span></a>सौदामिनीं देवदत्तां देवसेनां मनोरमाम्<a href="" class="app" title="तथैव च <b&gt;नतम</b&gt;, मनोवतीम् <b&gt;ख</b&gt;"><span class="appnum"><sup>2</sup></span></a>&nbsp;।</span>
+            <span class="line"><a href="" class="app" title="सुरभिम् <b&gt;नतम</b&gt;"><span class="appnum"><sup>3</sup></span></a>सुदतीं सुन्दरीं चैव विदग्धां <a href="" class="app" title="विबुधाम् <b&gt;डमत</b&gt;, विविधाम् <b&gt;क्ष</b&gt;"><span class="appnum"><sup>4</sup></span></a>विपुलां तथा&nbsp;॥ ४८&nbsp;॥</span>
+            
+         </div>
+         
+         ﻿<span class="pageinfo">[page 024]</span>
+         
+         <a name="N%C4%81%C5%9A%C4%81.1.49"></a><div class="text" xml:id="NāŚā.1.49">
+            <span class="line"><a href="" class="app" title="सुमनाम् <b&gt;ड</b&gt;"><span class="appnum"><sup>1</sup></span></a>सुमालां <a href="" class="app" title="लासिनीम् <b&gt;ड</b&gt;"><span class="appnum"><sup>2</sup></span></a>सन्ततिं चैव सुनन्दां सुमुखीं <a href="" class="app" title="रतिम् <b&gt;नम</b&gt;, इदमर्धं N त पुस्तके नास्ति"><span class="appnum"><sup>3</sup></span></a>तथा&nbsp;।</span>
+            <span class="line">मागधीमर्जुनीं चैव सरलां केरलां धृतिम्<a href="" class="app" title="सतीम् <b&gt;क्षम</b&gt;, केकरां तथा <b&gt;त</b&gt;, केकटीं तथा <b&gt;N</b&gt;"><span class="appnum"><sup>4</sup></span></a>&nbsp;॥ ४९&nbsp;॥</span>
+            
+         </div>
+         <a name="N%C4%81%C5%9A%C4%81.1.50"></a><div class="text" xml:id="NāŚā.1.50">
+            <span class="line">नन्दां सपुष्कलां <a href="" class="app" title="च पुष्कलां <b&gt;N</b&gt;"><span class="appnum"><sup>1</sup></span></a>चैव कलमां<a href="" class="app" title="कलभाञ्चैव निर्ममे <b&gt;म</b&gt;, कपिलां सुमनां तथा <b&gt;नतम</b&gt;"><span class="appnum"><sup>2</sup></span></a> चैव मे ददौ&nbsp;।<a href="" class="app" title="सुनन्दां सुमुखीञ्चैव काहल्याद्याश्च मे ददौ&nbsp;। इत्यर्धमधिकं दृश्यते <b&gt;Nनत</b&gt;"><span class="appnum"><sup>3</sup></span></a></span>
+            <span class="line">स्वातिर्भाण्डनियुक्तस्तु सह शिष्यैः स्वयम्भुवा<a href="" class="app" title="सार्धं शिष्यगणैस्तथा <b&gt;N</b&gt;"><span class="appnum"><sup>4</sup></span></a>&nbsp;॥ ५०&nbsp;॥</span>
+            
+         </div>
+         <a name="N%C4%81%C5%9A%C4%81.1.51"></a><div class="text" xml:id="NāŚā.1.51">
+            <span class="line">नारदाद्याश्च गन्धर्वा गानयोगे<a href="" class="app" title="नाट्ययोगे <b&gt;क्ष</b&gt;"><span class="appnum"><sup>1</sup></span></a>  नियोजिताः&nbsp;।</span>
+            <span class="line">एवं<a href="" class="app" title="भावनाट्य <b&gt;क्ष</b&gt;"><span class="appnum"><sup>2</sup></span></a> नाट्यमिदं सम्यग्बुद्ध्वा<a href="" class="app" title="बुद्ध्वा सम्यक्छिष्यगणैः सह <b&gt;नम</b&gt;, वेधा लोकवेदसमर्थितम् <b&gt;N</b&gt;"><span class="appnum"><sup>3</sup></span></a> सर्वैः सुतैः सह&nbsp;॥ ५१&nbsp;॥</span>
+            
+         </div>
+         <a name="N%C4%81%C5%9A%C4%81.1.52"></a><div class="text" xml:id="NāŚā.1.52">
+            <span class="line">स्वातिनारदसंयुक्तो वेदवेदाङ्गकारणम्<a href="" class="app" title="नारदः स्वातिसहितः सुरगन्धर्ववारितः <b&gt;N</b&gt;"><span class="appnum"><sup>1</sup></span></a>&nbsp;।</span>
+            <span class="line">उपस्थितोऽहं <a href="" class="app" title="लोकेशम्&nbsp;। प्रयोगार्थी <b&gt;नतम</b&gt;"><span class="appnum"><sup>2</sup></span></a>ब्रह्माणं प्रयोगार्थं कृताञ्जलिः&nbsp;॥ ५२&nbsp;॥</span>
+            
+         </div>
+         <a name="N%C4%81%C5%9A%C4%81.1.53"></a><div class="text" xml:id="NāŚā.1.53">
+            <span class="line">नाट्यस्य<a href="" class="app" title="वेदस्य <b&gt;N</b&gt;"><span class="appnum"><sup>1</sup></span></a> ग्रहणं प्राप्तं ब्रूहि किं करवाण्यहम्&nbsp;।</span>
+            <span class="line">एतत्तु वचनं श्रुत्वा प्रत्युवाच पितामहः&nbsp;॥ ५३&nbsp;॥</span>
+            
+         </div>
+         
+         ﻿<span class="pageinfo">[page 025]</span>
+         
+         <a name="N%C4%81%C5%9A%C4%81.1.54"></a><div class="text" xml:id="NāŚā.1.54">
+            <span class="line">महानयं<a href="" class="app" title="अहोकालः <b&gt;N</b&gt;"><span class="appnum"><sup>1</sup></span></a> <a href="" class="app" title="प्रयोगश्च स मया समुप <b&gt;प</b&gt;"><span class="appnum"><sup>2</sup></span></a>प्रयोगस्य समयः <a href="" class="app" title="समुप <b&gt;क्षमतब</b&gt;, प्रयोगस्य श्रीमान् युगयोगतः <b&gt;N</b&gt;"><span class="appnum"><sup>3</sup></span></a>प्रत्युपस्थितः&nbsp;।</span>
+            <span class="line">अयं ध्वजमहः श्रीमान् <a href="" class="app" title="शचीभर्तुः <b&gt;Nन</b&gt;"><span class="appnum"><sup>4</sup></span></a>महेन्द्रस्य प्रवर्तते&nbsp;॥ ५४&nbsp;॥</span>
+            
+         </div>
+         <a name="N%C4%81%C5%9A%C4%81.1.55"></a><div class="text" xml:id="NāŚā.1.55">
+            <span class="line"><a href="" class="app" title="पुत्रे <b&gt;ढ</b&gt;"><span class="appnum"><sup>1</sup></span></a>अत्रेदानीमयं वेदो नाट्यसंज्ञः <a href="" class="app" title="प्रयोज्य <b&gt;डम</b&gt;"><span class="appnum"><sup>2</sup></span></a>प्रयुज्यताम्&nbsp;।</span>
+            <span class="line"><a href="" class="app" title="ततश्शक्रध्व <b&gt;Nनम</b&gt;"><span class="appnum"><sup>3</sup></span></a>ततस्तस्मिन्ध्वजमहे निहतासुरदानवे&nbsp;॥ ५५&nbsp;॥</span>
+            
+         </div>
+         <a name="N%C4%81%C5%9A%C4%81.1.56"></a><div class="text" xml:id="NāŚā.1.56">
+            <span class="line">प्रहृष्टामरसंकीर्णे महेन्द्रविजयोत्सवे&nbsp;।</span>
+            <span class="line"><a href="" class="app" title="नान्दी कृता मया पूर्वमाशीर्वचन <b&gt;गब</b&gt;, पूर्वं कृत्वा <b&gt;त</b&gt;"><span class="appnum"><sup>1</sup></span></a>पूर्वं कृता मया नान्दी ह्याशीर्वचनसंयुता&nbsp;॥ ५६&nbsp;॥</span>
+            
+         </div>
+         
+         ﻿<span class="pageinfo">[page 026]</span>
+         
+         <a name="N%C4%81%C5%9A%C4%81.1.57"></a><div class="text" xml:id="NāŚā.1.57">
+            <span class="line">अष्टाङ्गपदसंयुक्ता विचित्रा <a href="" class="app" title="देवसम्मता <b&gt;क्षडम</b&gt;, देवसंमिता <b&gt;प</b&gt;, वेदसंमिता <b&gt;फ</b&gt;, देवनिर्मिता <b&gt;द</b&gt;, देवतास्तुतिसम्मता <b&gt;न</b&gt;, देवतास्तुतिसंश्रया <b&gt;त</b&gt;"><span class="appnum"><sup>1</sup></span></a>वेदनिर्मिता&nbsp;।</span>
+            <span class="line"><a href="" class="app" title="कृता तदन्तेऽनुकृतिः <b&gt;पब</b&gt;, तदन्ते तु कृतिर्बुद्धा <b&gt;न</b&gt;"><span class="appnum"><sup>2</sup></span></a>तदन्तेऽनुकृतिर्बद्धा यथा दैत्याः सुरैर्जिताः&nbsp;॥ ५७&nbsp;॥</span>
+            
+         </div>
+         <a name="N%C4%81%C5%9A%C4%81.1.58"></a><div class="text" xml:id="NāŚā.1.58">
+            <span class="line">सम्फेटविद्रवकृता च्छेद्य<a href="" class="app" title="खेदाहरात्मिका <b&gt;क्ष</b&gt;, भेद्यावहा <b&gt;ब</b&gt;, वेदाहवा <b&gt;ड</b&gt;, भेद्यारवात्मिका <b&gt;घ</b&gt;"><span class="appnum"><sup>1</sup></span></a>भेद्याहवात्मिका&nbsp;।</span>
+            <span class="line">ततो ब्रह्मादयो देवाः प्रयोगपरितोषिताः&nbsp;॥ ५८&nbsp;॥</span>
+            
+         </div>
+         <a name="N%C4%81%C5%9A%C4%81.1.59"></a><div class="text" xml:id="NāŚā.1.59">
+            <span class="line"><a href="" class="app" title="प्रददुर्हृष्टमनसः <b&gt;घबत</b&gt;, प्रययुः प्रददुर्हष्टा <b&gt;क्षठम</b&gt;"><span class="appnum"><sup>1</sup></span></a>प्रददुर्मत्सुतेभ्यस्तु सर्वोपकरणानि <a href="" class="app" title="नः <b&gt;क्षडबतम</b&gt;"><span class="appnum"><sup>2</sup></span></a>वै&nbsp;।</span>
+            <span class="line">प्रीतस्तु प्रथमं शक्रो दत्तवान्स्वं<a href="" class="app" title="ध्वजमुत्तमम् <b&gt;Nनबत</b&gt;"><span class="appnum"><sup>3</sup></span></a> ध्वजं शुभम्&nbsp;॥ ५९&nbsp;॥</span>
+            
+         </div>
+         
+         ﻿<span class="pageinfo">[page 027]</span>
+         
+         <a name="N%C4%81%C5%9A%C4%81.1.60"></a><div class="text" xml:id="NāŚā.1.60">
+            <span class="line">ब्रह्मा <a href="" class="app" title="कमण्डलुम् <b&gt;क्षडम</b&gt;"><span class="appnum"><sup>1</sup></span></a>कुटिलकं चैव भृङ्गारं वरुणः शुभम्<a href="" class="app" title="तथा <b&gt;Nडबतम</b&gt;"><span class="appnum"><sup>2</sup></span></a>&nbsp;।</span>
+            <span class="line"><a href="" class="app" title="सूर्यश्शस्त्रम् <b&gt;म</b&gt;"><span class="appnum"><sup>3</sup></span></a>सूर्यश्छत्रं <a href="" class="app" title="शिवो ज्ञानम् <b&gt;त</b&gt;, शिवा सिद्धिम् <b&gt;गब</b&gt;"><span class="appnum"><sup>4</sup></span></a>शिवस्सिद्धिं वायुर्व्यजनमेव च<a href="" class="app" title="सोमः श्री द्यौर्वताम्"><span class="appnum"><sup>5</sup></span></a>&nbsp;॥ ६०&nbsp;॥</span>
+            
+         </div>
+         <a name="N%C4%81%C5%9A%C4%81.1.61"></a><div class="text" xml:id="NāŚā.1.61">
+            <span class="line">विष्णुः सिंहासनं चैव कुबेरो मकुटं तथा&nbsp;।</span>
+            <span class="line"><a href="" class="app" title="एतयोरिदमर्ध पठ्यते <b&gt;Nमत</b&gt;"><span class="appnum"><sup>1</sup></span></a>श्राव्यत्वं प्रेक्षणीयस्य <a href="" class="app" title="श्रव्यत्वं क्रीडनीयस्य <b&gt;N</b&gt;"><span class="appnum"><sup>2</sup></span></a>ददौ देवी सरस्वती&nbsp;॥ ६१&nbsp;॥</span>
+            
+         </div>
+         <a name="N%C4%81%C5%9A%C4%81.1.62"></a><div class="text" xml:id="NāŚā.1.62">
+            <span class="line">शेषा ये देवगन्धर्वा यक्षराक्षसपन्नगाः&nbsp;।</span>
+            <span class="line">तस्मिन्सद<a href="" class="app" title="स्यतिप्रीता <b&gt;घब</b&gt;, सि तिष्ठन्ति <b&gt;N</b&gt;"><span class="appnum"><sup>1</sup></span></a>स्यभिप्रेतान्नानाजातिगुणाश्रयान्<a href="" class="app" title="श्रयाः <b&gt;Nघब</b&gt;"><span class="appnum"><sup>2</sup></span></a>&nbsp;॥ ६२&nbsp;॥</span>
+            
+         </div>
+         <a name="N%C4%81%C5%9A%C4%81.1.63"></a><div class="text" xml:id="NāŚā.1.63">
+            <span class="line">अंशांशैर्भाषितं<a href="" class="app" title="र्भाषितान् <b&gt;क्षनमत</b&gt;"><span class="appnum"><sup>1</sup></span></a> भावान् रसान् रूपं बलं<a href="" class="app" title="बलिं क्रियाम् <b&gt;क्षड</b&gt;, भावान् रूपमङ्गं क्रियां बलम् <b&gt;न</b&gt;, क्रियाबलम् <b&gt;प</b&gt;, बलं क्रियाम् <b&gt;मत</b&gt;"><span class="appnum"><sup>2</sup></span></a> तथा&nbsp;।</span>
+            <span class="line"><a href="" class="app" title="प्रददुर्मत्सुतेभ्यस्तु चित्रं चाभरणं बहु <b&gt;नबठ</b&gt;, चित्रमाभरणं बहु"><span class="appnum"><sup>3</sup></span></a>दत्तवन्तः प्रहृष्टास्ते मत्सुतेभ्यो दिवौकसः&nbsp;॥ ६३&nbsp;॥<a href="" class="app" title="N. has instead: स्वांशांशैर्भाषितं भावाद्रूपमङ्गं क्रियाबलम्&nbsp;। प्रददुर्मत्सुतेभ्यस्तु चित्र चाभरणं बहु">*</a></span>
+            
+         </div>
+         
+         ﻿<span class="pageinfo">[page 028]</span>
+         
+         <a name="N%C4%81%C5%9A%C4%81.1.64"></a><div class="text" xml:id="NāŚā.1.64">
+            <span class="line">एवं प्रयोगे प्रारब्धे <a href="" class="app" title="दैत्यमानविवाशने <b&gt;न</b&gt;"><span class="appnum"><sup>1</sup></span></a>दैत्यदानवनाशने<a href="" class="app" title="शाशने <b&gt;N</b&gt;, दैत्यादीनां विनाशनम् <b&gt;प</b&gt;"><span class="appnum"><sup>2</sup></span></a>&nbsp;।</span>
+            <span class="line"><a href="" class="app" title="अथासुराश्च क्षुमिता ये तत्रासन् समागताः <b&gt;ठ</b&gt;, विघ्नानुत्पादयन् ध्रुवम् <b&gt;N</b&gt;, अथासुराश्चाभितोष्याः <b&gt;म</b&gt;"><span class="appnum"><sup>3</sup></span></a>अभवन्क्षुभिताः सर्वे दैत्या ये तत्र <a href="" class="app" title="दर्पिताः <b&gt;नम</b&gt;"><span class="appnum"><sup>4</sup></span></a>सङ्गताः&nbsp;॥ ६४&nbsp;॥</span>
+            
+         </div>
+         <a name="N%C4%81%C5%9A%C4%81.1.65"></a><div class="text" xml:id="NāŚā.1.65">
+            <span class="line">विरूपाक्ष<a href="" class="app" title="पुरोगास्तु <b&gt;क्ष</b&gt;, पुरोगाश्च <b&gt;जत</b&gt;"><span class="appnum"><sup>1</sup></span></a>पुरोगांश्च विघ्नान्प्रो<a href="" class="app" title="नत्साह्य तऽब्रुवन् <b&gt;क्षब</b&gt;, विघ्नानुत्साहयन्ति ते <b&gt;नम</b&gt;"><span class="appnum"><sup>2</sup></span></a>त्साह्य तेऽब्रुवन्&nbsp;।</span>
+            <span class="line">न <a href="" class="app" title="नेत्थमीक्षामहे <b&gt;ड</b&gt;, नेत्थमिच्छामहे <b&gt;Nन</b&gt;"><span class="appnum"><sup>3</sup></span></a>क्षमिष्यामहे नाट्यमेतदागम्यतामिति&nbsp;॥ ६५&nbsp;॥</span>
+            
+         </div>
+         <a name="N%C4%81%C5%9A%C4%81.1.66"></a><div class="text" xml:id="NāŚā.1.66">
+            <span class="line">ततस्तैरसुरैः सार्धं विघ्ना मायामुपाश्रिताः&nbsp;।</span>
+            <span class="line">वाचश्चेष्टां स्मृतिं चैव स्तम्भयन्ति स्म नृत्यताम्&nbsp;॥ ६६&nbsp;॥</span>
+            
+         </div>
+         <a name="N%C4%81%C5%9A%C4%81.1.67"></a><div class="text" xml:id="NāŚā.1.67">
+            <span class="line"><a href="" class="app" title="एवम् <b&gt;कबत</b&gt;"><span class="appnum"><sup>1</sup></span></a>तथा विध्वंसनं दृष्ट्वा <a href="" class="app" title="ततस्तेषां स <b&gt;क्षठम</b&gt;"><span class="appnum"><sup>2</sup></span></a>सूत्रधारस्य देवराट्&nbsp;।</span>
+            <span class="line">कस्मात्प्रयोगवैषम्यमित्युक्त्वा ध्यानमाविशत्&nbsp;॥ ६७&nbsp;॥</span>
+            
+         </div>
+         
+         ﻿<span class="pageinfo">[page 029]</span>
+         
+         <a name="N%C4%81%C5%9A%C4%81.1.68"></a><div class="text" xml:id="NāŚā.1.68">
+            <span class="line">अथापश्यत्सदो<a href="" class="app" title="तदा <b&gt;क्ष</b&gt;"><span class="appnum"><sup>1</sup></span></a> विघ्नैः समन्तात्परिवारितम्&nbsp;।</span>
+            <span class="line"><a href="" class="app" title="सहानुगैः <b&gt;N</b&gt;, तदेतरैः <b&gt;ठ</b&gt;, तथैतरैः <b&gt;ड</b&gt;, सहेतरं सूत्रधारं नष्टसंज्ञं जलीकृतम् <b&gt;त</b&gt;"><span class="appnum"><sup>2</sup></span></a>सहेतरैः सूत्रधारं नष्टसंज्ञं जडीकृतम्&nbsp;॥ ६८&nbsp;॥</span>
+            
+         </div>
+         <a name="N%C4%81%C5%9A%C4%81.1.69"></a><div class="text" xml:id="NāŚā.1.69">
+            <span class="line"><a href="" class="app" title="अथोत्थाय द्रुतं क्रोधाद् दिव्यं जग्राह तं ध्वजम् <b&gt;गतब</b&gt;"><span class="appnum"><sup>1</sup></span></a>उत्थाय त्वरितं शक्रः <a href="" class="app" title="क्रोधाज्जग्राह <b&gt;क्षठ</b&gt;, ध्वजम् <b&gt;त</b&gt;, दिव्यं जग्राह स ध्वजम् <b&gt;त</b&gt;"><span class="appnum"><sup>2</sup></span></a>गृहीत्वा ध्वजमुत्तमम्&nbsp;।</span>
+            <span class="line">सर्वरत्नोज्ज्वल<a href="" class="app" title="ज्वलं तं तु <b&gt;क्षठम</b&gt;, ज्ज्वलतनुम् <b&gt;ड</b&gt;"><span class="appnum"><sup>3</sup></span></a>तनुः किञ्चिदुद्वृत्त<a href="" class="app" title="कोपादुद्वृत्त <b&gt;Nठम</b&gt;, शक्रः प्रोद्वृत्तलोचनः <b&gt;त</b&gt;"><span class="appnum"><sup>4</sup></span></a>लोचनः&nbsp;॥ ६९&nbsp;॥</span>
+            
+         </div>
+         <a name="N%C4%81%C5%9A%C4%81.1.70"></a><div class="text" xml:id="NāŚā.1.70">
+            <span class="line">रङ्गपीठगतान्विघ्नानसुरांश्चैव देवराट्&nbsp;।</span>
+            <span class="line">जर्जरीकृतदेहांस्तानकरोज्जर्जरेण सः&nbsp;॥ ७०&nbsp;॥</span>
+            
+         </div>
+         <a name="N%C4%81%C5%9A%C4%81.1.71"></a><div class="text" xml:id="NāŚā.1.71">
+            <span class="line">निहतेषु च सर्वेषु विघ्नेषु<a href="" class="app" title="हैतेषु तेषु विघ्नेषु सर्वेषु <b&gt;N</b&gt;, गतेषु तेषु विघ्नेषु सर्वेषु <b&gt;न</b&gt;"><span class="appnum"><sup>1</sup></span></a> सह दानवैः&nbsp;।</span>
+            <span class="line"><a href="" class="app" title="प्रणम्य तत्त्वत्तों वाक्यमिदमूचुः <b&gt;N</b&gt;, प्रणम्यैनं तदा वाक्यमिदमूचुः <b&gt;नम</b&gt;, सम्प्रहस्य <b&gt;त</b&gt;, सम्प्रसह्य <b&gt;ब</b&gt;"><span class="appnum"><sup>2</sup></span></a>सम्प्रहृष्य ततो वाक्यमाहुः सर्वे दिवौकसः&nbsp;॥ ७१&nbsp;॥</span>
+            
+         </div>
+         <a name="N%C4%81%C5%9A%C4%81.1.72"></a><div class="text" xml:id="NāŚā.1.72">
+            <span class="line">अहो प्रहरणं दिव्यमिदमासादितं त्वया&nbsp;।</span>
+            <span class="line"><a href="" class="app" title="नाट्यविध्वंसिनः सर्वे येनैते जर्जरीकृताः <b&gt;क्षठम</b&gt;, जर्जरीकृतदेहास्तु दानवा येन ते कृताः <b&gt;N</b&gt;"><span class="appnum"><sup>1</sup></span></a>जर्जरीकृतसर्वाङ्गा येनैने दानवाः कृताः&nbsp;॥ ७२&nbsp;॥</span>
+            
+         </div>
+         <a name="N%C4%81%C5%9A%C4%81.1.73"></a><div class="text" xml:id="NāŚā.1.73">
+            <span class="line">यस्मादनेन ते विघ्ना सासुरा जर्जरीकृताः&nbsp;।</span>
+            <span class="line">तस्माज्जर्जर <a href="" class="app" title="इत्येष <b&gt;ड</b&gt;"><span class="appnum"><sup>1</sup></span></a>एवेति <a href="" class="app" title="ख्यातिं लोके गमिष्यति <b&gt;न</b&gt;"><span class="appnum"><sup>2</sup></span></a>नामतोऽयं भविष्यति&nbsp;॥ ७३&nbsp;॥</span>
+            
+         </div>
+         <a name="N%C4%81%C5%9A%C4%81.1.74"></a><div class="text" xml:id="NāŚā.1.74">
+            <span class="line">शेषा ये चैव <a href="" class="app" title="विघ्नार्थम् <b&gt;नबत</b&gt;"><span class="appnum"><sup>1</sup></span></a>हिंसार्थ<a href="" class="app" title="मुपस्थास्यन्ति विघ्नकाः <b&gt;गतब</b&gt;, विघ्नताम् <b&gt;न</b&gt;"><span class="appnum"><sup>2</sup></span></a>मुपयास्यान्ति हिंसकाः<a href="" class="app" title="विघ्नकाः <b&gt;N</b&gt;"><span class="appnum"><sup>3</sup></span></a>&nbsp;।</span>
+            <span class="line"><a href="" class="app" title="दृष्टवेमम् <b&gt;N</b&gt;, दृष्टवैनम् <b&gt;न</b&gt;"><span class="appnum"><sup>4</sup></span></a>दुष्टवैव जर्जरं तेऽपि गमिष्यन्त्येवमेव तु&nbsp;॥ ७४&nbsp;॥</span>
+            
+         </div>
+         <a name="N%C4%81%C5%9A%C4%81.1.75"></a><div class="text" xml:id="NāŚā.1.75">
+            <span class="line"><a href="" class="app" title="एवं भविष्यतीत्येत् <b&gt;Nन</b&gt;, एवं भविष्यतीत्येव <b&gt;न</b&gt;"><span class="appnum"><sup>1</sup></span></a>एवमेवास्त्विति ततः शक्रः प्रोवाच तान्सुरान्&nbsp;।</span>
+            <span class="line"><a href="" class="app" title="रक्षाभूतः सदैवास्य <b&gt;N</b&gt;, रक्षाभूतः स दैवस्य <b&gt;न</b&gt;"><span class="appnum"><sup>2</sup></span></a>रक्षाभूतश्च सर्वेषां भविष्यत्येष<a href="" class="app" title="भविष्यत्येव <b&gt;N</b&gt;"><span class="appnum"><sup>3</sup></span></a> जर्जरः&nbsp;॥ ७५&nbsp;॥</span>
+            
+         </div>
+         
+         ﻿<span class="pageinfo">[page 030]</span>
+         
+         <a name="N%C4%81%C5%9A%C4%81.1.76"></a><div class="text" xml:id="NāŚā.1.76">
+            <span class="line">प्रयोगे प्रस्तुते ह्येवं<a href="" class="app" title="पुनः प्रयोगे प्रारब्धे <b&gt;N</b&gt;"><span class="appnum"><sup>1</sup></span></a> स्फीते शक्रमहे पुनः<a href="" class="app" title="तदा <b&gt;Nन</b&gt;, पुरा <b&gt;ब</b&gt;, इदमर्धं नास्ति <b&gt;म</b&gt;"><span class="appnum"><sup>2</sup></span></a>&nbsp;।</span>
+            <span class="line"><a href="" class="app" title="भूयः सन्त्रासयन्ति स्म <b&gt;Nन</b&gt;"><span class="appnum"><sup>3</sup></span></a>त्रासं सञ्जनयन्ति स्म विघ्नाः <a href="" class="app" title="निश्चितमानसाः <b&gt;Nन</b&gt;, मद्वधबुद्धयः <b&gt;क्षडम</b&gt;"><span class="appnum"><sup>4</sup></span></a>शेषास्तु नृत्यताम्&nbsp;॥ ७६&nbsp;॥</span>
+            
+         </div>
+         <a name="N%C4%81%C5%9A%C4%81.1.77"></a><div class="text" xml:id="NāŚā.1.77">
+            <span class="line">दृष्ट्वा तेषां व्यवसितं <a href="" class="app" title="मदर्थे <b&gt;क्ष</b&gt;, तस्तदर्थे <b&gt;म</b&gt;"><span class="appnum"><sup>1</sup></span></a>दैत्यानां <a href="" class="app" title="विघ्नकारकम् <b&gt;Nगब</b&gt;"><span class="appnum"><sup>2</sup></span></a>विप्रकारजम्&nbsp;।</span>
+            <span class="line">उपस्थितोऽहं ब्रह्माणं <a href="" class="app" title="सुरैः <b&gt;नक्ष</b&gt;"><span class="appnum"><sup>3</sup></span></a>सुतैः सर्वैः समन्वितः&nbsp;॥ ७७&nbsp;॥</span>
+            
+         </div>
+         <a name="N%C4%81%C5%9A%C4%81.1.78"></a><div class="text" xml:id="NāŚā.1.78">
+            <span class="line"><a href="" class="app" title="निःसृता <b&gt;गब</b&gt;"><span class="appnum"><sup>1</sup></span></a>निश्चिता भगवन्विघ्ना नाट्यस्यास्य विनाशने&nbsp;।</span>
+            <span class="line"><a href="" class="app" title="अतो <b&gt;घबत</b&gt;"><span class="appnum"><sup>2</sup></span></a>अस्य रक्षाविधिं सम्यगाज्ञापय <a href="" class="app" title="पितामह <b&gt;Nन</b&gt;"><span class="appnum"><sup>3</sup></span></a>सुरेश्वर&nbsp;॥ ७८&nbsp;॥</span>
+            
+         </div>
+         <a name="N%C4%81%C5%9A%C4%81.1.79"></a><div class="text" xml:id="NāŚā.1.79">
+            <span class="line"><a href="" class="app" title="ततः स <b&gt;Nक्षठम</b&gt;, ततस्तु <b&gt;तब</b&gt;"><span class="appnum"><sup>1</sup></span></a> ततश्च विश्वकर्माणं <a href="" class="app" title="आह ब्रह्मा <b&gt;Nनतब</b&gt;, ब्रह्मावोचत् <b&gt;न</b&gt;"><span class="appnum"><sup>2</sup></span></a>ब्रह्मोवाच प्रयत्नतः&nbsp;।</span>
+            <span class="line">कुरु लक्षणसम्पन्नं नाट्यवेश्म महामते<a href="" class="app" title="महामुने <b&gt;N</b&gt;"><span class="appnum"><sup>3</sup></span></a>&nbsp;॥ ७९&nbsp;॥</span>
+            
+         </div>
+         <a name="N%C4%81%C5%9A%C4%81.1.80"></a><div class="text" xml:id="NāŚā.1.80">
+            <span class="line">ततोऽचिरेण कालेन विश्वकर्मा महच्छुभम्&nbsp;।</span>
+            <span class="line">सर्वलक्षणसम्पन्नं <a href="" class="app" title="नाट्यवेश्म चकार सः <b&gt;Nग</b&gt;"><span class="appnum"><sup>1</sup></span></a>कृत्वा नाट्यगृहं तु सः&nbsp;॥ ८०&nbsp;॥</span>
+            
+         </div>
+         <a name="N%C4%81%C5%9A%C4%81.1.81"></a><div class="text" xml:id="NāŚā.1.81">
+            <span class="line"><a href="" class="app" title="कृत्वा यथोक्तमेवं तु गृहं पद्मोद्भवाज्ञया&nbsp;। इत्यधिकं दृश्यते&nbsp;। <b&gt;क्षठम</b&gt;, ततोऽब्रवीद्विश्वकर्मा ब्रह्माणं प्रयताञ्जलिः <b&gt;न</b&gt;"><span class="appnum"><sup>1</sup></span></a>प्रोक्तवान्द्रुहिणं गत्वा सभायान्तु कृताञ्जलिः&nbsp;।</span>
+            <span class="line">सज्जं नाट्यगृहं देव तदवेक्षितुमर्हसि&nbsp;॥ ८१&nbsp;॥</span>
+            
+         </div>
+         <a name="N%C4%81%C5%9A%C4%81.1.82"></a><div class="text" xml:id="NāŚā.1.82">
+            <span class="line">ततः सह<a href="" class="app" title="सार्ध <b&gt;N</b&gt;"><span class="appnum"><sup>1</sup></span></a> महेन्द्रेण सुरैः सर्वैश्च <a href="" class="app" title="सत्तमैः <b&gt;ठ</b&gt;, समन्वितः <b&gt;N</b&gt;, सर्वेः सहेतरैः <b&gt;नत</b&gt;"><span class="appnum"><sup>2</sup></span></a>सेतरैः&nbsp;।</span>
+            <span class="line"><a href="" class="app" title="अगच्छत् <b&gt;Nक्षठमतब</b&gt;"><span class="appnum"><sup>3</sup></span></a>आगतस्त्वरिता द्रष्टुं द्रुहिणो नाट्यमण्डपम्&nbsp;॥ ८२&nbsp;॥</span>
+            
+         </div>
+         
+         ﻿<span class="pageinfo">[page 031]</span>
+         
+         <a name="N%C4%81%C5%9A%C4%81.1.83"></a><div class="text" xml:id="NāŚā.1.83">
+            <span class="line">दृष्ट्वा नाट्यगृहं ब्रह्मा प्राह सर्वान्सुरांस्ततः<a href="" class="app" title="तदा <b&gt;Nक्ष</b&gt;"><span class="appnum"><sup>1</sup></span></a>&nbsp;।</span>
+            <span class="line">अंशभागैर्भवद्भिस्तु रक्ष्योऽयं नाट्यमण्डपः&nbsp;॥ ८३&nbsp;॥</span>
+            
+         </div>
+         <a name="N%C4%81%C5%9A%C4%81.1.84"></a><div class="text" xml:id="NāŚā.1.84">
+            <span class="line">रक्षणे <a href="" class="app" title="मण्डपस्यास्य <b&gt;पब</b&gt;"><span class="appnum"><sup>1</sup></span></a>मण्डपस्याथ <a href="" class="app" title="नियुक्तो रजनीकरः <b&gt;क्षठम</b&gt;"><span class="appnum"><sup>2</sup></span></a>विनियुक्तस्तु चन्द्रमाः&nbsp;।</span>
+            <span class="line"><a href="" class="app" title="यथादिशं लोकपालाः <b&gt;Nन</b&gt;, यथादिग्लोकपालश्च <b&gt;पबत</b&gt;"><span class="appnum"><sup>3</sup></span></a>लोकपालास्तथा दिक्षु विदिक्ष्वपि च मारुताः&nbsp;॥ ८४&nbsp;॥</span>
+            
+         </div>
+         <a name="N%C4%81%C5%9A%C4%81.1.85"></a><div class="text" xml:id="NāŚā.1.85">
+            <span class="line">नेपथ्यभूमौ मित्रस्तु निक्षिप्तो वरुणोऽम्बरे&nbsp;।</span>
+            <span class="line"><a href="" class="app" title="वेदिकायां पार्थिवाग्निः <b&gt;N</b&gt;, वेदिकां पावकः पातु <b&gt;क्षठम</b&gt;"><span class="appnum"><sup>1</sup></span></a>वेदिकारक्षणे वह्नि<a href="" class="app" title="भाण्डे विश्वदिवोकसः <b&gt;N</b&gt;, भाण्डं सर्वे दिवौकसः <b&gt;क्षठम</b&gt;"><span class="appnum"><sup>2</sup></span></a>र्भाण्डे सर्वदिवौकसः&nbsp;॥ ८५&nbsp;॥</span>
+            
+         </div>
+         <a name="N%C4%81%C5%9A%C4%81.1.86"></a><div class="text" xml:id="NāŚā.1.86">
+            <span class="line">वर्णाश्चत्वार <a href="" class="app" title="एवात्र <b&gt;N</b&gt;, एवास्य <b&gt;पब</b&gt;, तथा स्तम्भेषु योजिताः <b&gt;N</b&gt;"><span class="appnum"><sup>1</sup></span></a>एवाथ स्तम्भेषु विनियोजिताः&nbsp;।</span>
+            <span class="line">आदित्याश्चैव रुद्राश्च <a href="" class="app" title="न्यस्ताः <b&gt;गबत</b&gt;, गताः <b&gt;न</b&gt;, कृताः <b&gt;N</b&gt;"><span class="appnum"><sup>2</sup></span></a>स्थिताः स्तम्भान्तरेष्वथ&nbsp;॥ ८६&nbsp;॥</span>
+            
+         </div>
+         <a name="N%C4%81%C5%9A%C4%81.1.87"></a><div class="text" xml:id="NāŚā.1.87">
+            <span class="line"><a href="" class="app" title="भूतानि शालास्वप्सरसस्तथा सर्वेषु वेश्मसु <b&gt;नत</b&gt;, धारणीषु स्थिता भूता शाला -----तथाङ्गिरा <b&gt;N</b&gt;"><span class="appnum"><sup>1</sup></span></a>धारणीष्वथ भूतानि शालास्वप्सरसस्तथा&nbsp;।</span>
+            <span class="line"><a href="" class="app" title="महोदधिर्महीपृष्ठे यक्षिण्यः सर्वपर्वसु <b&gt;Nनत</b&gt;"><span class="appnum"><sup>2</sup></span></a>सर्ववेश्मसु यक्षिण्यो महीपृष्ठे महोदधिः&nbsp;॥ ८७&nbsp;॥</span>
+            
+         </div>
+         
+         ﻿<span class="pageinfo">[page 032]</span>
+         
+         <a name="N%C4%81%C5%9A%C4%81.1.88"></a><div class="text" xml:id="NāŚā.1.88">
+            <span class="line">द्वारशालानियुक्तौ तु कृतान्तः काल एव च&nbsp;।</span>
+            <span class="line">स्थापितौ द्वार<a href="" class="app" title="द्वारपत्रे तु <b&gt;क्षनत</b&gt;, पार्श्वे <b&gt;ठबम</b&gt;"><span class="appnum"><sup>1</sup></span></a>पत्रेषु <a href="" class="app" title="नागराजौ <b&gt;क्षठम</b&gt;"><span class="appnum"><sup>2</sup></span></a>नागमुख्यौ महाबलौ&nbsp;॥ ८८&nbsp;॥</span>
+            
+         </div>
+         <a name="N%C4%81%C5%9A%C4%81.1.89"></a><div class="text" xml:id="NāŚā.1.89">
+            <span class="line">देहल्यां यमदण्ड<a href="" class="app" title="ण्डश्च <b&gt;न</b&gt;"><span class="appnum"><sup>1</sup></span></a>स्तु शूलं <a href="" class="app" title="चोपरि संस्थितम् <b&gt;Nक्षठम</b&gt;"><span class="appnum"><sup>2</sup></span></a>तस्योपरि स्थितम्&nbsp;।</span>
+            <span class="line">द्वारपालौ स्थितौ चोभौ <a href="" class="app" title="निर्ऋति <b&gt;गम</b&gt;"><span class="appnum"><sup>3</sup></span></a>नियतिर्मृत्युरेव च&nbsp;॥ ८९&nbsp;॥</span>
+            
+         </div>
+         <a name="N%C4%81%C5%9A%C4%81.1.90"></a><div class="text" xml:id="NāŚā.1.90">
+            <span class="line">पार्श्वे च रङ्गपीठस्य<a href="" class="app" title="रङ्गपीठस्य पार्श्वे तु <b&gt;N</b&gt;"><span class="appnum"><sup>1</sup></span></a> महेन्द्रः स्थितवान्स्वयम्<a href="" class="app" title="स्वयं शक्रः प्रतिष्ठितः <b&gt;N</b&gt;"><span class="appnum"><sup>2</sup></span></a>&nbsp;।</span>
+            <span class="line">स्थापिता मत्तवारण्यां विद्युद्दैत्यनिषूदनी&nbsp;॥ ९०&nbsp;॥</span>
+            
+         </div>
+         <a name="N%C4%81%C5%9A%C4%81.1.91"></a><div class="text" xml:id="NāŚā.1.91">
+            <span class="line">स्तम्भेषु मत्तवारण्याः स्थापिताः <a href="" class="app" title="परिरक्षणे <b&gt;गब</b&gt;"><span class="appnum"><sup>1</sup></span></a>परिपालने&nbsp;।</span>
+            <span class="line"><a href="" class="app" title="भूता यक्षाः <b&gt;क्षम</b&gt;"><span class="appnum"><sup>2</sup></span></a>भूतयक्षपिशाचाश्च गुह्यकाश्च महाबलाः&nbsp;॥ ९१&nbsp;॥</span>
+            
+         </div>
+         <a name="N%C4%81%C5%9A%C4%81.1.92"></a><div class="text" xml:id="NāŚā.1.92">
+            <span class="line">जर्जरे <a href="" class="app" title="चापि निक्षिप्तां <b&gt;N</b&gt;, चैव निक्षिप्तम् <b&gt;क्षठम</b&gt;"><span class="appnum"><sup>1</sup></span></a>तु विनिक्षिप्तं वज्रं दैत्यनिबर्हणम्&nbsp;।</span>
+            <span class="line"><a href="" class="app" title="सन्धौ सन्धौ <b&gt;न</b&gt;, तत्पर्वसु च नि <b&gt;म</b&gt;"><span class="appnum"><sup>2</sup></span></a>तत्पर्वसु विनिक्षिप्ताः सुरेन्द्रा ह्यमितौजसः&nbsp;॥ ९२&nbsp;॥</span>
+            
+         </div>
+         
+         ﻿<span class="pageinfo">[page 033]</span>
+         
+         <a name="N%C4%81%C5%9A%C4%81.1.93"></a><div class="text" xml:id="NāŚā.1.93">
+            <span class="line"><a href="" class="app" title="शिरो रक्षन् स्थितो ब्रह्मा हरः पर्वण्यनन्तरे <b&gt;न</b&gt;, शिरः पार्श्वे <b&gt;ब</b&gt;"><span class="appnum"><sup>1</sup></span></a>शिरःपर्वस्थितो ब्रह्मा द्वितीये शङ्करस्तथा&nbsp;।</span>
+            <span class="line">तृतीये <a href="" class="app" title="भगवान् <b&gt;क्षनम</b&gt;"><span class="appnum"><sup>2</sup></span></a>च स्थितो विष्णुश्चतुर्थे स्कन्द एव च&nbsp;॥ ९३&nbsp;॥</span>
+            
+         </div>
+         <a name="N%C4%81%C5%9A%C4%81.1.94"></a><div class="text" xml:id="NāŚā.1.94">
+            <span class="line">पञ्चमे च महानागाः शेषवासुकितक्षकाः&nbsp;।</span>
+            <span class="line">एवं विघ्नविनाशाय स्थापिता जर्जरे सुराः<a href="" class="app" title="रेश्वराः <b&gt;ब</b&gt;"><span class="appnum"><sup>1</sup></span></a>&nbsp;॥ ९४&nbsp;॥</span>
+            
+         </div>
+         <a name="N%C4%81%C5%9A%C4%81.1.95"></a><div class="text" xml:id="NāŚā.1.95">
+            <span class="line">रङ्गपीठस्य मध्ये तु स्वयं ब्रह्मा प्रतिष्ठितः&nbsp;।</span>
+            <span class="line"><a href="" class="app" title="इज्यार्थम् <b&gt;त</b&gt;"><span class="appnum"><sup>1</sup></span></a>इष्ट्यर्थ रङ्गमध्ये तु क्रियते पुष्पमोक्षणम्&nbsp;॥ ९५&nbsp;॥</span>
+            
+         </div>
+         <a name="N%C4%81%C5%9A%C4%81.1.96"></a><div class="text" xml:id="NāŚā.1.96">
+            <span class="line">पातालवासिनो ये च यक्षगुह्यकपन्नगाः&nbsp;।</span>
+            <span class="line">अधस्ताद्रङ्गपीठस्य रक्षणे ते<a href="" class="app" title="रक्षणाय <b&gt;N</b&gt;, विनियोजिताः <b&gt;क्ष</b&gt;"><span class="appnum"><sup>1</sup></span></a> नियोजिताः&nbsp;॥ ९६&nbsp;॥</span>
+            
+         </div>
+         <a name="N%C4%81%C5%9A%C4%81.1.97"></a><div class="text" xml:id="NāŚā.1.97">
+            <span class="line">नायकं रक्षतीन्द्रस्तु <a href="" class="app" title="नायकं पाति <b&gt;N</b&gt;"><span class="appnum"><sup>1</sup></span></a>नायिकां च<a href="" class="app" title="तु <b&gt;N</b&gt;"><span class="appnum"><sup>2</sup></span></a> सरस्वती&nbsp;।</span>
+            <span class="line">विदूषकमथौङ्कारः शेषास्तु प्रकृतीर्हरः<a href="" class="app" title="हरिः <b&gt;N</b&gt;, इत्यर्थम् <b&gt;जब</b&gt;"><span class="appnum"><sup>3</sup></span></a>&nbsp;॥९७॥</span>
+            
+         </div>
+         <a name="N%C4%81%C5%9A%C4%81.1.98"></a><div class="text" xml:id="NāŚā.1.98">
+            <span class="line">यान्येतानि नियुक्तानि दैवतानीह रक्षणे&nbsp;।</span>
+            <span class="line"><a href="" class="app" title="एतेषामधिदेवास्तु <b&gt;गब</b&gt;"><span class="appnum"><sup>1</sup></span></a>एतान्येवाधिदैवानि भविष्यन्तीत्युवाच सः&nbsp;॥ ९८&nbsp;॥</span>
+            
+         </div>
+         <a name="N%C4%81%C5%9A%C4%81.1.99"></a><div class="text" xml:id="NāŚā.1.99">
+            <span class="line">एतस्मिन्नन्तरे देवैः सर्वैरुक्तः पितामहः&nbsp;।</span>
+            <span class="line">साम्ना तावदिमे विघ्नाः स्थाप्यन्तां वचसा त्वया&nbsp;॥ ९९&nbsp;॥</span>
+            
+         </div>
+         <a name="N%C4%81%C5%9A%C4%81.1.100"></a><div class="text" xml:id="NāŚā.1.100">
+            <span class="line">पूर्वं साम प्रयोक्तव्यं द्वितीयं दानमेव च&nbsp;।</span>
+            <span class="line">तयोरुपरि भेदस्तु ततो दण्डः <a href="" class="app" title="प्रशस्यते <b&gt;गबत</b&gt;"><span class="appnum"><sup>1</sup></span></a>प्रयुज्यते&nbsp;॥ १००&nbsp;॥</span>
+            
+         </div>
+         <a name="N%C4%81%C5%9A%C4%81.1.101"></a><div class="text" xml:id="NāŚā.1.101">
+            <span class="line">देवानां वचनं श्रुत्वा ब्रह्मा विघ्नानुवाच ह&nbsp;।</span>
+            <span class="line"><a href="" class="app" title="कथम् <b&gt;घब</b&gt;"><span class="appnum"><sup>1</sup></span></a>कस्माद्भवन्तो नाट्यस्य <a href="" class="app" title="विनाशार्थमुपस्थिताः <b&gt;घतब</b&gt;"><span class="appnum"><sup>2</sup></span></a>विनाशाय समुत्थिताः<a href="" class="app" title="समुत्थापिता <b&gt;N</b&gt;"><span class="appnum"><sup>3</sup></span></a>&nbsp;॥ १०१&nbsp;॥</span>
+            
+         </div>
+         <a name="N%C4%81%C5%9A%C4%81.1.102"></a><div class="text" xml:id="NāŚā.1.102">
+            <span class="line">ब्रह्मणो वचनं श्रुत्वा<a href="" class="app" title="तत्श्रुत्वा ब्रह्मणौ वाक्यं <b&gt;N</b&gt;"><span class="appnum"><sup>1</sup></span></a> विरूपाक्षोऽब्रवीद्वचः<a href="" class="app" title="दिदम् <b&gt;क्षम</b&gt;"><span class="appnum"><sup>2</sup></span></a>&nbsp;।</span>
+            <span class="line">दैत्यैर्विघ्नगणैः सार्ध सामपूर्वमिदं ततः<a href="" class="app" title="वचः <b&gt;Nक्षम</b&gt;"><span class="appnum"><sup>3</sup></span></a>&nbsp;॥ १०२&nbsp;॥</span>
+            
+         </div>
+         <a name="N%C4%81%C5%9A%C4%81.1.103"></a><div class="text" xml:id="NāŚā.1.103">
+            <span class="line">योऽयं भगवता<a href="" class="app" title="सम्यक् <b&gt;क्षठम</b&gt;"><span class="appnum"><sup>1</sup></span></a> सृष्टो नाट्यवेदः सुरेच्छया<a href="" class="app" title="प्रवर्तितः <b&gt;क्षठम</b&gt;, प्रकीर्तितः <b&gt;ज</b&gt;"><span class="appnum"><sup>2</sup></span></a>&nbsp;।</span>
+            <span class="line">प्रत्यादेशोऽयमस्माकं <a href="" class="app" title="देवार्थे <b&gt;क्षजम</b&gt;"><span class="appnum"><sup>3</sup></span></a>सुरार्थ भवता कृतः&nbsp;॥ १०३&nbsp;॥</span>
+            
+         </div>
+         
+         ﻿<span class="pageinfo">[page 034]</span>
+         
+         ﻿<span class="pageinfo">[page 035]</span>
+         
+         <a name="N%C4%81%C5%9A%C4%81.1.104"></a><div class="text" xml:id="NāŚā.1.104">
+            <span class="line">तन्नैतदेवं कर्तव्यं त्वया लोकपितामह&nbsp;।</span>
+            <span class="line">यथा देवास्तथा दैत्यास्त्वत्तः सर्वे विनिर्गताः&nbsp;॥ १०४&nbsp;॥</span>
+            
+         </div>
+         <a name="N%C4%81%C5%9A%C4%81.1.105"></a><div class="text" xml:id="NāŚā.1.105">
+            <span class="line"><a href="" class="app" title="विरूपाक्षवचः <b&gt;डबत</b&gt;"><span class="appnum"><sup>1</sup></span></a>विघ्नानां वचनं श्रुत्वा ब्रह्मा वचनमब्रवीत्&nbsp;।</span>
+            <span class="line">अलं वो मन्युना दैत्या <a href="" class="app" title="विषादस्त्यज्यतामयम् <b&gt;घतब</b&gt;"><span class="appnum"><sup>2</sup></span></a>विषादं त्यजतानघाः&nbsp;॥ १०५&nbsp;॥</span>
+            
+         </div>
+         <a name="N%C4%81%C5%9A%C4%81.1.106"></a><div class="text" xml:id="NāŚā.1.106">
+            <span class="line">भवतां देवतानां च शुभाशुभ<a href="" class="app" title="विकल्पनम् <b&gt;ड</b&gt;, विकल्पके <b&gt;ब</b&gt;"><span class="appnum"><sup>1</sup></span></a>विकल्पकः&nbsp;।</span>
+            <span class="line">कर्मभावान्वयापेक्षी<a href="" class="app" title="यापेक्षो <b&gt;क्षठम</b&gt;"><span class="appnum"><sup>2</sup></span></a> नाट्यवेदो मया कृतः&nbsp;॥ १०६&nbsp;॥</span>
+            
+         </div>
+         <a name="N%C4%81%C5%9A%C4%81.1.107"></a><div class="text" xml:id="NāŚā.1.107">
+            <span class="line">नैकान्ततोऽत्र भवतां देवानां <a href="" class="app" title="चापि <b&gt;घ</b&gt;, चात्र <b&gt;क्षठब</b&gt;, वानु <b&gt;त</b&gt;"><span class="appnum"><sup>1</sup></span></a>चानुभावनम्&nbsp;।</span>
+            <span class="line">त्रैलोक्यस्यास्य सर्वस्य नाट्यं भावानुकीर्तनम्&nbsp;॥ १०७&nbsp;॥</span>
+            
+         </div>
+         
+         ﻿<span class="pageinfo">[page 036]</span>
+         
+         ﻿<span class="pageinfo">[page 037]</span>
+         
+         <span class="pageinfo">[page 038]</span>
+         
+         <a name="N%C4%81%C5%9A%C4%81.1.108"></a><div class="text" xml:id="NāŚā.1.108">
+            <span class="line">क्वचिद्धर्मः क्वचित्क्रीडा क्वचिदर्थः क्वचिच्छमः<a href="" class="app" title="च्छ्रमः <b&gt;क्षठ</b&gt;"><span class="appnum"><sup>1</sup></span></a>&nbsp;।</span>
+            <span class="line">क्वचिद्धास्यं क्वचिद्युद्धं क्वचित्कामः क्वचिद्वधः&nbsp;॥ १०८&nbsp;॥</span>
+            
+         </div>
+         <a name="N%C4%81%C5%9A%C4%81.1.109"></a><div class="text" xml:id="NāŚā.1.109">
+            <span class="line">धर्मो धर्मप्रवृत्तानां<a href="" class="app" title="धर्मोऽधर्म <b&gt;ठत</b&gt;"><span class="appnum"><sup>1</sup></span></a> कामः कामोपसेविनाम्&nbsp;।</span>
+            <span class="line">निग्रहो दुर्विनीतानां <a href="" class="app" title="मत्तानां दमनक्रिया <b&gt;गब</b&gt;"><span class="appnum"><sup>2</sup></span></a>विनीतानां दमक्रिया&nbsp;॥ १०९&nbsp;॥</span>
+            
+         </div>
+         <a name="N%C4%81%C5%9A%C4%81.1.110"></a><div class="text" xml:id="NāŚā.1.110">
+            <span class="line">क्लीबानां धाष्ट्र्य<a href="" class="app" title="करणम् <b&gt;क्षठम</b&gt;"><span class="appnum"><sup>1</sup></span></a>जननमुत्साहः शूरमानिनाम्&nbsp;।</span>
+            <span class="line">अबुधानां विबोधश्च वैदुष्यं<a href="" class="app" title="वैदग्ध्यम् <b&gt;घब</b&gt;"><span class="appnum"><sup>2</sup></span></a> विदुषामपि&nbsp;॥ ११०&nbsp;॥</span>
+            
+         </div>
+         
+         ﻿<span class="pageinfo">[page 039]</span>
+         
+         ﻿<span class="pageinfo">[page 040]</span>
+         
+         <a name="N%C4%81%C5%9A%C4%81.1.111"></a><div class="text" xml:id="NāŚā.1.111">
+            <span class="line">ईश्वराणां विलासश्च <a href="" class="app" title="धैर्यम् <b&gt;डत</b&gt;"><span class="appnum"><sup>1</sup></span></a>स्थैर्यं दुःखार्दितस्य च&nbsp;।</span>
+            <span class="line">अर्थोपजीविनामर्थो <a href="" class="app" title="वृत्ति <b&gt;क्षठम</b&gt;"><span class="appnum"><sup>2</sup></span></a>धृतिरुद्विग्नचेतसाम्&nbsp;॥ १११&nbsp;॥</span>
+            
+         </div>
+         <a name="N%C4%81%C5%9A%C4%81.1.112"></a><div class="text" xml:id="NāŚā.1.112">
+            <span class="line"><a href="" class="app" title="दुःखितानां प्रमत्तांशः शोकार्तानां तपस्विनाम्&nbsp;। हितोपदेशजननं नानावस्थान्तरात्मकम्&nbsp;। नानाशीलाः प्रकृतयः शीलान्नाट्यं विनिर्मितम्&nbsp;। तस्माल्लोकप्रमाणं हि कर्तव्यं नाट्यवक्तृभिः&nbsp;। देवतानामृषीणां च राज्ञामथ कुटुम्बिनाम्&nbsp;। कृतानुकरणं लोके नाट्यमित्यभिधीयते&nbsp;। महेच्छा ये विदग्धाश्च यौवनैश्वर्यशालिनः&nbsp;। तेषामयं नाट्यविधिः प्रयोज्यस्त्वर्थसिद्धये&nbsp;। प्रायेण सर्वलोकस्य नृत्तमिष्टं स्वभावतः&nbsp;। मङ्गल्यमिति कृत्वा च नाट्यमेतत्प्रयोज्यते&nbsp;। प्रसवालापविवाहहर्षेष्वभ्युदयेषु च&nbsp;। प्रस्थानसमये राज्ञां नाट्यमेतत्प्रयोज्यते&nbsp;। इत्यधिकं दृश्यते&nbsp;। <b&gt;क्षन</b&gt;"><span class="appnum"><sup>1</sup></span></a>नानाभावोपसम्पन्नं नानावस्थान्तरात्मकम्&nbsp;।</span>
+            <span class="line">लोकवृत्तानुकरणं नाट्यमेतन्मया कृतम्&nbsp;॥ ११२&nbsp;॥</span>
+            
+         </div>
+         <a name="N%C4%81%C5%9A%C4%81.1.113"></a><div class="text" xml:id="NāŚā.1.113">
+            <span class="line"><a href="" class="app" title="अधमोत्तम <b&gt;न</b&gt;"><span class="appnum"><sup>1</sup></span></a>उत्तमाधममध्यानां नराणां कर्मसंश्रयम्&nbsp;।</span>
+            <span class="line">हितोपदेशजननं धृतिक्रीडासुखादिकृत्<a href="" class="app" title="नाट्यमेतद्भविष्यति <b&gt;क्ष</b&gt;"><span class="appnum"><sup>2</sup></span></a>&nbsp;॥ ११३&nbsp;॥</span>
+            
+         </div>
+         <a name="N%C4%81%C5%9A%C4%81.1.113.1"></a><div class="text" xml:id="NāŚā.1.113.1">
+            <span class="line"><a href="" class="app" title="म त अयं श्लोकोऽधिको दृश्यते, सर्वार्थे सर्वदा चैव <b&gt;न</b&gt;"><span class="appnum"><sup>1</sup></span></a>एतद्रसेषु भावेषु सर्वकर्मक्रियास्वथ<a href="" class="app" title="क्रियासु च <b&gt;Nठ</b&gt;"><span class="appnum"><sup>2</sup></span></a>&nbsp;।</span>
+            <span class="line">सर्वोपदेशजननं <a href="" class="app" title="नाट्यमेवद्भविष्यति"><span class="appnum"><sup>3</sup></span></a>नाट्यं लोके भविष्यति&nbsp;॥</span>
+            
+         </div> 
+         <a name="N%C4%81%C5%9A%C4%81.1.114"></a><div class="text" xml:id="NāŚā.1.114">
+            <span class="line">दुःखार्तानां <a href="" class="app" title="समर्थानाम् <b&gt;चब</b&gt;"><span class="appnum"><sup>1</sup></span></a>श्रमार्तानां शोकार्तानां तपस्विनाम्&nbsp;।</span>
+            <span class="line"><a href="" class="app" title="विश्रामजननम् <b&gt;ठम</b&gt;"><span class="appnum"><sup>2</sup></span></a>विश्रान्तिजननं <a href="" class="app" title="लोके <b&gt;ठम</b&gt;"><span class="appnum"><sup>3</sup></span></a>काले नाट्यमेतद्भविष्यति<a href="" class="app" title="न्मया कृतम् <b&gt;चन</b&gt;"><span class="appnum"><sup>4</sup></span></a>&nbsp;॥ ११४&nbsp;॥</span>
+            
+         </div>
+         
+         ﻿<span class="pageinfo">[page 041]</span>
+         
+         <a name="N%C4%81%C5%9A%C4%81.1.115"></a><div class="text" xml:id="NāŚā.1.115">
+            <span class="line">धर्म्यं यशस्यमायुष्यं हितं बुद्धिविवर्धनम्&nbsp;।</span>
+            <span class="line">लोकोपदेशजननं नाट्यमेतद्भविष्यति<a href="" class="app" title="सर्वशास्त्राणि शिल्पानि कर्माणि विविधानि च&nbsp;। यस्मान्नाट्ये समेतानि तस्मादेतन्मया कृतम्&nbsp;॥ इत्यधिकम् <b&gt;क्षबम</b&gt;"><span class="appnum"><sup>1</sup></span></a>&nbsp;॥ ११५&nbsp;॥</span>
+            
+         </div>
+         <a name="N%C4%81%C5%9A%C4%81.1.116"></a><div class="text" xml:id="NāŚā.1.116">
+            <span class="line"><a href="" class="app" title="तच्छुतम् <b&gt;चबन</b&gt;"><span class="appnum"><sup>1</sup></span></a>न तज्ज्ञानं न तच्छिल्पं न सा विद्या न सा कला&nbsp;।</span>
+            <span class="line"><a href="" class="app" title="न तत्कर्म न वा योगो <b&gt;N</b&gt;, न योगोऽसौ <b&gt;न</b&gt;"><span class="appnum"><sup>2</sup></span></a>नासौ योगो न तत्कर्म <a href="" class="app" title="यन्नाट्येऽस्मिन्न दृश्यते <b&gt;कब</b&gt;"><span class="appnum"><sup>3</sup></span></a>नाट्येऽस्मिन् यन्न दृश्यते&nbsp;॥ ११६&nbsp;॥</span>
+            
+         </div>
+         
+         ﻿<span class="pageinfo">[page 042]</span>
+         
+         <a name="N%C4%81%C5%9A%C4%81.1.117"></a><div class="text" xml:id="NāŚā.1.117">
+            <span class="line">तन्नात्र मन्युः कर्तव्यो भवद्भिरमरान्प्रति<a href="" class="app" title="One folio of N. consisting of about 12 verses after this not deciphered.">*</a>&nbsp;।</span>
+            <span class="line">सप्तद्वीपानुकरणं <a href="" class="app" title="नाट्यमेतन्तमया कृतम् <b&gt;त</b&gt;, नाट्ये ह्यस्मिन्प्रतिष्ठितम् <b&gt;क्षछम</b&gt;, वेदविद्येतिहासानामाख्यानपरिकल्पनम्&nbsp;। विनोदजननं काले नाट्यमेतद्भविष्यति&nbsp;। श्रुतिस्मृतिसदाचारपरिशेषार्थकल्पनम्&nbsp;। इत्यधिकम्&nbsp;। <b&gt;क्ष</b&gt;, नाट्ये ह्यस्मिन् भविष्यति <b&gt;ब</b&gt;"><span class="appnum"><sup>1</sup></span></a>नाट्यमेतद्भविष्यति&nbsp;॥ ११७&nbsp;॥</span>
+            <span class="line">(<a href="" class="app" title="म तपुस्तकयोरिदमर्धं नास्ति"><span class="appnum"><sup>2</sup></span></a>येनानुकरणं नाट्यमेतत्तद्यन्मया कृतम्&nbsp;॥)</span>
+            
+         </div>
+         <a name="N%C4%81%C5%9A%C4%81.1.118"></a><div class="text" xml:id="NāŚā.1.118">
+            <span class="line">देवानामसुराणां<a href="" class="app" title="देवतानामृषीणां च <b&gt;क्षछम</b&gt;"><span class="appnum"><sup>1</sup></span></a> च <a href="" class="app" title="राज्ये लोकस्य चैव हि <b&gt;छतब</b&gt;"><span class="appnum"><sup>2</sup></span></a>राज्ञामथ कुटुम्बिनाम्&nbsp;।</span>
+            <span class="line">(कृतानुकरणं लोके नाट्यमित्यभिधीयते&nbsp;।)<a href="" class="app" title="इदमर्धं मधिकं क्ष पुस्तके"><span class="appnum"><sup>3</sup></span></a></span> 
+            <span class="line">ब्रह्मर्षीणां च विज्ञेयं नाट्यं वृत्तान्त<a href="" class="app" title="वृत्तानु <b&gt;त</b&gt;"><span class="appnum"><sup>4</sup></span></a>दर्शकम्&nbsp;॥ ११८&nbsp;॥</span>
+            
+         </div>
+         <a name="N%C4%81%C5%9A%C4%81.1.119"></a><div class="text" xml:id="NāŚā.1.119">
+            <span class="line">योऽयं स्वभावो लोकस्य सुखदुःस्वसमन्वितः&nbsp;।</span>
+            <span class="line">सोऽङ्गाद्यभिनयोपेतो नाट्यमित्यभिधीयते<a href="" class="app" title="क्षपुस्तके इदं नास्ति"><span class="appnum"><sup>1</sup></span></a>&nbsp;॥ ११९&nbsp;॥</span>
+            
+         </div>
+         
+         ﻿<span class="pageinfo">[page 043]</span>
+         
+         ﻿<span class="pageinfo">[page 044]</span>
+         
+         <a name="N%C4%81%C5%9A%C4%81.1.119.1"></a><div class="text" xml:id="NāŚā.1.119.1">
+            <span class="line">(<a href="" class="app" title="<b&gt;म</b&gt; इदं पद्यद्वयं न दृश्यते&nbsp;। <b&gt;त ब</b&gt;द्वितीयं पद्यं न दृश्यते&nbsp;। द्वयोरपि व्याख्या नास्ति">*</a>वेदविद्येतिहासानामाख्यानपरिकल्पनम्&nbsp;।</span>
+            <span class="line">विनोदकरणं लोके नाट्यमेतद्भविष्यति&nbsp;॥</span>
+            
+         </div> 
+         <a name="N%C4%81%C5%9A%C4%81.1.119.2"></a><div class="text" xml:id="NāŚā.1.119.2">
+            <span class="line">श्रुतिस्मृतिसदाचारपरिशेषार्थकल्पनम्&nbsp;।</span>
+            <span class="line">विनोदजननं लोके नाट्यमेतद्भविष्यति&nbsp;॥)</span>
+            
+         </div> 
+         <a name="N%C4%81%C5%9A%C4%81.1.120"></a><div class="text" xml:id="NāŚā.1.120">
+            <span class="line">एतस्मिन्नन्तरे देवान् सर्वानाह पितामहः&nbsp;।</span>
+            <span class="line"><a href="" class="app" title="कारयत्वत्र भगवान् <b&gt;न</b&gt;, कुरुध्वमत्र यजनं विधिवत् <b&gt;पतब</b&gt;"><span class="appnum"><sup>1</sup></span></a>क्रियतामद्य विधिवद्यजनं नाट्यमण्डपे&nbsp;॥ १२०&nbsp;॥</span>
+            
+         </div>
+         <a name="N%C4%81%C5%9A%C4%81.1.121"></a><div class="text" xml:id="NāŚā.1.121">
+            <span class="line">बलिप्रदानैर्होमैश्च मन्त्रौषाधिसमन्वितैः&nbsp;।</span>
+            <span class="line"><a href="" class="app" title="जप्यैर्भक्ष्यैश्च <b&gt;क्षपम</b&gt;"><span class="appnum"><sup>1</sup></span></a>भोज्यैर्भक्ष्यैश्च <a href="" class="app" title="भोज्यैश्च <b&gt;क्षडम</b&gt;, होमैश्च <b&gt;प</b&gt;"><span class="appnum"><sup>2</sup></span></a>पानैश्च बलिः समुपकल्प्यताम्&nbsp;॥ १२१&nbsp;॥</span>
+            
+         </div>
+         <a name="N%C4%81%C5%9A%C4%81.1.122"></a><div class="text" xml:id="NāŚā.1.122">
+            <span class="line"><a href="" class="app" title="मर्त्यलोकेऽप्ययं वेदः शुभां पूजामवाप्स्ययति <b&gt;क्षमब</b&gt;"><span class="appnum"><sup>1</sup></span></a>मर्त्यलोकगताः सर्वे शुभां पूजामवाप्स्यथ&nbsp;।</span>
+            <span class="line">अपूजयित्वा रङ्ग तु नैव प्रेक्षां प्रवर्तयेत्<a href="" class="app" title="प्रेक्षा प्रवर्तते <b&gt;क्षडम</b&gt;"><span class="appnum"><sup>2</sup></span></a>&nbsp;॥ १२२&nbsp;॥</span>
+            
+         </div>
+         
+         ﻿<span class="pageinfo">[page 045]</span>
+         
+         <a name="N%C4%81%C5%9A%C4%81.1.123"></a><div class="text" xml:id="NāŚā.1.123">
+            <span class="line"><a href="" class="app" title="अप्रपूज्याथ <b&gt;न</b&gt;"><span class="appnum"><sup>1</sup></span></a>अपूजयित्वा रङ्गं तु यः प्रेक्षां कल्पयिष्यति&nbsp;।</span>
+            <span class="line"><a href="" class="app" title="तस्य तन्निष्फलम् <b&gt;क्षमतब</b&gt;"><span class="appnum"><sup>2</sup></span></a>निष्फलं तस्य तत् ज्ञानं तिर्यग्योनिं च यास्यति<a href="" class="app" title="गमिष्यति <b&gt;ठ</b&gt;, भविष्यति <b&gt;क्षठ</b&gt;"><span class="appnum"><sup>3</sup></span></a>&nbsp;॥ १२३&nbsp;॥</span>
+            
+         </div>
+         <a name="N%C4%81%C5%9A%C4%81.1.124"></a><div class="text" xml:id="NāŚā.1.124">
+            <span class="line">यज्ञेन संमि<a href="" class="app" title="संमतम् <b&gt;चन</b&gt;"><span class="appnum"><sup>1</sup></span></a>तं ह्येतद्रङ्गदैवतपूजनम्&nbsp;।</span>
+            <span class="line">तस्मात्सर्वप्रयत्नेन कर्तव्यं <a href="" class="app" title="रङ्गपूजनम् <b&gt;ठम</b&gt;"><span class="appnum"><sup>2</sup></span></a>नाट्ययोक्तृभिः&nbsp;॥ १२४&nbsp;॥</span>
+            
+         </div>
+         <a name="N%C4%81%C5%9A%C4%81.1.125"></a><div class="text" xml:id="NāŚā.1.125">
+            <span class="line">नर्तकोऽर्थपतिर्वापि यः पूजां न करिष्यति&nbsp;।</span>
+            <span class="line"><a href="" class="app" title="कारयिष्यति वा नैव <b&gt;क्षडम</b&gt;"><span class="appnum"><sup>1</sup></span></a>न कारयिष्यत्यन्यैर्वा प्राप्नोत्यपचयं<a href="" class="app" title="प्राप्स्यत्यापादमेव सः <b&gt;ठ</b&gt;, प्राप्स्यत्यपचयम् <b&gt;क्षडब</b&gt;"><span class="appnum"><sup>2</sup></span></a> तु सः&nbsp;॥ १२५&nbsp;॥</span>
+            
+         </div>
+         <a name="N%C4%81%C5%9A%C4%81.1.126"></a><div class="text" xml:id="NāŚā.1.126">
+            <span class="line">यथाविधि <a href="" class="app" title="यथाशास्त्रम् <b&gt;क्षड</b&gt;"><span class="appnum"><sup>1</sup></span></a>यथादृष्टं यस्तु पूजां करिष्यति&nbsp;।</span>
+            <span class="line">स लप्स्यते शुभानर्थान् स्वर्गलोकं च <a href="" class="app" title="गमिष्यति <b&gt;क्षठम</b&gt;"><span class="appnum"><sup>2</sup></span></a>यास्यति&nbsp;॥ १२६&nbsp;॥</span>
+            
+         </div>
+         
+         ﻿<span class="pageinfo">[page 046]</span>
+         
+         <a name="N%C4%81%C5%9A%C4%81.1.127"></a><div class="text" xml:id="NāŚā.1.127">
+            <span class="line"><a href="" class="app" title="एवं भवत्विति प्राह <b&gt;क्षठम</b&gt;"><span class="appnum"><sup>1</sup></span></a>एवमुक्त्वा तु भगवान्द्रुहिणः सहदैवतैः&nbsp;।</span>
+            <span class="line">रङ्गपूजां कुरुष्वेति मामेवं समचोदयत्&nbsp;॥ १२७&nbsp;॥</span>
+            
+         </div>
+         
+         
+         <a name=""></a><div class="text" xml:id="">इति भारतीये नाट्यशास्त्रे नाट्योत्पत्ति<a href="" class="app" title="नाट्यशास्त्रोत्पत्तिः <b&gt;नम</b&gt;, शास्त्रोपत्तिः <b&gt;क्ष</b&gt;"><span class="appnum"><sup>1</sup></span></a>र्नाम प्रथमोऽध्यायः॥
+         </div>
+         
+         
+         
+         
+         
+      </div>
+   </body>
+</html>

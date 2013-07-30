@@ -1,0 +1,489 @@
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/css" href="prākṛta.css"?><TEI xml:id="abhinavabhāratī_01-roman" corresp="nāṭyaśāstra_01-dn">
+<teiHeader>
+  <fileDesc>
+    <titleStmt>
+      <title>Abhinavabhāratī, Chapter 1</title>
+      <author>Abhinavagupta</author>
+    </titleStmt>
+    <publicationStmt>
+    </publicationStmt>
+    <sourceDesc>
+      <bibl>
+        <title type="main">Nāṭyaśāstra of Bharatamuni</title>: 
+        <title type="sub">With the Commentary Abhinavabhāratī</title> of 
+        <author>Abhinavagupta</author>. Chapters 1-7 Illustrated, Vol. 1 Revised and critically edited by Dr. <editor xml:id="AU">K. Krishnamoorthy</editor>, M.A., B.T., Ph.D.
+        <imprint>
+          <publisher>Oriental Institute</publisher>
+          <pubPlace>Vadodara</pubPlace>
+          <date when="1966">1992</date>
+        </imprint>
+        <series>
+          <title level="s">Gaekwad's Oriental Series</title>
+          <biblScope type="number">34</biblScope>
+          <respStmt>
+            <resp>General Editor</resp>: 
+            <name>Ramakrishna T. Vyas</name>
+          </respStmt>
+        </series>
+      </bibl>
+    </sourceDesc>
+  </fileDesc>
+  <encodingDesc>
+  </encodingDesc>
+  <revisionDesc>
+  </revisionDesc>
+</teiHeader>
+
+
+<text>
+<body>
+
+<div type="adhyāya" n="1">
+<pb n="001"/>
+<head> <!-- <head> does not allow any children, but we can do main and sub  !-->
+  <p>abhinavabhāratī |</p>
+  <p>śrīmadabhinavaguptaviracitā vivṛtiḥ |</p>
+</head>
+
+<lg>
+  <l>
+    <seg type="pāda">yastanmayānhṛdayasaṃvadanakrameṇa</seg>
+    <seg type="pāda">drākcitraśaktigaṇabhūmivibhāgabhāgī |</seg>
+  </l>
+  <l>
+    <seg type="pāda">harṣollasatparavikārajuṣaḥ karoti</seg>
+    <seg type="pāda">vandetamāṃ tamahamindukalāvataṃsam || 1 ||</seg>
+  </l>
+</lg>
+<lg>
+  <l>
+    <seg type="pāda">ṣaḍviṃśa(ṣaṭtriṃśa) kātmakajagadgaganāvabhāsa-</seg>
+    <seg type="pāda">saṃvinmarīcicayacumbita<app><rdg>cumbi</rdg></app>bimbaśobham |</seg>
+  </l>
+  <l>
+    <seg type="pāda">ṣaṭtriṃśakaṃ <q>bharatasūtramidaṃ</q> vivṛṇva-</seg>
+    <seg type="pāda">nvande śivaṃ śrutitadarthaviveki<app><rdg wit="#म">viveka</rdg></app> dhāma || 2 ||</seg>
+  </l>
+</lg>
+<lg>
+  <l>viśvabījaprarohārthaṃ mūlādhāratayā sthitam |</l>
+  <l>dhartṛ<app><rdg wit="#म #क">sarva</rdg><rdg wit="#ख">dhātṛ</rdg></app>śaktimayaṃ vande dharaṇīrūpamīśvaram || 3 ||</l>
+</lg>
+<lg>
+  <l>
+    <seg type="pāda">sadvipratota<app><rdg wit="#म">koka</rdg></app>vadanoditanāṭyaveda-</seg>
+    <seg type="pāda">tattvārthamarthijanavāñchitasiddhihetoḥ |</seg>
+  </l>
+  <l>
+    <seg type="pāda">māheśva<q>rābhinavagupta</q>padapratiṣṭhaḥ</seg>
+    <seg type="pāda">saṃkṣiptavṛttividhinā viśadīkaroti || 4 ||</seg>
+  </l>
+</lg>
+﻿
+<pb n="002"/>
+<lg>
+  <l>upādeyasya sampāṭhastadanyasya pratīkanam |</l>
+  <l>sphuṭavyākhyā<app><rdg wit="#म #के">vākya</rdg></app> virodhānāṃ parihāraḥ supūrṇatā || 5 ||</l>
+</lg>
+<lg>
+  <l>lakṣyānusaraṇaṃ śliṣṭavaktavyā<app><rdg wit="#म #के">muddiṣṭa vaktavyāṅka</rdg></app> śavivecanam |</l>
+  <l>saṅgatiḥ paunaruktyānāṃ samādhānasamākulam || 6 ||</l>
+</lg>
+<lg>
+  <l>saṅgrahaścetyayaṃ vyākhyāprakāro 'tra samāśritaḥ ||</l>
+</lg>
+
+<p>bharatamunirucitadevatānamaskārapūrvakamabhidheyaguṇībhāvena prayojanaṃ mukhyayā vṛttyā pratijānāno viśeṣaṇadvāreṇa guruparvakramamarthākṣiptatayā cābhidheyaprayojana<app><rdg><note>के. नास्ति</note></rdg></app>tatsambandhānda-
+rśayati — <ref type="pratīka" cRef="NāŚā.1.1">praṇamyetyādinā</ref> — </p>
+
+<p>‘pitāmaho 'tra na pituḥ pitā maheśvaraśca na rājādiriti devaśabdaḥ | etacca nāśaṅkanīyaṃ prasiddheḥ | eko vijigīṣurnāṭyapravartayiteti devaḥ | bhagavāṃstvānandanirbharatayā krīḍāśīlaḥ sandhādau nṛtyatīti nāṭye tadupaskāriṇi ca nṛtte tadupajñaṃ <app><rdg wit="#के #प #म">jñaṃ tāṇḍavapravṛtti</rdg><rdg wit="#क">bhāṇḍapravṛtti</rdg></app> pravṛttiriti tāvevātrādhidaivataṃ gurū ceti namaskāryau | lakṣmīpatistu yadyapi vṛttīnāṃ nirmātā tathāpi pitāmahādivadasau svakartavya<app><rdg wit="#के">kartavya</rdg></app>mātraniṣṭhastathācarannātra nāṭye lokavadupajīvita iti gurutvābhāvanna namaskṛtaḥ |’ (itye)tadapi namaskārahetunirūpaṇasyānucitatvādasat |</p>
+
+<p><app><rdg wit="#म">praṇāmaḥ kāyādīnāṃ prahvībhāvaḥ | kāyikaḥ śiraseti darśitaḥ | tasmāt |</rdg></app>tasmātpraṇamanaṃ prahvībhāvaḥ kāyena vācā manasā ca | ādyaḥ śiraseti darśitaḥ | <app><rdg wit="#के">vāciko</rdg></app>dvitīyo devāvityanena | praṇamyasya nirupapadanāmagrahaṇānaucityāt | tena prathamaṃ devāvityuktam | abhineyaprādhānyāccāṅgikaḥ śiraseti | vācikaśca devāvityādinā vākyābhinayo darśitaḥ<app><rdg wit="#म">darśitaḥ | kramādetāvāṅgikavācikābhinayau |</rdg></app> | lokasiddho hyayamabhinayo na ca nāṭyadharmirūpaḥ | catura iva bhujādāvūrdhvādibhinna ityabhineyo<app><rdg wit="#म">anabhineyo 'pi</rdg></app> 'pi pradarśanīya eva | mānasī tu prahvatā vākkāyavyāpāragamyeti nāsau pṛthaguktā | <app><rdg wit="#भ">saṃskārasya pūrva buddhau nipatanāccaramasaṃskārasya | pitāmahamaheśvarāviti krama āśritaḥ | chekānuprāsaparipoṣeṇa sālaṅkārasya ca vākyābhinayatāṃ darśayitum |yadvakṣyati — <cit><quote>‘cekrīḍitaprabhṛtibhirvikṛtaiśca śabdairyuktā na bhānti lalitā bharataprayogāḥ |’</quote> <ref type="pratīka" cRef="NāŚā.16.127">(16-127)</ref></cit> iti sālaṅkārasya ca devatāparitoṣahetutvaṃ darśitaṃ bhavati | prajāḥ prati hitaiṣitvena nāṭyapravartakatvaṃ kartavyāntaravaikalyena pūrṇatāyāṃ ca tatastadgatatvamiti nāmnorabhiprāyaḥ | tatra nāṭyasya |</rdg></app><ref type="pratīka" cRef="NāŚā.1.1">pitāmahamaheśvarā</ref>viti kramaḥ chekānuprāsārthaḥ | sālaṅkārasya ca vākyābhinayatāṃ darśayitum | sālaṅkārasya devatāparitoṣahetutvaṃ ca ﻿<pb n="003"/>darśayitum | pitāmahamaheśvarāvityanena devayorlokahitaiṣitvamuktam | <ref type="pratīka" cRef="NāŚā.1.1">nāṭyaśāstramiti</ref> |</p>
+
+<p>nāṭyasya naṭavṛttasya, śāstraṃ śāsanopāyaṃ granthaṃ pravakṣyāmīti |</p>
+
+<p>naitadityanye | ‘nāṭyavedaḥ nāṭyaśāstram’ iti hi paryāyau | tatra nāṭyaśāstraśabdena cediha granthaḥ, tadgranthasyedānīṃ karaṇam | na tu pravacanam | taddhi vyākhyānarūpaṃ karaṇādbhinnaṃ kaṭhena proktamiti yathā | granthasya ca nāṭyavedatve utpattyādipañcakasya
+tadgatasyānyagranthasādhāraṇyāt praśnāsaṅgatiḥ | uttaragranthasya cānupapattiḥ — <cit><quote>‘dṛśyaṃ śravyaṃ ca yadbhavet’</quote> <ref cRef="NāŚā.1.11">(1-11)</ref></cit> <cit><quote>‘jagrāha pāṭhyamṛgvedāt’</quote> <ref cRef="NāŚā.1.17">(1-17)</ref></cit> ityādergranthaṃ pratyasaṅgatatvāt | tasmānnāṭyaṃ ca tacchāstrañca | vyatputtipradatvāt | tat <ref type="pratīka" cRef="NāŚā.1.1">pravakṣyāmi</ref> vyākhyāsye | nāṭyākhyaṃ vedaṃ lakṣaṇato nirūpayiṣya ityarthaḥ |</p>
+
+<p>etadapyamanoramam | śabdātmatāvyatirekeṇa pravacanāyogāt | nāṭyasya cāśabdātmakatvāt | nirūpaṇamātre ca pravacane granthasyāpi pravacanopapatteḥ | nāṭyasya ca procyamānatayaivālākṣaṇikabāhyasvarūpanirāsalābhe śāstraśabdānarthakyaprasaṅgāt | ‘ya imaṃ śṛṇuyātproktaṃ nāṭyavedam’ iti śāstrānte yadvakṣyate tasyāsaṅgatyāpatteḥ | śabdaviṣayatātirekeṇa śṛṇuyādityasyāvācakatvāt |</p>
+
+<p>tasmāditthametaditi <q>madruravaḥ</q> | ‘sakalahitakaraṇapravṛtta’ <app><rdg wit="#भ">pravṛtterutsā</rdg></app>utsāhasampadopetastadabhivṛddhaye tatpratyūhāpasisāraviṣayā svavijñānakramopārūḍhagururūpa<app><rdg>sarvabrahmādhi</rdg></app>brahmasarvādhipatiparameśvaraviṣayā smṛtyautsukyadhṛtimatyādilakṣaṇāṃ vyabhicārasaraṇiṃ bāhyakaraṇīyaviṣayaṃ ca jaḍatāvahitthaprabhṛtibhāvagaṇaṃ purassarīkṛtya dharmavīrānupraviṣṭastaducitāṅgikavācikānubhāva<app><rdg wit="#के">prakaraṇaṃ</rdg></app> prakaṭanapūrvaṃ svapravṛttiprayojanameva nirūpayati<app><rdg wit="#म">nirūpitavān</rdg></app> | prayojanasyaiva pravartakatvāt | yadāhuḥ  <cit><quote>‘yamarthamadhikṛtya pravartate tatprayojanam’</quote> <ref>(nyā. sū. 1-1-24)</ref></cit> iti |</p>
+
+<p>tatra nāṭyaṃ nāma laukikapadārthavyatiriktaṃ tadanukārapratibimbālekhyasādṛśyāropādhyavasāyotprekṣāsvapnamāyendrajālādivilakṣaṇaṃ tadgrāhakasya samyagjñānabhrāntisaṃśayānavadhāraṇānadhyavasāyavijñānabhinna<app><rdg wit="#के">nāṭyābhinna</rdg></app>vṛttāntāsvādanarūpasaṃvedanasaṃvedyaṃ vastu rasasvabhāvamiti<app><rdg wit="#भ">svabhāveti</rdg><rdg wit="#म">rasasvabhāva iti</rdg></app> vakṣyāmaḥ | tasya śāstraṃ śāsanaṃ bāhyabhāṇḍanāṭyādivailakṣaṇyena samyaktatsvarūpāvagamopāyaṃ prakarṣeṇa parabrahmaśiṣyodīritānupayogivikāsatvāvadhānena<app><rdg wit="#म">vikāsabhāvasādhanena</rdg></app> (vikāsāvadhūnanena?) ﻿<pb n="004"/>vakṣyāmi | yadvakṣyati —</p>
+
+<lg>
+  <l>ya imaṃ śṛṇuyātproktaṃ nāṭyavedaṃ svayambhuvā |</l>
+  <l>kuryātprayogaṃ yaścainaṃ tathā 'dhīyīta vā naraḥ ||</l>
+</lg>
+<lg>
+  <l>yā gatirvedaviduṣāṃ yā gatiryajñavedinām |</l>
+  <l>yā gatirdānaśīlānāṃ tāṃ gatiṃ prāpnuyāttu saḥ || iti ||</l>
+  <l>(............. granthapātaḥ ?) (nā. śā. a. 36)</l>
+</lg>
+<p>etena <cit><quote>“kāmajo <app><rdg wit="#म">deśako gaṇaḥ</rdg></app>daśako gaṇaḥ”</quote> <ref>(manu. 7-47)</ref></cit> iti varjanīyatvena nāṭyasyānupādeyateti yatkecidāśaśaṅkire <app><rdg wit="#के">tadayukti</rdg></app>tadayuktīkṛtam | yājñavalkyasmṛtipurāṇādau cāsya praśaṃsābhūyastvaśravaṇāt | na cāgamādṛte dharmo 'numānagamya iti nyāyāt |</p>
+
+<p>etattu vṛthaivāsthānabhīrūnprati śaṅkāśamanārthamabhidhīyate nāma | tathā hi — naṭānāṃtāva<app><rdg wit="#म #भ">naṭasya nāṭyaṃ tāvade</rdg></app>detatsvadharmāmnāyarūpatayā 'nuṣṭheyameva | na cāsmākaṃ tacceṣṭitaṃ vicāryam | somakrayopadeśino vidhivākyasya<app><rdg wit="#RK">hi</rdg></app> na tadvikreṣyad<app><rdg wit="#भ">tadvikrayi</rdg></app>brāhmaṇāntaragatakṛtyākṛtyavicāraṇodyogo yuktaḥ | na cāpyasyopadiśyate ‘gāyennṛtyet’ iti | kintu prathamanāṭyāvasarakramapravṛttaviriñcavacanapravartakabharatamuniśāsanānuvartiśiṣyaparamparāparicayāgatādyatanakālāvadhimahānaṭajanasvakapravṛttiviśeṣopadeśaparam | <app><rdg wit="#म #भ">paramatadnatasiddhisampattisadu</rdg></app>ata eva tadgatasiddhisaṃpattisadupāyopadeśanaparamidaṃ śāstramiti |</p>
+
+<p>naṭasya tāvannānena kiñcidupadiśyate, taṃ pratyupakārādṛte | kaverapi svahṛdayāyatanasatatoditapratibhābhidhānaparavāgdevatānugrahotthitavicitrā<app><rdg wit="#म #भ">trāpūrvanirmāṇa</rdg></app>pūrvārthanirmāṇaśaktiśālinaḥ prajāpateriva <app><rdg wit="#म">vā kāma</rdg></app>kāmajanitajagataḥ | paraṃ <app><rdg wit="#म #भ">paramapratyā</rdg></app>pratyāśaṅkā yadi paramatrāvaśiṣyate <app><rdg wit="#म">ṣyate varākaḥ</rdg></app>vyutpādyo varākaḥ | tasyāpi tu neha ‘gāyennṛtyedvādayettannirato vā bhavet’ ityupadeśaḥ kriyate | api tu svarasata eva tāvanmanojñaviṣayāsvādapravṛttasyāta eva vedaśāstrapurāṇādibhīruhṛdayasya tanmanojñavastumadhye tādṛgidaṃ vastvanupraveśitaṃ yadbalādeva pumarthopāyāvagatiṃ karotīti vakṣyāmaḥ | utpattyādipraśnāstu ye bhaviṣyanti te nāṭyākhyavedaviṣayāḥ | na tu nāṭyavedaśāstraviṣayāḥ | yato <cit><quote>“nāṭyavedaḥ kathaṃ brahman”</quote> <ref cRef="NāŚā.1.4">(nā. śā. 1-4)</ref></cit> ityatra nāṭyameva veda iti vyākhyāsyāmaḥ |</p>
+
+<p>etacca nāṭyavedaśāstraṃ brahmaṇodāhṛtaṃ mahyamuktam | yadvakṣyate — <cit><quote>“ājñāpito﻿<pb n="005"/>viditvā 'haṃ nāṭyavedaṃ pitāmahāt | putrānadhyāpayāmāsa”</quote> <ref cRef="NāŚā.1.25">(nā. śā. 1-25)</ref></cit> iti | atra tu nāṭyasya vedaḥ śāstramiti samāsaḥ | anyathā 'dhyāpanāsambhavāt | tena brahmaproktameva mayā yathāparipāṭi nirūpyata iti yāvat |</p>
+
+<p>nāṭyaṃ ca brahmaṇoddhṛtyoddhatya vedaṅgānyāhṛtamiti tadviṣayaṃ śāstramapyudāhṛtamityuktam | yadi hi nāṭyasya vedanaṃ sattālābho vicāraśca yatra tannāṭyavedaśabdena nāṭyāśrayarūpaṃ daśarūpakamityucyate-yadvakṣyati <cit><quote>“itihāso mayā duṣṭaḥ”</quote> iti, <ref cRef="NāŚā.1.19">(nā. śā. 1-19)</ref></cit> | atra pakṣe brahmaṇodāhṛtaṃ pradarśitodāharaṇaṃ kṛtanidarśanamityarthaḥ |</p>
+
+<p>anye tu naṭanīyamanukaraṇaṃ daśarūpakameva nāṭyam | tasyedaṃ śāstram | daśarūpakalakṣaṇameva hīdam | <app><rdg wit="#के">idameva</rdg></app>evaṃ daśarūpakaṃ kavinā kāryam | evaṃ ca naṭanīyamiti granthātātparyāt | rasādīnāṃ padārthānāṃ tatraiva paryavasānāt | tacca brahmaṇodāhṛtaṃ kṛtanidarśanam |</p>
+
+<p>anye tu brahmaṇā vedākhyena bhagavatā śabdarāśinodāhṛtaṃ nirūpitaṃ tyājyānuṣṭheyarūpamāyadāgacchat vyutpādyatayā svīkurvannāṭyaśāstraṃ pravakṣyāmīti prayojanamanenaiva svīkṛtamityāhuḥ |</p>
+
+<p><q>bhaṭṭanāyakastu</q> ‘brahmaṇā paramātmanā yadudāhṛtamavidyāviracitanissārabhedagrahe yadudāharaṇīkṛtaṃ <app><rdg wit="#के"/></app>nāṭyaṃ tadvakṣyāmi | yathā hi kalpanāmātrasāraṃ tata evānavasthitaikarūpaṃ kṣaṇena kalpanāśatasahastrasahaṃ svapnādivilakṣaṇamapi suṣṭhutarāṃ hṛdayagrahanidānamatyaktasvālambanabrahyakalpanaṭoparacitaṃ rāmarāvaṇādiceṣṭitamasatyaṃ kuto 'pyabhūtādbhutavṛttyā<app><rdg wit="#म">akṛtākṛtavṛttyā</rdg></app> bhāti | tathā bhāsamānamapi ca <app><rdg wit="#म">puruṣārthopadeśopāya</rdg></app>pumarthopāyatāmeti | tathā tādṛgeva viśvamidamasatyanāmarūpaprapañcātmakamatha ca śravaṇamananādivaśena paramapumartha<app><rdg wit="#के">pravācakamiti</rdg></app>prāpakamiti
+lokottaraparamapuruṣārthasūcanena śāntarasopakṣepo 'yaṃ bhaviṣyati |</p> 
+
+<p><cit><quote>‘svaṃ svaṃ nimittamādāya <app><rdg wit="#म">śāntamutpadyate</rdg></app>śāntādutpadyate rasaḥ |’</quote> iti || <ref cRef="NāŚā.6">(nā. śā. 6.)</ref></cit> tadanena pāramārthikaṃ prayojanamuktam | iti vyākhyānaṃ <q>hṛdayadarpaṇe</q> paryagrahīt | yadāha  —</p>
+
+﻿<pb n="006"/>
+
+<lg>
+  <l>‘namastrailokyanirmāṇakavaye śambhave yataḥ |</l>
+  <l>pratikṣaṇaṃ jagannāṭyaprayogarasiko janaḥ ||’ iti ||</l>
+</lg>
+
+<p>evaṃ nāṭyaśāstrapravacanaṃ prayojanamuktam | tatprayojanantu darśitameva | abhidheyaśca nāṭyavedaḥ | vyutpādyavyutpādakabhāvalakṣaṇaśca sambandhaḥ | yacca śāstra<app><rdg wit="#म">yañca śāstrārtham</rdg></app> yo jijñāsate sa tāvattadavasare tacchāstrapraṇetari prasiddhe siddhavadeva<app><rdg>siddhameva</rdg></app> prāmāṇya<app><rdg>pramāṇam</rdg></app>mabhimanyata iti <app><rdg>tadvacanoktāt</rdg></app>tadvacanoktāya sambandhābhidheyaprayojanāya tadaiva nirviśaṅkaḥ pravartate | parastvadhigatasakalaśāstrārtho bahumanyate na veti tadidamanyat | prathamaṃ tāvatpravṛttamādivākyaṃ <app><rdg wit="#म">pravṛttam</rdg></app>prayuktameveti svānubhavaprasiddham | tenārthasaṃśayatarkakautukaja(na)nādivākyaṃ pravartakamiti kimanena | (1) |</p>
+
+<p><app><rdg wit="#के"/></app>atra muniḥ sakalalokahitakaraṇapravṛttotsāhasaṃpadupeto dharmapīṭhānupraviṣṭastaducitāṅgikavācikānubhāvaprakaṭanapurassaraṃ svapravṛttiprayojanameva nirūpitavān | asya ca pitāmahamaheśvarau prati smṛtyautsukyadhṛtimattyādayo vyabhicāribhāvāḥ pratīyante |</p>
+
+<p>atha munirātmānameva paratvena kalpayanbrahmaṇā yadudāhṛtamityetadeva purākalpapradarśanena niścāyayati — <ref type="pratīka" cRef="NāŚā.1.2">samāptajapya</ref>mityādinā ślokadvayenā | anurāgitvaṃ nāṭyavedayogyatā nāṭyasyāduṣṭatā vinodahetutā sujñānatvaṃ praśnāvasaralābhayogaḥ prasiddhatvaṃ cācāryayogyatā śiṣṭaprāmāṇikatvaṃ niyamapūrvaśāstragrahaṇaṃ prasiddhādaraṇānumeyopādeyatvaprakaṭanamanida<app><rdg>ṭanamidamprā</rdg></app> mprāthamyapravṛttatā śiṣyāṇāmūhāpohapāṭavaṃ grahaṇayogyatā ceti krameṇa padānāṃ tātparyamapunaruktama | (2-3) |</p>
+
+<p>kiṃ papracchuriti darśayati — <ref type="pratīka" cRef="NāŚā.1.4">yo 'yamiti</ref> | <ref type="pratīka" cRef="NāŚā.1.4">bhagavatā</ref> tatrabhavatā guruṇeti bharatamunirevaivamuktaḥ | tena bharatamuniyā yo <ref type="pratīka" cRef="NāŚā.1.4">grathitaḥ</ref> sundaratamavastusamāharaṇayojanayā gumphitaḥ ko 'pyayaṃ vastuviśeṣaḥ sa tāvatprayogasamaye 'smābhirdṛṣṭa iti pratyakṣatvena <ref type="pratīka" cRef="NāŚā.1.4">ayamiti</ref> parāmarśaḥ | aviditāntassāratayā cāsmākaṃ pratyakṣo 'pyapratyakṣakalpa iti yacchabdenānirvācyaviśeṣatvamuktam | ata eva na tacchabdasaṅgatiritra mṛgyate<app><rdg wit="#म">dṛśyate</rdg></app> yathā yatkiñcidvadatiti | sa cāyaṃ parīkṣaṇīya<app><rdg wit="#भ">ṇīye yato</rdg></app>tattvo yato vedaiḥ sammitaḥ tulyaḥ |</p>
+
+﻿<pb n="007"/>
+<p>tathā hi — dhīrodāttadhīralalitadhīroddhatadhīrapraśāntānāṃ pūrṇopāyapravṛttatvena nāyakānāma<app><rdg wit="#म #भ">tadupāśrayāśrayeṇa</rdg></app>tādṛgupāyāśrayeṇa pratināyakānāṃ ca caritaṃ saphalatvāphalatvena sākṣātkriyamāṇaṃ vīrādbhutābhyāṃ vīraśṛṅgārahāsyaiḥ vīraraudrabhayānakakaruṇaiḥ vīrabībhatsaśāntaiśca pratināyakagatarasāntarasāntaratayā sātiśayacamatkāragocarībhūtairhṛdayānupraveśa vidadhaddharmādicatuṣkopāyopādeyadhiyamadharmādibhyaśca nivṛttiṃ nirviśaṅkaṃ vidhatta<app><rdg wit="#के">vidadhāti</rdg></app> ityasmākamadhigataśrutitattvānāmapi pratyakṣasiddhamevaitat | prasiddhā cāsya nāṭyaveda<app><rdg wit="#भ">nāṭyasaṃjñā</rdg></app>saṃjñā | ata evopadeśahetuttvāddhedaḥ | evaṃ ca jijñāsyatattva evāyama |</p>
+
+<p>sa <ref type="pratīka" cRef="NāŚā.1.4">kathamutpannaḥ</ref> | kena prakāreṇotpannaḥ | tatprayojanasya vedebhya eva siddheḥ | utpanna iti yadi pūrvameva <app><rdg wit="#म #भ">vedavadapadārthasya tattathā kathamenaṃ paryanuyuñjīta</rdg></app>vedavada(nādipadā?) rthaḥ syāttatkathaṃ nāmāyaṃ paryanuyujyeta | śruticatuṣṭayavedavetyarthaḥ | atha yasya vedebhyo nopadeśaḥ siddhaḥ, sa kastādṛgityāha<ref type="pratīka" cRef="NāŚā.1.4">kasyā</ref>dhikariṇaḥ | <ref type="pratīka" cRef="NāŚā.1.4">kṛte</ref> prayojanakaraṇāya | kiṃ vedādhikṛta evātrādhikārī uta tadanyo 'pītyadhikāriviṣayo 'yaṃ praśnaḥ | pūrvastu siddhasādhyatayā niṣprayojanatvenākṣe<app><rdg wit="#RK">ke kṣepāya</rdg></app>po 'yaṃ praśnaḥ | <ref type="pratīka" cRef="NāŚā.1.5">katyaṅga</ref> iti | yadyasya subahūnyaṅgāni tadduravadhāratayā 'śakya<app><rdg wit="#म #भ">tadavadhāraṇatayā aśa</rdg></app>nirṇayaḥ | tathā paridṛśyamānagītātodyābhinayādimadhye katyasyāṅgāni | kiñca tadaṅgirūpamutāṅgasamudāyamātraṃ nāṭyamiti tṛtīyaḥ praśnaḥ |</p>
+
+<p><ref type="pratīka" cRef="NāŚā.1.5">kiṃpramāṇaśceti</ref> | nanu pratyakṣapramāṇasiddhatvaṃ tāvannāṭyasya | yadvakṣyati — <cit><quote>‘dṛśyaṃ śravyaṃ ca yat’</quote> <ref type="pratīka" cRef="NāŚā.1.11">(nā. śā. 1-11)</ref></cit> iti | śreyaḥprāptyupāyajñāpakatvamapi munīnāṃ svasaṃvedanasiddham | anyathā tu vicāryatvamevāsya na syādityuktam | tatko 'yaṃ praśnaḥ | satyama | kintu <app><rdg wit="#के"/></app>aṅgaviṣayo 'yaṃ praśnaḥ | kiṃ pramāṇaḥ kiṃ pramāṇāṅga iti yāvat |
+yānyaṅgāni kānicittāni yadi vijñeyāni, kena pramāṇena kimaṅga<app><rdg wit="#के">kimaṅgatā</rdg></app> jñāyate | tathā kena pramāṇenāṅgāṅgibhāvaniyamo 'tra jñeyaḥ | pramāṇamatra niścayajanakam |</p>
+
+<p>anye tu nāṭyagatānāṃ rūpakādīnāṃ pāṭhyābhinayarasagītānāṃ ca kiṃ pramāṇaṃ kā saṅkhyeti vibhāgaviṣayo 'ya<app><rdg wit="#म #भ">viṣayo vā 'yam</rdg></app> praśna ityācakṣate |</p>
+
+<p><ref type="pratīka" cRef="NāŚā.1.5">asyeti</ref> nāṭyasya | kīdṛkprayogaḥ | yadi yugapadaṅgāni prayujyante tadbhinnākṣagrāhyeṣu yugapatsaṃvedanābhāvāt kathamekaṃ nāṭyamiti pratipattiḥ | kramaprayoge 'pi ni(na)tarām | tasmātkathaṃ prayoga iti | tathā kiṃ niyatenaivāṅgāṅgibhāvena prayoga utāniyateneti nāṭyaṅgāprayogadvāreṇa sāmānyābhinayacitrābhinayanāṭakādirūpakavaicitryaviṣayaḥ praśnaḥ ﻿<pb n="008"/>pañcamaḥ | evaṃ praśnapañcakāt kaviprayoktrorupadeśaparaṃ śāstramiti lakṣyate | tena yadāha<app><rdg wit="#म #भ">yadā hi</rdg></app> ‘tasmātkartṛrdraṣṭuḥ prayokturupadeśaparamidaṃ śāstram’ iti, tatra draṣṭurityasat | na hyanena sāmājiko vinīyate | ayogyatvāt | śrutismṛtītihāsādiṣvivātrāpi na ca tadupadeśo 'tra śrūyate | draṣṭā tu yadi prekṣāpravartaka ucyate tadā tasyāpi na prabandhenopadeśaḥ | api tu kvacideva ‘nartako 'rthapatirvā’ ityādau | evaṃ copadeśyatve sthapatimālākāraprabhṛti viśvamapīhopadeśyaṃ syādityalamanena |</p>
+
+<p><ref type="pratīka" cRef="NāŚā.1.5">yathātattvamiti</ref> | nātra kramaṃ prati bharo 'smākam | nāpīyattāṃ prati | ajñā hi vayamatra praṣṭāraḥ | ata evopeya<app><rdg wit="#म">upāyapara</rdg></app>paratvenaiva mukhyatayā praśno yathā bālaka āha — ‘duḥkhaṃ me<app><rdg wit="#भ">meva</rdg></app> śamaya’ iti | tajjñastūpāyaṃ praśnayati ‘kuto 'nnaṃ labhyata’ iti | tenope<app><rdg wit="#म">nopāya</rdg></app>yamukhena pravṛttamidaṃ śāstramuttaradānopanatavastvantaropeyapraśnakrameṇa tadupeyopāyādiprabandhena sthitamiti mantavyam | tena yādṛśā krameṇa rūpaṇayogyaṃ tathāpyapra(thā 'pra)śnitamapi yadi kiñcidasti tadapi svayameva nirūpayeti | tattvānatikrameṇa tattvayogyaṃ <app><rdg wit="#भ">krameṇa tattvaṃ ca</rdg></app>tattvaṃ ca
+nirūpaṇīyam | etaditi | lakṣaṇaparīkṣāparyantametat | (4-5)</p>
+
+<p>yadi ta evaṃ papracchuḥ bharatamuniḥ kimakārṣīdityāha- <ref type="pratīka" cRef="NāŚā.1.6">teṣāṃ tviti</ref> | turavadhāraṇe | śretvaiva na tu vilambyeti | paurvakālyamātre ktvālyaporvidhānāt | <ref type="pratīka" cRef="NāŚā.1.6">tata</ref> iti | yataḥ sa tattvavinmuniḥ te ca tadupadeśayogyāḥ tasmāddhetoḥ | kathāgrahaṇaṃ yathātattvamityetasyaivārthaṃ sphuṭīkaroti |</p>
+
+<p>yattu prayogapraśne pratyakṣeṇa prayogaprakaṭanamuttaraṃ syādityāśaṅkāṃ parihartuṃ kathāgrahaṇamiti tattvasat | vaktumarhasītyukte tasyāḥ ko 'vasaraḥ | evaṃ bharatamuniḥ paravadātmānaṃ prakalpyentaṃ granthamabhihitavān | anye tviyantaṃ granthaṃ kaścicchiṣyo vyarīracat | tatra brahmaṇeti bharatamuniḥ prathamaśloke nirdiṣṭaḥ | kathaṃ brahmannutpanna ityetadevamekavākyatvena nirvahati | tadanantarantu bhavadbhiḥ śucibhirityādirbharatamuniracito granthaḥ | madhye 'tra ﻿<pb n="009"/><q>ṣaṭtriṃśadadhyāyyāṃ</q> yāni praśnapracivacanayojanavacanāni tāni tacchiṣyavacanānyevetyāhuḥ |</p>
+
+<p>taccāsat | ekasya granthasyānekavaktṛvacanasandarbhatve pramāṇābhāvāt | svaparavyavahāreṇa pūrvapakṣottarapakṣādīnāṃ śrutismṛtivyākaraṇarkādiśāstreṣvekaviraciteṣvapi darśanāt |</p>
+
+<p>etena <q>sadāśivabrahmabharatamata</q>trayavivecanena <q>brahmamata</q>sāratāpratipādanāya matatrayīsārāsāravivecanaṃ tadgranthakhaṇḍaprakṣepeṇa vihitamidaṃ śāstram, na tu muniviracitamiti yadāhu<q>rnāstikadhuryopādhyāyā</q>statpratyuktam | sarvānapahravanīyābādhitaśabdaloka-
+prasiddhivirodhācca |</p>
+
+<p>atra kecidāhuḥ-praśnapañcakamatraivādhyāye tāvannirṇīyate | uddeśasthityā tadvibhāgalakṣaṇaparīkṣāparāṇi cādhyāyāntarāṇīti | anye tvāhuḥ pañcabhiradhyāyaiḥ pūrvaraṅgavidhānaparyantaiḥ praśnadvayaṃ nirṇītam | sāmānyābhinayacitrābhinayāntaiḥ śiṣṭaistu
+praśnatrayamiti |</p>
+
+<p>vayaṃ tu brūmaḥ — nātra kramaḥ kaścit | api tu yathāvasaraṃ mahāvākyātmanā <q>ṣaṭsahasrī</q>rūpeṇa pradhānatayā praśnapañcakanirūpaṇapareṇa śāstreṇa tattvaṃ nirṇīyate | na tu kramaḥ kaścit | etacca granthavyākhyānaprasaṅga eva sphuṭīkariṣyāmaḥ | (6)</p>
+
+<p>tatra ‘kathaṃ kasya vā’ ityamumarthaṃ nirṇinīṣurāha — <ref type="pratīka" cRef="NāŚā.1.7">bhavadbhi<app><rdg>riti</rdg></app></ref>rityādi | ghaṭādīnāmutpattirvyavahārasiddhaiva kulālādibhiranugamyata iti ghaṭaḥ kriyata iti yuktam |
+natvevaṃ nāṭyasya | tasya tūtpattireva viriñcopajñatayā sthiteti <ref type="pratīka" cRef="NāŚā.1.7">sambhavo brahmanirmita</ref> ityuktam | kecidatrānāditvaṃ vedavannāṭyasyācakṣāṇāḥ utpattyādiśabdān smaraṇābhivyañjanādāvupacaranti (7) |</p>
+
+<p>tatra sambhūteḥ kāraṇamukhenābhidhāne kartavye kālasya sarvatra pūrvakāraṇatvāducitakālaparigraheṇa tadvidhādhikāriviṣayatāṃ darśayitumāha — <ref type="pratīka" cRef="NāŚā.1.8">pūrvami</ref>tyādiślokapañcakam |</p> 
+
+﻿<pb n="010"/>
+
+<p>asminnavasare pitāmaho devairidabhukta iti mahāvākyasya saṅgatiḥ — kasminnavasare <ref type="pratīka" cRef="NāŚā.1.8">pūrvami</ref>ti | nāsminneva kalpe 'pi tu pūrvakalpeṣvapītyarthaḥ | manvantarāṇi caturdaśa, tāvatkalpo 'yaṃ tadbrāhyaṃ dinam | tatra svāyambhuvaṃ nāma yatkalpasya prathamaṃ manvantaram | vaivasvatamanvantarantu saptamam, yatrādya vartāmahe | tatra sarveṣveva manvantareṣu tretāvasare brahmaṇā nāṭyavedaḥ pravartitaḥ | kṛtayuge tu neti tātparyam | yojanā tu-svāyambhuve ādye manvantare yatkṛtayugaṃ tasmin nivṛtte sati yattretāyugaṃ tasmin samyaksandhyatikrameṇa sphuṭataraṃ pravṛtte | na kevalaṃ tatraiva manvantare | tu śabdo yāvacchabdārthe | yāvadvaivasvatasya manorantare samaye yattretāyugaṃ tasminpravṛtte 'pi | tenādyatnanirūpaṇena sarveṣāṃ madhvamamanvantarāṇāṃ saṅgrahaḥ | tena sarveṣu tretāyugeṣu nāṭyapravṛttirityuktaṃ bhavati |</p>
+
+<p>asminnavasare kimasāvuktaḥ | āha — <ref type="pratīka" cRef="NāŚā.1.10">jambūdvīpe</ref> karmabhūmisthāne yo lokaḥ sukhitaduḥkhitaśca tadviṣayaṃ<app><rdg>tadviṣayakam</rdg></app> krīḍanīyakaṃ krīḍyate cittaṃ vikṣipyate vihriyate yena tadicchāmaḥ | karaṇe kṛtyo bāhulakāt | cittaṃ ca ito 'mutaśca nīyamānaṃ mārge 'pi ni<app><rdg>vini</rdg></app>yojyate | yadi vā krīḍanāya hitaṃ krīḍanīyakam | ubhayatrājñātādyarthe kaḥ | idamasmākaṃ guḍapracchannakaṭukauṣadhakalpaṃ cittavikṣepamātraphalamiti yanna jñāyate | tacca krīḍanīyakaṃ sukhitaduḥkhita eva bhavati | na hyekantasukhite kāle deśe vā krīḍayā kiñcit | nāpyekāntaduḥkhite | tena kṛtayuge kaliprānte vā ilāvṛtādinivāsini jane nārake vā na krīḍopapattiḥ | uttarapadārthapradhānastatpuruṣaḥ duḥkhasya bāhulyamāha | kathaṃ jñāyate sukhitaduḥkhito loka iti | yataḥ īrṣyākodhādibhiḥ saṃmụ̄dho 'dhivāsitahṛdayaḥ | ādigrahaṇādanurāgatṛṣṇādibhiḥ | tatra krameṇa kāraṇamāha — kāmavaśagatatvādīrṣyādayo  rājyalobhādinā krodhādayaḥ | kimityadhikau kāmalobhau ? yataḥ sukhitaduḥkhitatvasya kāraṇaṃ kāmādīnāṃ hetuḥ <ref type="pratīka" cRef="NāŚā.1.9">grāmyadharmapravṛttatvam</ref> | grāmyo 'śrutaśāstrārthajanākīrṇadeśocito dharmaḥ svadharmānanupālanalakṣaṇaḥ | tadviṣaye yato 'sau lokaḥ pravṛttaḥ | (8-9)</p>
+
+﻿<pb n="011"/>
+
+<p>nanvevaṃ <app><rdg wit="#भ">satyadharmabāhulyāt</rdg></app>tvadharmabāhulyāt sukhameṣāṃ kuta ityāha — <ref type="pratīka" cRef="NāŚā.1.11">devaiḥ</ref> śrīmadvijayāvimuktādirudrāvatāraiḥ tathā rājasatāmasahṛdaya<app><rdg>yakalpya</rdg></app>janakalṣyamānasaparyākairdānavādibhirākrānte jambūdvīpe | devādibhiścākrānte svavaśīkriyamāṇe | nanvevaṃ satsu viśuddhavyāmiśradharmasādhaneṣu kathaṃ dharmaḥ ? teṣāṃ tatrāpravartamānatvāt | satyam | kintu <ref type="pratīka" cRef="NāŚā.1.10">lokapālaiḥ</ref> lokapālāṃśasaṃvibhāgasamutpāditaiḥ narapatibhiḥ <ref type="pratīka" cRef="NāŚā.1.10">pratiṣṭhite</ref> svadharmasādhanaṃ prati niyojite loke | <ref type="pratīka" cRef="NāŚā.1.11">dṛśyaṃ śravyaṃ</ref> ceti | draṣṭu śrotuṃ cārham | na dharmasādhanam | śakyaṃ ca | na tu durbhaga<app><rdg wit="#म">puru</rdg></app>paruṣaprāyam | loka ityekavacanena sarvasādhāraṇatayaiva yadyogyaṃ tacca spṛśyādirūpaṃ na bhavati | dṛśyaśravyayostu bahutarasādhāraṇyopapattiḥ | asādhāraṇe cerṣyākrodhādaya eva pravartante |</p>
+
+<p>etaduktaṃ bhavati — kṛtayuge sattvapradhāne svadharmamātraniṣṭho loko na sukhaḥduḥkhe prati heyopādeyadhiyā prayasyati | tretāyāntu rājasattvādduḥkhaṃ jighāṃsati | sukhaṃ ca prepsati | rajasaścalatvāt | tadā 'sau śāstriteṣu rājaniyantraṇayā pravartyate | tatra ca tādṛgupāyo nirūpyo yena svayameṣāṃ bhavati pravṛttiḥ | tacca nāṭyameveti |</p>
+
+<p>cakāreṇedamāha-tādṛśā kenacidupāyena sambandha(ta?)statkurute(stu kṛtaḥ) yena bhinnendriyagrāhye api dṛśyaśravye ekānusandhānaviṣayatvaṃ na vijahīta iti sāmānyābhinaya<app><rdg wit="#म">tālaprāṇatvam</rdg><rdg>kālapramāṇatvam</rdg></app>kālaprāṇatvaṃ prayogasya sūcitam | dṛśyamiti hṛdyaṃ śravyamiti vyutpattipradamiti prītivyutpattidamityartha iti | anena <app><rdg>nvindrādīnām | etāvatā ka indrādīnāṃ svārtha ityatrāha</rdg></app>tvi(nanvi)ndrādīnāṃ ka etāvatā svārthaḥ ? āha | lokapālapratiṣṭhite<app><rdg wit="#भ">ṣṭhitā yato jambūdvīpaga</rdg></app> jambūdvīpe gatā ye lokāḥ te hi svadharmāvasthitā ijyādinā nākamāpyāyayanti | ata evecchāma iti sarveṣāmaikamatyamāha | ato 'nyonyopakāravṛttyā ca daivamānuṣasargau<app><rdg wit="#म #भ">sargāvityapi nirūpitau</rdg></app> nirūpitau <q>vindhyavāsi</q>prabhṛtibhiḥ | anye tu svaprayojanameva krīḍā mahendrādīnāmityāhuḥ | tretāyuge pravṛtte evambhūte ca loka ityanenedamuktaṃ bhavati — svarge 'pi hi tadā tadā mānuṣa<app><rdg>mānuṣagatā rājānaḥ sudharmādisambandhacintita</rdg></app>gatarājasadharmābhisambandhacitritayāgādiyogasarajasīkṛtahṛdayatvāddevā api krīḍanīyakamabhileṣuriti | (10-11)</p>
+
+<p>evaṃ śāstrādhikṛto 'pi janaḥ nāṭyena sukhaṃ vinīyata iti prayojanaprayojanamuktvā prayojanāntaramapyāha — <q>na vedavyavahāra</q> ityādinā | kṛtayuge sattvotkarṣabalādeva sarvaḥ ﻿<pb n="012"/>svadharmamanupālayati | <app><rdg>anyatra</rdg></app>adyatve tu rājasatvāt śūdraprakārāḥ karaṇādijātīyāḥ sarve 'kharvagarvākrāntā varṇatrayānuvṛttiṃ na vidadhate | śāstraṃ bhavadbhya evamādiśatīti ca te vacanamātreṇa nādriyante | na ca te vedaśāstropadeśayogyāḥ | ataḥ evamāha — sa<app><rdg>samyagiti</rdg></app>myagiha sthāne | śrutyā bhavatāmetadupadiṣṭamiti nā(na) śrā<app><rdg wit="#के">na ślāghyāḥ</rdg></app>vyāḥ | <ref type="pratīka" cRef="NāŚā.1.12">sārvavarṇikamiti</ref> | adhikṛtānāmanadhikṛtānāmapi sukumārāṇāṃ vyutpattidāyītyarthaḥ | sarve varṇāḥ prayojanaṃ vi<app><rdg>vinā yatnena prayasyati | anena</rdg></app>neyatveva yastetyanena pūrvoktasyādhunoktasya ca samastasyopasaṃhāraḥ |</p>
+
+<p>anye tu paunaruktyaṃ parihartumāhuḥ — ‘sarveṣāṃ varṇānāṃ sarasasukumāreṇa nayena svakartavyanirūpaṇaṃ yatra kāvye tasnim bhavaṃ tadāśritam | yena sarvo jamaḥ sarasasukumārānurajyadāśayaḥ tadupabhoganāntarīyakatayaiva kāryākāryajñānamapyupayuṅkte kṣīramadhyāvasthitauṣadhopayogavat | te<app><rdg wit="#म">tenānadhikṛtānāmapi</rdg></app>nādhikṛtānāmanadhikṛtānāmapi sukumārāṇāṃ vyutpattidāyi nā<app><rdg>nāṭyaṃ śruta</rdg></app>ṭyam | aśrutaśāstrāṇāmapi saṃvādādavicalakāryākāryavivekasiddhiriti | (12)</p>
+
+<p><ref type="pratīka" cRef="NāŚā.1.13">evamastviti</ref> tāniti | <ref type="pratīka" cRef="NāŚā.1.13">devarāja</ref>miti | tānuktvā tānvisṛjya | devarājaṃ visṛjyeti prādhānyāduktam | indrādin visṛjyetyarthaḥ |<app><rdg wit="#RK">pādānam</rdg></app> <q>yoga</q>miti | yugapat sarvavedābhāsakaram | tattvaviditi samastalokavedajña ityarthaḥ | (13)</p>
+
+<p>tataḥ kiṃ cakāretyāha ślokatreṇa <ref type="pratīka" cRef="NāŚā.1.14">dharmya</ref>mityādinā | evamiti (1-13) dharmmamityādiyugalokta<app><rdg>yugalakokta</rdg></app>marthaṃ saṅkalpya | caturvedasmaraṇena hetunā tata iti | caturbhyo nāṭyavedaṃ cakre | hetau śatā | <ref type="pratīka" cRef="NāŚā.1.14">dharmya</ref>miti | dharme sādhūpadeśāya | evamarthe 'pi | anye tu dharmārthābhyāmanapetaṃ yaśaḥ prayojanamasyeti | atra vyākhānadvaye 'parapuruṣārthāsaṅgrahaḥ syāt | nāṭyotpattigarbhādhānakalpe cāsmin saṅkalpe yattyaktaṃ tattyaktameva | yaśasaśca dharmaphalatvāt pṛthagupādānaṃ kimartham | sopadeśamityādeśca paunaruktyam | tasmādayamatrārthaḥ — dharmaśabdena catvāro 'pi puruṣārthāḥ | teṣu sādhu sādhakam | nanu kiṃ sākṣāt | netyāha |</p>
+
+<pb n="013"/>
+
+<p><ref type="pratīka" cRef="NāŚā.1.14">sopadeśyaṃ</ref> sahopadiśyamānairupāyaiḥ (puruṣārthacatuṣṭayopāyaiḥ daśarūpakairupetaṃ) yadvartate caturvargopāyapradarśakamikatyarthaḥ | nanu vedādayo 'pyevam | naitat | <app><rdg>saṅgrahaṃ samyaggrahaḥ | grahaṇaṃ pramāṇaṃ tena yuktam (sā.)</rdg></app>samyaggrahaṇaṃ saṅgahaḥ | yataḥ paraṃ nirviśaṅkapratītyarthaṃ pramāṇāntaraṃ nābhyarthyate | tacca sākṣātkārarūpameva | yadāhuḥ — “sarvā ca pramā pratyakṣaparā” iti | tena saheti <q>sasaṅgraham</q> | evamapi pratyakṣeṇa sadācā<app><rdg>sadācārādi</rdg></app>rayajñādidarśānātko 'sya bhedaḥ | āha — <ref type="pratīka" cRef="NāŚā.1.14">sarvakarmānudarśakam</ref> | sarveṣāṃ karmaṇāṃ kriyamāṇānāmanu paścādacireṇaiva kālena darśakaṃ pañcaṣādibhireva divasaiḥ śubhāśubhakarmatatphalasambandhasākṣātkāro yatretyarthaḥ | kasyetyāha — <ref type="pratīka" cRef="NāŚā.1.14">lokasya</ref> | yo yaḥ kaścidasmātkṣaṇādūrdhvaṃ bhaviṣyati lokastasyopadeśyasyetyarthaḥ |</p>
+
+<p><app><rdg>anukāryāśrayatvenātra</rdg></app>anukāryābhiprāyeṇātra bhaviṣyata iti vyākhyātam | (na) ca śabdena bhūtavartamānagrahaṇamityadharottarībhūtam | vṛttarājarṣivaṃśakīrtanāderhi pradhānatayā svakaṇṭhenābhidhānaṃ yuktam | na tu bhaviṣyata ityāstāmetat |</p>
+
+<p>tasmāt vyutpādyābhiprāyeṇaiva <ref type="pratīka" cRef="NāŚā.1.14">lokasyeti</ref> vyākhyeyam |</p>
+
+<p>evamapi tatraiva kena lokaḥ pravartyata ityāha — <ref type="pratīka" cRef="NāŚā.1.14">arthyam</ref> | hṛdyatayā sarvajanānāmapi nānādhikāratvenābhilaṣaṇīyamityarthaḥ | nanu prathamamajñātaparamārthe kathamabhilaṣaṇam āha | <ref type="pratīka" cRef="NāŚā.1.14">yaśasyam</ref> | sarvatra hṛdyatayā prathitam |</p>
+
+<p>na kevalaṃ pradhānapuruṣārthopāyadarśakaṃ yāvatsarveṣāṃ śāstrāṇāṃ kalāpradhānānāṃ ye 'rthā gītanṛttavādyādayastaiḥ sampannaṃ yuktam | tathā sarvāṇi śilpāni citrapustādīni pravartayati sopayogatvenākṣipatītyevamekena yatnena samastavastusiddhiryato bhavati tannāṭyanamityuktuṃ bhavati | tacca <ref type="pratīka" cRef="NāŚā.1.15">setihāsam</ref> | itihāsopadeśakarūpaṃ saprabhedam | itirevamarthe pratyakṣanirdeśaṃ <pb n="014"/>dyotayati | haḥ ihaśabda āgamaḥ | āsanamāsaḥ | evaṃprakārāḥ pratyakṣaparidṛśyamānā<app><rdg>āgatikārthāḥ</rdg><rdg wit="#भ">āgamitārthāḥ</rdg></app>āgamikārthāḥ karmaphalasambandhasvabhāvā yatrāsate tenetihāsena sahetipāṭhe
+matvarthīyo 'kāraḥ | itiḥ jñānam | tasya hāso harṣapūrvako vikāso yata iti kecit | itihāsaścatallakṣaṇamitthaṃ kilāsanaṃ yatra rūpakabhedānāṃ bhaṇyate<app><rdg wit="#म">dṛśyate</rdg></app> | upadeśaśabdena ca daśarūpakaṃ tadupayogavadeva<app><rdg wit="#भ">tadupayogādeva</rdg></app> (vaddeśa) dvihastādilakṣaṇanāṭyavedaśāstram | tatsahitasyaiva karaṇīyatvena saṅkalpaḥ | anyathā buddhyā kalitasyāpi nāṭyasya kathamanyatra saṅkramaṇam | tena ca vinā kathaṃ prayogaḥ | <ref type="pratīka" cRef="NāŚā.1.15">pañcama</ref>miti | ya eko 'pi caturvedānatiśeta ityarthaḥ | ahamiti yasya sarvalokakṛtyodvahanameva paraṃ kṛtyam |</p>
+
+<p><ref type="pratīka" cRef="NāŚā.1.16">evaṃ saṅkalpye</ref>ti | saṅkalpavyāpāra evāyaṃ buddhyā vedāṅgaikīkāralakṣaṇo brahmaṇo nāṭyavedotpādanam | nanu vedasmaraṇena tatra kathaṃ hetutā labdhā | āha | <ref type="pratīka" cRef="NāŚā.1.16">caturvedāṅgasambhava</ref>miti | catvāro vedāḥ<app><rdg>vedāḥ caturbhyo vedebhyaḥ aṅgānām</rdg></app> | aṅgānāṃ pāṭhyādīnāṃ sambhavo yasya | sambhavatyasmāditi sambhavaḥ | ata eva vedacatuṣṭayamapi yatrāṅgāni pratyupakaraṇībhūtamiti (sa tathoktaḥ) (14-16) |</p>
+
+<p>kutrāṅge kasya vedasyopayoga iti darśayati —<ref type="pratīka" cRef="NāŚā.1.17">jagrāha pāṭhyamṛgvedāditi</ref> | iha paṭha vyaktāyāṃ vācītyuktaṃ vyaktatvaṃ vivakṣāviśiṣṭasvārthārpaṇakṣamatvam | tacca kākvadhyāyavakṣyamāṇasvarālaṅkārādisāmagrīyojanena bhavatīti tayopaskṛtaṃ pāṭhyamucyate | tacca prādhānyātprathamamupāttam |</p>
+
+<p>tathā hi vakṣyati —</p>
+
+<lg cRef="NāŚā.14.2">
+  <l>vāci yatnastu kartavyo nāṭyasyaiṣā tanūḥ smṛtā |</l>
+  <l>aṅganaipathyasattvāni vākyārthaṃ vyañcayanti hi || iti (14-2)</l>
+</lg>
+
+﻿<pb n="015"/>
+
+<p>ata evābhinayāntarbhūtatve 'pi pṛthagupāttam | tadṛgvedādgṛhītam | tasya traisvaryapradhānasya stotraśabda(śastra)dvāreṇa yāgopakāritvāt | pāṭhyamapi ca traisvaryopetam | aikasvarye kākva(bhāva)bhāvābhyāṃ <app><rdg wit="#म">svaryaikatvābhāvābhyāṃ ca svasyādau</rdg><rdg>svaryādau, svarasyādau svasviyādau (sā)</rdg></app>ca svarasyādau (caikasvabhāvācca svarādau) gītarūpāpatteriti hi vakṣyāmaḥ | (nā. śā. 17)</p>
+
+<p>pāṭhyagatasvaraprasaṅgāt tadanantaraṃ sāmabhyo gītaṃ jagrāhetyuktam | uparañcakatvena hi paścāttasyābhidhānaṃ nyāyyamiti kecit | ‘gītaṃ prāṇāḥ prayogasya’ iti vakṣyamāṇatvāt | tadāyattatvādrasacarvaṇāyāḥ samucitamasyātraivābhidhānamityasmadu<q>pādhyāyāḥ</q> | cakāreṇaitattulya<app><rdg wit="#म">ṇaikatulya</rdg></app>kakṣyatāmāha | evakāreṇa gītamātraṃ tato gṛhītaṃ <cit><quote>‘gītiṣu sāmākhyā’</quote> <ref>(jaimini. 2-1-36)</ref></cit> iti nyāyāt | tadādhāradhruvāpadayojanamṛgvedādeveti darśayati | tata eva dhruvādhyāye vacanādatraiva saṅgṛhītam (?) |</p>
+
+<p>ghanāvanaddharūpisāmagānakriyāprāṇabhūtakāla<app><rdg>kalpa</rdg></app>sādhyātmakatālasāmānyaṃ svīkṛtamatraiva praviṣṭam (?) | ādhvaryavakarmapradhāne tu yajurvede 'ṅgakarmaṇāṃ pradakṣiṇagamanādikrama (kam?) eva prathamam | paṭhiṣyati ‘yā ṛcaḥ pāṇikā<app><rdg wit="#भ">pāṇigāḥ</rdg></app>’ (32-2) ityādi | tatasuṣirātmakaṃ cāpyātodyaṃ svaraprādhānyāt |</p>
+
+<p>ātharvaṇavede tu śāntikamāraṇādikarmasu naṭasyeva tasyartvijaḥ prāṣṭudavaiṣuṇṇā<app><rdg>vaiṣuṇā</rdg></app> (?) dyanubhāvānāṃ prajāśatruprabhṛtinā 'vadhānagrahaṇādinā lohitoṣṇīṣādernepathyasya teṣu teṣu ca karmasu viśiṣṭaprayatnapuruṣasampādyamanovaṣṭambhātmanaḥ sattvasya sambhavāt  ﻿<pb n="016"/> tato 'bhinayanāmagrahaṇam | vācikastvabhinayaḥ pūrvamevoktaḥ | prādhānyavi(nyāt vi)bhāvānāṃ dhṛtipramodādivyabhicāriṇāṃ ca paramārthasatāṃ samāharaṇaṃ pradhānamiti vibhāvādisāmagrīrūparasātmakacarvaṇāsambhava iti tatastadgrahaṇamuktamiti na taṭasthā evaite | ata eva rasyante | tatraiva ca rasyanta iti hi vakṣyāmaḥ |</p> 
+
+<p>tadevaṃ nāṭyādirūpakopakramaṃ gītātodyaprāṇābhinayavargaparipuṣyadrasacarvaṇātmakaṃ paraprītimayameva nāṭyam | tatastadvyutpattiriti nāṭyameva veda iti krameṇa pradarśitam | tenākramya yojanātmakaniyogātmakaśāsanaprāṇaśāstravailakṣaṇyena svayamupārūḍhajñānābhidhānavidaḥ<app><rdg wit="#भ">naṃ vidaḥ</rdg></app> prāṇavedarūpatā nāṭya<app><rdg wit="#म">ṭyavedasyaiveti sthitam</rdg></app>syaiveti siddham |</p>
+
+<p>etadupasaṃharati — <ref type="pratīka" cRef="NāŚā.1.18">vedopavedairi</ref>tyādi | vedā vyākhyātāḥ | vedārthānāmupakārako 'rtho vedyate yena sa upavedātmā | tadyathā ṛgvedasya<app><rdg wit="#म">dākhyamantrā</rdg></app> mantrārthavādādivyākhyānopanayanaprajārakṣaṇapradarśaka āyurvedaḥ | yato <ref type="pratīka" cRef="NāŚā.1.18">mahātmā</ref> tataḥ <ref type="pratīka" cRef="NāŚā.1.18">sarvavedī</ref> | sarvavittvācca tathāvidhasṛṣṭiśaktaḥ | evamityupasaṃharan praśnatrayaṃ kṛtottaramiti darśayati | prayojanasyādhikāriṇāmaṅgānāmaṅgāṅgibhāvasya ca nirṇītatvāt (17-18) |</p>
+
+<p>evaṃ pitāmahasadṛśena sarvadā nāṭyavedaśarīrarūpakanirmāṇe kavinā bhāvyamiti pradarśya tatra vibhavayukto vidheyanaṭajanaśca rājā prayojayitā | bharatamunisadṛśaśca sampannaparivāraḥ sarvavitprayoktā | prayojaka<app><rdg wit="#म">prayojana</rdg><rdg wit="#के">prayojayitṛ</rdg></app>mahotsavaprāyaḥ prayogakālaḥ | krīḍāprastāvavyājopadeśakāḥ vigatarāgadveṣā madhyasthavṛttayaḥ nirmalahṛdayamukure sati tanmayībhavanayogyatopetāḥ rasāsvādananipuṇāḥ | sāmājikā ityetat purākalpamukhena darśayatyadhyāpana(dhyayānta?)granthena  <ref type="pratīka" cRef="NāŚā.1.19">utpādya nāṭyavedaṃ tvityā</ref>dinā | rājaiva prayojayituṃ śakta iti tu śabdaḥ |</p>
+
+﻿<pb n="017"/>
+
+<p>itihāso daśarūpakam | <ref type="pratīka" cRef="NāŚā.1.20">kuśalāḥ</ref> | grahaṇadhāraṇayogyāḥ | <ref type="pratīka" cRef="NāŚā.1.20">vidagdhāḥ</ref> | ūhāpohasamarthāḥ | <ref type="pratīka" cRef="NāŚā.1.20">pragalbhāḥ</ref> | pariṣadyabhīravaḥ | <ref type="pratīka" cRef="NāŚā.1.20">jitaśramāḥ</ref> | yogyāḥ samucitadehā akhinnakāyāśca | grahaṇe iti | (pūrva) gurumukhādavagamaḥ | <ref type="pratīka" cRef="NāŚā.1.22">dhāraṇaṃ</ref> tasyāvismaraṇam | jñānamūhāpohavicāraḥ | <ref type="pratīka" cRef="NāŚā.1.22">prayogaḥ</ref> parṣadi prakaṭīkaraṇam | cakāreṇa ca tadupayogiguṇanikā vyāyāmābhyāsādiḥ | <ref type="pratīka" cRef="NāŚā.1.22">devāḥ</ref> sukhabhūyiṣṭhatvāt | svāmyādeśātkathamapi yadi pravarteran tatpūrṇaparyavasānatvaṃ durlabhametairityarthaḥ | (19-22)</p>
+
+<p>tarhi kiṃ kriyatāmityāha — <ref type="pratīka" cRef="NāŚā.1.23">ya ima</ref> iti | <ref type="pratīka" cRef="NāŚā.1.23">vedajñā</ref> iti grahaṇadhāraṇasāmarthyam | <ref type="pratīka" cRef="NāŚā.1.23">guhyajña</ref>tvenādhyātmopaniṣadarthavedanadhāraṇakauśalena | rasādyupayogisāttvikasampāditasāmarthyam | yadvakṣyati — ‘sattvaṃ manaḥprayatnanirvartyam’ ityādi | tena —</p> 
+
+<lg>
+  <l>nyasyetprāṇaṃ bhruvormadhye stambho bāṣpaśca cākṣuṣaḥ |</l>
+  <l>svedo hṛdi gude kampaḥ pulako mūrdhni vaktrataḥ ||</l>
+  <l>vaivarṇyaṃ svaritaṃ kaṇṭhe pralayo nāsikāntare ||</l>
+</lg>
+
+<p>ityādiyogyatvaṃ teṣām | ata evānuṣaṅgato naṭasyāpi paramapuruṣārthalābho dhāraṇādivaśāt | <ref type="pratīka" cRef="NāŚā.1.23">ṛṣaya</ref> iti | darśā(rśanā)dṛṣiriti | ūhāpohayogyāḥ | saṃśitavratā iti | ﻿<pb n="018"/>abhyāse śaktāḥ | tatheti | grahaṇādīnāmārthakramaḥ pradarśanīya ityarthaḥ | ima<app><rdg wit="#म">idamiti</rdg></app> iti pratyakṣeṇaiva dṛṣṭameṣāṃ taditi darśayati | (23)</p>
+
+<p><ref type="pratīka" cRef="NāŚā.1.24">śrutvā tviti</ref> | <ref type="pratīka" cRef="NāŚā.1.24">māṃ</ref> tviti tu śabdena ṛṣibhyo 'pyanyebhyo 'sya viśeṣamāha | brahmaiva māmāhetyādarātiśayaḥ | putraśatayogādya(da)nyonyapravartitabahutaraparivārayogaḥ | <ref type="pratīka" cRef="NāŚā.1.24">anaghe</ref> — tyadhyeṣaṇayā sotsāhapariṣadā kṛtasammānasya samyakprayoganiṣpattiriti sūcitam | <ref type="pratīka" cRef="NāŚā.1.25">ājñāpita</ref> ityanullaṅghanīyavacanatā 'syoktā | <ref type="pratīka" cRef="NāŚā.1.25">pitāmahādi</ref>tyanācāryoṣitatvāśaṅkāṃ vyudasyati | prayujyata iti prayogo daśarūpakam | prayujyate nirvartyate 'neneti prayogaḥ | nāṭyalakṣaṇaśāstram | tadahaṃ putrānpāṭhayāñcakāra | prayuktiśca prayogaḥ | tamadhyavasāyaparyantamahaṃ putrānadhyāpayāmāsa | tathā 'haṃ cakāra yathā prayuktiṃ te putrāḥ samyakprāptavanta ityarthaḥ | <ref type="pratīka" cRef="NāŚā.1.25">cāpi</ref>śabdābhyāṃ sūcite dve dve āvṛttī | munisamucitakartavyāntaravyāsaṅgo 'pi liṭā<app><rdg wit="#म #भ">liṅgāt</rdg></app> sūcitaḥ | <ref type="pratīka" cRef="NāŚā.1.24">tattvata</ref> iti nāṭyācāryasya samyagāptatvaṃ gamyate | (24-25)</p>
+
+﻿<pb n="019"/>
+
+<p>putrānnāmabhirdarśayati — <ref type="pratīka" cRef="NāŚā.1.26">śāṇḍilya</ref>mityādinā | atra prasiddhatvaṃ<app><rdg>tvānna</rdg></app> naṭānāmādarakāraṇamiti tāvanmukhyaṃ nāmagrahaṇe prayojanam | ānuṣaṅgikaṃ tvanyadapi | tadyathā vidūṣakatāpasādināmnāṃ talākamīnāṃ (tathākarmiṇāṃ?) nirvacanalabdhārthayuktyā bhūmikāviśeṣopayoga iti | <q>anyastvāha</q> — śatameveha paṭhitam | kañcanā<app><rdg wit="#भ">kaścā</rdg></app>(taccā)bhineyānāṃ sthāyyutpādana<app><rdg wit="#भ #न">isanava</rdg></app>rasanavakatadgatavyabhicāritrayastriṃśatsāttvikāṣṭakānurūpāṇāṃ pañcāśato 'rthānāṃ nyāyyānyāyyabhedena nāyakapratināyakaviṣayatayā prādhānyābhiprāyeṇeti | tatra tu ‘kaiśikyapi<app><rdg wit="#भ">kyeṣā</rdg></app> prayuktā syāt’ ityuttaragranthāvakāśābhāva ityalamasahṛdayābhiniveśavyākhyābhiḥ | (26-39)</p> 
+
+﻿<pb n="020"/>
+
+<p><ref type="pratīka" cRef="NāŚā.1.40">yasmi</ref>nniti | uttamaprakṛtiviceṣṭitādi | <ref type="pratīka" cRef="NāŚā.1.40">yatheti</ref><app><rdg wit="#भ">yatheti</rdg><rdg>tadīya</rdg></app> | kaścit tadīyahṛdayahṛrṣapradarśanaprakāreṇa yogyo 'nyastadīyaśokaprakaṭīkaraṇeneti | (40)</p>
+
+<p>atha sakalaprayogaprāṇabhūtakaiśikyupayujyamānopakaraṇāntasaṃharaṇā<app><rdg>saṃbharaṇāya</rdg><rdg wit="#भ">saṃhārāyā</rdg></app>yopakramaṃ darśayati <ref type="pratīka" cRef="NāŚā.1.41">bhāratī</ref>mityādi | <ref type="pratīka" cRef="NāŚā.1.41">vṛtti</ref>miti | dharmādipuruṣārthacatuṣṭaye sādhye vāgaṅgasattvaceṣṭāsāmānyam | tacca saṃkṣiptenāvāntarabhedena caturdhāṃ<app><rdg wit="#भ">rdhā ca śuddham</rdg></app> | yadyatkila karmārabhyate tatra vāṅmanaḥkāyavyāpārastāvadasti | tatra kasyacillālityavaicitryakramasyānupraveśaḥ | yata uttamaprakṛtīnāṃ sauṣṭhavamaya eva sarvo vyāpāraḥ | tadeva tadvṛtticatuṣṭayam | bhāratī vāgvṛttiḥ | manovyāpārarūpā sāttvikī sāttvatī manovṛttiḥ | taditi prakhyārūpaṃ saṃvedanam | tadyatrāsti tatsattvaṃ manaḥ | tasyeyamiti | ‘iyarti’<app><rdg wit="#म">iyatītyāra</rdg></app> ityarā bhaṭāḥ sotsāhā analasāḥ | teṣāmiyamārabhaṭī <app><rdg wit="#म">kācana</rdg></app>kāyavṛttiḥ | keśāḥ kiñcidapyarthakriyājātamakurvanto dehaśobhopayoginaḥ | tadvatsaundaryopayogī vyāpāraḥ kaiśikīvṛttiriti tāvanmukhyaḥ kramaḥ | anyasya tu yastadvyapadeśaḥ sa tatpradhānatvādanekarasapradhānaṃ pānakarītyā kaiśikīṃtyādi madhuravyapadeśavat | etacca <app><rdg wit="#म #भ">prāgeva</rdg></app>prāge vitaniṣyāmaḥ | ﻿<pb n="021"/>evaṃ yatkiñcillālityaṃ tatsarvaṃ kaiśikīvijṛbhbhitam | sā ca taiḥ (puruṣaiḥ) prayoktumaśakyeti tuśabdenoktam | tena daśarūpaṃ sarva vaicitryaśūnyaṃ tānprati yojitam | ata eva tādṛśe prayoge 'vajñāṃ vai śabdena dyotayati | <ref type="pratīka" cRef="NāŚā.1.41">prayukta</ref> iti | teṣāmabhyāsabhūmau yojita ityarthaḥ | (41)</p>
+
+<p><ref type="pratīka" cRef="NāŚā.1.43">kṣama</ref>miti | prayogasamartha sādaravicitraṃ prayuṅkte | ata avāha — <ref type="pratīka" cRef="NāŚā.1.41">dravyam</ref> | sundaram | yataḥ saundaryaprāṇaiva sā kaiśikī | <ref type="pratīka" cRef="NāŚā.1.43">evamiti</ref> | buddhikauśalaṃ jñātuṃ <app><rdg wit="#म #भ">tadīya</rdg></app>madīyaṃ tenāhametatpṛṣṭaḥ | cakāreṇa pratyutpannapratibhānatvaṃ darśayati | anena jhaṭiti kavihṛdayagrahaṇayogyatvaṃ nāṭyācāryaguṇa iti sūcayati | (42-43)</p>
+
+<p>na cātyantāparidṛṣṭe vastuni upakaraṇamunnetuṃ śakyam | brahmaṇā tūpadeśasamaye vacanamātreṇoktametanmadhye hṛdayahāri vaicitryaṃ yojanīyamiti | anenābhiprāyeṇa kaiśikīsākṣātkaraṇaṃ varṇayati nṛtāṅgahāretyādinā yugalakena | nartanaṃ nṛttam | gātrāṇāmaṅgopāṅgānāṃ vilāsena kṣepaḥ | na tu kenacitkartavyāṃśena | loko 'pyevaṃvidhe viṣaye evamevāha — ‘nṛtyatīva gacchati’ ityādi | tatra ye 'ṅgahārā aṅgānāṃ haraṇānīti atruṭitarūpatayā samucitasthāna<app><rdg wit="#म #भ">prāptāstaiḥ | prāptastaiḥ</rdg></app>prāptiḥ taiḥ sampannā | <app><rdg wit="#भ #म">śaṅkarasyeva</rdg></app>śaṅkarasyaiva bhagavataḥ paripūrṇānandanirbharībhūtade<app><rdg>dehāccala</rdg></app>hoccaladāntaranirvārasundarākārasya ata eva <ref type="pratīka" cRef="NāŚā.1.45">nṛtyataḥ</ref> itikartavyāntaravaikalyādānandanṛttamātrasthitasya | prayojyatvena <ref type="pratīka" cRef="NāŚā.1.45">mayā dṛṣṭā</ref> | ﻿<pb n="022"/>nanu sā nāṭyopayoginī katham | āha | saiva yadi ślakṣṇena śliṣyatocitena nepathyena sahitā bhavati | yadvakṣyati — <cit><quote>‘śṛṅgāra ujjvalaveṣātmaka’</quote> <ref cRef="NāŚā.3.50">(nā. śā. 6-50)</ref></cit> iti tannāṭyoktaśṛṅgārarasaḥ sambhavati | nānyathā | nepathyagrahaṇaṃ sukumārasyāṅgikāderapyupalakṣam | tena śṛṅgārābhivyaktihetau sukumāre caturvidhe 'pyabhimaye yojite madhuramantharavalanāvartanābhrūkṣepakaṭākṣādinā vinā śṛṅgārarasāsvādasya nāmāpi na bhavati |</p>
+
+<p>kimatraiva sopayogetyāha — <ref type="pratīka" cRef="NāŚā.1.44">rasabhāvakriyātmiketi</ref> | rasānāṃ bhāvo bhāvanā kavinaṭasāmājikahṛdayavyāptiḥ | tasyā yā kriyā itikartavyatā saivātmā svabhāvo yasyāḥ | etaduktaṃ bhavati — raudrādirasābhivyaktāvapi kartavyāyāṃ yo 'bhinaya upādīyate so 'pyanuprāsavalanāvartanādyātmakasundaravaicitryasyāmiśraṇayā duḥśliṣṭo 'śliṣṭa eva vā na rasābhivyaktiheturbhavatīti sarvatraiva kaiśikī prāṇāḥ | yadvakṣyati — <cit><quote>‘asya śākhā ca nṛttaṃ ca vastūnyabhinayasya’</quote> <ref type="pratīka" cRef="NāŚā.8.95">(nā.śā.8-15)</ref></cit> iti | śṛṅgārarasasya tu nāmagrahaṇamapi na tayā vinā śakyam | <ref type="pratīka" cRef="NāŚā.1.46">strījanādṛta</ref> iti | ayaṃ bhāvaḥ- yāvannijahṛdayarasavikasvaranirvāracamatkārapavitratā na jātā bhagavata iva, tāvacchikṣāśatairapi vaicitryamanāhāryam | munīnāṃ ca nisargaviṣayavimukhacittavṛttīnāṃ ko nirvṛticamatkāraḥ | yo 'pi vā sasamādhijaḥ so 'pi dehaparyantatāṃ na bhajati | pratyuta tataḥ<app><rdg>tataścapa</rdg><rdg wit="#के">ato</rdg></app> palāyamānāḥ (naḥ) | ataḥ strīṇāṃ tādṛgasti vaicitryam | tatsamparkasambhava<app><rdg wit="#भ #म">bhavādārdra</rdg></app>dārdrabhāvāstu kadācicchaknuyurapi | ﻿<pb n="023"/>ye tvāhuḥ — ‘na bhagavataḥ kaiśikīprayogasāmarthyam | tena dṛṣṭomayeti pāṭhaḥ umayā saha bhagavato nṛtyato bhagavantamapyanādṛtya bhagavatyā prayujyamānā mayā dṛṣṭā’ iti-ta uktanītyā parākṛtāḥ | tathā—</p>
+
+<lg cRef="NāŚā.20.13">
+  <l>vicitrairaṅgahāraistu devo līlāsamanvitaiḥ |</l>
+  <l>babandha yaḥ śikhāpāśaṃ kaiśikī tatra nirmitā || (nā. śā. 20-13)</l>
+</lg>
+
+<p>iti bhagavato viṣṇoḥ kaiśikīnirmāṇamanucitaṃ syādityalaṃ bahunā | janaśabdena rāgitāśaṅkāṃ pariharati | <ref type="pratīka" cRef="NāŚā.1.46">tato 'sṛjaditi</ref> | <ref type="pratīka" cRef="NāŚā.1.46">manaseti</ref> | yathāruci vinirmitā ityarthaḥ | (44-46) |</p>
+
+<p>nāṭyasya yo 'laṅkāro vaicitryahetuḥ kaiśikī (līlāvilāsādirvā |) tatra <ref type="pratīka" cRef="NāŚā.1.46">caturāḥ</ref> | anye tu nāṭyālaṅkārāḥ sāmānyābhinaye (a-22) vakṣyamāṇāḥ svabhāvajā ‘līlā vilāsa’ ityādyā daśa ‘śobhā kāntiḥ’ ityādyāśca sapta(ptā)yatnajā iti | anena munikanyānāmatrāyogyatvaṃ tāvaduktam | tāsāṃ nāmagrahaṇe pūrvavatprayojanaṃ nirūpyam | <ref type="pratīka" cRef="NāŚā.1.50">me dadāviti</ref> | nāṭyācāryaparavaśatvamupakaraṇasambhārasya darśitam<app><rdg wit="#म">kadācitviti</rdg></app> | tāśca mayā yathocitaṃ śikṣādānena pratigṛhītā iti sūcayan kaiśikīmapyahaṃ yojitavāniti darśayati | evaṃ vṛtticatuṣṭayasampūrṇaṃ nāṭyaṃ guṇanikā<app><rdg wit="#भ">kāyama</rdg><rdg wit="#म">kākāyāma</rdg></app>yāmabhyastamiti pradarśya gītātodyābhyāmuparañjakābhyāṃ yogaṃ darśayati — <ref type="pratīka" cRef="NāŚā.1.50">svāti</ref>rityādi | svātiḥ ṛṣiviśeṣaḥ | yena jaladharasamayanipatatsaliladhārāvaicitryābhihanyamānapuṣkaradalavilasitaracitavicitravarṇānuharaṇayojanayā <app><rdg wit="#म">svayaṃ vṛttini</rdg></app>yathāsvaṃ vṛttiniyamena puṣkaravādyanirmāṇaṃ kṛtamityarthaḥ | <ref type="pratīka" cRef="NāŚā.1.50">saha śiṣyai</ref>riti | tripuṣkarasya vādyasyāpūrakapaṇavamṛdaṅgajhallaryādyupayogena pakṣātodyaparigrahaḥ uktaḥ | bhāṇḍasyātra pūrvamupādānaṃ vṛtti(tte)ryena tasyaiva parikramaṇādau sati sopayogāt | kaiśikī cātra ﻿<pb n="024"/>madhye niyojitetyuktam | na (tena) tatpradhānametat | <ref type="pratīka" cRef="NāŚā.1.51">gānayoga</ref> iti | gānaśabdena tatasuṣiraparigrahaḥ | gānaśabdena gāndharvasyātrānupayogamāha | niyukto niyojita ityanena vādakagāyakādīnāṃ nāṭyācāryāyattatāṃ darśayati | <app><rdg>atha gītā</rdg></app>nṛttagītātodyābhinayānāṃ sāmyasiddhyarthamekībhāvena melanaṃ kṛtvā prayogaḥ kārya iti darśayati ślokadvayena — <q>evaṃ nāṭyamityā</q>dinā | evaṃ <app><rdg>melanikayā</rdg></app>melanikāyāṃ ‘nāṭyamidam’ ityekabuddhigrāhyaṃ sammilitaṃ <ref type="pratīka" cRef="NāŚā.1.51">samyaksampa</ref>nnamiti <ref type="pratīka" cRef="NāŚā.1.51">buddhvā</ref> jñātvā | putraiḥ <app><rdg wit="#म">svātyādyābhyām</rdg></app>svātināradābhyāṃ ca saha <ref type="pratīka" cRef="NāŚā.1.52">brahmāṇamupasthitaḥ</ref> upanimantraṇārthaṃ brahmaṇo 'gre sthita ityarthaḥ | (47-52)</p>
+
+<p>upanimantraṇaṃ darśayati — <ref type="pratīka" cRef="NāŚā.1.53">nāṭyasyeti</ref> | <ref type="pratīka" cRef="NāŚā.1.53">grahaṇamiti</ref> | gṛhītaṃ śikṣitaṃ tāvannāṭyamityarthaḥ | grahaṇaṃ <app><rdg>cāvalokanam</rdg></app>tadavalokanaṃ tatprāptaṃ prekṣaṇayogyaṃ jātamityarthaḥ | <ref type="pratīka" cRef="NāŚā.1.53">etattviti</ref> | tuśabda evakārārtheḥ | śrutvaiva | ata eva <ref type="pratīka" cRef="NāŚā.1.54">pratyupasthitaḥ</ref> ayatnādevābhimukhyenopasthito daivasaṅghaṭita ityarthaḥ | dhvajasyendrārthasya mahanaṃ pūjanaṃ yatra sa dhvajamahaḥ | dhvajamahasya viśeṣaṇadvāreṇa sambhavaṃ darśayati <ref type="pratīka" cRef="NāŚā.1.55">nihatāsuradānava</ref> ityādinā |</p> 
+
+<p>tatra prayoge kramaṃ darśayati — <ref type="pratīka" cRef="NāŚā.1.56">pūrvaṃ kṛtā mayā nāndīti</ref> | nāndyākhyaṃ mukhyaṃ maṅgalaṃ ﻿<pb n="025"/>sakalapūrvaraṅgāṅgopalakṣaṇamiti <q>kecit</q> | pūrvaraṅgāṅgānāṃ madhyānnāndī kevalāpi prayojye — tyevaṃparametadi<q>tyanye</q> | <q>asmadupādhyāyāstu</q> — yāvaddaityaistatra vighnādyācaraṇaṃ na kṛtaṃ tāvatpūrvaraṅgasya vidhipūrvakasya ko 'vakāśaḥ | sa hi vighnarakṣākaraṇena maṇḍapabhāganiveśitadevatāparitoṣahetuḥ prādhānyena | nāntarīyakatayā ca daityaparitoṣakāraṇam | vighnāstu yadā jātāstataḥ prabhṛti pūrvaraṅgaḥ | tathā caturthe 'dhyāye vakṣyate — (nā.śā. 4-10) pūrvaraṅge kṛte mayā bhagavate śivabhaṭṭārakāya darśita iti — yathā tathā tu yaḥ kutapavinyāsā<app><rdg wit="#भ">trayaṃ kutapavinyāsādi nanu pūrvaraṅgaśabdasya</rdg><rdg wit="#भ">śrayaṃ kutapavinyāsaṃ dinaṃ na pūrvaraṅgaśabdasya</rdg></app> — di na(diḥ sa na) pūrvaraṅgaśabdavācyaḥ | tasmādiha nāndīmātrasya prayogaḥ | kimarthā 'sāvityāha — <ref type="pratīka" cRef="NāŚā.1.57">vedanirmitā</ref> | ‘tatrāśiṣamāśāste’ iti hi śrutiḥ sarvakarmasvāśīḥpūrvakatvamāha | yattato nāndīprayogaḥ | na tu pūrvaraṅgāṅgatvena | (53-56)</p>
+
+<p>aṣṭau yānyaṅgabhūtāni padāni vākyaṃ mahāvākyaṃ vā | tāni suptiṅantānyavāntaravākyāni vetyubhayathā | ata eva vicitretyuktam | tena —</p>
+
+<lg>
+  <l>jitamuḍupatinā namaḥ surebhyo dvijavṛṣabhā nirupadravā bhavantu |</l>
+  <l>avatu ca pṛthivīṃ samṛddhasasyāṃ pratipaccandravapurnarendracandraḥ || (ratnā.1-4)</l>
+</lg>
+
+<p>ityeṣā 'pi bhāratīyatvena prasiddhā <q>kohalena</q> pradarśitā nāndyupapannā bhavati | atra tu pakṣe —</p>
+
+<lg>
+  <l>nāndīpadāntareṣveṣu hyevamastviti nityaśaḥ |</l>
+  <l><app><rdg wit="#भ #म">devatām</rdg></app>vadetāṃ <app><rdg wit="#म">guptā</rdg></app>samyaguktābhirvāgbhistau <app><rdg>pāripārśvakau</rdg></app>pāripārśvikau || (nā.śā. 5-114)</l>
+</lg>
+
+<p>iti śloke 'ntaraśabdo 'vāntaravākyavicchedī draṣṭavyaḥ | ﻿<pb n="026"/>vivecakāstvāhuḥ — aṅgagrahaṇādatrāvāntaravākyānye<app><rdg wit="#RK">tāvadu</rdg></app>va tāvatopāttāni | tatra cāṣṭadvādaśasaṅkhyā caturasatryaśratālānusārī pūrvaṅgadvayābhiprāyeṇa | tatra</p>
+
+<lg cRef="NāŚā.5.109">
+  <l>nāndīṃ padairdvādaśabhiraṣṭabhirvāpyalaṅkutām || (nā.śā. 5-109)</l>
+</lg>
+<p>ityatrāpiśabdāccatuṣpadatvaṃ ṣoḍaśapadatvaṃ caturaśragataṃ labhyate | tryaśragataṃ ca tripadatvaṃ ṣaṭpadatvaṃ cetyevamalpamapi tadbhedena tisrastisro nāndyaḥ | tataḥ paramapi<app><rdg wit="#म #भ">ramabhi</rdg></app> bhūyastvāt | tena jitamuḍupatineti catuṣpadeyam | ṣoḍaśapadā tu ‘jayati bhuvanakāraṇam’ ityādi | tadanta iti | nāndyante parisamāptau | <q>anukṛtiriti</q> nāṭyam | tatra ca <q>baddheti</q> guṇanikā yojitā | na tu prayoga ityetaccāsat | tatpūrvottaravyāghātāt | pūrvaṃ hyuktam  — evaṃ nāṭyamidamityādi nāndī kṛtetyantam | vakṣyate ca — brahmādayaḥ prayogaparitoṣitā iti | tasmādbaddheti prastāvitā | na tu niṣpāditā | prastāvanā tāvatprayuktetyarthaḥ |</p> 
+
+<p>anye tvanukṛtiriti nāṭyānukārarūpā prastāvanetyāhuḥ | ‘kutā tadante 'nukṛtiḥ’ iti ca paṭhanti | etadupajīvanenaiva cirantanāḥ kavayo ‘nāndyante (tataḥ praviśati) sūtradhāraḥ’ iti pustake likhanti sma | kiṃ prastāvitamityāha--<q>yathā daityā</q> iti | ḍimasamavakārehāmṛgādīnāmanyatamaḥ prayogaḥ prāstāvītyarthaḥ | yadyapibharaputrerdaśarūpakamabhyastaṃ tathāpi na yugapatsarvaḥ prayoktuṃ pāryata ityevamuktam | tena yatkecidacūcudan — samavakāre kaḥ kaiśikīyojanāvasara iti pūrvagrantho 'saṅgata iti tanniravakāśameva | samavakārādāvapi ca saundaryātmakaṃ vaicitryaṃ kaiśikīvijṛmbha evetyuktam | (57)</p>
+
+﻿<pb n="027"/>
+
+<p>roṣagrathitavākyaṃ tu <ref type="pratīka" cRef="NāŚā.1.58">sampheṭaḥ</ref> | śaṅkābhayatrāsakuto <ref type="pratīka" cRef="NāŚā.1.58">vidravaḥ</ref> | chedamarhatīti cchedyaṃ śastrāhavaḥ | bhedamarhatīti <ref type="pratīka" cRef="NāŚā.1.58">bhedyaṃ</ref> mallayuddhātmakaṃ niyuddham | <ref type="pratīka" cRef="NāŚā.1.60">tata</ref> iti | prabhuparitoṣāya prabhucaritaṃ kadācinnāṭye varṇanīyamiti yathā daityāḥ surairjitā ityetasmāllabhyata iti kecidāhuḥ | tadasat | daśarūpakalakṣaṇayuktivirodhāt | tatra hi kiñcitprasiddhacaritaṃ kiñcidutpādyacaritamiti vakṣyate | na ca vartamānacaritānukāro yuktaḥ | vineyānāṃ tatra rāgadveṣamadhyasthatādinā tanmayībhāvābhāve prīterabhāvena vyutpatterapyabhāvāt | vartamānacarite ya ca dharmādikarmaphalasambandhasya pratyakṣatve prayogavaiyarthyam | apratyakṣatve ‘bhaviṣyati pramāṇābhāvāt’ iti nyāyena vyutpatterasambhavānnānukāraḥ | etacca daśarūpakādhyāye vitaniṣyāma ityāstāṃ tāvat |</p>
+
+<p>devānāṃ <app><rdg wit="#भ">cādya pra</rdg></app>tvadya prasiddhavarṇanīyāsambhavātpūrvakalpamanvantarādigatadevāsuracaritakīrtanam | anāditvātsaṃsārasya śrutismṛtyanumatadevāsurakīrtanavaditi | tatra vartano<app><rdg wit="#भ">varṇanopa</rdg></app> (vartamāno) — pavarṇanaṃ tajjātīyānām | atha<app><rdg>tajjātīyakatvādasurāścukṣubhire | (a. saṃgra)</rdg></app> cāritrabhramavipralabdhāstvasurāścukṣubhire iti vakṣyāmaḥ | na ca svacaritavyāvarṇanāddevānāṃ paritoṣa iha | yata āha — <ref type="pratīka" cRef="NāŚā.1.58">prayogaparitoṣitā</ref> iti | dhvajamiti | yasya vighnaśāntyai pūjārthamupayogo bhāvī | (58-59)</p>
+
+<p><ref type="pratīka" cRef="NāŚā.1.60">kuṭilakamiti</ref> vikradaṇḍako vidūṣakopayogī | brahmāyudhātmā daṇḍaḥ | apakāmatvena ﻿<pb n="028"/>bhīṣaṇatvākṛtyāpītyarthaḥ | <ref type="pratīka" cRef="NāŚā.1.60">bhṛṅgāraḥ</ref> pāripārśvikopayogī | <ref type="pratīka" cRef="NāŚā.1.60">chatra</ref>matra vitānaḥ jaladānāṃ sūryodbhavatvāt tatpratimaḥ | yadāhuḥ — ṛtave varṣānte mahato meghasampravāniti | (meghasaṃplavāditi (?) ) | bhagavadāyattā daivī mānuṣī ca siddhiriti madhye tadupādānaṃ sarvavyāpakatvaṃ daivyāḥ siddheḥ pratipādayitum | <ref type="pratīka" cRef="NāŚā.1.60">vyajanaṃ</ref> gharmāpanuttaye | <ref type="pratīka" cRef="NāŚā.1.61">siṃhāsanādi</ref> rājabhūmikāyāmupayogi | yakṣādayo ye tattvajñā nāṭyasya | bhāṣitamiti | tattadbhūmikopayogivācike śikṣā | <ref type="pratīka" cRef="NāŚā.1.63">bhāvā</ref>niti | vibhāvādiṣu | tathā hi raktamāṃsādīni bhayajugupsāvibhāvarūpāṇi yakṣarakṣasāṃ harṣotsāhavibhāvatāṃ yāntīti tadupadeśādeva tajjñeyam | rasāniti<app><rdg>rasāniti raudrarasopayogino vyabhicārivargasya</rdg></app> | svocitasthāyibhāvasambadhyamānatattadrasopayogino 'nubhāvavyabhicārivargasya śikṣā darśitā | rūpamiti mukharāgasya | balamityāṅgikasya | pratibhūmikaṃ parituṣṭena | antato 'tra śiṣṭā(kṣā)pi kāciddeyā | sāmājikebhyaśca dhanavijñānamityāharaṇīyātodyā (dyādyā) jihīrṣatā ca pariṣatparitoṣāya yatitavyamityetadanena darśitam | (60-63)</p>
+
+<p>atha vighnopaśamanāya jarjarapūjā kāryeti darśayitumitihāsenopakramate — evaṃ prayoga iti | daityādīnāṃ vināśanaṃ yatra prayojyatayā | <ref type="pratīka" cRef="NāŚā.1.65">āgamyatā</ref>miti | avadhāryatāṃ yadi vā sambhūyāsyatām | māyāmiti adṛśyatvamityarthaḥ | ceṣṭetyāṅgikī | yadyapi smṛtistambhanena sarvaṃ stambhitaṃ bhavati tathāpi tattadabhineyaprādhānyena tadeva stambhitamityuktam | <ref type="pratīka" cRef="NāŚā.1.67">sūtradhārasye</ref>ti saparivārasyeti | prastāvanāprayogamadhya evāyaṃ vighna iti yāvat | <ref type="pratīka" cRef="NāŚā.1.67">dhyānamiti</ref> | yatra māyā na prabhavati | (64-67)</p>
+
+﻿<pb n="029"/>
+
+<p><ref type="pratīka" cRef="NāŚā.1.68">sada</ref> iti yatra prayogaḥ kriyate sīdatyasminniti | jīryatyatiśayeneti pacādyaci (yaṅluki)rūpam | atiśayena jīrṇīṃkṛto deho yeṣānte tathā | <ref type="pratīka" cRef="NāŚā.1.70">jarjareṇeti</ref> yaṅlugantāṇṇici punaḥ pacādyaci rūpam | evaṃ rājñā siddhivighātakā daṇḍyā iti darśitam |</p>
+
+<pb n="030"/>
+
+<p>yadi vā mūlata eva tatparirakṣāyai maṇḍapaḥ kāryaḥ | ye ca daṇḍasyāviṣayā vātātapavarṣādayaśca tatkṛto hi siddhivighāto maṇḍape sati na bhavati | etenaivābhiprāyeṇa purākalpamāha — <ref type="pratīka" cRef="NāŚā.1.76">prayoga</ref> ityādi | <ref type="pratīka" cRef="NāŚā.1.76">śeṣā</ref> iti | jarjarīkṛtaśarīraśeṣā apītyarthaḥ | yadvakṣyati — <cit><quote>‘niścitā bhagavanvighnā’</quote><ref type="pratīka" cRef="NāŚā.1.78"/></cit> iti | tathā 'smin jarjarīkaraṇakāle ete cāsannihitā abhūvan | trāsamiti | sarvathā tu na śaktā nāśayitumiti | jarjaraprabhāvaḥ ‘gamiṣyatyevameva’ iti hyuktam | <ref type="pratīka" cRef="NāŚā.1.80">tato viśvakarme</ref>ti | vāstuvidyā tattvavido nāṭyamaṇḍape sthapatitvaṃ sūcayati | <ref type="pratīka" cRef="NāŚā.1.81">druhiṇa</ref> iti brahmā | itare vidyādharagandharvādyāḥ |</p>
+
+﻿<pb n="031"/>
+
+<p><ref type="pratīka" cRef="NāŚā.1.83">aṃśabhāgairiti</ref> | aṃśairyāni <app><rdg wit="#भ">bhajanā</rdg></app>bhājanānyadhiṣṭhānāni taiḥ | maṇḍapasyāṃśeṣu vaḥ bhavatāṃ ye tṛtīyacaturthādayo bhāgāstaiḥ | (68-83)</p>
+
+<p>aṃśavibhāgamevāha ― <ref type="pratīka" cRef="NāŚā.1.84">rakṣaṇa</ref> iti | anena caitattulyā eva maṇḍapabhāgarakṣā<app><rdg wit="#के">rakṣakāḥ</rdg></app> kācinniyojyā iti darśyate | maṇḍapasya sarvasyādhiṣṭhātā hi saumyaprakṛtiḥ somaḥ pradhāno yojya iti darśayati — candramā iti | <ref type="pratīka" cRef="NāŚā.1.84">api</ref> ceti | <ref type="pratīka" cRef="NāŚā.1.84">vidikṣviti</ref> | na kevalaṃ paścimottararūpe svakoṇa yāvadanyāsvapi vidikṣu | cakārāddikṣvapi | te hi gharmadoṣavārakatvādatyantopakāriṇaḥ | anena gavākṣakaraṇaṃ sūcyata ityeke | āditye mitraśabdaḥ pulliṅga iti | tena <q>yadvārtika</q>kārī(rīyaṃ) ‘tadupalakṣito nartakī hi(bhiḥ) lajjāparihārahetoḥ napuṃsako nepathyagṛhe’ iti tadaparāmṛṣṭābhidhānam | <ref type="pratīka" cRef="NāŚā.1.85">mitra</ref> iti tejasvitā āhāryopayogī <app><rdg wit="#भ">yogirāde</rdg></app>ratnāderuktā | <ref type="pratīka" cRef="NāŚā.1.85">vedikā</ref> | raṅgavedikā | tatra tīkṣṇo 'dhiṣṭhātetyarthaḥ | <ref type="pratīka" cRef="NāŚā.1.85">bhāṇḍa</ref> iti | tripuṣkare sopakaraṇe | divaukaso meghā mandragambhīraśabdasiddhaye | ityevaṃ sarvatra dṛṣṭamapi sadṛśopalakṣaṇāntaṃ prayojanamutprekṣyam | sarvathā<app><rdg wit="#म #भ">dā tadanu</rdg></app> tadalābhe niyamāddṛṣṭameva | varṇā iti | tadadhiṣṭhātāro devatāviśeṣāḥ | <ref type="pratīka" cRef="NāŚā.1.86">stambhāntareṣviti</ref> | varṇastambhacatuṣkādirityeṣu | na anyeṣu stambhoṣvityarthaḥ | (84-86)</p>
+
+<pb n="032"/>
+
+<p><ref type="pratīka" cRef="NāŚā.1.87">śālāsvi</ref>ti | stambhadvayamaṣṭaveśmani gavākṣanepathyagṛhadvitīyabhūmisanniveśāditi | nāgamukhyāviti | anantagulikau | <ref type="pratīka" cRef="NāŚā.1.88">dvāra<app><rdg>pātram</rdg></app>patraṃ</ref> kavāṭātmakam | dvārabahutvācca bahuvacanam | <ref type="pratīka" cRef="NāŚā.1.89">dehalyāmi</ref>ti | dvārādhastanakāṣṭhe | <ref type="pratīka" cRef="NāŚā.1.89">tasye</ref>ti | <ref type="pratīka" cRef="NāŚā.1.89">śūlami</ref>ti | etena prakrāntadvārameva parāmṛṣṭam | tenordhvakāṣṭhe utsaṅgaśabdavācye triśūlamityarthaḥ | <ref type="pratīka" cRef="NāŚā.1.90">pārśve</ref> svayamiti | rājādestatsthānamityuktam | cakārātsvadiśi aṃśenāvasthānamanusmṛtam | <ref type="pratīka" cRef="NāŚā.1.90">vidyudi</ref>ti | vajrāyudharūpā | stambheṣvapi caturṣu yathākramaṃ tadbhūtādayaḥ | te ca nāṭyatattvavidaḥ | ata eva vighnaiḥ saha ye(te)nayena militā iti draṣṭavyam | etena siddhivighātakā bhedākhyenāpyu- pāyena durbalīkartavyā iti sūcitam | <note place="app">See p. 33 verse 94 found only in N.</note>pratiṣṭhita iti | sadaiva sannihito vāstumadhya ityarthaḥ | kaveśca sannidhānaṃ sūcitam |</p>
+
+<p>adhastāditi | yena suraṅgākhananādi vighnakaraṇaṃ nivāryata ityarthaḥ | pradhānapātrāṇi pṛthagrakṣaṇīyānītyāha-nāyakamiti | hāsyaśṛṅgārāṅgatvādvidūṣakamityuktam | ata eva daśarūpakaprayogasūcanametat | samavakāre vidūṣakābhāvāt | hara iti | bahumūrtiprathamatvāt | devatā eva daivatam | (87-98)</p>
+
+﻿<pb n="034"/>
+
+<p>atha nāṭyatattvaghāte<app><rdg>ghātanirū</rdg></app> (ttvavighāte) sa tannirūpaṇārthamupakramate ― <ref type="pratīka" cRef="NāŚā.1.99">etasminni</ref>ti | aśaktasya sāmāṅgīkaroti durjana iti pūrvaṃ rakṣākaraṇam | ityuktadvaya (sarvairukta ) iti | kaviranuvidheyavacano bhavatīti darśayati | sāmādiprayoge tāvacchabdasūcitaṃ kramaṃ sphuṭayati ― <ref type="pratīka" cRef="NāŚā.1.100">pūrvaṃ sāme</ref>tyādi | <ref type="pratīka" cRef="NāŚā.1.100">tata</ref> iti | sarvopāyapratihatāviti yāvat | tatra jñātābhiprāyaḥ pratisamādhātuṃ suśaka ityabhiprāyeṇāha ― <ref type="pratīka" cRef="NāŚā.1.101">devānā</ref>miti | surārthamityasyaiva dāḍharyāyoktaṃ surecchayeti | <ref type="pratīka" cRef="NāŚā.1.103">pratyādeśa</ref> iti khalīkāra ityarthaḥ | <ref type="pratīka" cRef="NāŚā.1.103">bhavateti</ref> | yasyānucitametadityarthaḥ | anaucityameva <ref type="pratīka" cRef="NāŚā.1.104">lokapitāmahe</ref>tyāmantraṇenāha | tadeva pitāmahatvaṃ darśayati ― <ref type="pratīka" cRef="NāŚā.1.104">yathe</ref>ti | ā(tmano bha)<app><rdg wit="#भ #म">ā...tām</rdg></app>vā devā daityāścetyāha ― <ref type="pratīka" cRef="NāŚā.1.104">sarva iti</ref> | (99-104)</p>
+
+<p><ref type="pratīka" cRef="NāŚā.1.105">vacana</ref>miti | supariharametat | nātra bhūyānprayāsa ityekavacanena darśayati | ata eva siddhavadupakramate ― <ref type="pratīka" cRef="NāŚā.1.105">alaṃ va</ref> iti | mithyājñānagṛhītasarpatrāsavadyo bhrāntimātrakṛta ityarthaḥ | <app><rdg>daityā aśubhakāriṇaḥ santu parājitāḥ bhavantaḥ | devatāḥ punaranyatheti na nāṭyasya tātparyam | (a.sā.)</rdg></app>daityānāmaśubhakāritā lokaprasiddhā | kuru(kṛta)raṅgavibhāgañcaiṣāṃ ceṣṭitamastu | devānāṃ tadviparyaya iti nāṭyasya na tātparya yena bhavatāṃ manyuḥ | kiṃ tarhītyāha | śubhakāriṇaḥ śubhaṃ phalamaśubhakāriṇo 'śubhaṃ phalamityetāvadevāsmākaṃ pratisākṣātkārakalpe nāṭye pradarśanīyam | na tatra deveṣu daityeṣu vā kaścidbharaḥ<app><rdg wit="#म #भ">t haraḥ</rdg></app> | ata eva bhavatāmapi dharmādau yaḥ <app><rdg>sadupāyaḥ so 'pi śubhavikasitavena darśitaḥ | ata eva (a. sā.)</rdg></app>sadupāyaḥ so 'pi śubhavipākatvenaiva darśitaḥ | ata eva śubhagrahaṇamekatarapakṣaśaithilyadarśanāya daityasambandhanārtha prathamabhupāttam | śubhamaśubhaṃ ca dharmādharmarūpaṃ sukhaduḥkhaphalatvena vibhedena kalpayatyadhyavasāyayati nāṭyavedaḥ | kīdṛk ― <ref type="pratīka" cRef="NāŚā.1.106">karmabhāvānvayāpekṣīti</ref>| tadyathā ― karma dharmādharmādirūpaṃ dharmo dānaṃ snānamityādiḥ | adharmo hiṃsā steyamityādiḥ | bhāva āśayaḥ <app><rdg wit="#म">tripra</rdg></app>strī (sva) prasaṅgoditā svārthatāparārthatādyabhisandhirityādiḥ | anvayo 'bhijanaḥ āryāvartādirbrāhmaṇyādi ceti (ṇyañceti) | tānapekṣate sahakāritayā |</p>
+
+<p>etaduktaṃ bhavati  ― asmindeśe 'sminkāle īdṛśena karmaṇā yaḥ śubhamaśubhaṃ cārjayati sa evaṃvidhaphalabhāgī bhavatīti na tāvadihopadiśyate | vikalpaka iti dvau ṇicau | (105-106)</p> 
+
+﻿<pb n="035"/>
+
+<p>nanu caiva<app><rdg wit="#म">mapyasminvisṛṣṭe</rdg></app>mapyasmatpṛṣṭhe kime<app><rdg>kimityetat (a.saṃ.)</rdg></app>tadyojitamityāha ― <ref type="pratīka" cRef="NāŚā.1.107">naikāntata</ref> iti | ayaṃ bhāvaḥ ― na yuṣmatpṛṣṭhe kenacidetadyojitam | devāsurasya bahiryathāvasthamavasthānam | atreti nāṭyavede | na devāsurāṇāmekāntenānubhāvanam | naiva te 'nubhāvyante kenacitprakāreṇa |</p>
+
+<p>tathāhi ― teṣu na tattvena dhīḥ | na sādṛśyena yamalakavat | na bhrāntatvena rūpyasmṛtipūrvakaśuktirūpyavat | nāropeṇa samyagjñānabādhānantaramithyājñānarūpyavat | na tadadhyavasāyena gaurvāhīkavat | notprekṣyamāṇatvena mukhacandravat | na tatpratikṛtitvena citrapustavat | na tadanukāreṇa guruśiṣyavyākhyāhevākavat | na tātkālikanirmāṇenendrajālavat | na yuktiviracitatadābhāsatayā hastalāghavādimāyāvat | sarveṣveteṣu pakṣeṣvasādhāraṇatayā draṣṭuraudāsīnye rasāsvādāyogāt | kaveśca niyatavarṇanīyaniścitatve kāvyasyaivāsampatteranaucityavarjanāyogāt | laukikamithunadṛśīva sāṃsārikaharṣa<app><rdg wit="#म">krodhānvitatā</rdg></app>(īrṣyā) krodhānvayitāpatterubhayadarśanaku(mū)latayā <app><rdg>mukhadṛṣṭau</rdg></app>mukhyadṛṣṭau prayoktṛdṛṣṭau tatsaṃvidviśrāntyabhāvāt |</p>
+
+<p>kiṃ tarhyetat | āha ― <ref type="pratīka" cRef="NāŚā.1.107">trailokyasye</ref>ti | etaduktaṃ bhavati ― etādṛśaṃ taiḥ rāmādayo na kadācana pramāṇapathamavatāryante<app><rdg wit="#म #भ">pathamavatārayante</rdg></app> yadā '  'gamena varṇyante| tadā tadviśeṣa<app><rdg wit="#म">siddhiḥ</rdg></app>buddhiḥ yadyapi rāmāyaṇaprāyādekasmānmahāvākyādullasati, tathāpi vartamānatayaiva viśeṣāṇāṃ sambhāvyamānārthakriyāsāmarthyātmakasvālakṣaṇyaparyavasānāt| na ca teṣāṃ vartamānatetyupagatā
+
+﻿<pb n="036"/>tāvadviśeṣabuddhiḥ | kāvyeṣvapi hṛdayameva (hṛdaya eva) tāvatsādhāraṇī bhāvo vibhāvādīnāṃ tatrāpi kathāmātre sādhāraṇī bhāvaḥ sambhavati yadyapi tathāpi ― ‘evaṃ ye kurvanti teṣāmetadbhavati’ iti vākyavadrañjanātiśayābhāvānna cittavṛtte(tti)rnirṇayagatā bhavati |</p> 
+
+<p>kāvye tu guṇālaṅkāramanoharaśabdārthaśarīre ḷokottara<app><rdg wit="#म">rasasamprāṇite</rdg></app>rasaprāṇake hṛdayasaṃvādavaśāt nimagnākārikā tāvadbhavati cittavṛttiḥ | kintu sarvasya pratyakṣasākṣātkārakalpā tatra na dhīrudeti |</p>
+
+<p>nāṭye tu pāramārthikaṃ kiñcidadya me kṛtyaṃ bhaviṣyatītyevaṃbhūtābhisandhisaṃskārābhāvātsarvapariṣatsādhāraṇapramodasārāparyantarasanā(samā)daraṇīyalokottaradarśanaśravaṇayogī bhaviṣyāmītyabhisandhisaṃskārāducitagītātodya<app><rdg wit="#म">varṇanā</rdg></app>carvaṇāvismṛtasāṃsārika bhāvatayā vimalamukurakalpībhūtanijahṛdayaḥ, sūcyādyabhinayāvalokanodbhinnapramodaśokāditanmayībhāvaḥ, pāṭhyākarṇanapātrāntarapraveśavaśāt samutpanne deśakālaviśeṣāveśānāliṅgite samyaṅmithyāsaṃśayasambhāvanādijñānavijñeyatvaparāmarśānāspade, rāmarāvaṇādiviṣayādhyavasāye, tatsaṃskārānuvṛttikāraṇabhūtatatsahacarahṛdyavasturūpagītātodyapramadānubhavasaṃskārasūcitasamanugatataduktarūparāmādhya<app><rdg wit="#भ">rūpaparamādhya</rdg></app>vasāyasaṃskāra eva bhavatpañcaṣairdivasaiḥ sacamatkāratadīyacarita madhyapraviṣṭasvātmarūpamatiḥ svātmadvāreṇa viśvaṃ tathā paśyan<app><rdg wit="#भ">śyat</rdg></app> pratyekaṃ sāmājikoṃ deśakālaviśeṣāṇāmaparāmarśena evaṃkāriṇāmidamiti lị̄dhā(liṅā)tmakavidhisamarpitaṃ saṃvijjātīyameva saṃvidviśeṣarañjakaprāṇavallabhāpratimarasāsvādasahacararamyagītātodyādisaṃskārarasā(nupra)veśena hṛdayābhyantaranikhātaṃ tata evanutpuṃ sanaśatairapi<app><rdg wit="#भ #म">vānatpuṃsanaśataiḥ</rdg></app> mlānimātramapyabhajamānaṃ bhajaṃstattacchu bhāśu bhaprepsājihāsāsatatasyūtavṛttitvādeva śubhamācaratyaśubhaṃ samujjhati | idānīmupāyasaṃvedanālābhāt tadidamanukīrtanamanuvyavasāyaviśeṣo nāṭyāparaparyāyaḥ | nānukāra iti bhramitavyam | anena bhagaṇḍena rājaputrasyānyasya vā<app><rdg wit="#भ #म">trasya nyāyyavāganukṛtetyādi</rdg></app>nukṛte 'nyā(kṛtāvanyā)dibuddherabhāvāt | taddhi vikā(ka)raṇamiti prasiddhaṃ hāsamātraphalaṃ madhyasthānām | yadabhiprāyeṇa munirvakṣyati ―</p>
+
+<lg cRef="NāŚā.6.10">
+  <l>paraceṣṭānukaraṇāddhāsassamupajāyate (a. 7-10) iti ||</l>
+</lg>
+
+<p>tatpakṣīyāṇāntu tadeva dveṣāsūyāni(nu)vṛttyādiphalam | tadbudhyaiva hi daityānāṃ hṛdayakṣobhaḥ ‘evambhūtā vayamupahāsabhājanam’ iti | upahāsyatābhīravaśca nivartante tataḥ | na tūpadeśena |</p>
+
+﻿<pb n="037"/>
+
+<p>nanvenaṃ tāvatā niyatānukāro mābhūt | anukāreṇa tu kimaparāddham | na kiñcidasambhavādṛte | anukāra iti hi sadṛśakaraṇam | tatkasya | na tāvadrāmādeḥ | tasyānanukāryatvāt | etena pramadādivibhāvānāmanukaraṇaṃ parākṛtam | na cittavṛttīnāṃ śokakrodhādirūpāṇām | na hi naṭo rāmasadṛśaṃ svātmanaḥ śokaṃ karoti | sarvathaiva tasya tatrābhāvāt | bhāve vānanukāratvāt | na cānyadvastvasti yacchokena sadṛśaṃ syāt | anubhāvāṃstu karoti | kintu sajātīyāneva | na tu tatsadṛśān | sādhāraṇarūpasya kaḥ kena sādṛśyārthaḥ | trailokyavartinaḥ sadṛśatvantu na viśeṣātmanā yaugapadyenopapadyate | kadācitkrameṇa niyata evānukṛtaḥ syāt | sāmānyātmakatve ko 'nukārārthaḥ | tasmādaniyatānukāro<app><rdg wit="#म">tasyāyatānukāro nā</rdg></app> nāṭyamityapi na bhramitavyam | <title>asmadupādhyāyakṛte kāvyakautuke</title> 'pyayamevābhiprāyo mantavyaḥ | na tvaniyatānukāro 'pi |</p>
+
+<p>tenānuvyavasāyaviśeṣaviṣayīkāryaṃ nāṭyam | tathā cāhāryaviśeṣādinā<app><rdg wit="#म">nā hi vṛtte</rdg><rdg wit="#भ">nā hi vṛttena</rdg></app> nivṛtte taddeśakālacaitramaitrādinaṭaviśeṣapratyakṣābhimāne viśeṣaleśopakrameṇa ca vinā pratyakṣā<app><rdg wit="#भ">kṣapra</rdg></app>pravṛtterāyāte rāmādiśabdasyātropayogāt prasiddhatadarthatayā ' 'daraṇīyacaritavācakasyāsambhāvanāmātranirākaraṇenānuvyavasāyasya pratyakṣakalpanāṭye hṛdyagītādyanusyūtatayā camatkārasthānatvāddhṛdayānupraveśayogyatvamabhinayacatuṣṭayena svarūpapracchādanaṃ, prastāvanādinā naṭajñānajasaṃskārasācivyaṃ, tena rañjakasāmagrīmadhyānupraviṣṭena pracchāditasvasvabhāvena<app><rdg wit="#भ">na pravṛ</rdg></app> prākpravṛttalaukikapratyakṣānumānādijanitasaṃskārasahāyena sahṛdayanajñānasaṃskārasacivena hṛdayasaṃvādatanmayībha<app><rdg>bhāvanā</rdg></app>vanasahakāriṇā prayoktrā dṛśyamānena yo 'nuvyavasāyo janyate sukhaduḥkhādyākāratattaccittavṛttirūparūṣitanijasaṃvidānandaprakāśamayaḥ ata eva vicitro rasanāsvādanacamatkāracarvaṇanirveśabhogādyaparaparyāyaḥ tatra yadavabhāsate<app><rdg wit="#म">te 'stu</rdg></app> vastu tannāṭyam | tacca jñānākāramātramāropitaṃ svarūpaṃ sāmānyātmakaṃ tatkālanirmitarūpaṃ cānyadvā<app><rdg wit="#म">nyathā</rdg></app>  kiñcidastu | nātrāprastutalekhanenātmano darśanāntarakathāparicayaprakaṭanaphalena<app><rdg wit="#म">bhayena</rdg></app> prakṛtavastunirūpaṇavighnamācarantaḥ sahṛdayānkhedayāmaḥ | tasmādanuvyavasāyātmakaṃ kīrtanaṃ rūṣitavikalpasaṃvedanaṃ nāṭyam | tadvedanavedyatvāt | na tvanukaraṇarūpam | yadi tvevaṃ mukhyalaukikakaraṇānusāritayā 'nukaraṇamityucyate tanna kaściddoṣaḥ | sthite vastuto bhede śabdapravṛtteravivādāspadatvāt | etacca yathāvasaraṃ vitaniṣyata ityāstāṃ tāvat | ﻿<pb n="038"/> yataścedaṃ nānukaraṇaṃ tato yatkaiściccoditaṃ tadanavakāśam ― ‘na ca gītavādyayuktaḥ sarvāvasthāsu kaścidanukāryaḥ’ iti | na tvanukāryatvena gītādaya ityuktam | parihāro 'pi ya uktaḥ ‘āsanagamanasnānasvāpapratibodhabhojanādyāsu vastuto gītavādyaṃ loke ceṣṭāsvatiprathitam’ ityādi, tadapyanupapannam | na hi gamanādau taddhruvātālādirūpeṇa gītādi loke 'sti maṅgalamātratvādṛte | gāyanavādanādiṣvapi cānukārabuddhyāpatterityalam | (107)</p>
+
+<p>nanu trailokyasya ye bhāvāsteṣāṃ yadyanukīrtanaṃ nāṭyaṃ tadekatraiva rūpake ekatraiva <app><rdg wit="#म #भ">cāṅgādau</rdg></app>cāṅkādau sarvameva dṛśyetetyāśaṅkānirākaraṇapūrvakaṃ pūrvaprayojanena saprayojanatvamupasaṃharati ― <ref cRef="NāŚā.1.109">kvaciddharma</ref> ityādinā <ref cRef="NāŚā.1.115">‘lokopadeśajananaṃ nāṭyametadbhaviṣyati’</ref> ityantena ślokāṣṭakena | etacca kaiściddhinnavākyatayā pratiślokaṃ vyākhyātam | tacca paunaruktyādhyāhāraparasparāsaṅgatyādidoṣopahataṃ syādityupekṣyameva | tasmāditthamatra yojanā ― nānāprakārairbhāvaiḥ sthāyivyabhicāri(vi)bhāvādibhirupasampannaṃ sarvato vyāptam | teṣāṃ ca bhāvādīnāṃ deśakālaprakṛttyavasthāntarabhinnasvabhāvatvāttadapi nānāvasthātmakam | ata evāhottamādhameti | evambhūtametadbhaviṣyati | kāle viśrāntijananaṃ hitopadeśajananaṃ ca bhaviṣyatīti sambandhaḥ |</p>
+
+<p>ke ke nānāprakārā bhāvā ityāha ― <ref type="pratīka" cRef="NāŚā.1.108">kvaciddharma</ref> ityādi | yathāyogaṃ dharmādayaḥ śabdāstadacitasthāyivyabhicāryādisūcakāḥ | tena dharmo 'rtha ityutsāhādiḥ | krīḍeti vismayādiḥ | śama iti nirvedādiḥ | hāsyamiti hāsādiḥ | yuddhamiti raudrādiḥ | kāma iti ratyādiḥ | vadha iti krodhabhayajugupsāśokādiḥ | amībhiśca samucitavyabhicāribhāvavibhāvāḥ<app><rdg wit="#भ">ryanubhāvāḥ</rdg></app> svīkṛtāḥ | kvaciditi śabdena daśarūpakānyatamamucyate | ta(ya) thā﻿<pb n="039"/>nāṭakādyanekarūpakagato viśeṣastathaikaṃ nā(kanā)ṭakādiviśeṣako vibhāgaḥ | etaduktaṃ bhavati -kiñciddharmapradhānaṃ rūpakaṃ yathā nāṭakaṃ prakaraṇaṃ vā | krīḍāpradhānaṃ tathā prasiddhānāṃ yathā bhāṇaḥ | arthapradhānatvaṃ prakaraṇādāveva | evaṃ daśarūpakalakṣaṇānusāreṇa sarvamanusaraṇīyam | tathā kvacinnāṭake dharmaḥ pradhānam ― yathā <title>chalitarāme</title> rāmasyāśvamedhayāgaḥ | kvacitkrīḍā-yathā <title>svapnavāsavadattāyām</title> | evamanyatrāpyatusaraṇīyam| <app><rdg>tathā tatrāpi</rdg><rdg wit="#भ">tathāpi</rdg></app>tathaikatrāpi nāṭake kvacidaṃśe<app><rdg wit="#म">kvacidaṅge</rdg></app> dharmo yathā '<title>bhijñānaśākuntale</title> ― <cit><quote>‘api nāma kulapateriyamasavarṇakṣetrasambhavā syāt’</quote> <ref>(aṅka-1)</ref></cit> | evaṃ pratināṭakamekadeśeṣu sulakṣā evaṃ krīḍādaya iti granthavistarabhīrubhirasmābhirna parivarṇitāḥ<app><rdg>rtitāḥ</rdg></app> |</p>
+
+<p>nanvavasthādeśakālaprakṛtiviśeṣasamucitabhāvānukīrtanamātrameva kartavyam | kiṃ rāmāya(di)rāvaṇetyādisamāśrayeṇetyāśaṅkyāha <ref type="pratīka" cRef="NāŚā.1.109">dharma</ref> iti | <q>co</q> hetau | yasmāllokavṛttānusāreṇa karaṇaṃ prayogarūpaṃ nāṭyaṃ mayā kṛtametadityetasmātkāraṇāddharmapravṛttānāṃ rāmayudhiṣṭhirādīnāṃ sambandhitvena dharma uktaḥ | <ref type="pratīka" cRef="NāŚā.1.109">nigraha</ref> iti vadhaḥ | vinītānāṃ jitendriyāṇāṃ sambandhitvena damasya śamasya kriyā yojanā | vinayo hīndriyajayaḥ | evaṃ klībānāmupahāsyānāṃ <ref type="pratīka" cRef="NāŚā.1.110">dhāṣṭraryajananamiti</ref> vibhāvena hāso 'troktaḥ | dhāṣṭryājjananaṃ janma yasya hāsyavastunaḥ | yadvakṣyati ― <cit><quote>‘vikṛtaparaveṣālaṅkāradhāṣṭryādibhiḥ’</quote> <ref>(a-6.)</ref></cit> ityādi | <ref type="pratīka" cRef="NāŚā.1.110">vibodha</ref> iti ṇyantasya rūpam | abuddhatvena prasiddhānāṃ sambandhitvena bodhanamupāyopadeśena vyutpādyatvam | <ref type="pratīka" cRef="NāŚā.1.110">viduṣāṃ</ref> bhīṣmādīnām | upāyavyutpādyatvena <ref type="pratīka" cRef="NāŚā.1.110">vaiduṣyam</ref> | anena smṛtimatiprabhṛtīnāṃ nirūpaṇam | <ref type="pratīka" cRef="NāŚā.1.111">vilāsa</ref> iti krīḍā | sthairyamiti vyavasāyātmakamutsāharūpameva | caśabda evakārārthe | duḥkhārditatvena yaḥ prasiddhastasyaiva sambandhitvenetyarthaḥ | <ref type="pratīka" cRef="NāŚā.1.111">dhṛti</ref>rdheryam | etaduktaṃ bhavati ― lokavṛttānusāreṇa yata iyaṃ nāṭyakriyā<app><rdg>krīḍā</rdg></app> loke ca dharmādayo 'nāśrayāḥ na saṃvedanayogyāḥ tena dharmādiviṣaye yo yathā prasiddho rāmādiḥ sa śabdamātropayogitvena mukhyapātrapraṇālikayā gṛhītaḥ |</p>
+
+<p>evaṃbhūtaṃ yannāṭyaṃ tatprekṣakāṇāṃ duḥkhena vyādhyādikṛtena śrameṇādhvakleśādijena śokena bandhumaraṇādikṛtenārtānāṃ pīḍitānāṃ tathā tapasvināmanavaratakṛcchracāndrayaṇādyācaraṇakalitadaurbalyātiśayaparikhinnahṛdayānāṃ <ref type="pratīka" cRef="NāŚā.1.114">viśrāntijananaṃ</ref> duḥkhaprasaraṇavighātakam | pratihataduḥkhānāṃ cāhlādātmaka<app><rdg>dadhṛtyā</rdg></app> dhṛtyādikāraṇaṃ yathāyogam | tadyathā ― śokārtasya dhṛtirvyādhyārtasya krīḍā | śramārtasya sukham | ādigrahaṇena tapasvino mativibodhādaya<app><rdg wit="#भ">bodha iti</rdg></app> iti mantavyam |</p>
+
+﻿<pb n="040"/>
+
+<p>na caitāvadeva yāvatkālāntare 'pi<app><rdg wit="#म #भ">re viparī</rdg></app> viparīpākaṃ sukhamupadeśajaṃ janayatītyevaṃ duḥkhitānāṃ tatpraśamasukhavitaraṇa<app><rdg wit="#म">vikāra</rdg></app>kālāntarasukhalābhāḥ prayojanam | ye na duḥkhitāḥ<app><rdg wit="#म">yenāduḥkhitā</rdg></app> sukhabhūyiṣṭhavṛttaya eva rājaputrādyāsteṣāṃ lokavṛtte dharmādyupāyavarge upadeśakāryetannāṭyam | lokaśabdena lokavṛttam |</p>
+
+﻿<pb n="041"/>
+
+<p>nanu kiṃ guruvadupadeśaṃ karoti | netyāha | kintu buddhiṃ vivardhayati | svapratibhāmeva tādṛśīṃ vitaratītyarthaḥ | na ca sā duṣṭā pratītirityāha ― <ref type="pratīka" cRef="NāŚā.1.115">hitam</ref> ― hitapratibhājanakatvāt | atra hetumāha ― yato dharmādanapetam | yaśaśśabdena lokaprasiddhihetubhūtamad ― bhutakāri vastūcyate, yathā rāmasya saptasālavyathanādi | tadupadeśe sādhu yaśasyam | āyurvṛddhihetava ācārā āyuḥ | teṣu sādhu āyuṣyam | evaṃ duḥkhitānāmaduḥkhitānāṃ cedamupādeyamityuktam | duḥkhaṃ ca śārīraṃ mānasaṃ vā | śārīramapi daivakṛtaṃ svayaṃkṛtamapi dṛṣṭaṃ phalo(ṣṭaphalo)ddeśenānyena cetyetāvāneva duḥkhitavarga iti duḥkhārtānāmityādibhedopādānasya phalam |</p>
+
+<p>kecittu dharmo dharmapravṛttānāmityādi sāmājikaviṣayatvena vyācakṣate hṛdayasaṃvādayogyatātātparyeṇa | anye tvakārapraśleṣādivyākhyāprakāreṇādharmapravṛttānāmityādi viparītatvena vyācakṣate upadeśyatvābhiprāyeṇa | ubhayamapyetadasat, paunaruktyādi doṣāpātāt | caitaddharmya yaśasyamityādeḥ punaruktam | (108-115)</p> 
+
+<p>na cānena pradhānamātra evopadeśaḥ kṛtaḥ puruṣārthopāyamātre vā | yāvattadupāyopeyādiṣvapīti darśayati ― na <ref type="pratīka" cRef="NāŚā.1.116">taditi</ref> | <ref type="pratīka" cRef="NāŚā.1.116">asminniti</ref> | saptadvīpagatabhāvānukīrtanadbharūpe nāṭye dṛśyamāne yanna dṛśyate na hṛdayagocarameti tādṛgjñānādikaṃ nāstīti śeṣaḥ | <ref type="pratīka" cRef="NāŚā.1.116">jñānamityu</ref> pādeyamātmajñānādi |</p>
+
+<p>yathā <title>veṇīsaṃhāre</title> ― <cit><quote>‘ātmārāmā vihitaratayo nirvikalpe samādhau’</quote> <ref>(1-23)</ref></cit> ityādi | <q>śilpamiti</q> | mālācitrapustādiyojanam |</p>
+
+<p>yatha ‘veṣṭitagrathitagumphasaṃhatairātataiśca kusumaissapallavaiḥ’ ityādau | vidyā daṇḍanītyādi |</p>
+
+﻿<pb n="042"/>
+
+<p>yathā  <cit><quote>‘śamavyāyāmābhyāṃ prativihitatantrasya nṛpateḥ |’</quote> <ref>(bāla. rā. 1-24)</ref></cit> ityādau | <q>kalā</q> gītavādyādikā |</p> <p>yathā <cit><quote>‘vyaktirvyañjanadhātunā’</quote> <ref>(nāgānanda 1-14)</ref></cit> ityādau |</p>
+
+<p><q>yogo</q> yojanaṃ teṣāmeva jñānādīnāṃ kalāntānāṃ svabhedairanyonyasvabhedaiḥ | yathā ―</p>
+
+<lg>  
+  <l>
+    <seg type="pāda">“meghāśaṅkiśikhaṇḍitāṇḍavavidhāvācāryakaṃ kalpaya-</seg>
+    <seg type="pāda">nnirhrādo murajasya mūrcchatitarāṃ veṇusvanāpūritaḥ |</seg>
+  </l>
+  <l>
+    <seg type="pāda">vīṇāyāḥ kalayan layena gamakānugrāhiṇīṃ mūrcchanāṃ</seg>
+    <seg type="pāda">karṣatyeṣa ca <app><rdg>kālakuṭṭitakalā</rdg></app>kālakūṭitakalāramyaśrutiṃ ṣāḍabe ||” (bhejjala-rādhāvipralambha)</seg>
+  </l>
+</lg>
+
+<p>ityādau | tatrehātodyanicayagītayojanā kṛtā |</p>
+
+<p>anyonyaṃ yathā ― <cit><quote>‘āvilapayodharāgraṃ lavalīdalapāṇḍukolacchāyam’</quote> <ref>(vikramo 5-8)</ref></cit> ityādau | atra hi śrṛṅgārāṅgasya vaidyakavidyayā yojanā |</p>
+
+<p><ref type="pratīka" cRef="NāŚā.1.116">karmeti</ref> yuddhaniyuddhādirvyāpāraḥ | yathā ―</p>
+<lg>
+  <l>
+    <seg type="pāda">“ālīḍhasthitaṭaṅkitasya nimitāṃ dṛṣṭitrayīṃ tanvataḥ</seg>
+    <seg type="pāda">puṅkhāgrakramasarpaṇena viśikhaprāntādathoccaistamām |</seg>
+  </l>
+  <l>
+    <seg type="pāda">cakrībhūtaśarāsanasya na <app><rdg wit="#भ">namanāla</rdg><rdg wit="#भ">racanāla</rdg></app>manālla (k la) kṣyādamī vicyu<app><rdg wit="#म">vidyutaḥ</rdg></app>tā-</seg>
+    <seg type="pāda">ścitraṃ citramumādhavasya yugapatsarve surendradviṣaḥ ||” iti ||</seg>
+  </l>
+</lg>
+ 
+﻿<pb n="043"/>
+
+<p>evaṃ saprayojanatvamabhidhāya prakṛtameva purākalpamanubadhnāti ― tannānneti | taditi | tasmāt | atra nāṭye 'marānprati na manyuḥ kāryaḥ | te 'pi tatra na kecit |</p>
+
+<p>etadevāha ― <ref type="pratīka" cRef="NāŚā.1.117">saptadvīpānukaraṇamayī</ref> hi <app><rdg wit="#भ #म">kaṭakri | kaḥ kriyā</rdg></app>kriyā(naṭakriyā)raṅge dṛśyate | na ca sāgaradvīpādīnāṃ kaścittatra sambhava iti bhāvaḥ (116-117) |</p>
+
+<p>nanu kimarthameṣāṃ nāmāni gṛhītānītyāśaṅkyāha ― <ref type="pratīka" cRef="NāŚā.1.118">devānāmi</ref>tyādi | eteṣāmevādhikāripuruṣatvāt<app><rdg wit="#म">ṣatvaṃ ni</rdg></app> nirādhārasya vṛttasya darśayitumaśakyatvāt | etaccoktaṃ pūrvam | ata eva yatra nirvyājasahajaudāryadharmādiviṣaye baliprahlādaprabhṛteḥ prasiddhistatra so 'pyudīrita āśrayatvena | tadāha ― <ref type="pratīka" cRef="NāŚā.1.118">asurāṇā</ref>miti | na ca bhavadvairiṇa evātra varṇitāḥ api tu brahmarṣayo 'pi | anena ‘pratyādeśo 'yamasmākam | surārtham ||’ ityāśaṅkādvayamapi parihṛtam | etattātparyeṇopasaṃharati <ref type="pratīka" cRef="NāŚā.1.119">yo 'ya</ref>miti | <ref type="pratīka" cRef="NāŚā.1.119">aya</ref>miti ― pratyakṣakalpānuvyavasāyaviṣayaḥ lokaprasiddhasatyāsatyādi vilakṣaṇatvāt yacchabdavācyaḥ | lokasya sarvasya sādhāraṇatayā svatvena bhāvyamānaścarvyamāṇo 'rtho nāṭyam | sa ca sukhaduḥkha<app><rdg>sukha</rdg></app>rūpeṇa vicitreṇa samanugataḥ | na tu tadekātmā |</p>
+
+<p>tathā hi ― ratihāsotsāhavismayānāṃ sukhasvabhāvatvam | tatra tu cirakālavyāpisukhānusandhirūpatvena viṣayaunmukhyaprāṇatayā tadviṣayāśaṃsābāhulyenāpāyabhīrutvād duḥkhāṃśānuvedho rateḥ | hāsasya sānusandhānasya vidyutsadṛśatātkālikālpaduḥkharūpaḥ sukhānugatau | utsāhasya tātkālikaduḥkhāyāsarūpanimajjanānusandhinā bhāvibahujano ― pakāriciratarakālabhāvisukhasañcikīrṣātmanā sukharūpatā | vismayasya niranusandhānataṭittulyasukharūpatā |</p>
+
+<p>krodhabhayaśokajugupsānāṃ tu duḥkhasvarūpatā | tatra cirakāladuḥkhānusandhiprāṇo viṣayagatātyantikasukhabhāvanākāṃkṣāprāṇatayā sukhaduḥkhānuvedhavān krodhaḥ | niranusandhitātkālikaduḥkhaprāṇatayā tadapagamākāṃkṣotprekṣitasukhānusambhinnaṃ bhayam | dvaikālikastvabhīṣṭaviṣayanāśajaḥ prāktanasukhasmaraṇānuviddhaḥ sarvathaiva duḥkharūpaḥ śokaḥ | <app><rdg wit="#भ">utpa</rdg></app>utpādyāmānasukhānusandhānajīvitaviṣayātpa(yā pa)lāyanaparāyaṇarūpānni(pā ni) ṣidhyamānaśaṅkitasukhānuviddhā jugupsā | samastama(ta)tpūrvaduḥkhasañcayasaṃsmaraṇaprāṇitaḥ(to ') saṃbhāvitaduḥkhabahulasukha(duḥkha)yoniḥ nirvedaḥ | evaṃ vyabhicāriprabhṛtiṣvapi vācyam | saṃvitsvabhāvāḥ sukhādaya iti ca darśane na tatsvabhāvatvam | anyetva(taistva)tra tadvedanarūpatvameva teṣāṃ mantavyam | evaṃ laukikā ye sukhaduḥkhātmano bhāvāḥ ﻿<pb n="044"/>tatsadṛśastatsaṃskārānuviddho nāṭyalakṣaṇo 'rthaḥ samudāyarūpastasyaiva bhāgānusaraṇayaḥ |</p>
+
+<p>evaṃ dayāratyādirūpānusaraṇabhūto (evaṃbhūto) nāṭyalakṣaṇo 'rthaḥ kathaṃ pratītigocarībhavatītyāha ― <ref type="pratīka" cRef="NāŚā.1.119">aṅgādīti</ref> | ye 'bhinayāḥāṅgikādayaḥ na ca te liṅgasaṅketādirūpāḥ | api tu pratyakṣasākṣātkārakalpalaukikasamyaṅmithyājñānādirūpaḥ | tasyaiva bhāvāḥ śṛṅgārādayo ratyādivilakṣaṇāsvādaparyāyapratītyupayoginaḥ | ata evābhimukhyanayanahetutvādanyalokaśāstrā<app><rdg wit="#भ">strapra</rdg></app> prasiddhenābhinayaśabdena vyapadeśyāḥ | tathā 'ṅgāni śākhānṛttagītāni ādyaḥ pradhānā yeṣāṃ te 'ṅgādayaḥ | tathā 'ṅgāni vyabhicāriṇo bhāvādayo heturūpā vibhāvāḥ | abhinayāḥ anubhavāḥ | ta ete rasābhimukhyanayanahetavaḥ yadvakṣyati vibhāvānubhāva ‘vyabhicārisaṃyogādrasaniṣpattiḥ’ iti | (a-6) tairupetaḥ | upa samīpamitaḥ saṃviddarpaṇamabhisaṅgakrāntaḥ | evaṃbhūto 'rtho nāṭyaṃ naṭanīyaṃ nartanīyam | tathā gamanīyaṃ yatnena svarūpato hṛdayenānupraveṣṭavyam | tathā nāṭakānāṃ (naṭānāṃ) pāramparyātmakaṃ vṛttaṃ nāṭyaṃ dharmāmnāyarūpaṃ ca | tacca sukhaduḥkhābhyāṃ phalarūpābhyāṃ samyaganvitam | teṣāṃ paścādbhāvitvāt | ﻿<pb n="045"/>tena heyopādeyavyutpattiḥ phalam | etacca vitatyāgre bhāvasvarūpaṃ nirūpayiṣyāmaḥ | (118-119) |</p>
+
+<p>evaṃ sāntvenāpasāriteṣvapi vighneṣu divyanideśanā<app><rdg wit="#भ">śānā</rdg></app>nāmamodhatvāt pūrvaviniyuktadevatāṃ<app><rdg wit="#म">tāṅgā</rdg></app>śānāṃ tatra tatra sannidhānādyajanamavaśyakāryamiti pradarśayituktamevetihāsamanusandhannirūpayati ― <ref type="pratīka" cRef="NāŚā.1.120">etasminriti</ref> | <ref type="pratīka" cRef="NāŚā.1.120">antara</ref> iti samaye | <ref type="pratīka" cRef="NāŚā.1.120">vidhiva</ref>diti vyācaṣṭe ― <ref type="pratīka" cRef="NāŚā.1.121">balipradānai</ref> ― rityādi | balyante āpyāyyante devatā aneneti baliḥ | vicitravarṇataṇḍulādiracanāviśeṣaḥ | <app><rdg>dānaṃ tilā</rdg></app>tilādayaścāgnau hūyanta iti <ref type="pratīka" cRef="NāŚā.1.121">homāḥ</ref> | ubhayatra viśeṣaṇaṃ <ref type="pratīka" cRef="NāŚā.1.121">mantrauṣadhīti</ref> | mantrā vakṣyamāṇāḥ | oṣadhayo vacābalājamodaprabhṛtayaḥ | praśastāni dhānyāni ca | kharaviśadaṃ śaṣkulīmodakādi bhojyaṃ bhakṣyamucyate | bhakṣaṇīyantu bhakṣyaṃ pāyasakṛsarādi | pānāni kṣīrakṣudrākṣārasādīni | baliḥ pūrvokto racanāviśeṣaḥ | etaivicchittiyojitairvividhatayā kalpyatām | śobhāpradhānaṃ hi nāṭye sarvam |</p> 
+
+<p>nanu devānāṃ devapūjākaraṇe kiṃ phalamityāha ― <ref type="pratīka" cRef="NāŚā.1.122">martyalokagatā</ref> ityādi | yadyadācarati śreṣṭha iti nyāyāditi bhāvaḥ | <ref type="pratīka" cRef="NāŚā.1.122">pravartayoditi</ref> | devānuṣṭhitācārānuvartitvāt | loka iti śeṣaḥ | (120-122) |</p> 
+
+<p>nanu yadi lokaḥ sadācāraṃ nānuvarteta tataḥ kimityāha ― <ref type="pratīka" cRef="NāŚā.1.123">apūjayitveti</ref> |</p>
+
+﻿<pb n="046"/>
+
+<p><ref type="pratīka" cRef="NāŚā.1.123">niṣphala</ref>miti | <ref type="pratīka" cRef="NāŚā.1.123">tasye</ref>ti | nāṭyācāryasya | pāralaukikamapi pratyavāyamāha  ― <ref type="pratīka" cRef="NāŚā.1.123">tiryagyoniṃ</ref> ceti | (123) |</p>
+
+<p>nanu yadyapūjena pratyavāyastarhi pūjane kiṃ tannivṛttimātraṃ phalam | netyāha  ― yathā <ref type="pratīka" cRef="NāŚā.1.126">vidhī</ref>ti | yathā devairvihitā | kathametajjñāyata ityāha  ― <ref type="pratīka" cRef="NāŚā.1.126">yathādṛṣṭa</ref>miti śāstradṛṣṭo 'sau vidhirityarthaḥ | <ref type="pratīka" cRef="NāŚā.1.126">arthān śubhā</ref>niti | aihalaukikadhanamānaprasiddhilābha uktaḥ | (124-126)</p>
+
+<p>evaṃ martyānpratyābhidhāya prakṛtameva purākalpamanusandhatte  ― <ref type="pratīka" cRef="NāŚā.1.127">evamuktveti</ref>| nāṭyācāryasyaiva devayajane 'dhikāraḥ | tasyaiva phalalābhaḥ | kaveḥ prekṣāpravartayituśca tatproktṛtvamityanenoktam | rajyate 'neneti raṅgo nāṭyam | tadādhāratvānmaṇḍapaḥ | tadadhiṣṭhātṛtvācca devatā apīti maṇḍapādhyāyasya dvitīyasyopoddhātaṃ karotīti <app><rdg wit="#RK">viśeṣaḥ</rdg></app>śivam | (127)</p>
+
+<lg>
+  <l>
+    <seg type="pāda">triṇetrapādābjasadāstavo<app><rdg wit="#भ">dātapo</rdg></app></seg>
+    <seg type="pāda">(samāśrayo)llasatprasādabhāksphuṭamiha nāṭyaśāsane |</seg>
+  </l>
+  <l>
+    <seg type="pāda">pravartiteyaṃ hṛdaye mahādhiyāṃ</seg>
+    <seg type="pāda">prakāśatāmabhinavaguptabhāratī ||</seg>
+  </l>
+</lg>
+
+<trailer>
+  <p>iti śrīmahāmāheśvarābhinavaguptācāryaviracitāyāmabhinavabhāratyāṃ bhāratīya-</p>
+  <p>nāṭyaśāstravivṛtau nāṭyotpattirnāmaḥ prathamo 'dhyāyaḥ ||</p>
+</trailer>
+
+</div>
+</body>
+</text>
+</TEI>

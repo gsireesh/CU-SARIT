@@ -1,0 +1,482 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html xmlns:fn="http://www.w3.org/2005/xpath-functions" encodingxmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+      <link rel="stylesheet" type="text/css" href="../cssstylesheet2.css">
+      <title></title><script type="text/javascript">
+    
+    function toggle(id) {
+       var e = document.getElementById(id);
+       if(e.style.display == 'block')
+          e.style.display = 'none';
+       else
+          e.style.display = 'block';
+    }
+// qTip - CSS Tool Tips - by Craig Erskine
+// http://qrayg.com
+//
+// Multi-tag support by James Crooke
+// http://www.cj-design.com
+//
+// Inspired by code from Travis Beckham
+// http://www.squidfingers.com | http://www.podlob.com
+//
+// Copyright (c) 2006 Craig Erskine
+// Permission is granted to copy, distribute and/or modify this document
+// under the terms of the GNU Free Documentation License, Version 1.3
+// or any later version published by the Free Software Foundation;
+// with no Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts.
+// A copy of the license is included in the section entitled "GNU
+// Free Documentation License".
+
+var qTipTag = "a,label,input"; //Which tag do you want to qTip-ize? Keep it lowercase!//
+var qTipX = 0; //This is qTip's X offset//
+var qTipY = 15; //This is qTip's Y offset//
+
+//There's No need to edit anything below this line//
+tooltip = {
+  name : "qTip",
+  offsetX : qTipX,
+  offsetY : qTipY,
+  tip : null
+}
+
+tooltip.init = function () {
+	var tipNameSpaceURI = "http://www.w3.org/1999/xhtml";
+	if(!tipContainerID){ var tipContainerID = "qTip";}
+	var tipContainer = document.getElementById(tipContainerID);
+
+	if(!tipContainer) {
+	  tipContainer = document.createElementNS ? document.createElementNS(tipNameSpaceURI, "div") : document.createElement("div");
+		tipContainer.setAttribute("id", tipContainerID);
+	  document.getElementsByTagName("body").item(0).appendChild(tipContainer);
+	}
+
+	if (!document.getElementById) return;
+	this.tip = document.getElementById (this.name);
+	if (this.tip) document.onmousemove = function (evt) {tooltip.move (evt)};
+
+	var a, sTitle, elements;
+	
+	var elementList = qTipTag.split(",");
+	for(var j = 0; j < elementList.length; j++)
+	{	
+		elements = document.getElementsByTagName(elementList[j]);
+		if(elements)
+		{
+			for (var i = 0; i < elements.length; i ++)
+			{
+				a = elements[i];
+				sTitle = a.getAttribute("title");				
+				if(sTitle)
+				{
+					a.setAttribute("tiptitle", sTitle);
+					a.removeAttribute("title");
+					a.removeAttribute("alt");
+					a.onmouseover = function() {tooltip.show(this.getAttribute('tiptitle'))};
+					a.onmouseout = function() {tooltip.hide()};
+				}
+			}
+		}
+	}
+}
+
+tooltip.move = function (evt) {
+	var x=0, y=0;
+	if (document.all) {//IE
+		x = (document.documentElement && document.documentElement.scrollLeft) ? document.documentElement.scrollLeft : document.body.scrollLeft;
+		y = (document.documentElement && document.documentElement.scrollTop) ? document.documentElement.scrollTop : document.body.scrollTop;
+		x += window.event.clientX;
+		y += window.event.clientY;
+		
+	} else {//Good Browsers
+		x = evt.pageX;
+		y = evt.pageY;
+	}
+	this.tip.style.left = (x + this.offsetX) + "px";
+	this.tip.style.top = (y + this.offsetY) + "px";
+}
+
+tooltip.show = function (text) {
+	if (!this.tip) return;
+	this.tip.innerHTML = text;
+	this.tip.style.display = "block";
+}
+
+tooltip.hide = function () {
+	if (!this.tip) return;
+	this.tip.innerHTML = "";
+	this.tip.style.display = "none";
+}
+
+window.onload = function () {
+	tooltip.init ();
+}
+    
+    </script></head>
+   <body>
+      <span class="pageinfo">[page 47]</span>
+      
+      <div class="lg" type="">
+         <span class="line">संसारनाट्यजननधातृबीजलताजुषीम्&nbsp;।</span>
+         <span class="line">जलमूर्तिं शिवां पत्युः सरसां पर्युपास्मेहे&nbsp;॥ १&nbsp;॥</span>
+         
+      </div>
+      
+      <p>वृत्तेऽध्याये यथातत्त्वमिति (१-५) वचनवशात् भरतमुनिर्यजनादेः पाठ्या— दिवदन्तरङ्गतां
+         पश्यन्परमार्थनिर्णयेन कुर्यात् का तु कथा (पश्यति परमार्थनिर्णयेन&nbsp;। द्वितीय तु कथम्)
+         मण्डपलक्षणं स्यात्&nbsp;। अत एव <a href="" class="app" title="मुनिर्गीतम्"><span class="appnum"><sup>1</sup></span></a>मुनिः ‘गानं रङ्गश्च सङ्ग्रहः’ (६-१०) इति रङ्गं सर्वं पश्चाद्वक्ष्यति&nbsp;। तस्मात्कदाचिदे(त्कथमे)तदित्याशङ्कमाना
+         (नानां) ‘मुनय पप्रच्छुः’ इति परमात्मानं परिकलप्य मुनिराह—<span class="mentioned"><a href=".html#N%C4%81%C5%9A%C4%81.2.1" target="_blank">भरतस्य वच</a></span> इति ब्रह्येव कविः, शक्र इव प्रयोजयिता, भरत इव नाट्या<a href="" class="app" title="नाट्यानामा"><span class="appnum"><sup>2</sup></span></a>चार्यः, कोहलादय इव नटाः, अप्सरस इव सुकुमारोपकरणं, स्वातिरिवानद्धवित्, नारदवद्गीतज्ञः,
+         सुरक्षितो मण्डपः, इन्द्रोत्सवसदृशः प्रयोगकालः, प्रशान्तरागद्वेषादिकाः<a href="" class="app" title="रागद्वेषाः"><span class="appnum"><sup>3</sup></span></a> सामाजिकाः, देवतापूजनपूर्वकः प्रयोग इत्येवं सङ्ग्रहेण पूर्वाध्यायनिरूपितमर्थवधार्येत्यर्थः&nbsp;। (<span class="mentioned"><a href=".html#N%C4%81%C5%9A%C4%81.2.1" target="_blank">यजनमिति</a></span>) ‘रङ्गपूजां कुरुष्व’ इति निवृत्तेऽध्याये निरूपितमिति सङ्गतिः&nbsp;। देवविषये यजनस्य मण्डपस्य
+         क्रियां विना न निष्पत्तिरिति प्रथमं क्रियाप्रश्नस्तेषां विस्मृतोऽपि झटिति स्मृतिं
+         गत इत्यभि<a href="" class="app" title="इतो हि प्रायेण दर्श्यते <b&gt;म</b&gt;, इत्थं हि प्रायेण दृश्यते <b&gt;भ</b&gt;"><span class="appnum"><sup>4</sup></span></a> प्रायेण दर्शयति— <span class="mentioned"><a href=".html#N%C4%81%C5%9A%C4%81.2.2" target="_blank">अथ</a></span> वेति&nbsp;। पूर्वप्रश्नार्थोप<a href="" class="app" title="प्रश्नोपम <b&gt;भ</b&gt;"><span class="appnum"><sup>5</sup></span></a>मर्दनाय&nbsp;। अत एव <span class="mentioned"><a href=".html#N%C4%81%C5%9A%C4%81.2.2" target="_blank">पूजन</a></span>—
+         
+         <span class="pageinfo">[page 48]</span>
+         मिति पुनर्वचनम्&nbsp;। <span class="mentioned"><a href=".html#N%C4%81%C5%9A%C4%81.2.2" target="_blank">क्रियाः</a></span> इतिकर्तव्यता&nbsp;। <span class="mentioned"><a href=".html#N%C4%81%C5%9A%C4%81.2.2" target="_blank">लक्षणं</a></span> सन्निवेशपरिमाणादि&nbsp;। अतीतेषूपदेशो व्यर्थ इति <span class="mentioned"><a href=".html#N%C4%81%C5%9A%C4%81.2.2" target="_blank">भविष्यद्भि</a></span>रित्युक्तम्&nbsp;। देवानां मनसा सम्पत्तेः नरैरिति&nbsp;। ननु लक्षणं
+         किं कार्यम्&nbsp;। लक्ष्यत इति लक्षणं सन्निवेश इत्यदोषः&nbsp;। अथ वा भाविभिर्यत्कार्यं नाट्यवेश्म
+         तत्र यत्क्रियालक्षणं पूजनं तत्कथमिति सम्बन्धः&nbsp;। (१-२)
+      </p>
+      
+      <p>पूर्वकृते प्रश्नपञ्चके निर्णयं कृत्वेदं प्रश्नान्तरं निर्णयेदित्याशङ्कमाना मुनयः पुनराहु<span class="mentioned"><a href=".html#N%C4%81%C5%9A%C4%81.2.3" target="_blank">रिहादिरिति</a></span>&nbsp;। नाट्यस्य योग <a href="" class="app" title="उपपत्तिः"><span class="appnum"><sup>1</sup></span></a>उत्पत्तिः&nbsp;। <span class="mentioned"><a href=".html#N%C4%81%C5%9A%C4%81.2.3" target="_blank">ताव</a></span>दित्यनेन पूर्वप्रश्नितस्यात्याग उक्तः&nbsp;। एवकारो लक्षणशब्दानन्तरम्&nbsp;। इतिकर्तव्यतायाः
+         तदङ्गत्वात्&nbsp;। यजनस्य च तन्निष्पत्यनन्तरत्वात्&nbsp;। <span class="mentioned"><a href=".html#N%C4%81%C5%9A%C4%81.2.4" target="_blank">तेषामिति</a></span>&nbsp;। अन्यथा तु न ब्रूयादेवोक्ताद्धेतोः&nbsp;। अनेन श्लोकेन लक्षणपूजनज्ञानं देवानामप्युपयोगि&nbsp;।
+         सङ्कल्पिस्यापि निर्माणस्य ज्ञानापेक्षित्वादित्युक्तम्&nbsp;। अत एवात्र क्रियेति नोक्तम्&nbsp;।
+         (३-४)
+      </p>
+      
+      <p>ननु किं <a href="" class="app" title="क्रियादेवोच्य <b&gt;म</b&gt;"><span class="appnum"><sup>1</sup></span></a>क्रियै(या ने)वोच्यत इत्याह—<span class="mentioned"><a href=".html#N%C4%81%C5%9A%C4%81.2.5" target="_blank">दिव्याना</a></span>मिति&nbsp;। श्रूयतामित्यनुवर्तते&nbsp;। नराणां कार्या क्रिया इतिकर्तव्यता च श्रूयताम्&nbsp;। चकाराल्लक्षणपूजने&nbsp;।
+         शास्त्रे<a href="" class="app" title="योक्ता <b&gt;म</b&gt;"><span class="appnum"><sup>2</sup></span></a>णोक्ता नराणामेव कस्मादित्याह—<span class="mentioned"><a href=".html#N%C4%81%C5%9A%C4%81.2.5" target="_blank">दिव्याना</a></span>मिति&nbsp;। सृज्यमानत्वेन कर्मणोऽपि विषयत्ववि(त्वमेव) यत्र जन्मक्रमनियतप्ररोहकुसुमफलानि
+         बहुविचित्रतरुलतास्थलीसरोवराक्रीडमयान्युपवनान्यपि 
+         
+         <span class="pageinfo">[page 49]</span>
+         मानसानि, तत्र गृहे का सम्भावनेति&nbsp;। <span class="mentioned"><a href=".html#N%C4%81%C5%9A%C4%81.2.6" target="_blank">श्रूयता</a></span>मिति&nbsp;। <span class="mentioned"><a href=".html#N%C4%81%C5%9A%C4%81.2.6" target="_blank">तदि</a></span>ति&nbsp;। यतो नराणां यत्नतः कार्यताप्रकारः&nbsp;। <span class="mentioned"><a href=".html#N%C4%81%C5%9A%C4%81.2.6" target="_blank">यत्रे</a></span>ति देशकालौ&nbsp;। <span class="mentioned"><a href=".html#N%C4%81%C5%9A%C4%81.2.6" target="_blank">वास्त्विति</a></span>&nbsp;। गृहभूमिगतं परिमाणमिह मन्तव्यम्&nbsp;। (पूजा)लक्षणोक्तेत्युक्तम्&nbsp;। (५-६)
+      </p>
+      
+      <p>तत्र किं तल्लक्षणमित्याह—<span class="mentioned"><a href=".html#N%C4%81%C5%9A%C4%81.2.7" target="_blank">इह प्रेक्षागृह</a></span>मिति&nbsp;। इह नाट्यमण्डपे&nbsp;। <span class="mentioned"><a href=".html#N%C4%81%C5%9A%C4%81.2.7" target="_blank">सन्निवेशः</a></span> चशब्दात्प्रमा<a href="" class="app" title="प्रमाणहेतुकमे <b&gt;भ</b&gt;"><span class="appnum"><sup>1</sup></span></a>णमेतत्&nbsp;। <span class="mentioned"><a href=".html#N%C4%81%C5%9A%C4%81.2.7" target="_blank">विश्वकर्मणा परिकल्पितः</a></span>&nbsp;। किं स्वबुदध्या&nbsp;। न&nbsp;। अपि तु <span class="mentioned"><a href=".html#N%C4%81%C5%9A%C4%81.2.%E0%A5%AD" target="_blank">शास्त्रतः</a></span> प्रेक्षागृहे विचार्य&nbsp;। शक्तश्चासौ विचार इत्याह—<span class="mentioned"><a href=".html#N%C4%81%C5%9A%C4%81.2.7" target="_blank">धीमतेति</a></span>। ज्ञायत इत्याह&nbsp;। शास्त्रं कृतं तदप्यपरशास्त्रमूलमिति प्रवाहानादित्वमुक्तम्&nbsp;। कोऽसौ
+         त्रिविध इत्याह— <span class="mentioned"><a href=".html#N%C4%81%C5%9A%C4%81.2.8" target="_blank">विकृष्टश्चे</a></span>ति&nbsp;। विभागेन कृष्टो दीर्घो न तु चतसृष्टु दिक्षु साम्येन&nbsp;। तिस्रोऽश्रय<a href="" class="app" title="तिस्त्रोऽश्रा यस्य त्र्यश्रि <b&gt;भ</b&gt;"><span class="appnum"><sup>2</sup></span></a>स्त्र्यश्री, (श्रयो यस्य त्र्यश्रि) तदस्मिन्निति मत्वर्थीयोऽच्&nbsp;। एतान्येव त्रीणि ज्येष्ठादीनीति
+         केचित्&nbsp;। अन्ये तु प्रत्येकं त्रित्वमिति नवैतेऽत्र भेदा इत्याहुः&nbsp;। एतदेव युक्तम्&nbsp;।
+         तथा चाह—<span class="mentioned"><a href=".html#N%C4%81%C5%9A%C4%81.2.7" target="_blank">तेषा</a></span>मिति&nbsp;। प्रमाणं हस्तदण्डाश्रयं ज्येष्ठादित्वम्&nbsp;। न तु सन्निवेशाश्रयमिति यावत्&nbsp;।
+      </p>
+      <span class="line">‘शत<a href="" class="app" title="साष्टं शतम् <b&gt;भ</b&gt;"><span class="appnum"><sup>3</sup></span></a> चाष्टौ चतुःषष्टिर्द्धात्रिंशच्चेति निश्चयात्&nbsp;।’</span>
+      
+      <p>इति केचित्पठन्ति&nbsp;। तेषां चास्ति(पि) हस्तदण्डसमाश्रयत्वं वाचकं भवति&nbsp;। एतच्च सर्वं सम्भवमात्रेणोच्यते&nbsp;।
+         <a href="" class="app" title="ननु वा <b&gt;म</b&gt;"><span class="appnum"><sup>1</sup></span></a>अनु(नानु)वादकतया&nbsp;। न त्वियन्तो भेदा उपयोगिनः&nbsp;। एवं चाष्टादश भेदास्तावच्छास्त्रे दृष्टाः&nbsp;।
+         ते चान्यत्वे(द्यत्वे) यद्यप्यनुपयोगिनः तथापि च सम्प्रदायाविच्छेदार्थं निर्दिष्टाः&nbsp;।
+         केषाञ्चित्कदाचिदुपयोगो भविष्यतीति&nbsp;। यथोक्तम्—‘अप्रयुक्ते दीर्घसत्रवत्’ इति&nbsp;। (७-९)
+         
+         <span class="pageinfo">[page 50]</span>
+         इदन्त्वि<a href="" class="app" title="न्त्वितीहो <b&gt;मभ</b&gt;"><span class="appnum"><sup>2</sup></span></a>होपयोगीति दर्शयति—<span class="mentioned"><a href=".html#N%C4%81%C5%9A%C4%81.2.10" target="_blank">अष्टाधिकं</a></span> शतमित्यादि&nbsp;। <span class="mentioned"><a href=".html#N%C4%81%C5%9A%C4%81.2.10" target="_blank">इष्यत</a></span> इति&nbsp;। अन्यत्वेऽपीत्याशयः&nbsp;। <span class="mentioned"><a href=".html#N%C4%81%C5%9A%C4%81.2.11" target="_blank">देवाना</a></span>मिति&nbsp;। यत्र देवासुरप्राया एव नायकप्रतिनायकास्तत्र <a href="" class="app" title="तत्र हि धीरादावार <b&gt;म</b&gt;"><span class="appnum"><sup>3</sup></span></a>डिमादावारभटीप्रधाने विततरङ्गपीठोपयोगात् भाण्डवाद्यप्रधानत्वाच्च परिक्रमणादेरुच्च<a href="" class="app" title="च्चतादीप्तताकारापरिग्रहादि <b&gt;मभ</b&gt;"><span class="appnum"><sup>4</sup></span></a>तरदीर्घतरदीर्घतालपरिग्रहादियोगाच्च<a href="" class="app" title="च्चाभक्त <b&gt;मभ</b&gt;"><span class="appnum"><sup>5</sup></span></a> भक्तभावस्यासम्भवादष्टोत्तरशतहस्तो मण्डप इत्यर्थः&nbsp;। यस्तु व्याचष्टे प्रेक्षका अत्र
+         देवादयो विवक्षिता न तु प्रयोज्याः&nbsp;। तेषां नियतसंख्याकत्वादिति&nbsp;। तस्यास्मदभिप्रायो
+         न स्मृतिपथमागतः सननपि दशरूपकादौ । स चानन्तरमेव दर्शयिष्यते&nbsp;। (१०-११)
+      </p> 
+      
+      <p><span class="mentioned"><a href=".html#N%C4%81%C5%9A%C4%81.2.12" target="_blank">प्रमाणं लक्षणं</a></span> यन्निर्दिष्टमिति <a href="" class="app" title="जाता <b&gt;भन</b&gt;"><span class="appnum"><sup>1</sup></span></a>जातावेकवचनम्&nbsp;।
+      </p>
+      
+      <span class="pageinfo">[page 51]</span>
+      
+      <p>कानि प्रमाणानीत्याह—<span class="mentioned"><a href=".html#N%C4%81%C5%9A%C4%81.2.14" target="_blank">अणु रजश्चेत्या</a></span>दिना&nbsp;। तेषां लक्षणान्याह— <span class="mentioned"><a href=".html#N%C4%81%C5%9A%C4%81.2.14" target="_blank">अणवोऽष्टा</a></span>वित्यादि&nbsp;। यतः प्रभृति दृश्यता प्रवर्तते सोऽणुः&nbsp;। अणुः प्रसिद्धोऽणुपरिणामः&nbsp;। द्व्यणुकद्व<a href="" class="app" title="कत्रयप <b&gt;भ</b&gt;"><span class="appnum"><sup>1</sup></span></a>यपरमाणुद्वयारब्धा अणव एव वा महत्त्वयुक्ताः&nbsp;। परमाणुद्वयारब्धे तु
+         द्व्यणुकेऽणुपरिमाणमस्तु&nbsp;। कोऽत्र विरोध इत्यलमवान्तरेण&nbsp;। <span class="mentioned"><a href=".html#N%C4%81%C5%9A%C4%81.2.16" target="_blank">अनेनै</a></span>वेति&nbsp;। ‘देवानान्तु भवेत्’ इत्येनन<a href="" class="app" title="नेन मण्डपाः <b&gt;म</b&gt;"><span class="appnum"><sup>2</sup></span></a> यदुक्तम्&nbsp;। मण्डपाः—तद्यथा ज्येष्ठप्रमाणं डिमप्राये&nbsp;। यद्वक्ष्यति—
+         
+         
+         
+         <div class="lg" type="">
+            <span class="line">निर्घातोल्कापातैरुपरागेणेन्दुसूर्ययोर्युक्तः&nbsp;।</span>
+            <span class="line">युद्धनियुद्धाघर्षणसम्फेटकृतश्च विज्ञेयः&nbsp;॥</span>
+            
+         </div>
+         
+         <div class="lg" type="">
+            <span class="line">देवभुजगेन्द्रराक्षसयक्षपिशाचावकीर्णश्च&nbsp;।</span>
+            <span class="line">षोडशनायकबहुलः सात्त्वत्यारभटिकायुतस्तु डिमः&nbsp;॥</span>
+            
+         </div>
+         
+         (ना.शा. १८.) इति&nbsp;।
+         
+      </p>
+      
+      <p>तथा मध्यमप्रमाणं नृपतिप्रायप्रयोज्ये नाटकादौ यद्वक्ष्यति—
+         
+         
+         
+         <div class="lg" type="">
+            <span class="line">निर्घातोल्कापातैरुपरागेणेन्दुसूर्ययोर्युक्तः&nbsp;।</span>
+            <span class="line">युद्धनियुद्धाघर्षणसम्भवकृतश्च विज्ञेयः&nbsp;॥</span>
+            
+         </div>
+         
+         <div class="lg" type="">
+            <span class="line"><a href="" class="app" title="गृहपतीनां य <b&gt;मभ</b&gt;"><span class="appnum"><sup>1</sup></span></a>नृपतीनां यच्चरितम्&nbsp;।</span>
+            
+         </div>
+         
+         (ना.शा. १८.) इत्यादि&nbsp;।
+         
+      </p>
+      
+      <p>शेषास्तु प्रकृतयो भाणप्रहसनादौ&nbsp;। यच्च वक्ष्यति—</p>
+      <span class="line">विविधाश्रयो हि भाणो विज्ञेयस्त्वेकहार्यस्तु&nbsp;।</span>(ना.शा. १८.) 
+      <p>तथा भगवत्तापसविप्रैरन्यैरपि च(ना.शा. १८.) इत्यादि&nbsp;। एवंभूतप्रकृतिप्रधाने प्रयोगे कनीयःप्रमाणो मण्डपः इति&nbsp;। <span class="mentioned"><a href=".html#N%C4%81%C5%9A%C4%81.2.16" target="_blank">एषां</a></span> मण्डपानां मध्ये यो <span class="mentioned"><a href=".html#N%C4%81%C5%9A%C4%81.2.14" target="_blank">विनिर्णय</a></span> एव सर्वसाधारणः मध्यमे मण्डपे नाटकभाणप्रयोगात् <a href="" class="app" title="मण्डपे कनीयसि"><span class="appnum"><sup>1</sup></span></a>कनीयसि च, डिमरूपे एव(ष) मण्डपं(पः) तं 
+         
+         <span class="pageinfo">[page 52]</span>
+         वक्ष्यामीति&nbsp;। अयमभिप्रायः—ज्येष्ठमाने नाटकादिप्रयोगसौकर्याभावान्मध्यम एव युक्तः&nbsp;।
+         स एव निर्णयः&nbsp;। विविधोऽपि दिव्यनृपप्रकृता(त्या)दिस्वभावो निश्चयाभिमुख्यमभिनयप्रयोगद्वारेण
+         नीयते यत्रेति&nbsp;। (१२-१६)
+      </p>
+      
+      <p>तं दर्शयति—<span class="mentioned"><a href=".html#N%C4%81%C5%9A%C4%81.2.17" target="_blank">चतुष्षष्टिं</a></span> करानित्यादि&nbsp;। प्रयोक्तुः पुरस्तात्पृष्ठतश्च मण्डपेऽस्मिन् सति(पोऽस्मिन्नसति) करणार्हो
+         न भवतीत्यर्थः&nbsp;। <span class="mentioned"><a href=".html#N%C4%81%C5%9A%C4%81.2.18" target="_blank">कर्तृभि</a></span>रिति<a href="" class="app" title="कर्तुरिति <b&gt;मभ</b&gt;"><span class="appnum"><sup>1</sup></span></a>&nbsp;। किं तेषां वृथा प्रयासोत्पादनेनेति यावत्&nbsp;। तत्रेति&nbsp;। अतोऽधिकप्रमाणे अत्यन्तं न्यूनप्रमाणे
+         चेत्यर्थः&nbsp;। <span class="mentioned"><a href=".html#N%C4%81%C5%9A%C4%81.2.18" target="_blank">नाट्य</a></span>मिति&nbsp;। सकलावान्तरभेदे प्रभेदं दर्शयितुम्&nbsp;। नाट्यतोऽभि(ट्यं यतोऽभि)व्यक्तं भवतीति समुदायाभिप्रायेण
+         मन्तव्यम्&nbsp;। तदेव दर्शयति—<span class="mentioned"><a href=".html#N%C4%81%C5%9A%C4%81.2.18" target="_blank">मण्डप</a></span> इति&nbsp;। दीर्घत्वम्&nbsp;। पार्श्वयो <a href="" class="app" title="त्वं वान्वयो विस्ता <b&gt;भ</b&gt;, त्वोपान्वयो वि <b&gt;भ</b&gt;"><span class="appnum"><sup>2</sup></span></a>र्विस्तारः&nbsp;। मर्त्यानामित्यनेन मण्डपकरणात् किमित्यकारणं प्रयोगेणैव(गो नैव)वेद्यत इत्याशयः&nbsp;।
+         एतदेवाह—<span class="mentioned"><a href=".html#N%C4%81%C5%9A%C4%81.2.18" target="_blank">अत ऊर्ध्व नेति&nbsp;।</a></span> अत इत्येवविधो यतो मध्यमोऽस्ति ततो हेतोरित्यर्थः&nbsp;। <span class="mentioned"><a href=".html#N%C4%81%C5%9A%C4%81.2.18" target="_blank">ऊर्ध्व</a></span>मिति&nbsp;। प्रमाणस्याधिक्यं न्यूनातिरेकाभ्यामिति मन्तव्यम्&nbsp;। <span class="mentioned"><a href=".html#N%C4%81%C5%9A%C4%81.2.18" target="_blank">कर्तव्य इति</a></span>&nbsp;। प्रकर्षः प्रकृष्टं तदतिक्रान्तो <span class="mentioned"><a href=".html#N%C4%81%C5%9A%C4%81.2.18" target="_blank">विप्रकृष्टः</a></span>&nbsp;। किन्नियोगमानः तस्मिश्च तत्र ज्येष्ठे&nbsp;। पाठ्यं यन्मुख्ये (ख्यं) ‘नाट्यस्यैषा तनूस्मृता’(ना.शा. १४-२) इति दर्शयिष्यते&nbsp;। <span class="mentioned"><a href=".html#N%C4%81%C5%9A%C4%81.2.17" target="_blank">तद्विस्वरत्वं</a></span> विशेषेणोपतापकत्वं निकटवर्तिनः प्रति व्रजेत्&nbsp;। अत्र हेतुः उच्चं कृत्वा <a href="" class="app" title="चरि"><span class="appnum"><sup>3</sup></span></a>चारितोऽतिक्लेशेन सम्पादितः स्वरः काक्वा<a href="" class="app" title="काङ्क्षादि <b&gt;मभ</b&gt;, काङ्कादि <b&gt;भ</b&gt;"><span class="appnum"><sup>4</sup></span></a> (कखा) दिविभागो यत्र&nbsp;। तथा दूरवर्तिनः
+         
+         <span class="pageinfo">[page 53]</span>
+         सामाजिकान्प्रति विस्वरत्वं विगतशब्दकत्वमनाकर्णनीयत्वं <span class="mentioned"><a href=".html#N%C4%81%C5%9A%C4%81.2.18" target="_blank">व्रजेत</a></span>&nbsp;। अत्र हेतुः <span class="mentioned"><a href=".html#N%C4%81%C5%9A%C4%81.2.19" target="_blank">अनिस्सरणधर्मत्वात्</a></span>&nbsp;। निरन्तरे देशे सरणं द्वितीयशब्दारम्भः&nbsp;। स <a href="" class="app" title="द्वितीयस्य <b&gt;भ</b&gt;"><span class="appnum"><sup>5</sup></span></a>यस्य धर्मो नास्ति शब्दान्तरप्रसराभावादित्यर्थः&nbsp;। तथाऽतिकनीयसि मण्डपे पाठ्यमुच्चरितस्वरं
+         सदनिस्सरणधर्मत्वादनुर<a href="" class="app" title="दनुकरणा <b&gt;भ</b&gt;"><span class="appnum"><sup>6</sup></span></a>णनात्मकमधुरशब्दान्तरानारम्भात् विनष्टः स्वरो मधुरो यस्य तादृशत्वं व्रजेत्&nbsp;। अनुरणनं
+         हि स्वरस्य पाठ्यसिद्धिरूपमिति गेयाधिकारे वक्ष्यामः&nbsp;। अनेन समानयोगक्षेमत्वात् अधिकातोद्यविस्वरत्वमपि
+         लक्षितं भवति&nbsp;। तथा चोपसंहरिष्यति गेयं चेति&nbsp;। विस्वरत्वमिति, ‘स्वृ शब्दोपतापयोः’ इत्यस्य
+         रूपम्&nbsp;। (१७-१९)
+      </p>
+      
+      <p>प्रधानस्य पाठ्यस्य प्रधानानुरणनभूतस्य च गीततोद्यादेर्विनाशं प्रतिपाद्याभिनयवर्गस्यापि
+         प्रतिपादयति—<span class="mentioned"><a href=".html#N%C4%81%C5%9A%C4%81.2.20" target="_blank">यश्चापीति</a></span>&nbsp;। <span class="mentioned"><a href=".html#N%C4%81%C5%9A%C4%81.2.20" target="_blank">आस्यगतो</a></span> मुखगतो भावः योऽनुभावलक्षणो दृष्टिबाष्पस्वेदवैवर्ण्यादिः तथा मकुटप्रतिशीर्षादिः&nbsp;।
+         चकारादाङ्गिकः&nbsp;। <span class="mentioned"><a href=".html#N%C4%81%C5%9A%C4%81.2.20" target="_blank">स वेश्मनः प्रकृष्टत्वाद</a></span>तिविस्तीर्णत्वादव्यक्ततां व्रजेत्&nbsp;। तथा प्रगतं कृष्टं कर्षण दैर्घ्यं यस्य तस्य भावः&nbsp;।
+         ततः कनीयस्त्वाद्धेतोः परां द्वितीयामव्यक्ततामतिसामींव्यकृतां व्रजेत्&nbsp;। प्रथमं ह्यतिदूरत्वं
+         कृत्वा सोक्ता&nbsp;। एवमुभयमण्डपाभिप्रायेणेदं व्याख्येयम्&nbsp;। अन्यथा तस्मान्मध्यममिष्यत इत्युपसंहारो
+         न श्लिष्यति&nbsp;। तदाह—<span class="mentioned"><a href=".html#N%C4%81%C5%9A%C4%81.2.21" target="_blank">प्रेक्षागृहाणामित्यादि</a></span>&nbsp;। मध्ये भवं मध्यमम्&nbsp;। तदिष्यते यतः सर्वेषां रूपाणां संबंधि यत्पाठ्यं प्रधानं तनूरूपप्राणोप<a href="" class="app" title="प्राणभूतोप <b&gt;भ</b&gt;, ततो.....................रूपः प्राणभूतोप <b&gt;म</b&gt;"><span class="appnum"><sup>1</sup></span></a>रञ्जकरूपं च गीतं चकारादातोद्यं च श्रव्यतरं भवति&nbsp;। द्वितीयचकारादभिनयान्तरमपि दृश्यतरं<a href="" class="app" title="श्रव्य"><span class="appnum"><sup>2</sup></span></a> भवतीत्यर्थः&nbsp;। (२०-२१)
+      </p>
+      
+      <span class="pageinfo">[page 54]</span>
+      
+      <p>ननु यद्येवंभूतः प्रयोगक्रमस्तर्हि हस्तसमाश्रयेणैव<a href="" class="app" title="यण एव <b&gt;भ</b&gt;"><span class="appnum"><sup>1</sup></span></a> विधिर्वक्तव्यः&nbsp;। सोऽपि यत्र परिपूर्णो नोपकारी तत्र <a href="" class="app" title="दण्डासमा <b&gt;भ</b&gt;"><span class="appnum"><sup>2</sup></span></a>दण्डसमाश्रयेणातोद्यमानेन&nbsp;। अथ कदाचिद्दिव्यप्रकृतिप्रेक्षकाभिप्रायेण तदुच्यते तत्रापि
+         कः स्तोका<a href="" class="app" title="स्तोकस्तोकान्त् <b&gt;भ</b&gt;"><span class="appnum"><sup>3</sup></span></a>न्तरत्वेनेति न्यायेन का इति(ह) सम्भावनेत्याशङ्कां पराकर्तुं श्लोको भावी<a href="" class="app" title="श्लोकोऽभावि"><span class="appnum"><sup>4</sup></span></a>&nbsp;। अत एव पूर्वश्लोकेन सह नात्र पौनरुक्त्यं शङ्कितव्यम्&nbsp;। तस्यान्यथोपक्षेपात्&nbsp;। तच्छ्लोकमाह—<span class="mentioned"><a href=".html#N%C4%81%C5%9A%C4%81.2.22" target="_blank">देवाना</a></span>मित्यादि&nbsp;। मनसस्तदीयस्य सत्त्वबहुलत्वात् तत्कृत<a href="" class="app" title="तत्क्रियत इ"><span class="appnum"><sup>5</sup></span></a> इन्द्रियविसर्जनलक्षणे व्यापारो<a href="" class="app" title="रेऽतिरू"><span class="appnum"><sup>6</sup></span></a>ऽतिरूपव्यापी&nbsp;। अपवनेष्वपि विततविततेषु<a href="" class="app" title="वनेष्वविविक्तवित् <b&gt;म</b&gt;"><span class="appnum"><sup>7</sup></span></a>&nbsp;। का कथा मण्डपविषये&nbsp;। अत एव <span class="mentioned"><a href=".html#N%C4%81%C5%9A%C4%81.2.22" target="_blank">गृहष्विति</a></span> बहुवचनमुपात्तम्&nbsp;। तेन तदपेक्षया ते मण्डया उक्ता इत्यर्थः&nbsp;। न त्वेवं मानुषाणां राजसानां
+         मनः&nbsp;। तदाह—<span class="mentioned"><a href=".html#N%C4%81%C5%9A%C4%81.2.23" target="_blank">देवकृतै</a></span>रिति&nbsp;। यत एवं तस्मा<span class="mentioned"><a href=".html#N%C4%81%C5%9A%C4%81.2.23" target="_blank">न्मानुषस्यैव</a></span> गेहस्य लक्षणं सम्यक्प्रवक्ष्यामि&nbsp;। तशब्द एवकारार्थे&nbsp;। (२२-२३)
+      </p>
+      
+      
+      <p>सम्यगिति यदुक्तं तदाह— <span class="mentioned"><a href=".html#N%C4%81%C5%9A%C4%81.2.24" target="_blank">भूमेरि</a></span>त्यादि&nbsp;। विभागो हेयोपादेयत्वेन<a href="" class="app" title="पादानत्वेन <b&gt;म</b&gt;"><span class="appnum"><sup>1</sup></span></a>&nbsp;। <span class="mentioned"><a href=".html#N%C4%81%C5%9A%C4%81.2.24" target="_blank">वास्त्वि</a></span>ति&nbsp;। ग्रहणं प्रमाणं चेत्युपलक्ष्यमाणरूपेण प्रारभेत&nbsp;। कर्तुमिति शेषः&nbsp;।
+      </p>
+      
+      <span class="pageinfo">[page 55]</span>
+      
+      <p>तं विभागमाह— <span class="mentioned"><a href=".html#N%C4%81%C5%9A%C4%81.2.25" target="_blank">समे</a></span>त्यादि&nbsp;। समा स्वभावान्नातिनिम्नोन्नतेत्यर्थः&nbsp;। <span class="mentioned"><a href=".html#N%C4%81%C5%9A%C4%81.2.25" target="_blank">स्थिरा अचलनस्वभावा</a></span>&nbsp;। <span class="mentioned"><a href=".html#N%C4%81%C5%9A%C4%81.2.25" target="_blank">कठिना</a></span> अनूषरा&nbsp;। <span class="mentioned"><a href=".html#N%C4%81%C5%9A%C4%81.2.25" target="_blank">कृष्णा गौरीचे</a></span>ति&nbsp;। चो वार्थे&nbsp;। अन्ये तु व्यामिश्रितत्वमाहुः&nbsp;। <span class="mentioned"><a href=".html#N%C4%81%C5%9A%C4%81.2.25" target="_blank">कर्तव्य</a></span> इति करणार्हः&nbsp;। कथमित्याह-<span class="mentioned"><a href=".html#N%C4%81%C5%9A%C4%81.2.26" target="_blank">प्रथममि</a></span>त्यादि&nbsp;। <span class="mentioned"><a href=".html#N%C4%81%C5%9A%C4%81.2.26" target="_blank">शोधन</a></span>मुपरिगताशुचिशर्कराद्यपसारणम्&nbsp;। ततो हलेनोद्धृतगुल्मपाषाणादिकां कुर्यात्&nbsp;। एतदेवाह—<span class="mentioned"><a href=".html#N%C4%81%C5%9A%C4%81.2.26" target="_blank">अस्थी</a></span>त्यादिना&nbsp;।
+      </p>
+      
+      <p>एवं बाह्याभ्यन्तरतो भूमिशुद्धिं निरूप्यानन्तरकरणीयमाह— <span class="mentioned"><a href=".html#N%C4%81%C5%9A%C4%81.2.27" target="_blank">शोधयित्वेति</a></span>&nbsp;। <a href="" class="app" title="कथमित्याह"><span class="appnum"><sup>1</sup></span></a>कथं प्रमाणनिर्देश इत्याह—<span class="mentioned"><a href=".html#N%C4%81%C5%9A%C4%81.2.27" target="_blank">पुष्ये</a></span>ति&nbsp;। शुक्ल<a href="" class="app" title="सूत्रम्"><span class="appnum"><sup>2</sup></span></a>सूत्रत्वं तावत्पिष्टरञ्जनादिना&nbsp;। चर्मकृतं<a href="" class="app" title="चात् चर्मकृतं मानसूत्रं नाकार्य <b&gt;भ</b&gt;"><span class="appnum"><sup>3</sup></span></a> मानसूत्रं न कार्यमिति च तात्पर्यम्&nbsp;। <span class="mentioned"><a href=".html#N%C4%81%C5%9A%C4%81.2.29" target="_blank">स्वामिनः</a></span> प्रेक्षापतेः&nbsp;। प्रयोक्तुर्नाट्याचार्यस्य&nbsp;। <span class="mentioned"><a href=".html#N%C4%81%C5%9A%C4%81.2.31" target="_blank">प्रयत्नेन रज्जुग्रहणमि</a></span>त्यच्छेद्या<a href="" class="app" title="द्यानुराभ <b&gt;भ</b&gt;"><span class="appnum"><sup>4</sup></span></a>नुभरणीया&nbsp;। तादृशी च सावधानतयावष्टम्भवियोगाद्युभयथा तथा प्रयत्नतो योज्यम्&nbsp;। <span class="mentioned"><a href=".html#N%C4%81%C5%9A%C4%81.2.31" target="_blank">नित्यमिति</a></span>&nbsp;। न केवलमत्र प्रथमपरिग्रहे यावदन्यभाविस्तम्भविनिवेशाय भूभागमानग्रहणादावित्यर्थः&nbsp;।
+         <span class="mentioned"><a href=".html#N%C4%81%C5%9A%C4%81.2.31" target="_blank">प्रयत्नेन</a></span> <span class="mentioned"><a href=".html#N%C4%81%C5%9A%C4%81.2.31" target="_blank">मान</a></span>मित्यूनाधिकादिदोषवर्जनायायं यत्न
+         
+         <span class="pageinfo">[page 56]</span>
+         इत्यपौनरुक्त्यम्&nbsp;। मुहूर्तो ब्राह्मादिः&nbsp;। तिथिर्हदा(र्नन्दा)दिः&nbsp;। <span class="mentioned"><a href=".html#N%C4%81%C5%9A%C4%81.2.32" target="_blank">करणं</a></span> विष्ट्यादिरहितम् (२४-३२)&nbsp;।
+      </p>
+      
+      <p>सूत्रप्रसारणेन यत्कृत्यं तदाह-<span class="mentioned"><a href=".html#N%C4%81%C5%9A%C4%81.2.33" target="_blank">चतुष्षष्टिरि</a></span>त्यादि&nbsp;। चतुष्षष्टिर्हस्तदैर्घ्याद्विस्ताराच्च द्वात्रिंशत्करं क्षेत्रं गृहीत्वा मध्ये
+         सूत्रं विस्तारेण दद्यात्&nbsp;। पुरस्ताद्भागः प्रेक्षकभागः&nbsp;। अपरस्ताद्भागः प्रयोक्तृभागः&nbsp;।
+         तत्र यत्प्रयोक्तुः पृष्ठगं भविष्यति <a href="" class="app" title="तद्देवता <b&gt;मभ</b&gt;"><span class="appnum"><sup>1</sup></span></a>तदेव पृष्ठम्&nbsp;। तस्य मध्ये विस्तारेण सूत्रं दद्यात्&nbsp;। ततः षोडशहस्तौ द्वौ भागौ भवतः&nbsp;।
+         तयोः पाश्चात्यभागः षोडशहस्तो नेपथ्यगृहम्&nbsp;। पूर्वभागमपि द्विधा कुर्यात्&nbsp;। पृष्ठगतं
+         भागमर्धेन विभज्याष्टहस्तं रङ्गशिरः&nbsp;। प्रविशतां पात्राणां चान्तस्स्थानम्&nbsp;। नाट्यमण्डपस्य
+         ह्युत्तानसुप्तवदवस्थितस्य रङ्गपीठं मुख्यम्&nbsp;। तदष्टहस्तं शिरः&nbsp;। तत्पृष्ठे तु दैर्घ्याद्धि<a href="" class="app" title="द्दशैशे <b&gt;भ</b&gt;, द्दशैशेः"><span class="appnum"><sup>2</sup></span></a> षोडशहस्तं नेपथ्यगृहं भवति&nbsp;। विस्तारात्तु द्वात्रिंशत्करमेव तत्<a href="" class="app" title="तन्न नैप <b&gt;मभ</b&gt;"><span class="appnum"><sup>3</sup></span></a>&nbsp;। नैपथ्यादिकं
+         
+         <span class="pageinfo">[page 57]</span>
+         च तत्र गृह्यते&nbsp;। तदाह—<span class="mentioned"><a href=".html#N%C4%81%C5%9A%C4%81.2.35" target="_blank">पश्चिमे</a></span> चेति&nbsp;। तत्र रङ्गपीठं विस्तारतः षोडशदैर्घ्यतस्त्वष्टहस्ता इति केचित्&nbsp;। अन्ये त्वेतदेव
+         विपर्यासयन्ति&nbsp;। सर्वथा तावदङ्गपीठस्यापि विकृष्टत्वं विधेयमिति तात्पर्यम्&nbsp;। यद्वक्ष्यते—रङ्गो विकृष्टो भरतेन कार्यः (ना.शा. १२-२०) इत्यादि&nbsp;। (३३-३५)
+      </p>
+      
+      <p>एवं मानविधिमभिधायेष्टकास्थाप<a href="" class="app" title="पने विधिमाह <b&gt;भ</b&gt;"><span class="appnum"><sup>1</sup></span></a>नरूपे निवेशने विधिमाह-<span class="mentioned"><a href=".html#N%C4%81%C5%9A%C4%81.2.36" target="_blank">शुभे नक्षत्रयोग</a></span> इत्यादिना&nbsp;। <a href="" class="app" title="इदं वाक्यं न दृश्यते <b&gt;म</b&gt;"><span class="appnum"><sup>2</sup></span></a>दशसु तिर्यगूर्ध्वाधोरूपासु दिक्षु बलिः कार्य इत्युक्त्वा चतसृषु दिक्षु बलिविधिरुक्तो
+         नान्यथेत्यभिप्रायेण व्यापकं विधिमाह-यादृशमित्यादिना&nbsp;। तेनाग्नेये
+         
+         <span class="pageinfo">[page 58]</span>
+         रक्तवर्ण इत्याद्यूह्यम्&nbsp;। मन्त्रा <a href="" class="app" title="रण&nbsp;। रङ्ग <b&gt;भ</b&gt;"><span class="appnum"><sup>3</sup></span></a>वरुणपूजाविधौ वक्ष्यमाणाः&nbsp;। ते च कर्मशंसोप<a href="" class="app" title="स्तेयोगिनो <b&gt;भ</b&gt;"><span class="appnum"><sup>4</sup></span></a>(र्मसं) योगिनोहेन युक्ता विधेयाः&nbsp;। ‘मन्त्रेण स्मृतं कर्म करोति’ इति हि स्मृतिः&nbsp;। अन्ये
+         तु तद्देवताकैः श्रुतिमन्त्रैरेव बलिकर्मेत्याहुः&nbsp;। तल्लिङ्गैरित्यन्ये&nbsp;। चकारो <a href="" class="app" title="हीनक्रमः <b&gt;भ</b&gt;"><span class="appnum"><sup>5</sup></span></a>भिन्नक्रमः&nbsp;। न केवलं <a href="" class="app" title="नत्वेव मानो <b&gt;भ</b&gt;"><span class="appnum"><sup>6</sup></span></a>मानोपक्रमे ब्राह्मणतर्पणं यावत्स्थापनेऽपीत्यर्थः&nbsp;। (३६-४३)
+      </p>
+      
+      <p>एवं मानविधिं स्थापनविधिं भित्तिविधिं च कृत्वा स्तम्भविधिः कार्य इति दर्शयति—<span class="mentioned"><a href=".html#N%C4%81%C5%9A%C4%81.2.44" target="_blank">भित्तिकर्म</a></span>णीति&nbsp;। स्थापनमुच्छ्रयणम्&nbsp;। प्रथमं त्वाग्नेयः कोणः&nbsp;। तस्य विशेषणैः
+         
+         <span class="pageinfo">[page 59]</span>
+         अनुवादलिङ्गविधिकल्प्यं (लिङ्गविधिः कल्प्यः)&nbsp;। <span class="mentioned"><a href=".html#N%C4%81%C5%9A%C4%81.2.47" target="_blank">शुभं</a></span>(क्लं) सर्वत्र <span class="mentioned"><a href=".html#N%C4%81%C5%9A%C4%81.2.47" target="_blank">पायसमिति</a></span> द्विजेभ्य इति प्रकरणात्&nbsp;। सर्वस्य विध्यनुसारेणैव भोजनं शुक्लादिवर्णमिति मन्तव्यम्&nbsp;।
+         <span class="mentioned"><a href=".html#N%C4%81%C5%9A%C4%81.2.47" target="_blank">ततश्चे</a></span>ति&nbsp;। तैरन्त(तदन्त) इत्यर्थः&nbsp;। (४४-५४)
+      </p>
+      
+      <p><span class="mentioned"><a href=".html#N%C4%81%C5%9A%C4%81.2.55" target="_blank">अचलमिति</a></span>&nbsp;। स्थानान्तरा<a href="" class="app" title="न्तरनि <b&gt;मभ</b&gt;"><span class="appnum"><sup>1</sup></span></a> निवेशलक्षणमनोनोक्तम्&nbsp;। अविद्यमाना चलना यस्येति&nbsp;।  <span class="mentioned"><a href=".html#N%C4%81%C5%9A%C4%81.2.55" target="_blank">अकम्प्य</a></span>मिति&nbsp;। तत्रैव स्थानशिथिलता येन न भवति&nbsp;। <span class="mentioned"><a href=".html#N%C4%81%C5%9A%C4%81.2.55" target="_blank">अवलित</a></span>मिति&nbsp;। वलयाकृत्यादिना परिवर्तनं यस्य करणीयं न भवति&nbsp;। दोषसूचकत्वाद्दोष<a href="" class="app" title="षत्वका <b&gt;मभ</b&gt;"><span class="appnum"><sup>2</sup></span></a>कारित्वाच्च दोषाः&nbsp;। तान्दोषानाह—<span class="mentioned"><a href=".html#N%C4%81%C5%9A%C4%81.2.56" target="_blank">अवृष्टि</a></span>रित्यादि&nbsp;। (५५-५७)
+      </p>
+      
+      <span class="pageinfo">[page 60]</span>
+      
+      <p><span class="mentioned"><a href=".html#N%C4%81%C5%9A%C4%81.2.58" target="_blank">दातव्येति</a></span>&nbsp;। द्विजायेति दातव्यबलाल्लभ्यते&nbsp;। <span class="mentioned"><a href=".html#N%C4%81%C5%9A%C4%81.2.61" target="_blank">अभिमन्त्र्येति</a></span> सूचितो यः मन्त्रस्तमाह—<span class="mentioned"><a href=".html#N%C4%81%C5%9A%C4%81.2.61" target="_blank">यथेति</a></span>। प्रणवनमस्कारमध्यवर्ती चायं पठितव्य<a href="" class="app" title="पठित इति <b&gt;मभ</b&gt;"><span class="appnum"><sup>1</sup></span></a> इति वास्तुविद्याविदः&nbsp;। <span class="mentioned"><a href=".html#N%C4%81%C5%9A%C4%81.2.62" target="_blank">अचलो भवे</a></span>ति&nbsp;। पू(अपू)र्वविधिः&nbsp;। न (तेन) तदनुवादेन <span class="mentioned"><a href=".html#N%C4%81%C5%9A%C4%81.2.62" target="_blank">जयावहो भवे</a></span>त्यस्य न पौनरुक्त्यम् (?) <span class="mentioned"><a href=".html#N%C4%81%C5%9A%C4%81.2.62" target="_blank">एव</a></span>मिति&nbsp;। तेन भित्तौ स्त्रीत्वेन गृहे नपुंसकत्वेनोहः कार्यः&nbsp;। <span class="mentioned"><a href=".html#N%C4%81%C5%9A%C4%81.2.63" target="_blank">पार्श्व</a></span> इति&nbsp;। विशेषानुपादानात्तयोस्तुल्यम् (ना.शा. २-६५) इति च द्विवचनाल्लिङ्गाद्भाविनोर्द्वयोः पार्श्वयोरिति लभ्यते&nbsp;। (५८-६३)
+      </p>
+      
+      <p>स्तम्भाश्चत्वारः बहिर्मण्डपान्निष्कासनं कृत्वा <a href="" class="app" title="दीय <b&gt;भ</b&gt;, द्रिय <b&gt;म</b&gt;"><span class="appnum"><sup>1</sup></span></a>ध्रियन्ते मण्डपक्षेत्राद्बहिः&nbsp;। तेन भित्तिच्छ्रेदावधौ स्तम्भद्वयम्&nbsp;। ततोऽपि बहिर्भित्तेरष्टहस्तान्तरस्तम्भापेक्षयाऽप्यष्टहस्तान्तर-
+         
+         <span class="pageinfo">[page 61]</span>
+         स्तम्भद्वयमित्येतावदि<a href="" class="app" title="त्येवमित्य"><span class="appnum"><sup>2</sup></span></a>त्यष्टहस्तविस्तारा समचतुरश्रा मत्तवारणी भवति&nbsp;। आयामस्तु प्रमाणमिति ये वदन्ति तेषां<a href="" class="app" title="षामृते <b&gt;म</b&gt;"><span class="appnum"><sup>3</sup></span></a> मते दैर्घ्यादष्टहस्तं विस्तारात् षोडशहस्तमित्येवं विकृष्टता रङ्गपीठस्य भवति&nbsp;। अन्येषां
+         हस्त<a href="" class="app" title="हस्त ...न्त्र यथा <b&gt;भ</b&gt;"><span class="appnum"><sup>4</sup></span></a>मानोऽत्र (मानमत्र) यथा रङ्गपीठापेक्षया च सार्धहस्तपरिमाण उच्छ्रायः कार्यो मत्तवारण्याः&nbsp;।
+         <span class="mentioned"><a href=".html#N%C4%81%C5%9A%C4%81.2.65" target="_blank">तयोरिति</a></span> <a href="" class="app" title="ति वच <b&gt;भ</b&gt;"><span class="appnum"><sup>5</sup></span></a>द्विवचनं ज्ञापकमेतच्चरितार्थमितीह <a href="" class="app" title="नोपेक्षि"><span class="appnum"><sup>6</sup></span></a>नापेक्षित इति&nbsp;। तस्या एव यावानुत्सेधस्तावान्रङ्गपीठस्य&nbsp;। तेन बुध्नभूभागापेक्षया सार्धहस्तप्रमाणोन्नतं<a href="" class="app" title="माणेनोन्न <b&gt;भ</b&gt;"><span class="appnum"><sup>7</sup></span></a> रङ्गपीठमित्युक्तं भवति&nbsp;। तेन मत्तवारण्यालोकेन<a href="" class="app" title="कनेना <b&gt;भ</b&gt;"><span class="appnum"><sup>8</sup></span></a> नात्यर्थं रङ्गपीठस्य दुष्प्रेक्षता&nbsp;। एतच्चोत्सेधेनेत्येकवचनेन सूचितम्&nbsp;। अन्यथोत्सेधाभ्यामित्युच्येत&nbsp;।
+      </p>
+      
+      <p>माल्यधूपाद्यत्र निर्माणकाल एव देयम्&nbsp;। तदधिष्ठातृणां भूतादीनामुग्रत्वेन यत्नोपचरणीयत्वात्&nbsp;।
+         तदाह—<span class="mentioned"><a href=".html#N%C4%81%C5%9A%C4%81.2.67" target="_blank">विधिपुरस्कारै</a></span>रिति&nbsp;। पुरस्कारशब्देन विधिर्वास्तुविद्याशास्त्रीक्तः&nbsp;। (६४-६७)&nbsp;।
+      </p>
+      
+      <p>रङ्गपीठे कार्ये रङ्गशिरस्तावदाह—<span class="mentioned"><a href=".html#N%C4%81%C5%9A%C4%81.2.68" target="_blank">रङ्गशीर्षमिति</a></span>&nbsp;। नेपथ्यगृहभित्तिलग्नौ द्वौ स्तम्भा वष्टहस्तान्तरावन्योन्यं निवेश्य तयोर्यन्मुखादेरपेक्षया<a href="" class="app" title="मुखापेक्ष"><span class="appnum"><sup>1</sup></span></a> चतुर्हस्तान्तरं स्तम्भद्वयम्&nbsp;। तेषामधस्तनं काष्ठमुपरितनं चेति षड् दारूणि&nbsp;। यत्र षड्
+         दारूणि तत्षड्दारूकम्&nbsp;।
+         
+         <span class="pageinfo">[page 62]</span>
+         संज्ञायां कन्&nbsp;। तत्तेन विचित्ररचनोपेतत्वं लभ्यते&nbsp;। अत्र नेपथ्यगृहस्य द्वारद्वयं कार्यम्&nbsp;।
+         एकं दक्षिणतः&nbsp;। अपरमुत्तरतः&nbsp;। तच्च द्वारद्वयमापादितं कूर्परा<a href="" class="app" title="राभिन्नश्चाभव <b&gt;भ</b&gt;, राभिनश्च"><span class="appnum"><sup>2</sup></span></a> भिन(म)त्या भवति&nbsp;। तत्पात्राणां विश्रान्त्यै आगच्छतां च गुप्त्यै रङ्गस्य शोभायै रङ्गशिरः
+         कार्यम्&nbsp;।
+      </p>
+      
+      <p>अन्ये तु—पार्श्वद्वयोर्ध्वाधरदारुमण्डितं स्तम्भद्वयोपेतमिहाच्छपातकम्<a href="" class="app" title="पातम्"><span class="appnum"><sup>1</sup></span></a>&nbsp;।
+      </p>
+      
+      <p>इति षड्दारुकमाहुः&nbsp;। अन्ये (अत्र) <a href="" class="app" title="तूहः स्त"><span class="appnum"><sup>1</sup></span></a>तुर्धूस्तम्भशिरसो दूरं <a href="" class="app" title="रनिर्गतकाष्ठं प्र <b&gt;भ</b&gt;"><span class="appnum"><sup>2</sup></span></a> निर्गतकाष्ठादप्रत्यूहस्ततो(हतो) विनिर्गता तुलासञ्जवनफलकाः स्मृताः&nbsp;। आकाशे भित्तिव्याख्याः
+         स्तम्भाश्रिताः सिंहादयो व्यालानुबन्धाश्च <a href="" class="app" title="निर्व्यू"><span class="appnum"><sup>3</sup></span></a>निर्यूहास्तुलान्तान्निस्सृताः फलकभित्तिमयाः कुहराणि पर्वतपुरनिकुञ्जगह्वररूपाणीति षड्दारुकम्&nbsp;।
+         सर्वत्र च पक्षे दाक्षिणोत्तरगतं द्वारद्वयं पात्राणां प्रवृत्तिभेदकृतात्प्रदाक्षिणा<a href="" class="app" title="णं प्रद"><span class="appnum"><sup>4</sup></span></a>प्रदक्षिणप्रवेशत्वात्&nbsp;। <span class="mentioned"><a href=".html#N%C4%81%C5%9A%C4%81.2.70" target="_blank">शुद्धवर्णो</a></span>&nbsp;। शुक्लौ&nbsp;। <span class="mentioned"><a href=".html#N%C4%81%C5%9A%C4%81.2.70" target="_blank">धुर्यौ</a></span> दान्तौ&nbsp;। (६८-७१)
+      </p>
+      
+      <span class="pageinfo">[page 63]</span>
+      
+      <p><span class="mentioned"><a href=".html#N%C4%81%C5%9A%C4%81.2.72" target="_blank">कूर्मपृष्ठमिति</a></span>&nbsp;। समन्ततो निम्नं मध्ये च वर्तलरूपं मन्दम्&nbsp;। तत्तादृगेव मध्ये दीर्घरूपं मत्स्यपृष्ठम्&nbsp;।
+         तदुभयं <a href="" class="app" title="चात्र <b&gt;मभ</b&gt;"><span class="appnum"><sup>1</sup></span></a>नात्र कार्यम्&nbsp;। समं तुल्यं कार्यम्&nbsp;। रत्नानि तदायुधं तद्वर्णानु—रूपत्वेन यथायोगम्&nbsp;।
+         <span class="mentioned"><a href=".html#N%C4%81%C5%9A%C4%81.2.75" target="_blank">कृत्वेति</a></span>&nbsp;। पूर्वं विभज्य बुद्ध्येति यावत्&nbsp;। दारुकर्मेत्युक्तं विभजति— <span class="mentioned"><a href=".html#N%C4%81%C5%9A%C4%81.2.75" target="_blank">ऊहप्रत्यूहसंयुक्त</a></span>मित्यादिना <span class="mentioned"><a href=".html#N%C4%81%C5%9A%C4%81.2.78" target="_blank">स्तम्भैश्चाप्युपशोभितमि</a></span>त्यन्तेन&nbsp;। कुहराणि पर्वतनिकुञ्जगृहाणि वनरूपाणि&nbsp;। सालभञ्जिकाः काष्ठमय्यः कान्ता(न्त)प्रकृतयः&nbsp;।
+         नानाकृतिभिर्ग्रथिताः वेदिकाश्चतुरश्रिकाः यत्र&nbsp;। <span class="mentioned"><a href=".html#N%C4%81%C5%9A%C4%81.2.77" target="_blank">चित्राणि</a></span> जालानि चतुरश्राष्टाश्रच्छिद्ररूपाणि <span class="mentioned"><a href=".html#N%C4%81%C5%9A%C4%81.2.77" target="_blank">गवाक्षाणि</a></span> च वर्तुलच्छिद्रात्मकानि यत्र&nbsp;। <span class="mentioned"><a href=".html#N%C4%81%C5%9A%C4%81.2.77" target="_blank">पीठानि</a></span> स्तम्भोपरि&nbsp;। तेषु <span class="mentioned"><a href=".html#N%C4%81%C5%9A%C4%81.2.78" target="_blank">धारिण्य</a></span>स्तुलाः&nbsp;। <span class="mentioned"><a href=".html#N%C4%81%C5%9A%C4%81.2.78" target="_blank">कपोताली</a></span> विटङ्कपाली&nbsp;। <span class="mentioned"><a href=".html#N%C4%81%C5%9A%C4%81.2.78" target="_blank">कुट्टिमस्य</a></span> <span class="mentioned"><a href=".html#N%C4%81%C5%9A%C4%81.2.78" target="_blank">नाना</a></span>त्वं रङ्गशिरोरङ्गपीठमत्तवारणीद्वयभेदात्&nbsp;। सर्वत्र तथाविधदारुकसूचकम्&nbsp;। रकक्तसितनीलपीतादिभेदाद्वा&nbsp;।
+         अत्रोहप्रत्यूहावन्ययव्यतिरेक<a href="" class="app" title="कात्तदुप <b&gt;भ</b&gt;"><span class="appnum"><sup>2</sup></span></a>तर्कोपयोगिनौ केचिदाहुः&nbsp;।
+         (७२-७८)
+      </p>
+      
+      <p>प्रतिद्वारमवान्तरद्वारं <span class="mentioned"><a href=".html#N%C4%81%C5%9A%C4%81.2.80" target="_blank">द्वारेण विद्धं</a></span> परस्परसंमुखीभूतमध्यं न कुर्यात्&nbsp;। नागदन्तं स्तम्भोर्ध्वनीचस्था<a href="" class="app" title="नीपस्वांशगम् <b&gt;म</b&gt;"><span class="appnum"><sup>1</sup></span></a>शकं(नीडस्थाङगकं) पुत्रिकाधारणार्थं गजमुखमिति केचित्&nbsp;। द्वे भूमी रङ्गपीठस्याधस्तनोपरितनरूपेणेति
+         केचित्&nbsp;। मत्तवारणी बहिर्निर्गमनप्रमाणेन सर्वतो द्वितीयभित्तिनिवेशेन देवप्रसादाद्धा(दद्वा)रिका
+         (देवप्रासादाट्टालिका ?) प्रदक्षिणसदृशी
+         
+         <span class="pageinfo">[page 64]</span>
+         द्वितीया भूमिरित्यन्ते&nbsp;। उपरि मण्डपान्तरनिवेशनादित्यपरे&nbsp;। अद्विभूमिरित्येके&nbsp;। उपाध्यायास्तु
+         वीप्सागर्भं व्याचक्षते&nbsp;। द्वे द्वे भूमी यत्न निम्नाते (निम्नोन्नते) ततोऽप्युन्नता
+         इति निक्रमेण (निम्नोन्नक्रमेण) रङ्गपीठनिकटा<a href="" class="app" title="करात्प्र <b&gt;मभ</b&gt;"><span class="appnum"><sup>2</sup></span></a>त्प्रभृति द्वारपर्यन्तं यावद्रङ्गपीठोत्सेधतुल्योत्सेधा भवति&nbsp;। एवं हि परस्परानाच्छादनं
+         सामाजिकानाम्&nbsp;। शैलगुहाकारत्वं(त्वात्) स्थिरशब्दादित्वं च भवति&nbsp;। मन्दत्वं वातायनानां
+         जलकपान—(जालकपाट) योगात्कार्यम्&nbsp;। <span class="mentioned"><a href=".html#N%C4%81%C5%9A%C4%81.2.82" target="_blank">कुतपः</a></span><a href="" class="app" title="काळम् <b&gt;मभ</b&gt;"><span class="appnum"><sup>3</sup></span></a> संफेटकगायनवादकसमूहः&nbsp;। कुर्नाट्यभूमिस्तां तपति उज्ज्वलयतीति कृत्वा&nbsp;। कुतं शब्दं पातीत्यन्ये&nbsp;।
+         <span class="mentioned"><a href=".html#N%C4%81%C5%9A%C4%81.2.82" target="_blank">गम्भीरत्वं</a></span> तत्रैव शब्दस्य भ्रमणादन्योन्य—प्रतिश्रुतिकारसमारम्भसम्पूर्णाच्च (?)&nbsp;। <span class="mentioned"><a href=".html#N%C4%81%C5%9A%C4%81.2.82" target="_blank">भित्तिलेपो</a></span> भङ्ग(शङ्ख)वालुकाशुक्तिकालेपः&nbsp;। <span class="mentioned"><a href=".html#N%C4%81%C5%9A%C4%81.2.85" target="_blank">लताबन्धा</a></span> द्रुमलता<a href="" class="app" title="द्रमिडादि यत्र <b&gt;मभ</b&gt;"><span class="appnum"><sup>4</sup></span></a>दिबन्धसन्निवेशा वा <a href="" class="app" title="मालक्ष्म्यादि <b&gt;मभ</b&gt;"><span class="appnum"><sup>5</sup></span></a>मालत्यादिलतागतातोद्यवेष्टनवैचित्र्यप्रकारा वा वक्ष्यमाणपिण्डीबन्धप्रकारविशेषाश्च&nbsp;।
+         एतदुपसंहरति—<span class="mentioned"><a href=".html#N%C4%81%C5%9A%C4%81.2.85" target="_blank">एवं विकृष्टमिति</a></span>&nbsp;। (७९-८५)&nbsp;।
+      </p>
+      
+      <span class="pageinfo">[page 65]</span>
+      
+      <p>यद्यपि समचतुरश्रोऽत एव शक्य ऊहितुं तथापि विस्पष्टार्थं वक्ष्यामीत्याशयेन पुनः शब्देनोपक्रमते—<span class="mentioned"><a href=".html#N%C4%81%C5%9A%C4%81.2.86" target="_blank">पुनरेवेति</a></span>&nbsp;। ननु विकृष्टे स्तम्भविभागङ्गयोजनादि नोक्तं तत्कथं प्रतिपत्तव्यमित्याशङ्कायामावृत्त्याऽनेनैवोत्तरं—चतुरश्रसम्बन्धि
+         यल्लक्षणं तत्पुनर्यस्माद्वक्ष्यामो घटस्य (यदस्य) विकृष्टस्य सम्बन्धित्वेन तस्मान्नापूर्णं
+         विकृष्टलक्षणम्&nbsp;। तथा यदस्य लक्षणमुक्तं तच्चतुरश्रेऽपि सञ्चारणीयमिति पुनश्शब्देन दर्शयति&nbsp;।
+         तेनातिदेशा(शम)नागतापेक्षणाख्यं तत्र युराति (योजयति)&nbsp;। चतुरश्रमाह—<span class="mentioned"><a href=".html#N%C4%81%C5%9A%C4%81.2.86" target="_blank">समन्तत</a></span> इति&nbsp;। सर्वेष्वन्तेषु चतसृष्वपि दिक्ष्वित्यर्थः&nbsp;। <span class="mentioned"><a href=".html#N%C4%81%C5%9A%C4%81.2.88" target="_blank">प्रविभज्य</a></span> चेति&nbsp;। पूर्ववदेवेत्यर्थः&nbsp;। यदि बाह्यतो भित्तिरभ्यन्तरे किमित्याह—<span class="mentioned"><a href=".html#N%C4%81%C5%9A%C4%81.2.89" target="_blank">तत्राभ्यन्तर</a></span> इति&nbsp;। अष्टभिर्भागैः सर्वतः क्षेत्रं विभजेत्&nbsp;। येन चतुरङ्गफलकवच्चतुष्षष्टिकोष्ठं भवति&nbsp;।
+         तत्र मध्यमकोष्ठकचतुष्के रङ्गपीठं सर्वतोऽष्टहस्तम्&nbsp;। तस्य पश्चिमे भागे प्राक्पश्चिमं
+         द्वादशहस्तं दक्षिणोत्तरतो द्वात्रिंशत्करं तत्क्षेत्रमवशिष्यते&nbsp;। (<a href="" class="app" title="अयं रङ्गपीठेन स्वीकृतं तद्द्विहस्ताष्टक एव <b&gt;भम</b&gt;"><span class="appnum"><sup>1</sup></span></a>अत्र यद्रङ्गपीठेन स्वीकृतं तद्धि हस्ताष्टकमेव&nbsp;।) यदवशिष्टं क्षेत्रं तन्मध्याद्रङ्गपीठनिकटगतं
+         प्राक्पश्चिमतश्चतुर्हस्तं विस्तारेण द्वात्रिंशद्धस्तं क्षेत्रांशाद्विभज्य तावत्प्रमाणमेव
+         पश्चिमभागेऽपि ष(ड्दारु)कसंस्थानं रङ्गशिरः कुर्यात्&nbsp;। ततोऽपि पश्चिमे तावदेव नेपथ्यग्रहणम्(गृहम्)&nbsp;।
+         एवं स्थिते रङ्गपीठं लक्षयित्वा दश स्तम्भाः षड्दारुकस्तम्भव्यतिरिक्ता देयाः&nbsp;। तत्र
+         कोणचतुष्टये तावच्चत्वारः&nbsp;। तत्राग्नेयस्तम्भाच्चतुर्हस्तान्तरो दक्षिणदिश्येकः स्तम्भः&nbsp;।
+         तथैव नैर्ॠतस्तम्भाद् द्वितीयः&nbsp;।
+         
+         <span class="pageinfo">[page 66]</span>
+         एवमुदीच्यामपि स्तम्भद्वयम्&nbsp;। पूर्वभागे ऐशानाग्नि<a href="" class="app" title="नदिग्गता <b&gt;भम</b&gt;, नाग्नेयस्तम्भ"><span class="appnum"><sup>2</sup></span></a>गतात्स्तम्भद्वयाच्चतुर्हस्तान्तरं स्तम्भद्वयमिति षट्&nbsp;। कोणगाश्चत्वार इति ये दश त एव&nbsp;।
+         बहिः सामाजिकासनानि सर्वेभ्यो वा बहिः&nbsp;। अतिसामीप्ये दृष्टिविघातात्&nbsp;। अत एवाह रङ्गपीठावलोकने
+         साधुभूतमिति&nbsp;। अनेन द्विभूमित्वमेवानुसंहितम्&nbsp;।
+      </p>
+      
+      <p>अन्तरे स्तम्भविधिमाह—<span class="mentioned"><a href=".html#N%C4%81%C5%9A%C4%81.2.92" target="_blank">षडन्यानिति</a></span>&nbsp;। रङ्गपीठस्य दक्षिणतो निवेशितस्तम्भद्वयाच्चतुर्हस्तान्तरौ अन्योन्यमष्टहस्तान्तरौ
+         द्वौ&nbsp;। तत आग्नेयस्तम्भसम्मुखो योऽन्यस्तु पूर्वः स्तम्भः ततश्चतुर्हस्तान्तरं दक्षिणस्तम्भं
+         कुर्यादिति पूर्वन्यस्तानां दक्षिणस्तम्भानां दक्षिणाभित्तेश्चान्तराले स्तम्भत्रयम्&nbsp;।
+         एवमुत्तरस्यामपि&nbsp;।
+      </p>
+      
+      <p>तेषामुपरीति&nbsp;। अधिकानष्टौ दद्यात्&nbsp;। तत्र दक्षिणभित्तेरुदग्भागे चतुर्हस्तान्तरं पूर्वस्थापितस्तम्भाद्भित्तेश्चेकं
+         स्तम्भं दद्यात्पूर्वम्&nbsp;। एवमुत्तरभित्तेर्दक्षिणादिग्भागे&nbsp;। ततः पूर्वभित्तेश्चतुर्हस्तान्तरौ
+         रङ्गभागद्वयानुसारेण<a href="" class="app" title="ततोऽपि <b&gt;भण</b&gt;"><span class="appnum"><sup>1</sup></span></a> द्वौ (द्वौ द्वौ)&nbsp;। ततोऽपि चतुर्हस्तान्तरौ द्वावित्यष्टौ&nbsp;।
+      </p>
+      
+      <p>विद्धमास्यं मुखं यस्य तत् पद्मादिविरचितं मुखं स्तम्भेष्वष्टहस्तं पीठं निक्षिपेत्&nbsp;।
+         विद्धास्यस्योपरि हस्तप्रमाणधारिणीनां तुलानां धारकाः<a href="" class="app" title="धाराकाराः <b&gt;भ</b&gt;"><span class="appnum"><sup>1</sup></span></a> स्तम्भा........श्रयाः इति चतुरश्रे स्तम्भाविधिः&nbsp;।
+      </p>
+      
+      <p>तमेव विकृष्टे<a href="" class="app" title="ष्टत्रि <b&gt;मभ</b&gt;"><span class="appnum"><sup>1</sup></span></a> त्रिकोणेषु स्वबुद्ध्या योजयेदिति श्रीशङ्कुकाद्याः&nbsp;। अन्ये तु —‘अष्टौ स्तम्भान्पुनश्च’ इति नेपथ्यगृहविषयानेतानाहुः&nbsp;।
+      </p>
+      
+      <span class="pageinfo">[page 67]</span>
+      
+      <p>वार्तिककृत्तु<a href="" class="app" title="कृतः <b&gt;भ</b&gt;"><span class="appnum"><sup>1</sup></span></a>—
+      </p>
+      
+      <div class="lg" type="">
+         <span class="line">‘अन्तर्नेपथ्यगृहं स्तम्भौ द्वौ पीठकाश्च चत्वारः&nbsp;।</span>
+         <span class="line">........न्ये चत्वारो दशैवमुक्ता भवन्त्येते&nbsp;॥</span>
+         <span class="line">भित्तेः स्तम्भानां च स्यादन्तरमष्टहस्तमेवान्ते&nbsp;।’ इति&nbsp;।</span>
+         
+      </div>
+      
+      <div class="lg" type="">
+         <span class="line">दत्तोऽद्यवाताथः<a href="" class="app" title="वाताशः <b&gt;भ</b&gt;"><span class="appnum"><sup>1</sup></span></a>, सोऽथा नानाभवेदुक्तः<a href="" class="app" title="दुक्ताः <b&gt;भ</b&gt;"><span class="appnum"><sup>2</sup></span></a> (?)&nbsp;।</span>
+         <span class="line">चत्वारः पीठगताः पश्चादग्रे च याविह द्वौ द्वौ&nbsp;॥</span>
+         <span class="line">षट् सान्तरास्तथान्ये कार्या इति शास्त्रा(तात्पर्यम्)&nbsp;।</span>
+         <span class="line">.........पीठगताः पश्चादग्रे च याविह द्वौ द्वौ&nbsp;॥ (?)</span>
+         <span class="line">तेषामष्टावन्येऽप्युपरि निवेश्या य उद्दिष्टाः&nbsp;।</span>
+         <span class="line">तैरुत्क्षिप्तैरिह तले स्यादालोकः समस्तरङ्गस्य<a href="" class="app" title="रङ्गमद्य <b&gt;म</b&gt;, रङ्गतले <b&gt;भ</b&gt;"><span class="appnum"><sup>3</sup></span></a>&nbsp;॥</span>
+         <span class="line">सोपानाकृति पीठकमत्र विधेयं समन्ततो रङ्गे&nbsp;।</span>
+         <span class="line">येनालोक............ष्युपरि काष्ठासु&nbsp;॥ इति&nbsp;॥</span>
+         
+      </div>
+      
+      <p>अन्येऽपि चैवंविधा बहवः प्रवादा ग्रन्थविस्तरभयान्न<a href="" class="app" title="रत्वान्न <b&gt;मभ</b&gt;"><span class="appnum"><sup>1</sup></span></a> लिखिताः&nbsp;।
+      </p>
+      
+      <p>अयं <a href="" class="app" title="चात्र <b&gt;मभ</b&gt;"><span class="appnum"><sup>1</sup></span></a>चन्द्रसोदर (चात्र सार) इत्युपाध्यायाः&nbsp;। इह प्रेक्षामण्डपस्य त्रिधा कल्पना कृता&nbsp;। अधोभूमिः रङ्गपीठं रङ्ग इति&nbsp;। तेषु चायं
+         स्तम्भविन्यासविधिविच्छेद उक्तः&nbsp;।
+      </p>
+      
+      <p>तथा हि—अधोभूमौ स्तम्भानाह—<span class="mentioned"><a href=".html#N%C4%81%C5%9A%C4%81.2.89" target="_blank">तत्राभ्यन्तरत</a></span> इति&nbsp;। विस्तारे द्वादश—हस्तायाममेवं च चतु...... (र्हस्तान्तरा) दातव्याः&nbsp;। द्वौ स्तम्भौ
+         भित्तिद्वयापेक्षया द्वादश—
+         
+         <span class="pageinfo">[page 68]</span>
+         हस्तान्तरावन्योन्यापेक्षया चाष्टहस्तान्तरौ&nbsp;। अन्योन्यं तयोरन्तरं तथा कार्यं येन द्वारविद्धता
+         न भवति&nbsp;। इत्येवं पञ्चतुलासु दश&nbsp;।
+      </p>
+      
+      <p>एतत्स्तम्भदशकव्यतिरिक्तायां भूमावासनविधिरित्याह—<span class="mentioned"><a href=".html#N%C4%81%C5%9A%C4%81.2.90" target="_blank">स्तम्भानां बाह्यतश्चापी</a></span>त्यादि&nbsp;। पूर्ववदव्याख्येयम्&nbsp;। अथ रङ्गपीठे स्तम्भन्यासमाह—<span class="mentioned"><a href=".html#N%C4%81%C5%9A%C4%81.2.90" target="_blank">षडन्यानि</a></span>त्यादि&nbsp;। उपरि रङ्गपीठमुखोपलक्षितस्य वा (?) नेपथ्यगृहस्य<a href="" class="app" title="वाननेपथ्यगृहम् <b&gt;मभ</b&gt;"><span class="appnum"><sup>1</sup></span></a> वारुणकोण इत्युक्तं भवति&nbsp;। रङ्गपीठस्य यत्पृष्ठं रङ्गशिरस्तत्र द्वितीयमिति राश्यपेक्षयैकवचनम्&nbsp;।
+         तेन द्वारद्वयमेव रङ्गशिरसि नेपथ्यगतपात्रप्रवेशाय कर्तव्यम्&nbsp;। चकारादन्य(प्रवेशा)र्थम्<a href="" class="app" title="न्यपरस्यार्धम् <b&gt;मभ</b&gt;"><span class="appnum"><sup>2</sup></span></a>&nbsp;। जनप्रवेशनद्वारम्&nbsp;। त्रीणि वा कार्याणि मतान्तरे इति सङ्गृहीतं भवति&nbsp;। सर्वग्रहाणादन्यूनाधिकत्वमत्र
+         दर्शयन् विकृष्टे स्तम्भानामाधिक्यमभ्यनुजानीते (?) (८६-९४)
+      </p>
+      
+      <p>त्र्यश्ररङ्गपीठे तु प्रतिरङ्गमध्य इति&nbsp;। रङ्गोऽत्र तच्छिरः&nbsp;। ततः <a href="" class="app" title="अत्र पूजिताऽपि त्सय <b&gt;भ</b&gt;, रस्तुनः पृष्ठ .........गेयादिवा <b&gt;म</b&gt;"><span class="appnum"><sup>1</sup></span></a>पृष्ठतः रं...गेयादिवाभितः<a href="" class="app" title="वाभिरितः <b&gt;भ</b&gt;, वाभिरतः <b&gt;म</b&gt;"><span class="appnum"><sup>2</sup></span></a> (?) कर्मप्रवचनीयो वर्जगा(न)द्योतकः&nbsp;। रङ्गपीठं <a href="" class="app" title="वर्तयित्वा <b&gt;म</b&gt;"><span class="appnum"><sup>3</sup></span></a>वर्जयित्वा तदभ्यन्तरमण्डपस्य&nbsp;। तत्र द्वात्रिंशद्धस्तेषु रङ्गपीठे प्रतिकोणस्तम्भा इत्यष्टहस्तान्तराश्चत्वारः&nbsp;।
+         तदनन्तरं स्तम्भद्वयमिति षडप्येतेऽष्टहस्तान्तरं ततो द्वादशहस्तायामं यदवशिष्यते तत्र
+         चतुर्हस्तायामं द्वात्रिंशद्धस्तविस्तारं यद्रङ्गशिरस्तत्र द्वे तुले दातव्ये&nbsp;। प्रतितुलं
+         चाष्टहस्ता(न्तरं स्तम्भचतुष्टयं) वर्जयित्वेत्यष्टौ भवन्ति&nbsp;। अत एव हि विद्धास्यमष्टहस्तं
+         चतुर्हस्तान्तरालेऽपि तिरश्चीनं देयम्&nbsp;। येन तुलितं चित्रं भवति&nbsp;। एतदाहाष्टौ स्तम्भानित्यादि&nbsp;।.....शादसौभौयादिको
+         वा सिरयमुपरीति(?)&nbsp;। रङ्गपीठस्य यदुपरि शिरोरूपमित्यर्थः&nbsp;। तथा च विकृष्टमण्डपे रङ्गपीठापेक्षया
+      </p>
+      
+      
+      <span class="pageinfo">[page 69]</span>
+      
+      <p>रङ्गशिंर उन्नत वक्ष्यते&nbsp;। तत्र नियमादष्टस्तम्भा न्यस्यन्ते&nbsp;। अपि तु दृढा न्यसनीया
+         इति दर्शयति—<span class="mentioned"><a href=".html#N%C4%81%C5%9A%C4%81.2.95" target="_blank">तत्र स्तम्भा</a></span> इति&nbsp;। <a href="" class="app" title="अथवाऽव"><span class="appnum"><sup>1</sup></span></a>अथावशिष्टषु हस्तेषु विधिमाह-<span class="mentioned"><a href=".html#N%C4%81%C5%9A%C4%81.2.96" target="_blank">नेपथ्यगृहकमिति</a></span>&nbsp;। <span class="mentioned"><a href=".html#N%C4%81%C5%9A%C4%81.2.96" target="_blank">रङ्गपीठप्रवेशनमिति</a></span> वचनेनेदमाह—कक्ष्याविभागेन तावत् द्वे द्वारे तेन द्वारमिति जातावेकवचनम्&nbsp;। एकशब्दश्च
+         राश्यभिप्रायेण&nbsp;। राशिकरणे च निमित्तं पात्रप्रवेशोपायनम्&nbsp;। तथा च कक्ष्याध्याये वक्ष्यति—
+      </p>
+      
+      <p>‘ये नेपथ्यगृहद्वारे मया पूर्वं प्रकीर्तिते&nbsp;। तयोर्भाण्डस्य विन्यासः&nbsp;।’ (ना.शा.१३-२) इति&nbsp;। (जन)प्रवेशनं च तृतीयद्वारने<a href="" class="app" title="रं नेप"><span class="appnum"><sup>1</sup></span></a>पथ्यगृहस्य&nbsp;। येन भार्यामादाय नटपरिवारः प्रविशति&nbsp;। अन्यत्तु द्वारमाभिमुख्येन पूर्वस्यां
+         दिशि कुर्यात्&nbsp;। द्वारवृत्त्या सामाजिकजनप्रवेशार्थंम्&nbsp;। ननु किमपेक्षमाभिमु(ख्यम्&nbsp;।कक्ष्यापे)
+         क्षयैव पूर्वादिभिरित्युक्तम्&nbsp;। यद् वक्ष्यति च—
+         <div class="lg" type=""><span class="line">‘यतो मुखं भवेद्भाण्डद्वारं नेपथ्यकस्य तु&nbsp;।</span><span class="line">सा मन्तव्या तु दिक् पूर्वा नाट्ययोगे विपश्चिता&nbsp;॥’</span></div> (ना.शा. १३-११) इति एवं चतुर्द्वारं नाट्यगृहम्&nbsp;।
+      </p>
+      
+      <span class="pageinfo">[page 70]</span>
+      
+      <p>अन्ये त्वाद्यद्वार(द्वयमि)वाद्येन हेतुनाऽन्यद्वारद्वयं पार्श्वस्थितं कुर्यादालोकसिद्ध्य—र्थमिति
+         षड्द्वारं नाट्यगृहमाचक्षते&nbsp;। अथ रङ्गपीठरङ्गशिरसोर्वक्तव्यशेषं निरूपयति—<span class="mentioned"><a href=".html#N%C4%81%C5%9A%C4%81.2.98" target="_blank">अष्टहस्तन्त्विति</a></span>&nbsp;। वेदिके शोभायुक्ते कार्ये&nbsp;। <span class="mentioned"><a href=".html#N%C4%81%C5%9A%C4%81.2.99" target="_blank">पूर्वप्रमाणम्</a></span>&nbsp;। अध्यर्धहस्तोत्सेधत्वम्&nbsp;। समुन्नतमिति&nbsp;। रङ्गपीठापेक्षया&nbsp;। एतच्चेह प्रसङ्गात्सूचयन्
+         विकृष्टे तेनैव प्रकारेण स्तम्भत्रय्यधिका कर्तव्या&nbsp;। अन्तरमप्यत्रैव दर्शितम्&nbsp;। (९५-१०१)
+      </p>
+      
+      <p>अथ त्र्यश्रस्यातिदेशद्वारेण लक्षणं कर्तुमुपक्रममाह-<span class="mentioned"><a href=".html#N%C4%81%C5%9A%C4%81.2.101" target="_blank">त्र्यश्र</a></span>मिति&nbsp;। <span class="mentioned"><a href=".html#N%C4%81%C5%9A%C4%81.2.102" target="_blank">त्रिकोणमिति</a></span> लक्षणम्&nbsp;। उभयानुग्रहाच्च विकृष्टचतुरश्रमानद्वयमेव भवति&nbsp;। मध्ये च त्रिकोणमेव रङ्गपीठम्&nbsp;।
+         तथैव रङ्गशिरसः&nbsp;। नेपथ्यगृहं च&nbsp;। <span class="mentioned"><a href=".html#N%C4%81%C5%9A%C4%81.2.103" target="_blank">तेनैव कोणेनेति</a></span>&nbsp;। वारुणीगतेन&nbsp;। द्वारं जनप्रवेशनम्&nbsp;। न तस्मिन्नेव कोणे द्वारे कर्तव्ये&nbsp;। सङ्गतिं सूचयति—एवमेतेनेति&nbsp;।
+         एतेन विधिना बहवो नाट्यमण्डपाः, न तु पूर्वोक्ताष्टादशभेदकलनयेत्यर्थः&nbsp;। बुधैरित्यूहापोहविद्भिः&nbsp;।
+         पुनरिति&nbsp;। यद्यपि<a href="" class="app" title="यद्य.......जाताः <b&gt;भ</b&gt;, यद्य......गताः सर्वे <b&gt;म</b&gt;"><span class="appnum"><sup>1</sup></span></a> गदिताः सर्वे शुभदाः&nbsp;। <span class="mentioned"><a href=".html#N%C4%81%C5%9A%C4%81.2.105" target="_blank">पूजामिति</a></span>&nbsp;। तथापि <span class="mentioned"><a href=".html#N%C4%81%C5%9A%C4%81.2.105" target="_blank">वक्ष्या</a></span>मीति पुनश्शब्दार्थः&nbsp;। तत्र हि विधाने(नं) नोक्तम्&nbsp;। तदाह—<span class="mentioned"><a href=".html#N%C4%81%C5%9A%C4%81.2.105" target="_blank">यथाविधी</a></span>ति&nbsp;। एवामिति&nbsp;। मण्डपस्था देवताः&nbsp;। अनेनोपचारादुक्ताः&nbsp;। (१०२-१०५)
+      </p>
+      इति श्रीमहामाहेश्वराभिनवगुप्ताचार्यविरचितायामभिनवभारत्यां भारतीयनाट्यशास्त्रविवृतौ
+      मण्डपाध्यायो द्वितीयः&nbsp;॥
+      
+      
+   </body>
+</html>

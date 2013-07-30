@@ -1,0 +1,280 @@
+<xsl:stylesheet version="2.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:fn="http://www.w3.org/2005/xpath-functions">
+   <xsl:output method="html" encoding="utf-8" version="4.0" doctype-system="http://www.w3.org/TR/html4/strict.dtd"
+      doctype-public="-//W3C//DTD HTML 4.01//EN"></xsl:output>
+
+<xsl:template match="/">
+<html encodingxmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+  <head>
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+    <link rel="stylesheet" type="text/css" href="bhoja-html.css" />
+    <title><xsl:value-of select="//titleStmt/title"/></title>
+    <script type="text/javascript">
+    <![CDATA[
+    function toggle(id) {
+       var e = document.getElementById(id);
+       if(e.style.display == 'block')
+          e.style.display = 'none';
+       else
+          e.style.display = 'block';
+    }
+// qTip - CSS Tool Tips - by Craig Erskine
+// http://qrayg.com
+//
+// Multi-tag support by James Crooke
+// http://www.cj-design.com
+//
+// Inspired by code from Travis Beckham
+// http://www.squidfingers.com | http://www.podlob.com
+//
+// Copyright (c) 2006 Craig Erskine
+// Permission is granted to copy, distribute and/or modify this document
+// under the terms of the GNU Free Documentation License, Version 1.3
+// or any later version published by the Free Software Foundation;
+// with no Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts.
+// A copy of the license is included in the section entitled "GNU
+// Free Documentation License".
+
+var qTipTag = "a,label,input"; //Which tag do you want to qTip-ize? Keep it lowercase!//
+var qTipX = 0; //This is qTip's X offset//
+var qTipY = 15; //This is qTip's Y offset//
+
+//There's No need to edit anything below this line//
+tooltip = {
+  name : "qTip",
+  offsetX : qTipX,
+  offsetY : qTipY,
+  tip : null
+}
+
+tooltip.init = function () {
+	var tipNameSpaceURI = "http://www.w3.org/1999/xhtml";
+	if(!tipContainerID){ var tipContainerID = "qTip";}
+	var tipContainer = document.getElementById(tipContainerID);
+
+	if(!tipContainer) {
+	  tipContainer = document.createElementNS ? document.createElementNS(tipNameSpaceURI, "div") : document.createElement("div");
+		tipContainer.setAttribute("id", tipContainerID);
+	  document.getElementsByTagName("body").item(0).appendChild(tipContainer);
+	}
+
+	if (!document.getElementById) return;
+	this.tip = document.getElementById (this.name);
+	if (this.tip) document.onmousemove = function (evt) {tooltip.move (evt)};
+
+	var a, sTitle, elements;
+	
+	var elementList = qTipTag.split(",");
+	for(var j = 0; j < elementList.length; j++)
+	{	
+		elements = document.getElementsByTagName(elementList[j]);
+		if(elements)
+		{
+			for (var i = 0; i < elements.length; i ++)
+			{
+				a = elements[i];
+				sTitle = a.getAttribute("title");				
+				if(sTitle)
+				{
+					a.setAttribute("tiptitle", sTitle);
+					a.removeAttribute("title");
+					a.removeAttribute("alt");
+					a.onmouseover = function() {tooltip.show(this.getAttribute('tiptitle'))};
+					a.onmouseout = function() {tooltip.hide()};
+				}
+			}
+		}
+	}
+}
+
+tooltip.move = function (evt) {
+	var x=0, y=0;
+	if (document.all) {//IE
+		x = (document.documentElement && document.documentElement.scrollLeft) ? document.documentElement.scrollLeft : document.body.scrollLeft;
+		y = (document.documentElement && document.documentElement.scrollTop) ? document.documentElement.scrollTop : document.body.scrollTop;
+		x += window.event.clientX;
+		y += window.event.clientY;
+		
+	} else {//Good Browsers
+		x = evt.pageX;
+		y = evt.pageY;
+	}
+	this.tip.style.left = (x + this.offsetX) + "px";
+	this.tip.style.top = (y + this.offsetY) + "px";
+}
+
+tooltip.show = function (text) {
+	if (!this.tip) return;
+	this.tip.innerHTML = text;
+	this.tip.style.display = "block";
+}
+
+tooltip.hide = function () {
+	if (!this.tip) return;
+	this.tip.innerHTML = "";
+	this.tip.style.display = "none";
+}
+
+window.onload = function () {
+	tooltip.init ();
+}
+    ]]>
+    </script>
+  </head>
+  <body>
+  <div id="container" class="hyphenate">
+  <xsl:apply-templates/>
+  </div>
+  </body>
+</html>
+</xsl:template>
+
+<xsl:template match="teiHeader"/>
+
+<!-- front matter ? !-->
+<xsl:template match="//text/front"/>
+
+<xsl:template match="div[@type='commentary']">
+<div class="commentary"><xsl:apply-templates/></div>
+</xsl:template>
+
+<xsl:template match="div[@type='pariccheda']">
+<div class="pariccheda"><xsl:apply-templates/></div>
+</xsl:template>
+
+<xsl:template match="head">
+<div class="head"><xsl:apply-templates/></div>
+</xsl:template>
+
+<xsl:template match="trailer">
+<div class="trailer"><xsl:apply-templates/></div>
+</xsl:template>
+
+<xsl:template match="lg">
+<div class="{@type}"><xsl:apply-templates/></div>
+</xsl:template>
+
+<xsl:template match="l">
+<span class="l"><xsl:apply-templates/></span>
+</xsl:template>
+
+<xsl:template match="seg">
+<span class="seg"><xsl:apply-templates/></span>
+</xsl:template>
+
+<xsl:template match="note">
+    <xsl:variable name="note">
+      <xsl:apply-templates/>
+    </xsl:variable>
+    <a href="" class="note" title="{$note}"><xsl:text>*</xsl:text></a>
+</xsl:template>
+
+<xsl:template match="p">
+<p><xsl:apply-templates/></p>
+</xsl:template>
+
+<!-- inserts page information etc !-->
+<xsl:template match="pb">
+  <span class="pageinfo"><xsl:text>[page </xsl:text><xsl:value-of select="@n"/><xsl:text>]</xsl:text></span>
+</xsl:template>
+
+<xsl:template match="emph">
+<em><xsl:apply-templates /></em>
+</xsl:template>
+
+<!-- format lists !-->
+<xsl:template match="list">
+  <xsl:choose>
+  <xsl:when test="label">
+    <ul class="labelled"><xsl:apply-templates/></ul>
+  </xsl:when>
+  <xsl:otherwise>
+    <xsl:choose>
+      <xsl:when test="@type='ordered'">
+        <ol><xsl:apply-templates/></ol>
+      </xsl:when>
+      <xsl:otherwise>
+        <ul><xsl:apply-templates/></ul>
+      </xsl:otherwise>
+    </xsl:choose>
+  </xsl:otherwise>
+  </xsl:choose>
+</xsl:template>
+<xsl:template match="item">
+<li>
+  <xsl:if test="../label">
+    <span class="label"><xsl:value-of select="preceding-sibling::label[1]"/></span><xsl:text> </xsl:text>
+  </xsl:if>
+  <xsl:apply-templates/></li>
+</xsl:template>
+<xsl:template match="list/label"/>
+
+<!-- format tables !-->
+<xsl:template match="table">
+<table><xsl:apply-templates/></table>
+</xsl:template>
+<xsl:template match="row">
+<tr><xsl:apply-templates/></tr>
+</xsl:template>
+<xsl:template match="cell">
+<td><xsl:apply-templates/></td>
+</xsl:template>
+
+<!-- apparatus:location-referenced (no lemmas) !-->
+<xsl:template match="app">
+  <xsl:variable name="appnum">
+    <xsl:number level="any" from="lg | p | div" />
+  </xsl:variable>
+  <xsl:variable name="apparatus">
+      <xsl:for-each select=".//rdg">
+        <xsl:if test="@type='gloss'">
+          <xsl:text> = </xsl:text>
+        </xsl:if>
+        <span class="foreign"><xsl:apply-templates /></span>
+        <xsl:if test="note">
+          <span class="appnote"><xsl:value-of select="./note"/></span>
+        </xsl:if>
+        <xsl:if test="@wit">
+          <xsl:text> &lt;b&gt;</xsl:text><xsl:value-of select="translate(translate(@wit,' ',''),'#','')"/><xsl:text>&lt;/b&gt;</xsl:text>
+        </xsl:if>
+        <xsl:if test="@type='conj'">
+          <xsl:text> conj. </xsl:text><xsl:value-of select="translate(translate(@resp,' ',''),'#','')"/>
+        </xsl:if>
+      <xsl:if test="position()!=last()">
+        <xsl:text>, </xsl:text>
+      </xsl:if>
+    </xsl:for-each>
+  </xsl:variable>
+  <a href="" class="app" title="{$apparatus}">
+    <span class="appnum"><sup><xsl:copy-of select="$appnum"/></sup></span>
+  </a> 
+</xsl:template>
+
+<!-- bold !-->
+<xsl:template match="b | q">
+  <xsl:choose>
+    <xsl:when test="ancestor::app | ancestor::note">
+      <xsl:text>&lt;b&gt;</xsl:text><xsl:apply-templates/><xsl:text>&lt;/b&gt;</xsl:text>
+    </xsl:when>
+    <xsl:otherwise>
+      <b><xsl:apply-templates/></b>
+    </xsl:otherwise>
+  </xsl:choose>
+</xsl:template>
+
+<xsl:template match="ref[@cRef]">
+  <b><xsl:apply-templates/></b>
+</xsl:template>
+
+<xsl:template match="note[@place='app']">
+  <xsl:variable name="apparatus">
+    <xsl:apply-templates/>
+  </xsl:variable>
+  <a href="" class="app" title="{$apparatus}">
+    <xsl:text>*</xsl:text>
+  </a>
+</xsl:template>
+
+<!-- some magic for app notes !-->
+<xsl:template match="rdg/note"/>
+
+</xsl:stylesheet>

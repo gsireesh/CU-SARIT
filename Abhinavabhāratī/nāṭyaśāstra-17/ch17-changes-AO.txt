@@ -1,0 +1,34 @@
+TRANSLATION
+[p. 365] 
+[§1. Maṅgalācaraṇa.]
+  I revere that form of Parameśvara, beautiful after the cessation of its voice* in tasting the poison inside, which is the ...
+  * kāku intimates the subject of the 17th chapter.
+  ** read pakṣmagaṃ for pakṣagaṃ?
+[§2. Adhyāya-saṅgati.] [NaŚā 17.1ab]
+  It was said in the 14th chapter, where the types of verbal representation (vācika) are discussed, that “a sentence is either Sanskrit or Prakrit,”* In that chapter, the definitions of metrical forms and so on have been given, in connection with Sanskrit. But the characteristics of Prakrit are given in this chapter.
+  (The following portion seems corrupt.) ...
+  And should the qualities of recitation be different in Prakrit, or should they be the same as in Sanskrit? Regarding this question, the nature of what needs to be produced (in recitation) is described in (this) connection.
+  Immediately before** the definition of the ten forms, there is a definition of what is proper in addition (to its nature) as follows:***
+    The adornments and pauses which are recommended for Sanskrit recitation should be performed in the non-Sanskrit recitation of female characters as well. (14.141)
+  Thus I will summarize Prakrit recitation at the very end of the chapter. This is how the chapter fits. And this is precisely what he shows in the verse “and thus Sanskrit” (17.1).
+  * 14.5 says “pāṭhyaṃ saṃskṛtaṃ prākṛtaṃ tathā” (recitation is both Sanskrit and Prakrit). There is no variant that precisely matches Abhinava’s wording.
+  ** read -ānantarapūrvaṃ for -ānantaraṃ? (The ten forms are discussed in the following chapter.)
+  *** The verse given in the commentary makes no sense. Emended to match with the 17.141 (alaṅkārā virāmāś ca ye pāṭhye saṃskṛte smṛtāḥ | ta eva sarve kartavyāḥ strīṇāṃ pāṭhye tv asaṃskṛte).
+[§3. Prākṛta-pāṭhya-lakṣaṇa.] [NaŚā 17.1cd-2]
+  Pāṭhya or a “part” (literally, “what must be recited”) can mean:
+    a. What requires a specific recitation (pāṭhaviśeṣam arhati), or
+    b. what needs to be recited intentionally (yatnena paṭhanīyam), or
+    c. what needs recitation in a specific form (viśiṣṭena rūpena paṭhanārham), or
+    d. what can be recited in such a way only through an internal mental operation (āntaracittavṛttivaśād eva tathā paṭhituṃ śakyam), or
+    e. what needs to be recited through the effort of a teacher (ācāryayatnena paṭhanīyam).
+  With reference to a “part,” he gives a general definition of Prakrit: it is the same as Sanskrit, but without the quality of “refinement,” that is to say, an intention of producing the sounds in their original form (yatnena parirakṣārūpeṇa). (It is called Prakrit because) it has come from the “original” (prakṛteḥ) in an unrefined form (asaṃskārarūpāyāḥ).*
+  * Abhinava explains the use of the suffix 4.3.74 (tatrāgataḥ).
+[§4. Samāna.] [NaŚā 17.3-4]
+  He gives examples of the words that are the same as Sanskrit with “kamalāmala” etc. In the case of a word with a case-ending (vibhaktau?), because the gender in Prakrit is independent (from the gender in Sanskrit?), a qualification must be added: that is the reason for saying (“arising within an utterance”) arising within an utterance in compound, that is, compounded.*
+  * I may not have understood this correctly, but the idea seems to be that a “word” in Prakrit cannot be truly the same as a word in Sanskrit because the case-endings are different; what is the same is the stem, which only occurs without a case-ending in compounds.
+  The result of recognizing such words, he says, is that  “they can be Sanskrit used as well as Sanskrit.” Their usage in bhāṣā-śleṣa and in the narration of off-scene events (patākāsthānaka) and so on is referred to. By the word “as well” he means that in the use of Prakrit, they are not the same as Sanskrit even when compounded in words like kamala-amala-indu (where there is no sandhi between the composite words).
+  * अपिशब्दस्य instead of अपि शब्दस्य
+[§5. Vibhraṣṭa.] [NāŚā 17.5]
+  He defines vibhraṣṭa in the verse “the sounds” (NāŚā.17.5). This is what he expands in the verse “e-o-āra-parāṇi a” (NāŚā.17.6). After the letter e is ai, after o is au, and*
+  * ओकारात्पराः -> ओकारात्परः
+  * एकारौकारौ च येभ्यः [परानि] तानि ?

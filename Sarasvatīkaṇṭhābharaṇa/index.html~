@@ -1,0 +1,27 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html xmlns:fn="http://www.w3.org/2005/xpath-functions" encodingxmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>Sarasvatīkaṇṭhābharaṇa files</title>
+  </head>
+
+<a href="sarasvatikanthabharana-dn.xml">XML version (Devanagari)</a><br/>
+
+<a href="sarasvatikanthabharana-roman.xml">XML version (Roman)</a><br/>
+
+<a href="bhoja.css">CSS stylesheet</a> for XML files<br/>
+
+<a href="sarasvatikanthabharana-dn.html">HTML version (Devanagari)</a><br/>
+
+<a href="sarasvatikanthabharana-roman.html">HTML version (Roman)</a><br/>
+
+<a href="bhoja-html.css">CSS stylesheet</a> for HTML files<br/>
+
+<p>HTML files have been (slightly) processed with XSLT to show the page numbers and textual notes.</p>
+
+
+<body>
+
+</body>
+</html>

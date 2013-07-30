@@ -1,0 +1,967 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html xmlns:fn="http://www.w3.org/2005/xpath-functions" encodingxmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+      <link rel="stylesheet" type="text/css" href="cssstylesheet.css">
+      <title>Nāṭyaśāstra, Chapter 1</title><script type="text/javascript">
+    
+    function toggle(id) {
+       var e = document.getElementById(id);
+       if(e.style.display == 'block')
+          e.style.display = 'none';
+       else
+          e.style.display = 'block';
+    }
+// qTip - CSS Tool Tips - by Craig Erskine
+// http://qrayg.com
+//
+// Multi-tag support by James Crooke
+// http://www.cj-design.com
+//
+// Inspired by code from Travis Beckham
+// http://www.squidfingers.com | http://www.podlob.com
+//
+// Copyright (c) 2006 Craig Erskine
+// Permission is granted to copy, distribute and/or modify this document
+// under the terms of the GNU Free Documentation License, Version 1.3
+// or any later version published by the Free Software Foundation;
+// with no Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts.
+// A copy of the license is included in the section entitled "GNU
+// Free Documentation License".
+
+var qTipTag = "a,label,input"; //Which tag do you want to qTip-ize? Keep it lowercase!//
+var qTipX = 0; //This is qTip's X offset//
+var qTipY = 15; //This is qTip's Y offset//
+
+//There's No need to edit anything below this line//
+tooltip = {
+  name : "qTip",
+  offsetX : qTipX,
+  offsetY : qTipY,
+  tip : null
+}
+
+tooltip.init = function () {
+	var tipNameSpaceURI = "http://www.w3.org/1999/xhtml";
+	if(!tipContainerID){ var tipContainerID = "qTip";}
+	var tipContainer = document.getElementById(tipContainerID);
+
+	if(!tipContainer) {
+	  tipContainer = document.createElementNS ? document.createElementNS(tipNameSpaceURI, "div") : document.createElement("div");
+		tipContainer.setAttribute("id", tipContainerID);
+	  document.getElementsByTagName("body").item(0).appendChild(tipContainer);
+	}
+
+	if (!document.getElementById) return;
+	this.tip = document.getElementById (this.name);
+	if (this.tip) document.onmousemove = function (evt) {tooltip.move (evt)};
+
+	var a, sTitle, elements;
+	
+	var elementList = qTipTag.split(",");
+	for(var j = 0; j < elementList.length; j++)
+	{	
+		elements = document.getElementsByTagName(elementList[j]);
+		if(elements)
+		{
+			for (var i = 0; i < elements.length; i ++)
+			{
+				a = elements[i];
+				sTitle = a.getAttribute("title");				
+				if(sTitle)
+				{
+					a.setAttribute("tiptitle", sTitle);
+					a.removeAttribute("title");
+					a.removeAttribute("alt");
+					a.onmouseover = function() {tooltip.show(this.getAttribute('tiptitle'))};
+					a.onmouseout = function() {tooltip.hide()};
+				}
+			}
+		}
+	}
+}
+
+tooltip.move = function (evt) {
+	var x=0, y=0;
+	if (document.all) {//IE
+		x = (document.documentElement && document.documentElement.scrollLeft) ? document.documentElement.scrollLeft : document.body.scrollLeft;
+		y = (document.documentElement && document.documentElement.scrollTop) ? document.documentElement.scrollTop : document.body.scrollTop;
+		x += window.event.clientX;
+		y += window.event.clientY;
+		
+	} else {//Good Browsers
+		x = evt.pageX;
+		y = evt.pageY;
+	}
+	this.tip.style.left = (x + this.offsetX) + "px";
+	this.tip.style.top = (y + this.offsetY) + "px";
+}
+
+tooltip.show = function (text) {
+	if (!this.tip) return;
+	this.tip.innerHTML = text;
+	this.tip.style.display = "block";
+}
+
+tooltip.hide = function () {
+	if (!this.tip) return;
+	this.tip.innerHTML = "";
+	this.tip.style.display = "none";
+}
+
+window.onload = function () {
+	tooltip.init ();
+}
+    
+    </script></head>
+   <body>
+      <div id="container" class="hyphenate">
+         
+         
+         
+         <div class="titleStmt">
+            <h2><span class="title">Nāṭyaśāstra, Chapter 1</span> by <span class="author">Bharata</span></h2>This file is in transliteration. View in <a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_01-dn.html">devanāgarī</a>.
+         </div>
+         
+         <div class="publicationStmt">
+            <h3>Publication statement</h3>
+         </div>
+         
+         <div class="sourceDesc">
+            <h3>Source description</h3>
+            <p>Print sources:</p>
+            <ul>
+               <li>K. Krishnamoorthy (ed.). <em>Nāṭyaśāstra of Bharatamuni: With the Commentary Abhinavabhāratī of Abhinavagupta</em>. Vadodara: Oriental Institute, 1992. Gaekwad's Oriental Series 34. 
+               </li>
+            </ul>
+         </div>
+         
+         
+         <div class="encodingDesc">
+            <h3>Encoding description</h3>
+            
+         </div>
+         
+         <div class="revisionDesc">
+            <h3>Revision description</h3>
+         </div>
+         
+         
+         
+         
+         <h2>Table of contents</h2>
+         <div class="toc"></div>
+         
+         <span class="pageinfo">[page 001]</span>
+         
+         
+         
+         
+         <a name="N%C4%81%C5%9A%C4%81.1.1"></a><div class="text" xml:id="NāŚā.1.1">
+            <span class="line">praṇamya śirasā devau pitāmahamaheśvarau&nbsp;|</span>
+            <span class="line">nāṭyaśāstraṃ pravakṣyāmi brahmaṇā yadudāhṛtam<a href="" class="app" title="yudadīritam <b&gt;प</b&gt;"><span class="appnum"><sup>1</sup></span></a>&nbsp;|| 1&nbsp;||</span>
+            
+         </div>
+         ﻿
+         <span class="pageinfo">[page 002]</span>
+         
+         ﻿<span class="pageinfo">[page 003]</span>
+         
+         ﻿<span class="pageinfo">[page 004]</span>
+         
+         ﻿<span class="pageinfo">[page 005]</span>
+         
+         <a name="N%C4%81%C5%9A%C4%81.1.2"></a><div class="text" xml:id="NāŚā.1.2">
+            <span class="line">samāptajapyaṃ vratinaṃ <a href="" class="app" title="svaśiṣyaiḥ <b&gt;प</b&gt;"><span class="appnum"><sup>1</sup></span></a>svasutaiḥ parivāritam&nbsp;|</span>
+            <span class="line">anadhyāye kadācittu<a href="" class="app" title="ttam <b&gt;गम</b&gt;"><span class="appnum"><sup>2</sup></span></a> bharataṃ nāṭyakovidam&nbsp;|| 2&nbsp;||</span>
+            
+         </div>
+         <a name="N%C4%81%C5%9A%C4%81.1.3"></a><div class="text" xml:id="NāŚā.1.3">
+            <span class="line">munayaḥ paryupāsyainamātreyapramukhāḥ purā&nbsp;|</span>
+            <span class="line">papracchuste mahātmāno <a href="" class="app" title="nāṭyavedasamudbhavam <b&gt;Nनमत</b&gt;"><span class="appnum"><sup>1</sup></span></a>niyatendriyabuddhayaḥ&nbsp;|| 3&nbsp;||</span>
+            
+         </div>
+         
+         ﻿<span class="pageinfo">[page 006]</span>
+         
+         <a name="N%C4%81%C5%9A%C4%81.1.4"></a><div class="text" xml:id="NāŚā.1.4">
+            <span class="line">yo 'yaṃ bhagavatā samya<a href="" class="app" title="kkathito <b&gt;क</b&gt;, gracito <b&gt;ज</b&gt;"><span class="appnum"><sup>1</sup></span></a>ggrathito vedasammitaḥ<a href="" class="app" title="vistaraḥ <b&gt;न</b&gt;, sammataḥ <b&gt;प</b&gt;"><span class="appnum"><sup>2</sup></span></a>&nbsp;|</span>
+            <span class="line">nāṭyavedaḥ kathaṃ brahmannutpannaḥ kasya vā kṛte&nbsp;|| 4&nbsp;||</span>
+            
+         </div>
+         <a name="N%C4%81%C5%9A%C4%81.1.5"></a><div class="text" xml:id="NāŚā.1.5">
+            <span class="line"><a href="" class="app" title="katyaṃśaḥ <b&gt;जम</b&gt;"><span class="appnum"><sup>1</sup></span></a>katyaṅgaḥ kiṃpramāṇaśca prayogaścāsya kīdṛśaḥ&nbsp;|</span>
+            <span class="line">sarvametadyathātattva bhagavanvaktumarhasi&nbsp;|| 5&nbsp;||</span>
+            
+         </div>
+         
+         ﻿<span class="pageinfo">[page 007]</span>
+         
+         ﻿<span class="pageinfo">[page 008]</span>
+         
+         <a name="N%C4%81%C5%9A%C4%81.1.6"></a><div class="text" xml:id="NāŚā.1.6">
+            <span class="line">teṣāṃ tu <a href="" class="app" title="tadvacanam <b&gt;क</b&gt;"><span class="appnum"><sup>1</sup></span></a>vacanaṃ śrutvā munīnāṃ bharato muniḥ&nbsp;|</span>
+            <span class="line">pratyuvāca tato vākyaṃ nāṭyavedakathāṃ prati&nbsp;|| 6&nbsp;||</span>
+            
+         </div>
+         <a name="N%C4%81%C5%9A%C4%81.1.7"></a><div class="text" xml:id="NāŚā.1.7">
+            <span class="line">bhavadbhiḥ śucibhirbhūtvā tathā 'vahitamānasaiḥ&nbsp;|</span>
+            <span class="line">śrūyatāṃ nāṭyavedasya <a href="" class="app" title="saṃkṣepo <b&gt;ध</b&gt;"><span class="appnum"><sup>1</sup></span></a>sambhavo brahma<a href="" class="app" title="muni <b&gt;त</b&gt;"><span class="appnum"><sup>2</sup></span></a>nirmitaḥ&nbsp;|| 7&nbsp;||</span>
+            
+         </div>
+         
+         ﻿<span class="pageinfo">[page 009]</span>
+         
+         <a name="N%C4%81%C5%9A%C4%81.1.8"></a><div class="text" xml:id="NāŚā.1.8">
+            <span class="line">pūrvaṃ<a href="" class="app" title="purā <b&gt;प</b&gt;"><span class="appnum"><sup>1</sup></span></a> kṛtayuge viprā vṛtte svāyambhuve 'ntare&nbsp;|</span>
+            <span class="line">tretāyuge 'tha<a href="" class="app" title="traitāyuge tu <b&gt;नम</b&gt;, tretāyuge ca <b&gt;जम</b&gt;, tretāyuge sampravṛtte <b&gt;खग</b&gt;"><span class="appnum"><sup>2</sup></span></a> samprāpte manorvaivasvatasya tu<a href="" class="app" title="ca <b&gt;ग</b&gt;"><span class="appnum"><sup>3</sup></span></a>&nbsp;|| 8&nbsp;||</span>
+            
+         </div>
+         <a name="N%C4%81%C5%9A%C4%81.1.9"></a><div class="text" xml:id="NāŚā.1.9">
+            <span class="line">grāmyadharma<a href="" class="app" title="dharme <b&gt;गत</b&gt;"><span class="appnum"><sup>1</sup></span></a>pravṛtte tu <a href="" class="app" title="lobhamohavaśam <b&gt;खत</b&gt;"><span class="appnum"><sup>2</sup></span></a>kāmalobhavaśaṃ gate&nbsp;|</span>
+            <span class="line">īrṣyākrodhādi<a href="" class="app" title="bhi <b&gt;ठतम</b&gt;"><span class="appnum"><sup>3</sup></span></a>saṃmụ̄dhe loke sukhitaduḥkhite&nbsp;|| 9&nbsp;||</span>
+            
+         </div>
+         
+         ﻿<span class="pageinfo">[page 010]</span>
+         
+         <a name="N%C4%81%C5%9A%C4%81.1.10"></a><div class="text" xml:id="NāŚā.1.10">
+            <span class="line">devadānavagandharva<a href="" class="app" title="gandharvai rakṣoyakṣa <b&gt;ग</b&gt;"><span class="appnum"><sup>1</sup></span></a>yakṣarakṣomahoragaiḥ&nbsp;|</span>
+            <span class="line">jambūdvīpe samākrānte lokapāla<a href="" class="app" title="pālaiḥ <b&gt;ड</b&gt;"><span class="appnum"><sup>2</sup></span></a>pratiṣṭhite&nbsp;|| 10&nbsp;||</span>
+            
+         </div>
+         <a name="N%C4%81%C5%9A%C4%81.1.11"></a><div class="text" xml:id="NāŚā.1.11">
+            <span class="line">mahendrapramukhairdevairuktaḥ kila pitāmahaḥ&nbsp;|</span>
+            <span class="line">krīḍanīyakamicchāmo dṛśyaṃ śravyaṃ<a href="" class="app" title="śrāvyam <b&gt;ठमत</b&gt;"><span class="appnum"><sup>1</sup></span></a> ca yadbhavet<a href="" class="app" title="yadvibho <b&gt;नम</b&gt;"><span class="appnum"><sup>2</sup></span></a>&nbsp;|| 11&nbsp;||</span>
+            
+         </div>
+         
+         ﻿<span class="pageinfo">[page 011]</span>
+         
+         <a name="N%C4%81%C5%9A%C4%81.1.12"></a><div class="text" xml:id="NāŚā.1.12">
+            <span class="line">[na vedavyavahāro 'yaṃ saṃśrāvyaḥ śūdrajātiṣu&nbsp;|</span>
+            <span class="line">tasmātsṛjāparaṃ vedaṃ pañcamaṃ sārvavarṇikam&nbsp;|| 12&nbsp;||<a href="" class="app" title="N omits">*</a></span>
+            
+         </div>
+         
+         ﻿<span class="pageinfo">[page 012]</span>
+         
+         <a name="N%C4%81%C5%9A%C4%81.1.13"></a><div class="text" xml:id="NāŚā.1.13">
+            <span class="line">evamastviti tānukatvā devarājaṃ visṛjya ca&nbsp;|</span>
+            <span class="line">sa<a href="" class="app" title="sasmāreda tadā brahmā <b&gt;ड</b&gt;, sasmāra ca <b&gt;N</b&gt;"><span class="appnum"><sup>1</sup></span></a>smāra caturo vedānyogamāsthāya ta<a href="" class="app" title="yogavit <b&gt;Nढतम</b&gt;"><span class="appnum"><sup>2</sup></span></a>ttvavit&nbsp;|| 13&nbsp;||</span>
+            
+         </div>
+         <a name="N%C4%81%C5%9A%C4%81.1.13.1"></a><div class="text" xml:id="NāŚā.1.13.1">
+            <span class="line">neme<a href="" class="app" title="इदं पद्यं <b&gt;N म</b&gt;पुस्तक एव दृश्यते">*</a> vedā yataḥ śrāvyāḥ strīśūdrādyāsu jātiṣu&nbsp;|</span>
+            <span class="line">vedamanyattataḥ srakṣye sarvaśrāvyaṃ tu pañcamam&nbsp;||</span>
+            
+         </div>
+         
+         
+         ﻿<span class="pageinfo">[page 013]</span>
+         
+         <a name="N%C4%81%C5%9A%C4%81.1.14"></a><div class="text" xml:id="NāŚā.1.14">
+            <span class="line">dharmyamarthyaṃ <a href="" class="app" title="dharmakāmārthasaṃyuktam <b&gt;ड</b&gt;"><span class="appnum"><sup>1</sup></span></a>yaśasyaṃ ca so<a href="" class="app" title="sopadeśam <b&gt;डमत</b&gt;"><span class="appnum"><sup>2</sup></span></a>padeśayaṃ sasaṅgraham&nbsp;|</span>
+            <span class="line">bhaviṣyataśca lokasya<a href="" class="app" title="kālasya <b&gt;न</b&gt;, loke 'sya <b&gt;ठ</b&gt;"><span class="appnum"><sup>3</sup></span></a> sarvakarmānudarśakam<a href="" class="app" title="darśanam <b&gt;प्र</b&gt;, karmapradarśakam <b&gt;प</b&gt;"><span class="appnum"><sup>4</sup></span></a>&nbsp;|| 14&nbsp;||</span>
+            
+         </div>
+         <a name="N%C4%81%C5%9A%C4%81.1.15"></a><div class="text" xml:id="NāŚā.1.15">
+            <span class="line">sarvaśāstrārthasampannaṃ sarvaśilpa<a href="" class="app" title="śīlā <b&gt;न</b&gt;, śiṣya <b&gt;ग</b&gt;"><span class="appnum"><sup>1</sup></span></a>pravartakam<a href="" class="app" title="darśakam <b&gt;ठम</b&gt;, samanvitam <b&gt;प्र</b&gt;, praveśakam <b&gt;त</b&gt;"><span class="appnum"><sup>2</sup></span></a>&nbsp;|</span>
+            <span class="line">nā<a href="" class="app" title="nāṭyasaṃjñamimaṃ vedam <b&gt;पम</b&gt;"><span class="appnum"><sup>3</sup></span></a>ṭyākhyaṃ pañcamaṃ vedaṃ setihāsaṃ karomyaham&nbsp;|| 15&nbsp;||</span>
+            
+         </div>
+         
+         ﻿<span class="pageinfo">[page 014]</span>
+         
+         <a name="N%C4%81%C5%9A%C4%81.1.16"></a><div class="text" xml:id="NāŚā.1.16">
+            <span class="line"><a href="" class="app" title="proktvā tu bhagavānevaṃ vedāna sarvān <b&gt;नतम</b&gt;, smṛtvā tu bhagavānevam <b&gt;प</b&gt;, saṅkalpya bhagavānevam <b&gt;ग</b&gt;, tataḥ sa bhagavān brahmā vedān sarvānanusmanaran <b&gt;Nड</b&gt;"><span class="appnum"><sup>1</sup></span></a>evaṃ saṅkalpya bhagavāt <a href="" class="app" title="sarvān vedān <b&gt;जमत</b&gt;"><span class="appnum"><sup>2</sup></span></a>sarvavedāna<a href="" class="app" title="pitāmahaḥ <b&gt;झ</b&gt;"><span class="appnum"><sup>3</sup></span></a>nusmaran&nbsp;|</span>
+            <span class="line">nāṭyavedaṃ tataścakre caturvedāṅgasambhavam<a href="" class="app" title="asṛjannāṭyavedaṃ tu sarvavedāṅgasambhavam <b&gt;N</b&gt;"><span class="appnum"><sup>4</sup></span></a>&nbsp;|| 16&nbsp;||</span>
+            
+         </div>
+         <a name="N%C4%81%C5%9A%C4%81.1.17"></a><div class="text" xml:id="NāŚā.1.17">
+            <span class="line">jagrāha pāṭhyamṛgvedātsāmabhyo<a href="" class="app" title="sāmato <b&gt;न</b&gt;"><span class="appnum"><sup>1</sup></span></a> gītameva ca&nbsp;|</span>
+            <span class="line">yajurvedādabhinayān rasā<a href="" class="app" title="nṛttānā <b&gt;ब</b&gt;"><span class="appnum"><sup>2</sup></span></a>nātharvaṇādapi&nbsp;|| 17&nbsp;||</span>
+            
+         </div>
+         
+         ﻿<span class="pageinfo">[page 015]</span>
+         
+         <a name="N%C4%81%C5%9A%C4%81.1.17.1"></a><div class="text" xml:id="NāŚā.1.17.1">
+            <span class="line">dharmakarmārthasaṃyuktaṃ sāpadeśaṃ sasaṃgraham&nbsp;|</span>
+            <span class="line">rucibhiḥ sarvalokasya sarvakarmānudarśakam&nbsp;||</span>
+            
+         </div> 
+         <a name="N%C4%81%C5%9A%C4%81.1.17.2"></a><div class="text" xml:id="NāŚā.1.17.2">
+            <span class="line">sarvaśāstrārthasaṃpannaṃ sarvaśilpasamanvitam&nbsp;|</span>
+            <span class="line">nāṭyākhyaṃ pañcamaṃ vedamitihāsamacintayat&nbsp;||<a href="" class="app" title="Only in N. instead of 12a.">*</a> </span>
+            
+         </div> 
+         <a name="N%C4%81%C5%9A%C4%81.1.18"></a><div class="text" xml:id="NāŚā.1.18">
+            <span class="line"><a href="" class="app" title="vedopavedasambandho <b&gt;म</b&gt;, vedopavedaḥ <b&gt;ठ</b&gt;"><span class="appnum"><sup>1</sup></span></a>vedopavedaiḥ sambaddho nāṭyavedo mahātmanā<a href="" class="app" title="sampanno brahmaṇā lalitātmakam <b&gt;न</b&gt;, nāṭyavedo maharṣayaḥ <b&gt;त</b&gt;"><span class="appnum"><sup>2</sup></span></a>&nbsp;|</span>
+            <span class="line">evaṃ bhagavatā sṛṣṭo <a href="" class="app" title="brahmaṇā lalitātmakam <b&gt;ठम</b&gt;"><span class="appnum"><sup>3</sup></span></a>brahyaṇā sarvavedinā&nbsp;|| 18&nbsp;||</span>
+            
+         </div>
+         <a name="N%C4%81%C5%9A%C4%81.1.19"></a><div class="text" xml:id="NāŚā.1.19">
+            <span class="line"><a href="" class="app" title="N."><span class="appnum"><sup>1</sup></span></a>sarvalokahitārthaṃ tu nāṭyavedo mahātmanā&nbsp;|</span>
+            <span class="line">utpādya nāṭyavedaṃ tu <a href="" class="app" title="brahmā 'vocatsureśvaram <b&gt;ज</b&gt;, prāha śakraṃ pitāmahaḥ <b&gt;Nडत</b&gt;"><span class="appnum"><sup>2</sup></span></a>brahmovāca sureśvaram&nbsp;|</span>
+            <span class="line">itihāso mayā <a href="" class="app" title="dṛṣṭaḥ <b&gt;ठ</b&gt;"><span class="appnum"><sup>3</sup></span></a>sṛṣṭaḥ sa sureṣu niyu<a href="" class="app" title="niveśya <b&gt;</b&gt;"><span class="appnum"><sup>4</sup></span></a>jyatām&nbsp;|| 19&nbsp;||</span>
+            
+         </div>
+         
+         ﻿<span class="pageinfo">[page 016]</span>
+         
+         <a name="N%C4%81%C5%9A%C4%81.1.20"></a><div class="text" xml:id="NāŚā.1.20">
+            <span class="line">kuśalā ye vidagdhāśca pragalbhāśca <a href="" class="app" title="jitaklamāḥ <b&gt;प</b&gt;"><span class="appnum"><sup>1</sup></span></a>jitaśramāḥ&nbsp;|</span>
+            <span class="line">teṣvayaṃ nāṭyasaṃjño<a href="" class="app" title="nāṭyasaṃjñastu <b&gt;नम</b&gt;, nāṭyasaṃjño vai <b&gt;N</b&gt;"><span class="appnum"><sup>2</sup></span></a> hi vedaḥ saṃkrāmyatāṃ tvayā<a href="" class="app" title="vedaḥ samyaṅniyujyatām"><span class="appnum"><sup>3</sup></span></a>&nbsp;|| 20&nbsp;||</span>
+            
+         </div>
+         <a name="N%C4%81%C5%9A%C4%81.1.21"></a><div class="text" xml:id="NāŚā.1.21">
+            <span class="line">tacchrutvā vacanaṃ<a href="" class="app" title="bhagavān śakro <b&gt;न</b&gt;"><span class="appnum"><sup>1</sup></span></a> śakro brahmaṇā ya<a href="" class="app" title="samudāhṛtam <b&gt;Nनमत</b&gt;"><span class="appnum"><sup>2</sup></span></a>dudāhṛtam&nbsp;|</span>
+            <span class="line">prāñjaliḥ praṇato<a href="" class="app" title="vinayātprāñjaliḥ <b&gt;Nनम</b&gt;"><span class="appnum"><sup>3</sup></span></a> bhūtvā pratyuvāca pitāmaham&nbsp;|| 21&nbsp;||</span>
+            
+         </div>
+         <a name="N%C4%81%C5%9A%C4%81.1.22"></a><div class="text" xml:id="NāŚā.1.22">
+            <span class="line">grahaṇe dhāraṇe jñāne<a href="" class="app" title="caiva <b&gt;ब</b&gt;"><span class="appnum"><sup>1</sup></span></a> prayoge cāsya sattama&nbsp;|</span>
+            <span class="line"><a href="" class="app" title="na śaktā bhagavan devā na yo <b&gt;त</b&gt;, āyogyā bhagavan devā na śaktā nāṭyakarmaṇi <b&gt;N</b&gt;"><span class="appnum"><sup>2</sup></span></a>aśaktā bhagavan devā ayogyā nāṭyakarmaṇi<a href="" class="app" title="karmasu <b&gt;प</b&gt;"><span class="appnum"><sup>3</sup></span></a>&nbsp;|| 22&nbsp;||</span>
+            
+         </div>
+         
+         ﻿<span class="pageinfo">[page 017]</span>
+         
+         <a name="N%C4%81%C5%9A%C4%81.1.23"></a><div class="text" xml:id="NāŚā.1.23">
+            <span class="line">ya ime vedaguhyajñā <a href="" class="app" title="munayaḥ <b&gt;ज</b&gt;"><span class="appnum"><sup>1</sup></span></a>ṛṣayaḥ <a href="" class="app" title="brahmavādinaḥ <b&gt;न</b&gt;, brahmasambhavāḥ <b&gt;पत</b&gt;, śaṃsitavratāḥ <b&gt;ख</b&gt;, saṃśritavratāḥ <b&gt;म</b&gt;"><span class="appnum"><sup>2</sup></span></a>saṃśitavratāḥ&nbsp;|</span>
+            <span class="line"><a href="" class="app" title="ete saṅgrahaṇe <b&gt;ड</b&gt;, te samyaggrahaṇe <b&gt;N</b&gt;, te hyasya <b&gt;पत</b&gt;, etasya <b&gt;जम</b&gt;"><span class="appnum"><sup>3</sup></span></a>ete 'sya grahaṇe śaktāḥ prayoge dhāraṇe tathā&nbsp;||23||</span>
+            
+         </div>
+         <a name="N%C4%81%C5%9A%C4%81.1.24"></a><div class="text" xml:id="NāŚā.1.24">
+            <span class="line"><a href="" class="app" title="śrutvemam <b&gt;ठ</b&gt;, sa śrutvā <b&gt;N</b&gt;, śakrasya vacanaṃ śrutvā <b&gt;न</b&gt;"><span class="appnum"><sup>1</sup></span></a>śrutvā tu śakravacanaṃ māmāhāmbujasambhavaḥ&nbsp;|</span>
+            <span class="line">tvaṃ putraśatasaṃyuktaḥ<a href="" class="app" title="sampannaḥ <b&gt;ख</b&gt;"><span class="appnum"><sup>2</sup></span></a> prayoktā 'sya bhavānagha&nbsp;|| 24&nbsp;||</span>
+            
+         </div>
+         <a name="N%C4%81%C5%9A%C4%81.1.25"></a><div class="text" xml:id="NāŚā.1.25">
+            <span class="line">ājñāpito viditvā 'haṃ nāṭyavedaṃ pitāmahāt&nbsp;|</span>
+            <span class="line"><a href="" class="app" title="nānye 'nye dhāraṇe yogyāḥ prayoge vāpi sattama&nbsp;| ityukto 'sya prayogasya kuru yatnamatandritaḥ&nbsp;|| ājñāṃ vibhorviditvāhaṃ nāṭyavedaṃ pitāmahāt&nbsp;|&#xA;sutānadhyāpayāmāsa prayogārthī tadājñayā&nbsp;|| <b&gt;पम</b&gt;, sutānadhyāpayāmāsa prayogādīnadarśayat <b&gt;N</b&gt;, sutānadhyāpayāmāsa prayoge vāpi sattama <b&gt;न</b&gt;, putrānādhyāpayaṃ yogyān <b&gt;ठत</b&gt;"><span class="appnum"><sup>1</sup></span></a>putrānadhyāpayāmāsa prayogaṃ cāpi tattvataḥ&nbsp;|| 25&nbsp;||</span>
+            
+         </div>
+         
+         ﻿<span class="pageinfo">[page 018]</span>
+         
+         <a name="N%C4%81%C5%9A%C4%81.1.26"></a><div class="text" xml:id="NāŚā.1.26">
+            <span class="line">śāṇḍilyaṃ <a href="" class="app" title="cāpi <b&gt;ठम</b&gt;, jīva <b&gt;ड</b&gt;"><span class="appnum"><sup>1</sup></span></a>caiva <a href="" class="app" title="vādyam <b&gt;न</b&gt;"><span class="appnum"><sup>2</sup></span></a>vātsyaṃ ca kohalaṃ <a href="" class="app" title="dhūrtilam <b&gt;प</b&gt;"><span class="appnum"><sup>3</sup></span></a>dattilaṃ <a href="" class="app" title="munim <b&gt;डम</b&gt;"><span class="appnum"><sup>4</sup></span></a>tathā&nbsp;|</span>
+            <span class="line"><a href="" class="app" title="jaṭulā <b&gt;ठम</b&gt;, yaḍilā <b&gt;प</b&gt;"><span class="appnum"><sup>5</sup></span></a>jaṭilāmbaṣṭakau caiva <a href="" class="app" title="tāṇḍayā <b&gt;Nजमत</b&gt;, daṇḍa <b&gt;फ</b&gt;, tāṇḍum <b&gt;ठ</b&gt;"><span class="appnum"><sup>6</sup></span></a>taṇḍumagni<a href="" class="app" title="mukham <b&gt;पम</b&gt;"><span class="appnum"><sup>7</sup></span></a>śikhaṃ tathā&nbsp;|| 26&nbsp;||</span>
+            
+         </div>
+         <a name="N%C4%81%C5%9A%C4%81.1.27"></a><div class="text" xml:id="NāŚā.1.27">
+            <span class="line">saindhavaṃ <a href="" class="app" title="puṃsalo <b&gt;ज</b&gt;, pulomānaṃ saindhavañca <b&gt;त</b&gt;, sauvaraṃ ca <b&gt;N</b&gt;"><span class="appnum"><sup>1</sup></span></a>sapulomānaṃ <a href="" class="app" title="śāśvalim <b&gt;ज</b&gt;, vālikam <b&gt;प</b&gt;, pāṭalim <b&gt;नम</b&gt;, bāddhalim <b&gt;N</b&gt;"><span class="appnum"><sup>2</sup></span></a>śāḍvaliṃ <a href="" class="app" title="vibudham <b&gt;नम</b&gt;"><span class="appnum"><sup>3</sup></span></a>vipulaṃ tathā&nbsp;|</span>
+            <span class="line"><a href="" class="app" title="yamaṃ dhūmrāyaṇaṃ caiva kapiṃjalamathāpi ca <b&gt;Nनत</b&gt;, kāpiñjalam <b&gt;जत</b&gt;"><span class="appnum"><sup>4</sup></span></a>kapiñjaliṃ <a href="" class="app" title="bādarim <b&gt;ठम</b&gt;, vādiram <b&gt;ड</b&gt;"><span class="appnum"><sup>5</sup></span></a>bādiraṃ ca yamadhūmrāyaṇau tathā&nbsp;|| 27&nbsp;||</span>
+            
+         </div>
+         <a name="N%C4%81%C5%9A%C4%81.1.28"></a><div class="text" xml:id="NāŚā.1.28">
+            <span class="line"><a href="" class="app" title="jambū <b&gt;पम</b&gt;, bāṣkalam <b&gt;न</b&gt;, jambūkam <b&gt;फ</b&gt;, jaṅgaṃ ca <b&gt;ख</b&gt;"><span class="appnum"><sup>1</sup></span></a>jambudhvajaṃ <a href="" class="app" title="kokamustaṃ ca <b&gt;ख</b&gt;, kākamadrum <b&gt;Nत</b&gt;"><span class="appnum"><sup>2</sup></span></a>kākajaṅghaṃ <a href="" class="app" title="svarṇakṛttāpasau <b&gt;ज</b&gt;"><span class="appnum"><sup>3</sup></span></a>svarṇakaṃ tāpasaṃ<a href="" class="app" title="svarṇakaṃ tāmasaṃ tathā <b&gt;N</b&gt;, pūrṇakaṃ tāpasaṃ tathā <b&gt;ख</b&gt;"><span class="appnum"><sup>4</sup></span></a> tathā&nbsp;|</span>
+            <span class="line"><a href="" class="app" title="पङ्क्तिद्वयं ta पुस्तके नास्ति, kedāram <b&gt;Nठम</b&gt;, kedarim <b&gt;ज</b&gt;"><span class="appnum"><sup>5</sup></span></a>kaidāriṃ śālikarṇaṃ ca dīrghagātraṃ ca śālikam<a href="" class="app" title="dīrghasautraṃ ca bādarim <b&gt;N</b&gt;"><span class="appnum"><sup>6</sup></span></a>&nbsp;|| 28&nbsp;||</span>
+            
+         </div>
+         <a name="N%C4%81%C5%9A%C4%81.1.29"></a><div class="text" xml:id="NāŚā.1.29">
+            <span class="line"><a href="" class="app" title="kotsam <b&gt;ज</b&gt;"><span class="appnum"><sup>1</sup></span></a>kautsaṃ <a href="" class="app" title="tānyāsinam <b&gt;ज</b&gt;, tāṇḍyāpani <b&gt;प</b&gt;"><span class="appnum"><sup>2</sup></span></a>tāṇḍāyaniṃ caiva <a href="" class="app" title="piṇḍa <b&gt;ज</b&gt;"><span class="appnum"><sup>3</sup></span></a>piḍgalaṃ <a href="" class="app" title="chatrakam <b&gt;ठ</b&gt;, chatrameva ca <b&gt;न</b&gt;, citrameva ca <b&gt;N</b&gt;"><span class="appnum"><sup>4</sup></span></a>citrakaṃ tathā&nbsp;||</span>
+            <span class="line"><a href="" class="app" title="andhukam <b&gt;त</b&gt;, nujalam <b&gt;म</b&gt;, ballakam&nbsp;| bhālukam <b&gt;ख</b&gt;, bhallakam <b&gt;N</b&gt;"><span class="appnum"><sup>5</sup></span></a>bandhulaṃ <a href="" class="app" title="bāṣkalam <b&gt;प</b&gt;, bālukam <b&gt;त</b&gt;"><span class="appnum"><sup>6</sup></span></a>bhallakaṃ caiva muṣṭhikaṃ saindhavāyanam&nbsp;|| 29&nbsp;||</span>
+            
+         </div>
+         
+         ﻿<span class="pageinfo">[page 019]</span>
+         
+         <a name="N%C4%81%C5%9A%C4%81.1.30"></a><div class="text" xml:id="NāŚā.1.30">
+            <span class="line"><a href="" class="app" title="tintilam <b&gt;ख</b&gt;"><span class="appnum"><sup>1</sup></span></a>taitilaṃ bhārgavaṃ caiva śuciṃ bahulameva ca&nbsp;|</span>
+            <span class="line"><a href="" class="app" title="ambudham <b&gt;ज</b&gt;"><span class="appnum"><sup>2</sup></span></a>abudhaṃ budhasenaṃ ca <a href="" class="app" title="pārakarṇam <b&gt;ज</b&gt;, pāṇḍukarṇim <b&gt;Nप</b&gt;"><span class="appnum"><sup>3</sup></span></a>pāṇḍukarṇaṃ <a href="" class="app" title="sakeralam <b&gt;जभ</b&gt;, satoralam <b&gt;त</b&gt;, surekṣalam <b&gt;च</b&gt;, samocalam <b&gt;N</b&gt;"><span class="appnum"><sup>4</sup></span></a>sukeralam&nbsp;|| 30&nbsp;||</span>
+            
+         </div>
+         <a name="N%C4%81%C5%9A%C4%81.1.31"></a><div class="text" xml:id="NāŚā.1.31">
+            <span class="line"><a href="" class="app" title="miśrakam <b&gt;ज</b&gt;, ṛjuṃ kamaṇḍalum <b&gt;डत</b&gt;"><span class="appnum"><sup>1</sup></span></a>ṛjukaṃ maṇḍakaṃ caiva <a href="" class="app" title="śābaram <b&gt;त</b&gt;, śāmbakam <b&gt;प</b&gt;"><span class="appnum"><sup>2</sup></span></a>śambaraṃ <a href="" class="app" title="vañculam <b&gt;ज</b&gt;"><span class="appnum"><sup>3</sup></span></a>vañjulaṃ tathā&nbsp;|</span>
+            <span class="line">māgadhaṃ <a href="" class="app" title="suralam <b&gt;प</b&gt;, sāraṇam&nbsp;| sukalam <b&gt;Nफत</b&gt;"><span class="appnum"><sup>4</sup></span></a>saralaṃ <a href="" class="app" title="caika <b&gt;न</b&gt;, caiva kātaram <b&gt;त</b&gt;"><span class="appnum"><sup>5</sup></span></a>caiva kartāraṃ <a href="" class="app" title="cātrimeva ca <b&gt;न</b&gt;"><span class="appnum"><sup>6</sup></span></a>cogrameva ca&nbsp;|| 31&nbsp;||</span>
+            
+         </div>
+         <a name="N%C4%81%C5%9A%C4%81.1.32"></a><div class="text" xml:id="NāŚā.1.32">
+            <span class="line"><a href="" class="app" title="tuṣādam <b&gt;ठ.म</b&gt;"><span class="appnum"><sup>1</sup></span></a>tuṣāraṃ <a href="" class="app" title="pārbatam <b&gt;म</b&gt;, parvatam <b&gt;त</b&gt;, pāṃśalam <b&gt;भ</b&gt;"><span class="appnum"><sup>2</sup></span></a>pārṣadaṃ caiva gautamaṃ <a href="" class="app" title="bādarāyaṇim <b&gt;न</b&gt;"><span class="appnum"><sup>3</sup></span></a>bādarāyaṇam&nbsp;|</span>
+            <span class="line"><a href="" class="app" title="udāriṃ varuṇaṃ caiva varaṇiṃ haṃsameva ca <b&gt;Nख</b&gt;"><span class="appnum"><sup>4</sup></span></a>viśālaṃ śabalaṃ caiva sunābhaṃ meṣameva ca&nbsp;|| 32&nbsp;||</span>
+            
+         </div>
+         <a name="N%C4%81%C5%9A%C4%81.1.33"></a><div class="text" xml:id="NāŚā.1.33">
+            <span class="line"><a href="" class="app" title="kāleyam <b&gt;Nजत</b&gt;"><span class="appnum"><sup>1</sup></span></a>kāliyaṃ bhramaraṃ caiva tathā pīṭhamukhaṃ munim&nbsp;|</span>
+            <span class="line"><a href="" class="app" title="tarukuṭṭā <b&gt;ठम</b&gt;"><span class="appnum"><sup>2</sup></span></a>nakhakuṭṭāśmakuṭṭau ca ṣaṭpadaṃ <a href="" class="app" title="cottamam <b&gt;N.ड.त</b&gt;, saptamam <b&gt;म</b&gt;"><span class="appnum"><sup>3</sup></span></a>sottamaṃ tathā&nbsp;|| 33&nbsp;||</span>
+            
+         </div>
+         <a name="N%C4%81%C5%9A%C4%81.1.34"></a><div class="text" xml:id="NāŚā.1.34">
+            <span class="line"><a href="" class="app" title="pānahopā <b&gt;त</b&gt;, pādukaupā <b&gt;ड</b&gt;, pāṇḍūpānahau <b&gt;N</b&gt;"><span class="appnum"><sup>1</sup></span></a>pādukopānahau caiva <a href="" class="app" title="saśrutaṃ ṣaṭsvaram <b&gt;ज</b&gt;, śrutiṃ ca svarameva ca <b&gt;न</b&gt;, cābhisuraṃ tathā <b&gt;N</b&gt;"><span class="appnum"><sup>2</sup></span></a>śrutiṃ cāṣasvaraṃ tathā&nbsp;|</span>
+            <span class="line">agnikuṇḍājyakuṇḍau<a href="" class="app" title="aśmakuṇḍau ca <b&gt;ख</b&gt;"><span class="appnum"><sup>3</sup></span></a> ca <a href="" class="app" title="vitāṇḍyaṃ taṇḍya <b&gt;ज</b&gt;"><span class="appnum"><sup>4</sup></span></a>vitaṇḍyaṃ tāṇḍyameva ca&nbsp;|| 34&nbsp;||</span>
+            
+         </div>
+         <a name="N%C4%81%C5%9A%C4%81.1.35"></a><div class="text" xml:id="NāŚā.1.35">
+            <span class="line"><a href="" class="app" title="kekarākṣam <b&gt;Nनत</b&gt;"><span class="appnum"><sup>1</sup></span></a>kartarākṣaṃ hiraṇyākṣaṃ <a href="" class="app" title="nakulaṃ duṣṣahaṃ tathā <b&gt;न</b&gt;, duṣpahaṃ <b&gt;N</b&gt;"><span class="appnum"><sup>2</sup></span></a>kuśalaṃ dussahaṃ tathā&nbsp;|</span>
+            <span class="line"><a href="" class="app" title="jālam <b&gt;न</b&gt;, jalam <b&gt;पत</b&gt;, maपुस्तके इदमर्धं नास्ति"><span class="appnum"><sup>3</sup></span></a>lājaṃ bhayānakaṃ caiva bībhatsaṃ <a href="" class="app" title="suvicakṣaṇam <b&gt;फ</b&gt;"><span class="appnum"><sup>4</sup></span></a>savicakṣaṇam&nbsp;|| 35&nbsp;||</span>
+            
+         </div>
+         
+         ﻿<span class="pageinfo">[page 020]</span>
+         
+         <a name="N%C4%81%C5%9A%C4%81.1.36"></a><div class="text" xml:id="NāŚā.1.36">
+            <span class="line"><a href="" class="app" title="puṇḍrākṣaṃ pūrṇanāsaṃ ca <b&gt;ठ</b&gt;, अत्र 'त.' पुस्तकेः - किरीटिनञ्च भाष (N. पाश)ञ्च तथा धन्दिनमेव च&nbsp;। शिलापट्टं स्वर्णगुञ्जं (N.स्वर्णगं च) शिलाशिनमथापि (N.तथा धन्विनमेव ) भाषा च&nbsp;॥ ३६&nbsp;॥ अग्निवेशं शिवञ्चैव ध्यानं जप्यं सुमङ्गलम्&nbsp;। जैशिषव्य (N.जैगीषव्यं) कुण्डिनञ्च तथा कलशमेव च&nbsp;॥ ३७&nbsp;॥ विद्धाक्षं घूर्णनासञ्चाप्यसितं सितमेव च&nbsp;। इत्यधिकं दृश्यते N.omits this line."><span class="appnum"><sup>1</sup></span></a>puṇḍrākṣaṃ puṇḍranāsaṃ <a href="" class="app" title="asitāsitameva ca <b&gt;प</b&gt;"><span class="appnum"><sup>2</sup></span></a>cāpyasitaṃ sitameva ca&nbsp;|</span>
+            <span class="line">vidyujjihvaṃ mahājihvaṃ <a href="" class="app" title="sālā <b&gt;ख</b&gt;, kusitaṃ <b&gt;क्षच</b&gt;"><span class="appnum"><sup>3</sup></span></a>śālaṅkāyanameva ca&nbsp;|| 36&nbsp;||</span>
+            
+         </div>
+         <a name="N%C4%81%C5%9A%C4%81.1.37"></a><div class="text" xml:id="NāŚā.1.37">
+            <span class="line"><a href="" class="app" title="tyāmāyanam <b&gt;प</b&gt;"><span class="appnum"><sup>1</sup></span></a>śyāmāyanaṃ māṭharaṃ ca lohitāṅgaṃ tathaiva ca<a href="" class="app" title="nikuṭṭakam <b&gt;N</b&gt;"><span class="appnum"><sup>2</sup></span></a>&nbsp;|</span>
+            <span class="line">saṃvartakaṃ <a href="" class="app" title="pañcasakham <b&gt;ठ</b&gt;"><span class="appnum"><sup>3</sup></span></a>pañcaśikhaṃ triśikhaṃ <a href="" class="app" title="śikhimeva <b&gt;ज</b&gt;, śikharameva ca <b&gt;ठ</b&gt;"><span class="appnum"><sup>4</sup></span></a>śikhameva ca&nbsp;|| 37&nbsp;||<a href="" class="app" title="goddaṃ ca pāṭaniṃ caiva lomaśaṃ śyāvakaṃ tathā <b&gt;N</b&gt;"><span class="appnum"><sup>5</sup></span></a></span>
+            
+         </div>
+         <a name="N%C4%81%C5%9A%C4%81.1.38"></a><div class="text" xml:id="NāŚā.1.38">
+            <span class="line">(śaṅkhavarṇamukhaṃ <a href="" class="app" title="khaṇḍam <b&gt;ज</b&gt;, इदं पङक्तिद्वयं ta पुस्तके नास्ति"><span class="appnum"><sup>1</sup></span></a>ṣaṇḍaṃ śaṅkukarṇamathāpi ca&nbsp;|</span>
+            <span class="line">śakranemiṃ gabhastiṃ cāpyaṃśumāliṃ śaṭhaṃ tathā&nbsp;|| 38&nbsp;||)</span>
+            
+         </div>
+         
+         ﻿<span class="pageinfo">[page 021]</span>
+         
+         <a name="N%C4%81%C5%9A%C4%81.1.39"></a><div class="text" xml:id="NāŚā.1.39">
+            <span class="line">vidyutaṃ śātajaṅghaṃ ca <a href="" class="app" title="raudravīra <b&gt;क्षपम</b&gt;"><span class="appnum"><sup>1</sup></span></a>raudraṃ vīramathāpi ca&nbsp;|</span>
+            <span class="line">pitāmahājñayā 'smābhirlokasya ca guṇepsayā<a href="" class="app" title="अयं श्लोकः <b&gt;त</b&gt; पुस्तके नास्ति  <b&gt;N</b&gt; also omits this.">*</a>&nbsp;|| 39&nbsp;||</span>
+            
+         </div>
+         <a name="N%C4%81%C5%9A%C4%81.1.40"></a><div class="text" xml:id="NāŚā.1.40">
+            <span class="line"><a href="" class="app" title="evamādi śataṃ pūrṇa samagraṃ bhūmibhāgaśaḥ <b&gt;न</b&gt;, evamādyaṃ putraśataṃ samagraṃ bhūmibhāgaśaḥ <b&gt;Nङत</b&gt;, sāgraṃ bhūmivibhāgaśaḥ <b&gt;N</b&gt;"><span class="appnum"><sup>1</sup></span></a>prayojitaṃ putraśataṃ <a href="" class="app" title="sāgraṃ bhūmibhāgaśaḥ <b&gt;ख</b&gt;"><span class="appnum"><sup>2</sup></span></a>yathābhūmivibhāgaśaḥ&nbsp;|</span>
+            <span class="line"><a href="" class="app" title="yasmin karmaṇi yo yogyastasmin sa viniyojitaḥ <b&gt;त</b&gt;"><span class="appnum"><sup>3</sup></span></a>yo yasminkarmaṇi yathā <a href="" class="app" title="yogyo 'sau tatra yojitaḥ <b&gt;न</b&gt;"><span class="appnum"><sup>4</sup></span></a>yogyastasmin sa yojitaḥ&nbsp;|| 40&nbsp;||</span>
+            
+         </div>
+         <a name="N%C4%81%C5%9A%C4%81.1.41"></a><div class="text" xml:id="NāŚā.1.41">
+            <span class="line">bhāratīṃ sāttvatīṃ caiva vṛttimārabhaṭīṃ tathā&nbsp;|</span>
+            <span class="line">samāśritaḥ prayogastu prayukto vai mayā dvijāḥ&nbsp;|| 41&nbsp;||</span>
+            
+         </div>
+         <a name="N%C4%81%C5%9A%C4%81.1.42"></a><div class="text" xml:id="NāŚā.1.42">
+            <span class="line">parigṛhya praṇamyātha brahmā vijñāpito mayā<a href="" class="app" title="N. omits this line.">*</a>&nbsp;|</span>
+            <span class="line">athāha māṃ suraguruḥ kaiśikīmapi <a href="" class="app" title="kaiśikīmiha <b&gt;N</b&gt;"><span class="appnum"><sup>1</sup></span></a>yojaya&nbsp;|| 42&nbsp;||</span>
+            
+         </div>
+         
+         ﻿<span class="pageinfo">[page 022]</span>
+         
+         <a name="N%C4%81%C5%9A%C4%81.1.43"></a><div class="text" xml:id="NāŚā.1.43">
+            <span class="line">yacca tasyāḥ kṣamaṃ dravyaṃ tadbrūhi dvijasattama&nbsp;|</span>
+            <span class="line">evaṃ tenā<a href="" class="app" title="tenānva <b&gt;क्षपम</b&gt;"><span class="appnum"><sup>1</sup></span></a>smyabhihitaḥ pratyuktaśca mayā prabhuḥ&nbsp;|| 43&nbsp;||</span>
+            
+         </div>
+         <a name="N%C4%81%C5%9A%C4%81.1.44"></a><div class="text" xml:id="NāŚā.1.44">
+            <span class="line"><a href="" class="app" title="kriyatām <b&gt;न</b&gt;"><span class="appnum"><sup>1</sup></span></a>dīyatāṃ bhagavandravyaṃ kaiśikyāḥ samprayojakam&nbsp;|</span>
+            <span class="line"><a href="" class="app" title="mṛdvaṅga <b&gt;Nठमत</b&gt;"><span class="appnum"><sup>2</sup></span></a>nṛtāṅgahārasampannā<a href="" class="app" title="saṃyuktā <b&gt;क्षजम</b&gt;"><span class="appnum"><sup>3</sup></span></a> <a href="" class="app" title="lalitābhinayātmikā <b&gt;Nख</b&gt;"><span class="appnum"><sup>4</sup></span></a>rasabhāvakriyātmikā&nbsp;|| 44&nbsp;||</span>
+            
+         </div>
+         <a name="N%C4%81%C5%9A%C4%81.1.45"></a><div class="text" xml:id="NāŚā.1.45">
+            <span class="line"><a href="" class="app" title="dṛṣṭomayā <b&gt;ज</b&gt;"><span class="appnum"><sup>1</sup></span></a>dṛṣṭā mayā bhagavato<a href="" class="app" title="sa mantavyā <b&gt;N</b&gt;"><span class="appnum"><sup>2</sup></span></a> <a href="" class="app" title="nīlavarṇasya <b&gt;न</b&gt;, nṛtyataḥ śaṅkarasya tu <b&gt;Nपत</b&gt;"><span class="appnum"><sup>3</sup></span></a>nīlakaṇṭhasya nṛtyataḥ&nbsp;|</span>
+            <span class="line">kaiśikī ślakṣṇanaipathyā<a href="" class="app" title="naipathya <b&gt;न</b&gt;"><span class="appnum"><sup>4</sup></span></a> śṛṅgārarasasambhavā&nbsp;|| 45&nbsp;||</span>
+            
+         </div>
+         <a name="N%C4%81%C5%9A%C4%81.1.46"></a><div class="text" xml:id="NāŚā.1.46">
+            <span class="line"><a href="" class="app" title="na śakyā <b&gt;Nडत</b&gt;"><span class="appnum"><sup>1</sup></span></a>aśakyā puruṣaiḥ <a href="" class="app" title="sādhu <b&gt;नम</b&gt;"><span class="appnum"><sup>2</sup></span></a>sā tu prayoktuṃ <a href="" class="app" title="strījanairvinā <b&gt;ठम</b&gt;, strīgatirhi sā <b&gt;N</b&gt;"><span class="appnum"><sup>3</sup></span></a>strījanādṛte&nbsp;|</span>
+            <span class="line">tato 'sṛjanmahātejā manasā 'psaraso vibhuḥ&nbsp;|| 46&nbsp;||</span>
+            
+         </div>
+         
+         ﻿<span class="pageinfo">[page 023]</span>
+         
+         <a name="N%C4%81%C5%9A%C4%81.1.47"></a><div class="text" xml:id="NāŚā.1.47">
+            <span class="line">nāṭyālaṅkāracaturāḥ<a href="" class="app" title="kuśalāḥ <b&gt;प</b&gt;, ॰kāriṇyaḥ <b&gt;N</b&gt;"><span class="appnum"><sup>1</sup></span></a> prādānmahyaṃ prayogataḥ<a href="" class="app" title="kṣaṇātsuravarastadā <b&gt;नमत</b&gt;, prayogajño gurustadā <b&gt;प</b&gt;"><span class="appnum"><sup>2</sup></span></a>&nbsp;|</span>
+            <span class="line"><a href="" class="app" title="N kṣa ma taइदमर्धं 'मागधीमर्जुनीम्' इत्यतः परं दृश्यते"><span class="appnum"><sup>3</sup></span></a>mañjukeśīṃ sukeśīṃ ca miśrakeśīṃ sulocanām<a href="" class="app" title="pādacūlāṃ tathaiva ca <b&gt;त</b&gt;"><span class="appnum"><sup>4</sup></span></a>&nbsp;|| 47&nbsp;||</span>
+            
+         </div>
+         <a name="N%C4%81%C5%9A%C4%81.1.48"></a><div class="text" xml:id="NāŚā.1.48">
+            <span class="line"><a href="" class="app" title="saudāmanīm <b&gt;ज</b&gt;"><span class="appnum"><sup>1</sup></span></a>saudāminīṃ devadattāṃ devasenāṃ manoramām<a href="" class="app" title="tathaiva ca <b&gt;नतम</b&gt;, manovatīm <b&gt;ख</b&gt;"><span class="appnum"><sup>2</sup></span></a>&nbsp;|</span>
+            <span class="line"><a href="" class="app" title="surabhim <b&gt;नतम</b&gt;"><span class="appnum"><sup>3</sup></span></a>sudatīṃ sundarīṃ caiva vidagdhāṃ <a href="" class="app" title="vibudhām <b&gt;डमत</b&gt;, vividhām <b&gt;क्ष</b&gt;"><span class="appnum"><sup>4</sup></span></a>vipulāṃ tathā&nbsp;|| 48&nbsp;||</span>
+            
+         </div>
+         
+         ﻿<span class="pageinfo">[page 024]</span>
+         
+         <a name="N%C4%81%C5%9A%C4%81.1.49"></a><div class="text" xml:id="NāŚā.1.49">
+            <span class="line"><a href="" class="app" title="sumanām <b&gt;ड</b&gt;"><span class="appnum"><sup>1</sup></span></a>sumālāṃ <a href="" class="app" title="lāsinīm <b&gt;ड</b&gt;"><span class="appnum"><sup>2</sup></span></a>santatiṃ caiva sunandāṃ sumukhīṃ <a href="" class="app" title="ratim <b&gt;नम</b&gt;, इदमर्धं N ta पुस्तके नास्ति"><span class="appnum"><sup>3</sup></span></a>tathā&nbsp;|</span>
+            <span class="line">māgadhīmarjunīṃ caiva saralāṃ keralāṃ dhṛtim<a href="" class="app" title="satīm <b&gt;क्षम</b&gt;, kekarāṃ tathā <b&gt;त</b&gt;, kekaṭīṃ tathā <b&gt;N</b&gt;"><span class="appnum"><sup>4</sup></span></a>&nbsp;|| 49&nbsp;||</span>
+            
+         </div>
+         <a name="N%C4%81%C5%9A%C4%81.1.50"></a><div class="text" xml:id="NāŚā.1.50">
+            <span class="line">nandāṃ sapuṣkalāṃ <a href="" class="app" title="ca puṣkalāṃ <b&gt;N</b&gt;"><span class="appnum"><sup>1</sup></span></a>caiva kalamāṃ<a href="" class="app" title="kalabhāñcaiva nirmame <b&gt;म</b&gt;, kapilāṃ sumanāṃ tathā <b&gt;नतम</b&gt;"><span class="appnum"><sup>2</sup></span></a> caiva me dadau&nbsp;|<a href="" class="app" title="sunandāṃ sumukhīñcaiva kāhalyādyāśca me dadau&nbsp;| ityardhamadhikaṃ dṛśyate <b&gt;Nनत</b&gt;"><span class="appnum"><sup>3</sup></span></a></span>
+            <span class="line">svātirbhāṇḍaniyuktastu saha śiṣyaiḥ svayambhuvā<a href="" class="app" title="sārdhaṃ śiṣyagaṇaistathā <b&gt;N</b&gt;"><span class="appnum"><sup>4</sup></span></a>&nbsp;|| 50&nbsp;||</span>
+            
+         </div>
+         <a name="N%C4%81%C5%9A%C4%81.1.51"></a><div class="text" xml:id="NāŚā.1.51">
+            <span class="line">nāradādyāśca gandharvā gānayoge<a href="" class="app" title="nāṭyayoge <b&gt;क्ष</b&gt;"><span class="appnum"><sup>1</sup></span></a>  niyojitāḥ&nbsp;|</span>
+            <span class="line">evaṃ<a href="" class="app" title="bhāvanāṭya <b&gt;क्ष</b&gt;"><span class="appnum"><sup>2</sup></span></a> nāṭyamidaṃ samyagbuddhvā<a href="" class="app" title="buddhvā samyakchiṣyagaṇaiḥ saha <b&gt;नम</b&gt;, vedhā lokavedasamarthitam <b&gt;N</b&gt;"><span class="appnum"><sup>3</sup></span></a> sarvaiḥ sutaiḥ saha&nbsp;|| 51&nbsp;||</span>
+            
+         </div>
+         <a name="N%C4%81%C5%9A%C4%81.1.52"></a><div class="text" xml:id="NāŚā.1.52">
+            <span class="line">svātināradasaṃyukto vedavedāṅgakāraṇam<a href="" class="app" title="nāradaḥ svātisahitaḥ suragandharvavāritaḥ <b&gt;N</b&gt;"><span class="appnum"><sup>1</sup></span></a>&nbsp;|</span>
+            <span class="line">upasthito 'haṃ <a href="" class="app" title="lokeśam&nbsp;| prayogārthī <b&gt;नतम</b&gt;"><span class="appnum"><sup>2</sup></span></a>brahmāṇaṃ prayogārthaṃ kṛtāñjaliḥ&nbsp;|| 52&nbsp;||</span>
+            
+         </div>
+         <a name="N%C4%81%C5%9A%C4%81.1.53"></a><div class="text" xml:id="NāŚā.1.53">
+            <span class="line">nāṭyasya<a href="" class="app" title="vedasya <b&gt;N</b&gt;"><span class="appnum"><sup>1</sup></span></a> grahaṇaṃ prāptaṃ brūhi kiṃ karavāṇyaham&nbsp;|</span>
+            <span class="line">etattu vacanaṃ śrutvā pratyuvāca pitāmahaḥ&nbsp;|| 53&nbsp;||</span>
+            
+         </div>
+         
+         ﻿<span class="pageinfo">[page 025]</span>
+         
+         <a name="N%C4%81%C5%9A%C4%81.1.54"></a><div class="text" xml:id="NāŚā.1.54">
+            <span class="line">mahānayaṃ<a href="" class="app" title="ahokālaḥ <b&gt;N</b&gt;"><span class="appnum"><sup>1</sup></span></a> <a href="" class="app" title="prayogaśca sa mayā samupa <b&gt;प</b&gt;"><span class="appnum"><sup>2</sup></span></a>prayogasya samayaḥ <a href="" class="app" title="samupa <b&gt;क्षमतब</b&gt;, prayogasya śrīmān yugayogataḥ <b&gt;N</b&gt;"><span class="appnum"><sup>3</sup></span></a>pratyupasthitaḥ&nbsp;|</span>
+            <span class="line">ayaṃ dhvajamahaḥ śrīmān <a href="" class="app" title="śacībhartuḥ <b&gt;Nन</b&gt;"><span class="appnum"><sup>4</sup></span></a>mahendrasya pravartate&nbsp;|| 54&nbsp;||</span>
+            
+         </div>
+         <a name="N%C4%81%C5%9A%C4%81.1.55"></a><div class="text" xml:id="NāŚā.1.55">
+            <span class="line"><a href="" class="app" title="putre <b&gt;ढ</b&gt;"><span class="appnum"><sup>1</sup></span></a>atredānīmayaṃ vedo nāṭyasaṃjñaḥ <a href="" class="app" title="prayojya <b&gt;डम</b&gt;"><span class="appnum"><sup>2</sup></span></a>prayujyatām&nbsp;|</span>
+            <span class="line"><a href="" class="app" title="tataśśakradhva <b&gt;Nनम</b&gt;"><span class="appnum"><sup>3</sup></span></a>tatastasmindhvajamahe nihatāsuradānave&nbsp;|| 55&nbsp;||</span>
+            
+         </div>
+         <a name="N%C4%81%C5%9A%C4%81.1.56"></a><div class="text" xml:id="NāŚā.1.56">
+            <span class="line">prahṛṣṭāmarasaṃkīrṇe mahendravijayotsave&nbsp;|</span>
+            <span class="line"><a href="" class="app" title="nāndī kṛtā mayā pūrvamāśīrvacana <b&gt;गब</b&gt;, pūrvaṃ kṛtvā <b&gt;त</b&gt;"><span class="appnum"><sup>1</sup></span></a>pūrvaṃ kṛtā mayā nāndī hyāśīrvacanasaṃyutā&nbsp;|| 56&nbsp;||</span>
+            
+         </div>
+         
+         ﻿<span class="pageinfo">[page 026]</span>
+         
+         <a name="N%C4%81%C5%9A%C4%81.1.57"></a><div class="text" xml:id="NāŚā.1.57">
+            <span class="line">aṣṭāṅgapadasaṃyuktā vicitrā <a href="" class="app" title="devasammatā <b&gt;क्षडम</b&gt;, devasaṃmitā <b&gt;प</b&gt;, vedasaṃmitā <b&gt;फ</b&gt;, devanirmitā <b&gt;द</b&gt;, devatāstutisammatā <b&gt;न</b&gt;, devatāstutisaṃśrayā <b&gt;त</b&gt;"><span class="appnum"><sup>1</sup></span></a>vedanirmitā&nbsp;|</span>
+            <span class="line"><a href="" class="app" title="kṛtā tadante 'nukṛtiḥ <b&gt;पब</b&gt;, tadante tu kṛtirbuddhā <b&gt;न</b&gt;"><span class="appnum"><sup>2</sup></span></a>tadante 'nukṛtirbaddhā yathā daityāḥ surairjitāḥ&nbsp;|| 57&nbsp;||</span>
+            
+         </div>
+         <a name="N%C4%81%C5%9A%C4%81.1.58"></a><div class="text" xml:id="NāŚā.1.58">
+            <span class="line">sampheṭavidravakṛtā cchedya<a href="" class="app" title="khedāharātmikā <b&gt;क्ष</b&gt;, bhedyāvahā <b&gt;ब</b&gt;, vedāhavā <b&gt;ड</b&gt;, bhedyāravātmikā <b&gt;घ</b&gt;"><span class="appnum"><sup>1</sup></span></a>bhedyāhavātmikā&nbsp;|</span>
+            <span class="line">tato brahmādayo devāḥ prayogaparitoṣitāḥ&nbsp;|| 58&nbsp;||</span>
+            
+         </div>
+         <a name="N%C4%81%C5%9A%C4%81.1.59"></a><div class="text" xml:id="NāŚā.1.59">
+            <span class="line"><a href="" class="app" title="pradadurhṛṣṭamanasaḥ <b&gt;घबत</b&gt;, prayayuḥ pradadurhaṣṭā <b&gt;क्षठम</b&gt;"><span class="appnum"><sup>1</sup></span></a>pradadurmatsutebhyastu sarvopakaraṇāni <a href="" class="app" title="naḥ <b&gt;क्षडबतम</b&gt;"><span class="appnum"><sup>2</sup></span></a>vai&nbsp;|</span>
+            <span class="line">prītastu prathamaṃ śakro dattavānsvaṃ<a href="" class="app" title="dhvajamuttamam <b&gt;Nनबत</b&gt;"><span class="appnum"><sup>3</sup></span></a> dhvajaṃ śubham&nbsp;|| 59&nbsp;||</span>
+            
+         </div>
+         
+         ﻿<span class="pageinfo">[page 027]</span>
+         
+         <a name="N%C4%81%C5%9A%C4%81.1.60"></a><div class="text" xml:id="NāŚā.1.60">
+            <span class="line">brahmā <a href="" class="app" title="kamaṇḍalum <b&gt;क्षडम</b&gt;"><span class="appnum"><sup>1</sup></span></a>kuṭilakaṃ caiva bhṛṅgāraṃ varuṇaḥ śubham<a href="" class="app" title="tathā <b&gt;Nडबतम</b&gt;"><span class="appnum"><sup>2</sup></span></a>&nbsp;|</span>
+            <span class="line"><a href="" class="app" title="sūryaśśastram <b&gt;म</b&gt;"><span class="appnum"><sup>3</sup></span></a>sūryaśchatraṃ <a href="" class="app" title="śivo jñānam <b&gt;त</b&gt;, śivā siddhim <b&gt;गब</b&gt;"><span class="appnum"><sup>4</sup></span></a>śivassiddhiṃ vāyurvyajanameva ca<a href="" class="app" title="somaḥ śrī dyaurvatām"><span class="appnum"><sup>5</sup></span></a>&nbsp;|| 60&nbsp;||</span>
+            
+         </div>
+         <a name="N%C4%81%C5%9A%C4%81.1.61"></a><div class="text" xml:id="NāŚā.1.61">
+            <span class="line">viṣṇuḥ siṃhāsanaṃ caiva kubero makuṭaṃ tathā&nbsp;|</span>
+            <span class="line"><a href="" class="app" title="etayoridamardha paṭhyate <b&gt;Nमत</b&gt;"><span class="appnum"><sup>1</sup></span></a>śrāvyatvaṃ prekṣaṇīyasya <a href="" class="app" title="śravyatvaṃ krīḍanīyasya <b&gt;N</b&gt;"><span class="appnum"><sup>2</sup></span></a>dadau devī sarasvatī&nbsp;|| 61&nbsp;||</span>
+            
+         </div>
+         <a name="N%C4%81%C5%9A%C4%81.1.62"></a><div class="text" xml:id="NāŚā.1.62">
+            <span class="line">śeṣā ye devagandharvā yakṣarākṣasapannagāḥ&nbsp;|</span>
+            <span class="line">tasminsada<a href="" class="app" title="syatiprītā <b&gt;घब</b&gt;, si tiṣṭhanti <b&gt;N</b&gt;"><span class="appnum"><sup>1</sup></span></a>syabhipretānnānājātiguṇāśrayān<a href="" class="app" title="śrayāḥ <b&gt;Nघब</b&gt;"><span class="appnum"><sup>2</sup></span></a>&nbsp;|| 62&nbsp;||</span>
+            
+         </div>
+         <a name="N%C4%81%C5%9A%C4%81.1.63"></a><div class="text" xml:id="NāŚā.1.63">
+            <span class="line">aṃśāṃśairbhāṣitaṃ<a href="" class="app" title="rbhāṣitān <b&gt;क्षनमत</b&gt;"><span class="appnum"><sup>1</sup></span></a> bhāvān rasān rūpaṃ balaṃ<a href="" class="app" title="baliṃ kriyām <b&gt;क्षड</b&gt;, bhāvān rūpamaṅgaṃ kriyāṃ balam <b&gt;न</b&gt;, kriyābalam <b&gt;प</b&gt;, balaṃ kriyām <b&gt;मत</b&gt;"><span class="appnum"><sup>2</sup></span></a> tathā&nbsp;|</span>
+            <span class="line"><a href="" class="app" title="pradadurmatsutebhyastu citraṃ cābharaṇaṃ bahu <b&gt;नबठ</b&gt;, citramābharaṇaṃ bahu"><span class="appnum"><sup>3</sup></span></a>dattavantaḥ prahṛṣṭāste matsutebhyo divaukasaḥ&nbsp;|| 63&nbsp;||<a href="" class="app" title="N. has instead: स्वांशांशैर्भाषितं भावाद्रूपमङ्गं क्रियाबलम्&nbsp;। प्रददुर्मत्सुतेभ्यस्तु चित्र चाभरणं बहु">*</a></span>
+            
+         </div>
+         
+         ﻿<span class="pageinfo">[page 028]</span>
+         
+         <a name="N%C4%81%C5%9A%C4%81.1.64"></a><div class="text" xml:id="NāŚā.1.64">
+            <span class="line">evaṃ prayoge prārabdhe <a href="" class="app" title="daityamānavivāśane <b&gt;न</b&gt;"><span class="appnum"><sup>1</sup></span></a>daityadānavanāśane<a href="" class="app" title="śāśane <b&gt;N</b&gt;, daityādīnāṃ vināśanam <b&gt;प</b&gt;"><span class="appnum"><sup>2</sup></span></a>&nbsp;|</span>
+            <span class="line"><a href="" class="app" title="athāsurāśca kṣumitā ye tatrāsan samāgatāḥ <b&gt;ठ</b&gt;, vighnānutpādayan dhruvam <b&gt;N</b&gt;, athāsurāścābhitoṣyāḥ <b&gt;म</b&gt;"><span class="appnum"><sup>3</sup></span></a>abhavankṣubhitāḥ sarve daityā ye tatra <a href="" class="app" title="darpitāḥ <b&gt;नम</b&gt;"><span class="appnum"><sup>4</sup></span></a>saṅgatāḥ&nbsp;|| 64&nbsp;||</span>
+            
+         </div>
+         <a name="N%C4%81%C5%9A%C4%81.1.65"></a><div class="text" xml:id="NāŚā.1.65">
+            <span class="line">virūpākṣa<a href="" class="app" title="purogāstu <b&gt;क्ष</b&gt;, purogāśca <b&gt;जत</b&gt;"><span class="appnum"><sup>1</sup></span></a>purogāṃśca vighnānpro<a href="" class="app" title="natsāhya ta 'bruvan <b&gt;क्षब</b&gt;, vighnānutsāhayanti te <b&gt;नम</b&gt;"><span class="appnum"><sup>2</sup></span></a>tsāhya te 'bruvan&nbsp;|</span>
+            <span class="line">na <a href="" class="app" title="netthamīkṣāmahe <b&gt;ड</b&gt;, netthamicchāmahe <b&gt;Nन</b&gt;"><span class="appnum"><sup>3</sup></span></a>kṣamiṣyāmahe nāṭyametadāgamyatāmiti&nbsp;|| 65&nbsp;||</span>
+            
+         </div>
+         <a name="N%C4%81%C5%9A%C4%81.1.66"></a><div class="text" xml:id="NāŚā.1.66">
+            <span class="line">tatastairasuraiḥ sārdhaṃ vighnā māyāmupāśritāḥ&nbsp;|</span>
+            <span class="line">vācaśceṣṭāṃ smṛtiṃ caiva stambhayanti sma nṛtyatām&nbsp;|| 66&nbsp;||</span>
+            
+         </div>
+         <a name="N%C4%81%C5%9A%C4%81.1.67"></a><div class="text" xml:id="NāŚā.1.67">
+            <span class="line"><a href="" class="app" title="evam <b&gt;कबत</b&gt;"><span class="appnum"><sup>1</sup></span></a>tathā vidhvaṃsanaṃ dṛṣṭvā <a href="" class="app" title="tatasteṣāṃ sa <b&gt;क्षठम</b&gt;"><span class="appnum"><sup>2</sup></span></a>sūtradhārasya devarāṭ&nbsp;|</span>
+            <span class="line">kasmātprayogavaiṣamyamityuktvā dhyānamāviśat&nbsp;|| 67&nbsp;||</span>
+            
+         </div>
+         
+         ﻿<span class="pageinfo">[page 029]</span>
+         
+         <a name="N%C4%81%C5%9A%C4%81.1.68"></a><div class="text" xml:id="NāŚā.1.68">
+            <span class="line">athāpaśyatsado<a href="" class="app" title="tadā <b&gt;क्ष</b&gt;"><span class="appnum"><sup>1</sup></span></a> vighnaiḥ samantātparivāritam&nbsp;|</span>
+            <span class="line"><a href="" class="app" title="sahānugaiḥ <b&gt;N</b&gt;, tadetaraiḥ <b&gt;ठ</b&gt;, tathaitaraiḥ <b&gt;ड</b&gt;, sahetaraṃ sūtradhāraṃ naṣṭasaṃjñaṃ jalīkṛtam <b&gt;त</b&gt;"><span class="appnum"><sup>2</sup></span></a>sahetaraiḥ sūtradhāraṃ naṣṭasaṃjñaṃ jaḍīkṛtam&nbsp;|| 68&nbsp;||</span>
+            
+         </div>
+         <a name="N%C4%81%C5%9A%C4%81.1.69"></a><div class="text" xml:id="NāŚā.1.69">
+            <span class="line"><a href="" class="app" title="athotthāya drutaṃ krodhād divyaṃ jagrāha taṃ dhvajam <b&gt;गतब</b&gt;"><span class="appnum"><sup>1</sup></span></a>utthāya tvaritaṃ śakraḥ <a href="" class="app" title="krodhājjagrāha <b&gt;क्षठ</b&gt;, dhvajam <b&gt;त</b&gt;, divyaṃ jagrāha sa dhvajam <b&gt;त</b&gt;"><span class="appnum"><sup>2</sup></span></a>gṛhītvā dhvajamuttamam&nbsp;|</span>
+            <span class="line">sarvaratnojjvala<a href="" class="app" title="jvalaṃ taṃ tu <b&gt;क्षठम</b&gt;, jjvalatanum <b&gt;ड</b&gt;"><span class="appnum"><sup>3</sup></span></a>tanuḥ kiñcidudvṛtta<a href="" class="app" title="kopādudvṛtta <b&gt;Nठम</b&gt;, śakraḥ prodvṛttalocanaḥ <b&gt;त</b&gt;"><span class="appnum"><sup>4</sup></span></a>locanaḥ&nbsp;|| 69&nbsp;||</span>
+            
+         </div>
+         <a name="N%C4%81%C5%9A%C4%81.1.70"></a><div class="text" xml:id="NāŚā.1.70">
+            <span class="line">raṅgapīṭhagatānvighnānasurāṃścaiva devarāṭ&nbsp;|</span>
+            <span class="line">jarjarīkṛtadehāṃstānakarojjarjareṇa saḥ&nbsp;|| 70&nbsp;||</span>
+            
+         </div>
+         <a name="N%C4%81%C5%9A%C4%81.1.71"></a><div class="text" xml:id="NāŚā.1.71">
+            <span class="line">nihateṣu ca sarveṣu vighneṣu<a href="" class="app" title="haiteṣu teṣu vighneṣu sarveṣu <b&gt;N</b&gt;, gateṣu teṣu vighneṣu sarveṣu <b&gt;न</b&gt;"><span class="appnum"><sup>1</sup></span></a> saha dānavaiḥ&nbsp;|</span>
+            <span class="line"><a href="" class="app" title="praṇamya tattvattoṃ vākyamidamūcuḥ <b&gt;N</b&gt;, praṇamyainaṃ tadā vākyamidamūcuḥ <b&gt;नम</b&gt;, samprahasya <b&gt;त</b&gt;, samprasahya <b&gt;ब</b&gt;"><span class="appnum"><sup>2</sup></span></a>samprahṛṣya tato vākyamāhuḥ sarve divaukasaḥ&nbsp;|| 71&nbsp;||</span>
+            
+         </div>
+         <a name="N%C4%81%C5%9A%C4%81.1.72"></a><div class="text" xml:id="NāŚā.1.72">
+            <span class="line">aho praharaṇaṃ divyamidamāsāditaṃ tvayā&nbsp;|</span>
+            <span class="line"><a href="" class="app" title="nāṭyavidhvaṃsinaḥ sarve yenaite jarjarīkṛtāḥ <b&gt;क्षठम</b&gt;, jarjarīkṛtadehāstu dānavā yena te kṛtāḥ <b&gt;N</b&gt;"><span class="appnum"><sup>1</sup></span></a>jarjarīkṛtasarvāṅgā yenaine dānavāḥ kṛtāḥ&nbsp;|| 72&nbsp;||</span>
+            
+         </div>
+         <a name="N%C4%81%C5%9A%C4%81.1.73"></a><div class="text" xml:id="NāŚā.1.73">
+            <span class="line">yasmādanena te vighnā sāsurā jarjarīkṛtāḥ&nbsp;|</span>
+            <span class="line">tasmājjarjara <a href="" class="app" title="ityeṣa <b&gt;ड</b&gt;"><span class="appnum"><sup>1</sup></span></a>eveti <a href="" class="app" title="khyātiṃ loke gamiṣyati <b&gt;न</b&gt;"><span class="appnum"><sup>2</sup></span></a>nāmato 'yaṃ bhaviṣyati&nbsp;|| 73&nbsp;||</span>
+            
+         </div>
+         <a name="N%C4%81%C5%9A%C4%81.1.74"></a><div class="text" xml:id="NāŚā.1.74">
+            <span class="line">śeṣā ye caiva <a href="" class="app" title="vighnārtham <b&gt;नबत</b&gt;"><span class="appnum"><sup>1</sup></span></a>hiṃsārtha<a href="" class="app" title="mupasthāsyanti vighnakāḥ <b&gt;गतब</b&gt;, vighnatām <b&gt;न</b&gt;"><span class="appnum"><sup>2</sup></span></a>mupayāsyānti hiṃsakāḥ<a href="" class="app" title="vighnakāḥ <b&gt;N</b&gt;"><span class="appnum"><sup>3</sup></span></a>&nbsp;|</span>
+            <span class="line"><a href="" class="app" title="dṛṣṭavemam <b&gt;N</b&gt;, dṛṣṭavainam <b&gt;न</b&gt;"><span class="appnum"><sup>4</sup></span></a>duṣṭavaiva jarjaraṃ te 'pi gamiṣyantyevameva tu&nbsp;|| 74&nbsp;||</span>
+            
+         </div>
+         <a name="N%C4%81%C5%9A%C4%81.1.75"></a><div class="text" xml:id="NāŚā.1.75">
+            <span class="line"><a href="" class="app" title="evaṃ bhaviṣyatītyet <b&gt;Nन</b&gt;, evaṃ bhaviṣyatītyeva <b&gt;न</b&gt;"><span class="appnum"><sup>1</sup></span></a>evamevāstviti tataḥ śakraḥ provāca tānsurān&nbsp;|</span>
+            <span class="line"><a href="" class="app" title="rakṣābhūtaḥ sadaivāsya <b&gt;N</b&gt;, rakṣābhūtaḥ sa daivasya <b&gt;न</b&gt;"><span class="appnum"><sup>2</sup></span></a>rakṣābhūtaśca sarveṣāṃ bhaviṣyatyeṣa<a href="" class="app" title="bhaviṣyatyeva <b&gt;N</b&gt;"><span class="appnum"><sup>3</sup></span></a> jarjaraḥ&nbsp;|| 75&nbsp;||</span>
+            
+         </div>
+         
+         ﻿<span class="pageinfo">[page 030]</span>
+         
+         <a name="N%C4%81%C5%9A%C4%81.1.76"></a><div class="text" xml:id="NāŚā.1.76">
+            <span class="line">prayoge prastute hyevaṃ<a href="" class="app" title="punaḥ prayoge prārabdhe <b&gt;N</b&gt;"><span class="appnum"><sup>1</sup></span></a> sphīte śakramahe punaḥ<a href="" class="app" title="tadā <b&gt;Nन</b&gt;, purā <b&gt;ब</b&gt;, idamardhaṃ nāsti <b&gt;म</b&gt;"><span class="appnum"><sup>2</sup></span></a>&nbsp;|</span>
+            <span class="line"><a href="" class="app" title="bhūyaḥ santrāsayanti sma <b&gt;Nन</b&gt;"><span class="appnum"><sup>3</sup></span></a>trāsaṃ sañjanayanti sma vighnāḥ <a href="" class="app" title="niścitamānasāḥ <b&gt;Nन</b&gt;, madvadhabuddhayaḥ <b&gt;क्षडम</b&gt;"><span class="appnum"><sup>4</sup></span></a>śeṣāstu nṛtyatām&nbsp;|| 76&nbsp;||</span>
+            
+         </div>
+         <a name="N%C4%81%C5%9A%C4%81.1.77"></a><div class="text" xml:id="NāŚā.1.77">
+            <span class="line">dṛṣṭvā teṣāṃ vyavasitaṃ <a href="" class="app" title="madarthe <b&gt;क्ष</b&gt;, tastadarthe <b&gt;म</b&gt;"><span class="appnum"><sup>1</sup></span></a>daityānāṃ <a href="" class="app" title="vighnakārakam <b&gt;Nगब</b&gt;"><span class="appnum"><sup>2</sup></span></a>viprakārajam&nbsp;|</span>
+            <span class="line">upasthito 'haṃ brahmāṇaṃ <a href="" class="app" title="suraiḥ <b&gt;नक्ष</b&gt;"><span class="appnum"><sup>3</sup></span></a>sutaiḥ sarvaiḥ samanvitaḥ&nbsp;|| 77&nbsp;||</span>
+            
+         </div>
+         <a name="N%C4%81%C5%9A%C4%81.1.78"></a><div class="text" xml:id="NāŚā.1.78">
+            <span class="line"><a href="" class="app" title="niḥsṛtā <b&gt;गब</b&gt;"><span class="appnum"><sup>1</sup></span></a>niścitā bhagavanvighnā nāṭyasyāsya vināśane&nbsp;|</span>
+            <span class="line"><a href="" class="app" title="ato <b&gt;घबत</b&gt;"><span class="appnum"><sup>2</sup></span></a>asya rakṣāvidhiṃ samyagājñāpaya <a href="" class="app" title="pitāmaha <b&gt;Nन</b&gt;"><span class="appnum"><sup>3</sup></span></a>sureśvara&nbsp;|| 78&nbsp;||</span>
+            
+         </div>
+         <a name="N%C4%81%C5%9A%C4%81.1.79"></a><div class="text" xml:id="NāŚā.1.79">
+            <span class="line"><a href="" class="app" title="tataḥ sa <b&gt;Nक्षठम</b&gt;, tatastu <b&gt;तब</b&gt;"><span class="appnum"><sup>1</sup></span></a> tataśca viśvakarmāṇaṃ <a href="" class="app" title="āha brahmā <b&gt;Nनतब</b&gt;, brahmāvocat <b&gt;न</b&gt;"><span class="appnum"><sup>2</sup></span></a>brahmovāca prayatnataḥ&nbsp;|</span>
+            <span class="line">kuru lakṣaṇasampannaṃ nāṭyaveśma mahāmate<a href="" class="app" title="mahāmune <b&gt;N</b&gt;"><span class="appnum"><sup>3</sup></span></a>&nbsp;|| 79&nbsp;||</span>
+            
+         </div>
+         <a name="N%C4%81%C5%9A%C4%81.1.80"></a><div class="text" xml:id="NāŚā.1.80">
+            <span class="line">tato 'cireṇa kālena viśvakarmā mahacchubham&nbsp;|</span>
+            <span class="line">sarvalakṣaṇasampannaṃ <a href="" class="app" title="nāṭyaveśma cakāra saḥ <b&gt;Nग</b&gt;"><span class="appnum"><sup>1</sup></span></a>kṛtvā nāṭyagṛhaṃ tu saḥ&nbsp;|| 80&nbsp;||</span>
+            
+         </div>
+         <a name="N%C4%81%C5%9A%C4%81.1.81"></a><div class="text" xml:id="NāŚā.1.81">
+            <span class="line"><a href="" class="app" title="kṛtvā yathoktamevaṃ tu gṛhaṃ padmodbhavājñayā&nbsp;| ityadhikaṃ dṛśyate&nbsp;| <b&gt;क्षठम</b&gt;, tato 'bravīdviśvakarmā brahmāṇaṃ prayatāñjaliḥ <b&gt;न</b&gt;"><span class="appnum"><sup>1</sup></span></a>proktavāndruhiṇaṃ gatvā sabhāyāntu kṛtāñjaliḥ&nbsp;|</span>
+            <span class="line">sajjaṃ nāṭyagṛhaṃ deva tadavekṣitumarhasi&nbsp;|| 81&nbsp;||</span>
+            
+         </div>
+         <a name="N%C4%81%C5%9A%C4%81.1.82"></a><div class="text" xml:id="NāŚā.1.82">
+            <span class="line">tataḥ saha<a href="" class="app" title="sārdha <b&gt;N</b&gt;"><span class="appnum"><sup>1</sup></span></a> mahendreṇa suraiḥ sarvaiśca <a href="" class="app" title="sattamaiḥ <b&gt;ठ</b&gt;, samanvitaḥ <b&gt;N</b&gt;, sarveḥ sahetaraiḥ <b&gt;नत</b&gt;"><span class="appnum"><sup>2</sup></span></a>setaraiḥ&nbsp;|</span>
+            <span class="line"><a href="" class="app" title="agacchat <b&gt;Nक्षठमतब</b&gt;"><span class="appnum"><sup>3</sup></span></a>āgatastvaritā draṣṭuṃ druhiṇo nāṭyamaṇḍapam&nbsp;|| 82&nbsp;||</span>
+            
+         </div>
+         
+         ﻿<span class="pageinfo">[page 031]</span>
+         
+         <a name="N%C4%81%C5%9A%C4%81.1.83"></a><div class="text" xml:id="NāŚā.1.83">
+            <span class="line">dṛṣṭvā nāṭyagṛhaṃ brahmā prāha sarvānsurāṃstataḥ<a href="" class="app" title="tadā <b&gt;Nक्ष</b&gt;"><span class="appnum"><sup>1</sup></span></a>&nbsp;|</span>
+            <span class="line">aṃśabhāgairbhavadbhistu rakṣyo 'yaṃ nāṭyamaṇḍapaḥ&nbsp;|| 83&nbsp;||</span>
+            
+         </div>
+         <a name="N%C4%81%C5%9A%C4%81.1.84"></a><div class="text" xml:id="NāŚā.1.84">
+            <span class="line">rakṣaṇe <a href="" class="app" title="maṇḍapasyāsya <b&gt;पब</b&gt;"><span class="appnum"><sup>1</sup></span></a>maṇḍapasyātha <a href="" class="app" title="niyukto rajanīkaraḥ <b&gt;क्षठम</b&gt;"><span class="appnum"><sup>2</sup></span></a>viniyuktastu candramāḥ&nbsp;|</span>
+            <span class="line"><a href="" class="app" title="yathādiśaṃ lokapālāḥ <b&gt;Nन</b&gt;, yathādiglokapālaśca <b&gt;पबत</b&gt;"><span class="appnum"><sup>3</sup></span></a>lokapālāstathā dikṣu vidikṣvapi ca mārutāḥ&nbsp;|| 84&nbsp;||</span>
+            
+         </div>
+         <a name="N%C4%81%C5%9A%C4%81.1.85"></a><div class="text" xml:id="NāŚā.1.85">
+            <span class="line">nepathyabhūmau mitrastu nikṣipto varuṇo 'mbare&nbsp;|</span>
+            <span class="line"><a href="" class="app" title="vedikāyāṃ pārthivāgniḥ <b&gt;N</b&gt;, vedikāṃ pāvakaḥ pātu <b&gt;क्षठम</b&gt;"><span class="appnum"><sup>1</sup></span></a>vedikārakṣaṇe vahni<a href="" class="app" title="bhāṇḍe viśvadivokasaḥ <b&gt;N</b&gt;, bhāṇḍaṃ sarve divaukasaḥ <b&gt;क्षठम</b&gt;"><span class="appnum"><sup>2</sup></span></a>rbhāṇḍe sarvadivaukasaḥ&nbsp;|| 85&nbsp;||</span>
+            
+         </div>
+         <a name="N%C4%81%C5%9A%C4%81.1.86"></a><div class="text" xml:id="NāŚā.1.86">
+            <span class="line">varṇāścatvāra <a href="" class="app" title="evātra <b&gt;N</b&gt;, evāsya <b&gt;पब</b&gt;, tathā stambheṣu yojitāḥ <b&gt;N</b&gt;"><span class="appnum"><sup>1</sup></span></a>evātha stambheṣu viniyojitāḥ&nbsp;|</span>
+            <span class="line">ādityāścaiva rudrāśca <a href="" class="app" title="nyastāḥ <b&gt;गबत</b&gt;, gatāḥ <b&gt;न</b&gt;, kṛtāḥ <b&gt;N</b&gt;"><span class="appnum"><sup>2</sup></span></a>sthitāḥ stambhāntareṣvatha&nbsp;|| 86&nbsp;||</span>
+            
+         </div>
+         <a name="N%C4%81%C5%9A%C4%81.1.87"></a><div class="text" xml:id="NāŚā.1.87">
+            <span class="line"><a href="" class="app" title="bhūtāni śālāsvapsarasastathā sarveṣu veśmasu <b&gt;नत</b&gt;, dhāraṇīṣu sthitā bhūtā śālā -----tathāṅgirā <b&gt;N</b&gt;"><span class="appnum"><sup>1</sup></span></a>dhāraṇīṣvatha bhūtāni śālāsvapsarasastathā&nbsp;|</span>
+            <span class="line"><a href="" class="app" title="mahodadhirmahīpṛṣṭhe yakṣiṇyaḥ sarvaparvasu <b&gt;Nनत</b&gt;"><span class="appnum"><sup>2</sup></span></a>sarvaveśmasu yakṣiṇyo mahīpṛṣṭhe mahodadhiḥ&nbsp;|| 87&nbsp;||</span>
+            
+         </div>
+         
+         ﻿<span class="pageinfo">[page 032]</span>
+         
+         <a name="N%C4%81%C5%9A%C4%81.1.88"></a><div class="text" xml:id="NāŚā.1.88">
+            <span class="line">dvāraśālāniyuktau tu kṛtāntaḥ kāla eva ca&nbsp;|</span>
+            <span class="line">sthāpitau dvāra<a href="" class="app" title="dvārapatre tu <b&gt;क्षनत</b&gt;, pārśve <b&gt;ठबम</b&gt;"><span class="appnum"><sup>1</sup></span></a>patreṣu <a href="" class="app" title="nāgarājau <b&gt;क्षठम</b&gt;"><span class="appnum"><sup>2</sup></span></a>nāgamukhyau mahābalau&nbsp;|| 88&nbsp;||</span>
+            
+         </div>
+         <a name="N%C4%81%C5%9A%C4%81.1.89"></a><div class="text" xml:id="NāŚā.1.89">
+            <span class="line">dehalyāṃ yamadaṇḍa<a href="" class="app" title="ṇḍaśca <b&gt;न</b&gt;"><span class="appnum"><sup>1</sup></span></a>stu śūlaṃ <a href="" class="app" title="copari saṃsthitam <b&gt;Nक्षठम</b&gt;"><span class="appnum"><sup>2</sup></span></a>tasyopari sthitam&nbsp;|</span>
+            <span class="line">dvārapālau sthitau cobhau <a href="" class="app" title="nirṛti <b&gt;गम</b&gt;"><span class="appnum"><sup>3</sup></span></a>niyatirmṛtyureva ca&nbsp;|| 89&nbsp;||</span>
+            
+         </div>
+         <a name="N%C4%81%C5%9A%C4%81.1.90"></a><div class="text" xml:id="NāŚā.1.90">
+            <span class="line">pārśve ca raṅgapīṭhasya<a href="" class="app" title="raṅgapīṭhasya pārśve tu <b&gt;N</b&gt;"><span class="appnum"><sup>1</sup></span></a> mahendraḥ sthitavānsvayam<a href="" class="app" title="svayaṃ śakraḥ pratiṣṭhitaḥ <b&gt;N</b&gt;"><span class="appnum"><sup>2</sup></span></a>&nbsp;|</span>
+            <span class="line">sthāpitā mattavāraṇyāṃ vidyuddaityaniṣūdanī&nbsp;|| 90&nbsp;||</span>
+            
+         </div>
+         <a name="N%C4%81%C5%9A%C4%81.1.91"></a><div class="text" xml:id="NāŚā.1.91">
+            <span class="line">stambheṣu mattavāraṇyāḥ sthāpitāḥ <a href="" class="app" title="parirakṣaṇe <b&gt;गब</b&gt;"><span class="appnum"><sup>1</sup></span></a>paripālane&nbsp;|</span>
+            <span class="line"><a href="" class="app" title="bhūtā yakṣāḥ <b&gt;क्षम</b&gt;"><span class="appnum"><sup>2</sup></span></a>bhūtayakṣapiśācāśca guhyakāśca mahābalāḥ&nbsp;|| 91&nbsp;||</span>
+            
+         </div>
+         <a name="N%C4%81%C5%9A%C4%81.1.92"></a><div class="text" xml:id="NāŚā.1.92">
+            <span class="line">jarjare <a href="" class="app" title="cāpi nikṣiptāṃ <b&gt;N</b&gt;, caiva nikṣiptam <b&gt;क्षठम</b&gt;"><span class="appnum"><sup>1</sup></span></a>tu vinikṣiptaṃ vajraṃ daityanibarhaṇam&nbsp;|</span>
+            <span class="line"><a href="" class="app" title="sandhau sandhau <b&gt;न</b&gt;, tatparvasu ca ni <b&gt;म</b&gt;"><span class="appnum"><sup>2</sup></span></a>tatparvasu vinikṣiptāḥ surendrā hyamitaujasaḥ&nbsp;|| 92&nbsp;||</span>
+            
+         </div>
+         
+         ﻿<span class="pageinfo">[page 033]</span>
+         
+         <a name="N%C4%81%C5%9A%C4%81.1.93"></a><div class="text" xml:id="NāŚā.1.93">
+            <span class="line"><a href="" class="app" title="śiro rakṣan sthito brahmā haraḥ parvaṇyanantare <b&gt;न</b&gt;, śiraḥ pārśve <b&gt;ब</b&gt;"><span class="appnum"><sup>1</sup></span></a>śiraḥparvasthito brahmā dvitīye śaṅkarastathā&nbsp;|</span>
+            <span class="line">tṛtīye <a href="" class="app" title="bhagavān <b&gt;क्षनम</b&gt;"><span class="appnum"><sup>2</sup></span></a>ca sthito viṣṇuścaturthe skanda eva ca&nbsp;|| 93&nbsp;||</span>
+            
+         </div>
+         <a name="N%C4%81%C5%9A%C4%81.1.94"></a><div class="text" xml:id="NāŚā.1.94">
+            <span class="line">pañcame ca mahānāgāḥ śeṣavāsukitakṣakāḥ&nbsp;|</span>
+            <span class="line">evaṃ vighnavināśāya sthāpitā jarjare surāḥ<a href="" class="app" title="reśvarāḥ <b&gt;ब</b&gt;"><span class="appnum"><sup>1</sup></span></a>&nbsp;|| 94&nbsp;||</span>
+            
+         </div>
+         <a name="N%C4%81%C5%9A%C4%81.1.95"></a><div class="text" xml:id="NāŚā.1.95">
+            <span class="line">raṅgapīṭhasya madhye tu svayaṃ brahmā pratiṣṭhitaḥ&nbsp;|</span>
+            <span class="line"><a href="" class="app" title="ijyārtham <b&gt;त</b&gt;"><span class="appnum"><sup>1</sup></span></a>iṣṭyartha raṅgamadhye tu kriyate puṣpamokṣaṇam&nbsp;|| 95&nbsp;||</span>
+            
+         </div>
+         <a name="N%C4%81%C5%9A%C4%81.1.96"></a><div class="text" xml:id="NāŚā.1.96">
+            <span class="line">pātālavāsino ye ca yakṣaguhyakapannagāḥ&nbsp;|</span>
+            <span class="line">adhastādraṅgapīṭhasya rakṣaṇe te<a href="" class="app" title="rakṣaṇāya <b&gt;N</b&gt;, viniyojitāḥ <b&gt;क्ष</b&gt;"><span class="appnum"><sup>1</sup></span></a> niyojitāḥ&nbsp;|| 96&nbsp;||</span>
+            
+         </div>
+         <a name="N%C4%81%C5%9A%C4%81.1.97"></a><div class="text" xml:id="NāŚā.1.97">
+            <span class="line">nāyakaṃ rakṣatīndrastu <a href="" class="app" title="nāyakaṃ pāti <b&gt;N</b&gt;"><span class="appnum"><sup>1</sup></span></a>nāyikāṃ ca<a href="" class="app" title="tu <b&gt;N</b&gt;"><span class="appnum"><sup>2</sup></span></a> sarasvatī&nbsp;|</span>
+            <span class="line">vidūṣakamathauṅkāraḥ śeṣāstu prakṛtīrharaḥ<a href="" class="app" title="hariḥ <b&gt;N</b&gt;, ityartham <b&gt;जब</b&gt;"><span class="appnum"><sup>3</sup></span></a>&nbsp;||97||</span>
+            
+         </div>
+         <a name="N%C4%81%C5%9A%C4%81.1.98"></a><div class="text" xml:id="NāŚā.1.98">
+            <span class="line">yānyetāni niyuktāni daivatānīha rakṣaṇe&nbsp;|</span>
+            <span class="line"><a href="" class="app" title="eteṣāmadhidevāstu <b&gt;गब</b&gt;"><span class="appnum"><sup>1</sup></span></a>etānyevādhidaivāni bhaviṣyantītyuvāca saḥ&nbsp;|| 98&nbsp;||</span>
+            
+         </div>
+         <a name="N%C4%81%C5%9A%C4%81.1.99"></a><div class="text" xml:id="NāŚā.1.99">
+            <span class="line">etasminnantare devaiḥ sarvairuktaḥ pitāmahaḥ&nbsp;|</span>
+            <span class="line">sāmnā tāvadime vighnāḥ sthāpyantāṃ vacasā tvayā&nbsp;|| 99&nbsp;||</span>
+            
+         </div>
+         <a name="N%C4%81%C5%9A%C4%81.1.100"></a><div class="text" xml:id="NāŚā.1.100">
+            <span class="line">pūrvaṃ sāma prayoktavyaṃ dvitīyaṃ dānameva ca&nbsp;|</span>
+            <span class="line">tayorupari bhedastu tato daṇḍaḥ <a href="" class="app" title="praśasyate <b&gt;गबत</b&gt;"><span class="appnum"><sup>1</sup></span></a>prayujyate&nbsp;|| 100&nbsp;||</span>
+            
+         </div>
+         <a name="N%C4%81%C5%9A%C4%81.1.101"></a><div class="text" xml:id="NāŚā.1.101">
+            <span class="line">devānāṃ vacanaṃ śrutvā brahmā vighnānuvāca ha&nbsp;|</span>
+            <span class="line"><a href="" class="app" title="katham <b&gt;घब</b&gt;"><span class="appnum"><sup>1</sup></span></a>kasmādbhavanto nāṭyasya <a href="" class="app" title="vināśārthamupasthitāḥ <b&gt;घतब</b&gt;"><span class="appnum"><sup>2</sup></span></a>vināśāya samutthitāḥ<a href="" class="app" title="samutthāpitā <b&gt;N</b&gt;"><span class="appnum"><sup>3</sup></span></a>&nbsp;|| 101&nbsp;||</span>
+            
+         </div>
+         <a name="N%C4%81%C5%9A%C4%81.1.102"></a><div class="text" xml:id="NāŚā.1.102">
+            <span class="line">brahmaṇo vacanaṃ śrutvā<a href="" class="app" title="tatśrutvā brahmaṇau vākyaṃ <b&gt;N</b&gt;"><span class="appnum"><sup>1</sup></span></a> virūpākṣo 'bravīdvacaḥ<a href="" class="app" title="didam <b&gt;क्षम</b&gt;"><span class="appnum"><sup>2</sup></span></a>&nbsp;|</span>
+            <span class="line">daityairvighnagaṇaiḥ sārdha sāmapūrvamidaṃ tataḥ<a href="" class="app" title="vacaḥ <b&gt;Nक्षम</b&gt;"><span class="appnum"><sup>3</sup></span></a>&nbsp;|| 102&nbsp;||</span>
+            
+         </div>
+         <a name="N%C4%81%C5%9A%C4%81.1.103"></a><div class="text" xml:id="NāŚā.1.103">
+            <span class="line">yo 'yaṃ bhagavatā<a href="" class="app" title="samyak <b&gt;क्षठम</b&gt;"><span class="appnum"><sup>1</sup></span></a> sṛṣṭo nāṭyavedaḥ surecchayā<a href="" class="app" title="pravartitaḥ <b&gt;क्षठम</b&gt;, prakīrtitaḥ <b&gt;ज</b&gt;"><span class="appnum"><sup>2</sup></span></a>&nbsp;|</span>
+            <span class="line">pratyādeśo 'yamasmākaṃ <a href="" class="app" title="devārthe <b&gt;क्षजम</b&gt;"><span class="appnum"><sup>3</sup></span></a>surārtha bhavatā kṛtaḥ&nbsp;|| 103&nbsp;||</span>
+            
+         </div>
+         
+         ﻿<span class="pageinfo">[page 034]</span>
+         
+         ﻿<span class="pageinfo">[page 035]</span>
+         
+         <a name="N%C4%81%C5%9A%C4%81.1.104"></a><div class="text" xml:id="NāŚā.1.104">
+            <span class="line">tannaitadevaṃ kartavyaṃ tvayā lokapitāmaha&nbsp;|</span>
+            <span class="line">yathā devāstathā daityāstvattaḥ sarve vinirgatāḥ&nbsp;|| 104&nbsp;||</span>
+            
+         </div>
+         <a name="N%C4%81%C5%9A%C4%81.1.105"></a><div class="text" xml:id="NāŚā.1.105">
+            <span class="line"><a href="" class="app" title="virūpākṣavacaḥ <b&gt;डबत</b&gt;"><span class="appnum"><sup>1</sup></span></a>vighnānāṃ vacanaṃ śrutvā brahmā vacanamabravīt&nbsp;|</span>
+            <span class="line">alaṃ vo manyunā daityā <a href="" class="app" title="viṣādastyajyatāmayam <b&gt;घतब</b&gt;"><span class="appnum"><sup>2</sup></span></a>viṣādaṃ tyajatānaghāḥ&nbsp;|| 105&nbsp;||</span>
+            
+         </div>
+         <a name="N%C4%81%C5%9A%C4%81.1.106"></a><div class="text" xml:id="NāŚā.1.106">
+            <span class="line">bhavatāṃ devatānāṃ ca śubhāśubha<a href="" class="app" title="vikalpanam <b&gt;ड</b&gt;, vikalpake <b&gt;ब</b&gt;"><span class="appnum"><sup>1</sup></span></a>vikalpakaḥ&nbsp;|</span>
+            <span class="line">karmabhāvānvayāpekṣī<a href="" class="app" title="yāpekṣo <b&gt;क्षठम</b&gt;"><span class="appnum"><sup>2</sup></span></a> nāṭyavedo mayā kṛtaḥ&nbsp;|| 106&nbsp;||</span>
+            
+         </div>
+         <a name="N%C4%81%C5%9A%C4%81.1.107"></a><div class="text" xml:id="NāŚā.1.107">
+            <span class="line">naikāntato 'tra bhavatāṃ devānāṃ <a href="" class="app" title="cāpi <b&gt;घ</b&gt;, cātra <b&gt;क्षठब</b&gt;, vānu <b&gt;त</b&gt;"><span class="appnum"><sup>1</sup></span></a>cānubhāvanam&nbsp;|</span>
+            <span class="line">trailokyasyāsya sarvasya nāṭyaṃ bhāvānukīrtanam&nbsp;|| 107&nbsp;||</span>
+            
+         </div>
+         
+         ﻿<span class="pageinfo">[page 036]</span>
+         
+         ﻿<span class="pageinfo">[page 037]</span>
+         
+         <span class="pageinfo">[page 038]</span>
+         
+         <a name="N%C4%81%C5%9A%C4%81.1.108"></a><div class="text" xml:id="NāŚā.1.108">
+            <span class="line">kvaciddharmaḥ kvacitkrīḍā kvacidarthaḥ kvacicchamaḥ<a href="" class="app" title="cchramaḥ <b&gt;क्षठ</b&gt;"><span class="appnum"><sup>1</sup></span></a>&nbsp;|</span>
+            <span class="line">kvaciddhāsyaṃ kvacidyuddhaṃ kvacitkāmaḥ kvacidvadhaḥ&nbsp;|| 108&nbsp;||</span>
+            
+         </div>
+         <a name="N%C4%81%C5%9A%C4%81.1.109"></a><div class="text" xml:id="NāŚā.1.109">
+            <span class="line">dharmo dharmapravṛttānāṃ<a href="" class="app" title="dharmo 'dharma <b&gt;ठत</b&gt;"><span class="appnum"><sup>1</sup></span></a> kāmaḥ kāmopasevinām&nbsp;|</span>
+            <span class="line">nigraho durvinītānāṃ <a href="" class="app" title="mattānāṃ damanakriyā <b&gt;गब</b&gt;"><span class="appnum"><sup>2</sup></span></a>vinītānāṃ damakriyā&nbsp;|| 109&nbsp;||</span>
+            
+         </div>
+         <a name="N%C4%81%C5%9A%C4%81.1.110"></a><div class="text" xml:id="NāŚā.1.110">
+            <span class="line">klībānāṃ dhāṣṭrya<a href="" class="app" title="karaṇam <b&gt;क्षठम</b&gt;"><span class="appnum"><sup>1</sup></span></a>jananamutsāhaḥ śūramāninām&nbsp;|</span>
+            <span class="line">abudhānāṃ vibodhaśca vaiduṣyaṃ<a href="" class="app" title="vaidagdhyam <b&gt;घब</b&gt;"><span class="appnum"><sup>2</sup></span></a> viduṣāmapi&nbsp;|| 110&nbsp;||</span>
+            
+         </div>
+         
+         ﻿<span class="pageinfo">[page 039]</span>
+         
+         ﻿<span class="pageinfo">[page 040]</span>
+         
+         <a name="N%C4%81%C5%9A%C4%81.1.111"></a><div class="text" xml:id="NāŚā.1.111">
+            <span class="line">īśvarāṇāṃ vilāsaśca <a href="" class="app" title="dhairyam <b&gt;डत</b&gt;"><span class="appnum"><sup>1</sup></span></a>sthairyaṃ duḥkhārditasya ca&nbsp;|</span>
+            <span class="line">arthopajīvināmartho <a href="" class="app" title="vṛtti <b&gt;क्षठम</b&gt;"><span class="appnum"><sup>2</sup></span></a>dhṛtirudvignacetasām&nbsp;|| 111&nbsp;||</span>
+            
+         </div>
+         <a name="N%C4%81%C5%9A%C4%81.1.112"></a><div class="text" xml:id="NāŚā.1.112">
+            <span class="line"><a href="" class="app" title="duḥkhitānāṃ pramattāṃśaḥ śokārtānāṃ tapasvinām&nbsp;| hitopadeśajananaṃ nānāvasthāntarātmakam&nbsp;| nānāśīlāḥ prakṛtayaḥ śīlānnāṭyaṃ vinirmitam&nbsp;| tasmāllokapramāṇaṃ hi kartavyaṃ nāṭyavaktṛbhiḥ&nbsp;| devatānāmṛṣīṇāṃ ca rājñāmatha kuṭumbinām&nbsp;| kṛtānukaraṇaṃ loke nāṭyamityabhidhīyate&nbsp;| mahecchā ye vidagdhāśca yauvanaiśvaryaśālinaḥ&nbsp;| teṣāmayaṃ nāṭyavidhiḥ prayojyastvarthasiddhaye&nbsp;| prāyeṇa sarvalokasya nṛttamiṣṭaṃ svabhāvataḥ&nbsp;| maṅgalyamiti kṛtvā ca nāṭyametatprayojyate&nbsp;| prasavālāpavivāhaharṣeṣvabhyudayeṣu ca&nbsp;| prasthānasamaye rājñāṃ nāṭyametatprayojyate&nbsp;| ityadhikaṃ dṛśyate&nbsp;| <b&gt;क्षन</b&gt;"><span class="appnum"><sup>1</sup></span></a>nānābhāvopasampannaṃ nānāvasthāntarātmakam&nbsp;|</span>
+            <span class="line">lokavṛttānukaraṇaṃ nāṭyametanmayā kṛtam&nbsp;|| 112&nbsp;||</span>
+            
+         </div>
+         <a name="N%C4%81%C5%9A%C4%81.1.113"></a><div class="text" xml:id="NāŚā.1.113">
+            <span class="line"><a href="" class="app" title="adhamottama <b&gt;न</b&gt;"><span class="appnum"><sup>1</sup></span></a>uttamādhamamadhyānāṃ narāṇāṃ karmasaṃśrayam&nbsp;|</span>
+            <span class="line">hitopadeśajananaṃ dhṛtikrīḍāsukhādikṛt<a href="" class="app" title="nāṭyametadbhaviṣyati <b&gt;क्ष</b&gt;"><span class="appnum"><sup>2</sup></span></a>&nbsp;|| 113&nbsp;||</span>
+            
+         </div>
+         <a name="N%C4%81%C5%9A%C4%81.1.113.1"></a><div class="text" xml:id="NāŚā.1.113.1">
+            <span class="line"><a href="" class="app" title="ma ta अयं श्लोकोऽधिको दृश्यते, sarvārthe sarvadā caiva <b&gt;न</b&gt;"><span class="appnum"><sup>1</sup></span></a>etadraseṣu bhāveṣu sarvakarmakriyāsvatha<a href="" class="app" title="kriyāsu ca <b&gt;Nठ</b&gt;"><span class="appnum"><sup>2</sup></span></a>&nbsp;|</span>
+            <span class="line">sarvopadeśajananaṃ <a href="" class="app" title="nāṭyamevadbhaviṣyati"><span class="appnum"><sup>3</sup></span></a>nāṭyaṃ loke bhaviṣyati&nbsp;||</span>
+            
+         </div> 
+         <a name="N%C4%81%C5%9A%C4%81.1.114"></a><div class="text" xml:id="NāŚā.1.114">
+            <span class="line">duḥkhārtānāṃ <a href="" class="app" title="samarthānām <b&gt;चब</b&gt;"><span class="appnum"><sup>1</sup></span></a>śramārtānāṃ śokārtānāṃ tapasvinām&nbsp;|</span>
+            <span class="line"><a href="" class="app" title="viśrāmajananam <b&gt;ठम</b&gt;"><span class="appnum"><sup>2</sup></span></a>viśrāntijananaṃ <a href="" class="app" title="loke <b&gt;ठम</b&gt;"><span class="appnum"><sup>3</sup></span></a>kāle nāṭyametadbhaviṣyati<a href="" class="app" title="nmayā kṛtam <b&gt;चन</b&gt;"><span class="appnum"><sup>4</sup></span></a>&nbsp;|| 114&nbsp;||</span>
+            
+         </div>
+         
+         ﻿<span class="pageinfo">[page 041]</span>
+         
+         <a name="N%C4%81%C5%9A%C4%81.1.115"></a><div class="text" xml:id="NāŚā.1.115">
+            <span class="line">dharmyaṃ yaśasyamāyuṣyaṃ hitaṃ buddhivivardhanam&nbsp;|</span>
+            <span class="line">lokopadeśajananaṃ nāṭyametadbhaviṣyati<a href="" class="app" title="sarvaśāstrāṇi śilpāni karmāṇi vividhāni ca&nbsp;| yasmānnāṭye sametāni tasmādetanmayā kṛtam&nbsp;|| ityadhikam <b&gt;क्षबम</b&gt;"><span class="appnum"><sup>1</sup></span></a>&nbsp;|| 115&nbsp;||</span>
+            
+         </div>
+         <a name="N%C4%81%C5%9A%C4%81.1.116"></a><div class="text" xml:id="NāŚā.1.116">
+            <span class="line"><a href="" class="app" title="tacchutam <b&gt;चबन</b&gt;"><span class="appnum"><sup>1</sup></span></a>na tajjñānaṃ na tacchilpaṃ na sā vidyā na sā kalā&nbsp;|</span>
+            <span class="line"><a href="" class="app" title="na tatkarma na vā yogo <b&gt;N</b&gt;, na yogo 'sau <b&gt;न</b&gt;"><span class="appnum"><sup>2</sup></span></a>nāsau yogo na tatkarma <a href="" class="app" title="yannāṭye 'sminna dṛśyate <b&gt;कब</b&gt;"><span class="appnum"><sup>3</sup></span></a>nāṭye 'smin yanna dṛśyate&nbsp;|| 116&nbsp;||</span>
+            
+         </div>
+         
+         ﻿<span class="pageinfo">[page 042]</span>
+         
+         <a name="N%C4%81%C5%9A%C4%81.1.117"></a><div class="text" xml:id="NāŚā.1.117">
+            <span class="line">tannātra manyuḥ kartavyo bhavadbhiramarānprati<a href="" class="app" title="One folio of N. consisting of about 12 verses after this not deciphered.">*</a>&nbsp;|</span>
+            <span class="line">saptadvīpānukaraṇaṃ <a href="" class="app" title="nāṭyametantamayā kṛtam <b&gt;त</b&gt;, nāṭye hyasminpratiṣṭhitam <b&gt;क्षछम</b&gt;, vedavidyetihāsānāmākhyānaparikalpanam&nbsp;| vinodajananaṃ kāle nāṭyametadbhaviṣyati&nbsp;| śrutismṛtisadācārapariśeṣārthakalpanam&nbsp;| ityadhikam&nbsp;| <b&gt;क्ष</b&gt;, nāṭye hyasmin bhaviṣyati <b&gt;ब</b&gt;"><span class="appnum"><sup>1</sup></span></a>nāṭyametadbhaviṣyati&nbsp;|| 117&nbsp;||</span>
+            <span class="line">(<a href="" class="app" title="ma taपुस्तकयोरिदमर्धं नास्ति"><span class="appnum"><sup>2</sup></span></a>yenānukaraṇaṃ nāṭyametattadyanmayā kṛtam&nbsp;||)</span>
+            
+         </div>
+         <a name="N%C4%81%C5%9A%C4%81.1.118"></a><div class="text" xml:id="NāŚā.1.118">
+            <span class="line">devānāmasurāṇāṃ<a href="" class="app" title="devatānāmṛṣīṇāṃ ca <b&gt;क्षछम</b&gt;"><span class="appnum"><sup>1</sup></span></a> ca <a href="" class="app" title="rājye lokasya caiva hi <b&gt;छतब</b&gt;"><span class="appnum"><sup>2</sup></span></a>rājñāmatha kuṭumbinām&nbsp;|</span>
+            <span class="line">(kṛtānukaraṇaṃ loke nāṭyamityabhidhīyate&nbsp;|)<a href="" class="app" title="इदमर्धं मधिकं kṣa पुस्तके"><span class="appnum"><sup>3</sup></span></a></span> 
+            <span class="line">brahmarṣīṇāṃ ca vijñeyaṃ nāṭyaṃ vṛttānta<a href="" class="app" title="vṛttānu <b&gt;त</b&gt;"><span class="appnum"><sup>4</sup></span></a>darśakam&nbsp;|| 118&nbsp;||</span>
+            
+         </div>
+         <a name="N%C4%81%C5%9A%C4%81.1.119"></a><div class="text" xml:id="NāŚā.1.119">
+            <span class="line">yo 'yaṃ svabhāvo lokasya sukhaduḥsvasamanvitaḥ&nbsp;|</span>
+            <span class="line">so 'ṅgādyabhinayopeto nāṭyamityabhidhīyate<a href="" class="app" title="kṣaपुस्तके इदं नास्ति"><span class="appnum"><sup>1</sup></span></a>&nbsp;|| 119&nbsp;||</span>
+            
+         </div>
+         
+         ﻿<span class="pageinfo">[page 043]</span>
+         
+         ﻿<span class="pageinfo">[page 044]</span>
+         
+         <a name="N%C4%81%C5%9A%C4%81.1.119.1"></a><div class="text" xml:id="NāŚā.1.119.1">
+            <span class="line">(<a href="" class="app" title="<b&gt;म</b&gt; इदं पद्यद्वयं न दृश्यते&nbsp;। <b&gt;त ब</b&gt;द्वितीयं पद्यं न दृश्यते&nbsp;। द्वयोरपि व्याख्या नास्ति">*</a>vedavidyetihāsānāmākhyānaparikalpanam&nbsp;|</span>
+            <span class="line">vinodakaraṇaṃ loke nāṭyametadbhaviṣyati&nbsp;||</span>
+            
+         </div> 
+         <a name="N%C4%81%C5%9A%C4%81.1.119.2"></a><div class="text" xml:id="NāŚā.1.119.2">
+            <span class="line">śrutismṛtisadācārapariśeṣārthakalpanam&nbsp;|</span>
+            <span class="line">vinodajananaṃ loke nāṭyametadbhaviṣyati&nbsp;||)</span>
+            
+         </div> 
+         <a name="N%C4%81%C5%9A%C4%81.1.120"></a><div class="text" xml:id="NāŚā.1.120">
+            <span class="line">etasminnantare devān sarvānāha pitāmahaḥ&nbsp;|</span>
+            <span class="line"><a href="" class="app" title="kārayatvatra bhagavān <b&gt;न</b&gt;, kurudhvamatra yajanaṃ vidhivat <b&gt;पतब</b&gt;"><span class="appnum"><sup>1</sup></span></a>kriyatāmadya vidhivadyajanaṃ nāṭyamaṇḍape&nbsp;|| 120&nbsp;||</span>
+            
+         </div>
+         <a name="N%C4%81%C5%9A%C4%81.1.121"></a><div class="text" xml:id="NāŚā.1.121">
+            <span class="line">balipradānairhomaiśca mantrauṣādhisamanvitaiḥ&nbsp;|</span>
+            <span class="line"><a href="" class="app" title="japyairbhakṣyaiśca <b&gt;क्षपम</b&gt;"><span class="appnum"><sup>1</sup></span></a>bhojyairbhakṣyaiśca <a href="" class="app" title="bhojyaiśca <b&gt;क्षडम</b&gt;, homaiśca <b&gt;प</b&gt;"><span class="appnum"><sup>2</sup></span></a>pānaiśca baliḥ samupakalpyatām&nbsp;|| 121&nbsp;||</span>
+            
+         </div>
+         <a name="N%C4%81%C5%9A%C4%81.1.122"></a><div class="text" xml:id="NāŚā.1.122">
+            <span class="line"><a href="" class="app" title="martyaloke 'pyayaṃ vedaḥ śubhāṃ pūjāmavāpsyayati <b&gt;क्षमब</b&gt;"><span class="appnum"><sup>1</sup></span></a>martyalokagatāḥ sarve śubhāṃ pūjāmavāpsyatha&nbsp;|</span>
+            <span class="line">apūjayitvā raṅga tu naiva prekṣāṃ pravartayet<a href="" class="app" title="prekṣā pravartate <b&gt;क्षडम</b&gt;"><span class="appnum"><sup>2</sup></span></a>&nbsp;|| 122&nbsp;||</span>
+            
+         </div>
+         
+         ﻿<span class="pageinfo">[page 045]</span>
+         
+         <a name="N%C4%81%C5%9A%C4%81.1.123"></a><div class="text" xml:id="NāŚā.1.123">
+            <span class="line"><a href="" class="app" title="aprapūjyātha <b&gt;न</b&gt;"><span class="appnum"><sup>1</sup></span></a>apūjayitvā raṅgaṃ tu yaḥ prekṣāṃ kalpayiṣyati&nbsp;|</span>
+            <span class="line"><a href="" class="app" title="tasya tanniṣphalam <b&gt;क्षमतब</b&gt;"><span class="appnum"><sup>2</sup></span></a>niṣphalaṃ tasya tat jñānaṃ tiryagyoniṃ ca yāsyati<a href="" class="app" title="gamiṣyati <b&gt;ठ</b&gt;, bhaviṣyati <b&gt;क्षठ</b&gt;"><span class="appnum"><sup>3</sup></span></a>&nbsp;|| 123&nbsp;||</span>
+            
+         </div>
+         <a name="N%C4%81%C5%9A%C4%81.1.124"></a><div class="text" xml:id="NāŚā.1.124">
+            <span class="line">yajñena saṃmi<a href="" class="app" title="saṃmatam <b&gt;चन</b&gt;"><span class="appnum"><sup>1</sup></span></a>taṃ hyetadraṅgadaivatapūjanam&nbsp;|</span>
+            <span class="line">tasmātsarvaprayatnena kartavyaṃ <a href="" class="app" title="raṅgapūjanam <b&gt;ठम</b&gt;"><span class="appnum"><sup>2</sup></span></a>nāṭyayoktṛbhiḥ&nbsp;|| 124&nbsp;||</span>
+            
+         </div>
+         <a name="N%C4%81%C5%9A%C4%81.1.125"></a><div class="text" xml:id="NāŚā.1.125">
+            <span class="line">nartako 'rthapatirvāpi yaḥ pūjāṃ na kariṣyati&nbsp;|</span>
+            <span class="line"><a href="" class="app" title="kārayiṣyati vā naiva <b&gt;क्षडम</b&gt;"><span class="appnum"><sup>1</sup></span></a>na kārayiṣyatyanyairvā prāpnotyapacayaṃ<a href="" class="app" title="prāpsyatyāpādameva saḥ <b&gt;ठ</b&gt;, prāpsyatyapacayam <b&gt;क्षडब</b&gt;"><span class="appnum"><sup>2</sup></span></a> tu saḥ&nbsp;|| 125&nbsp;||</span>
+            
+         </div>
+         <a name="N%C4%81%C5%9A%C4%81.1.126"></a><div class="text" xml:id="NāŚā.1.126">
+            <span class="line">yathāvidhi <a href="" class="app" title="yathāśāstram <b&gt;क्षड</b&gt;"><span class="appnum"><sup>1</sup></span></a>yathādṛṣṭaṃ yastu pūjāṃ kariṣyati&nbsp;|</span>
+            <span class="line">sa lapsyate śubhānarthān svargalokaṃ ca <a href="" class="app" title="gamiṣyati <b&gt;क्षठम</b&gt;"><span class="appnum"><sup>2</sup></span></a>yāsyati&nbsp;|| 126&nbsp;||</span>
+            
+         </div>
+         
+         ﻿<span class="pageinfo">[page 046]</span>
+         
+         <a name="N%C4%81%C5%9A%C4%81.1.127"></a><div class="text" xml:id="NāŚā.1.127">
+            <span class="line"><a href="" class="app" title="evaṃ bhavatviti prāha <b&gt;क्षठम</b&gt;"><span class="appnum"><sup>1</sup></span></a>evamuktvā tu bhagavāndruhiṇaḥ sahadaivataiḥ&nbsp;|</span>
+            <span class="line">raṅgapūjāṃ kuruṣveti māmevaṃ samacodayat&nbsp;|| 127&nbsp;||</span>
+            
+         </div>
+         
+         
+         <a name=""></a><div class="text" xml:id="">iti bhāratīye nāṭyaśāstre nāṭyotpatti<a href="" class="app" title="nāṭyaśāstrotpattiḥ <b&gt;नम</b&gt;, śāstropattiḥ <b&gt;क्ष</b&gt;"><span class="appnum"><sup>1</sup></span></a>rnāma prathamo 'dhyāyaḥ||
+         </div>
+         
+         
+         
+         
+         
+      </div>
+   </body>
+</html>

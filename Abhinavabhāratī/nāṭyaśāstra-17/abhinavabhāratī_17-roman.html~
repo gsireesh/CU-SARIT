@@ -1,0 +1,622 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html xmlns:fn="http://www.w3.org/2005/xpath-functions" encodingxmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+      <link rel="stylesheet" type="text/css" href="../../STYLESHEETS/cssstylesheet2.css">
+      <title></title><script type="text/javascript">
+    
+    function toggle(id) {
+       var e = document.getElementById(id);
+       if(e.style.display == 'block')
+          e.style.display = 'none';
+       else
+          e.style.display = 'block';
+    }
+// qTip - CSS Tool Tips - by Craig Erskine
+// http://qrayg.com
+//
+// Multi-tag support by James Crooke
+// http://www.cj-design.com
+//
+// Inspired by code from Travis Beckham
+// http://www.squidfingers.com | http://www.podlob.com
+//
+// Copyright (c) 2006 Craig Erskine
+// Permission is granted to copy, distribute and/or modify this document
+// under the terms of the GNU Free Documentation License, Version 1.3
+// or any later version published by the Free Software Foundation;
+// with no Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts.
+// A copy of the license is included in the section entitled "GNU
+// Free Documentation License".
+
+var qTipTag = "a,label,input"; //Which tag do you want to qTip-ize? Keep it lowercase!//
+var qTipX = 0; //This is qTip's X offset//
+var qTipY = 15; //This is qTip's Y offset//
+
+//There's No need to edit anything below this line//
+tooltip = {
+  name : "qTip",
+  offsetX : qTipX,
+  offsetY : qTipY,
+  tip : null
+}
+
+tooltip.init = function () {
+	var tipNameSpaceURI = "http://www.w3.org/1999/xhtml";
+	if(!tipContainerID){ var tipContainerID = "qTip";}
+	var tipContainer = document.getElementById(tipContainerID);
+
+	if(!tipContainer) {
+	  tipContainer = document.createElementNS ? document.createElementNS(tipNameSpaceURI, "div") : document.createElement("div");
+		tipContainer.setAttribute("id", tipContainerID);
+	  document.getElementsByTagName("body").item(0).appendChild(tipContainer);
+	}
+
+	if (!document.getElementById) return;
+	this.tip = document.getElementById (this.name);
+	if (this.tip) document.onmousemove = function (evt) {tooltip.move (evt)};
+
+	var a, sTitle, elements;
+	
+	var elementList = qTipTag.split(",");
+	for(var j = 0; j < elementList.length; j++)
+	{	
+		elements = document.getElementsByTagName(elementList[j]);
+		if(elements)
+		{
+			for (var i = 0; i < elements.length; i ++)
+			{
+				a = elements[i];
+				sTitle = a.getAttribute("title");				
+				if(sTitle)
+				{
+					a.setAttribute("tiptitle", sTitle);
+					a.removeAttribute("title");
+					a.removeAttribute("alt");
+					a.onmouseover = function() {tooltip.show(this.getAttribute('tiptitle'))};
+					a.onmouseout = function() {tooltip.hide()};
+				}
+			}
+		}
+	}
+}
+
+tooltip.move = function (evt) {
+	var x=0, y=0;
+	if (document.all) {//IE
+		x = (document.documentElement && document.documentElement.scrollLeft) ? document.documentElement.scrollLeft : document.body.scrollLeft;
+		y = (document.documentElement && document.documentElement.scrollTop) ? document.documentElement.scrollTop : document.body.scrollTop;
+		x += window.event.clientX;
+		y += window.event.clientY;
+		
+	} else {//Good Browsers
+		x = evt.pageX;
+		y = evt.pageY;
+	}
+	this.tip.style.left = (x + this.offsetX) + "px";
+	this.tip.style.top = (y + this.offsetY) + "px";
+}
+
+tooltip.show = function (text) {
+	if (!this.tip) return;
+	this.tip.innerHTML = text;
+	this.tip.style.display = "block";
+}
+
+tooltip.hide = function () {
+	if (!this.tip) return;
+	this.tip.innerHTML = "";
+	this.tip.style.display = "none";
+}
+
+window.onload = function () {
+	tooltip.init ();
+}
+    
+    </script></head>
+   <body>
+      
+      
+      <h2>Table of contents</h2>
+      <div class="toc"></div>
+      <span class="pageinfo">[page 365]</span>
+      
+      
+      <div class="lg" type="">
+         <span class="line">yadāntararasāsvādakākuviśrāntisundaram&nbsp;|</span>
+         <span class="line">rasākṣapakṣagaṃ vande tadvapuḥ pārameśvaram&nbsp;|| (abhinavaguptasya)</span> 
+         
+      </div>
+      
+      <p>caturdaśādhyāye vācikoktakrame saṃskṛtaṃ prākṛtaṃ ca vākyamityuktam&nbsp;| tatra saṃskṛtaprasaṅgena
+         chandovṛttalakṣaṇādi nirūpitam&nbsp;| anena tvadhyāyena prākṛtasya svarūpaṃ nirupyate&nbsp;|
+         śāstraprasiddhasaṃskṛtaviparītaprākṛtaprasaṅgena nāmadheyibhāgarūparūpaṇaṃ śāstravihitānāṃ
+         viparītarūpatvāt, nāṭyasamayapātino bhāvamāriṣādināmasamūhasya paṭhanadharmāśca prākṛte
+         'pi kimanyathā saṃskṛtavadveti cintāyāṃ prasaṅgena kāryasvarūpaṃ nirūpitam&nbsp;| daśarūpakanirṇayānantaraṃ
+         samucitanirṇayamapi tathā—
+      </p>
+      
+      <div class="lg" type="">
+         <span class="line">alaṅkārā virāmāśca ye pāṭhye saṃskṛte matāḥ&nbsp;|</span>
+         <span class="line">ta eva yatnataḥ kāryāḥ strīpāṭhye 'pi ca saṃskṛte&nbsp;|| (17-133)</span>
+         
+      </div>
+      
+      <p>ityadhyāyopānte prākṛtapāṭhyamevopasaṃhariṣyāmītyadhyāyasaṅgatiḥ&nbsp;| etāmeva darśayati
+         <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_17-dn.html#N%C4%81%C5%9A%C4%81.17.1" target="_blank">evaṃ tu saṃskṛta</a></span>mityādi&nbsp;| pāṭhaviśeṣamarhati, yatnena vā paṭhanīyaṃ, viśiṣṭena <span class="pageinfo">[page 366]</span> rūpeṇa vā paṭhanārhaṃ āntaracittavṛttivaśādeva vā tathā paṭhituṃ śakyaṃ, ācāryayatnena
+         vā paṭhanīyamiti pāṭhyam&nbsp;| tatra prākṛtasya sāmānyalakṣaṇamāha (saṃskāreti)saṃskṛtameva
+         saṃskāraguṇena yatnena parirakṣārūpeṇa varjitaṃ prākṛtaṃ, prakṛterasaṃskārarūpāyā
+         āgatam&nbsp;|
+      </p>
+      
+      
+      <p>nanvapabhraṃśānāṃ ko niyama ityāha nānā yānyavasthāntarāṇi deśaviśeṣāsteṣvātmā niyatasvabhāvo yasyāṃ, deśaviśeṣeṣu prasiddhyā
+         niyamitamityeva saṃskṛtā eva vācakāḥ anumānāttvanye te tvanyatve prasiddhiṃ gatā ityuktam&nbsp;|
+         avatiṣṭhante 'nyasminnityavasthāḥ deśāḥ&nbsp;| saṃskṛte same 'pi prātipadike vibhaktau
+         bhavitavyaṃ viparyāsena svareṇa vā deśīpadamapi svarasyaiva prayogāvasare prayujyata
+         iti tadapi prākṛtameva, avyutpāditaprakṛtestajjanaprayojyatvāt prākṛtamiti kecit&nbsp;|
+         saṃskṛtena samānaśabdānudāharati <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_17-dn.html#N%C4%81%C5%9A%C4%81.17.4" target="_blank">kamalāma</a></span>leti&nbsp;| vibhaktau liṅgasya prākṛte svātantryādavaśyaṃ bhedena bhāvyamityāha vākye samāsopapannaṃ
+         yojitam&nbsp;| etatparijñānasya phalamāha <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_17-dn.html#N%C4%81%C5%9A%C4%81.17.4" target="_blank">evaṃ saṃskṛtamapi yoga</a></span>miti&nbsp;| bhāṣāśleṣe patākāsthānakādau cāsya prayoga uktaḥ&nbsp;| <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_17-dn.html#N%C4%81%C5%9A%C4%81.17.4" target="_blank">api</a></span> śabdenedamāha prākṛtaprayoge samāse 'pi na saṃskṛtasamateti kamala amala indu ityādau&nbsp;|
+      </p>
+      
+      <span class="pageinfo">[page 367]</span>
+      
+      
+      <p>vibhraṣṭamāha <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_17-dn.html#N%C4%81%C5%9A%C4%81.17.5" target="_blank">ye varṇā</a></span> ityādi&nbsp;| etadeva prapañcyate <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_17-dn.html#N%C4%81%C5%9A%C4%81.17.6" target="_blank">eoāraparā</a></span>ṇi a' ityādinā&nbsp;| ekārātparaḥ ai, okārātparāḥ au, aikāraikārau ca, yebhyastāni (ca)&nbsp;|
+         kiyanti āha <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_17-dn.html#N%C4%81%C5%9A%C4%81.17.6" target="_blank">pāae</a></span> pādasaṃkhyayā catvārītyarthaḥ ṛ ṛ lṛ lṝ&nbsp;| <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_17-dn.html#N%C4%81%C5%9A%C4%81.17.6" target="_blank">aṃkāraparo</a></span> visarjanīyaḥ&nbsp;| <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_17-dn.html#N%C4%81%C5%9A%C4%81.17.6" target="_blank">vasa</a></span>kārayormadhye śaṣau&nbsp;| (<span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_17-dn.html#N%C4%81%C5%9A%C4%81.17.6" target="_blank">kacavaggoti</a></span>) <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_17-dn.html#N%C4%81%C5%9A%C4%81.17.6" target="_blank">kaca</a></span>tavargāṇāṃ <span class="pageinfo">[page 368]</span> antyavarṇāḥ ṅa ña na iti dvādaśavarṇā na santi&nbsp;| (<span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_17-dn.html#N%C4%81%C5%9A%C4%81.17.7" target="_blank">ka</a></span>geti) kagādayo lupyante tadīyaścārdhaḥ svarāṇāmeva&nbsp;| (<span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_17-dn.html#N%C4%81%C5%9A%C4%81.17.7" target="_blank">khaghe</a></span>ti) khādīnāṃ hatvaṃ, <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_17-dn.html#N%C4%81%C5%9A%C4%81.17.7" target="_blank">khe</a></span>ṭa, pari<span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_17-dn.html#N%C4%81%C5%9A%C4%81.17.7" target="_blank">gha</a></span>, atha, <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_17-dn.html#N%C4%81%C5%9A%C4%81.17.7" target="_blank">dhā</a></span>nya (<span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_17-dn.html#N%C4%81%C5%9A%C4%81.17.7" target="_blank">bhā</a></span>vyādīnāṃ) vyañjanasya na bhavati&nbsp;|
+      </p>
+      
+      <span class="pageinfo">[page 370]</span>
+      
+      
+      <p>bhadrādiṣu na bhavati&nbsp;| api ca codrahahṛdaduḥkhādīnāmiti&nbsp;| atrodāharaṇāni mukhaṃ muhaṃ
+         ityādikāni&nbsp;| anādau sthāne ṭakāro ḍakāraśca <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_17-dn.html#N%C4%81%C5%9A%C4%81.17.12" target="_blank">aspaṣṭo</a></span> laghuprayatna uccāryaḥ yena kramāddakāraśca lakārācchāyau bhavataḥ&nbsp;| yathā udaraṃ
+         udalaṃ <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_17-dn.html#N%C4%81%C5%9A%C4%81.17.15" target="_blank">tathai</a></span>veti&nbsp;|
+      </p>
+      
+      <span class="pageinfo">[page 371]</span>
+      
+      
+      <p><span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_17-dn.html#N%C4%81%C5%9A%C4%81.17.17" target="_blank">aparasparaniṣpannā</a></span> ityanyonyamāśliṣṭā asaṃyogarūpā ityarthaḥ&nbsp;| yatra saṃyuktāsteṣāmiti
+         ṣaṣṭhībahuvacanam&nbsp;| krameṇa svayamudāharati vaccho ityādi&nbsp;| (viparīta iti) brahmā
+         bamhāvat hatvamiti, uparigato 'dhastāditi śakraṃ (? śakraḥ) arkaḥ (iti) dvitīyaṃ saṃyujyamānamapāsya
+         sa uparigata eva cādeśaḥ kriyate sakko akko&nbsp;|muninā ca digdarśitā, vistāravijijñāsuḥ prākṛtadīpikādikamava—<span class="pageinfo">[page 372]</span>lokayet&nbsp;| utpalaviracitāyāṃ ca sūtravṛttau paddhatau ca sphuṭaṃ pūrṇaṃ ca sarvamastīti tatrādaraḥ kāryaḥ&nbsp;||
+      </p>
+      
+      
+      <p>saṃskṛtaprākṛtarūpaiva bhāṣā vaktṛbhedāccaturdhā saṃpanneti darśayati <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_17-dn.html#N%C4%81%C5%9A%C4%81.17.25" target="_blank">saṃskṛtaṃ prākṛtaṃ ca
+               pāṭhya</a></span>miti&nbsp;| saṃskṛtaiva bhāṣā svarabhedādipūrṇasaṃskāropetā saṃskṛtabhāṣā bhāṣābhedānāmuktā
+         vaidikaśabdabāhulyādāryabhāṣāto vilakṣaṇatvamasyā ityanye&nbsp;|
+      </p>
+      
+      <span class="pageinfo">[page 373]</span>
+      
+      
+      <p>paśupakṣiprabhṛtīnāṃ yadrutaṃ tat nāṭyaprayoge kutrāpyavasare saṃbhāvyamityāha <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_17-dn.html#N%C4%81%C5%9A%C4%81.17.29" target="_blank">nāṭyadharmī</a></span>ti&nbsp;| upacāro vyavahāraḥ&nbsp;| <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_17-dn.html#N%C4%81%C5%9A%C4%81.17.32" target="_blank">kāraṇavyapadeśeneti</a></span> avasthādivaśāt yathā— arjunasya bṛhannalārūpeṇa pracchannasya kāraṇānyāharate&nbsp;|
+      </p>
+      
+      <span class="pageinfo">[page 374]</span>
+      
+      
+      <p><span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_17-dn.html#N%C4%81%C5%9A%C4%81.17.33" target="_blank">aiśvaryeṇeti</a></span> śrutādhyayanaśūnyatvamanena lakṣyate&nbsp;| krīḍāpītyanye&nbsp;| vyājaliṅgaṃ ye praviṣṭā
+         jīvikādyartham&nbsp;| <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_17-dn.html#N%C4%81%C5%9A%C4%81.17.34" target="_blank">cakracarā</a></span> ye cakreṇa jīvanti&nbsp;| bhāgavatā iha devalakāḥ&nbsp;| uttamagrahaiḥ
+         devagandharvādibhirākrāntānāṃ saṃskṛtabhāṣetyabhiprāyeṇāha <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_17-dn.html#N%C4%81%C5%9A%C4%81.17.35" target="_blank">nīcagrahe</a></span>ti&nbsp;| nīcagrahaiḥ piśācādibhirupasṛṣṭeṣu
+         svīkṛteṣviti&nbsp;| nīcajātayaścaṇḍālādyāḥ&nbsp;| cokṣā bhāgavataviśeṣā, ye ekāyanā iti prasiddhāḥ&nbsp;|
+         liṅgasthā yatiprabhṛtayaḥ&nbsp;| śilpakārikāḥ kalāsu vidagdhāḥ&nbsp;| rājñaḥ strī mahādevīrūpā
+         upacārādrājaśabdavācyeti “ana upadhā lopina” iti ṅīpi rājñī <span class="pageinfo">[page 375]</span>yadi puṃyogādityatra ata iti vartate&nbsp;| rājñyāḥ saṃskṛte nimittaṃ darśayati <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_17-dn.html#N%C4%81%C5%9A%C4%81.17.38" target="_blank">sandhivigrahe</a></span>ti yasmādrājñaḥ sandhivigrahasaṃbandhaṃ ṣāḍguṇyādi tathāgrahanakṣatraceṣṭitaṃ, śubhāśubharūpaṃ
+         pakṣirutaṃ ca śubhāśubhamitīyatsarvaṃ nṛpapatnyā jñeyaṃ, tasmādrājñaḥ sā pratiśarīrakalpā
+         kadācitsaṃskṛtayogyāpi bhavati&nbsp;|
+      </p>
+      
+      
+      <p><span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_17-dn.html#N%C4%81%C5%9A%C4%81.17.40" target="_blank">sukhāśraya</a></span>miti&nbsp;| anena viśeṣalakṣaṇaprayogādi nirasyati&nbsp;| āmnāyaḥ purāṇādiḥ
+         loko 'nuvartate anumanyata iti yāvat&nbsp;| <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_17-dn.html#N%C4%81%C5%9A%C4%81.17.43" target="_blank">bhuvī</a></span>ti avatīrṇānāmiti <span class="pageinfo">[page 376]</span>śeṣaḥ&nbsp;| <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_17-dn.html#N%C4%81%C5%9A%C4%81.17.45" target="_blank">śuddhāsvi</a></span>ti anulomavaśena saṃskāravatsu jātiṣvapīti pāṭhaḥ&nbsp;|
+      </p>
+      
+      
+      <p>deśabhāṣāṃ saṃkṣipyāha <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_17-dn.html#N%C4%81%C5%9A%C4%81.17.47" target="_blank">māgadhī</a></span>tyādi&nbsp;| bhāṣā saṃskṛtāpabhraṃśaḥ, bhāṣāpabhraṃśastu vibhāṣā
+         sā tattaddeśa eva gahvaravāsināṃ prākṛtavāsināṃ ca, etā <span class="pageinfo">[page 377]</span>eva nāṭye tu&nbsp;| anye tu nidarśanārthatvādasya paiśācyādayo 'pi prayojyā ityāhuḥ&nbsp;| narendrāṇāṃ
+         yadantaḥpuraṃ tannivāsināmiti saṃbandhaḥ&nbsp;| <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_17-dn.html#N%C4%81%C5%9A%C4%81.17.51" target="_blank">dīvyatā</a></span>miti kitavānām&nbsp;| <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_17-dn.html#N%C4%81%C5%9A%C4%81.17.52" target="_blank">śakārā</a></span> nīcābhijanāḥ ārthībhūtatvena sadarpāḥ&nbsp;| śakārābahulā bhāṣā śakārabhāṣā&nbsp;| <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_17-dn.html#N%C4%81%C5%9A%C4%81.17.52" target="_blank">pulkaso</a></span> ḍombaḥ mṛtapa ityanye&nbsp;| vanaukasāmiyaṃ <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_17-dn.html#N%C4%81%C5%9A%C4%81.17.54" target="_blank">vanecarī</a></span>tyarthaḥ&nbsp;| suraṅgākhanakāḥ sandhinchedakṛtaḥ&nbsp;| kārā bandhanagṛham&nbsp;| vyasanaṃ
+         kasyāṃcidāpadi jātāyāṃ mā māṃ loko jñāsyatītyabhiprāyeṇātmano rakṣārthaṃ nāyako 'pi
+         māgadhyā
+         vyavaharet&nbsp;| dramiḍakādi pūrvavidhānādiniṣedho viśiṣṭe ṣviti paryantavā<span class="pageinfo">[page 378]</span>siṣu dramiḍeṣu draṣṭavyo, barbarāndhrādisāhacaryād bhāṅgela( ?jāṅgala)deśādigateṣu&nbsp;|
+         gaṅgāsāgaramadhya iti pūrvadeśa upalakṣitaḥ&nbsp;|
+      </p>
+      
+      
+      <p><span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_17-dn.html#N%C4%81%C5%9A%C4%81.17.58" target="_blank">vindhyasāgaramadhya</a></span> iti dakṣiṇasaurāṣṭrāḥ&nbsp;| surāṣṭrāvantideśeṣviti paścimaḥ vetravatyādinottaraḥ&nbsp;|
+         <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_17-dn.html#N%C4%81%C5%9A%C4%81.17.62" target="_blank">vākyavidhāna</a></span>mityeke nāpi padena sakalo vākyārthaḥ sphuṭī-<span class="pageinfo">[page 379]</span>kriyate, anyonyarūpatā nīyata ityabhiprāyeṇa vākyagrahaṇaṃ padavidhānaṃ hi bhaviṣyati&nbsp;|
+         <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_17-dn.html#N%C4%81%C5%9A%C4%81.17.65" target="_blank">devānāṃ</a></span> devāḥ stutyāḥ&nbsp;| <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_17-dn.html#N%C4%81%C5%9A%C4%81.17.65" target="_blank">tatheti</a></span> strītvena bhagavatīti&nbsp;| <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_17-dn.html#N%C4%81%C5%9A%C4%81.17.66" target="_blank">nānāśrutadharāḥ</a></span> bahuśrutāḥ&nbsp;| <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_17-dn.html#N%C4%81%C5%9A%C4%81.17.68" target="_blank">kṣāmya</a></span>mityaṅgīkartavyam&nbsp;|saciva iti rājño mantrī&nbsp;|
+      </p>
+      
+      <span class="pageinfo">[page 380]</span>
+      
+      
+      <p><span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_17-dn.html#N%C4%81%C5%9A%C4%81.17.70" target="_blank">saparivāraṃ nāmne</a></span>ti <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_17-dn.html#N%C4%81%C5%9A%C4%81.17.70" target="_blank">uttamo</a></span> rājā hīnaiḥ svanāma parigṛhya, yadyannāma vatsarāja somavaṃśamauktikamaṇe ityādi
+         tena, bhāṣyaḥ&nbsp;| saparihāsamiti vā pāṭhaḥ parihāsaḥ paritoṣopalakṣaṇaṃ tena cāṭukārādi paritoṣāvasare hīnairapi
+         rājā nāmnā saṃbhāṣyaḥ&nbsp;| “udayane mahīṃ śāsati ko vipadāmavakāśaḥ” ityādau&nbsp;| kārukāḥ
+         stūpakārādayaḥ śilpinaścitrakārādayaḥ&nbsp;| <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_17-dn.html#N%C4%81%C5%9A%C4%81.17.71" target="_blank">bhāve</a></span>tyāmantraṇaṃ vivakṣitamityanyavibhaktyanto na prayojya ityetattvayuktam&nbsp;| <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_17-dn.html#N%C4%81%C5%9A%C4%81.17.72" target="_blank">vayasye</a></span>tyevamādāvapi prasaṅgātsaṃbhāṣaṇāpakramakṛtādyāmantraṇavibhaktiḥ sarvatra vivakṣitaiva&nbsp;|
+         adhamairjanaiḥ samāno 'dhama eva, <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_17-dn.html#N%C4%81%C5%9A%C4%81.17.72" target="_blank">haṃho haṇḍe</a></span> iti vā saṃbhāṣyaḥ&nbsp;| cakārād vināpi <span class="pageinfo">[page 381]</span>heśabdena&nbsp;| <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_17-dn.html#N%C4%81%C5%9A%C4%81.17.75" target="_blank">karma</a></span> pākādi, vidyā trayyādi&nbsp;| jātirgotraṃ deśo vā&nbsp;| śākyāḥ saugatāḥ, nirgranthāḥ kṣapaṇakāḥ&nbsp;|
+         śeṣāḥ pāṣaṇḍā iti pāśupatādayaḥ&nbsp;| svasamayo yathā pāśupatānāṃ bhāpūṣan , bhāsarvajña,
+         ityādi saṃbhāṣaṇam tathā kvacidvākyādiśabdena&nbsp;| <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_17-dn.html#N%C4%81%C5%9A%C4%81.17.79" target="_blank">apatyapratyayeneti</a></span> kauravetyādinā mahārājeti&nbsp;| yauvanādanyatrāryaputreti śvaśureṇa vyapadeśaḥ, tasya
+         yauvanaṃ śṛṅgārocitamuktaṃ bhavati&nbsp;|<span class="pageinfo">[page 382]</span>anujo jyeṣṭhena putravat vatsa tāta putraketi saṃbhāṣyaḥ&nbsp;| <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_17-dn.html#N%C4%81%C5%9A%C4%81.17.83" target="_blank">puruṣābhāṣaṇamiti</a></span> bhūyastvākṣepa upasaṃhāraḥ&nbsp;| strīsaṃbhāṣaṇaṃ tvapi madhye nirūpitaṃ <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_17-dn.html#N%C4%81%C5%9A%C4%81.17.84" target="_blank">tapasvinya</a></span> iti pūrvaṃ teṣāṃ yoṣita iti, atra svayamatapasvinyo 'pītyuktamiti na punaruktam&nbsp;|
+         <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_17-dn.html#N%C4%81%C5%9A%C4%81.17.84" target="_blank">gurubhāryā</a></span> mānyā anyā vā strī, sthānīyā pūjyā īṣadvṛddhā&nbsp;| <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_17-dn.html#N%C4%81%C5%9A%C4%81.17.89" target="_blank">patnīti</a></span> sahadharma<span class="pageinfo">[page 383]</span>cāriṇī, ata eva naṭī nāṭayavedamahmasatradīkṣitena sūtradhāreṇāryeṇārye ityāmantryate&nbsp;|
+         <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_17-dn.html#N%C4%81%C5%9A%C4%81.17.89" target="_blank">pitṛnāmneti</a></span> māṭharaputrī&nbsp;| sutasyeti somaśarmajananī&nbsp;| veśyā svena parijanena ajjuke iti saṃbhāṣyā&nbsp;|
+      </p>
+      
+      
+      <p><span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_17-dn.html#N%C4%81%C5%9A%C4%81.17.92" target="_blank">sarvadeti</a></span> yauvane 'pi purohitādibhirāryeti bhāryā vācyā&nbsp;| <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_17-dn.html#N%C4%81%C5%9A%C4%81.17.93" target="_blank">autpattikānīti</a></span> svayaṃ vā yena kalpyante, ata evākhyātāni talliṅgārthāni prakṛtārthasūcakābhidheyayuktāni
+         kāryāṇi&nbsp;| etadeva nidarśanena sphuṭayati <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_17-dn.html#N%C4%81%C5%9A%C4%81.17.93" target="_blank">brahmakṣatrasye</a></span>tyādinā&nbsp;|
+      </p>
+      
+      <span class="pageinfo">[page 384]</span>
+      
+      <p>śauryodāttānīti <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_17-dn.html#N%C4%81%C5%9A%C4%81.17.95" target="_blank">bhīmaparākrama</a></span> iti yathā&nbsp;| <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_17-dn.html#N%C4%81%C5%9A%C4%81.17.96" target="_blank">vijayārthānīti</a></span> śubhalakṣaṇavijayavatītyādīni&nbsp;| devadattāvasantasenāvidagdhamitretyādi veśyānām&nbsp;|
+         <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_17-dn.html#N%C4%81%C5%9A%C4%81.17.97" target="_blank">nānākusumanāmānīti</a></span> mālatīmalliketyādi kusumagrahaṇaṃ tanmañjaryādyupalakṣaṇaṃ cūtalatiketyādyapi hi
+         dṛśyate nāma&nbsp;| <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_17-dn.html#N%C4%81%C5%9A%C4%81.17.97" target="_blank">maṅgalārthānīti</a></span> siddhārthakā ityādīni&nbsp;| <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_17-dn.html#N%C4%81%C5%9A%C4%81.17.98" target="_blank">gambhīrārthāni</a></span> akṣobhya ityādīni&nbsp;| nāsti saṃketako bhāra ityāśayena pṛcchati atrottaraṃ nāmānurūpamiti&nbsp;|
+         nāma kileśvarecchāvaśātsvarūpakroḍīkāreṇaiva jāyate&nbsp;| tathā hi nāmākṣare grahābhicārayantrakarmādipīḍite
+         śāntikapauṣṭikādyupacārabhāji vā tathaiva puruṣasya phalodaya ityabhiprāyaḥ&nbsp;| kavitvayukto
+         naṭa <span class="pageinfo">[page 385]</span>ityabhiprāyeṇāha <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_17-dn.html#N%C4%81%C5%9A%C4%81.17.100" target="_blank">bhāṣāvidhānaṃ jñātvā, tata</a></span> iti tatparijñātapūrvakaṃ kāvyaṃ kṛtvā prayoge pāṭhayaṃ prayuñjītetyarthaḥ&nbsp;| yadi
+         tvanyaḥ kavistadā pāṭhyasya saṃjñā ca mūlabhūtatvāt prayokttṛtvenokto draṣṭavyaḥ&nbsp;|
+         <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_17-dn.html#N%C4%81%C5%9A%C4%81.17.100.1" target="_blank">ṣaḍalaṅkārasaṃyuta</a></span>miti svarasthānavarṇakākvalaṅkārāṅgāni ṣaṭ atrālaṅkāraśabdena vivakṣitāni, etairhi
+         bhūṣitaṃ kāvyaṃ pāṭhyamucyate&nbsp;|
+      </p>
+      
+      
+      <p>evaṃ hi vaktavyatvamupādānasya yadi sakalasvavivakṣāviśiṣṭārthapratipādakatvaṃ paṭhanārhaṃ
+         ca pāṭhyaṃ tatsvarādyāyattaṃ sarvamiti&nbsp;| ata evāha <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_17-dn.html#N%C4%81%C5%9A%C4%81.17.100.1" target="_blank">pāṭhyaguṇāniti</a></span> guṇāḥ upakārakāḥ, yadupakṛtaṃ kāvyaṃ pāṭhyaṃ bhavatītyarthaḥ&nbsp;|
+      </p>
+      
+      
+      <p>uddeśakrameṇa vyācaṣṭe <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_17-dn.html#N%C4%81%C5%9A%C4%81.17.100.1" target="_blank">tatre</a></span>tyādi&nbsp;| svaragataṃ vitatya geyādhikāre prakaṭayiṣyāmaḥ&nbsp;| iha kākuṣu svarā eva vastuta
+         upakāriṇaḥ&nbsp;| tatparikara bhūtaṃ tu sthānādi svareṣu prakṛtibhūteṣu kākurūpatā janyate&nbsp;|
+         tatra sthānaśabdenaiṣāṃ svarūpaniṣpatterāśrayo darśitaḥ&nbsp;| adāttānudāttasvaritakampitarūpatayā
+         svarāṇāṃ yadraktipradhānatvamanuraṇanamayaṃ tattyāgenoccanīcamadhyamasthānasparśitvamātraṃ
+         pāṭhayopayogīti darśitam&nbsp;| yadi hi svaragatā raktiḥ pāṭhye prādhānyenāvalambyeta tadā
+         gānakriyāsau syāt, na pāṭhaḥ&nbsp;| pūrṇasvaratvābhāvādaṅgānāṃ bheda iti cet, <span class="pageinfo">[page 386]</span>na, apūrṇasvaratve 'pi gānatvapratijñānāt, ṣāḍavauḍuvitayoḥ tricaturasvaratve 'pi
+         gānapratītirbhavatyeva, yathā kṛtrimavaṃśikāyāṃ traisvaryai, bhinnaṣaṅjabhāṣāyāṃ ca
+         kālindyāṃ cātussvarye&nbsp;| tasmādgānavailakṣaṇyāya raktilakṣaṇaṃ dharmamanādṛtyoccādisthānasparśa
+         evātra pradhānamiti vaktuṃ varṇopādānam&nbsp;| anyathā svarasaptakātiriktāsyodāttāderbhāvādanarthakaṃ
+         tadupādānam&nbsp;|
+      </p>
+      
+      
+      <p>yattu kiṃcidudāttādidharmāṇāṃ gātrasya nigrahaḥ kaṇṭhavivarasya saṃvṛtetyādiśikṣāpāṭhitodāttādidharmapropteruccāruccādyalaṅkāreṣu
+         yathā syāditi prayojanamuktaṃ, tatrāpyasmaduktaṃ cenna prayojanaṃ kiṃ taddharmaprāptyā
+         kṛtyamiti na vidmaḥ&nbsp;|
+      </p>
+      
+      
+      <p>nanvevaṃ svarābhidhāne kiṃ prayojanaṃ, ucyate—prāṇabhūtaṃ tāvaddhruvāgānaṃ prayogasya,
+         tatra jātyaṃśakaviniyogo bhaviṣyati tadidānīṃ pāṭhāvasare kiṃ sarvathaiva tyaktavyamityāśaṅkāśamanāya
+         tatsthāyisvarāśrayaṇaṃ pramukhīkṛtya pāṭhaḥ kartavya ityetatsvarābhidhānasyeha prayojanam&nbsp;|
+      </p>
+      
+      
+      <p>evamupagānavailakṣaṇye saṃpanne bāhyārthasamarpaṇena cittavṛttisamarpaṇayā vābhinayānubhāvarūpatālābhāya
+         kākurartharasabhedenābhidhīyate&nbsp;| tata eva kākurūpatvameva sarvatrānuyāyi, atiśāyitve
+         (? abhinayatve tu)hemacandra, kāvyānuśāsana, pṛ. 334, Edn. Parikh &amp; Kulkarni mukhyopayogāt&nbsp;| tathā coccadīptādyalaṅkāreṣvapyuttaratra kākuśabdenaiva munirvyavahariṣyati&nbsp;|
+         kākorevopakārasaṃpādakāḥ (? kākoreva hi prakārasaṃpādakāḥ)hemacandra, kāvyānuśāsana, pṛ. 334, Edn. Parikh &amp; Kulkarni paripūrṇatāyāyino (? dhāyino)hemacandra, kāvyānuśāsana, pṛ. 334, Edn. Parikh &amp; Kulkarni 'laṅkārāḥ, alamiti paryāptyarthaḥ, iha (? prāptyartha iti) na bhūṣaṇārthaḥ&nbsp;| aṅgāni
+         tu vicchedādīni rasamarthaṃ śobhādi karma(śobhādikaṃ ?)hemacandra, kāvyānuśāsana, pṛ. 334, Edn. Parikh &amp; Kulkarni ca poṣayituṃ kākorevopakārīṇīti, evaṃ paramārthataḥ kākurevāṃya (?kākureveyaṃ)hemacandra, kāvyānuśāsana, pṛ. 334, Edn. Parikh &amp; Kulkarni pañcamī rūpāntarai (raiḥ ?) pūrṇīkriyate&nbsp;| kākkā ca paṭhyamānasya svocitacijjaḍasvarūpārthābhimukhyena
+         nayanenābhinayatā (? bhimukhyānayanenābhinayatā dīyata iti)hemacandra, kāvyānuśāsana, pṛ. 334, Edn. Parikh &amp; Kulkarni nīyata iti kākurevātra pradhānam&nbsp;| tathā caitadadhyāyānte copasaṃhariṣyati uktaṃ
+         kākuvidhāna'' miti&nbsp;| anyathāṅgaṣaṭkamadhyapatitasyopasaṃhāro 'nyāṅganirūpaṇaṃ cābhidhānamiti
+         sarvamasamaññasaṃ syāt&nbsp;| tasmātkākurevātra pradhānamiti <b>upādhyāyā hi</b> vacanasya saṅketitamarthamanyathākāraṃ samarthayanti&nbsp;|
+      </p>
+      
+      
+      <p>nanu śrutamarthamanādṛtya kathaṃ kākurevaṃ kuryāt&nbsp;| tatroktamanyaiḥ vastusvabhāvo
+         'tra draṣṭavyo na hi dṛṣṭe 'nupapannaṃ nāmeti&nbsp;| vayaṃ tu brūma — iha yeyaṃ prathamena
+         <span class="pageinfo">[page 387]</span>saṃvitspandena prāṇollāsanayā varṇādirūpaviśeṣahīnā vāg janyate sā nādarūpā satī harṣaśokādicittavṛttiṃ
+         vidhiniṣedhādyabhiprāyaṃ vā tatkāryaliṅgatayā vā tādātmyena vā'śrutyantādi' iti padaṃ hemacandreṇa (kā.śā.pṛ. 337, paṃ. 12) na paṭhitam&nbsp;| atrāpi tat anāvaśyakamiti lakṣyate&nbsp;| VMK śrutyantādi (?) gamayatīti tāvatsthitam&nbsp;| tathā ca prāṇyantarasya mṛgasārameyāderapi
+         nādamākarṇya bhayaroṣaśokādi pratipadyate, tadayaṃ nādāñcittavṛttyādyavagamo 'numānaṃ
+         tāvat&nbsp;| ye tvete varṇaviśeṣāste tannādarūpasāmānyātmakapadatannu (? padatantu vāktantu
+         ?)granthimayā iva prācyaprayā (? ya)tnātiriktanimittāntarāpekṣāḥ, tata evānyatrānabhiprete(?
+         evānyatrābhiprete)hemacandra — pṛ 337, paṃ. 19 'nyathāpi prayoktuṃ śakyāḥ, ata eva dṛṣṭavyabhicārāḥ&nbsp;| nādastu jhāṭityudbhinnamukharāgapulakasthānīyo
+         nānyathāsiddho 'nyathāsiddhaṃ śabdārthaṃ bādhata eva vātulanā — nādastu jhaṭityudbhinnamukharāga-pulaka-sthānīyo nānyathākartuṃ pāryata ityananyathāsiddho
+         'nyathāsiddhaṃ śabdārthaṃ bādhata eva vā&nbsp;| hema pṛ. 337, paṃ. 20-21&nbsp;| yathoktaṃ “bhīru na me bhayaṃ” iti bruvannāśayate bhayamityanyaprakāratāṃ vā vākyārthasya
+         viśeṣārpaṇena vidhatte&nbsp;| etacca vakṣyāmo 'gna ityāstāṃ tāvat&nbsp;| sarvathā pāṭhye kākuḥ
+         pradhānamiti sthitam&nbsp;| atra <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_17-dn.html#N%C4%81%C5%9A%C4%81.17.101" target="_blank">hāsyaśṛṅgārayori</a></span>tyādinā jātyaṃśakaviniyogaṃ bhaviṣyantamanuvadaṃstad druta(? tad gata) sthāyisvarānusāreṇa
+         kākoḥ prayoga iti darśayati&nbsp;|
+      </p>
+      
+      
+      <p>athaiṣāṃ svarāṇāmāśrayān darśayati <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_17-dn.html#N%C4%81%C5%9A%C4%81.17.102.1" target="_blank">trīṇi sthānānīti</a></span>&nbsp;| nanu pāṭhāvasare varṇā yatra mūrdhāstatra kathamuraḥ sthānasvaraniṣpattiḥ, evamanyatra
+         vācyam&nbsp;| uktaṃ mandranādātmikāyā vācaḥ svarasaptakaṃ rūpaṃ, sā coraḥsthānaniṣpannā
+         satī mūrdhānamabhighnantī mūrdhanyaṃ varṇaṃ tadrūpaṃ mandrasvarānuviddhaṃ darśayati&nbsp;|
+         na ca mūrdhasthānatve 'pi tasyoccatākṛtaṃ tāratvamāpadyate&nbsp;| anyadeva hi varṇaniṣpattisthānaṃ,
+         mūrdhāntarvartyanuvivaramātraṃ sthānāntaram&nbsp;| svarāniṣpattistu vitatavitate mūrdha<span class="pageinfo">[page 388]</span>kāye niṣpadyamānā tāratvaṃ saṃpādayantī evaṃ tāramandramadhyatā savarṇānāṃ sarvaṃ
+         (svara ?) sthānabhedasaṃpādyamānavapuṣāmapyupapadyate&nbsp;| tatra svaragrahaṇādevākṣipte
+         sthānabhede punaḥ sthānopādānaṃ ṣaṭṣaṣṭisthānabhedanivṛttyartham&nbsp;| tathā hyuraḥsthāne
+         dvāviśaṃti sthānāni yatra śrutayaḥ svarāśca&nbsp;| evaṃ kaṇṭhe mūrdhni ca&nbsp;| tāvatāṃ ca
+         sparśe sphuṭaṃ gānameva syāt, na pāṭhyāmityavocāma&nbsp;| ata eva guṇaśabdo na dharmavacanaḥ
+         pāṭhyaguṇāniti, kiṃ tu upakaraṇavacanasthānaṃ ca yadevopakaraṇaṃ bhavati&nbsp;| api ca
+         <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_17-dn.html#N%C4%81%C5%9A%C4%81.17.104" target="_blank">śārīryāmatha vīṇāyāmityādi</a></span> kecid vyācakṣate — ihārthakākustāvadvidhiniṣedhādyarthāvagamikā, svarakākustu cittavṛttisūcikā&nbsp;|
+         etadvyāpāradvayaśūnyā nepathyapāṭha — vaitālīyapāṭhādiviṣayā dūrasthābhāṣaṇādiviṣayā
+         ca śobhāsaṃpādanadūraśravaṇādiprayojanā svarakākuḥ sā tena vakṣyata iti&nbsp;| evaṃ praṣṭavyāstāvat
+         — yo 'yaṃ svarakākorviṣaya uktastatra yadyartharūpaṃ kiṃcidabhidheyaṃ tatrāvaśyamarthakākorvā
+         pṛthaksvarakākuḥ&nbsp;| tathā hi nepathyapāṭhe 'pi kañcukī paṭhati ‘vīro 'yamaṅgadaḥ paṭhati,
+         ‘yaugandharāyaṇaḥ paṭhati’ iti, evaṃ bhūtavṛttacittavṛttyādiviśeṣapratipādakenaiva
+         pāṭhena bhavitavyam&nbsp;| vaitālīyapāṭhe 'pi samucitāvasarāvedanapradhāne 'vaśyamartha
+         ādātavya eva&nbsp;| uktaṃ caitat — arthānapekṣayā kimabhinayanamanyacintayā, pustakavācakapāṭho
+         hyanukriyamāṇo 'bhinayatāmavalambate&nbsp;| anyathābhinayarūpatvābhāve tadupakaraṇadharmyāditatphalarasādivyatiriktatve
+         svarātodyagānādivailakṣaṇye ca cintayaiva kiṃ prayojanamiti&nbsp;| na syātkākusāmānyalakṣaṇametena
+         kiṃ ghaṭata ityanye&nbsp;| eva<span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_17-dn.html#N%C4%81%C5%9A%C4%81.17.102.1" target="_blank">mapi bhavatī</a></span>tyasamarthitaṃ syāt taddhi pūrvaprakāntavastusamarthanena prayujyata iti muneḥ śaulī&nbsp;|
+         tasmātpūrvoktasthānatrayasamarthanārtho 'yaṃ ślokaḥ&nbsp;| tadayamarthaḥ — śārīryāṃ vīṇāyāṃ
+         kevalamuraḥśiraḥkaṇṭhalakṣaṇebhyaḥ tribhya eva sthānebhyo, na tu ṣaṭṣaṣṭisvaraparivyaktaraññanātmakagānopayogivyāpāraḥ
+         kākubhūtaḥ sūcakarūpaḥ saṃpravartate&nbsp;|*tulanā — hemacandra, kā. śā. pṛ 334/paṃ. 20-23: śārīryāṃ vīṇāyāṃ kevalamuraḥ śiraḥkaṇṭhalakṣaṇebhyastribhyaḥ evaṃ sthānebhyo na
+         tu (? ṣaḍṣaṣṭeḥ) svaraḥ parityaktaraññanātmakagānopayogisvavyāpāraḥ kākubhūtaḥ saṃpravartate&nbsp;|
+      </p>
+      
+      
+      <p><span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_17-dn.html#N%C4%81%C5%9A%C4%81.17.104" target="_blank">atha</a></span>śabdo 'vadhāraṇe&nbsp;| bāhyāyāṃ hi pratibimbitāyāṃ vīṇāyāṃ raññanātmakakharasvarūpavyatirekeṇa
+         na kākusaṃpattiḥ&nbsp;| vīṇāgrahaṇaṃ śarīragatavivṛtamadhyā<span class="pageinfo">[page 389]</span>kāśadeśaparigrahārthaṃ, na śarīramātre svaraniṣpattiḥ, api tu tatraiva&nbsp;| yeyaṃ bāhyavīṇādaṇḍasthānīyā
+         uttarottarasthānaparamparāviśiṣṭā, sā sthānasopānapaṅktiḥ svaraniṣpattisthānam, ata
+         eva kākusvaramapi lakṣitam — kaka laulye,<a href="" class="app" title="हेम. पृ. ३३३/पं १२-१६ कक लौल्ये, लौल्यं च साकांक्षते (?साकाङ्क्षता) यथा (?यया) स्वरवेचित्र्यं लक्ष्यते&nbsp;। ईषद्यातो वाच्यभूमिः संपद्यते सा काकुः, ईषदर्थे कुशब्दस्य कादेशः&nbsp;। काकुर्वा जिह्वा,तद्व्यापारसंपाद्यत्वात्काकुः&nbsp;। लोचन (ध्वन्या ३/३८) ‘कक लोल्ये’ इत्यस्य धातोः काकुशब्दः&nbsp;। तत्र हि साकाङ्क्षानिराकाङ्क्षादिक्रमेण पठ्यमानोऽसौ शब्दः प्रकृतार्थातिरिक्तमपि वाञ्छतीति लौल्यमस्याभिधीयते&nbsp;। यदि वा ईंषदर्थे कुशब्दस्तस्य कादेशः&nbsp;। तेन हृदयस्थस्तु प्रतीतेरीषद्भूमिः काकुः&nbsp;। (बालप्रिया edn, pp. 477-78)&#xA;Raghavan: लौल्यं च साकाङ्क्षताः इयता स्वरवैचित्र्यं लक्ष्यते&nbsp;॥">*</a> laulyaṃ ca sākāṃkṣate yathā (?sākāṃkṣatā iyatā. Raghavan) svaravaicitryaṃ lakṣyate
+         īṣadyato vācyabhūmiḥ saṃpadyate sā kākuḥ, īṣadarthe kuśabdasya kādeśaḥ&nbsp;| kākurvā jihvā
+         tadvyāpārasaṃpādyatvāt kākuḥ&nbsp;|
+      </p>
+      
+      
+      <p>evaṃ sthānasvarūpaṃ vibhajya tasya viṣayabhedamādarśayitumāhaḥ <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_17-dn.html#N%C4%81%C5%9A%C4%81.17.105" target="_blank">ābhāṣaṇaṃ ca dūrastha</a></span> ityādi&nbsp;| śiraseti śironiṣpannena nodanetyarthaḥ&nbsp;| nātidūre kaṇṭheneti madhyena, urasā
+         samīpe mandreṇeti yāvat&nbsp;|
+      </p> 
+      
+      
+      <p>evaṃ sthānatrayasya pṛthagupayogamabhidhāya yugapaddarśayati <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_17-dn.html#N%C4%81%C5%9A%C4%81.17.106" target="_blank">urasodāhṛtaṃ vākya</a></span>mityādinā&nbsp;| mandrasvareṇa vā pāṭhamārabhya krameṇa tāraṃ gatvā madhyena parisamāpnuyāditi
+         ślokārthaḥ&nbsp;| yadā hi na dīptena krodhādinā nāpi mandrarūpeṇa śokādināviṣṭahṛdayo bhavati
+         tadā krameṇa vaktavyavastuviṣayotsāhavisphāraṇāt tārāntaṃ gacchannupasaṃhāre madhya
+         eva viśrāmyatītyanavaśiṣṭasyāyaṃ (?tyaviśiṣṭasyā) sāmānyena pāṭhadharmaḥ&nbsp;| ata eva
+         śānte vyā(?vya)bhicāribalāveśaśūnyatāyāmayameva pāṭhadharmaḥ&nbsp;| vaitālīyapāṭhe cāyamapi
+         sāmānyadharmo 'stu&nbsp;| na tadviṣaye svarakākuḥ&nbsp;| kastarhi tasyā viṣayaḥ, ucyate — kadācidarthasya
+         dharmapuñjavācyasya dharmāntarādhānaṃ kākurucyate, kadācitsvarajanakacittavṛttyarpaṇaṃ
+         karoti&nbsp;| yatra rasasvara<span class="pageinfo">[page 390]</span>kākuvyavahāraḥ kadācidvā nādātmani svātmasūtre sugumbhi(? mphi)tasya svagranthyātmano
+         varṇarāśerdūraśravaṇaṃ kiṃcicchravaṇamaśravaṇaṃ vetyasminnarthe vyāpriyate&nbsp;| tatrāpi
+         svarakākurucyate&nbsp;| yatroktamābhāṣaṇaṃ dūrasthamityādi tadevaṃ vyatirikte svasevāvyāpārād
+         vyatiriktajaḍacidbhedena bhedāt tadartharasasvarabhedāt tridhaiva kākuḥ&nbsp;|
+      </p>
+      
+      
+      <p>evaṃ sthānabhedamuktvā kramaprāptaṃ varṇasvarūpamāha <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_17-dn.html#N%C4%81%C5%9A%C4%81.17.107" target="_blank">udātta</a></span>śceti&nbsp;| uccatā nīcanā madhyamatā
+         uccanīcobhayaḍo(?do)lāvalambanamiti catvāraḥ svaradharmāḥ&nbsp;| varṇā guṇā yadi vā pāṭhakriyāvistārakā
+         vivṛṇvate prakaṭayanti svārthaviśeṣamiti vā&nbsp;|
+      </p>
+      
+      
+      <p>pāṭhyayoge kāvye svarasya raktibhāgamapahāya varṇā eva vaktavyāḥ&nbsp;| raktibhāgābhiniveśe
+         tu gānayogo na pāṭhyayogaḥ syādityavādiṣuḥ&nbsp;| tatrānvayavyatirekābhyāṃ raktibhāge 'nudāttādivarṇabhāgaḥ
+         kādivarṇabhāgaḥ&nbsp;| tasya sphuṭatāsphuṭatvamityāha yo dharmastantryāmanuraṇapradhānāyāmaraktakaṇṭhe
+         gātari yathākathaṃcidvaktuṃ pravṛtte huḍukkāmurajādau ca pṛthaglakṣyata eva&nbsp;| evaṃ
+         pradhānatayā dharmāntarāṇi magnatvena tatrāpi santyeva&nbsp;| ata evāha <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_17-dn.html#N%C4%81%C5%9A%C4%81.17.107" target="_blank">tapodhanāḥ</a></span> sūkṣmavedino yūyamatrādhikṛtā vicāra ityāśayaḥ&nbsp;| eṣāṃ varṇānāṃ viṣayamāha — <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_17-dn.html#N%C4%81%C5%9A%C4%81.17.107.1" target="_blank">hāsyaśrṛṅgārayo</a></span>rityādi&nbsp;| madhyamapañcamāvityādau prakaraṇe yathāsaṃkhyaṃ na vivakṣitamityevaṃ hāsye
+         madhyamāyāḥ pañcamyā vā jāteḥ sthāyisvaratvaṃ gṛhītvā tatraivoccamadhyamasthānasparśena
+         paṭhet&nbsp;| evaṃ śṛṅgāravīrādiṣu triṣu ṣāṅjyā ārṣabhyā va svāṃśaṃ gṛhītvā tatraivodāttakampitaiḥ
+         pāṭhaḥ, karuṇe niṣādavatyā gāndhāryā vā sthāyinamālambyānudāttena pāṭhaḥ, bībhatse
+         dhaivatyaṃśasvarāśrayeṇa svaritakṛtaḥ (pāṭhaḥ)&nbsp;| bhayānake tatsvarāvalambanenaiva
+         (dhaivatāṃśa) kampitapradhānaḥ(pāṭhaḥ) — ityevaṃ bhaviṣyat (a — 29) jātiviniyogānusārisvarānuvādena
+         <span class="pageinfo">[page 391]</span>varṇeṣūdāttā—diṣu tātparyaṃ, na tu svareṣu&nbsp;| teṣāṃ tu pṛthaguddeśaprayojanaṃ ṣaṣṭhe
+         darśitamantarālāpaparigrahamiti&nbsp;|
+      </p>
+      
+      
+      <p>evaṃ kākoḥ svarūpotpattiṃ pratipādya tasyā arthaviṣaye vyāpāraṃ darśayannuddeśakramamapyanusartumāha
+         — <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_17-dn.html#N%C4%81%C5%9A%C4%81.17.107.1" target="_blank">dvividhā kāku</a></span>riti&nbsp;| vākyasyeti sākāṅkṣaṃ yatra vākyaṃ tatra kākuḥ, tathā vaktṛgatā vākāṅkṣā vākya
+         upacaryate&nbsp;| sā ca prakaraṇādibalānniścīyate&nbsp;| viśiṣṭaviṣayatvaṃ cākāṅkṣāyāstata evāvagamyate&nbsp;|
+         tadāha — <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_17-dn.html#N%C4%81%C5%9A%C4%81.17.108" target="_blank">aniyuktārthakaṃ vākya</a></span>miti&nbsp;| yādṛśo vākyātsaṅketabalenārthaḥ pratīyate tādṛśa eva yatra nyūnādhikaḥ pramāṇabalena
+         nirṇayayogyastadvākyaṃ nirākāṅkṣaṃ, tadviparītaṃ sākāṅkṣam&nbsp;|“yasmād  vākyāt yādṛśaḥ saṅketabalenārthaḥ pratīyate, tādṛśa eva kintu nyūnādhikaḥ
+         pramāṇabalena nirṇayayogyastad vākyaṃ sākāṅkṣam&nbsp;| tadviparītaṃ nirākāṅkṣam&nbsp;|” (hemacandra,
+         pṛ, 336, paṃ 2-4) — evaṃ paṭhyatāmayamaṃśaḥ&nbsp;|
+      </p>
+      
+      
+      <p>evaṃ vākyasya svarūpaṃ pratipādya tanniṣṭhāṃ kākumabhidhātumāha <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_17-dn.html#N%C4%81%C5%9A%C4%81.17.108.1" target="_blank">tatra sākāṅkṣa</a></span>mityādi&nbsp;| aniyuktārthaṃ yatsākāṅkṣamuktaṃ tanmandropakramaṃ tārasamāptikaṃ paṭhanīyamiti&nbsp;|
+         sarvāṇi kriyāviśeṣaṇāni kiyanti tatra tāratetyāha <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_17-dn.html#N%C4%81%C5%9A%C4%81.17.108.1" target="_blank">kaṇṭhoraḥsthāna</a></span>(gata)miti&nbsp;| tathā varṇā udāttādayo 'laṅkārāścoccanīcadīptādayo 'parisamāptā ardhaspṛṣṭatayaiva
+         tyaktā yatreti kriyāviśeṣaṇam&nbsp;| evaṃbhūto yaḥ kriyāviśeṣaṇatvena vākye paṭhyamāne
+         dhvanidharmaviśeṣaḥ sā kākuḥ&nbsp;| yadi vā sāmānādhikaraṇyenaiva vyākhyeyam&nbsp;| dharmo hi
+         na svatantro bhātyapi tu dharminiṣṭha eveti&nbsp;|| tatrākāṅkṣārthānta evātadarthagata
+         eva vā viśeṣe tadarthābhāve vā&nbsp;| tathā ca —
+      </p> 
+      
+      <span class="pageinfo">[page 392]</span>
+      
+      <p>yadrāmeṇa kṛtaṃ tadeva kurute droṇātmajaḥ krodhanaḥ&nbsp;| iti (veṇī 3/33 caturthacaraṇa)</p>
+      
+      
+      <p>atra kākuḥ kṛta ityudāttakampitavarṇasyoccadīptālaṅkārasya cāsamāptyā, ato 'pyadhikaṃ
+         kuruta iti kākuprabhāvādarthāntare gatiḥ&nbsp;| ‘sa eṣa (sa yasyahemacandra, pṛ. 337) daśakandharam’ iti 
+         
+         <div class="lg" type="">
+            <span class="line">
+               <span class="a">sa eṣa daśakandharaṃ kṛtavato 'pi kakṣāntare</span>
+               <span class="b">gataḥ sphuṭamavandhyatāmadhipayodhi sāndhyo vidhiḥ&nbsp;|</span>
+               </span>
+            <span class="line">
+               <span class="c">tadātmaja ihāṅgadaḥ prahita eṣa saumitriṇā</span>
+               <span class="d">kva sa kva sa daśānano nanu nivedyatāṃ rākṣasāḥ&nbsp;||</span>
+               </span>
+            
+         </div> śloke ‘tadātmaja ihāṅgada’ (?) ityatra sākāṃkṣā kākuḥ svagatān vāliputrocitānviśeṣānarpayati&nbsp;|
+         ‘svasthā bhavanti mayi jīvati’ (veṇī॰ 1/8 caturthacaraṇa) ityatra sākāṅkṣā kākurbhavanābhāvamāha,tulanāḥ — “atra bhavantīti sākāṅkṣā kākurbhavanābhāvamāha —” bhavantviti&nbsp;| vacanoccāraṇaṃ
+         [vacanasya bhavantīti rūpasya] tvarthe 'saṃbhāvanāṃ vidadhadabhāvasya niṣedhātmano
+         viṣayaṃ bhavanalakṣaṇamarpayati&nbsp;| na bhavantyevetyarthaḥ&nbsp;| 'hemacandra, pṛ. 337,paṃ.
+         7-8 vacanoccāraṇaṃ tvarthe saṃbhāvanāṃ (tvarthe 'saṃbhāvanāṃ) vidadhatāvaśyaniṣedhātmano
+         viṣayamarpayati(vidadhadabhāvasya niṣedhātmano viṣayamarpayati)&nbsp;| tadiyamarthābhiprāyasamarpakābhinayarūpārthakākuḥ
+         sākāṅkṣā&nbsp;| etadviparītā nirākaṅkṣā, tasyāḥ śiraḥ sthāna eva mandraḥ tāratāpratisthānaṃ,
+         hyuttarottaratāratvamadharādharamandratvaṃ ca vakṣyāmaḥ&nbsp;| alaṃ paryāptaṃ kākoḥ svarūpaṃ
+         yena saṃpādyate so 'laṅkāraḥ&nbsp;| tatsvarūpaṃ ca sthānatrayasya <span class="pageinfo">[page 393]</span>pratyekamūrdhvādhomadhyakalpanayā udāttānudāttasvaritakampitanirvāhāt&nbsp;| tatra madhyo
+         bhāmastāvadanāveśe sarvatra sthita eva&nbsp;| ityāveśenordhvamadharaṃ vā sthānatrayasya
+         pratyekamavalambyata iti ṣaḍalaṅkārā bhavanti&nbsp;| tatra śirasyadhobhāge tāra ucyate
+         dūrasthābhāṣaṇādau, sa viṣayo 'tra svarakākorityuktam&nbsp;| vismayāvagatau tu saiva rasakākuḥ,
+         parasya trāsanābhiprāyeṇa tu saiva vibhāvakākuḥ&nbsp;| svarakākoreva śrutikākuśceti bhedena
+         śirasyeva ūrdhvastāratama ākṣepādau, tāraśabdaḥ prakarṣopalakṣaṇam&nbsp;| atra hyākṣepādau
+         yathāvasthaṃ śrutivibhāvarasakākubhedatrayaṃ vibhajanīyam&nbsp;| urasyūrdhvabhāge sa mandraḥ,
+         urasyeva nīcabhāge mandratamo nīcaḥ&nbsp;| dainye kākurdvirūpa<span class="pageinfo">[page 394]</span>tāmeti — svacittavṛttyarpaṇādrasakākuḥ parasya rūpotpādanādvibhāvakākuḥ&nbsp;| ubhayasyāpi
+         tatra prādhānyenādaraṇāt, anyatra tūbhayasyānādaraṇātpradhānāṃśenaiva vyapadeśaḥ&nbsp;|
+         svabhāvābhāṣaṇaṃ yatra kaścidāvṛttakaṇṭhasvara eva vaktā bhavati, trāsane patitaḥ
+         trastapatitaḥ, trāsāvasare tu dīptaiva kākurbhavati&nbsp;| kaṇṭhagata iti kaṇṭhasthāne
+         ūrdhvabhāge niṣpannaḥ, tena sthānabheda evālaṅkāratve prayojakaḥ&nbsp;| ata eva tvarita
+         ityanena punarlayavidhānam&nbsp;| lallaṃ savilāsaṃ, laḍaṃ vilāsaṃ lātīti kvibante karmaṇyupapade
+         laḍayoraikyamiti&nbsp;| manmanamavyaktaṃ ahameva mano mantā yatreti, anenā<span class="pageinfo">[page 395]</span>śrūyamāṇamanunāsikopalakṣitamityapare&nbsp;| “lallamanmanau nāyikāgatau ( ?gatāveva)hemacandra, pṛ. 334 bālavinodanasāntvanādau, [muñca]hemacandra; pṛ. 335muñcetyevaṃ prāyaparābhiyogānaṅgīkaraṇādau ca ( ? vā)hemacandra; pṛ. 335 ityupādhyāyāḥ&nbsp;| mandrāpi kākuścātra bhavatīti saṃgrahaśloke vakṣyate&nbsp;| ātyayikaṃ
+         śīghrasaṃpādyaṃ yatkāryam&nbsp;| āyastamāvegaḥ&nbsp;| kaṇṭhasthāne na nīcabhāge niṣpranno vilambitaḥ&nbsp;|
+         lallatvamavivakṣitameva&nbsp;| avyaktārthaḥ pravādaḥ — antaraṅgata iti loke prasiddho yatra&nbsp;|
+         pare budhyatāṃ ca na budhyatāṃ ceti vakturabhiprāyo bhavati yanna svagataṃ na paragatamatreti&nbsp;|
+         alaṅkāreṣūccā dīptā drutā ceti yathāyogaṃ sthānatrayamatra svīkṛtamityarthaḥ&nbsp;|
+      </p>
+      
+      <span class="pageinfo">[page 396]</span>
+      
+      <p>atha sarvasaṃgrahārthamāha <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_17-dn.html#N%C4%81%C5%9A%C4%81.17.121" target="_blank">yāni saumyārthayuktā</a></span>nīti&nbsp;| soma eva hlādakaḥ saumyaḥ, śākhāditvādyaḥ&nbsp;|
+         sukhasya hetavaḥ kāryaśceti sukhabhāvakṛtaśabdena samāsabhedātsaṃgṛhītam&nbsp;| <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_17-dn.html#N%C4%81%C5%9A%C4%81.17.122" target="_blank">nānāśrayopeta</a></span>miti nānāsthānaniviṣṭaṃ kṛtvetyarthaḥ, sthānabhedaḥ kākūnāṃ paryāptatākārītyuktam&nbsp;|
+         ataḥ kākoreva prādhānyāttāmevopasaṃharati <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_17-dn.html#N%C4%81%C5%9A%C4%81.17.124.1" target="_blank">athāṅgānī</a></span>tyādinā&nbsp;|
+      </p>
+      
+      
+      <p>prastāvāntaraṃ darśayati tatra varṇoccāraṇe varṇadhvaniśūnyo yaḥ kālastadāśrayo 'ṅgavyavahāra
+         iti vṛddhāḥ, sa hi ṣọdhā kālaḥ “tataśca bhūyān punarādimadhyau”bhūyān punarityayaṃ
+         hi vicchedaḥ&nbsp;| ādau madhyaḥ svalpo madhyānte cārpaṇaṃ <span class="pageinfo">[page 397]</span>vākye pūrvaṃ bhūyānmadhye drutaśca viparītako yaḥ sa visargaḥ&nbsp;| bahuṣu druto 'tha
+         madhyo manāgdruto 'nte 'nubandhaḥ syāt&nbsp;| tristhāne drutamadhyavilambitayug dīpanaṃ
+         sadārohi viparītaṃ praśamanaṃ syāt, layatrayaṃ
+         caikarūpanirvāhāditi saṃgrahakāraḥ&nbsp;|
+      </p> 
+      
+      
+      <p>etanmatenaiva lakṣaṇāni vyācakṣate&nbsp;| etaccāsat&nbsp;| drutamadhyādilayairevāsyārthasya
+         na tattvānna ca layavyavahārasāmye kālasyeti niyamakāraṇamasti&nbsp;| kiṃ ca layavaiṣamyasya
+         vākyacaitanyāpekṣayā na bhāgatrayakalpanayaiva bhedā uktāḥ, bhujaṅgavijṛmbhitādivākye
+         'nantabhāgasaṃbhāvanāt&nbsp;| bhāgatraye ca drutamadhyavilambitānāṃ dvibhedatribhedatvānantye
+         ṣaṭsaṃkhyāniyamaviplavaḥ&nbsp;| “kvākāryaṃ (subhāṣitāvalau--kra॰ 1343 — kālidāsasya) ayaṃ ślokaḥ 318 pṛṣṭhe udāhṛta eva&nbsp;|iti hi ślokaprathamakhaṇḍeṣu madhyamalayo bhūyo 'pi dṛśyeta sā ityādiṣu pāścātyakhaṇḍeṣu
+         tatsmaraṇajanitasukhaviśrāntidāyiṣu vilambita iti dvilayabhedaḥ prayogaḥ&nbsp;| bhāgatrayakalanāyāmapi
+         sāmyena vaiṣamyeṇa cānantaprakāratā bhavatīti kathaṃ syāt&nbsp;| kasmādetatsarvaṃ layābhidhānenaiva
+         na saṃgṛhītam&nbsp;| tasmātsūtrasthānīyapadaratnānāṃ pāṭhakāle tvādāvuktataddharmaṣaṭkamaṅgaṣaṭkamucyate&nbsp;|
+         tathā ca madhye truṭitatvamatruṭitatvaṃ vā tāvato (? tāvantau)madhusūdanī (edn., p. 1421,a.bhā. L.2) vicchedānubandhau, pīvaratvamapīvaratvaṃ vā imāvarpaṇavisargau, ārohaṇamavarohaṇaṃ
+         vā te dīpanapraśamane&nbsp;| evaṃ bhāvābhāvataḥ, upacayāpacayataḥ, ārohāvarohataśta ṣaḍbhedo
+         nādaḥ&nbsp;| vākyasya <span class="pageinfo">[page 398]</span>nyāsaṃ tyajanamanādaraṇaṃ tannādasyeti yāvat&nbsp;| vaisvaryaṃ svaratvena vihiteṣu antarālaśrutiviśeṣeṣu
+         dhvani (vi)saṃvādanādbhavatīti sarvatrābhyūhyam&nbsp;| <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_17-dn.html#N%C4%81%C5%9A%C4%81.17.124.2" target="_blank">hāsyādayaḥ</a></span> śabdāstadvyabhicāriṇo 'pi svīkurvate&nbsp;| tataśca tadvyabhicāriṇo 'nyarasān, rasāntare
+         'pi tadā vyabhicāryāśraye vā kākuriti mantavyam&nbsp;| <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_17-dn.html#N%C4%81%C5%9A%C4%81.17.124.2" target="_blank">sarveṣāmi</a></span>tyādināṅgānāṃ mūlabhūtaṃ sthānabhedaṃ smārayati&nbsp;| <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_17-dn.html#N%C4%81%C5%9A%C4%81.17.124.2" target="_blank">tatra dūrastha</a></span> ityādinā viniyogavākyānāṃ lakṣye ekavākyatāṃ sūcayati&nbsp;| tathā hi śṛṅgāre yadudāttalasvaritamuktamarpaṇavicchedādyaṅgajātaṃ
+         vilambitaṃ cālaṅkāraḥ taddūrasthābhāṣaṇe kartavye śiraḥsthāne ṣaḍjapañcamayoranyatarasthāyisvarāśrayeṇāṃśasvaravibhāgacatuścatuṣkasammiśraṃ
+         kartavyamityevaṃ tātparyeṇedaṃ vyākhyeyam&nbsp;| anyathā bhāṣaṇaṃ dūrasthe śirasetyādinā
+         paunaruktyaṃ syāt&nbsp;|
+      </p>
+      
+      
+      <p>atha dīpanapraśamanayorvaktavyaśeṣamāha <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_17-dn.html#N%C4%81%C5%9A%C4%81.17.124.2" target="_blank">mandrāttāraṃ na gacche</a></span>dityādi&nbsp;| mandratarāttāraṃ tāratamānmandraṃ cetyarthaḥ&nbsp;|
+      </p>
+      
+      
+      <p>uddeśagrantha eva kecillayā virāmāścetyabhidhīyante&nbsp;|</p>
+      
+      <span class="pageinfo">[page 399]</span>
+      
+      <p>anye tvāhuḥ — kālasya sarvasyāparibhāvyatvānnoddeśena prayojanaṃ matimantastu manyante&nbsp;|
+         vicchedenaiva ca layametatsvīkṛtam&nbsp;| vicchedo virāmaḥ, sa ca kiyantaṃ kālamiti layo
+         'pi tenaiva svīkṛtaḥ&nbsp;| tena vicchedasya parīkṣeyaṃ kathiteti&nbsp;| tatreti vicchede, arthasamāptinimittaṃ
+         virāmo vāsya kāryaḥ&nbsp;| artho 'vāntaravākyārthaḥ&nbsp;| na <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_17-dn.html#N%C4%81%C5%9A%C4%81.17.124.3" target="_blank">cchandovaśādi</a></span>tyanena kavinā prayogaparatantreṇa tadā sa
+         tadavasarocitavirāmavati vṛtte grahaṇaprayatnaḥ kāryaḥ&nbsp;| prayoktrāpi kaviparatantreṇa
+         na bhāvyamityatrāpi tenārthavaśādvirāmaḥ kārya ityākhyātam&nbsp;| saṃkhyātra niyamopalakṣaṇaṃ
+         <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_17-dn.html#N%C4%81%C5%9A%C4%81.17.124.3" target="_blank">ekadvitrīti</a></span>&nbsp;| kimityetāvatyavāntaravākyārthe vicchedaḥ <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_17-dn.html#N%C4%81%C5%9A%C4%81.17.125" target="_blank">kiṃ gacche</a></span>ti&nbsp;|
+      </p>
+      
+      
+      <p>nanvevamekavākyatvābhāvo dūṣaṇamityāśaṃkya pratyuta bhūṣaṇametadityupapādayannāha
+         — “sūcāsu cāṅkuragate ca tathopacāreṣvalpākṣarāṇi hi padāni bhavanti kāvye” (17/125)
+         iti&nbsp;| bahuprakāraiḥ sūcābhinayaiḥ aṅkuraprakāraiśca yuktamitthaṃ kāvyaṃ bhavati <span class="pageinfo">[page 400]</span>yadi svalpākṣarāṇi padānyasamastāni bhavanti&nbsp;| bahvakṣarapade, daridrāśca kiṃ yaste
+         (?) ityādau na madhye sūcāṅkurayorupapattiḥ&nbsp;|
+      </p>
+      
+      
+      <p>“tasyāstanumukhamasti saumyasubhagaṃ kiṃ pārvaṇenendunā”
+         
+         <div class="lg" type="">
+            <span class="line">
+               <span class="b">saundaryasya padaṃ dṛśau ca yadi te kiṃ nāma nīlotpalaiḥ&nbsp;|</span>
+               </span>
+            <span class="line">
+               <span class="c">kiṃ vā komalakāntibhiḥ kisalayaiḥ satyeva tatrādhare</span>
+               <span class="d">hī dhātuḥ punaruktavasturacanārambheṣvapūrvo grahaḥ&nbsp;||</span>
+               </span>
+            
+         </div> (vāmana 4/3/27 upamānākṣepa—udāharaṇam) ityādau tu tasyā ityuktvā madhye sūcayā tadityasādhāraṇaviśeṣasmaraṇaṃ
+         svātmani taccāvalokane tathākarṇane ca pracchannasthitāyā nāyikāyā nivṛttyaṅkure vaicitryaṃ
+         punaḥ paricumbanābhilāṣasūcāyogapūrvakaṃ mukhamiti pāṭhastatkṛto nāyikāyā raṇaraṇakādaradarśako
+         nivṛttyaṅkura ityādi vaicitrye utprekṣaṇīyam&nbsp;| aṅkurastvanirvacana eveti nivṛttyaṅkura
+         evātra mantavyaḥ&nbsp;| yatrāṅkuro bhaviṣyati tadviṣayametaditi tvasat, puṣpāvacayanāṭane
+         yadocitaparikramaṇādau pūrvabhāvinā svalpākṣareṇa padayogena vaicitryābhāvāt&nbsp;|
+      </p>
+      
+      
+      <p>athāsya vicchedasyāṅgasya prādhānyaṃ darśayati — <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_17-dn.html#N%C4%81%C5%9A%C4%81.17.125.1" target="_blank">evaṃ virāma</a></span> ityādi&nbsp;| asminniti virāme
+         satyabhinayasthito yathāviṣayaṃ prayoktuṃ śakyaḥ&nbsp;| sa ca virāmādgamyate&nbsp;| virāme satyarthaṃ
+         darśayati abhinaye 'nyathā asamañjasatvaṃ syāditi tātparyam&nbsp;| yadi vābhinayo virāme
+         sthita ityabhinayakāryaṃ virāma evodvahatīti tātparyam&nbsp;| tadāha <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_17-dn.html#N%C4%81%C5%9A%C4%81.17.127" target="_blank">tatra vyagrā</a></span>viti&nbsp;| pūrvaṃ dṛṣṭiprādhānyatātparyeṇetya<span class="pageinfo">[page 401]</span>paunaruktyam&nbsp;| vyāpakatvamasyā darśayati <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_17-dn.html#N%C4%81%C5%9A%C4%81.17.128" target="_blank">prāyo vīre ca raudre</a></span> ceti&nbsp;| <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_17-dn.html#N%C4%81%C5%9A%C4%81.17.128" target="_blank">kuñcitā</a></span>viti saṃkocavantāvityarthaḥ&nbsp;|
+      </p>
+      
+      
+      <p><span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_17-dn.html#N%C4%81%C5%9A%C4%81.17.128" target="_blank">bhayācceti</a></span> ślathāveva&nbsp;| uccadīptādiralaṅkāraḥ&nbsp;| sa ca vṛttavirāmeṣu yathā “yo 'yaṃ ( ?yaḥ)
+         śastraṃ bibharti” (veṇī 3/32) ityatroccadīptakākuḥ padāntena, vīraraudrayorapi sragdharādivṛtte
+         ardhādau virāmau na kāryaḥ, api tu pādānte paṭhitastāvat prāṇasaṃvedābhāvāt&nbsp;| prāṇavaśena
+         vetyagatikāgatiriti vṛddhāḥ&nbsp;| taccāsat&nbsp;| śikṣāvaśenāharaṇīyo hi tatrāvicchedaḥ&nbsp;| tasmādayamarthaḥ
+         — padānte vicchedaḥ kāryo, yadi vā prāṇavaśena prāṇā rasabhāvādyāḥ, tadaucityena chedaḥ&nbsp;|
+         pādādāvapi tāvadanenānubandho 'pi viccheda upayogīti darśitam&nbsp;| <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_17-dn.html#N%C4%81%C5%9A%C4%81.17.132.1" target="_blank">śeṣa</a></span>miti na yatra citravṛtteḥ <span class="pageinfo">[page 402]</span>prādhānyaṃ api tu vibhāvādeḥ, tatrārthavaśenaiva virāmaḥ&nbsp;| <b>kṛṣyākṣarā</b>ṇiti kṛṣatīti kṛṣo vilambito layaḥ tatra sādhūni kṛṣyāṇi sandhyakṣarāṇi, yathā ā,
+         ī, ū iti dīrghāḥ&nbsp;| kalālakṣaṇo yaḥ
+         kālaḥ tatpramāṇena vilambitena pāṭhyaṃ kāryamiti vicchedasyaiva pramāṇaṃ darśitam&nbsp;|
+         <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_17-dn.html#N%C4%81%C5%9A%C4%81.17.135" target="_blank">śeṣāṇā</a></span>miti
+         hrasvānām&nbsp;| arthayogeneti yathā sphuṭā pratītirbhavati tathā vicchedaḥ kāryo na tvati
+         vilambitaṃ paṭhedityarthaḥ&nbsp;||
+      </p>
+      
+      
+      <p>nanu kiyatkalāpramāṇamityāha <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_17-dn.html#N%C4%81%C5%9A%C4%81.17.136" target="_blank">vilambita</a></span>miti&nbsp;| <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_17-dn.html#N%C4%81%C5%9A%C4%81.17.136" target="_blank">gurvakṣarami</a></span>ti kṛṣyaṃ&nbsp;| <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_17-dn.html#N%C4%81%C5%9A%C4%81.17.137" target="_blank">vā</a></span> śabdādadhikamanujānāti <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_17-dn.html#N%C4%81%C5%9A%C4%81.17.137" target="_blank">kāraṇopeta</a></span>miti kāraṇaṃ dīrghakālaṃ smaraṇamiti <span class="pageinfo">[page 403]</span>cintanādibhiḥ, vyādhyapasmārādibhirvā kāraṇairupetaṃ, spaṣṭāspaṣṭādibhirityanye&nbsp;|
+         vṛttavirāmādarthavirāmaḥ prathamamiti darśayitumāha ye virāmā iti&nbsp;| tajjñaistadvirāmātmakaṃ
+         vṛttagataṃ vastu, <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_17-dn.html#N%C4%81%C5%9A%C4%81.17.138" target="_blank">utkramyā</a></span>pīti viśeṣopakramo 'pīti sāmānyopasaṃhāraḥ&nbsp;| tādṛśā virāmeṇa na paṭhet, yenāvagato
+         vivakṣitaḥ śabdo bhavati, ‘varadaṃ dhyāyaji’ ityatra vara(da)śabdena yadā vicchedaḥ
+         kriyate tadā madhya iti śabdāntarapratibhayā dhyāyati śabdo 'vagacchatīti&nbsp;| <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_17-dn.html#N%C4%81%C5%9A%C4%81.17.139" target="_blank">bhinnavṛttaṃ</a></span> ca kṛtvā na paṭhet yathā vicchedaṃ na kuryādyenānyavṛttabhrāntirbhavati&nbsp;| tathā hi
+         — “bhava śaṅkarabhājanaṃ (?)ye jagatīha bhavanti kecana” ityatra <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_17-dn.html#N%C4%81%C5%9A%C4%81.17.138" target="_blank">ye</a></span> iti śabdasya pūrvapādena saha pāṭhe aupavedavṛttabhedo yadyapi tathāpi dvitīyapāde
+         vṛttabhaṅgaḥ&nbsp;| tena vṛttaṃ na paṭhediti vicchedasyaiva prāghānyajñāpanārthametadyuktamiti&nbsp;|
+         śabdacyutabhinnavṛttadoṣābhidhāne na paunaruktyam&nbsp;| iha vastutastadabhāve 'pi vicchedavaśena
+         tatpratibhodayāt&nbsp;|
+      </p>
+      
+      
+      <p>etadeva tātparyeṇāha — <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_17-dn.html#N%C4%81%C5%9A%C4%81.17.139" target="_blank">viśramennāvirāme</a></span>ṣviti&nbsp;| evaṃ vicchedasya bhūyoviṣayavyāpakatvamabhidhāya
+         tannyūnāṃ dīptāṃ darśayitumāha <b>dainye kākuṃ na dīpaye</b>diti śokādikamagnacittavṛttiṃ vimucyānyatra dīpanaṃ sarvatra śobhāvahamiti bhāvaḥ&nbsp;|
+      </p>
+      
+      
+      <p>evaṃ svarāḥ kramo maryādā sthānatrayamāśrayaḥ udāttādayaḥ svarūpaṃ alaṅkārāḥ svarūpaparipūrakāḥ
+         iti kartavyatārūpāṇyaṅgāni&nbsp;| svarabhedācca kāko<span class="pageinfo">[page 404]</span>rviśeṣaḥ svarabhedo hi tasyāmeva kākau vivakṣitāyāṃ rasabhāvādi dharmāntarodayo, na
+         hi svarāṇāṃ sthānabhedo 'laṅkāro 'ṅgādikṛtaḥ&nbsp;| <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_17-dn.html#N%C4%81%C5%9A%C4%81.17.140" target="_blank">varjitaṃ kāvyadoṣai</a></span>rityādinā prāktanādhyāyārthena saha saṅgatimasyādhyāsya darśayati&nbsp;|
+      </p>
+      
+      
+      <p>evaṃ saṃskṛte kākuvidhānaṃ prākṛtādhyāyaprameyabhūte prākṛte 'pyatidiśati <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_17-dn.html#N%C4%81%C5%9A%C4%81.17.141" target="_blank">alaṅkārā virāmāśce</a></span>tyādinā&nbsp;| adhyāyārthamupasaṃharan bhāvino 'dhyāyasyārthamāsūtrayati daśarūpeti daśarūpavidhāne
+         yatpāṭhyaṃ tadanane triprakāreṇa yojyamityupasaṃhāraḥ&nbsp;| <b>tu</b>śabdo vyutkramaṃ sūcayati&nbsp;| prasaṅgādakramaprāptamapi kākuvidhānamuktam&nbsp;| <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_17-dn.html#N%C4%81%C5%9A%C4%81.17.143" target="_blank">anupūrvaśa</a></span> ityādi yattu kramāpannaṃ tadṛśarūpaṃ vikalpyamānaṃ vakṣyāmīti
+         śivam&nbsp;||
+      </p>
+      
+      
+      <div class="lg" type="">
+         <span class="line">
+            <span class="a">iti kākuvikalpalakṣaṇe 'smi-</span>
+            <span class="b">nnadhyāye munidiksamarthite 'rtham&nbsp;|</span>
+            </span>
+         <span class="line">
+            <span class="c">prakaṭīkurute sma candramaule-</span>
+            <span class="d">rabhinavaguptasamākhya ekadeśam&nbsp;|| (abhinavaguptasya)</span>
+            </span>
+         
+      </div>
+      
+      <span class="pageinfo">[page 405]</span>
+      
+      
+      <p>iti śrīmanmahāmāheśvarābhinavaguptācāryaviracitāyāṃ</p>
+      
+      <p>nāṭyavedavivṛtāvabhinavabhāratyāṃ kākuvidhānaṃ</p>
+      
+      <p>nāma saptadaśo 'dhyāyaḥ&nbsp;||</p>
+      
+      
+      
+      
+      
+   </body>
+</html>

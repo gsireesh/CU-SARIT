@@ -1,0 +1,1246 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html xmlns:fn="http://www.w3.org/2005/xpath-functions" encodingxmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+      <link rel="stylesheet" type="text/css" href="../../STYLESHEETS/cssstylesheet2.css">
+      <title>Abhinavabhāratī, Chapter 1</title><script type="text/javascript">
+    
+    function toggle(id) {
+       var e = document.getElementById(id);
+       if(e.style.display == 'block')
+          e.style.display = 'none';
+       else
+          e.style.display = 'block';
+    }
+// qTip - CSS Tool Tips - by Craig Erskine
+// http://qrayg.com
+//
+// Multi-tag support by James Crooke
+// http://www.cj-design.com
+//
+// Inspired by code from Travis Beckham
+// http://www.squidfingers.com | http://www.podlob.com
+//
+// Copyright (c) 2006 Craig Erskine
+// Permission is granted to copy, distribute and/or modify this document
+// under the terms of the GNU Free Documentation License, Version 1.3
+// or any later version published by the Free Software Foundation;
+// with no Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts.
+// A copy of the license is included in the section entitled "GNU
+// Free Documentation License".
+
+var qTipTag = "a,label,input"; //Which tag do you want to qTip-ize? Keep it lowercase!//
+var qTipX = 0; //This is qTip's X offset//
+var qTipY = 15; //This is qTip's Y offset//
+
+//There's No need to edit anything below this line//
+tooltip = {
+  name : "qTip",
+  offsetX : qTipX,
+  offsetY : qTipY,
+  tip : null
+}
+
+tooltip.init = function () {
+	var tipNameSpaceURI = "http://www.w3.org/1999/xhtml";
+	if(!tipContainerID){ var tipContainerID = "qTip";}
+	var tipContainer = document.getElementById(tipContainerID);
+
+	if(!tipContainer) {
+	  tipContainer = document.createElementNS ? document.createElementNS(tipNameSpaceURI, "div") : document.createElement("div");
+		tipContainer.setAttribute("id", tipContainerID);
+	  document.getElementsByTagName("body").item(0).appendChild(tipContainer);
+	}
+
+	if (!document.getElementById) return;
+	this.tip = document.getElementById (this.name);
+	if (this.tip) document.onmousemove = function (evt) {tooltip.move (evt)};
+
+	var a, sTitle, elements;
+	
+	var elementList = qTipTag.split(",");
+	for(var j = 0; j < elementList.length; j++)
+	{	
+		elements = document.getElementsByTagName(elementList[j]);
+		if(elements)
+		{
+			for (var i = 0; i < elements.length; i ++)
+			{
+				a = elements[i];
+				sTitle = a.getAttribute("title");				
+				if(sTitle)
+				{
+					a.setAttribute("tiptitle", sTitle);
+					a.removeAttribute("title");
+					a.removeAttribute("alt");
+					a.onmouseover = function() {tooltip.show(this.getAttribute('tiptitle'))};
+					a.onmouseout = function() {tooltip.hide()};
+				}
+			}
+		}
+	}
+}
+
+tooltip.move = function (evt) {
+	var x=0, y=0;
+	if (document.all) {//IE
+		x = (document.documentElement && document.documentElement.scrollLeft) ? document.documentElement.scrollLeft : document.body.scrollLeft;
+		y = (document.documentElement && document.documentElement.scrollTop) ? document.documentElement.scrollTop : document.body.scrollTop;
+		x += window.event.clientX;
+		y += window.event.clientY;
+		
+	} else {//Good Browsers
+		x = evt.pageX;
+		y = evt.pageY;
+	}
+	this.tip.style.left = (x + this.offsetX) + "px";
+	this.tip.style.top = (y + this.offsetY) + "px";
+}
+
+tooltip.show = function (text) {
+	if (!this.tip) return;
+	this.tip.innerHTML = text;
+	this.tip.style.display = "block";
+}
+
+tooltip.hide = function () {
+	if (!this.tip) return;
+	this.tip.innerHTML = "";
+	this.tip.style.display = "none";
+}
+
+window.onload = function () {
+	tooltip.init ();
+}
+    
+    </script></head>
+   <body>
+      
+      
+      
+      <div class="titleStmt">
+         <h2><span class="title">Abhinavabhāratī, Chapter 1</span> by <span class="author">Abhinavagupta</span></h2>This file is in devanāgarī. View in <a href="abhinavabh%C4%81rat%C4%AB_01-roman.html">transliteration</a>.
+      </div>
+      
+      <div class="publicationStmt">
+         <h3>Publication statement</h3>
+      </div>
+      
+      <div class="sourceDesc">
+         <h3>Source description</h3>
+         <p>Print sources:</p>
+         <ul>
+            <li>K. Krishnamoorthy (ed.). <em>Nāṭyaśāstra of Bharatamuni: With the Commentary Abhinavabhāratī</em>. Vadodara: Oriental Institute, 1992. Gaekwad's Oriental Series 34. 
+            </li>
+         </ul>
+      </div>
+      
+      
+      <div class="encodingDesc">
+         <h3>Encoding description</h3>
+         
+      </div>
+      
+      <div class="revisionDesc">
+         <h3>Revision description</h3>
+      </div>
+      
+      
+      
+      
+      
+      <h2>Table of contents</h2>
+      <div class="toc">
+         <p class="div1head"><a href="# %0A  %E0%A4%85%E0%A4%AD%E0%A4%BF%E0%A4%A8%E0%A4%B5%E0%A4%AD%E0%A4%BE%E0%A4%B0%E0%A4%A4%E0%A5%80%C2%A0%E0%A5%A4%0A  %E0%A4%B6%E0%A5%8D%E0%A4%B0%E0%A5%80%E0%A4%AE%E0%A4%A6%E0%A4%AD%E0%A4%BF%E0%A4%A8%E0%A4%B5%E0%A4%97%E0%A5%81%E0%A4%AA%E0%A5%8D%E0%A4%A4%E0%A4%B5%E0%A4%BF%E0%A4%B0%E0%A4%9A%E0%A4%BF%E0%A4%A4%E0%A4%BE %E0%A4%B5%E0%A4%BF%E0%A4%B5%E0%A5%83%E0%A4%A4%E0%A4%BF%E0%A4%83%C2%A0%E0%A5%A4%0A">1:  
+               अभिनवभारती&nbsp;।
+               श्रीमदभिनवगुप्तविरचिता विवृतिः&nbsp;।
+               </a></p>
+      </div>
+      
+      
+      <span class="pageinfo">[page 001]</span>
+      
+      
+      
+      <div class="lg" type="">
+         <span class="line">
+            <span class="a">यस्तन्मयान्हृदयसंवदनक्रमेण</span>
+            <span class="b">द्राक्चित्रशक्तिगणभूमिविभागभागी&nbsp;।</span>
+            </span>
+         <span class="line">
+            <span class="c">हर्षोल्लसत्परविकारजुषः करोति</span>
+            <span class="d">वन्देतमां तमहमिन्दुकलावतंसम्&nbsp;॥ १&nbsp;॥</span>
+            </span>
+         
+      </div>
+      
+      <div class="lg" type="">
+         <span class="line">
+            <span class="a">षड्विंश(षट्त्रिंश) कात्मकजगद्गगनावभास-</span>
+            <span class="b">संविन्मरीचिचयचुम्बित<a href="" class="app" title="चुम्बि"><span class="appnum"><sup>1</sup></span></a>बिम्बशोभम्&nbsp;।</span>
+            </span>
+         <span class="line">
+            <span class="c">षट्त्रिंशकं <b>भरतसूत्रमिदं</b> विवृण्व-</span>
+            <span class="d">न्वन्दे शिवं श्रुतितदर्थविवेकि<a href="" class="app" title="विवेक <b&gt;म</b&gt;"><span class="appnum"><sup>2</sup></span></a> धाम&nbsp;॥ २&nbsp;॥</span>
+            </span>
+         
+      </div>
+      
+      <div class="lg" type="">
+         <span class="line">विश्वबीजप्ररोहार्थं मूलाधारतया स्थितम्&nbsp;।</span>
+         <span class="line">धर्तृ<a href="" class="app" title="सर्व <b&gt;मक</b&gt;, धातृ <b&gt;ख</b&gt;"><span class="appnum"><sup>1</sup></span></a>शक्तिमयं वन्दे धरणीरूपमीश्वरम्&nbsp;॥ ३&nbsp;॥</span>
+         
+      </div>
+      
+      <div class="lg" type="">
+         <span class="line">
+            <span class="a">सद्विप्रतोत<a href="" class="app" title="कोक <b&gt;म</b&gt;"><span class="appnum"><sup>1</sup></span></a>वदनोदितनाट्यवेद-</span>
+            <span class="b">तत्त्वार्थमर्थिजनवाञ्छितसिद्धिहेतोः&nbsp;।</span>
+            </span>
+         <span class="line">
+            <span class="c">माहेश्व<b>राभिनवगुप्त</b>पदप्रतिष्ठः</span>
+            <span class="d">संक्षिप्तवृत्तिविधिना विशदीकरोति&nbsp;॥ ४&nbsp;॥</span>
+            </span>
+         
+      </div>
+      ﻿
+      <span class="pageinfo">[page 002]</span>
+      
+      <div class="lg" type="">
+         <span class="line">उपादेयस्य सम्पाठस्तदन्यस्य प्रतीकनम्&nbsp;।</span>
+         <span class="line">स्फुटव्याख्या<a href="" class="app" title="वाक्य <b&gt;मके</b&gt;"><span class="appnum"><sup>1</sup></span></a> विरोधानां परिहारः सुपूर्णता&nbsp;॥ ५&nbsp;॥</span>
+         
+      </div>
+      
+      <div class="lg" type="">
+         <span class="line">लक्ष्यानुसरणं श्लिष्टवक्तव्या<a href="" class="app" title="मुद्दिष्ट वक्तव्याङ्क <b&gt;मके</b&gt;"><span class="appnum"><sup>1</sup></span></a> शविवेचनम्&nbsp;।</span>
+         <span class="line">सङ्गतिः पौनरुक्त्यानां समाधानसमाकुलम्&nbsp;॥ ६&nbsp;॥</span>
+         
+      </div>
+      
+      <div class="lg" type="">
+         <span class="line">सङ्ग्रहश्चेत्ययं व्याख्याप्रकारोऽत्र समाश्रितः&nbsp;॥</span>
+         
+      </div>
+      
+      
+      <p>भरतमुनिरुचितदेवतानमस्कारपूर्वकमभिधेयगुणीभावेन प्रयोजनं मुख्यया वृत्त्या प्रतिजानानो
+         विशेषणद्वारेण गुरुपर्वक्रममर्थाक्षिप्ततया चाभिधेयप्रयोजन<a href="" class="app" title="के. नास्ति"><span class="appnum"><sup>1</sup></span></a>तत्सम्बन्धान्द-
+         र्शयति — <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_01-dn.html#N%C4%81%C5%9A%C4%81.1.1" target="_blank">प्रणम्येत्यादिना</a></span> — 
+      </p>
+      
+      
+      <p>‘पितामहोऽत्र न पितुः पिता महेश्वरश्च न राजादिरिति देवशब्दः&nbsp;। एतच्च नाशङ्कनीयं प्रसिद्धेः&nbsp;।
+         एको विजिगीषुर्नाट्यप्रवर्तयितेति देवः&nbsp;। भगवांस्त्वानन्दनिर्भरतया क्रीडाशीलः सन्धादौ
+         नृत्यतीति नाट्ये तदुपस्कारिणि च नृत्ते तदुपज्ञं <a href="" class="app" title="ज्ञं ताण्डवप्रवृत्ति <b&gt;केपम</b&gt;, भाण्डप्रवृत्ति <b&gt;क</b&gt;"><span class="appnum"><sup>1</sup></span></a> प्रवृत्तिरिति तावेवात्राधिदैवतं गुरू चेति नमस्कार्यौ&nbsp;। लक्ष्मीपतिस्तु यद्यपि वृत्तीनां
+         निर्माता तथापि पितामहादिवदसौ स्वकर्तव्य<a href="" class="app" title="कर्तव्य <b&gt;के</b&gt;"><span class="appnum"><sup>2</sup></span></a>मात्रनिष्ठस्तथाचरन्नात्र नाट्ये लोकवदुपजीवित इति गुरुत्वाभावन्न नमस्कृतः&nbsp;।’ (इत्ये)तदपि
+         नमस्कारहेतुनिरूपणस्यानुचितत्वादसत्&nbsp;।
+      </p>
+      
+      
+      <p><a href="" class="app" title="प्रणामः कायादीनां प्रह्वीभावः&nbsp;। कायिकः शिरसेति दर्शितः&nbsp;। तस्मात्&nbsp;। <b&gt;म</b&gt;"><span class="appnum"><sup>1</sup></span></a>तस्मात्प्रणमनं प्रह्वीभावः कायेन वाचा मनसा च&nbsp;। आद्यः शिरसेति दर्शितः&nbsp;। <a href="" class="app" title="वाचिको <b&gt;के</b&gt;"><span class="appnum"><sup>2</sup></span></a>द्वितीयो देवावित्यनेन&nbsp;। प्रणम्यस्य निरुपपदनामग्रहणानौचित्यात्&nbsp;। तेन प्रथमं देवावित्युक्तम्&nbsp;।
+         अभिनेयप्राधान्याच्चाङ्गिकः शिरसेति&nbsp;। वाचिकश्च देवावित्यादिना वाक्याभिनयो दर्शितः<a href="" class="app" title="दर्शितः&nbsp;। क्रमादेतावाङ्गिकवाचिकाभिनयौ&nbsp;। <b&gt;म</b&gt;"><span class="appnum"><sup>3</sup></span></a>&nbsp;। लोकसिद्धो ह्ययमभिनयो न च नाट्यधर्मिरूपः&nbsp;। चतुर इव भुजादावूर्ध्वादिभिन्न इत्यभिनेयो<a href="" class="app" title="अनभिनेयोऽपि <b&gt;म</b&gt;"><span class="appnum"><sup>4</sup></span></a>ऽपि प्रदर्शनीय एव&nbsp;। मानसी तु प्रह्वता वाक्कायव्यापारगम्येति नासौ पृथगुक्ता&nbsp;। <a href="" class="app" title="संस्कारस्य पूर्व बुद्धौ निपतनाच्चरमसंस्कारस्य&nbsp;। पितामहमहेश्वराविति क्रम आश्रितः&nbsp;। छेकानुप्रासपरिपोषेण सालङ्कारस्य च वाक्याभिनयतां दर्शयितुम्&nbsp;।यद्वक्ष्यति — ‘चेक्रीडितप्रभृतिभिर्विकृतैश्च शब्दैर्युक्ता न भान्ति ललिता भरतप्रयोगाः&nbsp;।’ (१६-१२७) इति सालङ्कारस्य च देवतापरितोषहेतुत्वं दर्शितं भवति&nbsp;। प्रजाः प्रति हितैषित्वेन नाट्यप्रवर्तकत्वं कर्तव्यान्तरवैकल्येन पूर्णतायां च ततस्तद्गतत्वमिति नाम्नोरभिप्रायः&nbsp;। तत्र नाट्यस्य&nbsp;। <b&gt;भ</b&gt;"><span class="appnum"><sup>5</sup></span></a><span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_01-dn.html#N%C4%81%C5%9A%C4%81.1.1" target="_blank">पितामहमहेश्वरा</a></span>विति क्रमः छेकानुप्रासार्थः&nbsp;। सालङ्कारस्य च वाक्याभिनयतां दर्शयितुम्&nbsp;। सालङ्कारस्य
+         देवतापरितोषहेतुत्वं च ﻿<span class="pageinfo">[page 003]</span>दर्शयितुम्&nbsp;। पितामहमहेश्वरावित्यनेन देवयोर्लोकहितैषित्वमुक्तम्&nbsp;। <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_01-dn.html#N%C4%81%C5%9A%C4%81.1.1" target="_blank">नाट्यशास्त्रमिति</a></span>&nbsp;।
+      </p>
+      
+      
+      <p>नाट्यस्य नटवृत्तस्य, शास्त्रं शासनोपायं ग्रन्थं प्रवक्ष्यामीति&nbsp;।</p>
+      
+      
+      <p>नैतदित्यन्ये&nbsp;। ‘नाट्यवेदः नाट्यशास्त्रम्’ इति हि पर्यायौ&nbsp;। तत्र नाट्यशास्त्रशब्देन
+         चेदिह ग्रन्थः, तद्ग्रन्थस्येदानीं करणम्&nbsp;। न तु प्रवचनम्&nbsp;। तद्धि व्याख्यानरूपं करणाद्भिन्नं
+         कठेन प्रोक्तमिति यथा&nbsp;। ग्रन्थस्य च नाट्यवेदत्वे उत्पत्त्यादिपञ्चकस्य
+         तद्गतस्यान्यग्रन्थसाधारण्यात् प्रश्नासङ्गतिः&nbsp;। उत्तरग्रन्थस्य चानुपपत्तिः — ‘दृश्यं श्रव्यं च यद्भवेत्’ (१-११) ‘जग्राह पाठ्यमृग्वेदात्’ (१-१७) इत्यादेर्ग्रन्थं प्रत्यसङ्गतत्वात्&nbsp;। तस्मान्नाट्यं च तच्छास्त्रञ्च&nbsp;। व्यत्पुत्तिप्रदत्वात्&nbsp;।
+         तत् <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_01-dn.html#N%C4%81%C5%9A%C4%81.1.1" target="_blank">प्रवक्ष्यामि</a></span> व्याख्यास्ये&nbsp;। नाट्याख्यं वेदं लक्षणतो निरूपयिष्य इत्यर्थः&nbsp;।
+      </p>
+      
+      
+      <p>एतदप्यमनोरमम्&nbsp;। शब्दात्मताव्यतिरेकेण प्रवचनायोगात्&nbsp;। नाट्यस्य चाशब्दात्मकत्वात्&nbsp;।
+         निरूपणमात्रे च प्रवचने ग्रन्थस्यापि प्रवचनोपपत्तेः&nbsp;। नाट्यस्य च प्रोच्यमानतयैवालाक्षणिकबाह्यस्वरूपनिरासलाभे
+         शास्त्रशब्दानर्थक्यप्रसङ्गात्&nbsp;। ‘य इमं शृणुयात्प्रोक्तं नाट्यवेदम्’ इति शास्त्रान्ते
+         यद्वक्ष्यते तस्यासङ्गत्यापत्तेः&nbsp;। शब्दविषयतातिरेकेण शृणुयादित्यस्यावाचकत्वात्&nbsp;।
+      </p>
+      
+      
+      <p>तस्मादित्थमेतदिति <b>मद्रुरवः</b>&nbsp;। ‘सकलहितकरणप्रवृत्त’ <a href="" class="app" title="प्रवृत्तेरुत्सा <b&gt;भ</b&gt;"><span class="appnum"><sup>1</sup></span></a>उत्साहसम्पदोपेतस्तदभिवृद्धये तत्प्रत्यूहापसिसारविषया स्वविज्ञानक्रमोपारूढगुरुरूप<a href="" class="app" title="सर्वब्रह्माधि"><span class="appnum"><sup>2</sup></span></a>ब्रह्मसर्वाधिपतिपरमेश्वरविषया स्मृत्यौत्सुक्यधृतिमत्यादिलक्षणां व्यभिचारसरणिं बाह्यकरणीयविषयं
+         च जडतावहित्थप्रभृतिभावगणं पुरस्सरीकृत्य धर्मवीरानुप्रविष्टस्तदुचिताङ्गिकवाचिकानुभाव<a href="" class="app" title="प्रकरणं <b&gt;के</b&gt;"><span class="appnum"><sup>3</sup></span></a> प्रकटनपूर्वं स्वप्रवृत्तिप्रयोजनमेव निरूपयति<a href="" class="app" title="निरूपितवान् <b&gt;म</b&gt;"><span class="appnum"><sup>4</sup></span></a>&nbsp;। प्रयोजनस्यैव प्रवर्तकत्वात्&nbsp;। यदाहुः  ‘यमर्थमधिकृत्य प्रवर्तते तत्प्रयोजनम्’ (न्या. सू. १-१-२४) इति&nbsp;।
+      </p>
+      
+      
+      <p>तत्र नाट्यं नाम लौकिकपदार्थव्यतिरिक्तं तदनुकारप्रतिबिम्बालेख्यसादृश्यारोपाध्यवसायोत्प्रेक्षास्वप्नमायेन्द्रजालादिविलक्षणं
+         तद्ग्राहकस्य सम्यग्ज्ञानभ्रान्तिसंशयानवधारणानध्यवसायविज्ञानभिन्न<a href="" class="app" title="नाट्याभिन्न <b&gt;के</b&gt;"><span class="appnum"><sup>1</sup></span></a>वृत्तान्तास्वादनरूपसंवेदनसंवेद्यं वस्तु रसस्वभावमिति<a href="" class="app" title="स्वभावेति <b&gt;भ</b&gt;, रसस्वभाव इति <b&gt;म</b&gt;"><span class="appnum"><sup>2</sup></span></a> वक्ष्यामः&nbsp;। तस्य शास्त्रं शासनं बाह्यभाण्डनाट्यादिवैलक्षण्येन सम्यक्तत्स्वरूपावगमोपायं
+         प्रकर्षेण परब्रह्मशिष्योदीरितानुपयोगिविकासत्वावधानेन<a href="" class="app" title="विकासभावसाधनेन <b&gt;म</b&gt;"><span class="appnum"><sup>3</sup></span></a> (विकासावधूननेन?) ﻿<span class="pageinfo">[page 004]</span>वक्ष्यामि&nbsp;। यद्वक्ष्यति —
+      </p>
+      
+      
+      <div class="lg" type="">
+         <span class="line">य इमं शृणुयात्प्रोक्तं नाट्यवेदं स्वयम्भुवा&nbsp;।</span>
+         <span class="line">कुर्यात्प्रयोगं यश्चैनं तथाऽधीयीत वा नरः&nbsp;॥</span>
+         
+      </div>
+      
+      <div class="lg" type="">
+         <span class="line">या गतिर्वेदविदुषां या गतिर्यज्ञवेदिनाम्&nbsp;।</span>
+         <span class="line">या गतिर्दानशीलानां तां गतिं प्राप्नुयात्तु सः&nbsp;॥ इति&nbsp;॥</span>
+         <span class="line">(............. ग्रन्थपातः ?) (ना. शा. अ. ३६)</span>
+         
+      </div>
+      
+      <p>एतेन “कामजो <a href="" class="app" title="देशको गणः <b&gt;म</b&gt;"><span class="appnum"><sup>1</sup></span></a>दशको गणः” (मनु. ७-४७) इति वर्जनीयत्वेन नाट्यस्यानुपादेयतेति यत्केचिदाशशङ्किरे <a href="" class="app" title="तदयुक्ति <b&gt;के</b&gt;"><span class="appnum"><sup>2</sup></span></a>तदयुक्तीकृतम्&nbsp;। याज्ञवल्क्यस्मृतिपुराणादौ चास्य प्रशंसाभूयस्त्वश्रवणात्&nbsp;। न चागमादृते
+         धर्मोऽनुमानगम्य इति न्यायात्&nbsp;।
+      </p>
+      
+      
+      <p>एतत्तु वृथैवास्थानभीरून्प्रति शङ्काशमनार्थमभिधीयते नाम&nbsp;। तथा हि — नटानांताव<a href="" class="app" title="नटस्य नाट्यं तावदे <b&gt;मभ</b&gt;"><span class="appnum"><sup>1</sup></span></a>देतत्स्वधर्माम्नायरूपतयाऽनुष्ठेयमेव&nbsp;। न चास्माकं तच्चेष्टितं विचार्यम्&nbsp;। सोमक्रयोपदेशिनो
+         विधिवाक्यस्य<a href="" class="app" title="हि <b&gt;RK</b&gt;"><span class="appnum"><sup>2</sup></span></a> न तद्विक्रेष्यद्<a href="" class="app" title="तद्विक्रयि <b&gt;भ</b&gt;"><span class="appnum"><sup>3</sup></span></a>ब्राह्मणान्तरगतकृत्याकृत्यविचारणोद्योगो युक्तः&nbsp;। न चाप्यस्योपदिश्यते ‘गायेन्नृत्येत्’
+         इति&nbsp;। किन्तु प्रथमनाट्यावसरक्रमप्रवृत्तविरिञ्चवचनप्रवर्तकभरतमुनिशासनानुवर्तिशिष्यपरम्परापरिचयागताद्यतनकालावधिमहानटजनस्वकप्रवृत्तिविशेषोपदेशपरम्&nbsp;।
+         <a href="" class="app" title="परमतद्नतसिद्धिसम्पत्तिसदु <b&gt;मभ</b&gt;"><span class="appnum"><sup>4</sup></span></a>अत एव तद्गतसिद्धिसंपत्तिसदुपायोपदेशनपरमिदं शास्त्रमिति&nbsp;।
+      </p>
+      
+      
+      <p>नटस्य तावन्नानेन किञ्चिदुपदिश्यते, तं प्रत्युपकारादृते&nbsp;। कवेरपि स्वहृदयायतनसततोदितप्रतिभाभिधानपरवाग्देवतानुग्रहोत्थितविचित्रा<a href="" class="app" title="त्रापूर्वनिर्माण <b&gt;मभ</b&gt;"><span class="appnum"><sup>1</sup></span></a>पूर्वार्थनिर्माणशक्तिशालिनः प्रजापतेरिव <a href="" class="app" title="वा काम <b&gt;म</b&gt;"><span class="appnum"><sup>2</sup></span></a>कामजनितजगतः&nbsp;। परं <a href="" class="app" title="परमप्रत्या <b&gt;मभ</b&gt;"><span class="appnum"><sup>3</sup></span></a>प्रत्याशङ्का यदि परमत्रावशिष्यते <a href="" class="app" title="ष्यते वराकः <b&gt;म</b&gt;"><span class="appnum"><sup>4</sup></span></a>व्युत्पाद्यो वराकः&nbsp;। तस्यापि तु नेह ‘गायेन्नृत्येद्वादयेत्तन्निरतो वा भवेत्’ इत्युपदेशः
+         क्रियते&nbsp;। अपि तु स्वरसत एव तावन्मनोज्ञविषयास्वादप्रवृत्तस्यात एव वेदशास्त्रपुराणादिभीरुहृदयस्य
+         तन्मनोज्ञवस्तुमध्ये तादृगिदं वस्त्वनुप्रवेशितं यद्बलादेव पुमर्थोपायावगतिं करोतीति
+         वक्ष्यामः&nbsp;। उत्पत्त्यादिप्रश्नास्तु ये भविष्यन्ति ते नाट्याख्यवेदविषयाः&nbsp;। न तु नाट्यवेदशास्त्रविषयाः&nbsp;।
+         यतो “नाट्यवेदः कथं ब्रह्मन्” (ना. शा. १-४) इत्यत्र नाट्यमेव वेद इति व्याख्यास्यामः&nbsp;।
+      </p>
+      
+      
+      <p>एतच्च नाट्यवेदशास्त्रं ब्रह्मणोदाहृतं मह्यमुक्तम्&nbsp;। यद्वक्ष्यते — “आज्ञापितो﻿<span class="pageinfo">[page 005]</span>विदित्वाऽहं नाट्यवेदं पितामहात्&nbsp;। पुत्रानध्यापयामास” (ना. शा. १-२५) इति&nbsp;। अत्र तु नाट्यस्य वेदः शास्त्रमिति समासः&nbsp;। अन्यथाऽध्यापनासम्भवात्&nbsp;। तेन ब्रह्मप्रोक्तमेव
+         मया यथापरिपाटि निरूप्यत इति यावत्&nbsp;।
+      </p>
+      
+      
+      <p>नाट्यं च ब्रह्मणोद्धृत्योद्धत्य वेदङ्गान्याहृतमिति तद्विषयं शास्त्रमप्युदाहृतमित्युक्तम्&nbsp;।
+         यदि हि नाट्यस्य वेदनं सत्तालाभो विचारश्च यत्र तन्नाट्यवेदशब्देन नाट्याश्रयरूपं दशरूपकमित्युच्यते-यद्वक्ष्यति
+         “इतिहासो मया दुष्टः” इति, (ना. शा. १-१९)&nbsp;। अत्र पक्षे ब्रह्मणोदाहृतं प्रदर्शितोदाहरणं कृतनिदर्शनमित्यर्थः&nbsp;।
+      </p>
+      
+      
+      <p>अन्ये तु नटनीयमनुकरणं दशरूपकमेव नाट्यम्&nbsp;। तस्येदं शास्त्रम्&nbsp;। दशरूपकलक्षणमेव हीदम्&nbsp;।
+         <a href="" class="app" title="इदमेव <b&gt;के</b&gt;"><span class="appnum"><sup>1</sup></span></a>एवं दशरूपकं कविना कार्यम्&nbsp;। एवं च नटनीयमिति ग्रन्थातात्पर्यात्&nbsp;। रसादीनां पदार्थानां
+         तत्रैव पर्यवसानात्&nbsp;। तच्च ब्रह्मणोदाहृतं कृतनिदर्शनम्&nbsp;।
+      </p>
+      
+      
+      <p>अन्ये तु ब्रह्मणा वेदाख्येन भगवता शब्दराशिनोदाहृतं निरूपितं त्याज्यानुष्ठेयरूपमायदागच्छत्
+         व्युत्पाद्यतया स्वीकुर्वन्नाट्यशास्त्रं प्रवक्ष्यामीति प्रयोजनमनेनैव स्वीकृतमित्याहुः&nbsp;।
+      </p>
+      
+      
+      <p><b>भट्टनायकस्तु</b> ‘ब्रह्मणा परमात्मना यदुदाहृतमविद्याविरचितनिस्सारभेदग्रहे यदुदाहरणीकृतं <a href="" class="app" title=" <b&gt;के</b&gt;"><span class="appnum"><sup>1</sup></span></a>नाट्यं तद्वक्ष्यामि&nbsp;। यथा हि कल्पनामात्रसारं तत एवानवस्थितैकरूपं क्षणेन कल्पनाशतसहस्त्रसहं
+         स्वप्नादिविलक्षणमपि सुष्ठुतरां हृदयग्रहनिदानमत्यक्तस्वालम्बनब्रह्यकल्पनटोपरचितं रामरावणादिचेष्टितमसत्यं
+         कुतोऽप्यभूताद्भुतवृत्त्या<a href="" class="app" title="अकृताकृतवृत्त्या <b&gt;म</b&gt;"><span class="appnum"><sup>2</sup></span></a> भाति&nbsp;। तथा भासमानमपि च <a href="" class="app" title="पुरुषार्थोपदेशोपाय <b&gt;म</b&gt;"><span class="appnum"><sup>3</sup></span></a>पुमर्थोपायतामेति&nbsp;। तथा तादृगेव विश्वमिदमसत्यनामरूपप्रपञ्चात्मकमथ च श्रवणमननादिवशेन
+         परमपुमर्थ<a href="" class="app" title="प्रवाचकमिति <b&gt;के</b&gt;"><span class="appnum"><sup>4</sup></span></a>प्रापकमिति
+         लोकोत्तरपरमपुरुषार्थसूचनेन शान्तरसोपक्षेपोऽयं भविष्यति&nbsp;।
+      </p> 
+      
+      
+      <p>‘स्वं स्वं निमित्तमादाय <a href="" class="app" title="शान्तमुत्पद्यते <b&gt;म</b&gt;"><span class="appnum"><sup>1</sup></span></a>शान्तादुत्पद्यते रसः&nbsp;।’ इति&nbsp;॥ (ना. शा. ६.) तदनेन पारमार्थिकं प्रयोजनमुक्तम्&nbsp;। इति व्याख्यानं <b>हृदयदर्पणे</b> पर्यग्रहीत्&nbsp;। यदाह  —
+      </p>
+      
+      ﻿<span class="pageinfo">[page 006]</span>
+      
+      
+      <div class="lg" type="">
+         <span class="line">‘नमस्त्रैलोक्यनिर्माणकवये शम्भवे यतः&nbsp;।</span>
+         <span class="line">प्रतिक्षणं जगन्नाट्यप्रयोगरसिको जनः&nbsp;॥’ इति&nbsp;॥</span>
+         
+      </div>
+      
+      
+      <p>एवं नाट्यशास्त्रप्रवचनं प्रयोजनमुक्तम्&nbsp;। तत्प्रयोजनन्तु दर्शितमेव&nbsp;। अभिधेयश्च नाट्यवेदः&nbsp;।
+         व्युत्पाद्यव्युत्पादकभावलक्षणश्च सम्बन्धः&nbsp;। यच्च शास्त्र<a href="" class="app" title="यञ्च शास्त्रार्थम् <b&gt;म</b&gt;"><span class="appnum"><sup>1</sup></span></a> यो जिज्ञासते स तावत्तदवसरे तच्छास्त्रप्रणेतरि प्रसिद्धे सिद्धवदेव<a href="" class="app" title="सिद्धमेव"><span class="appnum"><sup>2</sup></span></a> प्रामाण्य<a href="" class="app" title="प्रमाणम्"><span class="appnum"><sup>3</sup></span></a>मभिमन्यत इति <a href="" class="app" title="तद्वचनोक्तात्"><span class="appnum"><sup>4</sup></span></a>तद्वचनोक्ताय सम्बन्धाभिधेयप्रयोजनाय तदैव निर्विशङ्कः प्रवर्तते&nbsp;। परस्त्वधिगतसकलशास्त्रार्थो
+         बहुमन्यते न वेति तदिदमन्यत्&nbsp;। प्रथमं तावत्प्रवृत्तमादिवाक्यं <a href="" class="app" title="प्रवृत्तम् <b&gt;म</b&gt;"><span class="appnum"><sup>5</sup></span></a>प्रयुक्तमेवेति स्वानुभवप्रसिद्धम्&nbsp;। तेनार्थसंशयतर्ककौतुकज(न)नादिवाक्यं प्रवर्तकमिति
+         किमनेन&nbsp;। (१)&nbsp;।
+      </p>
+      
+      
+      <p><a href="" class="app" title=" <b&gt;के</b&gt;"><span class="appnum"><sup>1</sup></span></a>अत्र मुनिः सकललोकहितकरणप्रवृत्तोत्साहसंपदुपेतो धर्मपीठानुप्रविष्टस्तदुचिताङ्गिकवाचिकानुभावप्रकटनपुरस्सरं
+         स्वप्रवृत्तिप्रयोजनमेव निरूपितवान्&nbsp;। अस्य च पितामहमहेश्वरौ प्रति स्मृत्यौत्सुक्यधृतिमत्त्यादयो
+         व्यभिचारिभावाः प्रतीयन्ते&nbsp;।
+      </p>
+      
+      
+      <p>अथ मुनिरात्मानमेव परत्वेन कल्पयन्ब्रह्मणा यदुदाहृतमित्येतदेव पुराकल्पप्रदर्शनेन निश्चाययति
+         — <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_01-dn.html#N%C4%81%C5%9A%C4%81.1.2" target="_blank">समाप्तजप्य</a></span>मित्यादिना श्लोकद्वयेना&nbsp;। अनुरागित्वं नाट्यवेदयोग्यता नाट्यस्यादुष्टता विनोदहेतुता
+         सुज्ञानत्वं प्रश्नावसरलाभयोगः प्रसिद्धत्वं चाचार्ययोग्यता शिष्टप्रामाणिकत्वं नियमपूर्वशास्त्रग्रहणं
+         प्रसिद्धादरणानुमेयोपादेयत्वप्रकटनमनिद<a href="" class="app" title="टनमिदम्प्रा"><span class="appnum"><sup>1</sup></span></a> म्प्राथम्यप्रवृत्तता शिष्याणामूहापोहपाटवं ग्रहणयोग्यता चेति क्रमेण पदानां तात्पर्यमपुनरुक्तम&nbsp;।
+         (२-३)&nbsp;।
+      </p>
+      
+      
+      <p>किं पप्रच्छुरिति दर्शयति — <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_01-dn.html#N%C4%81%C5%9A%C4%81.1.4" target="_blank">योऽयमिति</a></span>&nbsp;। <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_01-dn.html#N%C4%81%C5%9A%C4%81.1.4" target="_blank">भगवता</a></span> तत्रभवता गुरुणेति भरतमुनिरेवैवमुक्तः&nbsp;। तेन भरतमुनिया यो <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_01-dn.html#N%C4%81%C5%9A%C4%81.1.4" target="_blank">ग्रथितः</a></span> सुन्दरतमवस्तुसमाहरणयोजनया गुम्फितः कोऽप्ययं वस्तुविशेषः स तावत्प्रयोगसमयेऽस्माभिर्दृष्ट
+         इति प्रत्यक्षत्वेन <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_01-dn.html#N%C4%81%C5%9A%C4%81.1.4" target="_blank">अयमिति</a></span> परामर्शः&nbsp;। अविदितान्तस्सारतया चास्माकं प्रत्यक्षोऽप्यप्रत्यक्षकल्प इति यच्छब्देनानिर्वाच्यविशेषत्वमुक्तम्&nbsp;।
+         अत एव न तच्छब्दसङ्गतिरित्र मृग्यते<a href="" class="app" title="दृश्यते <b&gt;म</b&gt;"><span class="appnum"><sup>1</sup></span></a> यथा यत्किञ्चिद्वदतिति&nbsp;। स चायं परीक्षणीय<a href="" class="app" title="णीये यतो <b&gt;भ</b&gt;"><span class="appnum"><sup>2</sup></span></a>तत्त्वो यतो वेदैः सम्मितः तुल्यः&nbsp;।
+      </p>
+      
+      ﻿<span class="pageinfo">[page 007]</span>
+      
+      <p>तथा हि — धीरोदात्तधीरललितधीरोद्धतधीरप्रशान्तानां पूर्णोपायप्रवृत्तत्वेन नायकानाम<a href="" class="app" title="तदुपाश्रयाश्रयेण <b&gt;मभ</b&gt;"><span class="appnum"><sup>1</sup></span></a>तादृगुपायाश्रयेण प्रतिनायकानां च चरितं सफलत्वाफलत्वेन साक्षात्क्रियमाणं वीराद्भुताभ्यां
+         वीरशृङ्गारहास्यैः वीररौद्रभयानककरुणैः वीरबीभत्सशान्तैश्च प्रतिनायकगतरसान्तरसान्तरतया
+         सातिशयचमत्कारगोचरीभूतैर्हृदयानुप्रवेश विदधद्धर्मादिचतुष्कोपायोपादेयधियमधर्मादिभ्यश्च
+         निवृत्तिं निर्विशङ्कं विधत्त<a href="" class="app" title="विदधाति <b&gt;के</b&gt;"><span class="appnum"><sup>2</sup></span></a> इत्यस्माकमधिगतश्रुतितत्त्वानामपि प्रत्यक्षसिद्धमेवैतत्&nbsp;। प्रसिद्धा चास्य नाट्यवेद<a href="" class="app" title="नाट्यसंज्ञा <b&gt;भ</b&gt;"><span class="appnum"><sup>3</sup></span></a>संज्ञा&nbsp;। अत एवोपदेशहेतुत्त्वाद्धेदः&nbsp;। एवं च जिज्ञास्यतत्त्व एवायम&nbsp;।
+      </p>
+      
+      
+      <p>स <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_01-dn.html#N%C4%81%C5%9A%C4%81.1.4" target="_blank">कथमुत्पन्नः</a></span>&nbsp;। केन प्रकारेणोत्पन्नः&nbsp;। तत्प्रयोजनस्य वेदेभ्य एव सिद्धेः&nbsp;। उत्पन्न इति यदि पूर्वमेव
+         <a href="" class="app" title="वेदवदपदार्थस्य तत्तथा कथमेनं पर्यनुयुञ्जीत <b&gt;मभ</b&gt;"><span class="appnum"><sup>1</sup></span></a>वेदवद(नादिपदा?) र्थः स्यात्तत्कथं नामायं पर्यनुयुज्येत&nbsp;। श्रुतिचतुष्टयवेदवेत्यर्थः&nbsp;।
+         अथ यस्य वेदेभ्यो नोपदेशः सिद्धः, स कस्तादृगित्याह<span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_01-dn.html#N%C4%81%C5%9A%C4%81.1.4" target="_blank">कस्या</a></span>धिकरिणः&nbsp;। <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_01-dn.html#N%C4%81%C5%9A%C4%81.1.4" target="_blank">कृते</a></span> प्रयोजनकरणाय&nbsp;। किं वेदाधिकृत एवात्राधिकारी उत तदन्योऽपीत्यधिकारिविषयोऽयं प्रश्नः&nbsp;।
+         पूर्वस्तु सिद्धसाध्यतया निष्प्रयोजनत्वेनाक्षे<a href="" class="app" title="के क्षेपाय <b&gt;RK</b&gt;"><span class="appnum"><sup>2</sup></span></a>पोऽयं प्रश्नः&nbsp;। <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_01-dn.html#N%C4%81%C5%9A%C4%81.1.5" target="_blank">कत्यङ्ग</a></span> इति&nbsp;। यद्यस्य सुबहून्यङ्गानि तद्दुरवधारतयाऽशक्य<a href="" class="app" title="तदवधारणतया अश <b&gt;मभ</b&gt;"><span class="appnum"><sup>3</sup></span></a>निर्णयः&nbsp;। तथा परिदृश्यमानगीतातोद्याभिनयादिमध्ये कत्यस्याङ्गानि&nbsp;। किञ्च तदङ्गिरूपमुताङ्गसमुदायमात्रं
+         नाट्यमिति तृतीयः प्रश्नः&nbsp;।
+      </p>
+      
+      
+      <p><span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_01-dn.html#N%C4%81%C5%9A%C4%81.1.5" target="_blank">किंप्रमाणश्चेति</a></span>&nbsp;। ननु प्रत्यक्षप्रमाणसिद्धत्वं तावन्नाट्यस्य&nbsp;। यद्वक्ष्यति — ‘दृश्यं श्रव्यं च यत्’ <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_01-dn.html#N%C4%81%C5%9A%C4%81.1.11" target="_blank">(ना. शा. १-११)</a></span> इति&nbsp;। श्रेयःप्राप्त्युपायज्ञापकत्वमपि मुनीनां स्वसंवेदनसिद्धम्&nbsp;। अन्यथा तु विचार्यत्वमेवास्य
+         न स्यादित्युक्तम्&nbsp;। तत्कोऽयं प्रश्नः&nbsp;। सत्यम&nbsp;। किन्तु <a href="" class="app" title=" <b&gt;के</b&gt;"><span class="appnum"><sup>1</sup></span></a>अङ्गविषयोऽयं प्रश्नः&nbsp;। किं प्रमाणः किं प्रमाणाङ्ग इति यावत्&nbsp;।
+         यान्यङ्गानि कानिचित्तानि यदि विज्ञेयानि, केन प्रमाणेन किमङ्ग<a href="" class="app" title="किमङ्गता <b&gt;के</b&gt;"><span class="appnum"><sup>2</sup></span></a> ज्ञायते&nbsp;। तथा केन प्रमाणेनाङ्गाङ्गिभावनियमोऽत्र ज्ञेयः&nbsp;। प्रमाणमत्र निश्चयजनकम्&nbsp;।
+      </p>
+      
+      
+      <p>अन्ये तु नाट्यगतानां रूपकादीनां पाठ्याभिनयरसगीतानां च किं प्रमाणं का सङ्ख्येति विभागविषयोऽय<a href="" class="app" title="विषयो वाऽयम् <b&gt;मभ</b&gt;"><span class="appnum"><sup>1</sup></span></a> प्रश्न इत्याचक्षते&nbsp;।
+      </p>
+      
+      
+      <p><span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_01-dn.html#N%C4%81%C5%9A%C4%81.1.5" target="_blank">अस्येति</a></span> नाट्यस्य&nbsp;। कीदृक्प्रयोगः&nbsp;। यदि युगपदङ्गानि प्रयुज्यन्ते तद्भिन्नाक्षग्राह्येषु युगपत्संवेदनाभावात्
+         कथमेकं नाट्यमिति प्रतिपत्तिः&nbsp;। क्रमप्रयोगेऽपि नि(न)तराम्&nbsp;। तस्मात्कथं प्रयोग इति&nbsp;।
+         तथा किं नियतेनैवाङ्गाङ्गिभावेन प्रयोग उतानियतेनेति नाट्यङ्गाप्रयोगद्वारेण सामान्याभिनयचित्राभिनयनाटकादिरूपकवैचित्र्यविषयः
+         प्रश्नः ﻿<span class="pageinfo">[page 008]</span>पञ्चमः&nbsp;। एवं प्रश्नपञ्चकात् कविप्रयोक्त्रोरुपदेशपरं शास्त्रमिति लक्ष्यते&nbsp;। तेन यदाह<a href="" class="app" title="यदा हि <b&gt;मभ</b&gt;"><span class="appnum"><sup>1</sup></span></a> ‘तस्मात्कर्तृर्द्रष्टुः प्रयोक्तुरुपदेशपरमिदं शास्त्रम्’ इति, तत्र द्रष्टुरित्यसत्&nbsp;।
+         न ह्यनेन सामाजिको विनीयते&nbsp;। अयोग्यत्वात्&nbsp;। श्रुतिस्मृतीतिहासादिष्विवात्रापि न च तदुपदेशोऽत्र
+         श्रूयते&nbsp;। द्रष्टा तु यदि प्रेक्षाप्रवर्तक उच्यते तदा तस्यापि न प्रबन्धेनोपदेशः&nbsp;। अपि
+         तु क्वचिदेव ‘नर्तकोऽर्थपतिर्वा’ इत्यादौ&nbsp;। एवं चोपदेश्यत्वे स्थपतिमालाकारप्रभृति विश्वमपीहोपदेश्यं
+         स्यादित्यलमनेन&nbsp;।
+      </p>
+      
+      
+      <p><span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_01-dn.html#N%C4%81%C5%9A%C4%81.1.5" target="_blank">यथातत्त्वमिति</a></span>&nbsp;। नात्र क्रमं प्रति भरोऽस्माकम्&nbsp;। नापीयत्तां प्रति&nbsp;। अज्ञा हि वयमत्र प्रष्टारः&nbsp;।
+         अत एवोपेय<a href="" class="app" title="उपायपर <b&gt;म</b&gt;"><span class="appnum"><sup>1</sup></span></a>परत्वेनैव मुख्यतया प्रश्नो यथा बालक आह — ‘दुःखं मे<a href="" class="app" title="मेव <b&gt;भ</b&gt;"><span class="appnum"><sup>2</sup></span></a> शमय’ इति&nbsp;। तज्ज्ञस्तूपायं प्रश्नयति ‘कुतोऽन्नं लभ्यत’ इति&nbsp;। तेनोपे<a href="" class="app" title="नोपाय <b&gt;म</b&gt;"><span class="appnum"><sup>3</sup></span></a>यमुखेन प्रवृत्तमिदं शास्त्रमुत्तरदानोपनतवस्त्वन्तरोपेयप्रश्नक्रमेण तदुपेयोपायादिप्रबन्धेन
+         स्थितमिति मन्तव्यम्&nbsp;। तेन यादृशा क्रमेण रूपणयोग्यं तथाप्यप्र(थाऽप्र)श्नितमपि यदि किञ्चिदस्ति
+         तदपि स्वयमेव निरूपयेति&nbsp;। तत्त्वानतिक्रमेण तत्त्वयोग्यं <a href="" class="app" title="क्रमेण तत्त्वं च <b&gt;भ</b&gt;"><span class="appnum"><sup>4</sup></span></a>तत्त्वं च
+         निरूपणीयम्&nbsp;। एतदिति&nbsp;। लक्षणपरीक्षापर्यन्तमेतत्&nbsp;। (४-५)
+      </p>
+      
+      
+      <p>यदि त एवं पप्रच्छुः भरतमुनिः किमकार्षीदित्याह- <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_01-dn.html#N%C4%81%C5%9A%C4%81.1.6" target="_blank">तेषां त्विति</a></span>&nbsp;। तुरवधारणे&nbsp;। श्रेत्वैव न तु विलम्ब्येति&nbsp;। पौर्वकाल्यमात्रे क्त्वाल्यपोर्विधानात्&nbsp;।
+         <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_01-dn.html#N%C4%81%C5%9A%C4%81.1.6" target="_blank">तत</a></span> इति&nbsp;। यतः स तत्त्वविन्मुनिः ते च तदुपदेशयोग्याः तस्माद्धेतोः&nbsp;। कथाग्रहणं यथातत्त्वमित्येतस्यैवार्थं
+         स्फुटीकरोति&nbsp;।
+      </p>
+      
+      
+      <p>यत्तु प्रयोगप्रश्ने प्रत्यक्षेण प्रयोगप्रकटनमुत्तरं स्यादित्याशङ्कां परिहर्तुं कथाग्रहणमिति
+         तत्त्वसत्&nbsp;। वक्तुमर्हसीत्युक्ते तस्याः कोऽवसरः&nbsp;। एवं भरतमुनिः परवदात्मानं प्रकल्प्येन्तं
+         ग्रन्थमभिहितवान्&nbsp;। अन्ये त्वियन्तं ग्रन्थं कश्चिच्छिष्यो व्यरीरचत्&nbsp;। तत्र ब्रह्मणेति
+         भरतमुनिः प्रथमश्लोके निर्दिष्टः&nbsp;। कथं ब्रह्मन्नुत्पन्न इत्येतदेवमेकवाक्यत्वेन निर्वहति&nbsp;।
+         तदनन्तरन्तु भवद्भिः शुचिभिरित्यादिर्भरतमुनिरचितो ग्रन्थः&nbsp;। मध्येऽत्र ﻿<span class="pageinfo">[page 009]</span><b>षट्त्रिंशदध्याय्यां</b> यानि प्रश्नप्रचिवचनयोजनवचनानि तानि तच्छिष्यवचनान्येवेत्याहुः&nbsp;।
+      </p>
+      
+      
+      <p>तच्चासत्&nbsp;। एकस्य ग्रन्थस्यानेकवक्तृवचनसन्दर्भत्वे प्रमाणाभावात्&nbsp;। स्वपरव्यवहारेण पूर्वपक्षोत्तरपक्षादीनां
+         श्रुतिस्मृतिव्याकरणर्कादिशास्त्रेष्वेकविरचितेष्वपि दर्शनात्&nbsp;।
+      </p>
+      
+      
+      <p>एतेन <b>सदाशिवब्रह्मभरतमत</b>त्रयविवेचनेन <b>ब्रह्ममत</b>सारताप्रतिपादनाय मतत्रयीसारासारविवेचनं तद्ग्रन्थखण्डप्रक्षेपेण विहितमिदं शास्त्रम्,
+         न तु मुनिविरचितमिति यदाहु<b>र्नास्तिकधुर्योपाध्याया</b>स्तत्प्रत्युक्तम्&nbsp;। सर्वानपह्रवनीयाबाधितशब्दलोक-
+         प्रसिद्धिविरोधाच्च&nbsp;।
+      </p>
+      
+      
+      <p>अत्र केचिदाहुः-प्रश्नपञ्चकमत्रैवाध्याये तावन्निर्णीयते&nbsp;। उद्देशस्थित्या तद्विभागलक्षणपरीक्षापराणि
+         चाध्यायान्तराणीति&nbsp;। अन्ये त्वाहुः पञ्चभिरध्यायैः पूर्वरङ्गविधानपर्यन्तैः प्रश्नद्वयं
+         निर्णीतम्&nbsp;। सामान्याभिनयचित्राभिनयान्तैः शिष्टैस्तु
+         प्रश्नत्रयमिति&nbsp;।
+      </p>
+      
+      
+      <p>वयं तु ब्रूमः — नात्र क्रमः कश्चित्&nbsp;। अपि तु यथावसरं महावाक्यात्मना <b>षट्सहस्री</b>रूपेण प्रधानतया प्रश्नपञ्चकनिरूपणपरेण शास्त्रेण तत्त्वं निर्णीयते&nbsp;। न तु क्रमः कश्चित्&nbsp;।
+         एतच्च ग्रन्थव्याख्यानप्रसङ्ग एव स्फुटीकरिष्यामः&nbsp;। (६)
+      </p>
+      
+      
+      <p>तत्र ‘कथं कस्य वा’ इत्यमुमर्थं निर्णिनीषुराह — <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_01-dn.html#N%C4%81%C5%9A%C4%81.1.7" target="_blank">भवद्भि<a href="" class="app" title="रिति"><span class="appnum"><sup>1</sup></span></a></a></span>रित्यादि&nbsp;। घटादीनामुत्पत्तिर्व्यवहारसिद्धैव कुलालादिभिरनुगम्यत इति घटः क्रियत इति
+         युक्तम्&nbsp;।
+         नत्वेवं नाट्यस्य&nbsp;। तस्य तूत्पत्तिरेव विरिञ्चोपज्ञतया स्थितेति <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_01-dn.html#N%C4%81%C5%9A%C4%81.1.7" target="_blank">सम्भवो ब्रह्मनिर्मित</a></span> इत्युक्तम्&nbsp;। केचिदत्रानादित्वं वेदवन्नाट्यस्याचक्षाणाः उत्पत्त्यादिशब्दान् स्मरणाभिव्यञ्जनादावुपचरन्ति
+         (७)&nbsp;।
+      </p>
+      
+      
+      <p>तत्र सम्भूतेः कारणमुखेनाभिधाने कर्तव्ये कालस्य सर्वत्र पूर्वकारणत्वादुचितकालपरिग्रहेण
+         तद्विधाधिकारिविषयतां दर्शयितुमाह — <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_01-dn.html#N%C4%81%C5%9A%C4%81.1.8" target="_blank">पूर्वमि</a></span>त्यादिश्लोकपञ्चकम्&nbsp;।
+      </p> 
+      
+      ﻿<span class="pageinfo">[page 010]</span>
+      
+      
+      <p>अस्मिन्नवसरे पितामहो देवैरिदभुक्त इति महावाक्यस्य सङ्गतिः — कस्मिन्नवसरे <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_01-dn.html#N%C4%81%C5%9A%C4%81.1.8" target="_blank">पूर्वमि</a></span>ति&nbsp;। नास्मिन्नेव कल्पेऽपि तु पूर्वकल्पेष्वपीत्यर्थः&nbsp;। मन्वन्तराणि चतुर्दश, तावत्कल्पोऽयं
+         तद्ब्राह्यं दिनम्&nbsp;। तत्र स्वायम्भुवं नाम यत्कल्पस्य प्रथमं मन्वन्तरम्&nbsp;। वैवस्वतमन्वन्तरन्तु
+         सप्तमम्, यत्राद्य वर्तामहे&nbsp;। तत्र सर्वेष्वेव मन्वन्तरेषु त्रेतावसरे ब्रह्मणा नाट्यवेदः
+         प्रवर्तितः&nbsp;। कृतयुगे तु नेति तात्पर्यम्&nbsp;। योजना तु-स्वायम्भुवे आद्ये मन्वन्तरे यत्कृतयुगं
+         तस्मिन् निवृत्ते सति यत्त्रेतायुगं तस्मिन् सम्यक्सन्ध्यतिक्रमेण स्फुटतरं प्रवृत्ते&nbsp;।
+         न केवलं तत्रैव मन्वन्तरे&nbsp;। तु शब्दो यावच्छब्दार्थे&nbsp;। यावद्वैवस्वतस्य मनोरन्तरे समये
+         यत्त्रेतायुगं तस्मिन्प्रवृत्तेऽपि&nbsp;। तेनाद्यत्ननिरूपणेन सर्वेषां मध्वममन्वन्तराणां
+         सङ्ग्रहः&nbsp;। तेन सर्वेषु त्रेतायुगेषु नाट्यप्रवृत्तिरित्युक्तं भवति&nbsp;।
+      </p>
+      
+      
+      <p>अस्मिन्नवसरे किमसावुक्तः&nbsp;। आह — <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_01-dn.html#N%C4%81%C5%9A%C4%81.1.10" target="_blank">जम्बूद्वीपे</a></span> कर्मभूमिस्थाने यो लोकः सुखितदुःखितश्च तद्विषयं<a href="" class="app" title="तद्विषयकम्"><span class="appnum"><sup>1</sup></span></a> क्रीडनीयकं क्रीड्यते चित्तं विक्षिप्यते विह्रियते येन तदिच्छामः&nbsp;। करणे कृत्यो बाहुलकात्&nbsp;।
+         चित्तं च इतोऽमुतश्च नीयमानं मार्गेऽपि नि<a href="" class="app" title="विनि"><span class="appnum"><sup>2</sup></span></a>योज्यते&nbsp;। यदि वा क्रीडनाय हितं क्रीडनीयकम्&nbsp;। उभयत्राज्ञाताद्यर्थे कः&nbsp;। इदमस्माकं गुडप्रच्छन्नकटुकौषधकल्पं
+         चित्तविक्षेपमात्रफलमिति यन्न ज्ञायते&nbsp;। तच्च क्रीडनीयकं सुखितदुःखित एव भवति&nbsp;। न ह्येकन्तसुखिते
+         काले देशे वा क्रीडया किञ्चित्&nbsp;। नाप्येकान्तदुःखिते&nbsp;। तेन कृतयुगे कलिप्रान्ते वा इलावृतादिनिवासिनि
+         जने नारके वा न क्रीडोपपत्तिः&nbsp;। उत्तरपदार्थप्रधानस्तत्पुरुषः दुःखस्य बाहुल्यमाह&nbsp;। कथं
+         ज्ञायते सुखितदुःखितो लोक इति&nbsp;। यतः ईर्ष्याकोधादिभिः संमूढोऽधिवासितहृदयः&nbsp;। आदिग्रहणादनुरागतृष्णादिभिः&nbsp;।
+         तत्र क्रमेण कारणमाह — कामवशगतत्वादीर्ष्यादयो  राज्यलोभादिना क्रोधादयः&nbsp;। किमित्यधिकौ
+         कामलोभौ ? यतः सुखितदुःखितत्वस्य कारणं कामादीनां हेतुः <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_01-dn.html#N%C4%81%C5%9A%C4%81.1.9" target="_blank">ग्राम्यधर्मप्रवृत्तत्वम्</a></span>&nbsp;। ग्राम्योऽश्रुतशास्त्रार्थजनाकीर्णदेशोचितो धर्मः स्वधर्माननुपालनलक्षणः&nbsp;। तद्विषये
+         यतोऽसौ लोकः प्रवृत्तः&nbsp;। (८-९)
+      </p>
+      
+      ﻿<span class="pageinfo">[page 011]</span>
+      
+      
+      <p>नन्वेवं <a href="" class="app" title="सत्यधर्मबाहुल्यात् <b&gt;भ</b&gt;"><span class="appnum"><sup>1</sup></span></a>त्वधर्मबाहुल्यात् सुखमेषां कुत इत्याह — <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_01-dn.html#N%C4%81%C5%9A%C4%81.1.11" target="_blank">देवैः</a></span> श्रीमद्विजयाविमुक्तादिरुद्रावतारैः तथा राजसतामसहृदय<a href="" class="app" title="यकल्प्य"><span class="appnum"><sup>2</sup></span></a>जनकल्ष्यमानसपर्याकैर्दानवादिभिराक्रान्ते जम्बूद्वीपे&nbsp;। देवादिभिश्चाक्रान्ते स्ववशीक्रियमाणे&nbsp;।
+         नन्वेवं सत्सु विशुद्धव्यामिश्रधर्मसाधनेषु कथं धर्मः ? तेषां तत्राप्रवर्तमानत्वात्&nbsp;।
+         सत्यम्&nbsp;। किन्तु <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_01-dn.html#N%C4%81%C5%9A%C4%81.1.10" target="_blank">लोकपालैः</a></span> लोकपालांशसंविभागसमुत्पादितैः नरपतिभिः <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_01-dn.html#N%C4%81%C5%9A%C4%81.1.10" target="_blank">प्रतिष्ठिते</a></span> स्वधर्मसाधनं प्रति नियोजिते लोके&nbsp;। <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_01-dn.html#N%C4%81%C5%9A%C4%81.1.11" target="_blank">दृश्यं श्रव्यं</a></span> चेति&nbsp;। द्रष्टु श्रोतुं चार्हम्&nbsp;। न धर्मसाधनम्&nbsp;। शक्यं च&nbsp;। न तु दुर्भग<a href="" class="app" title="पुरु <b&gt;म</b&gt;"><span class="appnum"><sup>3</sup></span></a>परुषप्रायम्&nbsp;। लोक इत्येकवचनेन सर्वसाधारणतयैव यद्योग्यं तच्च स्पृश्यादिरूपं न भवति&nbsp;।
+         दृश्यश्रव्ययोस्तु बहुतरसाधारण्योपपत्तिः&nbsp;। असाधारणे चेर्ष्याक्रोधादय एव प्रवर्तन्ते&nbsp;।
+      </p>
+      
+      
+      <p>एतदुक्तं भवति — कृतयुगे सत्त्वप्रधाने स्वधर्ममात्रनिष्ठो लोको न सुखःदुःखे प्रति हेयोपादेयधिया
+         प्रयस्यति&nbsp;। त्रेतायान्तु राजसत्त्वाद्दुःखं जिघांसति&nbsp;। सुखं च प्रेप्सति&nbsp;। रजसश्चलत्वात्&nbsp;।
+         तदाऽसौ शास्त्रितेषु राजनियन्त्रणया प्रवर्त्यते&nbsp;। तत्र च तादृगुपायो निरूप्यो येन स्वयमेषां
+         भवति प्रवृत्तिः&nbsp;। तच्च नाट्यमेवेति&nbsp;।
+      </p>
+      
+      
+      <p>चकारेणेदमाह-तादृशा केनचिदुपायेन सम्बन्ध(त?)स्तत्कुरुते(स्तु कृतः) येन भिन्नेन्द्रियग्राह्ये
+         अपि दृश्यश्रव्ये एकानुसन्धानविषयत्वं न विजहीत इति सामान्याभिनय<a href="" class="app" title="तालप्राणत्वम् <b&gt;म</b&gt;, कालप्रमाणत्वम्"><span class="appnum"><sup>1</sup></span></a>कालप्राणत्वं प्रयोगस्य सूचितम्&nbsp;। दृश्यमिति हृद्यं श्रव्यमिति व्युत्पत्तिप्रदमिति प्रीतिव्युत्पत्तिदमित्यर्थ
+         इति&nbsp;। अनेन <a href="" class="app" title="न्विन्द्रादीनाम्&nbsp;। एतावता क इन्द्रादीनां स्वार्थ इत्यत्राह"><span class="appnum"><sup>2</sup></span></a>त्वि(नन्वि)न्द्रादीनां क एतावता स्वार्थः ? आह&nbsp;। लोकपालप्रतिष्ठिते<a href="" class="app" title="ष्ठिता यतो जम्बूद्वीपग <b&gt;भ</b&gt;"><span class="appnum"><sup>3</sup></span></a> जम्बूद्वीपे गता ये लोकाः ते हि स्वधर्मावस्थिता इज्यादिना नाकमाप्याययन्ति&nbsp;। अत एवेच्छाम
+         इति सर्वेषामैकमत्यमाह&nbsp;। अतोऽन्योन्योपकारवृत्त्या च दैवमानुषसर्गौ<a href="" class="app" title="सर्गावित्यपि निरूपितौ <b&gt;मभ</b&gt;"><span class="appnum"><sup>4</sup></span></a> निरूपितौ <b>विन्ध्यवासि</b>प्रभृतिभिः&nbsp;। अन्ये तु स्वप्रयोजनमेव क्रीडा महेन्द्रादीनामित्याहुः&nbsp;। त्रेतायुगे प्रवृत्ते
+         एवम्भूते च लोक इत्यनेनेदमुक्तं भवति — स्वर्गेऽपि हि तदा तदा मानुष<a href="" class="app" title="मानुषगता राजानः सुधर्मादिसम्बन्धचिन्तित"><span class="appnum"><sup>5</sup></span></a>गतराजसधर्माभिसम्बन्धचित्रितयागादियोगसरजसीकृतहृदयत्वाद्देवा अपि क्रीडनीयकमभिलेषुरिति&nbsp;।
+         (१०-११)
+      </p>
+      
+      
+      <p>एवं शास्त्राधिकृतोऽपि जनः नाट्येन सुखं विनीयत इति प्रयोजनप्रयोजनमुक्त्वा प्रयोजनान्तरमप्याह
+         — <b>न वेदव्यवहार</b> इत्यादिना&nbsp;। कृतयुगे सत्त्वोत्कर्षबलादेव सर्वः ﻿<span class="pageinfo">[page 012]</span>स्वधर्ममनुपालयति&nbsp;। <a href="" class="app" title="अन्यत्र"><span class="appnum"><sup>1</sup></span></a>अद्यत्वे तु राजसत्वात् शूद्रप्रकाराः करणादिजातीयाः सर्वेऽखर्वगर्वाक्रान्ता वर्णत्रयानुवृत्तिं
+         न विदधते&nbsp;। शास्त्रं भवद्भ्य एवमादिशतीति च ते वचनमात्रेण नाद्रियन्ते&nbsp;। न च ते वेदशास्त्रोपदेशयोग्याः&nbsp;।
+         अतः एवमाह — स<a href="" class="app" title="सम्यगिति"><span class="appnum"><sup>2</sup></span></a>म्यगिह स्थाने&nbsp;। श्रुत्या भवतामेतदुपदिष्टमिति ना(न) श्रा<a href="" class="app" title="न श्लाघ्याः <b&gt;के</b&gt;"><span class="appnum"><sup>3</sup></span></a>व्याः&nbsp;। <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_01-dn.html#N%C4%81%C5%9A%C4%81.1.12" target="_blank">सार्ववर्णिकमिति</a></span>&nbsp;। अधिकृतानामनधिकृतानामपि सुकुमाराणां व्युत्पत्तिदायीत्यर्थः&nbsp;। सर्वे वर्णाः प्रयोजनं
+         वि<a href="" class="app" title="विना यत्नेन प्रयस्यति&nbsp;। अनेन"><span class="appnum"><sup>4</sup></span></a>नेयत्वेव यस्तेत्यनेन पूर्वोक्तस्याधुनोक्तस्य च समस्तस्योपसंहारः&nbsp;।
+      </p>
+      
+      
+      <p>अन्ये तु पौनरुक्त्यं परिहर्तुमाहुः — ‘सर्वेषां वर्णानां सरससुकुमारेण नयेन स्वकर्तव्यनिरूपणं
+         यत्र काव्ये तस्निम् भवं तदाश्रितम्&nbsp;। येन सर्वो जमः सरससुकुमारानुरज्यदाशयः तदुपभोगनान्तरीयकतयैव
+         कार्याकार्यज्ञानमप्युपयुङ्क्ते क्षीरमध्यावस्थितौषधोपयोगवत्&nbsp;। ते<a href="" class="app" title="तेनानधिकृतानामपि <b&gt;म</b&gt;"><span class="appnum"><sup>1</sup></span></a>नाधिकृतानामनधिकृतानामपि सुकुमाराणां व्युत्पत्तिदायि ना<a href="" class="app" title="नाट्यं श्रुत"><span class="appnum"><sup>2</sup></span></a>ट्यम्&nbsp;। अश्रुतशास्त्राणामपि संवादादविचलकार्याकार्यविवेकसिद्धिरिति&nbsp;। (१२)
+      </p>
+      
+      
+      <p><span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_01-dn.html#N%C4%81%C5%9A%C4%81.1.13" target="_blank">एवमस्त्विति</a></span> तानिति&nbsp;। <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_01-dn.html#N%C4%81%C5%9A%C4%81.1.13" target="_blank">देवराज</a></span>मिति&nbsp;। तानुक्त्वा तान्विसृज्य&nbsp;। देवराजं विसृज्येति प्राधान्यादुक्तम्&nbsp;। इन्द्रादिन्
+         विसृज्येत्यर्थः&nbsp;।<a href="" class="app" title="पादानम् <b&gt;RK</b&gt;"><span class="appnum"><sup>1</sup></span></a> <b>योग</b>मिति&nbsp;। युगपत् सर्ववेदाभासकरम्&nbsp;। तत्त्वविदिति समस्तलोकवेदज्ञ इत्यर्थः&nbsp;। (१३)
+      </p>
+      
+      
+      <p>ततः किं चकारेत्याह श्लोकत्रेण <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_01-dn.html#N%C4%81%C5%9A%C4%81.1.14" target="_blank">धर्म्य</a></span>मित्यादिना&nbsp;। एवमिति (१-१३) धर्म्ममित्यादियुगलोक्त<a href="" class="app" title="युगलकोक्त"><span class="appnum"><sup>1</sup></span></a>मर्थं सङ्कल्प्य&nbsp;। चतुर्वेदस्मरणेन हेतुना तत इति&nbsp;। चतुर्भ्यो नाट्यवेदं चक्रे&nbsp;। हेतौ
+         शता&nbsp;। <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_01-dn.html#N%C4%81%C5%9A%C4%81.1.14" target="_blank">धर्म्य</a></span>मिति&nbsp;। धर्मे साधूपदेशाय&nbsp;। एवमर्थेऽपि&nbsp;। अन्ये तु धर्मार्थाभ्यामनपेतं यशः प्रयोजनमस्येति&nbsp;।
+         अत्र व्याखानद्वयेऽपरपुरुषार्थासङ्ग्रहः स्यात्&nbsp;। नाट्योत्पत्तिगर्भाधानकल्पे चास्मिन्
+         सङ्कल्पे यत्त्यक्तं तत्त्यक्तमेव&nbsp;। यशसश्च धर्मफलत्वात् पृथगुपादानं किमर्थम्&nbsp;। सोपदेशमित्यादेश्च
+         पौनरुक्त्यम्&nbsp;। तस्मादयमत्रार्थः — धर्मशब्देन चत्वारोऽपि पुरुषार्थाः&nbsp;। तेषु साधु साधकम्&nbsp;।
+         ननु किं साक्षात्&nbsp;। नेत्याह&nbsp;।
+      </p>
+      
+      <span class="pageinfo">[page 013]</span>
+      
+      
+      <p><span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_01-dn.html#N%C4%81%C5%9A%C4%81.1.14" target="_blank">सोपदेश्यं</a></span> सहोपदिश्यमानैरुपायैः (पुरुषार्थचतुष्टयोपायैः दशरूपकैरुपेतं) यद्वर्तते चतुर्वर्गोपायप्रदर्शकमिकत्यर्थः&nbsp;।
+         ननु वेदादयोऽप्येवम्&nbsp;। नैतत्&nbsp;। <a href="" class="app" title="सङ्ग्रहं सम्यग्ग्रहः&nbsp;। ग्रहणं प्रमाणं तेन युक्तम् (सा.)"><span class="appnum"><sup>1</sup></span></a>सम्यग्ग्रहणं सङ्गहः&nbsp;। यतः परं निर्विशङ्कप्रतीत्यर्थं प्रमाणान्तरं नाभ्यर्थ्यते&nbsp;। तच्च
+         साक्षात्काररूपमेव&nbsp;। यदाहुः — “सर्वा च प्रमा प्रत्यक्षपरा” इति&nbsp;। तेन सहेति <b>ससङ्ग्रहम्</b>&nbsp;। एवमपि प्रत्यक्षेण सदाचा<a href="" class="app" title="सदाचारादि"><span class="appnum"><sup>2</sup></span></a>रयज्ञादिदर्शानात्कोऽस्य भेदः&nbsp;। आह — <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_01-dn.html#N%C4%81%C5%9A%C4%81.1.14" target="_blank">सर्वकर्मानुदर्शकम्</a></span>&nbsp;। सर्वेषां कर्मणां क्रियमाणानामनु पश्चादचिरेणैव कालेन दर्शकं पञ्चषादिभिरेव दिवसैः
+         शुभाशुभकर्मतत्फलसम्बन्धसाक्षात्कारो यत्रेत्यर्थः&nbsp;। कस्येत्याह — <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_01-dn.html#N%C4%81%C5%9A%C4%81.1.14" target="_blank">लोकस्य</a></span>&nbsp;। यो यः कश्चिदस्मात्क्षणादूर्ध्वं भविष्यति लोकस्तस्योपदेश्यस्येत्यर्थः&nbsp;।
+      </p>
+      
+      
+      <p><a href="" class="app" title="अनुकार्याश्रयत्वेनात्र"><span class="appnum"><sup>1</sup></span></a>अनुकार्याभिप्रायेणात्र भविष्यत इति व्याख्यातम्&nbsp;। (न) च शब्देन भूतवर्तमानग्रहणमित्यधरोत्तरीभूतम्&nbsp;।
+         वृत्तराजर्षिवंशकीर्तनादेर्हि प्रधानतया स्वकण्ठेनाभिधानं युक्तम्&nbsp;। न तु भविष्यत इत्यास्तामेतत्&nbsp;।
+      </p>
+      
+      
+      <p>तस्मात् व्युत्पाद्याभिप्रायेणैव <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_01-dn.html#N%C4%81%C5%9A%C4%81.1.14" target="_blank">लोकस्येति</a></span> व्याख्येयम्&nbsp;।
+      </p>
+      
+      
+      <p>एवमपि तत्रैव केन लोकः प्रवर्त्यत इत्याह — <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_01-dn.html#N%C4%81%C5%9A%C4%81.1.14" target="_blank">अर्थ्यम्</a></span>&nbsp;। हृद्यतया सर्वजनानामपि नानाधिकारत्वेनाभिलषणीयमित्यर्थः&nbsp;। ननु प्रथममज्ञातपरमार्थे
+         कथमभिलषणम् आह&nbsp;। <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_01-dn.html#N%C4%81%C5%9A%C4%81.1.14" target="_blank">यशस्यम्</a></span>&nbsp;। सर्वत्र हृद्यतया प्रथितम्&nbsp;।
+      </p>
+      
+      
+      <p>न केवलं प्रधानपुरुषार्थोपायदर्शकं यावत्सर्वेषां शास्त्राणां कलाप्रधानानां येऽर्था
+         गीतनृत्तवाद्यादयस्तैः सम्पन्नं युक्तम्&nbsp;। तथा सर्वाणि शिल्पानि चित्रपुस्तादीनि प्रवर्तयति
+         सोपयोगत्वेनाक्षिपतीत्येवमेकेन यत्नेन समस्तवस्तुसिद्धिर्यतो भवति तन्नाट्यनमित्युक्तुं
+         भवति&nbsp;। तच्च <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_01-dn.html#N%C4%81%C5%9A%C4%81.1.15" target="_blank">सेतिहासम्</a></span>&nbsp;। इतिहासोपदेशकरूपं सप्रभेदम्&nbsp;। इतिरेवमर्थे प्रत्यक्षनिर्देशं <span class="pageinfo">[page 014]</span>द्योतयति&nbsp;। हः इहशब्द आगमः&nbsp;। आसनमासः&nbsp;। एवंप्रकाराः प्रत्यक्षपरिदृश्यमाना<a href="" class="app" title="आगतिकार्थाः, आगमितार्थाः <b&gt;भ</b&gt;"><span class="appnum"><sup>1</sup></span></a>आगमिकार्थाः कर्मफलसम्बन्धस्वभावा यत्रासते तेनेतिहासेन सहेतिपाठे
+         मत्वर्थीयोऽकारः&nbsp;। इतिः ज्ञानम्&nbsp;। तस्य हासो हर्षपूर्वको विकासो यत इति केचित्&nbsp;। इतिहासश्चतल्लक्षणमित्थं
+         किलासनं यत्र रूपकभेदानां भण्यते<a href="" class="app" title="दृश्यते <b&gt;म</b&gt;"><span class="appnum"><sup>2</sup></span></a>&nbsp;। उपदेशशब्देन च दशरूपकं तदुपयोगवदेव<a href="" class="app" title="तदुपयोगादेव <b&gt;भ</b&gt;"><span class="appnum"><sup>3</sup></span></a> (वद्देश) द्विहस्तादिलक्षणनाट्यवेदशास्त्रम्&nbsp;। तत्सहितस्यैव करणीयत्वेन सङ्कल्पः&nbsp;। अन्यथा
+         बुद्ध्या कलितस्यापि नाट्यस्य कथमन्यत्र सङ्क्रमणम्&nbsp;। तेन च विना कथं प्रयोगः&nbsp;। <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_01-dn.html#N%C4%81%C5%9A%C4%81.1.15" target="_blank">पञ्चम</a></span>मिति&nbsp;। य एकोऽपि चतुर्वेदानतिशेत इत्यर्थः&nbsp;। अहमिति यस्य सर्वलोककृत्योद्वहनमेव परं कृत्यम्&nbsp;।
+      </p>
+      
+      
+      <p><span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_01-dn.html#N%C4%81%C5%9A%C4%81.1.16" target="_blank">एवं सङ्कल्प्ये</a></span>ति&nbsp;। सङ्कल्पव्यापार एवायं बुद्ध्या वेदाङ्गैकीकारलक्षणो ब्रह्मणो नाट्यवेदोत्पादनम्&nbsp;।
+         ननु वेदस्मरणेन तत्र कथं हेतुता लब्धा&nbsp;। आह&nbsp;। <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_01-dn.html#N%C4%81%C5%9A%C4%81.1.16" target="_blank">चतुर्वेदाङ्गसम्भव</a></span>मिति&nbsp;। चत्वारो वेदाः<a href="" class="app" title="वेदाः चतुर्भ्यो वेदेभ्यः अङ्गानाम्"><span class="appnum"><sup>1</sup></span></a>&nbsp;। अङ्गानां पाठ्यादीनां सम्भवो यस्य&nbsp;। सम्भवत्यस्मादिति सम्भवः&nbsp;। अत एव वेदचतुष्टयमपि
+         यत्राङ्गानि प्रत्युपकरणीभूतमिति (स तथोक्तः) (१४-१६)&nbsp;।
+      </p>
+      
+      
+      <p>कुत्राङ्गे कस्य वेदस्योपयोग इति दर्शयति —<span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_01-dn.html#N%C4%81%C5%9A%C4%81.1.17" target="_blank">जग्राह पाठ्यमृग्वेदादिति</a></span>&nbsp;। इह पठ व्यक्तायां वाचीत्युक्तं व्यक्तत्वं विवक्षाविशिष्टस्वार्थार्पणक्षमत्वम्&nbsp;।
+         तच्च काक्वध्यायवक्ष्यमाणस्वरालङ्कारादिसामग्रीयोजनेन भवतीति तयोपस्कृतं पाठ्यमुच्यते&nbsp;।
+         तच्च प्राधान्यात्प्रथममुपात्तम्&nbsp;।
+      </p>
+      
+      
+      <p>तथा हि वक्ष्यति —</p>
+      
+      
+      <div class="lg" type="">
+         <span class="line">वाचि यत्नस्तु कर्तव्यो नाट्यस्यैषा तनूः स्मृता&nbsp;।</span>
+         <span class="line">अङ्गनैपथ्यसत्त्वानि वाक्यार्थं व्यञ्चयन्ति हि&nbsp;॥ इति (१४-२)</span>
+         
+      </div>
+      
+      ﻿<span class="pageinfo">[page 015]</span>
+      
+      
+      <p>अत एवाभिनयान्तर्भूतत्वेऽपि पृथगुपात्तम्&nbsp;। तदृग्वेदाद्गृहीतम्&nbsp;। तस्य त्रैस्वर्यप्रधानस्य
+         स्तोत्रशब्द(शस्त्र)द्वारेण यागोपकारित्वात्&nbsp;। पाठ्यमपि च त्रैस्वर्योपेतम्&nbsp;। ऐकस्वर्ये
+         काक्व(भाव)भावाभ्यां <a href="" class="app" title="स्वर्यैकत्वाभावाभ्यां च स्वस्यादौ <b&gt;म</b&gt;, स्वर्यादौ, स्वरस्यादौ स्वस्वियादौ (सा)"><span class="appnum"><sup>1</sup></span></a>च स्वरस्यादौ (चैकस्वभावाच्च स्वरादौ) गीतरूपापत्तेरिति हि वक्ष्यामः&nbsp;। (ना. शा. १७)
+      </p>
+      
+      
+      <p>पाठ्यगतस्वरप्रसङ्गात् तदनन्तरं सामभ्यो गीतं जग्राहेत्युक्तम्&nbsp;। उपरञ्चकत्वेन हि पश्चात्तस्याभिधानं
+         न्याय्यमिति केचित्&nbsp;। ‘गीतं प्राणाः प्रयोगस्य’ इति वक्ष्यमाणत्वात्&nbsp;। तदायत्तत्वाद्रसचर्वणायाः
+         समुचितमस्यात्रैवाभिधानमित्यस्मदु<b>पाध्यायाः</b>&nbsp;। चकारेणैतत्तुल्य<a href="" class="app" title="णैकतुल्य <b&gt;म</b&gt;"><span class="appnum"><sup>1</sup></span></a>कक्ष्यतामाह&nbsp;। एवकारेण गीतमात्रं ततो गृहीतं ‘गीतिषु सामाख्या’ (जैमिनि. २-१-३६) इति न्यायात्&nbsp;। तदाधारध्रुवापदयोजनमृग्वेदादेवेति दर्शयति&nbsp;। तत एव ध्रुवाध्याये वचनादत्रैव
+         सङ्गृहीतम् (?)&nbsp;।
+      </p>
+      
+      
+      <p>घनावनद्धरूपिसामगानक्रियाप्राणभूतकाल<a href="" class="app" title="कल्प"><span class="appnum"><sup>1</sup></span></a>साध्यात्मकतालसामान्यं स्वीकृतमत्रैव प्रविष्टम् (?)&nbsp;। आध्वर्यवकर्मप्रधाने तु यजुर्वेदेऽङ्गकर्मणां
+         प्रदक्षिणगमनादिक्रम (कम्?) एव प्रथमम्&nbsp;। पठिष्यति ‘या ऋचः पाणिका<a href="" class="app" title="पाणिगाः <b&gt;भ</b&gt;"><span class="appnum"><sup>2</sup></span></a>’ (३२-२) इत्यादि&nbsp;। ततसुषिरात्मकं चाप्यातोद्यं स्वरप्राधान्यात्&nbsp;।
+      </p>
+      
+      
+      <p>आथर्वणवेदे तु शान्तिकमारणादिकर्मसु नटस्येव तस्यर्त्विजः प्राष्टुदवैषुण्णा<a href="" class="app" title="वैषुणा"><span class="appnum"><sup>1</sup></span></a> (?) द्यनुभावानां प्रजाशत्रुप्रभृतिनाऽवधानग्रहणादिना लोहितोष्णीषादेर्नेपथ्यस्य तेषु
+         तेषु च कर्मसु विशिष्टप्रयत्नपुरुषसम्पाद्यमनोवष्टम्भात्मनः सत्त्वस्य सम्भवात्  ﻿<span class="pageinfo">[page 016]</span> ततोऽभिनयनामग्रहणम्&nbsp;। वाचिकस्त्वभिनयः पूर्वमेवोक्तः&nbsp;। प्राधान्यवि(न्यात् वि)भावानां
+         धृतिप्रमोदादिव्यभिचारिणां च परमार्थसतां समाहरणं प्रधानमिति विभावादिसामग्रीरूपरसात्मकचर्वणासम्भव
+         इति ततस्तद्ग्रहणमुक्तमिति न तटस्था एवैते&nbsp;। अत एव रस्यन्ते&nbsp;। तत्रैव च रस्यन्त इति हि
+         वक्ष्यामः&nbsp;।
+      </p> 
+      
+      
+      <p>तदेवं नाट्यादिरूपकोपक्रमं गीतातोद्यप्राणाभिनयवर्गपरिपुष्यद्रसचर्वणात्मकं परप्रीतिमयमेव
+         नाट्यम्&nbsp;। ततस्तद्व्युत्पत्तिरिति नाट्यमेव वेद इति क्रमेण प्रदर्शितम्&nbsp;। तेनाक्रम्य
+         योजनात्मकनियोगात्मकशासनप्राणशास्त्रवैलक्षण्येन स्वयमुपारूढज्ञानाभिधानविदः<a href="" class="app" title="नं विदः <b&gt;भ</b&gt;"><span class="appnum"><sup>1</sup></span></a> प्राणवेदरूपता नाट्य<a href="" class="app" title="ट्यवेदस्यैवेति स्थितम् <b&gt;म</b&gt;"><span class="appnum"><sup>2</sup></span></a>स्यैवेति सिद्धम्&nbsp;।
+      </p>
+      
+      
+      <p>एतदुपसंहरति — <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_01-dn.html#N%C4%81%C5%9A%C4%81.1.18" target="_blank">वेदोपवेदैरि</a></span>त्यादि&nbsp;। वेदा व्याख्याताः&nbsp;। वेदार्थानामुपकारकोऽर्थो वेद्यते येन स उपवेदात्मा&nbsp;। तद्यथा
+         ऋग्वेदस्य<a href="" class="app" title="दाख्यमन्त्रा <b&gt;म</b&gt;"><span class="appnum"><sup>1</sup></span></a> मन्त्रार्थवादादिव्याख्यानोपनयनप्रजारक्षणप्रदर्शक आयुर्वेदः&nbsp;। यतो <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_01-dn.html#N%C4%81%C5%9A%C4%81.1.18" target="_blank">महात्मा</a></span> ततः <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_01-dn.html#N%C4%81%C5%9A%C4%81.1.18" target="_blank">सर्ववेदी</a></span>&nbsp;। सर्ववित्त्वाच्च तथाविधसृष्टिशक्तः&nbsp;। एवमित्युपसंहरन् प्रश्नत्रयं कृतोत्तरमिति दर्शयति&nbsp;।
+         प्रयोजनस्याधिकारिणामङ्गानामङ्गाङ्गिभावस्य च निर्णीतत्वात् (१७-१८)&nbsp;।
+      </p>
+      
+      
+      <p>एवं पितामहसदृशेन सर्वदा नाट्यवेदशरीररूपकनिर्माणे कविना भाव्यमिति प्रदर्श्य तत्र विभवयुक्तो
+         विधेयनटजनश्च राजा प्रयोजयिता&nbsp;। भरतमुनिसदृशश्च सम्पन्नपरिवारः सर्ववित्प्रयोक्ता&nbsp;। प्रयोजक<a href="" class="app" title="प्रयोजन <b&gt;म</b&gt;, प्रयोजयितृ <b&gt;के</b&gt;"><span class="appnum"><sup>1</sup></span></a>महोत्सवप्रायः प्रयोगकालः&nbsp;। क्रीडाप्रस्तावव्याजोपदेशकाः विगतरागद्वेषा मध्यस्थवृत्तयः
+         निर्मलहृदयमुकुरे सति तन्मयीभवनयोग्यतोपेताः रसास्वादननिपुणाः&nbsp;। सामाजिका इत्येतत् पुराकल्पमुखेन
+         दर्शयत्यध्यापन(ध्ययान्त?)ग्रन्थेन  <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_01-dn.html#N%C4%81%C5%9A%C4%81.1.19" target="_blank">उत्पाद्य नाट्यवेदं त्वित्या</a></span>दिना&nbsp;। राजैव प्रयोजयितुं शक्त इति तु शब्दः&nbsp;।
+      </p>
+      
+      ﻿<span class="pageinfo">[page 017]</span>
+      
+      
+      <p>इतिहासो दशरूपकम्&nbsp;। <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_01-dn.html#N%C4%81%C5%9A%C4%81.1.20" target="_blank">कुशलाः</a></span>&nbsp;। ग्रहणधारणयोग्याः&nbsp;। <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_01-dn.html#N%C4%81%C5%9A%C4%81.1.20" target="_blank">विदग्धाः</a></span>&nbsp;। ऊहापोहसमर्थाः&nbsp;। <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_01-dn.html#N%C4%81%C5%9A%C4%81.1.20" target="_blank">प्रगल्भाः</a></span>&nbsp;। परिषद्यभीरवः&nbsp;। <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_01-dn.html#N%C4%81%C5%9A%C4%81.1.20" target="_blank">जितश्रमाः</a></span>&nbsp;। योग्याः समुचितदेहा अखिन्नकायाश्च&nbsp;। ग्रहणे इति&nbsp;। (पूर्व) गुरुमुखादवगमः&nbsp;। <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_01-dn.html#N%C4%81%C5%9A%C4%81.1.22" target="_blank">धारणं</a></span> तस्याविस्मरणम्&nbsp;। ज्ञानमूहापोहविचारः&nbsp;। <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_01-dn.html#N%C4%81%C5%9A%C4%81.1.22" target="_blank">प्रयोगः</a></span> पर्षदि प्रकटीकरणम्&nbsp;। चकारेण च तदुपयोगिगुणनिका व्यायामाभ्यासादिः&nbsp;। <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_01-dn.html#N%C4%81%C5%9A%C4%81.1.22" target="_blank">देवाः</a></span> सुखभूयिष्ठत्वात्&nbsp;। स्वाम्यादेशात्कथमपि यदि प्रवर्तेरन् तत्पूर्णपर्यवसानत्वं दुर्लभमेतैरित्यर्थः&nbsp;।
+         (१९-२२)
+      </p>
+      
+      
+      <p>तर्हि किं क्रियतामित्याह — <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_01-dn.html#N%C4%81%C5%9A%C4%81.1.23" target="_blank">य इम</a></span> इति&nbsp;। <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_01-dn.html#N%C4%81%C5%9A%C4%81.1.23" target="_blank">वेदज्ञा</a></span> इति ग्रहणधारणसामर्थ्यम्&nbsp;। <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_01-dn.html#N%C4%81%C5%9A%C4%81.1.23" target="_blank">गुह्यज्ञ</a></span>त्वेनाध्यात्मोपनिषदर्थवेदनधारणकौशलेन&nbsp;। रसाद्युपयोगिसात्त्विकसम्पादितसामर्थ्यम्&nbsp;। यद्वक्ष्यति
+         — ‘सत्त्वं मनःप्रयत्ननिर्वर्त्यम्’ इत्यादि&nbsp;। तेन —
+      </p> 
+      
+      
+      <div class="lg" type="">
+         <span class="line">न्यस्येत्प्राणं भ्रुवोर्मध्ये स्तम्भो बाष्पश्च चाक्षुषः&nbsp;।</span>
+         <span class="line">स्वेदो हृदि गुदे कम्पः पुलको मूर्ध्नि वक्त्रतः&nbsp;॥</span>
+         <span class="line">वैवर्ण्यं स्वरितं कण्ठे प्रलयो नासिकान्तरे&nbsp;॥</span>
+         
+      </div>
+      
+      
+      <p>इत्यादियोग्यत्वं तेषाम्&nbsp;। अत एवानुषङ्गतो नटस्यापि परमपुरुषार्थलाभो धारणादिवशात्&nbsp;।
+         <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_01-dn.html#N%C4%81%C5%9A%C4%81.1.23" target="_blank">ऋषय</a></span> इति&nbsp;। दर्शा(र्शना)दृषिरिति&nbsp;। ऊहापोहयोग्याः&nbsp;। संशितव्रता इति&nbsp;। ﻿<span class="pageinfo">[page 018]</span>अभ्यासे शक्ताः&nbsp;। तथेति&nbsp;। ग्रहणादीनामार्थक्रमः प्रदर्शनीय इत्यर्थः&nbsp;। इम<a href="" class="app" title="इदमिति <b&gt;म</b&gt;"><span class="appnum"><sup>1</sup></span></a> इति प्रत्यक्षेणैव दृष्टमेषां तदिति दर्शयति&nbsp;। (२३)
+      </p>
+      
+      
+      <p><span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_01-dn.html#N%C4%81%C5%9A%C4%81.1.24" target="_blank">श्रुत्वा त्विति</a></span>&nbsp;। <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_01-dn.html#N%C4%81%C5%9A%C4%81.1.24" target="_blank">मां</a></span> त्विति तु शब्देन ऋषिभ्योऽप्यन्येभ्योऽस्य विशेषमाह&nbsp;। ब्रह्मैव मामाहेत्यादरातिशयः&nbsp;।
+         पुत्रशतयोगाद्य(द)न्योन्यप्रवर्तितबहुतरपरिवारयोगः&nbsp;। <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_01-dn.html#N%C4%81%C5%9A%C4%81.1.24" target="_blank">अनघे</a></span> — त्यध्येषणया सोत्साहपरिषदा कृतसम्मानस्य सम्यक्प्रयोगनिष्पत्तिरिति सूचितम्&nbsp;। <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_01-dn.html#N%C4%81%C5%9A%C4%81.1.25" target="_blank">आज्ञापित</a></span> इत्यनुल्लङ्घनीयवचनताऽस्योक्ता&nbsp;। <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_01-dn.html#N%C4%81%C5%9A%C4%81.1.25" target="_blank">पितामहादि</a></span>त्यनाचार्योषितत्वाशङ्कां व्युदस्यति&nbsp;। प्रयुज्यत इति प्रयोगो दशरूपकम्&nbsp;। प्रयुज्यते
+         निर्वर्त्यतेऽनेनेति प्रयोगः&nbsp;। नाट्यलक्षणशास्त्रम्&nbsp;। तदहं पुत्रान्पाठयाञ्चकार&nbsp;। प्रयुक्तिश्च
+         प्रयोगः&nbsp;। तमध्यवसायपर्यन्तमहं पुत्रानध्यापयामास&nbsp;। तथाऽहं चकार यथा प्रयुक्तिं ते पुत्राः
+         सम्यक्प्राप्तवन्त इत्यर्थः&nbsp;। <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_01-dn.html#N%C4%81%C5%9A%C4%81.1.25" target="_blank">चापि</a></span>शब्दाभ्यां सूचिते द्वे द्वे आवृत्ती&nbsp;। मुनिसमुचितकर्तव्यान्तरव्यासङ्गोऽपि लिटा<a href="" class="app" title="लिङ्गात् <b&gt;मभ</b&gt;"><span class="appnum"><sup>1</sup></span></a> सूचितः&nbsp;। <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_01-dn.html#N%C4%81%C5%9A%C4%81.1.24" target="_blank">तत्त्वत</a></span> इति नाट्याचार्यस्य सम्यगाप्तत्वं गम्यते&nbsp;। (२४-२५)
+      </p>
+      
+      ﻿<span class="pageinfo">[page 019]</span>
+      
+      
+      <p>पुत्रान्नामभिर्दर्शयति — <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_01-dn.html#N%C4%81%C5%9A%C4%81.1.26" target="_blank">शाण्डिल्य</a></span>मित्यादिना&nbsp;। अत्र प्रसिद्धत्वं<a href="" class="app" title="त्वान्न"><span class="appnum"><sup>1</sup></span></a> नटानामादरकारणमिति तावन्मुख्यं नामग्रहणे प्रयोजनम्&nbsp;। आनुषङ्गिकं त्वन्यदपि&nbsp;। तद्यथा
+         विदूषकतापसादिनाम्नां तलाकमीनां (तथाकर्मिणां?) निर्वचनलब्धार्थयुक्त्या भूमिकाविशेषोपयोग
+         इति&nbsp;। <b>अन्यस्त्वाह</b> — शतमेवेह पठितम्&nbsp;। कञ्चना<a href="" class="app" title="कश्चा <b&gt;भ</b&gt;"><span class="appnum"><sup>2</sup></span></a>(तच्चा)भिनेयानां स्थाय्युत्पादन<a href="" class="app" title="इसनव <b&gt;भन</b&gt;"><span class="appnum"><sup>3</sup></span></a>रसनवकतद्गतव्यभिचारित्रयस्त्रिंशत्सात्त्विकाष्टकानुरूपाणां पञ्चाशतोऽर्थानां न्याय्यान्याय्यभेदेन
+         नायकप्रतिनायकविषयतया प्राधान्याभिप्रायेणेति&nbsp;। तत्र तु ‘कैशिक्यपि<a href="" class="app" title="क्येषा <b&gt;भ</b&gt;"><span class="appnum"><sup>4</sup></span></a> प्रयुक्ता स्यात्’ इत्युत्तरग्रन्थावकाशाभाव इत्यलमसहृदयाभिनिवेशव्याख्याभिः&nbsp;। (२६-३९)
+      </p> 
+      
+      ﻿<span class="pageinfo">[page 020]</span>
+      
+      
+      <p><span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_01-dn.html#N%C4%81%C5%9A%C4%81.1.40" target="_blank">यस्मि</a></span>न्निति&nbsp;। उत्तमप्रकृतिविचेष्टितादि&nbsp;। <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_01-dn.html#N%C4%81%C5%9A%C4%81.1.40" target="_blank">यथेति</a></span><a href="" class="app" title="यथेति <b&gt;भ</b&gt;, तदीय"><span class="appnum"><sup>1</sup></span></a>&nbsp;। कश्चित् तदीयहृदयहृर्षप्रदर्शनप्रकारेण योग्योऽन्यस्तदीयशोकप्रकटीकरणेनेति&nbsp;। (४०)
+      </p>
+      
+      
+      <p>अथ सकलप्रयोगप्राणभूतकैशिक्युपयुज्यमानोपकरणान्तसंहरणा<a href="" class="app" title="संभरणाय, संहाराया <b&gt;भ</b&gt;"><span class="appnum"><sup>1</sup></span></a>योपक्रमं दर्शयति <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_01-dn.html#N%C4%81%C5%9A%C4%81.1.41" target="_blank">भारती</a></span>मित्यादि&nbsp;। <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_01-dn.html#N%C4%81%C5%9A%C4%81.1.41" target="_blank">वृत्ति</a></span>मिति&nbsp;। धर्मादिपुरुषार्थचतुष्टये साध्ये वागङ्गसत्त्वचेष्टासामान्यम्&nbsp;। तच्च संक्षिप्तेनावान्तरभेदेन
+         चतुर्धां<a href="" class="app" title="र्धा च शुद्धम् <b&gt;भ</b&gt;"><span class="appnum"><sup>2</sup></span></a>&nbsp;। यद्यत्किल कर्मारभ्यते तत्र वाङ्मनःकायव्यापारस्तावदस्ति&nbsp;। तत्र कस्यचिल्लालित्यवैचित्र्यक्रमस्यानुप्रवेशः&nbsp;।
+         यत उत्तमप्रकृतीनां सौष्ठवमय एव सर्वो व्यापारः&nbsp;। तदेव तद्वृत्तिचतुष्टयम्&nbsp;। भारती वाग्वृत्तिः&nbsp;।
+         मनोव्यापाररूपा सात्त्विकी सात्त्वती मनोवृत्तिः&nbsp;। तदिति प्रख्यारूपं संवेदनम्&nbsp;। तद्यत्रास्ति
+         तत्सत्त्वं मनः&nbsp;। तस्येयमिति&nbsp;। ‘इयर्ति’<a href="" class="app" title="इयतीत्यार <b&gt;म</b&gt;"><span class="appnum"><sup>3</sup></span></a> इत्यरा भटाः सोत्साहा अनलसाः&nbsp;। तेषामियमारभटी <a href="" class="app" title="काचन <b&gt;म</b&gt;"><span class="appnum"><sup>4</sup></span></a>कायवृत्तिः&nbsp;। केशाः किञ्चिदप्यर्थक्रियाजातमकुर्वन्तो देहशोभोपयोगिनः&nbsp;। तद्वत्सौन्दर्योपयोगी
+         व्यापारः कैशिकीवृत्तिरिति तावन्मुख्यः क्रमः&nbsp;। अन्यस्य तु यस्तद्व्यपदेशः स तत्प्रधानत्वादनेकरसप्रधानं
+         पानकरीत्या कैशिकींत्यादि मधुरव्यपदेशवत्&nbsp;। एतच्च <a href="" class="app" title="प्रागेव <b&gt;मभ</b&gt;"><span class="appnum"><sup>5</sup></span></a>प्रागे वितनिष्यामः&nbsp;। ﻿<span class="pageinfo">[page 021]</span>एवं यत्किञ्चिल्लालित्यं तत्सर्वं कैशिकीविजृभ्भितम्&nbsp;। सा च तैः (पुरुषैः) प्रयोक्तुमशक्येति
+         तुशब्देनोक्तम्&nbsp;। तेन दशरूपं सर्व वैचित्र्यशून्यं तान्प्रति योजितम्&nbsp;। अत एव तादृशे
+         प्रयोगेऽवज्ञां वै शब्देन द्योतयति&nbsp;। <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_01-dn.html#N%C4%81%C5%9A%C4%81.1.41" target="_blank">प्रयुक्त</a></span> इति&nbsp;। तेषामभ्यासभूमौ योजित इत्यर्थः&nbsp;। (४१)
+      </p>
+      
+      
+      <p><span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_01-dn.html#N%C4%81%C5%9A%C4%81.1.43" target="_blank">क्षम</a></span>मिति&nbsp;। प्रयोगसमर्थ सादरविचित्रं प्रयुङ्क्ते&nbsp;। अत अवाह — <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_01-dn.html#N%C4%81%C5%9A%C4%81.1.41" target="_blank">द्रव्यम्</a></span>&nbsp;। सुन्दरम्&nbsp;। यतः सौन्दर्यप्राणैव सा कैशिकी&nbsp;। <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_01-dn.html#N%C4%81%C5%9A%C4%81.1.43" target="_blank">एवमिति</a></span>&nbsp;। बुद्धिकौशलं ज्ञातुं <a href="" class="app" title="तदीय <b&gt;मभ</b&gt;"><span class="appnum"><sup>1</sup></span></a>मदीयं तेनाहमेतत्पृष्टः&nbsp;। चकारेण प्रत्युत्पन्नप्रतिभानत्वं दर्शयति&nbsp;। अनेन झटिति कविहृदयग्रहणयोग्यत्वं
+         नाट्याचार्यगुण इति सूचयति&nbsp;। (४२-४३)
+      </p>
+      
+      
+      <p>न चात्यन्तापरिदृष्टे वस्तुनि उपकरणमुन्नेतुं शक्यम्&nbsp;। ब्रह्मणा तूपदेशसमये वचनमात्रेणोक्तमेतन्मध्ये
+         हृदयहारि वैचित्र्यं योजनीयमिति&nbsp;। अनेनाभिप्रायेण कैशिकीसाक्षात्करणं वर्णयति नृताङ्गहारेत्यादिना
+         युगलकेन&nbsp;। नर्तनं नृत्तम्&nbsp;। गात्राणामङ्गोपाङ्गानां विलासेन क्षेपः&nbsp;। न तु केनचित्कर्तव्यांशेन&nbsp;।
+         लोकोऽप्येवंविधे विषये एवमेवाह — ‘नृत्यतीव गच्छति’ इत्यादि&nbsp;। तत्र येऽङ्गहारा अङ्गानां
+         हरणानीति अत्रुटितरूपतया समुचितस्थान<a href="" class="app" title="प्राप्तास्तैः&nbsp;। प्राप्तस्तैः <b&gt;मभ</b&gt;"><span class="appnum"><sup>1</sup></span></a>प्राप्तिः तैः सम्पन्ना&nbsp;। <a href="" class="app" title="शङ्करस्येव <b&gt;भम</b&gt;"><span class="appnum"><sup>2</sup></span></a>शङ्करस्यैव भगवतः परिपूर्णानन्दनिर्भरीभूतदे<a href="" class="app" title="देहाच्चल"><span class="appnum"><sup>3</sup></span></a>होच्चलदान्तरनिर्वारसुन्दराकारस्य अत एव <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_01-dn.html#N%C4%81%C5%9A%C4%81.1.45" target="_blank">नृत्यतः</a></span> इतिकर्तव्यान्तरवैकल्यादानन्दनृत्तमात्रस्थितस्य&nbsp;। प्रयोज्यत्वेन <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_01-dn.html#N%C4%81%C5%9A%C4%81.1.45" target="_blank">मया दृष्टा</a></span>&nbsp;। ﻿<span class="pageinfo">[page 022]</span>ननु सा नाट्योपयोगिनी कथम्&nbsp;। आह&nbsp;। सैव यदि श्लक्ष्णेन श्लिष्यतोचितेन नेपथ्येन सहिता
+         भवति&nbsp;। यद्वक्ष्यति — ‘शृङ्गार उज्ज्वलवेषात्मक’ (ना. शा. ६-५०) इति तन्नाट्योक्तशृङ्गाररसः सम्भवति&nbsp;। नान्यथा&nbsp;। नेपथ्यग्रहणं सुकुमारस्याङ्गिकादेरप्युपलक्षम्&nbsp;।
+         तेन शृङ्गाराभिव्यक्तिहेतौ सुकुमारे चतुर्विधेऽप्यभिमये योजिते मधुरमन्थरवलनावर्तनाभ्रूक्षेपकटाक्षादिना
+         विना शृङ्गाररसास्वादस्य नामापि न भवति&nbsp;।
+      </p>
+      
+      
+      <p>किमत्रैव सोपयोगेत्याह — <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_01-dn.html#N%C4%81%C5%9A%C4%81.1.44" target="_blank">रसभावक्रियात्मिकेति</a></span>&nbsp;। रसानां भावो भावना कविनटसामाजिकहृदयव्याप्तिः&nbsp;। तस्या या क्रिया इतिकर्तव्यता सैवात्मा
+         स्वभावो यस्याः&nbsp;। एतदुक्तं भवति — रौद्रादिरसाभिव्यक्तावपि कर्तव्यायां योऽभिनय उपादीयते
+         सोऽप्यनुप्रासवलनावर्तनाद्यात्मकसुन्दरवैचित्र्यस्यामिश्रणया दुःश्लिष्टोऽश्लिष्ट एव
+         वा न रसाभिव्यक्तिहेतुर्भवतीति सर्वत्रैव कैशिकी प्राणाः&nbsp;। यद्वक्ष्यति — ‘अस्य शाखा च नृत्तं च वस्तून्यभिनयस्य’ <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_01-dn.html#N%C4%81%C5%9A%C4%81.8.95" target="_blank">(ना.शा.८-१५)</a></span> इति&nbsp;। शृङ्गाररसस्य तु नामग्रहणमपि न तया विना शक्यम्&nbsp;। <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_01-dn.html#N%C4%81%C5%9A%C4%81.1.46" target="_blank">स्त्रीजनादृत</a></span> इति&nbsp;। अयं भावः- यावन्निजहृदयरसविकस्वरनिर्वारचमत्कारपवित्रता न जाता भगवत इव, तावच्छिक्षाशतैरपि
+         वैचित्र्यमनाहार्यम्&nbsp;। मुनीनां च निसर्गविषयविमुखचित्तवृत्तीनां को निर्वृतिचमत्कारः&nbsp;।
+         योऽपि वा ससमाधिजः सोऽपि देहपर्यन्ततां न भजति&nbsp;। प्रत्युत ततः<a href="" class="app" title="ततश्चप, अतो <b&gt;के</b&gt;"><span class="appnum"><sup>1</sup></span></a> पलायमानाः (नः)&nbsp;। अतः स्त्रीणां तादृगस्ति वैचित्र्यम्&nbsp;। तत्सम्पर्कसम्भव<a href="" class="app" title="भवादार्द्र <b&gt;भम</b&gt;"><span class="appnum"><sup>2</sup></span></a>दार्द्रभावास्तु कदाचिच्छक्नुयुरपि&nbsp;। ﻿<span class="pageinfo">[page 023]</span>ये त्वाहुः — ‘न भगवतः कैशिकीप्रयोगसामर्थ्यम्&nbsp;। तेन दृष्टोमयेति पाठः उमया सह भगवतो
+         नृत्यतो भगवन्तमप्यनादृत्य भगवत्या प्रयुज्यमाना मया दृष्टा’ इति-त उक्तनीत्या पराकृताः&nbsp;।
+         तथा—
+      </p>
+      
+      
+      <div class="lg" type="">
+         <span class="line">विचित्रैरङ्गहारैस्तु देवो लीलासमन्वितैः&nbsp;।</span>
+         <span class="line">बबन्ध यः शिखापाशं कैशिकी तत्र निर्मिता&nbsp;॥ (ना. शा. २०-१३)</span>
+         
+      </div>
+      
+      
+      <p>इति भगवतो विष्णोः कैशिकीनिर्माणमनुचितं स्यादित्यलं बहुना&nbsp;। जनशब्देन रागिताशङ्कां परिहरति&nbsp;।
+         <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_01-dn.html#N%C4%81%C5%9A%C4%81.1.46" target="_blank">ततोऽसृजदिति</a></span>&nbsp;। <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_01-dn.html#N%C4%81%C5%9A%C4%81.1.46" target="_blank">मनसेति</a></span>&nbsp;। यथारुचि विनिर्मिता इत्यर्थः&nbsp;। (४४-४६)&nbsp;।
+      </p>
+      
+      
+      <p>नाट्यस्य योऽलङ्कारो वैचित्र्यहेतुः कैशिकी (लीलाविलासादिर्वा&nbsp;।) तत्र <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_01-dn.html#N%C4%81%C5%9A%C4%81.1.46" target="_blank">चतुराः</a></span>&nbsp;। अन्ये तु नाट्यालङ्काराः सामान्याभिनये (अ-२२) वक्ष्यमाणाः स्वभावजा ‘लीला विलास’
+         इत्याद्या दश ‘शोभा कान्तिः’ इत्याद्याश्च सप्त(प्ता)यत्नजा इति&nbsp;। अनेन मुनिकन्यानामत्रायोग्यत्वं
+         तावदुक्तम्&nbsp;। तासां नामग्रहणे पूर्ववत्प्रयोजनं निरूप्यम्&nbsp;। <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_01-dn.html#N%C4%81%C5%9A%C4%81.1.50" target="_blank">मे ददाविति</a></span>&nbsp;। नाट्याचार्यपरवशत्वमुपकरणसम्भारस्य दर्शितम्<a href="" class="app" title="कदाचित्विति <b&gt;म</b&gt;"><span class="appnum"><sup>1</sup></span></a>&nbsp;। ताश्च मया यथोचितं शिक्षादानेन प्रतिगृहीता इति सूचयन् कैशिकीमप्यहं योजितवानिति दर्शयति&nbsp;।
+         एवं वृत्तिचतुष्टयसम्पूर्णं नाट्यं गुणनिका<a href="" class="app" title="कायम <b&gt;भ</b&gt;, काकायाम <b&gt;म</b&gt;"><span class="appnum"><sup>2</sup></span></a>यामभ्यस्तमिति प्रदर्श्य गीतातोद्याभ्यामुपरञ्जकाभ्यां योगं दर्शयति — <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_01-dn.html#N%C4%81%C5%9A%C4%81.1.50" target="_blank">स्वाति</a></span>रित्यादि&nbsp;। स्वातिः ऋषिविशेषः&nbsp;। येन जलधरसमयनिपतत्सलिलधारावैचित्र्याभिहन्यमानपुष्करदलविलसितरचितविचित्रवर्णानुहरणयोजनया
+         <a href="" class="app" title="स्वयं वृत्तिनि <b&gt;म</b&gt;"><span class="appnum"><sup>3</sup></span></a>यथास्वं वृत्तिनियमेन पुष्करवाद्यनिर्माणं कृतमित्यर्थः&nbsp;। <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_01-dn.html#N%C4%81%C5%9A%C4%81.1.50" target="_blank">सह शिष्यै</a></span>रिति&nbsp;। त्रिपुष्करस्य वाद्यस्यापूरकपणवमृदङ्गझल्लर्याद्युपयोगेन पक्षातोद्यपरिग्रहः उक्तः&nbsp;।
+         भाण्डस्यात्र पूर्वमुपादानं वृत्ति(त्ते)र्येन तस्यैव परिक्रमणादौ सति सोपयोगात्&nbsp;। कैशिकी
+         चात्र ﻿<span class="pageinfo">[page 024]</span>मध्ये नियोजितेत्युक्तम्&nbsp;। न (तेन) तत्प्रधानमेतत्&nbsp;। <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_01-dn.html#N%C4%81%C5%9A%C4%81.1.51" target="_blank">गानयोग</a></span> इति&nbsp;। गानशब्देन ततसुषिरपरिग्रहः&nbsp;। गानशब्देन गान्धर्वस्यात्रानुपयोगमाह&nbsp;। नियुक्तो
+         नियोजित इत्यनेन वादकगायकादीनां नाट्याचार्यायत्ततां दर्शयति&nbsp;। <a href="" class="app" title="अथ गीता"><span class="appnum"><sup>4</sup></span></a>नृत्तगीतातोद्याभिनयानां साम्यसिद्ध्यर्थमेकीभावेन मेलनं कृत्वा प्रयोगः कार्य इति दर्शयति
+         श्लोकद्वयेन — <b>एवं नाट्यमित्या</b>दिना&nbsp;। एवं <a href="" class="app" title="मेलनिकया"><span class="appnum"><sup>5</sup></span></a>मेलनिकायां ‘नाट्यमिदम्’ इत्येकबुद्धिग्राह्यं सम्मिलितं <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_01-dn.html#N%C4%81%C5%9A%C4%81.1.51" target="_blank">सम्यक्सम्प</a></span>न्नमिति <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_01-dn.html#N%C4%81%C5%9A%C4%81.1.51" target="_blank">बुद्ध्वा</a></span> ज्ञात्वा&nbsp;। पुत्रैः <a href="" class="app" title="स्वात्याद्याभ्याम् <b&gt;म</b&gt;"><span class="appnum"><sup>6</sup></span></a>स्वातिनारदाभ्यां च सह <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_01-dn.html#N%C4%81%C5%9A%C4%81.1.52" target="_blank">ब्रह्माणमुपस्थितः</a></span> उपनिमन्त्रणार्थं ब्रह्मणोऽग्रे स्थित इत्यर्थः&nbsp;। (४७-५२)
+      </p>
+      
+      
+      <p>उपनिमन्त्रणं दर्शयति — <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_01-dn.html#N%C4%81%C5%9A%C4%81.1.53" target="_blank">नाट्यस्येति</a></span>&nbsp;। <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_01-dn.html#N%C4%81%C5%9A%C4%81.1.53" target="_blank">ग्रहणमिति</a></span>&nbsp;। गृहीतं शिक्षितं तावन्नाट्यमित्यर्थः&nbsp;। ग्रहणं <a href="" class="app" title="चावलोकनम्"><span class="appnum"><sup>1</sup></span></a>तदवलोकनं तत्प्राप्तं प्रेक्षणयोग्यं जातमित्यर्थः&nbsp;। <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_01-dn.html#N%C4%81%C5%9A%C4%81.1.53" target="_blank">एतत्त्विति</a></span>&nbsp;। तुशब्द एवकारार्थेः&nbsp;। श्रुत्वैव&nbsp;। अत एव <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_01-dn.html#N%C4%81%C5%9A%C4%81.1.54" target="_blank">प्रत्युपस्थितः</a></span> अयत्नादेवाभिमुख्येनोपस्थितो दैवसङ्घटित इत्यर्थः&nbsp;। ध्वजस्येन्द्रार्थस्य महनं पूजनं
+         यत्र स ध्वजमहः&nbsp;। ध्वजमहस्य विशेषणद्वारेण सम्भवं दर्शयति <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_01-dn.html#N%C4%81%C5%9A%C4%81.1.55" target="_blank">निहतासुरदानव</a></span> इत्यादिना&nbsp;।
+      </p> 
+      
+      
+      <p>तत्र प्रयोगे क्रमं दर्शयति — <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_01-dn.html#N%C4%81%C5%9A%C4%81.1.56" target="_blank">पूर्वं कृता मया नान्दीति</a></span>&nbsp;। नान्द्याख्यं मुख्यं मङ्गलं ﻿<span class="pageinfo">[page 025]</span>सकलपूर्वरङ्गाङ्गोपलक्षणमिति <b>केचित्</b>&nbsp;। पूर्वरङ्गाङ्गानां मध्यान्नान्दी केवलापि प्रयोज्ये — त्येवंपरमेतदि<b>त्यन्ये</b>&nbsp;। <b>अस्मदुपाध्यायास्तु</b> — यावद्दैत्यैस्तत्र विघ्नाद्याचरणं न कृतं तावत्पूर्वरङ्गस्य विधिपूर्वकस्य कोऽवकाशः&nbsp;।
+         स हि विघ्नरक्षाकरणेन मण्डपभागनिवेशितदेवतापरितोषहेतुः प्राधान्येन&nbsp;। नान्तरीयकतया च
+         दैत्यपरितोषकारणम्&nbsp;। विघ्नास्तु यदा जातास्ततः प्रभृति पूर्वरङ्गः&nbsp;। तथा चतुर्थेऽध्याये
+         वक्ष्यते — (ना.शा. ४-१०) पूर्वरङ्गे कृते मया भगवते शिवभट्टारकाय दर्शित इति — यथा तथा
+         तु यः कुतपविन्यासा<a href="" class="app" title="त्रयं कुतपविन्यासादि ननु पूर्वरङ्गशब्दस्य <b&gt;भ</b&gt;, श्रयं कुतपविन्यासं दिनं न पूर्वरङ्गशब्दस्य <b&gt;भ</b&gt;"><span class="appnum"><sup>1</sup></span></a> — दि न(दिः स न) पूर्वरङ्गशब्दवाच्यः&nbsp;। तस्मादिह नान्दीमात्रस्य प्रयोगः&nbsp;। किमर्थाऽसावित्याह
+         — <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_01-dn.html#N%C4%81%C5%9A%C4%81.1.57" target="_blank">वेदनिर्मिता</a></span>&nbsp;। ‘तत्राशिषमाशास्ते’ इति हि श्रुतिः सर्वकर्मस्वाशीःपूर्वकत्वमाह&nbsp;। यत्ततो नान्दीप्रयोगः&nbsp;।
+         न तु पूर्वरङ्गाङ्गत्वेन&nbsp;। (५३-५६)
+      </p>
+      
+      
+      <p>अष्टौ यान्यङ्गभूतानि पदानि वाक्यं महावाक्यं वा&nbsp;। तानि सुप्तिङन्तान्यवान्तरवाक्यानि
+         वेत्युभयथा&nbsp;। अत एव विचित्रेत्युक्तम्&nbsp;। तेन —
+      </p>
+      
+      
+      <div class="lg" type="">
+         <span class="line">जितमुडुपतिना नमः सुरेभ्यो द्विजवृषभा निरुपद्रवा भवन्तु&nbsp;।</span>
+         <span class="line">अवतु च पृथिवीं समृद्धसस्यां प्रतिपच्चन्द्रवपुर्नरेन्द्रचन्द्रः&nbsp;॥ (रत्ना.१-४)</span>
+         
+      </div>
+      
+      
+      <p>इत्येषाऽपि भारतीयत्वेन प्रसिद्धा <b>कोहलेन</b> प्रदर्शिता नान्द्युपपन्ना भवति&nbsp;। अत्र तु पक्षे —
+      </p>
+      
+      
+      <div class="lg" type="">
+         <span class="line">नान्दीपदान्तरेष्वेषु ह्येवमस्त्विति नित्यशः&nbsp;।</span>
+         <span class="line"><a href="" class="app" title="देवताम् <b&gt;भम</b&gt;"><span class="appnum"><sup>1</sup></span></a>वदेतां <a href="" class="app" title="गुप्ता <b&gt;म</b&gt;"><span class="appnum"><sup>2</sup></span></a>सम्यगुक्ताभिर्वाग्भिस्तौ <a href="" class="app" title="पारिपार्श्वकौ"><span class="appnum"><sup>3</sup></span></a>पारिपार्श्विकौ&nbsp;॥ (ना.शा. ५-११४)</span>
+         
+      </div>
+      
+      
+      <p>इति श्लोकेऽन्तरशब्दोऽवान्तरवाक्यविच्छेदी द्रष्टव्यः&nbsp;। ﻿<span class="pageinfo">[page 026]</span>विवेचकास्त्वाहुः — अङ्गग्रहणादत्रावान्तरवाक्यान्ये<a href="" class="app" title="तावदु <b&gt;RK</b&gt;"><span class="appnum"><sup>1</sup></span></a>व तावतोपात्तानि&nbsp;। तत्र चाष्टद्वादशसङ्ख्या चतुरसत्र्यश्रतालानुसारी पूर्वङ्गद्वयाभिप्रायेण&nbsp;।
+         तत्र
+      </p>
+      
+      
+      <div class="lg" type="">
+         <span class="line">नान्दीं पदैर्द्वादशभिरष्टभिर्वाप्यलङ्कुताम्&nbsp;॥ (ना.शा. ५-१०९)</span>
+         
+      </div>
+      
+      <p>इत्यत्रापिशब्दाच्चतुष्पदत्वं षोडशपदत्वं चतुरश्रगतं लभ्यते&nbsp;। त्र्यश्रगतं च त्रिपदत्वं
+         षट्पदत्वं चेत्येवमल्पमपि तद्भेदेन तिस्रस्तिस्रो नान्द्यः&nbsp;। ततः परमपि<a href="" class="app" title="रमभि <b&gt;मभ</b&gt;"><span class="appnum"><sup>1</sup></span></a> भूयस्त्वात्&nbsp;। तेन जितमुडुपतिनेति चतुष्पदेयम्&nbsp;। षोडशपदा तु ‘जयति भुवनकारणम्’ इत्यादि&nbsp;।
+         तदन्त इति&nbsp;। नान्द्यन्ते परिसमाप्तौ&nbsp;। <b>अनुकृतिरिति</b> नाट्यम्&nbsp;। तत्र च <b>बद्धेति</b> गुणनिका योजिता&nbsp;। न तु प्रयोग इत्येतच्चासत्&nbsp;। तत्पूर्वोत्तरव्याघातात्&nbsp;। पूर्वं ह्युक्तम्
+         — एवं नाट्यमिदमित्यादि नान्दी कृतेत्यन्तम्&nbsp;। वक्ष्यते च — ब्रह्मादयः प्रयोगपरितोषिता
+         इति&nbsp;। तस्माद्बद्धेति प्रस्ताविता&nbsp;। न तु निष्पादिता&nbsp;। प्रस्तावना तावत्प्रयुक्तेत्यर्थः&nbsp;।
+      </p> 
+      
+      
+      <p>अन्ये त्वनुकृतिरिति नाट्यानुकाररूपा प्रस्तावनेत्याहुः&nbsp;। ‘कुता तदन्तेऽनुकृतिः’ इति
+         च पठन्ति&nbsp;। एतदुपजीवनेनैव चिरन्तनाः कवयो ‘नान्द्यन्ते (ततः प्रविशति) सूत्रधारः’ इति
+         पुस्तके लिखन्ति स्म&nbsp;। किं प्रस्तावितमित्याह--<b>यथा दैत्या</b> इति&nbsp;। डिमसमवकारेहामृगादीनामन्यतमः प्रयोगः प्रास्तावीत्यर्थः&nbsp;। यद्यपिभरपुत्रेर्दशरूपकमभ्यस्तं
+         तथापि न युगपत्सर्वः प्रयोक्तुं पार्यत इत्येवमुक्तम्&nbsp;। तेन यत्केचिदचूचुदन् — समवकारे
+         कः कैशिकीयोजनावसर इति पूर्वग्रन्थोऽसङ्गत इति तन्निरवकाशमेव&nbsp;। समवकारादावपि च सौन्दर्यात्मकं
+         वैचित्र्यं कैशिकीविजृम्भ एवेत्युक्तम्&nbsp;। (५७)
+      </p>
+      
+      ﻿<span class="pageinfo">[page 027]</span>
+      
+      
+      <p>रोषग्रथितवाक्यं तु <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_01-dn.html#N%C4%81%C5%9A%C4%81.1.58" target="_blank">सम्फेटः</a></span>&nbsp;। शङ्काभयत्रासकुतो <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_01-dn.html#N%C4%81%C5%9A%C4%81.1.58" target="_blank">विद्रवः</a></span>&nbsp;। छेदमर्हतीति च्छेद्यं शस्त्राहवः&nbsp;। भेदमर्हतीति <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_01-dn.html#N%C4%81%C5%9A%C4%81.1.58" target="_blank">भेद्यं</a></span> मल्लयुद्धात्मकं नियुद्धम्&nbsp;। <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_01-dn.html#N%C4%81%C5%9A%C4%81.1.60" target="_blank">तत</a></span> इति&nbsp;। प्रभुपरितोषाय प्रभुचरितं कदाचिन्नाट्ये वर्णनीयमिति यथा दैत्याः सुरैर्जिता इत्येतस्माल्लभ्यत
+         इति केचिदाहुः&nbsp;। तदसत्&nbsp;। दशरूपकलक्षणयुक्तिविरोधात्&nbsp;। तत्र हि किञ्चित्प्रसिद्धचरितं
+         किञ्चिदुत्पाद्यचरितमिति वक्ष्यते&nbsp;। न च वर्तमानचरितानुकारो युक्तः&nbsp;। विनेयानां तत्र
+         रागद्वेषमध्यस्थतादिना तन्मयीभावाभावे प्रीतेरभावेन व्युत्पत्तेरप्यभावात्&nbsp;। वर्तमानचरिते
+         य च धर्मादिकर्मफलसम्बन्धस्य प्रत्यक्षत्वे प्रयोगवैयर्थ्यम्&nbsp;। अप्रत्यक्षत्वे ‘भविष्यति
+         प्रमाणाभावात्’ इति न्यायेन व्युत्पत्तेरसम्भवान्नानुकारः&nbsp;। एतच्च दशरूपकाध्याये वितनिष्याम
+         इत्यास्तां तावत्&nbsp;।
+      </p>
+      
+      
+      <p>देवानां <a href="" class="app" title="चाद्य प्र <b&gt;भ</b&gt;"><span class="appnum"><sup>1</sup></span></a>त्वद्य प्रसिद्धवर्णनीयासम्भवात्पूर्वकल्पमन्वन्तरादिगतदेवासुरचरितकीर्तनम्&nbsp;। अनादित्वात्संसारस्य
+         श्रुतिस्मृत्यनुमतदेवासुरकीर्तनवदिति&nbsp;। तत्र वर्तनो<a href="" class="app" title="वर्णनोप <b&gt;भ</b&gt;"><span class="appnum"><sup>2</sup></span></a> (वर्तमानो) — पवर्णनं तज्जातीयानाम्&nbsp;। अथ<a href="" class="app" title="तज्जातीयकत्वादसुराश्चुक्षुभिरे&nbsp;। (अ. संग्र)"><span class="appnum"><sup>3</sup></span></a> चारित्रभ्रमविप्रलब्धास्त्वसुराश्चुक्षुभिरे इति वक्ष्यामः&nbsp;। न च स्वचरितव्यावर्णनाद्देवानां
+         परितोष इह&nbsp;। यत आह — <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_01-dn.html#N%C4%81%C5%9A%C4%81.1.58" target="_blank">प्रयोगपरितोषिता</a></span> इति&nbsp;। ध्वजमिति&nbsp;। यस्य विघ्नशान्त्यै पूजार्थमुपयोगो भावी&nbsp;। (५८-५९)
+      </p>
+      
+      
+      <p><span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_01-dn.html#N%C4%81%C5%9A%C4%81.1.60" target="_blank">कुटिलकमिति</a></span> विक्रदण्डको विदूषकोपयोगी&nbsp;। ब्रह्मायुधात्मा दण्डः&nbsp;। अपकामत्वेन ﻿<span class="pageinfo">[page 028]</span>भीषणत्वाकृत्यापीत्यर्थः&nbsp;। <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_01-dn.html#N%C4%81%C5%9A%C4%81.1.60" target="_blank">भृङ्गारः</a></span> पारिपार्श्विकोपयोगी&nbsp;। <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_01-dn.html#N%C4%81%C5%9A%C4%81.1.60" target="_blank">छत्र</a></span>मत्र वितानः जलदानां सूर्योद्भवत्वात् तत्प्रतिमः&nbsp;। यदाहुः — ऋतवे वर्षान्ते महतो मेघसम्प्रवानिति&nbsp;।
+         (मेघसंप्लवादिति (?) )&nbsp;। भगवदायत्ता दैवी मानुषी च सिद्धिरिति मध्ये तदुपादानं सर्वव्यापकत्वं
+         दैव्याः सिद्धेः प्रतिपादयितुम्&nbsp;। <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_01-dn.html#N%C4%81%C5%9A%C4%81.1.60" target="_blank">व्यजनं</a></span> घर्मापनुत्तये&nbsp;। <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_01-dn.html#N%C4%81%C5%9A%C4%81.1.61" target="_blank">सिंहासनादि</a></span> राजभूमिकायामुपयोगि&nbsp;। यक्षादयो ये तत्त्वज्ञा नाट्यस्य&nbsp;। भाषितमिति&nbsp;। तत्तद्भूमिकोपयोगिवाचिके
+         शिक्षा&nbsp;। <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_01-dn.html#N%C4%81%C5%9A%C4%81.1.63" target="_blank">भावा</a></span>निति&nbsp;। विभावादिषु&nbsp;। तथा हि रक्तमांसादीनि भयजुगुप्साविभावरूपाणि यक्षरक्षसां हर्षोत्साहविभावतां
+         यान्तीति तदुपदेशादेव तज्ज्ञेयम्&nbsp;। रसानिति<a href="" class="app" title="रसानिति रौद्ररसोपयोगिनो व्यभिचारिवर्गस्य"><span class="appnum"><sup>1</sup></span></a>&nbsp;। स्वोचितस्थायिभावसम्बध्यमानतत्तद्रसोपयोगिनोऽनुभावव्यभिचारिवर्गस्य शिक्षा दर्शिता&nbsp;।
+         रूपमिति मुखरागस्य&nbsp;। बलमित्याङ्गिकस्य&nbsp;। प्रतिभूमिकं परितुष्टेन&nbsp;। अन्ततोऽत्र शिष्टा(क्षा)पि
+         काचिद्देया&nbsp;। सामाजिकेभ्यश्च धनविज्ञानमित्याहरणीयातोद्या (द्याद्या) जिहीर्षता च परिषत्परितोषाय
+         यतितव्यमित्येतदनेन दर्शितम्&nbsp;। (६०-६३)
+      </p>
+      
+      
+      <p>अथ विघ्नोपशमनाय जर्जरपूजा कार्येति दर्शयितुमितिहासेनोपक्रमते — एवं प्रयोग इति&nbsp;। दैत्यादीनां
+         विनाशनं यत्र प्रयोज्यतया&nbsp;। <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_01-dn.html#N%C4%81%C5%9A%C4%81.1.65" target="_blank">आगम्यता</a></span>मिति&nbsp;। अवधार्यतां यदि वा सम्भूयास्यताम्&nbsp;। मायामिति अदृश्यत्वमित्यर्थः&nbsp;। चेष्टेत्याङ्गिकी&nbsp;।
+         यद्यपि स्मृतिस्तम्भनेन सर्वं स्तम्भितं भवति तथापि तत्तदभिनेयप्राधान्येन तदेव स्तम्भितमित्युक्तम्&nbsp;।
+         <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_01-dn.html#N%C4%81%C5%9A%C4%81.1.67" target="_blank">सूत्रधारस्ये</a></span>ति सपरिवारस्येति&nbsp;। प्रस्तावनाप्रयोगमध्य एवायं विघ्न इति यावत्&nbsp;। <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_01-dn.html#N%C4%81%C5%9A%C4%81.1.67" target="_blank">ध्यानमिति</a></span>&nbsp;। यत्र माया न प्रभवति&nbsp;। (६४-६७)
+      </p>
+      
+      ﻿<span class="pageinfo">[page 029]</span>
+      
+      
+      <p><span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_01-dn.html#N%C4%81%C5%9A%C4%81.1.68" target="_blank">सद</a></span> इति यत्र प्रयोगः क्रियते सीदत्यस्मिन्निति&nbsp;। जीर्यत्यतिशयेनेति पचाद्यचि (यङ्लुकि)रूपम्&nbsp;।
+         अतिशयेन जीर्णींकृतो देहो येषान्ते तथा&nbsp;। <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_01-dn.html#N%C4%81%C5%9A%C4%81.1.70" target="_blank">जर्जरेणेति</a></span> यङ्लुगन्ताण्णिचि पुनः पचाद्यचि रूपम्&nbsp;। एवं राज्ञा सिद्धिविघातका दण्ड्या इति दर्शितम्&nbsp;।
+      </p>
+      
+      <span class="pageinfo">[page 030]</span>
+      
+      
+      <p>यदि वा मूलत एव तत्परिरक्षायै मण्डपः कार्यः&nbsp;। ये च दण्डस्याविषया वातातपवर्षादयश्च तत्कृतो
+         हि सिद्धिविघातो मण्डपे सति न भवति&nbsp;। एतेनैवाभिप्रायेण पुराकल्पमाह — <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_01-dn.html#N%C4%81%C5%9A%C4%81.1.76" target="_blank">प्रयोग</a></span> इत्यादि&nbsp;। <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_01-dn.html#N%C4%81%C5%9A%C4%81.1.76" target="_blank">शेषा</a></span> इति&nbsp;। जर्जरीकृतशरीरशेषा अपीत्यर्थः&nbsp;। यद्वक्ष्यति — ‘निश्चिता भगवन्विघ्ना’<span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_01-dn.html#N%C4%81%C5%9A%C4%81.1.78" target="_blank"></a></span> इति&nbsp;। तथाऽस्मिन् जर्जरीकरणकाले एते चासन्निहिता अभूवन्&nbsp;। त्रासमिति&nbsp;। सर्वथा तु न शक्ता
+         नाशयितुमिति&nbsp;। जर्जरप्रभावः ‘गमिष्यत्येवमेव’ इति ह्युक्तम्&nbsp;। <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_01-dn.html#N%C4%81%C5%9A%C4%81.1.80" target="_blank">ततो विश्वकर्मे</a></span>ति&nbsp;। वास्तुविद्या तत्त्वविदो नाट्यमण्डपे स्थपतित्वं सूचयति&nbsp;। <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_01-dn.html#N%C4%81%C5%9A%C4%81.1.81" target="_blank">द्रुहिण</a></span> इति ब्रह्मा&nbsp;। इतरे विद्याधरगन्धर्वाद्याः&nbsp;।
+      </p>
+      
+      ﻿<span class="pageinfo">[page 031]</span>
+      
+      
+      <p><span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_01-dn.html#N%C4%81%C5%9A%C4%81.1.83" target="_blank">अंशभागैरिति</a></span>&nbsp;। अंशैर्यानि <a href="" class="app" title="भजना <b&gt;भ</b&gt;"><span class="appnum"><sup>1</sup></span></a>भाजनान्यधिष्ठानानि तैः&nbsp;। मण्डपस्यांशेषु वः भवतां ये तृतीयचतुर्थादयो भागास्तैः&nbsp;। (६८-८३)
+      </p>
+      
+      
+      <p>अंशविभागमेवाह ― <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_01-dn.html#N%C4%81%C5%9A%C4%81.1.84" target="_blank">रक्षण</a></span> इति&nbsp;। अनेन चैतत्तुल्या एव मण्डपभागरक्षा<a href="" class="app" title="रक्षकाः <b&gt;के</b&gt;"><span class="appnum"><sup>1</sup></span></a> काचिन्नियोज्या इति दर्श्यते&nbsp;। मण्डपस्य सर्वस्याधिष्ठाता हि सौम्यप्रकृतिः सोमः प्रधानो
+         योज्य इति दर्शयति — चन्द्रमा इति&nbsp;। <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_01-dn.html#N%C4%81%C5%9A%C4%81.1.84" target="_blank">अपि</a></span> चेति&nbsp;। <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_01-dn.html#N%C4%81%C5%9A%C4%81.1.84" target="_blank">विदिक्ष्विति</a></span>&nbsp;। न केवलं पश्चिमोत्तररूपे स्वकोण यावदन्यास्वपि विदिक्षु&nbsp;। चकाराद्दिक्ष्वपि&nbsp;। ते हि
+         घर्मदोषवारकत्वादत्यन्तोपकारिणः&nbsp;। अनेन गवाक्षकरणं सूच्यत इत्येके&nbsp;। आदित्ये मित्रशब्दः
+         पुल्लिङ्ग इति&nbsp;। तेन <b>यद्वार्तिक</b>कारी(रीयं) ‘तदुपलक्षितो नर्तकी हि(भिः) लज्जापरिहारहेतोः नपुंसको नेपथ्यगृहे’ इति तदपरामृष्टाभिधानम्&nbsp;।
+         <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_01-dn.html#N%C4%81%C5%9A%C4%81.1.85" target="_blank">मित्र</a></span> इति तेजस्विता आहार्योपयोगी <a href="" class="app" title="योगिरादे <b&gt;भ</b&gt;"><span class="appnum"><sup>2</sup></span></a>रत्नादेरुक्ता&nbsp;। <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_01-dn.html#N%C4%81%C5%9A%C4%81.1.85" target="_blank">वेदिका</a></span>&nbsp;। रङ्गवेदिका&nbsp;। तत्र तीक्ष्णोऽधिष्ठातेत्यर्थः&nbsp;। <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_01-dn.html#N%C4%81%C5%9A%C4%81.1.85" target="_blank">भाण्ड</a></span> इति&nbsp;। त्रिपुष्करे सोपकरणे&nbsp;। दिवौकसो मेघा मन्द्रगम्भीरशब्दसिद्धये&nbsp;। इत्येवं सर्वत्र
+         दृष्टमपि सदृशोपलक्षणान्तं प्रयोजनमुत्प्रेक्ष्यम्&nbsp;। सर्वथा<a href="" class="app" title="दा तदनु <b&gt;मभ</b&gt;"><span class="appnum"><sup>3</sup></span></a> तदलाभे नियमाद्दृष्टमेव&nbsp;। वर्णा इति&nbsp;। तदधिष्ठातारो देवताविशेषाः&nbsp;। <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_01-dn.html#N%C4%81%C5%9A%C4%81.1.86" target="_blank">स्तम्भान्तरेष्विति</a></span>&nbsp;। वर्णस्तम्भचतुष्कादिरित्येषु&nbsp;। न अन्येषु स्तम्भोष्वित्यर्थः&nbsp;। (८४-८६)
+      </p>
+      
+      <span class="pageinfo">[page 032]</span>
+      
+      
+      <p><span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_01-dn.html#N%C4%81%C5%9A%C4%81.1.87" target="_blank">शालास्वि</a></span>ति&nbsp;। स्तम्भद्वयमष्टवेश्मनि गवाक्षनेपथ्यगृहद्वितीयभूमिसन्निवेशादिति&nbsp;। नागमुख्याविति&nbsp;।
+         अनन्तगुलिकौ&nbsp;। <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_01-dn.html#N%C4%81%C5%9A%C4%81.1.88" target="_blank">द्वार<a href="" class="app" title="पात्रम्"><span class="appnum"><sup>1</sup></span></a>पत्रं</a></span> कवाटात्मकम्&nbsp;। द्वारबहुत्वाच्च बहुवचनम्&nbsp;। <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_01-dn.html#N%C4%81%C5%9A%C4%81.1.89" target="_blank">देहल्यामि</a></span>ति&nbsp;। द्वाराधस्तनकाष्ठे&nbsp;। <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_01-dn.html#N%C4%81%C5%9A%C4%81.1.89" target="_blank">तस्ये</a></span>ति&nbsp;। <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_01-dn.html#N%C4%81%C5%9A%C4%81.1.89" target="_blank">शूलमि</a></span>ति&nbsp;। एतेन प्रक्रान्तद्वारमेव परामृष्टम्&nbsp;। तेनोर्ध्वकाष्ठे उत्सङ्गशब्दवाच्ये त्रिशूलमित्यर्थः&nbsp;।
+         <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_01-dn.html#N%C4%81%C5%9A%C4%81.1.90" target="_blank">पार्श्वे</a></span> स्वयमिति&nbsp;। राजादेस्तत्स्थानमित्युक्तम्&nbsp;। चकारात्स्वदिशि अंशेनावस्थानमनुस्मृतम्&nbsp;।
+         <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_01-dn.html#N%C4%81%C5%9A%C4%81.1.90" target="_blank">विद्युदि</a></span>ति&nbsp;। वज्रायुधरूपा&nbsp;। स्तम्भेष्वपि चतुर्षु यथाक्रमं तद्भूतादयः&nbsp;। ते च नाट्यतत्त्वविदः&nbsp;।
+         अत एव विघ्नैः सह ये(ते)नयेन मिलिता इति द्रष्टव्यम्&nbsp;। एतेन सिद्धिविघातका भेदाख्येनाप्यु-
+         पायेन दुर्बलीकर्तव्या इति सूचितम्&nbsp;। <a href="" class="app" title="See p. 33 verse 94 found only in N.">*</a>प्रतिष्ठित इति&nbsp;। सदैव सन्निहितो वास्तुमध्य इत्यर्थः&nbsp;। कवेश्च सन्निधानं सूचितम्&nbsp;।
+      </p>
+      
+      
+      <p>अधस्तादिति&nbsp;। येन सुरङ्गाखननादि विघ्नकरणं निवार्यत इत्यर्थः&nbsp;। प्रधानपात्राणि पृथग्रक्षणीयानीत्याह-नायकमिति&nbsp;।
+         हास्यशृङ्गाराङ्गत्वाद्विदूषकमित्युक्तम्&nbsp;। अत एव दशरूपकप्रयोगसूचनमेतत्&nbsp;। समवकारे विदूषकाभावात्&nbsp;।
+         हर इति&nbsp;। बहुमूर्तिप्रथमत्वात्&nbsp;। देवता एव दैवतम्&nbsp;। (८७-९८)
+      </p>
+      
+      ﻿<span class="pageinfo">[page 034]</span>
+      
+      
+      <p>अथ नाट्यतत्त्वघाते<a href="" class="app" title="घातनिरू"><span class="appnum"><sup>1</sup></span></a> (त्त्वविघाते) स तन्निरूपणार्थमुपक्रमते ― <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_01-dn.html#N%C4%81%C5%9A%C4%81.1.99" target="_blank">एतस्मिन्नि</a></span>ति&nbsp;। अशक्तस्य सामाङ्गीकरोति दुर्जन इति पूर्वं रक्षाकरणम्&nbsp;। इत्युक्तद्वय (सर्वैरुक्त
+         ) इति&nbsp;। कविरनुविधेयवचनो भवतीति दर्शयति&nbsp;। सामादिप्रयोगे तावच्छब्दसूचितं क्रमं स्फुटयति
+         ― <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_01-dn.html#N%C4%81%C5%9A%C4%81.1.100" target="_blank">पूर्वं सामे</a></span>त्यादि&nbsp;। <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_01-dn.html#N%C4%81%C5%9A%C4%81.1.100" target="_blank">तत</a></span> इति&nbsp;। सर्वोपायप्रतिहताविति यावत्&nbsp;। तत्र ज्ञाताभिप्रायः प्रतिसमाधातुं सुशक इत्यभिप्रायेणाह
+         ― <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_01-dn.html#N%C4%81%C5%9A%C4%81.1.101" target="_blank">देवाना</a></span>मिति&nbsp;। सुरार्थमित्यस्यैव दाढर्यायोक्तं सुरेच्छयेति&nbsp;। <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_01-dn.html#N%C4%81%C5%9A%C4%81.1.103" target="_blank">प्रत्यादेश</a></span> इति खलीकार इत्यर्थः&nbsp;। <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_01-dn.html#N%C4%81%C5%9A%C4%81.1.103" target="_blank">भवतेति</a></span>&nbsp;। यस्यानुचितमेतदित्यर्थः&nbsp;। अनौचित्यमेव <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_01-dn.html#N%C4%81%C5%9A%C4%81.1.104" target="_blank">लोकपितामहे</a></span>त्यामन्त्रणेनाह&nbsp;। तदेव पितामहत्वं दर्शयति ― <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_01-dn.html#N%C4%81%C5%9A%C4%81.1.104" target="_blank">यथे</a></span>ति&nbsp;। आ(त्मनो भ)<a href="" class="app" title="आ...ताम् <b&gt;भम</b&gt;"><span class="appnum"><sup>2</sup></span></a>वा देवा दैत्याश्चेत्याह ― <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_01-dn.html#N%C4%81%C5%9A%C4%81.1.104" target="_blank">सर्व इति</a></span>&nbsp;। (९९-१०४)
+      </p>
+      
+      
+      <p><span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_01-dn.html#N%C4%81%C5%9A%C4%81.1.105" target="_blank">वचन</a></span>मिति&nbsp;। सुपरिहरमेतत्&nbsp;। नात्र भूयान्प्रयास इत्येकवचनेन दर्शयति&nbsp;। अत एव सिद्धवदुपक्रमते
+         ― <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_01-dn.html#N%C4%81%C5%9A%C4%81.1.105" target="_blank">अलं व</a></span> इति&nbsp;। मिथ्याज्ञानगृहीतसर्पत्रासवद्यो भ्रान्तिमात्रकृत इत्यर्थः&nbsp;। <a href="" class="app" title="दैत्या अशुभकारिणः सन्तु पराजिताः भवन्तः&nbsp;। देवताः पुनरन्यथेति न नाट्यस्य तात्पर्यम्&nbsp;। (अ.सा.)"><span class="appnum"><sup>1</sup></span></a>दैत्यानामशुभकारिता लोकप्रसिद्धा&nbsp;। कुरु(कृत)रङ्गविभागञ्चैषां चेष्टितमस्तु&nbsp;। देवानां
+         तद्विपर्यय इति नाट्यस्य न तात्पर्य येन भवतां मन्युः&nbsp;। किं तर्हीत्याह&nbsp;। शुभकारिणः शुभं
+         फलमशुभकारिणोऽशुभं फलमित्येतावदेवास्माकं प्रतिसाक्षात्कारकल्पे नाट्ये प्रदर्शनीयम्&nbsp;।
+         न तत्र देवेषु दैत्येषु वा कश्चिद्भरः<a href="" class="app" title="त् हरः <b&gt;मभ</b&gt;"><span class="appnum"><sup>2</sup></span></a>&nbsp;। अत एव भवतामपि धर्मादौ यः <a href="" class="app" title="सदुपायः सोऽपि शुभविकसितवेन दर्शितः&nbsp;। अत एव (अ. सा.)"><span class="appnum"><sup>3</sup></span></a>सदुपायः सोऽपि शुभविपाकत्वेनैव दर्शितः&nbsp;। अत एव शुभग्रहणमेकतरपक्षशैथिल्यदर्शनाय दैत्यसम्बन्धनार्थ
+         प्रथमभुपात्तम्&nbsp;। शुभमशुभं च धर्माधर्मरूपं सुखदुःखफलत्वेन विभेदेन कल्पयत्यध्यवसाययति
+         नाट्यवेदः&nbsp;। कीदृक् ― <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_01-dn.html#N%C4%81%C5%9A%C4%81.1.106" target="_blank">कर्मभावान्वयापेक्षीति</a></span>। तद्यथा ― कर्म धर्माधर्मादिरूपं धर्मो दानं स्नानमित्यादिः&nbsp;। अधर्मो हिंसा स्तेयमित्यादिः&nbsp;।
+         भाव आशयः <a href="" class="app" title="त्रिप्र <b&gt;म</b&gt;"><span class="appnum"><sup>4</sup></span></a>स्त्री (स्व) प्रसङ्गोदिता स्वार्थतापरार्थताद्यभिसन्धिरित्यादिः&nbsp;। अन्वयोऽभिजनः आर्यावर्तादिर्ब्राह्मण्यादि
+         चेति (ण्यञ्चेति)&nbsp;। तानपेक्षते सहकारितया&nbsp;।
+      </p>
+      
+      
+      <p>एतदुक्तं भवति  ― अस्मिन्देशेऽस्मिन्काले ईदृशेन कर्मणा यः शुभमशुभं चार्जयति स एवंविधफलभागी
+         भवतीति न तावदिहोपदिश्यते&nbsp;। विकल्पक इति द्वौ णिचौ&nbsp;। (१०५-१०६)
+      </p> 
+      
+      ﻿<span class="pageinfo">[page 035]</span>
+      
+      
+      <p>ननु चैव<a href="" class="app" title="मप्यस्मिन्विसृष्टे <b&gt;म</b&gt;"><span class="appnum"><sup>1</sup></span></a>मप्यस्मत्पृष्ठे किमे<a href="" class="app" title="किमित्येतत् (अ.सं.)"><span class="appnum"><sup>2</sup></span></a>तद्योजितमित्याह ― <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_01-dn.html#N%C4%81%C5%9A%C4%81.1.107" target="_blank">नैकान्तत</a></span> इति&nbsp;। अयं भावः ― न युष्मत्पृष्ठे केनचिदेतद्योजितम्&nbsp;। देवासुरस्य बहिर्यथावस्थमवस्थानम्&nbsp;।
+         अत्रेति नाट्यवेदे&nbsp;। न देवासुराणामेकान्तेनानुभावनम्&nbsp;। नैव तेऽनुभाव्यन्ते केनचित्प्रकारेण&nbsp;।
+      </p>
+      
+      
+      <p>तथाहि ― तेषु न तत्त्वेन धीः&nbsp;। न सादृश्येन यमलकवत्&nbsp;। न भ्रान्तत्वेन रूप्यस्मृतिपूर्वकशुक्तिरूप्यवत्&nbsp;।
+         नारोपेण सम्यग्ज्ञानबाधानन्तरमिथ्याज्ञानरूप्यवत्&nbsp;। न तदध्यवसायेन गौर्वाहीकवत्&nbsp;। नोत्प्रेक्ष्यमाणत्वेन
+         मुखचन्द्रवत्&nbsp;। न तत्प्रतिकृतित्वेन चित्रपुस्तवत्&nbsp;। न तदनुकारेण गुरुशिष्यव्याख्याहेवाकवत्&nbsp;।
+         न तात्कालिकनिर्माणेनेन्द्रजालवत्&nbsp;। न युक्तिविरचिततदाभासतया हस्तलाघवादिमायावत्&nbsp;। सर्वेष्वेतेषु
+         पक्षेष्वसाधारणतया द्रष्टुरौदासीन्ये रसास्वादायोगात्&nbsp;। कवेश्च नियतवर्णनीयनिश्चितत्वे
+         काव्यस्यैवासम्पत्तेरनौचित्यवर्जनायोगात्&nbsp;। लौकिकमिथुनदृशीव सांसारिकहर्ष<a href="" class="app" title="क्रोधान्वितता <b&gt;म</b&gt;"><span class="appnum"><sup>1</sup></span></a>(ईर्ष्या) क्रोधान्वयितापत्तेरुभयदर्शनकु(मू)लतया <a href="" class="app" title="मुखदृष्टौ"><span class="appnum"><sup>2</sup></span></a>मुख्यदृष्टौ प्रयोक्तृदृष्टौ तत्संविद्विश्रान्त्यभावात्&nbsp;।
+      </p>
+      
+      
+      <p>किं तर्ह्येतत्&nbsp;। आह ― <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_01-dn.html#N%C4%81%C5%9A%C4%81.1.107" target="_blank">त्रैलोक्यस्ये</a></span>ति&nbsp;। एतदुक्तं भवति ― एतादृशं तैः रामादयो न कदाचन प्रमाणपथमवतार्यन्ते<a href="" class="app" title="पथमवतारयन्ते <b&gt;मभ</b&gt;"><span class="appnum"><sup>1</sup></span></a> यदाऽ ऽगमेन वर्ण्यन्ते। तदा तद्विशेष<a href="" class="app" title="सिद्धिः <b&gt;म</b&gt;"><span class="appnum"><sup>2</sup></span></a>बुद्धिः यद्यपि रामायणप्रायादेकस्मान्महावाक्यादुल्लसति, तथापि वर्तमानतयैव विशेषाणां
+         सम्भाव्यमानार्थक्रियासामर्थ्यात्मकस्वालक्षण्यपर्यवसानात्। न च तेषां वर्तमानतेत्युपगता
+         
+         ﻿<span class="pageinfo">[page 036]</span>तावद्विशेषबुद्धिः&nbsp;। काव्येष्वपि हृदयमेव (हृदय एव) तावत्साधारणी भावो विभावादीनां तत्रापि
+         कथामात्रे साधारणी भावः सम्भवति यद्यपि तथापि ― ‘एवं ये कुर्वन्ति तेषामेतद्भवति’ इति
+         वाक्यवद्रञ्जनातिशयाभावान्न चित्तवृत्ते(त्ति)र्निर्णयगता भवति&nbsp;।
+      </p> 
+      
+      
+      <p>काव्ये तु गुणालङ्कारमनोहरशब्दार्थशरीरे ळोकोत्तर<a href="" class="app" title="रससम्प्राणिते <b&gt;म</b&gt;"><span class="appnum"><sup>1</sup></span></a>रसप्राणके हृदयसंवादवशात् निमग्नाकारिका तावद्भवति चित्तवृत्तिः&nbsp;। किन्तु सर्वस्य प्रत्यक्षसाक्षात्कारकल्पा
+         तत्र न धीरुदेति&nbsp;।
+      </p>
+      
+      
+      <p>नाट्ये तु पारमार्थिकं किञ्चिदद्य मे कृत्यं भविष्यतीत्येवंभूताभिसन्धिसंस्काराभावात्सर्वपरिषत्साधारणप्रमोदसारापर्यन्तरसना(समा)दरणीयलोकोत्तरदर्शनश्रवणयोगी
+         भविष्यामीत्यभिसन्धिसंस्कारादुचितगीतातोद्य<a href="" class="app" title="वर्णना <b&gt;म</b&gt;"><span class="appnum"><sup>1</sup></span></a>चर्वणाविस्मृतसांसारिक भावतया विमलमुकुरकल्पीभूतनिजहृदयः, सूच्याद्यभिनयावलोकनोद्भिन्नप्रमोदशोकादितन्मयीभावः,
+         पाठ्याकर्णनपात्रान्तरप्रवेशवशात् समुत्पन्ने देशकालविशेषावेशानालिङ्गिते सम्यङ्मिथ्यासंशयसम्भावनादिज्ञानविज्ञेयत्वपरामर्शानास्पदे,
+         रामरावणादिविषयाध्यवसाये, तत्संस्कारानुवृत्तिकारणभूततत्सहचरहृद्यवस्तुरूपगीतातोद्यप्रमदानुभवसंस्कारसूचितसमनुगततदुक्तरूपरामाध्य<a href="" class="app" title="रूपपरमाध्य <b&gt;भ</b&gt;"><span class="appnum"><sup>2</sup></span></a>वसायसंस्कार एव भवत्पञ्चषैर्दिवसैः सचमत्कारतदीयचरित मध्यप्रविष्टस्वात्मरूपमतिः स्वात्मद्वारेण
+         विश्वं तथा पश्यन्<a href="" class="app" title="श्यत् <b&gt;भ</b&gt;"><span class="appnum"><sup>3</sup></span></a> प्रत्येकं सामाजिकों देशकालविशेषाणामपरामर्शेन एवंकारिणामिदमिति लीढा(लिङा)त्मकविधिसमर्पितं
+         संविज्जातीयमेव संविद्विशेषरञ्जकप्राणवल्लभाप्रतिमरसास्वादसहचररम्यगीतातोद्यादिसंस्काररसा(नुप्र)वेशेन
+         हृदयाभ्यन्तरनिखातं तत एवनुत्पुं सनशतैरपि<a href="" class="app" title="वानत्पुंसनशतैः <b&gt;भम</b&gt;"><span class="appnum"><sup>4</sup></span></a> म्लानिमात्रमप्यभजमानं भजंस्तत्तच्छु भाशु भप्रेप्साजिहासासततस्यूतवृत्तित्वादेव शुभमाचरत्यशुभं
+         समुज्झति&nbsp;। इदानीमुपायसंवेदनालाभात् तदिदमनुकीर्तनमनुव्यवसायविशेषो नाट्यापरपर्यायः&nbsp;।
+         नानुकार इति भ्रमितव्यम्&nbsp;। अनेन भगण्डेन राजपुत्रस्यान्यस्य वा<a href="" class="app" title="त्रस्य न्याय्यवागनुकृतेत्यादि <b&gt;भम</b&gt;"><span class="appnum"><sup>5</sup></span></a>नुकृतेऽन्या(कृतावन्या)दिबुद्धेरभावात्&nbsp;। तद्धि विका(क)रणमिति प्रसिद्धं हासमात्रफलं
+         मध्यस्थानाम्&nbsp;। यदभिप्रायेण मुनिर्वक्ष्यति ―
+      </p>
+      
+      
+      <div class="lg" type="">
+         <span class="line">परचेष्टानुकरणाद्धासस्समुपजायते (अ. ७-१०) इति&nbsp;॥</span>
+         
+      </div>
+      
+      
+      <p>तत्पक्षीयाणान्तु तदेव द्वेषासूयानि(नु)वृत्त्यादिफलम्&nbsp;। तद्बुध्यैव हि दैत्यानां हृदयक्षोभः
+         ‘एवम्भूता वयमुपहासभाजनम्’ इति&nbsp;। उपहास्यताभीरवश्च निवर्तन्ते ततः&nbsp;। न तूपदेशेन&nbsp;।
+      </p>
+      
+      ﻿<span class="pageinfo">[page 037]</span>
+      
+      
+      <p>नन्वेनं तावता नियतानुकारो माभूत्&nbsp;। अनुकारेण तु किमपराद्धम्&nbsp;। न किञ्चिदसम्भवादृते&nbsp;।
+         अनुकार इति हि सदृशकरणम्&nbsp;। तत्कस्य&nbsp;। न तावद्रामादेः&nbsp;। तस्याननुकार्यत्वात्&nbsp;। एतेन प्रमदादिविभावानामनुकरणं
+         पराकृतम्&nbsp;। न चित्तवृत्तीनां शोकक्रोधादिरूपाणाम्&nbsp;। न हि नटो रामसदृशं स्वात्मनः शोकं
+         करोति&nbsp;। सर्वथैव तस्य तत्राभावात्&nbsp;। भावे वाननुकारत्वात्&nbsp;। न चान्यद्वस्त्वस्ति यच्छोकेन
+         सदृशं स्यात्&nbsp;। अनुभावांस्तु करोति&nbsp;। किन्तु सजातीयानेव&nbsp;। न तु तत्सदृशान्&nbsp;। साधारणरूपस्य
+         कः केन सादृश्यार्थः&nbsp;। त्रैलोक्यवर्तिनः सदृशत्वन्तु न विशेषात्मना यौगपद्येनोपपद्यते&nbsp;।
+         कदाचित्क्रमेण नियत एवानुकृतः स्यात्&nbsp;। सामान्यात्मकत्वे कोऽनुकारार्थः&nbsp;। तस्मादनियतानुकारो<a href="" class="app" title="तस्यायतानुकारो ना <b&gt;म</b&gt;"><span class="appnum"><sup>1</sup></span></a> नाट्यमित्यपि न भ्रमितव्यम्&nbsp;। <span class="mentioned">अस्मदुपाध्यायकृते काव्यकौतुके</span>ऽप्ययमेवाभिप्रायो मन्तव्यः&nbsp;। न त्वनियतानुकारोऽपि&nbsp;।
+      </p>
+      
+      
+      <p>तेनानुव्यवसायविशेषविषयीकार्यं नाट्यम्&nbsp;। तथा चाहार्यविशेषादिना<a href="" class="app" title="ना हि वृत्ते <b&gt;म</b&gt;, ना हि वृत्तेन <b&gt;भ</b&gt;"><span class="appnum"><sup>1</sup></span></a> निवृत्ते तद्देशकालचैत्रमैत्रादिनटविशेषप्रत्यक्षाभिमाने विशेषलेशोपक्रमेण च विना प्रत्यक्षा<a href="" class="app" title="क्षप्र <b&gt;भ</b&gt;"><span class="appnum"><sup>2</sup></span></a>प्रवृत्तेरायाते रामादिशब्दस्यात्रोपयोगात् प्रसिद्धतदर्थतयाऽऽदरणीयचरितवाचकस्यासम्भावनामात्रनिराकरणेनानुव्यवसायस्य
+         प्रत्यक्षकल्पनाट्ये हृद्यगीताद्यनुस्यूततया चमत्कारस्थानत्वाद्धृदयानुप्रवेशयोग्यत्वमभिनयचतुष्टयेन
+         स्वरूपप्रच्छादनं, प्रस्तावनादिना नटज्ञानजसंस्कारसाचिव्यं, तेन रञ्जकसामग्रीमध्यानुप्रविष्टेन
+         प्रच्छादितस्वस्वभावेन<a href="" class="app" title="न प्रवृ <b&gt;भ</b&gt;"><span class="appnum"><sup>3</sup></span></a> प्राक्प्रवृत्तलौकिकप्रत्यक्षानुमानादिजनितसंस्कारसहायेन सहृदयनज्ञानसंस्कारसचिवेन हृदयसंवादतन्मयीभ<a href="" class="app" title="भावना"><span class="appnum"><sup>4</sup></span></a>वनसहकारिणा प्रयोक्त्रा दृश्यमानेन योऽनुव्यवसायो जन्यते सुखदुःखाद्याकारतत्तच्चित्तवृत्तिरूपरूषितनिजसंविदानन्दप्रकाशमयः
+         अत एव विचित्रो रसनास्वादनचमत्कारचर्वणनिर्वेशभोगाद्यपरपर्यायः तत्र यदवभासते<a href="" class="app" title="तेऽस्तु <b&gt;म</b&gt;"><span class="appnum"><sup>5</sup></span></a> वस्तु तन्नाट्यम्&nbsp;। तच्च ज्ञानाकारमात्रमारोपितं स्वरूपं सामान्यात्मकं तत्कालनिर्मितरूपं
+         चान्यद्वा<a href="" class="app" title="न्यथा <b&gt;म</b&gt;"><span class="appnum"><sup>6</sup></span></a>  किञ्चिदस्तु&nbsp;। नात्राप्रस्तुतलेखनेनात्मनो दर्शनान्तरकथापरिचयप्रकटनफलेन<a href="" class="app" title="भयेन <b&gt;म</b&gt;"><span class="appnum"><sup>7</sup></span></a> प्रकृतवस्तुनिरूपणविघ्नमाचरन्तः सहृदयान्खेदयामः&nbsp;। तस्मादनुव्यवसायात्मकं कीर्तनं रूषितविकल्पसंवेदनं
+         नाट्यम्&nbsp;। तद्वेदनवेद्यत्वात्&nbsp;। न त्वनुकरणरूपम्&nbsp;। यदि त्वेवं मुख्यलौकिककरणानुसारितयाऽनुकरणमित्युच्यते
+         तन्न कश्चिद्दोषः&nbsp;। स्थिते वस्तुतो भेदे शब्दप्रवृत्तेरविवादास्पदत्वात्&nbsp;। एतच्च यथावसरं
+         वितनिष्यत इत्यास्तां तावत्&nbsp;। ﻿<span class="pageinfo">[page 038]</span> यतश्चेदं नानुकरणं ततो यत्कैश्चिच्चोदितं तदनवकाशम् ― ‘न च गीतवाद्ययुक्तः सर्वावस्थासु
+         कश्चिदनुकार्यः’ इति&nbsp;। न त्वनुकार्यत्वेन गीतादय इत्युक्तम्&nbsp;। परिहारोऽपि य उक्तः ‘आसनगमनस्नानस्वापप्रतिबोधभोजनाद्यासु
+         वस्तुतो गीतवाद्यं लोके चेष्टास्वतिप्रथितम्’ इत्यादि, तदप्यनुपपन्नम्&nbsp;। न हि गमनादौ
+         तद्ध्रुवातालादिरूपेण गीतादि लोकेऽस्ति मङ्गलमात्रत्वादृते&nbsp;। गायनवादनादिष्वपि चानुकारबुद्ध्यापत्तेरित्यलम्&nbsp;।
+         (१०७)
+      </p>
+      
+      
+      <p>ननु त्रैलोक्यस्य ये भावास्तेषां यद्यनुकीर्तनं नाट्यं तदेकत्रैव रूपके एकत्रैव <a href="" class="app" title="चाङ्गादौ <b&gt;मभ</b&gt;"><span class="appnum"><sup>1</sup></span></a>चाङ्कादौ सर्वमेव दृश्येतेत्याशङ्कानिराकरणपूर्वकं पूर्वप्रयोजनेन सप्रयोजनत्वमुपसंहरति
+         ― क्वचिद्धर्म इत्यादिना ‘लोकोपदेशजननं नाट्यमेतद्भविष्यति’ इत्यन्तेन श्लोकाष्टकेन&nbsp;। एतच्च कैश्चिद्धिन्नवाक्यतया प्रतिश्लोकं व्याख्यातम्&nbsp;। तच्च
+         पौनरुक्त्याध्याहारपरस्परासङ्गत्यादिदोषोपहतं स्यादित्युपेक्ष्यमेव&nbsp;। तस्मादित्थमत्र
+         योजना ― नानाप्रकारैर्भावैः स्थायिव्यभिचारि(वि)भावादिभिरुपसम्पन्नं सर्वतो व्याप्तम्&nbsp;।
+         तेषां च भावादीनां देशकालप्रकृत्त्यवस्थान्तरभिन्नस्वभावत्वात्तदपि नानावस्थात्मकम्&nbsp;।
+         अत एवाहोत्तमाधमेति&nbsp;। एवम्भूतमेतद्भविष्यति&nbsp;। काले विश्रान्तिजननं हितोपदेशजननं च भविष्यतीति
+         सम्बन्धः&nbsp;।
+      </p>
+      
+      
+      <p>के के नानाप्रकारा भावा इत्याह ― <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_01-dn.html#N%C4%81%C5%9A%C4%81.1.108" target="_blank">क्वचिद्धर्म</a></span> इत्यादि&nbsp;। यथायोगं धर्मादयः शब्दास्तदचितस्थायिव्यभिचार्यादिसूचकाः&nbsp;। तेन धर्मोऽर्थ
+         इत्युत्साहादिः&nbsp;। क्रीडेति विस्मयादिः&nbsp;। शम इति निर्वेदादिः&nbsp;। हास्यमिति हासादिः&nbsp;। युद्धमिति
+         रौद्रादिः&nbsp;। काम इति रत्यादिः&nbsp;। वध इति क्रोधभयजुगुप्साशोकादिः&nbsp;। अमीभिश्च समुचितव्यभिचारिभावविभावाः<a href="" class="app" title="र्यनुभावाः <b&gt;भ</b&gt;"><span class="appnum"><sup>1</sup></span></a> स्वीकृताः&nbsp;। क्वचिदिति शब्देन दशरूपकान्यतममुच्यते&nbsp;। त(य) था﻿<span class="pageinfo">[page 039]</span>नाटकाद्यनेकरूपकगतो विशेषस्तथैकं ना(कना)टकादिविशेषको विभागः&nbsp;। एतदुक्तं भवति -किञ्चिद्धर्मप्रधानं
+         रूपकं यथा नाटकं प्रकरणं वा&nbsp;। क्रीडाप्रधानं तथा प्रसिद्धानां यथा भाणः&nbsp;। अर्थप्रधानत्वं
+         प्रकरणादावेव&nbsp;। एवं दशरूपकलक्षणानुसारेण सर्वमनुसरणीयम्&nbsp;। तथा क्वचिन्नाटके धर्मः प्रधानम्
+         ― यथा <span class="mentioned">छलितरामे</span> रामस्याश्वमेधयागः&nbsp;। क्वचित्क्रीडा-यथा <span class="mentioned">स्वप्नवासवदत्तायाम्</span>&nbsp;। एवमन्यत्राप्यतुसरणीयम्। <a href="" class="app" title="तथा तत्रापि, तथापि <b&gt;भ</b&gt;"><span class="appnum"><sup>2</sup></span></a>तथैकत्रापि नाटके क्वचिदंशे<a href="" class="app" title="क्वचिदङ्गे <b&gt;म</b&gt;"><span class="appnum"><sup>3</sup></span></a> धर्मो यथाऽ<span class="mentioned">भिज्ञानशाकुन्तले</span> ― ‘अपि नाम कुलपतेरियमसवर्णक्षेत्रसम्भवा स्यात्’ (अङ्क-१)&nbsp;। एवं प्रतिनाटकमेकदेशेषु सुलक्षा एवं क्रीडादय इति ग्रन्थविस्तरभीरुभिरस्माभिर्न परिवर्णिताः<a href="" class="app" title="र्तिताः"><span class="appnum"><sup>4</sup></span></a>&nbsp;।
+      </p>
+      
+      
+      <p>नन्ववस्थादेशकालप्रकृतिविशेषसमुचितभावानुकीर्तनमात्रमेव कर्तव्यम्&nbsp;। किं रामाय(दि)रावणेत्यादिसमाश्रयेणेत्याशङ्क्याह
+         <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_01-dn.html#N%C4%81%C5%9A%C4%81.1.109" target="_blank">धर्म</a></span> इति&nbsp;। <b>चो</b> हेतौ&nbsp;। यस्माल्लोकवृत्तानुसारेण करणं प्रयोगरूपं नाट्यं मया कृतमेतदित्येतस्मात्कारणाद्धर्मप्रवृत्तानां
+         रामयुधिष्ठिरादीनां सम्बन्धित्वेन धर्म उक्तः&nbsp;। <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_01-dn.html#N%C4%81%C5%9A%C4%81.1.109" target="_blank">निग्रह</a></span> इति वधः&nbsp;। विनीतानां जितेन्द्रियाणां सम्बन्धित्वेन दमस्य शमस्य क्रिया योजना&nbsp;। विनयो
+         हीन्द्रियजयः&nbsp;। एवं क्लीबानामुपहास्यानां <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_01-dn.html#N%C4%81%C5%9A%C4%81.1.110" target="_blank">धाष्ट्रर्यजननमिति</a></span> विभावेन हासोऽत्रोक्तः&nbsp;। धाष्ट्र्याज्जननं जन्म यस्य हास्यवस्तुनः&nbsp;। यद्वक्ष्यति ― ‘विकृतपरवेषालङ्कारधाष्ट्र्यादिभिः’ (अ-६.) इत्यादि&nbsp;। <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_01-dn.html#N%C4%81%C5%9A%C4%81.1.110" target="_blank">विबोध</a></span> इति ण्यन्तस्य रूपम्&nbsp;। अबुद्धत्वेन प्रसिद्धानां सम्बन्धित्वेन बोधनमुपायोपदेशेन व्युत्पाद्यत्वम्&nbsp;।
+         <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_01-dn.html#N%C4%81%C5%9A%C4%81.1.110" target="_blank">विदुषां</a></span> भीष्मादीनाम्&nbsp;। उपायव्युत्पाद्यत्वेन <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_01-dn.html#N%C4%81%C5%9A%C4%81.1.110" target="_blank">वैदुष्यम्</a></span>&nbsp;। अनेन स्मृतिमतिप्रभृतीनां निरूपणम्&nbsp;। <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_01-dn.html#N%C4%81%C5%9A%C4%81.1.111" target="_blank">विलास</a></span> इति क्रीडा&nbsp;। स्थैर्यमिति व्यवसायात्मकमुत्साहरूपमेव&nbsp;। चशब्द एवकारार्थे&nbsp;। दुःखार्दितत्वेन
+         यः प्रसिद्धस्तस्यैव सम्बन्धित्वेनेत्यर्थः&nbsp;। <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_01-dn.html#N%C4%81%C5%9A%C4%81.1.111" target="_blank">धृति</a></span>र्धेर्यम्&nbsp;। एतदुक्तं भवति ― लोकवृत्तानुसारेण यत इयं नाट्यक्रिया<a href="" class="app" title="क्रीडा"><span class="appnum"><sup>1</sup></span></a> लोके च धर्मादयोऽनाश्रयाः न संवेदनयोग्याः तेन धर्मादिविषये यो यथा प्रसिद्धो रामादिः
+         स शब्दमात्रोपयोगित्वेन मुख्यपात्रप्रणालिकया गृहीतः&nbsp;।
+      </p>
+      
+      
+      <p>एवंभूतं यन्नाट्यं तत्प्रेक्षकाणां दुःखेन व्याध्यादिकृतेन श्रमेणाध्वक्लेशादिजेन शोकेन
+         बन्धुमरणादिकृतेनार्तानां पीडितानां तथा तपस्विनामनवरतकृच्छ्रचान्द्रयणाद्याचरणकलितदौर्बल्यातिशयपरिखिन्नहृदयानां
+         <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_01-dn.html#N%C4%81%C5%9A%C4%81.1.114" target="_blank">विश्रान्तिजननं</a></span> दुःखप्रसरणविघातकम्&nbsp;। प्रतिहतदुःखानां चाह्लादात्मक<a href="" class="app" title="दधृत्या"><span class="appnum"><sup>1</sup></span></a> धृत्यादिकारणं यथायोगम्&nbsp;। तद्यथा ― शोकार्तस्य धृतिर्व्याध्यार्तस्य क्रीडा&nbsp;। श्रमार्तस्य
+         सुखम्&nbsp;। आदिग्रहणेन तपस्विनो मतिविबोधादय<a href="" class="app" title="बोध इति <b&gt;भ</b&gt;"><span class="appnum"><sup>2</sup></span></a> इति मन्तव्यम्&nbsp;।
+      </p>
+      
+      ﻿<span class="pageinfo">[page 040]</span>
+      
+      
+      <p>न चैतावदेव यावत्कालान्तरेऽपि<a href="" class="app" title="रे विपरी <b&gt;मभ</b&gt;"><span class="appnum"><sup>1</sup></span></a> विपरीपाकं सुखमुपदेशजं जनयतीत्येवं दुःखितानां तत्प्रशमसुखवितरण<a href="" class="app" title="विकार <b&gt;म</b&gt;"><span class="appnum"><sup>2</sup></span></a>कालान्तरसुखलाभाः प्रयोजनम्&nbsp;। ये न दुःखिताः<a href="" class="app" title="येनादुःखिता <b&gt;म</b&gt;"><span class="appnum"><sup>3</sup></span></a> सुखभूयिष्ठवृत्तय एव राजपुत्राद्यास्तेषां लोकवृत्ते धर्माद्युपायवर्गे उपदेशकार्येतन्नाट्यम्&nbsp;।
+         लोकशब्देन लोकवृत्तम्&nbsp;।
+      </p>
+      
+      ﻿<span class="pageinfo">[page 041]</span>
+      
+      
+      <p>ननु किं गुरुवदुपदेशं करोति&nbsp;। नेत्याह&nbsp;। किन्तु बुद्धिं विवर्धयति&nbsp;। स्वप्रतिभामेव तादृशीं
+         वितरतीत्यर्थः&nbsp;। न च सा दुष्टा प्रतीतिरित्याह ― <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_01-dn.html#N%C4%81%C5%9A%C4%81.1.115" target="_blank">हितम्</a></span> ― हितप्रतिभाजनकत्वात्&nbsp;। अत्र हेतुमाह ― यतो धर्मादनपेतम्&nbsp;। यशश्शब्देन लोकप्रसिद्धिहेतुभूतमद्
+         ― भुतकारि वस्तूच्यते, यथा रामस्य सप्तसालव्यथनादि&nbsp;। तदुपदेशे साधु यशस्यम्&nbsp;। आयुर्वृद्धिहेतव
+         आचारा आयुः&nbsp;। तेषु साधु आयुष्यम्&nbsp;। एवं दुःखितानामदुःखितानां चेदमुपादेयमित्युक्तम्&nbsp;।
+         दुःखं च शारीरं मानसं वा&nbsp;। शारीरमपि दैवकृतं स्वयंकृतमपि दृष्टं फलो(ष्टफलो)द्देशेनान्येन
+         चेत्येतावानेव दुःखितवर्ग इति दुःखार्तानामित्यादिभेदोपादानस्य फलम्&nbsp;।
+      </p>
+      
+      
+      <p>केचित्तु धर्मो धर्मप्रवृत्तानामित्यादि सामाजिकविषयत्वेन व्याचक्षते हृदयसंवादयोग्यतातात्पर्येण&nbsp;।
+         अन्ये त्वकारप्रश्लेषादिव्याख्याप्रकारेणाधर्मप्रवृत्तानामित्यादि विपरीतत्वेन व्याचक्षते
+         उपदेश्यत्वाभिप्रायेण&nbsp;। उभयमप्येतदसत्, पौनरुक्त्यादि दोषापातात्&nbsp;। चैतद्धर्म्य यशस्यमित्यादेः
+         पुनरुक्तम्&nbsp;। (१०८-११५)
+      </p> 
+      
+      
+      <p>न चानेन प्रधानमात्र एवोपदेशः कृतः पुरुषार्थोपायमात्रे वा&nbsp;। यावत्तदुपायोपेयादिष्वपीति
+         दर्शयति ― न <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_01-dn.html#N%C4%81%C5%9A%C4%81.1.116" target="_blank">तदिति</a></span>&nbsp;। <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_01-dn.html#N%C4%81%C5%9A%C4%81.1.116" target="_blank">अस्मिन्निति</a></span>&nbsp;। सप्तद्वीपगतभावानुकीर्तनद्भरूपे नाट्ये दृश्यमाने यन्न दृश्यते न हृदयगोचरमेति तादृग्ज्ञानादिकं
+         नास्तीति शेषः&nbsp;। <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_01-dn.html#N%C4%81%C5%9A%C4%81.1.116" target="_blank">ज्ञानमित्यु</a></span> पादेयमात्मज्ञानादि&nbsp;।
+      </p>
+      
+      
+      <p>यथा <span class="mentioned">वेणीसंहारे</span> ― ‘आत्मारामा विहितरतयो निर्विकल्पे समाधौ’ (१-२३) इत्यादि&nbsp;। <b>शिल्पमिति</b>&nbsp;। मालाचित्रपुस्तादियोजनम्&nbsp;।
+      </p>
+      
+      
+      <p>यथ ‘वेष्टितग्रथितगुम्फसंहतैराततैश्च कुसुमैस्सपल्लवैः’ इत्यादौ&nbsp;। विद्या दण्डनीत्यादि&nbsp;।</p>
+      
+      ﻿<span class="pageinfo">[page 042]</span>
+      
+      
+      <p>यथा  ‘शमव्यायामाभ्यां प्रतिविहिततन्त्रस्य नृपतेः&nbsp;।’ (बाल. रा. १-२४) इत्यादौ&nbsp;। <b>कला</b> गीतवाद्यादिका&nbsp;।
+      </p> 
+      <p>यथा ‘व्यक्तिर्व्यञ्जनधातुना’ (नागानन्द १-१४) इत्यादौ&nbsp;।</p>
+      
+      
+      <p><b>योगो</b> योजनं तेषामेव ज्ञानादीनां कलान्तानां स्वभेदैरन्योन्यस्वभेदैः&nbsp;। यथा ―
+      </p>
+      
+      
+      <div class="lg" type="">  
+         <span class="line">
+            <span class="a">“मेघाशङ्किशिखण्डिताण्डवविधावाचार्यकं कल्पय-</span>
+            <span class="b">न्निर्ह्रादो मुरजस्य मूर्च्छतितरां वेणुस्वनापूरितः&nbsp;।</span>
+            </span>
+         <span class="line">
+            <span class="c">वीणायाः कलयन् लयेन गमकानुग्राहिणीं मूर्च्छनां</span>
+            <span class="d">कर्षत्येष च <a href="" class="app" title="कालकुट्टितकला"><span class="appnum"><sup>1</sup></span></a>कालकूटितकलारम्यश्रुतिं षाडबे&nbsp;॥” (भेज्जल-राधाविप्रलम्भ)</span>
+            </span>
+         
+      </div>
+      
+      
+      <p>इत्यादौ&nbsp;। तत्रेहातोद्यनिचयगीतयोजना कृता&nbsp;।</p>
+      
+      
+      <p>अन्योन्यं यथा ― ‘आविलपयोधराग्रं लवलीदलपाण्डुकोलच्छायम्’ (विक्रमो ५-८) इत्यादौ&nbsp;। अत्र हि श्रृङ्गाराङ्गस्य वैद्यकविद्यया योजना&nbsp;।</p>
+      
+      
+      <p><span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_01-dn.html#N%C4%81%C5%9A%C4%81.1.116" target="_blank">कर्मेति</a></span> युद्धनियुद्धादिर्व्यापारः&nbsp;। यथा ―
+      </p>
+      
+      <div class="lg" type="">
+         <span class="line">
+            <span class="a">“आलीढस्थितटङ्कितस्य निमितां दृष्टित्रयीं तन्वतः</span>
+            <span class="b">पुङ्खाग्रक्रमसर्पणेन विशिखप्रान्तादथोच्चैस्तमाम्&nbsp;।</span>
+            </span>
+         <span class="line">
+            <span class="c">चक्रीभूतशरासनस्य न <a href="" class="app" title="नमनाल <b&gt;भ</b&gt;, रचनाल <b&gt;भ</b&gt;"><span class="appnum"><sup>1</sup></span></a>मनाल्ल (क् ल) क्ष्यादमी विच्यु<a href="" class="app" title="विद्युतः <b&gt;म</b&gt;"><span class="appnum"><sup>2</sup></span></a>ता-</span>
+            <span class="d">श्चित्रं चित्रमुमाधवस्य युगपत्सर्वे सुरेन्द्रद्विषः&nbsp;॥” इति&nbsp;॥</span>
+            </span>
+         
+      </div>
+      
+      ﻿<span class="pageinfo">[page 043]</span>
+      
+      
+      <p>एवं सप्रयोजनत्वमभिधाय प्रकृतमेव पुराकल्पमनुबध्नाति ― तन्नान्नेति&nbsp;। तदिति&nbsp;। तस्मात्&nbsp;।
+         अत्र नाट्येऽमरान्प्रति न मन्युः कार्यः&nbsp;। तेऽपि तत्र न केचित्&nbsp;।
+      </p>
+      
+      
+      <p>एतदेवाह ― <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_01-dn.html#N%C4%81%C5%9A%C4%81.1.117" target="_blank">सप्तद्वीपानुकरणमयी</a></span> हि <a href="" class="app" title="कटक्रि&nbsp;। कः क्रिया <b&gt;भम</b&gt;"><span class="appnum"><sup>1</sup></span></a>क्रिया(नटक्रिया)रङ्गे दृश्यते&nbsp;। न च सागरद्वीपादीनां कश्चित्तत्र सम्भव इति भावः (११६-११७)&nbsp;।
+      </p>
+      
+      
+      <p>ननु किमर्थमेषां नामानि गृहीतानीत्याशङ्क्याह ― <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_01-dn.html#N%C4%81%C5%9A%C4%81.1.118" target="_blank">देवानामि</a></span>त्यादि&nbsp;। एतेषामेवाधिकारिपुरुषत्वात्<a href="" class="app" title="षत्वं नि <b&gt;म</b&gt;"><span class="appnum"><sup>1</sup></span></a> निराधारस्य वृत्तस्य दर्शयितुमशक्यत्वात्&nbsp;। एतच्चोक्तं पूर्वम्&nbsp;। अत एव यत्र निर्व्याजसहजौदार्यधर्मादिविषये
+         बलिप्रह्लादप्रभृतेः प्रसिद्धिस्तत्र सोऽप्युदीरित आश्रयत्वेन&nbsp;। तदाह ― <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_01-dn.html#N%C4%81%C5%9A%C4%81.1.118" target="_blank">असुराणा</a></span>मिति&nbsp;। न च भवद्वैरिण एवात्र वर्णिताः अपि तु ब्रह्मर्षयोऽपि&nbsp;। अनेन ‘प्रत्यादेशोऽयमस्माकम्&nbsp;।
+         सुरार्थम्&nbsp;॥’ इत्याशङ्काद्वयमपि परिहृतम्&nbsp;। एतत्तात्पर्येणोपसंहरति <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_01-dn.html#N%C4%81%C5%9A%C4%81.1.119" target="_blank">योऽय</a></span>मिति&nbsp;। <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_01-dn.html#N%C4%81%C5%9A%C4%81.1.119" target="_blank">अय</a></span>मिति ― प्रत्यक्षकल्पानुव्यवसायविषयः लोकप्रसिद्धसत्यासत्यादि विलक्षणत्वात् यच्छब्दवाच्यः&nbsp;।
+         लोकस्य सर्वस्य साधारणतया स्वत्वेन भाव्यमानश्चर्व्यमाणोऽर्थो नाट्यम्&nbsp;। स च सुखदुःख<a href="" class="app" title="सुख"><span class="appnum"><sup>2</sup></span></a>रूपेण विचित्रेण समनुगतः&nbsp;। न तु तदेकात्मा&nbsp;।
+      </p>
+      
+      
+      <p>तथा हि ― रतिहासोत्साहविस्मयानां सुखस्वभावत्वम्&nbsp;। तत्र तु चिरकालव्यापिसुखानुसन्धिरूपत्वेन
+         विषयौन्मुख्यप्राणतया तद्विषयाशंसाबाहुल्येनापायभीरुत्वाद् दुःखांशानुवेधो रतेः&nbsp;। हासस्य
+         सानुसन्धानस्य विद्युत्सदृशतात्कालिकाल्पदुःखरूपः सुखानुगतौ&nbsp;। उत्साहस्य तात्कालिकदुःखायासरूपनिमज्जनानुसन्धिना
+         भाविबहुजनो ― पकारिचिरतरकालभाविसुखसञ्चिकीर्षात्मना सुखरूपता&nbsp;। विस्मयस्य निरनुसन्धानतटित्तुल्यसुखरूपता&nbsp;।
+      </p>
+      
+      
+      <p>क्रोधभयशोकजुगुप्सानां तु दुःखस्वरूपता&nbsp;। तत्र चिरकालदुःखानुसन्धिप्राणो विषयगतात्यन्तिकसुखभावनाकांक्षाप्राणतया
+         सुखदुःखानुवेधवान् क्रोधः&nbsp;। निरनुसन्धितात्कालिकदुःखप्राणतया तदपगमाकांक्षोत्प्रेक्षितसुखानुसम्भिन्नं
+         भयम्&nbsp;। द्वैकालिकस्त्वभीष्टविषयनाशजः प्राक्तनसुखस्मरणानुविद्धः सर्वथैव दुःखरूपः शोकः&nbsp;।
+         <a href="" class="app" title="उत्प <b&gt;भ</b&gt;"><span class="appnum"><sup>1</sup></span></a>उत्पाद्यामानसुखानुसन्धानजीवितविषयात्प(या प)लायनपरायणरूपान्नि(पा नि) षिध्यमानशङ्कितसुखानुविद्धा
+         जुगुप्सा&nbsp;। समस्तम(त)त्पूर्वदुःखसञ्चयसंस्मरणप्राणितः(तोऽ) संभावितदुःखबहुलसुख(दुःख)योनिः
+         निर्वेदः&nbsp;। एवं व्यभिचारिप्रभृतिष्वपि वाच्यम्&nbsp;। संवित्स्वभावाः सुखादय इति च दर्शने
+         न तत्स्वभावत्वम्&nbsp;। अन्येत्व(तैस्त्व)त्र तद्वेदनरूपत्वमेव तेषां मन्तव्यम्&nbsp;। एवं लौकिका
+         ये सुखदुःखात्मनो भावाः ﻿<span class="pageinfo">[page 044]</span>तत्सदृशस्तत्संस्कारानुविद्धो नाट्यलक्षणोऽर्थः समुदायरूपस्तस्यैव भागानुसरणयः&nbsp;।
+      </p>
+      
+      
+      <p>एवं दयारत्यादिरूपानुसरणभूतो (एवंभूतो) नाट्यलक्षणोऽर्थः कथं प्रतीतिगोचरीभवतीत्याह ―
+         <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_01-dn.html#N%C4%81%C5%9A%C4%81.1.119" target="_blank">अङ्गादीति</a></span>&nbsp;। येऽभिनयाःआङ्गिकादयः न च ते लिङ्गसङ्केतादिरूपाः&nbsp;। अपि तु प्रत्यक्षसाक्षात्कारकल्पलौकिकसम्यङ्मिथ्याज्ञानादिरूपः&nbsp;।
+         तस्यैव भावाः शृङ्गारादयो रत्यादिविलक्षणास्वादपर्यायप्रतीत्युपयोगिनः&nbsp;। अत एवाभिमुख्यनयनहेतुत्वादन्यलोकशास्त्रा<a href="" class="app" title="स्त्रप्र <b&gt;भ</b&gt;"><span class="appnum"><sup>1</sup></span></a> प्रसिद्धेनाभिनयशब्देन व्यपदेश्याः&nbsp;। तथाऽङ्गानि शाखानृत्तगीतानि आद्यः प्रधाना येषां
+         तेऽङ्गादयः&nbsp;। तथाऽङ्गानि व्यभिचारिणो भावादयो हेतुरूपा विभावाः&nbsp;। अभिनयाः अनुभवाः&nbsp;। त
+         एते रसाभिमुख्यनयनहेतवः यद्वक्ष्यति विभावानुभाव ‘व्यभिचारिसंयोगाद्रसनिष्पत्तिः’ इति&nbsp;।
+         (अ-६) तैरुपेतः&nbsp;। उप समीपमितः संविद्दर्पणमभिसङ्गक्रान्तः&nbsp;। एवंभूतोऽर्थो नाट्यं नटनीयं
+         नर्तनीयम्&nbsp;। तथा गमनीयं यत्नेन स्वरूपतो हृदयेनानुप्रवेष्टव्यम्&nbsp;। तथा नाटकानां (नटानां)
+         पारम्पर्यात्मकं वृत्तं नाट्यं धर्माम्नायरूपं च&nbsp;। तच्च सुखदुःखाभ्यां फलरूपाभ्यां सम्यगन्वितम्&nbsp;।
+         तेषां पश्चाद्भावित्वात्&nbsp;। ﻿<span class="pageinfo">[page 045]</span>तेन हेयोपादेयव्युत्पत्तिः फलम्&nbsp;। एतच्च वितत्याग्रे भावस्वरूपं निरूपयिष्यामः&nbsp;। (११८-११९)&nbsp;।
+      </p>
+      
+      
+      <p>एवं सान्त्वेनापसारितेष्वपि विघ्नेषु दिव्यनिदेशना<a href="" class="app" title="शाना <b&gt;भ</b&gt;"><span class="appnum"><sup>1</sup></span></a>नाममोधत्वात् पूर्वविनियुक्तदेवतां<a href="" class="app" title="ताङ्गा <b&gt;म</b&gt;"><span class="appnum"><sup>2</sup></span></a>शानां तत्र तत्र सन्निधानाद्यजनमवश्यकार्यमिति प्रदर्शयितुक्तमेवेतिहासमनुसन्धन्निरूपयति
+         ― <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_01-dn.html#N%C4%81%C5%9A%C4%81.1.120" target="_blank">एतस्मिन्रिति</a></span>&nbsp;। <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_01-dn.html#N%C4%81%C5%9A%C4%81.1.120" target="_blank">अन्तर</a></span> इति समये&nbsp;। <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_01-dn.html#N%C4%81%C5%9A%C4%81.1.120" target="_blank">विधिव</a></span>दिति व्याचष्टे ― <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_01-dn.html#N%C4%81%C5%9A%C4%81.1.121" target="_blank">बलिप्रदानै</a></span> ― रित्यादि&nbsp;। बल्यन्ते आप्याय्यन्ते देवता अनेनेति बलिः&nbsp;। विचित्रवर्णतण्डुलादिरचनाविशेषः&nbsp;।
+         <a href="" class="app" title="दानं तिला"><span class="appnum"><sup>3</sup></span></a>तिलादयश्चाग्नौ हूयन्त इति <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_01-dn.html#N%C4%81%C5%9A%C4%81.1.121" target="_blank">होमाः</a></span>&nbsp;। उभयत्र विशेषणं <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_01-dn.html#N%C4%81%C5%9A%C4%81.1.121" target="_blank">मन्त्रौषधीति</a></span>&nbsp;। मन्त्रा वक्ष्यमाणाः&nbsp;। ओषधयो वचाबलाजमोदप्रभृतयः&nbsp;। प्रशस्तानि धान्यानि च&nbsp;। खरविशदं
+         शष्कुलीमोदकादि भोज्यं भक्ष्यमुच्यते&nbsp;। भक्षणीयन्तु भक्ष्यं पायसकृसरादि&nbsp;। पानानि क्षीरक्षुद्राक्षारसादीनि&nbsp;।
+         बलिः पूर्वोक्तो रचनाविशेषः&nbsp;। एतैविच्छित्तियोजितैर्विविधतया कल्प्यताम्&nbsp;। शोभाप्रधानं
+         हि नाट्ये सर्वम्&nbsp;।
+      </p> 
+      
+      
+      <p>ननु देवानां देवपूजाकरणे किं फलमित्याह ― <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_01-dn.html#N%C4%81%C5%9A%C4%81.1.122" target="_blank">मर्त्यलोकगता</a></span> इत्यादि&nbsp;। यद्यदाचरति श्रेष्ठ इति न्यायादिति भावः&nbsp;। <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_01-dn.html#N%C4%81%C5%9A%C4%81.1.122" target="_blank">प्रवर्तयोदिति</a></span>&nbsp;। देवानुष्ठिताचारानुवर्तित्वात्&nbsp;। लोक इति शेषः&nbsp;। (१२०-१२२)&nbsp;।
+      </p> 
+      
+      
+      <p>ननु यदि लोकः सदाचारं नानुवर्तेत ततः किमित्याह ― <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_01-dn.html#N%C4%81%C5%9A%C4%81.1.123" target="_blank">अपूजयित्वेति</a></span>&nbsp;।
+      </p>
+      
+      ﻿<span class="pageinfo">[page 046]</span>
+      
+      
+      <p><span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_01-dn.html#N%C4%81%C5%9A%C4%81.1.123" target="_blank">निष्फल</a></span>मिति&nbsp;। <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_01-dn.html#N%C4%81%C5%9A%C4%81.1.123" target="_blank">तस्ये</a></span>ति&nbsp;। नाट्याचार्यस्य&nbsp;। पारलौकिकमपि प्रत्यवायमाह  ― <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_01-dn.html#N%C4%81%C5%9A%C4%81.1.123" target="_blank">तिर्यग्योनिं</a></span> चेति&nbsp;। (१२३)&nbsp;।
+      </p>
+      
+      
+      <p>ननु यद्यपूजेन प्रत्यवायस्तर्हि पूजने किं तन्निवृत्तिमात्रं फलम्&nbsp;। नेत्याह  ― यथा <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_01-dn.html#N%C4%81%C5%9A%C4%81.1.126" target="_blank">विधी</a></span>ति&nbsp;। यथा देवैर्विहिता&nbsp;। कथमेतज्ज्ञायत इत्याह  ― <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_01-dn.html#N%C4%81%C5%9A%C4%81.1.126" target="_blank">यथादृष्ट</a></span>मिति शास्त्रदृष्टोऽसौ विधिरित्यर्थः&nbsp;। <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_01-dn.html#N%C4%81%C5%9A%C4%81.1.126" target="_blank">अर्थान् शुभा</a></span>निति&nbsp;। ऐहलौकिकधनमानप्रसिद्धिलाभ उक्तः&nbsp;। (१२४-१२६)
+      </p>
+      
+      
+      <p>एवं मर्त्यान्प्रत्याभिधाय प्रकृतमेव पुराकल्पमनुसन्धत्ते  ― <span class="mentioned"><a href="n%C4%81%E1%B9%ADya%C5%9B%C4%81stra_01-dn.html#N%C4%81%C5%9A%C4%81.1.127" target="_blank">एवमुक्त्वेति</a></span>। नाट्याचार्यस्यैव देवयजनेऽधिकारः&nbsp;। तस्यैव फललाभः&nbsp;। कवेः प्रेक्षाप्रवर्तयितुश्च तत्प्रोक्तृत्वमित्यनेनोक्तम्&nbsp;।
+         रज्यतेऽनेनेति रङ्गो नाट्यम्&nbsp;। तदाधारत्वान्मण्डपः&nbsp;। तदधिष्ठातृत्वाच्च देवता अपीति मण्डपाध्यायस्य
+         द्वितीयस्योपोद्धातं करोतीति <a href="" class="app" title="विशेषः <b&gt;RK</b&gt;"><span class="appnum"><sup>1</sup></span></a>शिवम्&nbsp;। (१२७)
+      </p>
+      
+      
+      <div class="lg" type="">
+         <span class="line">
+            <span class="a">त्रिणेत्रपादाब्जसदास्तवो<a href="" class="app" title="दातपो <b&gt;भ</b&gt;"><span class="appnum"><sup>1</sup></span></a></span>
+            <span class="b">(समाश्रयो)ल्लसत्प्रसादभाक्स्फुटमिह नाट्यशासने&nbsp;।</span>
+            </span>
+         <span class="line">
+            <span class="c">प्रवर्तितेयं हृदये महाधियां</span>
+            <span class="d">प्रकाशतामभिनवगुप्तभारती&nbsp;॥</span>
+            </span>
+         
+      </div>
+      
+      
+      
+      <p>इति श्रीमहामाहेश्वराभिनवगुप्ताचार्यविरचितायामभिनवभारत्यां भारतीय-</p>
+      
+      <p>नाट्यशास्त्रविवृतौ नाट्योत्पत्तिर्नामः प्रथमोऽध्यायः&nbsp;॥</p>
+      
+      
+      
+      
+      
+      
+   </body>
+</html>

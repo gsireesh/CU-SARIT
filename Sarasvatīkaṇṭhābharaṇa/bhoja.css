@@ -1,0 +1,83 @@
+TEI {
+  margin: 10px;
+}
+teiHeader  {
+  display: none;
+}
+app {
+  display: none;
+}
+trailer {
+  display: block;
+  text-align: center;
+  font-size: 90%;
+}
+trailer lg {
+  text-align: left;
+}
+head {
+  display:block;
+  text-align:center;
+  font-size:130%;
+  margin-bottom:10px;
+}
+lg {
+  display: block;
+  padding-left: 2em;
+  margin-bottom: 5px;
+}
+l,seg[type=pāda] {
+  display: block;
+}
+seg[type=pāda]:last-of-type {
+  text-indent: 1em;
+}
+lg[type=kārikā] {
+  text-indent: 0em;
+  font-size: 130%;
+  font-weight: bold;
+}
+lg[type=udāharaṇa] {
+  text-indent: 0em;
+  font-size: 130%;
+}
+lg[type=chāyā] {
+  text-indent: 0em;
+  margin-left: 5em;
+}
+p {
+  text-indent: 1em;
+  font-size: 130%;
+  display: block;
+  word-break: hyphenate;
+}
+div[type=commentary] {
+  display:block;
+  background-color:#FDFDFD;
+  border-style:solid;
+  border-width:1px;
+  font-size: 100%;
+  padding: 5px;
+}
+div[@type='commentary'] p {
+  font-size: 90% !important;
+}
+ref,name,b,quote,q {
+  font-weight: bold;
+}
+cit ref {
+  font-weight: normal;
+}
+note {
+  visibility: hidden;
+  position: fixed;
+  width: 12em;
+  border: 1px solid #000;
+  background: #dd0;
+  padding: 1em;
+  top: 1em;
+  right: 1em;
+}
+note:focus {
+  visibility: visible;
+}
