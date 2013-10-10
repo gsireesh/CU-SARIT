@@ -1,0 +1,151 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html xmlns:fn="http://www.w3.org/2005/xpath-functions" encodingxmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+      <link rel="stylesheet" type="text/css" href="../cssstylesheet2.css">
+      <title></title><script type="text/javascript">
+    
+    function toggle(id) {
+       var e = document.getElementById(id);
+       if(e.style.display == 'block')
+          e.style.display = 'none';
+       else
+          e.style.display = 'block';
+    }
+// qTip - CSS Tool Tips - by Craig Erskine
+// http://qrayg.com
+//
+// Multi-tag support by James Crooke
+// http://www.cj-design.com
+//
+// Inspired by code from Travis Beckham
+// http://www.squidfingers.com | http://www.podlob.com
+//
+// Copyright (c) 2006 Craig Erskine
+// Permission is granted to copy, distribute and/or modify this document
+// under the terms of the GNU Free Documentation License, Version 1.3
+// or any later version published by the Free Software Foundation;
+// with no Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts.
+// A copy of the license is included in the section entitled "GNU
+// Free Documentation License".
+
+var qTipTag = "a,label,input"; //Which tag do you want to qTip-ize? Keep it lowercase!//
+var qTipX = 0; //This is qTip's X offset//
+var qTipY = 15; //This is qTip's Y offset//
+
+//There's No need to edit anything below this line//
+tooltip = {
+  name : "qTip",
+  offsetX : qTipX,
+  offsetY : qTipY,
+  tip : null
+}
+
+tooltip.init = function () {
+	var tipNameSpaceURI = "http://www.w3.org/1999/xhtml";
+	if(!tipContainerID){ var tipContainerID = "qTip";}
+	var tipContainer = document.getElementById(tipContainerID);
+
+	if(!tipContainer) {
+	  tipContainer = document.createElementNS ? document.createElementNS(tipNameSpaceURI, "div") : document.createElement("div");
+		tipContainer.setAttribute("id", tipContainerID);
+	  document.getElementsByTagName("body").item(0).appendChild(tipContainer);
+	}
+
+	if (!document.getElementById) return;
+	this.tip = document.getElementById (this.name);
+	if (this.tip) document.onmousemove = function (evt) {tooltip.move (evt)};
+
+	var a, sTitle, elements;
+	
+	var elementList = qTipTag.split(",");
+	for(var j = 0; j < elementList.length; j++)
+	{	
+		elements = document.getElementsByTagName(elementList[j]);
+		if(elements)
+		{
+			for (var i = 0; i < elements.length; i ++)
+			{
+				a = elements[i];
+				sTitle = a.getAttribute("title");				
+				if(sTitle)
+				{
+					a.setAttribute("tiptitle", sTitle);
+					a.removeAttribute("title");
+					a.removeAttribute("alt");
+					a.onmouseover = function() {tooltip.show(this.getAttribute('tiptitle'))};
+					a.onmouseout = function() {tooltip.hide()};
+				}
+			}
+		}
+	}
+}
+
+tooltip.move = function (evt) {
+	var x=0, y=0;
+	if (document.all) {//IE
+		x = (document.documentElement && document.documentElement.scrollLeft) ? document.documentElement.scrollLeft : document.body.scrollLeft;
+		y = (document.documentElement && document.documentElement.scrollTop) ? document.documentElement.scrollTop : document.body.scrollTop;
+		x += window.event.clientX;
+		y += window.event.clientY;
+		
+	} else {//Good Browsers
+		x = evt.pageX;
+		y = evt.pageY;
+	}
+	this.tip.style.left = (x + this.offsetX) + "px";
+	this.tip.style.top = (y + this.offsetY) + "px";
+}
+
+tooltip.show = function (text) {
+	if (!this.tip) return;
+	this.tip.innerHTML = text;
+	this.tip.style.display = "block";
+}
+
+tooltip.hide = function () {
+	if (!this.tip) return;
+	this.tip.innerHTML = "";
+	this.tip.style.display = "none";
+}
+
+window.onload = function () {
+	tooltip.init ();
+}
+    
+    </script></head>
+   <body>
+      
+      <span class="pageinfo">[page 118]</span>
+      
+      <div class="lg" type="">
+         <span class="line">गतिमण्डलवैचित्र्यमासूत्रयति या सदा&nbsp;।</span>
+         <span class="line">तथा<a href="" class="app" title="नेदिपतिर्मात्रीं"><span class="appnum"><sup>1</sup></span></a> नेदिष्ठनिर्मात्रीं शक्तिं वन्दे महेशितुः&nbsp;॥</span>
+         
+      </div>
+      
+      <div class="lg" type="">
+         <span class="line">स्वल्पेऽपि पाठ्ये न त्याज्यः कोऽप्यध्यायो मया यतः&nbsp;।</span>
+         <span class="line">विभोर्विश्वात्मनः स्तोत्रं मुख्यमन्यत्प्रसङ्गतः&nbsp;॥</span>
+         
+      </div>
+      
+      <p><span class="mentioned"><a href=".html#N%C4%81%C5%9A%C4%81.11.1" target="_blank">शस्त्रमोक्षणे मण्डलानीति</a></span> संबन्धः&nbsp;। इहेत्यस्मिन्नध्याये श्रुते श्रुतित द्दिशान्यान्यपि निबोधत, एषामियत् सामान्यलक्षणं
+         <span class="mentioned"><a href=".html#N%C4%81%C5%9A%C4%81.11.1" target="_blank">चारीसंयोगजानीति</a></span>&nbsp;। आका-<span class="pageinfo">[page 119]</span>शगतानां युद्धपरिक्रमेषु प्राधान्यात्पूर्वमुद्देशः आकाशभूचारीप्राचुर्यान्मण्डलेषु तथात्वम्&nbsp;।
+         <span class="mentioned"><a href=".html#N%C4%81%C5%9A%C4%81.11.7" target="_blank">आद्यमि</a></span>ति दक्षिणम्&nbsp;। <span class="mentioned"><a href=".html#N%C4%81%C5%9A%C4%81.11.7" target="_blank">उद्वाहितमि</a></span>ति लक्षणैकदेशेन शकटास्यां सूचयति&nbsp;।एवमन्यत्र&nbsp;। त्रिकन्त्विति (? त्रिकं चेति) भ्रमरीमाह&nbsp;।
+         बाह्यभ्रमरकं वामपादेन <span class="pageinfo">[page 121]</span><span class="mentioned"><a href=".html#N%C4%81%C5%9A%C4%81.11.12" target="_blank">आस्पन्दि</a></span>तमिति स्पन्दितां चारीमाह, तामेवान्ये अस्कन्दितेत्याहुः&nbsp;। दण्डक्रम इति दण्डपादा चारी
+         <span class="mentioned"><a href=".html#N%C4%81%C5%9A%C4%81.11.24" target="_blank">त्रि</a></span>कावर्तादि अन्ते पठितत्वात् परिसमाप्तिस्थानगतामेव <span class="pageinfo">[page 122]</span>भ्रमरीमाश्रित्य यन्मण्डलं दण्डपादाख्यं तत्रेति संबन्धः&nbsp;। <span class="mentioned"><a href=".html#N%C4%81%C5%9A%C4%81.11.25" target="_blank">निकुट्टकमि</a></span>त्यनेन तलसञ्चरपादो लक्ष्यते&nbsp;। उद्वृतमूरूद्वृत्तादिकं चारीम्&nbsp;। समावर्तनं सम्यगावर्तनं
+         सव्यापसव्यभ्रमरकद्वयेन&nbsp;। एताभिश्चारीभिः पर्यायेण षट्कृत्वः सप्तकृत्वो वा प्रयुक्ताभिः
+         परिमण्डले चतुर्दिक्कं भ्रान्त्वान्तरालिकैः पादक्षेपैरिदमिदं <span class="pageinfo">[page 124]</span>कुर्यादिति सङ्गतिः&nbsp;। संख्याशब्देनाभ्यावृत्तिर्लक्ष्यते&nbsp;। अतिक्रान्तस्यैव विशेषणं ललितं
+         सञ्चरतीत्यत एव मण्डलस्येदमेव नाम&nbsp;। <span class="mentioned"><a href=".html#N%C4%81%C5%9A%C4%81.11.37" target="_blank">स चे</a></span>ति&nbsp;। स एवेत्यर्थः&nbsp;। <span class="pageinfo">[page 127]</span><span class="mentioned"><a href=".html#N%C4%81%C5%9A%C4%81.11.61" target="_blank">आस्फोट</a></span>नमिति पादतलेन भूमिताडनं युद्धेष्वास्फालनमिति प्रसिद्धम्&nbsp;। <span class="mentioned"><a href=".html#N%C4%81%C5%9A%C4%81.11.61" target="_blank">च</a></span> शब्दोऽप्यर्थे&nbsp;। अतः परमपि मण्डलानि योजयेत्&nbsp;। कथमित्याहुः&nbsp;। समाः <span class="pageinfo">[page 128]</span> परस्परे योजनोचिताश्चार्यो यत्र तत्रोहनेऽप्युदाहरणं दर्शयति <span class="mentioned"><a href=".html#N%C4%81%C5%9A%C4%81.11.69" target="_blank">समचारीप्रयोग</a></span> इति&nbsp;। समानां भौमत्वेनाकाशीयत्वेन च चारीणां प्रयोगो यत्र&nbsp;।
+      </p>
+      
+      <p>एवमनया दिशा बहूनि कल्पयेदित्याह आचार्यबुद्ध्योपलभ्यो भागः प्रयोगयोग्यो भवतीति&nbsp;। खण्डानां
+         प्राधान्यमपि दर्शयति <span class="mentioned"><a href=".html#N%C4%81%C5%9A%C4%81.11.70" target="_blank">खण्डानीति</a></span>&nbsp;। <span class="mentioned"><a href=".html#N%C4%81%C5%9A%C4%81.11.70" target="_blank">वाद्येनानुगतानीति</a></span> “गत्या वाद्यानुसारिण्या” (अ-४-२८२) इति नृत्तविषयतुर्याध्यायाद्धि वैपरीत्येन नाट्ये गतै प्राधान्यमाहेति शिवम्&nbsp;॥
+      </p>
+      इति श्रीमहामाहेश्वराभिनवगुप्ताचार्यविरचितायां नाट्यवेदविवृतावभिनवभारत्यां मण्डलाध्याय
+      एकादशः समाप्तः&nbsp;॥
+      
+   </body>
+</html>
