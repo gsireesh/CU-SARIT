@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:java="http://xml.apache.org/xalan/java" exclude-result-prefixes="java">
 <xsl:output encoding="utf-8" indent="no" method="xml" version="1.0"/>
+<!-- by andrew ollett, using transliteration
+  routines from somadeva vasudeva. last update:
+  dec. 19, 2013. !-->
 
 <xsl:param name="Transliterate">
   <!-- :: [:Latin:] lower (); !-->
@@ -181,6 +184,7 @@
   ७ > 7;
   ८ > 8;
   ९ > 9;
+  ॰ > '.';
 
   ॥ > '||';
   । > '|';
@@ -199,14 +203,26 @@
   </xsl:copy>
 </xsl:template>
 
-<xsl:template match="body//text()">
+<!-- changes the xml:lang attribute !-->
+<xsl:template match="@xml:lang">
+  <xsl:attribute name="xml:lang">
+    <xsl:choose>
+      <xsl:when test=". = 'sa-Deva'">
+        <xsl:text>sa-Latn</xsl:text>
+      </xsl:when>
+      <xsl:otherwise><xsl:value-of select="."/></xsl:otherwise>
+    </xsl:choose>
+  </xsl:attribute>
+</xsl:template>
+
+<!-- changes all devanagari text to romanization, provided
+  (1) that the top-level text element has the attribute
+        xml:lang="sa-Deva"; and
+  (2) that the text doesn't belong to any element that
+        has the xml:lang="en" attribute. !-->
+<xsl:template match="text[@xml:lang='sa-Deva']//text()">
   <xsl:choose>
-    <xsl:when test="ancestor::note[@type='translation']">
-      <xsl:copy>
-        <xsl:apply-templates/>
-      </xsl:copy>
-    </xsl:when>
-    <xsl:when test="ancestor::note and not(ancestor::note[@xml:lang='sa'])">
+    <xsl:when test="ancestor::*[@xml:lang='en']">
       <xsl:copy>
         <xsl:apply-templates/>
       </xsl:copy>
@@ -218,19 +234,46 @@
   </xsl:choose>
 </xsl:template>
 
+<!-- this changes the xml:id of the top-level TEI
+  element from ending in '-dn' to ending in '-roman',
+  which i use for switching between the files. you
+  can ignore it if you don't use this element. !-->
+<!-- by the way, this is necessary only because 
+  i'm using an XSL 1.0 processor, which can't access
+  the base uri. !-->
 <xsl:template match="@xml:id[parent::TEI]">
   <xsl:variable name="filename" select="."/>
   <xsl:attribute name="xml:id">
-    <xsl:variable name="newfilename" select="substring-before($filename, '-')"/> <!-- find way to select last instance !-->
+    <xsl:variable name="newfilename">
+      <xsl:call-template name="substring-before-last">
+        <xsl:with-param name="list" select="normalize-space(.)"/>
+        <xsl:with-param name="delimiter" select="'-'"/>
+      </xsl:call-template>
+    </xsl:variable>
     <xsl:value-of select="concat($newfilename, '-roman')"/>
   </xsl:attribute>
 </xsl:template>
 
-<xsl:template match="@subtype[parent::note]">
-  <xsl:attribute name="subtype">
-    <xsl:variable name="output" select="java:transliterate($transliterator, .)"/>
-    <xsl:value-of select="$output"/>
-  </xsl:attribute>
+<xsl:template name="substring-before-last">
+<!--passed template parameter -->
+  <xsl:param name="list"/>
+  <xsl:param name="delimiter"/>
+  <xsl:choose>
+    <xsl:when test="contains($list, $delimiter)">
+    <!-- get everything in front of the first delimiter -->
+      <xsl:value-of select="substring-before($list,$delimiter)"/>
+      <xsl:choose>
+        <xsl:when test="contains(substring-after($list,$delimiter),$delimiter)">
+          <xsl:value-of select="$delimiter"/>
+        </xsl:when>
+      </xsl:choose>
+      <xsl:call-template name="substring-before-last">
+      <!-- store anything left in another variable -->
+        <xsl:with-param name="list" select="substring-after($list,$delimiter)"/>
+        <xsl:with-param name="delimiter" select="$delimiter"/>
+      </xsl:call-template>
+    </xsl:when>
+  </xsl:choose>
 </xsl:template>
 
 </xsl:stylesheet>

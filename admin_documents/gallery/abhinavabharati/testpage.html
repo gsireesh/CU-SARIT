@@ -1,0 +1,116 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html xmlns:fn="http://www.w3.org/2005/xpath-functions" encodingxmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Cardo|Lato">
+  <link rel="stylesheet" href="testpage.css" type="text/css"/>
+  <link rel="stylesheet" type="text/css" href="jquery-ui-1.10.3.custom.css" />
+  <link href="perfect-scrollbar.css" rel="stylesheet" type="text/css" />
+</head>
+<body onload="displayResult()">
+<div id="st-container" class="st-container">
+
+    <!-- nav bar !-->
+    <nav class="st-menu st-effect-1" id="menu-1">
+      <h3>Nāṭyaśāstra</h3>
+      <p>~ and ~</p>
+      <h3>Abhinavabhāratī</h3>
+      <ul>
+        <li><a href="#">chapter 4</a></li>
+      </ul>
+    </nav> <!-- /nav !-->
+
+  <!-- content push wrapper !-->
+  <div class="st-pusher">
+
+    <div class="st-content"><!-- content wrapper !-->
+      <div class="st-content-inner"><!-- extra div for emulating position !-->
+        <div class="container" style="width:500px;height:500px;top:50px">
+          <h3>Nāṭyaśāstra</h3>
+          <div id="mula" class="innercontainer">
+            
+          </div>
+        </div>
+        <div class="container" style="width:600px;height:500px;top:50px">
+          <h3>Abhinavabhāratī</h3>
+          <div id="comm" class="innercontainer">
+
+          </div>
+        </div>
+
+        <div class="st-bottom">
+          <div id="st-trigger-effects">
+            <button data-effect="st-effect-1">main menu</button>
+          </div>
+          text boxes are resizable. click the title of each text box to drag.
+        </div> <!-- /st-bottom !-->
+        
+      </div> <!-- /content-inner !-->
+    </div> <!-- /content !-->
+  </div> <!-- /st-pusher !-->
+
+</div>
+<script type="text/javascript" src="jquery-2.0.3.min.js"></script>
+<script type="text/javascript" src="jquery-ui-1.10.3.custom.js"></script>
+<script type="text/javascript" src="perfect-scrollbar.js"></script>
+<script>
+$(function() {
+});
+</script>
+
+<script>
+  function loadXMLDoc(dname) {
+    if (window.XMLHttpRequest) {
+        xhttp = new XMLHttpRequest();
+    } else {
+        xhttp = new ActiveXObject("Microsoft.XMLHTTP");
+    }
+    xhttp.open("GET", dname, false);
+    xhttp.send("");
+    return xhttp.responseXML;
+  }
+  function displayResult() {
+    ABh = loadXMLDoc("abhsample.xml");
+    NS = loadXMLDoc("nssample.xml")
+    xsl = loadXMLDoc("test.xsl");
+    //set a &nbsp to make prevent FF to append the text by double click
+    document.getElementById("mula").innerHTML = "&nbsp;";
+    document.getElementById("comm").innerHTML = "&nbsp;";
+    // code for IE
+    if (window.ActiveXObject) {
+        ex1 = xml.transformNode(ABh);
+        ex2 = xml.transformNode(NS);
+        document.getElementById("comm").innerHTML = ex1;
+        document.getElementById("mula").innerHTML = ex2;
+    }
+    // code for Mozilla, Firefox, Opera, etc.
+    else if (document.implementation && document.implementation.createDocument) {
+        xsltProcessor = new XSLTProcessor();
+        xsltProcessor.importStylesheet(xsl);
+        ABhresult = xsltProcessor.transformToFragment(ABh, document);
+        NSresult = xsltProcessor.transformToFragment(NS, document);
+        document.getElementById("mula").appendChild(NSresult);
+        document.getElementById("comm").appendChild(ABhresult);
+        $('.container').draggable({ handle:"h3" }).resizable({ helper: "resizable-helper", handles: "se" });
+        $("#mula,#comm").perfectScrollbar();
+        $('.app').hover(function(){
+          var b = $(this).find('div').html();
+          if(b){
+            $('<p class="tooltip"></p>').html(b).appendTo('body').fadeIn('slow');
+          }
+        }, function() {
+          $('.tooltip').remove();
+        }).mousemove(function(e) {
+          var mousex = e.pageX + 20; //Get X coordinates
+          var mousey = e.pageY + 10; //Get Y coordinates
+          $('.tooltip')
+          .css({ top: mousey, left: mousex })
+        });
+    }
+  }
+</script>
+<script src="classie.js"></script>
+<script src="sidebarEffects.js"></script>
+</body>
+</html>

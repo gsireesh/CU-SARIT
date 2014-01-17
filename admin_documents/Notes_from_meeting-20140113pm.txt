@@ -1,0 +1,81 @@
+DECISIONS REGARDING DIVS
+STRUCTURAL DIVISION
+
+SINGLE TEXTS
+div
+  @type 
+
+TEXT + COMMENTARY
+
+head
+trailer
+postscript
+HEAD REND="NONE" for headers not present in the source text
+changes in headers should be noted in revision description
+or use LABEL for these kinds of headers?
+
+LABEL
+for headers?
+
+GENERAL SOLUTION
+ab @type=mula 
+  for prose
+
+QUOTATION MARKS
+forget about them
+
+LG, P, and QUOTE
+iti in LG or outside of it?
+
+LG
+  keep numbers in, even if n is used
+SEG
+  keep daṇḍas in segment
+
+LB 
+  guidelines for lb elements
+  start counting from first line, not including header
+  
+PB 
+  add xml:ids for reference purposes
+
+XML:LANG
+  attribute of text
+  variations/deviations also defined
+  
+XML:ID
+  abbreviation
+  chapter
+  number
+  (involves abbreviated title of text and implicit reference system)
+  FUTURE PROOF: reference could be to a future resource
+
+CRITICAL ANNOTATIONS
+for ADVANCED texts: 
+app -- parallel segmentation (only for variant readings)
+  if possible, use lem
+  otherwise, don't
+note element for all other purposes
+for BASIC texts: note in app element
+
+no explicit lemma (either in sense of "preferred reading" or "point of attachment")
+very explicit about use of lemma
+only makes sense in the context of a particular encoding strategy
+
+REFERENCES
+  typology of references
+  editions typeset pratikas differently from other kinds of references
+  ref type="pratika"
+  quotation
+    less direct reference?
+  
+CITATIONS
+
+PAGE RANGES
+  how to encode using ref?
+
+SEMANTIC ANNOTATION
+name = persName with @ref attribute
+
+CORRECTIONS
+  integrate them into text as NOTES with TYPE="CORR" attribute
