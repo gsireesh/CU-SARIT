@@ -1,6 +1,6 @@
 $ cat .gitignore
 
-*.~
+*~
 
 *.pdf
 

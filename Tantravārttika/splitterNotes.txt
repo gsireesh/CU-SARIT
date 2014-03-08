@@ -1,0 +1,3 @@
+Notes:
+
+regex for adhikaraṇas with pāda endings optionally matched as well. 
