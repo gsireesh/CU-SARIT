@@ -32,22 +32,30 @@ for i in range(len(tvLines)):
 	match = adhi_re.match(tvLines[i])
 	if(match):
 		clean_name = re.sub('(<.*?>)|(/?/)', '', match.group('name'))
-		print(clean_name)
 		print('Adhikarana:', clean_name, file=outFile)
 		print(pada, '.', num_d2r(match.group('number')), '\n', file=outFile)
 		maxLimit = i + 2
-		if(i<len(tvLines)-2 and pada_re.match(tvLines[i+2])):
-			pada += 1
+		match2 = pada_re.match(tvLines[i+2])
+		match3 = adhyaya_re.match(tvLines[i+4])
+		if(i<len(tvLines)-2 and match2 ):
 			maxLimit = i+4
-		if(i<len(tvLines)-4 and adhyaya_re.match(tvLines[i+4])):
-			adhyaya += 1
-			pada = 1
+		if(i<len(tvLines)-4 and match3):
 			maxLimit = i+4
 		div = str(adhyaya)+'.'+str(pada)+'.'+str(num_d2r(match.group('number')))
-		with open('TVTest/'+div+clean_name+'.xml', 'a+') as f:
+		with open('TVTest/'+div+' '+clean_name+'.xml', 'a+') as f:
 			for line in tvLines[minLimit:maxLimit]:
 				f.write(line)
 		minLimit = maxLimit
+		if(match2):
+			pada += 1
+		#special case:
+		elif('चरुविनियोगाधिकरणम्' in match.group('name')):
+			print('special case, check!')
+			pada += 1
+			print('pada:', pada)
+		if(match3):
+			adhyaya += 1
+			pada = 1
 
 
 '''.*?इति(—|--)(\D*धिकरणम्).*?(\d+).*\n</lg>\n(.*इति\D*पादः.*\n)?'''
