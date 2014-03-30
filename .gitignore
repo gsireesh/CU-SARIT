@@ -5,3 +5,5 @@ $ cat .gitignore
 *.pdf
 
 .metadata/
+
+*.pyc
