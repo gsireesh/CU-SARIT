@@ -7,3 +7,5 @@ $ cat .gitignore
 .metadata/
 
 *.pyc
+
+Tantravārttika/tmp

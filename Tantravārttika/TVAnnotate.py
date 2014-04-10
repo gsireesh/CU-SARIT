@@ -21,7 +21,7 @@ adhi_re = re.compile(('(?P<text>.*)<(lg|p)>.*?(?P<trailer>इति(—|--| *)?'
                       'ख्याने.*)</p>)?'), re.DOTALL
                     )
 
-folder = 'inProgress'
+folder = 'tmp'
 os.chdir(folder)
 filesList = sorted([f for f in os.listdir() if os.path.isfile(f)])
 i = 0
